@@ -1,0 +1,35 @@
+---
+about:
+  template: jolla
+  id: about-block
+  image: "img/my_image.jpg"
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://x.com/liuliu_lyons66
+    - icon: github
+      text: Github
+      href: https://github.com/lyons66
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/liu-liu-08033547/
+    - icon: envelope
+      text: Email
+      href: "mailto:lyons66@mit.edu"  
+---
+
+::: {#about-block}
+:::
+
+# Welcome to my website!
+
+Liu is a Ph.D. student at DUSP studying Computational Urban Science. Being an urban scientist with eight years of entrepreneurship in the urban computing industry, he continuously focused on the built environment and human behavior analysis by adopting urban visual AI. Before returning to MIT, he was a data scientist at the China Academy of Urban Planning and Design, an external expert at Tencent, an STC at the World Bank, and started a company named CitoryTech. Many of his projects were innovative. For example, he led the big data section of National City Planning in China using 1 billion Tencent LBSN data and evaluating how walkable many Chinese cities are using images of the streets. He also led a team to develop new ways to use data in commercial real estate. Before his data-related focus, he accumulated six years of design background and practice, which shaped his research interest with an urban design scope.
+
+His academic interests lie in the interdisciplinary fields of computer vision, generative AI, optimization, urban computing, and urban design. His current research evaluates the physical environment and its impacts on public activities. Specifically, he is keen on probing into pedestrians' emotional responses, memories, and experiences of the built environment with urban imagery data analysis.
+
+```{=html}
+<div  style="margin: 30px; text-align: center;">
+<a class="btn btn-primary" href="https://www.marvinschmitt.com/blog/website-tutorial-quarto/" role="button" target="_blank" style="padding: 15px 30px;">View the tutorial for this template (+ download link)</a>
+</div>
+```
+
