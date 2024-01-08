@@ -28,11 +28,11 @@ website:
     right:
       - icon: house
         href: https://dusp.mit.edu/people/liu-liu
-      - icon: book
+      - icon: book-fill
         href: https://scholar.google.com/citations?user=D3PSmFsAAAAJ
       - icon: linkedin
         href: https://www.linkedin.com/in/liu-liu-08033547/
-      - icon: envelope
+      - icon: envelope-fill
         aria-label: email
         href: "mailto:mail.lyons66@mit.edu"  
   

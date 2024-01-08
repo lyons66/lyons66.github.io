@@ -4,16 +4,16 @@ about:
   id: about-block
   image: "img/my_image.jpg"
   links:
-    - icon: book
-      text: Google Scholar
+    - icon: book-fill
+      text: Scholar
       href: https://scholar.google.com/citations?user=D3PSmFsAAAAJ
-    - icon: github
-      text: Github
-      href: https://github.com/lyons66
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/liu-liu-08033547/
-    - icon: envelope
+    - icon: github
+      text: Github
+      href: https://github.com/lyons66
+    - icon: envelope-fill
       text: Email
       href: "mailto:lyons66@mit.edu"  
 ---

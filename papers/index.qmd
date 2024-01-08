@@ -1,24 +1,67 @@
 ---
-title: "Photography"
+title: "My Research Papers"
 ---
 
-As a wizard and scholar of Middle-earth, I have been studying the magic of the natural world for centuries. Through my self-portraits, I aim to capture the essence of my own being and reflect on my own journey through time. Each photograph is a reflection of my own experiences and emotions. Through my photography, I hope to offer a glimpse into my life as a scholar and adventurer, and inspire others to reflect on their own journeys through the world.
+Below is a list of my research papers with links to download or view them. Click on the titles to access the papers.
 
-::: {layout-ncol=2}
+---
 
-![](gandalf_image_1.jpg)
+- **Zhou, B., Liu, L., Oliva, A., & Torralba, A.**
+  "Recognizing city identity via attribute analysis of geo-tagged images"
+  European conference on computer vision (pp. 519-534).
+  [Download PDF](https://link.springer.com/content/pdf/10.1007/978-3-319-10578-9_34.pdf)
 
-![](gandalf_image_2.jpg)
+---
 
-![](gandalf_image_3.jpg)
+- **Liu, L., Zhou, B., Zhao, J., & Ryan, B. D.**
+  "C-IMAGE: city cognitive mapping through geo-tagged photos"
+  GeoJournal, 81(6), 817-861.
+  [View Article](https://link.springer.com/article/10.1007/s10708-016-9739-6)
 
-![](gandalf_image_4.jpg)
+---
 
-:::
+- **Long, Y., & Liu, L.**
+  "How green are the streets? An analysis for central areas of Chinese cities using Tencent Street View"
+  PloS one, 12(2), e0171110.
+  [Read Online](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0171110)
 
+---
 
-```{=html}
-<div  style="margin: 30px; text-align: center;">
-<a class="btn btn-primary" href="https://www.marvinschmitt.com/blog/website-tutorial-quarto/" role="button" target="_blank" style="padding: 15px 30px;">View the tutorial for this template (+ download link)</a>
-</div>
-```
+- **Liu L., Liu Z.**
+  "The Recognition of CAZ in Shanghai Based on Evaluated POI."
+  In: Shen Z., Li M. (eds) Big Data Support of Urban Planning and Management, Advances in Geographic Information Science. Springer, Cham.
+  [Access Chapter](https://link.springer.com/chapter/10.1007/978-3-319-51929-6_6)
+
+---
+
+- **Zhang, F., Zhou, B., Liu, L., Liu, Y., Fung, H. H., Lin, H., & Ratti, C.**
+  "Measuring human perceptions of a large-scale urban region using machine learning"
+  Landscape and Urban Planning.
+  [View Article](https://www.sciencedirect.com/science/article/pii/S0169204618308545)
+
+---
+
+- **Liu, L., Zhang, F., Zhou, B., Wang, Z., & Li, Y.**
+  "STREETALK: A NAVIGATION SYSTEM FOR PEDESTRIANS AND CYCLISTS"
+  Landscape Architecture Frontiers.
+  [Read Online](https://oversea.cnki.net/knavi/JournalDetail?pcode=CJFD&pykm=jgsj)
+
+---
+
+- **Fang, W., Liu, L., & Zhou, J.**
+  "Assessing Physical Environment of TOD Communities around Metro Stations: Using Big Data and Machine Learning"
+  [Download Report](https://openknowledge.worldbank.org/bitstream/handle/10986/33343/Assessing-Physical-Environment-of-TOD-Communities-around-Metro-Stations-Using-Big-Data-and-Machine-Learning.pdf?sequence=1)
+
+---
+
+- **Cui, C., et al.**
+  "The spatial-temporal dynamics of daily intercity mobility in the Yangtze River Delta: An analysis using big data"
+  Habitat International.
+  [View Article](https://www.sciencedirect.com/science/article/abs/pii/S0197397519311373)
+
+---
+
+- **Zhang, D., Yi, H., Chen, Y., Jiang, N., Shao, J., & Liu, L.**
+  "An urban infrastructure assessment system built on geo-tagged images and machine learning"
+  Computational Urban Science.
+  [Access Article](https://link.springer.com/article/10.1007/s43762-022-00056-9)
