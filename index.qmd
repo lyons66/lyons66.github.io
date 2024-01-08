@@ -4,9 +4,9 @@ about:
   id: about-block
   image: "img/my_image.jpg"
   links:
-    - icon: twitter
-      text: Twitter
-      href: https://x.com/liuliu_lyons66
+    - icon: book
+      text: Google Scholar
+      href: https://scholar.google.com/citations?user=D3PSmFsAAAAJ
     - icon: github
       text: Github
       href: https://github.com/lyons66
