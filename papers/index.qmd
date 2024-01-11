@@ -1,5 +1,5 @@
 ---
-title: "My Research Papers"
+title: "Research Papers"
 ---
 
 Below is a list of my research papers with links to download or view them. Click on the titles to access the papers.
@@ -9,59 +9,59 @@ Below is a list of my research papers with links to download or view them. Click
 - **Zhou, B., Liu, L., Oliva, A., & Torralba, A.**
   "Recognizing city identity via attribute analysis of geo-tagged images"
   European conference on computer vision (pp. 519-534).
-  [Download PDF](https://link.springer.com/content/pdf/10.1007/978-3-319-10578-9_34.pdf)
+  [Download](https://link.springer.com/content/pdf/10.1007/978-3-319-10578-9_34.pdf)
 
 ---
 
 - **Liu, L., Zhou, B., Zhao, J., & Ryan, B. D.**
   "C-IMAGE: city cognitive mapping through geo-tagged photos"
   GeoJournal, 81(6), 817-861.
-  [View Article](https://link.springer.com/article/10.1007/s10708-016-9739-6)
+  [View](https://link.springer.com/article/10.1007/s10708-016-9739-6)
 
 ---
 
 - **Long, Y., & Liu, L.**
   "How green are the streets? An analysis for central areas of Chinese cities using Tencent Street View"
   PloS one, 12(2), e0171110.
-  [Read Online](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0171110)
+  [Download](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0171110)
 
 ---
 
 - **Liu L., Liu Z.**
   "The Recognition of CAZ in Shanghai Based on Evaluated POI."
   In: Shen Z., Li M. (eds) Big Data Support of Urban Planning and Management, Advances in Geographic Information Science. Springer, Cham.
-  [Access Chapter](https://link.springer.com/chapter/10.1007/978-3-319-51929-6_6)
+  [View](https://link.springer.com/chapter/10.1007/978-3-319-51929-6_6)
 
 ---
 
 - **Zhang, F., Zhou, B., Liu, L., Liu, Y., Fung, H. H., Lin, H., & Ratti, C.**
   "Measuring human perceptions of a large-scale urban region using machine learning"
   Landscape and Urban Planning.
-  [View Article](https://www.sciencedirect.com/science/article/pii/S0169204618308545)
+  [View](https://www.sciencedirect.com/science/article/pii/S0169204618308545)
 
 ---
 
 - **Liu, L., Zhang, F., Zhou, B., Wang, Z., & Li, Y.**
   "STREETALK: A NAVIGATION SYSTEM FOR PEDESTRIANS AND CYCLISTS"
   Landscape Architecture Frontiers.
-  [Read Online](https://oversea.cnki.net/knavi/JournalDetail?pcode=CJFD&pykm=jgsj)
+  [Download](https://oversea.cnki.net/knavi/JournalDetail?pcode=CJFD&pykm=jgsj)
 
 ---
 
 - **Fang, W., Liu, L., & Zhou, J.**
   "Assessing Physical Environment of TOD Communities around Metro Stations: Using Big Data and Machine Learning"
-  [Download Report](https://openknowledge.worldbank.org/bitstream/handle/10986/33343/Assessing-Physical-Environment-of-TOD-Communities-around-Metro-Stations-Using-Big-Data-and-Machine-Learning.pdf?sequence=1)
+  [Download](https://openknowledge.worldbank.org/bitstream/handle/10986/33343/Assessing-Physical-Environment-of-TOD-Communities-around-Metro-Stations-Using-Big-Data-and-Machine-Learning.pdf?sequence=1)
 
 ---
 
 - **Cui, C., et al.**
   "The spatial-temporal dynamics of daily intercity mobility in the Yangtze River Delta: An analysis using big data"
   Habitat International.
-  [View Article](https://www.sciencedirect.com/science/article/abs/pii/S0197397519311373)
+  [View](https://www.sciencedirect.com/science/article/abs/pii/S0197397519311373)
 
 ---
 
 - **Zhang, D., Yi, H., Chen, Y., Jiang, N., Shao, J., & Liu, L.**
   "An urban infrastructure assessment system built on geo-tagged images and machine learning"
   Computational Urban Science.
-  [Access Article](https://link.springer.com/article/10.1007/s43762-022-00056-9)
+  [Download](https://link.springer.com/article/10.1007/s43762-022-00056-9)

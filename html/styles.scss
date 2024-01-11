@@ -26,7 +26,7 @@ $green:   #118230 !default;
 $teal:    #068194 !default;
 $cyan:    #3093CF !default;
 
-$primary:   $cyan!default;
+$primary:   $yellow!default;
 $secondary: $gray-700 !default;
 $success:   $green !default;
 $info:      $cyan !default;
@@ -38,10 +38,10 @@ $dark:      $black !default;
 
 
 // Links
-$link-color: $white !default;
+$link-color: $orange !default;
 $link-decoration: none !default;
 $link-hover-color: $red !default;
-$link-hover-decoration: none !default;
+$link-hover-decoration: underline !default;
 
 // Footer
 $footer-bg: $gray-900 !default;
