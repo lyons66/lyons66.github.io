@@ -20,9 +20,9 @@ about:
       href: "mailto:lyons66@mit.edu"  
 ---
 
-I am a Ph.D. Candidate at MIT studying Computational Urban Science. Being a scientist with eight years of entrepreneurship in data-driven urban science research, I continuously focused on the built environment and human behavior analysis by adopting computer vision. 
+I am a Ph.D. Candidate at MIT studying Computational Urban Science. Being a scientist with eight years of entrepreneurship in data-driven urban analytics and six years of design training, I focused on the built environment and human behavior analysis by adopting computer vision. 
 
-Before returning to MIT, I was a data scientist at the China Academy of Urban Planning and Design, an external expert at Tencent, an STC at the World Bank, and started a company named CitoryTech. 
+Before returning to MIT, I am the founder of CitoryTech Co LTD., a start-up in urban computation specializing in urban visual AI. Besides, I was an external expert for Tencent, a consultant for the World Bank, and an urban researcher at the China Academy of Urban Planning and Design.
 
-My academic interests lie in the interdisciplinary fields of AI, machine learning, optimization, urban computing, and urban design research.
+My academic interests lie in the interdisciplinary fields of AI, machine learning, optimization, and urban design research.
 
