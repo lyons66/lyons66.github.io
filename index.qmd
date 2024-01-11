@@ -3,7 +3,7 @@ title: "Liu Liu"
 image: img/my_image.jpg
 about:
   template: jolla
-  image-width: 14em
+  image-width: 17em
   image-shape: round
   links:
     - icon: book-fill
