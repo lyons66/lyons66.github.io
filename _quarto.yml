@@ -1,13 +1,10 @@
-# This file controls the settings for your Quarto template from www.marvinschmitt.com
-
+# This file controls the settings for your Quarto template
 # website settings
 website:
-  title: "Liu Liu"                                # Your name
-  description: "Ph.D. in Computational Urban Science | MIT"   # A brief slogan (optional)
+  title: "Liu Liu" # Your name
+  description: "Ph.D. Candidate in Computational Urban Science | MIT" # A brief slogan (optional)
   image: img/my_image.jpg
-  
   favicon: img/favicon.png
-  
   # start of the navigation bar at the top of the website
   navbar:
     pinned: true
@@ -36,19 +33,17 @@ website:
         aria-label: email
         href: "mailto:mail.lyons66@mit.edu"  
   
-  
-
 # Don't touch unless you know what you are doing :) ------------
   search: 
     location: navbar
     type: textbox
   page-footer: 
-#    left: |
-#      <span class="faux-block">&#169; 2023 Marvin Schmitt CC BY-SA 4.0</span>
+    left: |
+      <span class="container"><strong>Made with [Posit Quarto](https://quarto.org/){target="_blank"}</strong></span>
+    center: |
+      <span class="container"><strong>[Contact Deepsha Menghani](mailto:mail.lyons66@mit.edu){target="_blank"}</strong></span>
     right: |
-      <span class="faux-block"><a href="https://www.zhihu.com/people/liu-liu-69-84-88">Zhihu(知乎)</a></span>
-#   right: |
-#      <span class="faux-block"><a href="https://github.com/marvinschmitt/quarto-website-template/">View source on GitHub</a></span>
+      <span class="container"><strong>[CV&Resume](https://www.dropbox.com/scl/fo/ghrtsq5to79059lximk01/h?rlkey=cev0uzwgvu4jkus9eo6kkbgn7&dl=0){target="_blank"}</strong></span>
 
 project:
   type: website

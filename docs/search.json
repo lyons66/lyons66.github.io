@@ -4,14 +4,14 @@
     "href": "cv/index.html",
     "title": "Curriculum vitae",
     "section": "",
-    "text": "Download current CV\n  \n\n\n  \n\n\nView the tutorial for this template (+ download link)"
+    "text": "Download current CV"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Welcome to my website!",
+    "title": "Liu Liu",
     "section": "",
-    "text": "Scholar\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Github\n  \n  \n    \n     Email\n  \n\n\n\n\nWelcome to my website!\nLiu is a Ph.D. student at DUSP studying Computational Urban Science. Being an urban scientist with eight years of entrepreneurship in the urban computing industry, he continuously focused on the built environment and human behavior analysis by adopting urban visual AI. Before returning to MIT, he was a data scientist at the China Academy of Urban Planning and Design, an external expert at Tencent, an STC at the World Bank, and started a company named CitoryTech. Many of his projects were innovative. For example, he led the big data section of National City Planning in China using 1 billion Tencent LBSN data and evaluating how walkable many Chinese cities are using images of the streets. He also led a team to develop new ways to use data in commercial real estate. Before his data-related focus, he accumulated six years of design background and practice, which shaped his research interest with an urban design scope.\nHis academic interests lie in the interdisciplinary fields of computer vision, generative AI, optimization, urban computing, and urban design. His current research evaluates the physical environment and its impacts on public activities. Specifically, he is keen on probing into pedestrians’ emotional responses, memories, and experiences of the built environment with urban imagery data analysis.\n\nView the tutorial for this template (+ download link)"
+    "text": "I am a Ph.D. Candidate at MIT studying Computational Urban Science. Being a scientist with eight years of entrepreneurship in data-driven urban science research, I continuously focused on the built environment and human behavior analysis by adopting computer vision.\nBefore returning to MIT, I was a data scientist at the China Academy of Urban Planning and Design, an external expert at Tencent, an STC at the World Bank, and started a company named CitoryTech.\nMy academic interests lie in the interdisciplinary fields of AI, machine learning, optimization, urban computing, and urban design research."
   },
   {
     "objectID": "papers/index.html",
@@ -23,23 +23,30 @@
   {
     "objectID": "projects/index.html",
     "href": "projects/index.html",
-    "title": "Projects",
+    "title": "Liu Liu",
     "section": "",
-    "text": "arXiv Preprint | Code\nOver the centuries, I have devoted countless hours to deciphering and translating the ancient scripts and dialects of the various peoples of Middle-earth. My goal is to gain a deeper understanding of the cultures and histories of these peoples by studying their languages. Currently, I am working on a monograph that explores the linguistic roots of the Elvish languages. Through extensive research and analysis, I hope to shed light on the connections between the different dialects of Elvish and their origins. This project has been particularly challenging, as Elvish is a complex and nuanced language, but I am determined to see it through to completion."
+    "text": "arXiv Preprint | Code\nThis project originated from my thesis, which involved the collection of millions of photos from 26 cities. The objective was to utilize deep learning techniques to conduct scene recognition on these images. By categorizing the data and plotting the seven critical perceptions, the resulting perceptional maps provide insights into how inhabitants perceive their living environment within each city."
   },
   {
-    "objectID": "projects/index.html#the-languages-of-middle-earth",
-    "href": "projects/index.html#the-languages-of-middle-earth",
-    "title": "Projects",
+    "objectID": "projects/index.html#c-image-project",
+    "href": "projects/index.html#c-image-project",
+    "title": "Liu Liu",
     "section": "",
-    "text": "arXiv Preprint | Code\nOver the centuries, I have devoted countless hours to deciphering and translating the ancient scripts and dialects of the various peoples of Middle-earth. My goal is to gain a deeper understanding of the cultures and histories of these peoples by studying their languages. Currently, I am working on a monograph that explores the linguistic roots of the Elvish languages. Through extensive research and analysis, I hope to shed light on the connections between the different dialects of Elvish and their origins. This project has been particularly challenging, as Elvish is a complex and nuanced language, but I am determined to see it through to completion."
+    "text": "arXiv Preprint | Code\nThis project originated from my thesis, which involved the collection of millions of photos from 26 cities. The objective was to utilize deep learning techniques to conduct scene recognition on these images. By categorizing the data and plotting the seven critical perceptions, the resulting perceptional maps provide insights into how inhabitants perceive their living environment within each city."
   },
   {
-    "objectID": "projects/index.html#the-history-of-the-war-of-the-ring",
-    "href": "projects/index.html#the-history-of-the-war-of-the-ring",
-    "title": "Projects",
-    "section": "The History of the War of the Ring",
-    "text": "The History of the War of the Ring\n\narXiv Preprint | Code\nI am creating a comprehensive and detailed history of the conflict that goes beyond the surface-level events. By gathering information from a variety of sources, including my own memories, written accounts, and oral histories, I hope to shed new light on this important period in Middle-earth’s history and provide valuable insights into the motivations and actions of the various players involved.\n\nView the tutorial for this template (+ download link)"
+    "objectID": "projects/index.html#cluster-detection-from-1-billion-lbsn-data",
+    "href": "projects/index.html#cluster-detection-from-1-billion-lbsn-data",
+    "title": "Liu Liu",
+    "section": "Cluster Detection from 1 Billion LBSN Data",
+    "text": "Cluster Detection from 1 Billion LBSN Data\n\narXiv Preprint | Code\nBoth figures show the average daily population flow distribution among more than 2,000 county-level units. The picture on the left is the average for workdays, and the picture on the right reflects the weekend situation. The former has a “diamond structure” dominated by the Beijing-Tianjin-Hebei, Yangtze River Delta, Pearl River Delta, Chengdu-Chongqing, and Mid-Delta metropolitan areas. The density of the latter reflects the strength of travel in various regions."
+  },
+  {
+    "objectID": "projects/index.html#streetalk-project",
+    "href": "projects/index.html#streetalk-project",
+    "title": "Liu Liu",
+    "section": "StreeTalk Project",
+    "text": "StreeTalk Project\n\narXiv Preprint | Code\nUsing the perceptional map as a foundation, along with additional geo information such as points of interest (POI) and mobility data, I developed a web application that enables tourists or night runners to select various pedestrian routes within the city. Furthermore, I leveraged the vast dataset of over 100,000,000 photos to calculate safety scores for the entire country. These scores were subsequently sold to Daimler Innovative Lab the following year, providing them with valuable insights and information for their initiatives."
   },
   {
     "objectID": "portfolio/index.html",
