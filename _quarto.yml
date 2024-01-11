@@ -23,21 +23,23 @@ website:
     
     # your social media handles
     right:
-      - icon: house
+      - text: "{{< iconify fa6-solid building-columns size=LARGE >}}"
         href: https://dusp.mit.edu/people/liu-liu
         aria-label: DUSP
-      - icon: book-fill
-        href: https://scholar.google.com/citations?user=D3PSmFsAAAAJ
-        aria-label: Scholar
-      - icon: linkedin
+
+      - text: "{{< iconify fa linkedin size=LARGE >}}"
         href: https://www.linkedin.com/in/liu-liu-08033547/
         aria-label: LinkedIn
-      - icon: github
+        
+      - text: "{{< iconify fa-brands github size=LARGE >}}"
         href: https://github.com/lyons66
         aria-label: GitHub
-      # - icon: envelope-fill
-      #   aria-label: email
-      #   href: "mailto:mail.lyons66@mit.edu"
+        
+      - text: "{{< iconify fa6-brands x-twitter size=LARGE >}}"
+        href: https://twitter.com/liuliu_lyons66
+        aria-label: X
+        
+# To find the icons: https://icon-sets.iconify.design/ant-design/zhihu-circle-filled/
   
 # Don't touch unless you know what you are doing :) ------------
   search: 
@@ -45,11 +47,11 @@ website:
     type: overlay
   page-footer: 
     left: |
-      <span class="container"><strong>Made with [Posit Quarto](https://quarto.org/){target="_blank"}</strong></span>
-    center: |
-      <span class="container"><strong>[Contact Liu Liu](mailto:mail.lyons66@mit.edu){target="_blank"}</strong></span>
+      <span class="container"><strong>Made with [Quarto](https://quarto.org/){target="_blank"}</strong></span>
     right: |
-      <span class="container"><strong>[CV & Resume](https://www.dropbox.com/scl/fo/ghrtsq5to79059lximk01/h?rlkey=cev0uzwgvu4jkus9eo6kkbgn7&dl=0){target="_blank"}</strong></span>
+      <span class="container"><strong>[Contact Liu Liu](mailto:mail.lyons66@mit.edu){target="_blank"}</strong></span>
+#    right: |
+#      <span class="container"><strong>[CV & Resume](https://www.dropbox.com/scl/fo/ghrtsq5to79059lximk01/h?rlkey=cev0uzwgvu4jkus9eo6kkbgn7&dl=0){target="_blank"}</strong></span>
 
 project:
   type: website

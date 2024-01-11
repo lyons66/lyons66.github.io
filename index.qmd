@@ -6,18 +6,20 @@ about:
   image-width: 17em
   image-shape: round
   links:
-    - icon: book-fill
-      text: Scholar
+    - text: "{{< iconify academicons google-scholar-square size=large >}} Google Scholar"
       href: https://scholar.google.com/citations?user=D3PSmFsAAAAJ
-    - icon: linkedin
-      text: LinkedIn
+    
+    - text: "{{< iconify mdi linkedin size=large >}} LinkedIn"
       href: https://www.linkedin.com/in/liu-liu-08033547/
-    - icon: github
-      text: Github
-      href: https://github.com/lyons66
-    - icon: envelope-fill
-      text: Email
-      href: "mailto:lyons66@mit.edu"  
+      
+    - text: "{{< iconify mdi resume size=large >}} CV & Résumé"
+      href: https://www.dropbox.com/scl/fo/ghrtsq5to79059lximk01/h?rlkey=cev0uzwgvu4jkus9eo6kkbgn7&dl=0
+      
+    - text: "{{< iconify ant-design zhihu-square-filled size=large >}} Zhihu (知乎)"
+      href: "https://www.zhihu.com/people/liu-liu-69-84-88"
+
+    - text: "{{< iconify fa-brands github-square size=large >}} Github Repo"
+      href: https://github.com/lyons66/lyons66.github.io
 ---
 
 I am a Ph.D. candidate at [MIT](https://dusp.mit.edu/people/liu-liu) studying Computational Urban Science, and working at [City Form Lab](https://cityform.mit.edu/). Being a scientist with eight years of entrepreneurship in data-driven urban analytics and six years of design training, I focused on the built environment and human behavior analysis by adopting computer vision. 
