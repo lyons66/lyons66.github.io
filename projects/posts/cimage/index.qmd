@@ -1,0 +1,17 @@
+---
+title: "C-IMAGE Project"
+date: "May 2014"
+author: Liu Liu @ MIT 
+categories: [computer vision, city image, visualization]
+image: "cimage_cover.jpg"
+---
+
+<img src="cimage_cover.jpg" style="height: 400px; width: 100%; object-fit: cover;">
+
+This project originated from my thesis, which involved the collection of millions of photos from 26 cities. The objective was to utilize deep learning techniques to conduct scene recognition on these images. By categorizing the data and plotting the seven critical perceptions, the resulting perceptional maps provide insights into how inhabitants perceive their living environment within each city.
+
+<!-- ## C-IMAGE Project -->
+
+<!-- <img src="img/cimage_cover.jpg" style="height: 300px; width: 100%; object-fit: cover" onclick="window.open('https://arxiv.org/abs/2210.07278', 'blank');"/> -->
+
+<!-- <a href="https://arxiv.org/abs/2210.07278" target="_blank">arXiv Preprint</a> | <a href="https://github.com/marvinschmitt/MetaUncertaintyPaper" target="_blank">Code</a><br> -->

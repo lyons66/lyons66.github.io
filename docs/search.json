@@ -1,10 +1,108 @@
 [
   {
-    "objectID": "cv/index.html",
-    "href": "cv/index.html",
-    "title": "Curriculum vitae",
+    "objectID": "portfolio/index.html#control-vs-design-regulatory-detailed-planning-2010",
+    "href": "portfolio/index.html#control-vs-design-regulatory-detailed-planning-2010",
+    "title": "PORTFOLIO of DESIGN",
+    "section": "Control vs Design | Regulatory Detailed Planning (2010)",
+    "text": "Control vs Design | Regulatory Detailed Planning (2010)"
+  },
+  {
+    "objectID": "portfolio/index.html#skin-green-bud-2011",
+    "href": "portfolio/index.html#skin-green-bud-2011",
+    "title": "PORTFOLIO of DESIGN",
+    "section": "Skin | Green Bud (2011)",
+    "text": "Skin | Green Bud (2011)"
+  },
+  {
+    "objectID": "portfolio/index.html#joints-growing-structure-2008",
+    "href": "portfolio/index.html#joints-growing-structure-2008",
+    "title": "PORTFOLIO of DESIGN",
+    "section": "Joints | Growing Structure (2008)",
+    "text": "Joints | Growing Structure (2008)"
+  },
+  {
+    "objectID": "portfolio/index.html#uniformity-variety-budget-hotel-2008",
+    "href": "portfolio/index.html#uniformity-variety-budget-hotel-2008",
+    "title": "PORTFOLIO of DESIGN",
+    "section": "Uniformity & Variety | Budget Hotel (2008)",
+    "text": "Uniformity & Variety | Budget Hotel (2008)"
+  },
+  {
+    "objectID": "portfolio/index.html#cells-x-functions-commnunity-center-2009",
+    "href": "portfolio/index.html#cells-x-functions-commnunity-center-2009",
+    "title": "PORTFOLIO of DESIGN",
+    "section": "Cells x Functions | Commnunity Center (2009)",
+    "text": "Cells x Functions | Commnunity Center (2009)"
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "PROJECTS",
     "section": "",
-    "text": "Download current CV"
+    "text": "Road Assessment in Ulaanbaatar\n\n\n\ncomputer vision\n\n\nurban planning\n\n\ntools\n\n\n\n\n\n\n\nLiu Liu @ CitoryTech, World Bank\n\n\nOct 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAI-Aided Camera App\n\n\n\ncomputer vision\n\n\ntools\n\n\n\n\n\n\n\nLiu Liu @ CitoryTech\n\n\nMay 1, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRecognizing Central Activity Zones\n\n\n\nurban planning\n\n\npoi\n\n\n\n\n\n\n\nLiu Liu @ CAUPD\n\n\nJan 1, 2018\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCityEye WeChat mini APP\n\n\n\ncomputer vision\n\n\nsidewalk design\n\n\n\n\n\n\n\nLiu Liu @ CitoryTech\n\n\nJan 1, 2018\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRiver View Analysis\n\n\n\ncomputer vision\n\n\nlandscape design\n\n\n\n\n\n\n\nLiu Liu @ CAUPD\n\n\nMay 1, 2017\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStreeTalk Project\n\n\n\ncomputer vision\n\n\nsidewalk design\n\n\n\n\n\n\n\nLiu Liu @ CitoryTech\n\n\nOct 1, 2016\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCluster Detection from 1 Billion LBSN Data\n\n\n\nLBS\n\n\nurban planning\n\n\n\n\n\n\n\nLiu Liu @ Tencent, CAUPD\n\n\nMar 1, 2015\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nC-IMAGE Project\n\n\n\ncomputer vision\n\n\ncity image\n\n\nvisualization\n\n\n\n\n\n\n\nLiu Liu @ MIT\n\n\nMay 1, 2014\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/posts/huipai/index.html",
+    "href": "projects/posts/huipai/index.html",
+    "title": "AI-Aided Camera App",
+    "section": "",
+    "text": "This app integrates deep models to learn the operation and mode of photo shooting from the massive works of professional photographers and realizes the comprehensive scoring of the subject, composition, color, depth of field, exposure, and other angles of the picture. It can automatically extract the current scene’s geometric structure and professional characteristics and give improvement tips for composition. A live demo was recorded on 2020 Apr 30 in Shanghai with Huawei Mate 30."
+  },
+  {
+    "objectID": "projects/posts/streetalk/index.html",
+    "href": "projects/posts/streetalk/index.html",
+    "title": "StreeTalk Project",
+    "section": "",
+    "text": "Using the perceptional map as a foundation, along with additional geo information such as points of interest (POI) and mobility data, I developed a web application that enables tourists or night runners to select various pedestrian routes within the city. Furthermore, I leveraged the vast dataset of over 100,000,000 photos to calculate safety scores for the entire country. These scores were subsequently sold to Daimler Innovative Lab the following year, providing them with valuable insights and information for their initiatives."
+  },
+  {
+    "objectID": "projects/posts/cimage/index.html",
+    "href": "projects/posts/cimage/index.html",
+    "title": "C-IMAGE Project",
+    "section": "",
+    "text": "This project originated from my thesis, which involved the collection of millions of photos from 26 cities. The objective was to utilize deep learning techniques to conduct scene recognition on these images. By categorizing the data and plotting the seven critical perceptions, the resulting perceptional maps provide insights into how inhabitants perceive their living environment within each city."
+  },
+  {
+    "objectID": "projects/posts/caz/index.html",
+    "href": "projects/posts/caz/index.html",
+    "title": "Recognizing Central Activity Zones",
+    "section": "",
+    "text": "Utilizing the concept of entropy, the project aims to quantify the level of functional diversity within different areas of the city. By leveraging a dataset consisting of 300,000 points of interest (POI) from Dianping and office and residential POI data from Anjuke, the project assigns weights to these locations based on their respective scores. These scores indicate the areas with the highest spatial composition within the city. Typically, these dynamic places are considered the most vibrant and active within the urban landscape, reflecting a high degree of functional compounding."
+  },
+  {
+    "objectID": "papers/index.html",
+    "href": "papers/index.html",
+    "title": "RESEARCH PAPERS",
+    "section": "",
+    "text": "Below is a list of my research papers with links to download or view them. Click on the titles to access the papers.\n\n\nZhou, B., Liu, L., Oliva, A., & Torralba, A. “Recognizing city identity via attribute analysis of geo-tagged images” European conference on computer vision (pp. 519-534). Download\n\n\n\nLiu, L., Zhou, B., Zhao, J., & Ryan, B. D. “C-IMAGE: city cognitive mapping through geo-tagged photos” GeoJournal, 81(6), 817-861. View\n\n\n\nLong, Y., & Liu, L. “How green are the streets? An analysis for central areas of Chinese cities using Tencent Street View” PloS one, 12(2), e0171110. Download\n\n\n\nLiu L., Liu Z. “The Recognition of CAZ in Shanghai Based on Evaluated POI.” In: Shen Z., Li M. (eds) Big Data Support of Urban Planning and Management, Advances in Geographic Information Science. Springer, Cham. View\n\n\n\nZhang, F., Zhou, B., Liu, L., Liu, Y., Fung, H. H., Lin, H., & Ratti, C. “Measuring human perceptions of a large-scale urban region using machine learning” Landscape and Urban Planning. View\n\n\n\nLiu, L., Zhang, F., Zhou, B., Wang, Z., & Li, Y. “STREETALK: A NAVIGATION SYSTEM FOR PEDESTRIANS AND CYCLISTS” Landscape Architecture Frontiers. Download\n\n\n\nFang, W., Liu, L., & Zhou, J. “Assessing Physical Environment of TOD Communities around Metro Stations: Using Big Data and Machine Learning” Download\n\n\n\nCui, C., et al. “The spatial-temporal dynamics of daily intercity mobility in the Yangtze River Delta: An analysis using big data” Habitat International. View\n\n\n\nZhang, D., Yi, H., Chen, Y., Jiang, N., Shao, J., & Liu, L. “An urban infrastructure assessment system built on geo-tagged images and machine learning” Computational Urban Science. Download"
+  },
+  {
+    "objectID": "projects/posts/cityeye/index.html",
+    "href": "projects/posts/cityeye/index.html",
+    "title": "CityEye WeChat mini APP",
+    "section": "",
+    "text": "CityEye is a WeChat mini application specifically designed for group field trips. Currently, it caters to a user base of over 10,000 individuals, primarily consisting of design background students and planners. This innovative urban photo survey tool integrates various functionalities, including image collection, recognition, and data analysis. By combining these features, CityEye facilitates the efficient gathering of urban data, enabling users to analyze and interpret the collected images for their research or planning purposes."
+  },
+  {
+    "objectID": "projects/posts/road/index.html",
+    "href": "projects/posts/road/index.html",
+    "title": "Road Assessment in Ulaanbaatar",
+    "section": "",
+    "text": "The condition of transportation assets can be effectively observed through user-generated content (UGC) images. Analyzing geo-tagged images makes it possible to link the condition reflected in the images to specific geographic locations. This approach has been employed for various transportation assets such as catch basins, guardrails, manholes, road curbs, road markings, road signs, roadways, and sidewalks. By associating these images with corresponding road segments, a comprehensive understanding of the condition of these assets can be generated. This enables better asset management and maintenance strategies, ultimately contributing to safer and more efficient transportation systems."
+  },
+  {
+    "objectID": "projects/posts/lbsn/index.html",
+    "href": "projects/posts/lbsn/index.html",
+    "title": "Cluster Detection from 1 Billion LBSN Data",
+    "section": "",
+    "text": "Both figures show the average daily population flow distribution among more than 2,000 county-level units. The picture on the left is the average for workdays, and the picture on the right reflects the weekend situation. The former has a “diamond structure” dominated by the Beijing-Tianjin-Hebei, Yangtze River Delta, Pearl River Delta, Chengdu-Chongqing, and Mid-Delta metropolitan areas. The density of the latter reflects the strength of travel in various regions."
+  },
+  {
+    "objectID": "projects/posts/riverview/index.html",
+    "href": "projects/posts/riverview/index.html",
+    "title": "River View Analysis",
+    "section": "",
+    "text": "To preserve the natural landscapes along the Qiantang River, I analyzed a 200-kilometer stretch of riverbank videos. By carefully examining the footage, I calculated the visual proportions of seven distinct elements present throughout the entire shoreline. Subsequently, I developed a visualization platform that identifies and maps these elements along the riverbank. This platform is a valuable tool in safeguarding the natural beauty and ecological integrity of the Qiantang River, enabling effective management and conservation efforts."
   },
   {
     "objectID": "index.html",
@@ -14,45 +112,17 @@
     "text": "I am a Ph.D. candidate at MIT studying Computational Urban Science, and working at City Form Lab. Being a scientist with eight years of entrepreneurship in data-driven urban analytics and six years of design training, I focused on the built environment and human behavior analysis by adopting computer vision.\nBefore returning to MIT, I am the founder of CitoryTech Co LTD, a start-up in urban computation specializing in urban visual AI. Besides, I was an external expert for Tencent, a consultant for the World Bank, and an urban researcher at the China Academy of Urban Planning and Design.\nMy academic interests lie in the interdisciplinary fields of AI, machine learning, optimization, and urban design research."
   },
   {
-    "objectID": "papers/index.html",
-    "href": "papers/index.html",
-    "title": "Research Papers",
-    "section": "",
-    "text": "Below is a list of my research papers with links to download or view them. Click on the titles to access the papers.\n\n\nZhou, B., Liu, L., Oliva, A., & Torralba, A. “Recognizing city identity via attribute analysis of geo-tagged images” European conference on computer vision (pp. 519-534). Download\n\n\n\nLiu, L., Zhou, B., Zhao, J., & Ryan, B. D. “C-IMAGE: city cognitive mapping through geo-tagged photos” GeoJournal, 81(6), 817-861. View\n\n\n\nLong, Y., & Liu, L. “How green are the streets? An analysis for central areas of Chinese cities using Tencent Street View” PloS one, 12(2), e0171110. Download\n\n\n\nLiu L., Liu Z. “The Recognition of CAZ in Shanghai Based on Evaluated POI.” In: Shen Z., Li M. (eds) Big Data Support of Urban Planning and Management, Advances in Geographic Information Science. Springer, Cham. View\n\n\n\nZhang, F., Zhou, B., Liu, L., Liu, Y., Fung, H. H., Lin, H., & Ratti, C. “Measuring human perceptions of a large-scale urban region using machine learning” Landscape and Urban Planning. View\n\n\n\nLiu, L., Zhang, F., Zhou, B., Wang, Z., & Li, Y. “STREETALK: A NAVIGATION SYSTEM FOR PEDESTRIANS AND CYCLISTS” Landscape Architecture Frontiers. Download\n\n\n\nFang, W., Liu, L., & Zhou, J. “Assessing Physical Environment of TOD Communities around Metro Stations: Using Big Data and Machine Learning” Download\n\n\n\nCui, C., et al. “The spatial-temporal dynamics of daily intercity mobility in the Yangtze River Delta: An analysis using big data” Habitat International. View\n\n\n\nZhang, D., Yi, H., Chen, Y., Jiang, N., Shao, J., & Liu, L. “An urban infrastructure assessment system built on geo-tagged images and machine learning” Computational Urban Science. Download"
-  },
-  {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Liu Liu",
-    "section": "",
-    "text": "arXiv Preprint | Code\nThis project originated from my thesis, which involved the collection of millions of photos from 26 cities. The objective was to utilize deep learning techniques to conduct scene recognition on these images. By categorizing the data and plotting the seven critical perceptions, the resulting perceptional maps provide insights into how inhabitants perceive their living environment within each city."
-  },
-  {
-    "objectID": "projects/index.html#c-image-project",
-    "href": "projects/index.html#c-image-project",
-    "title": "Liu Liu",
-    "section": "",
-    "text": "arXiv Preprint | Code\nThis project originated from my thesis, which involved the collection of millions of photos from 26 cities. The objective was to utilize deep learning techniques to conduct scene recognition on these images. By categorizing the data and plotting the seven critical perceptions, the resulting perceptional maps provide insights into how inhabitants perceive their living environment within each city."
-  },
-  {
-    "objectID": "projects/index.html#cluster-detection-from-1-billion-lbsn-data",
-    "href": "projects/index.html#cluster-detection-from-1-billion-lbsn-data",
-    "title": "Liu Liu",
-    "section": "Cluster Detection from 1 Billion LBSN Data",
-    "text": "Cluster Detection from 1 Billion LBSN Data\n\narXiv Preprint | Code\nBoth figures show the average daily population flow distribution among more than 2,000 county-level units. The picture on the left is the average for workdays, and the picture on the right reflects the weekend situation. The former has a “diamond structure” dominated by the Beijing-Tianjin-Hebei, Yangtze River Delta, Pearl River Delta, Chengdu-Chongqing, and Mid-Delta metropolitan areas. The density of the latter reflects the strength of travel in various regions."
-  },
-  {
-    "objectID": "projects/index.html#streetalk-project",
-    "href": "projects/index.html#streetalk-project",
-    "title": "Liu Liu",
-    "section": "StreeTalk Project",
-    "text": "StreeTalk Project\n\narXiv Preprint | Code\nUsing the perceptional map as a foundation, along with additional geo information such as points of interest (POI) and mobility data, I developed a web application that enables tourists or night runners to select various pedestrian routes within the city. Furthermore, I leveraged the vast dataset of over 100,000,000 photos to calculate safety scores for the entire country. These scores were subsequently sold to Daimler Innovative Lab the following year, providing them with valuable insights and information for their initiatives."
+    "objectID": "portfolio/index.html#combination-city-redevelopment-2011",
+    "href": "portfolio/index.html#combination-city-redevelopment-2011",
+    "title": "PORTFOLIO of DESIGN",
+    "section": "Combination | City Redevelopment (2011)",
+    "text": "Combination | City Redevelopment (2011)"
   },
   {
     "objectID": "portfolio/index.html",
     "href": "portfolio/index.html",
-    "title": "Portfolio",
+    "title": "PORTFOLIO of DESIGN",
     "section": "",
-    "text": "As a wizard and scholar of Middle-earth, I have been studying the magic of the natural world for centuries. Through my self-portraits, I aim to capture the essence of my own being and reflect on my own journey through time. Each photograph is a reflection of my own experiences and emotions. Through my photography, I hope to offer a glimpse into my life as a scholar and adventurer, and inspire others to reflect on their own journeys through the world.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nView the tutorial for this template (+ download link)"
+    "text": "This column takes 2/3 of the page\n\nControl vs Design | Regulatory Detailed Planning (2010)"
   }
 ]

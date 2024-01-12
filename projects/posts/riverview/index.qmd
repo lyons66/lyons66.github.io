@@ -1,0 +1,11 @@
+---
+title: "River View Analysis"
+date: "May 2017"
+author: Liu Liu @ CAUPD
+categories: [computer vision, landscape design]
+image: "riverview_cover.jpg"
+---
+
+<img src="riverview_cover.jpg" style="height: 400px; width: 100%; object-fit: cover;">
+
+To preserve the natural landscapes along the Qiantang River, I analyzed a 200-kilometer stretch of riverbank videos. By carefully examining the footage, I calculated the visual proportions of seven distinct elements present throughout the entire shoreline. Subsequently, I developed a visualization platform that identifies and maps these elements along the riverbank. This platform is a valuable tool in safeguarding the natural beauty and ecological integrity of the Qiantang River, enabling effective management and conservation efforts.

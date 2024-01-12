@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Liu Liu – index</title>
+<title>Liu Liu - PROJECTS</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../img/favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -60,11 +62,49 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+<style>
+
+      .quarto-title-block .quarto-title-banner {
+        background-image: url(pop_sh.png);
+background-size: cover;
+      }
+</style>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -122,39 +162,332 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title">PROJECTS</h1>
+            <p class="subtitle lead">I have been engaged to a variety of projects, mostly are physical metrics and their impacts on bahaviors.</p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(8)</span></div><div class="category" data-category="LBS">LBS <span class="quarto-category-count">(1)</span></div><div class="category" data-category="city image">city image <span class="quarto-category-count">(1)</span></div><div class="category" data-category="computer vision">computer vision <span class="quarto-category-count">(6)</span></div><div class="category" data-category="landscape design">landscape design <span class="quarto-category-count">(1)</span></div><div class="category" data-category="poi">poi <span class="quarto-category-count">(1)</span></div><div class="category" data-category="sidewalk design">sidewalk design <span class="quarto-category-count">(2)</span></div><div class="category" data-category="tools">tools <span class="quarto-category-count">(2)</span></div><div class="category" data-category="urban planning">urban planning <span class="quarto-category-count">(3)</span></div><div class="category" data-category="visualization">visualization <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
 
-<section id="c-image-project" class="level2">
-<h2 class="anchored" data-anchor-id="c-image-project">C-IMAGE Project</h2>
-<p><img src="img/cimage_cover.jpg" style="height: 300px; width: 100%; object-fit: cover" onclick="window.open('https://arxiv.org/abs/2210.07278', 'blank');"></p>
-<p><a href="https://arxiv.org/abs/2210.07278" target="_blank">arXiv Preprint</a> | <a href="https://github.com/marvinschmitt/MetaUncertaintyPaper" target="_blank">Code</a><br></p>
-<p>This project originated from my thesis, which involved the collection of millions of photos from 26 cities. The objective was to utilize deep learning techniques to conduct scene recognition on these images. By categorizing the data and plotting the seven critical perceptions, the resulting perceptional maps provide insights into how inhabitants perceive their living environment within each city.</p>
-<hr>
-</section>
-<section id="cluster-detection-from-1-billion-lbsn-data" class="level2">
-<h2 class="anchored" data-anchor-id="cluster-detection-from-1-billion-lbsn-data">Cluster Detection from 1 Billion LBSN Data</h2>
-<p><img src="img/lbsn_cover.jpg" style="height: 300px; width: 100%; object-fit: cover" onclick="window.open('https://arxiv.org/abs/2210.07278', 'blank');"></p>
-<p><a href="https://arxiv.org/abs/2210.07278" target="_blank">arXiv Preprint</a> | <a href="https://github.com/marvinschmitt/MetaUncertaintyPaper" target="_blank">Code</a><br></p>
-<p>Both figures show the average daily population flow distribution among more than 2,000 county-level units. The picture on the left is the average for workdays, and the picture on the right reflects the weekend situation. The former has a “diamond structure” dominated by the Beijing-Tianjin-Hebei, Yangtze River Delta, Pearl River Delta, Chengdu-Chongqing, and Mid-Delta metropolitan areas. The density of the latter reflects the strength of travel in various regions.</p>
-<hr>
-</section>
-<section id="streetalk-project" class="level2">
-<h2 class="anchored" data-anchor-id="streetalk-project">StreeTalk Project</h2>
-<p><img src="img/streetalk_cover.jpg" style="height: 300px; width: 100%; object-fit: cover" onclick="window.open('https://arxiv.org/abs/2210.07278', 'blank');"></p>
-<p><a href="https://arxiv.org/abs/2210.07278" target="_blank">arXiv Preprint</a> | <a href="https://github.com/marvinschmitt/MetaUncertaintyPaper" target="_blank">Code</a><br></p>
-<p>Using the perceptional map as a foundation, along with additional geo information such as points of interest (POI) and mobility data, I developed a web application that enables tourists or night runners to select various pedestrian routes within the city. Furthermore, I leveraged the vast dataset of over 100,000,000 photos to calculate safety scores for the entire country. These scores were subsequently sold to Daimler Innovative Lab the following year, providing them with valuable insights and information for their initiatives.</p>
+
+<style>
+.card {
+  border-color: #aaaaaa;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  border-color: #000000;
+  border-width: thin;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.quarto-title-banner {
+  background-position: 50% 40%;
+  height: 200px;
+}
+</style>
 
 
-</section>
 
-</main> <!-- /main -->
+
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="computer vision,urban planning,tools" data-listing-date-sort="1633060800000" data-listing-file-modified-sort="1705009924164" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="../projects/posts/road/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../projects/posts/road/road_cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Road Assessment in Ulaanbaatar
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('computer vision'); return false;">
+computer vision
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('urban planning'); return false;">
+urban planning
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('tools'); return false;">
+tools
+</div>
+</div>
+<div class="card-text listing-description">
+The condition of transportation assets can be effectively observed through user-generated content (UGC) images. Analyzing geo-tagged images makes it…
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Liu Liu @ CitoryTech, World Bank
+</div>
+<div class="listing-date">
+Oct 1, 2021
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="computer vision,tools" data-listing-date-sort="1588305600000" data-listing-file-modified-sort="1705009630161" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="../projects/posts/huipai/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../projects/posts/huipai/huipai_cover.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+AI-Aided Camera App
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('computer vision'); return false;">
+computer vision
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('tools'); return false;">
+tools
+</div>
+</div>
+<div class="card-text listing-description">
+This app integrates deep models to learn the operation and mode of photo shooting from the massive works of professional photographers and realizes…
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Liu Liu @ CitoryTech
+</div>
+<div class="listing-date">
+May 1, 2020
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="urban planning,poi" data-listing-date-sort="1514782800000" data-listing-file-modified-sort="1705010286350" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="../projects/posts/caz/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../projects/posts/caz/caz_cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Recognizing Central Activity Zones
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('urban planning'); return false;">
+urban planning
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('poi'); return false;">
+poi
+</div>
+</div>
+<div class="card-text listing-description">
+Utilizing the concept of entropy, the project aims to quantify the level of functional diversity within different areas of the city. By leveraging a…
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Liu Liu @ CAUPD
+</div>
+<div class="listing-date">
+Jan 1, 2018
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="computer vision,sidewalk design" data-listing-date-sort="1514782800000" data-listing-file-modified-sort="1705010283027" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="../projects/posts/cityeye/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../projects/posts/cityeye/cityeye_cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+CityEye WeChat mini APP
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('computer vision'); return false;">
+computer vision
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('sidewalk design'); return false;">
+sidewalk design
+</div>
+</div>
+<div class="card-text listing-description">
+CityEye is a WeChat mini application specifically designed for group field trips. Currently, it caters to a user base of over 10,000 individuals…
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Liu Liu @ CitoryTech
+</div>
+<div class="listing-date">
+Jan 1, 2018
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="computer vision,landscape design" data-listing-date-sort="1493611200000" data-listing-file-modified-sort="1705010215779" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="../projects/posts/riverview/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../projects/posts/riverview/riverview_cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+River View Analysis
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('computer vision'); return false;">
+computer vision
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('landscape design'); return false;">
+landscape design
+</div>
+</div>
+<div class="card-text listing-description">
+To preserve the natural landscapes along the Qiantang River, I analyzed a 200-kilometer stretch of riverbank videos. By carefully examining the…
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Liu Liu @ CAUPD
+</div>
+<div class="listing-date">
+May 1, 2017
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="computer vision,sidewalk design" data-listing-date-sort="1475294400000" data-listing-file-modified-sort="1705009773144" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="../projects/posts/streetalk/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../projects/posts/streetalk/streetalk_cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+StreeTalk Project
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('computer vision'); return false;">
+computer vision
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('sidewalk design'); return false;">
+sidewalk design
+</div>
+</div>
+<div class="card-text listing-description">
+Using the perceptional map as a foundation, along with additional geo information such as points of interest (POI) and mobility data, I developed a…
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Liu Liu @ CitoryTech
+</div>
+<div class="listing-date">
+Oct 1, 2016
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="6" data-categories="LBS,urban planning" data-listing-date-sort="1425186000000" data-listing-file-modified-sort="1705012006782" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="../projects/posts/lbsn/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../projects/posts/lbsn/lbsn_cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Cluster Detection from 1 Billion LBSN Data
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('LBS'); return false;">
+LBS
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('urban planning'); return false;">
+urban planning
+</div>
+</div>
+<div class="card-text listing-description">
+Both figures show the average daily population flow distribution among more than 2,000 county-level units. The picture on the left is the average…
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Liu Liu @ Tencent, CAUPD
+</div>
+<div class="listing-date">
+Mar 1, 2015
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="7" data-categories="computer vision,city image,visualization" data-listing-date-sort="1398916800000" data-listing-file-modified-sort="1705009511097" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="../projects/posts/cimage/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../projects/posts/cimage/cimage_cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+C-IMAGE Project
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('computer vision'); return false;">
+computer vision
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('city image'); return false;">
+city image
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('visualization'); return false;">
+visualization
+</div>
+</div>
+<div class="card-text listing-description">
+This project originated from my thesis, which involved the collection of millions of photos from 26 cities. The objective was to utilize deep…
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Liu Liu @ MIT
+</div>
+<div class="listing-date">
+May 1, 2014
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

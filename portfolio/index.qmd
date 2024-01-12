@@ -1,24 +1,102 @@
 ---
-title: "Portfolio"
+title: "PORTFOLIO of DESIGN"
+subtitle: "Here is an archive of my portfolio during architectural study (2008-2011)."
+page-layout: full
+# title-block-banner: true
+title-block-banner: "pop_sh.png"
+editor: 
+  markdown: 
+    wrap: 72
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-float:
+      collapsed: false
+      smooth-scroll: true
+      sticky: true
 ---
+```{=html}
+<style>
+.quarto-title-banner {
+  background-position: 50% 40%;
+  height: 200px;
+}
+</style>
+```
 
-As a wizard and scholar of Middle-earth, I have been studying the magic of the natural world for centuries. Through my self-portraits, I aim to capture the essence of my own being and reflect on my own journey through time. Each photograph is a reflection of my own experiences and emotions. Through my photography, I hope to offer a glimpse into my life as a scholar and adventurer, and inspire others to reflect on their own journeys through the world.
 
-::: {layout-ncol=2}
+## Combination \| City Redevelopment (2011)
 
-![](gandalf_image_1.jpg)
+::: {layout-ncol="1"}
+<img src="portfolio_design_Page_01.jpg" style="width: 100%; border: 1px solid #444444;"/>
 
-![](gandalf_image_2.jpg)
+<img src="portfolio_design_Page_02.jpg" style="width: 100%; border: 1px solid black;"/>
 
-![](gandalf_image_3.jpg)
+<img src="portfolio_design_Page_03.jpg" style="width: 100%; border: 1px solid black;"/>
 
-![](gandalf_image_4.jpg)
+<img src="portfolio_design_Page_04.jpg" style="width: 100%; border: 1px solid black;"/>
 
+<img src="portfolio_design_Page_05.jpg" style="width: 100%; border: 1px solid black;"/>
+
+<img src="portfolio_design_Page_06.jpg" style="width: 100%; border: 1px solid black;"/>
+
+<img src="portfolio_design_Page_07.jpg" style="width: 100%; border: 1px solid black;"/>
+:::
+
+## Control vs Design \| Regulatory Detailed Planning (2010)
+
+::: {layout-ncol="1"}
+<img src="portfolio_design_Page_08.jpg" style="width: 100%; border: 1px solid black;"/>
+
+<img src="portfolio_design_Page_09.jpg" style="width: 100%; border: 1px solid black;"/>
+
+<img src="portfolio_design_Page_10.jpg" style="width: 100%; border: 1px solid black;"/>
+
+<img src="portfolio_design_Page_11.jpg" style="width: 100%; border: 1px solid black;"/>
+
+<img src="portfolio_design_Page_12.jpg" style="width: 100%; border: 1px solid black;"/>
+
+<img src="portfolio_design_Page_13.jpg" style="width: 100%; border: 1px solid black;"/>
+:::
+
+## Skin \| Green Bud (2011)
+
+::: {layout-ncol="1"}
+<img src="portfolio_design_Page_14.jpg" style="width: 100%; border: 1px solid black;"/>
+
+<img src="portfolio_design_Page_15.jpg" style="width: 100%; border: 1px solid black;"/>
+
+<img src="portfolio_design_Page_16.jpg" style="width: 100%; border: 1px solid black;"/>
+:::
+
+## Joints \| Growing Structure (2008)
+
+::: {layout-ncol="1"}
+<img src="portfolio_design_Page_17.jpg" style="width: 100%; border: 1px solid black;"/>
+
+<img src="portfolio_design_Page_18.jpg" style="width: 100%; border: 1px solid black;"/>
+:::
+
+## Uniformity & Variety \| Budget Hotel (2008)
+
+::: {layout-ncol="1"}
+<img src="portfolio_design_Page_19.jpg" style="width: 100%; border: 1px solid black;"/>
+
+<img src="portfolio_design_Page_20.jpg" style="width: 100%; border: 1px solid black;"/>
+
+<img src="portfolio_design_Page_21.jpg" style="width: 100%; border: 1px solid black;"/>
+:::
+
+## Cells x Functions \| Commnunity Center (2009)
+
+::: {layout-ncol="1"}
+<img src="portfolio_design_Page_22.jpg" style="width: 100%; border: 1px solid black;"/>
+
+<img src="portfolio_design_Page_23.jpg" style="width: 100%; border: 1px solid black;"/>
+
+<img src="portfolio_design_Page_24.jpg" style="width: 100%; border: 1px solid black;"/>
 :::
 
 
-```{=html}
-<div  style="margin: 30px; text-align: center;">
-<a class="btn btn-primary" href="https://www.marvinschmitt.com/blog/website-tutorial-quarto/" role="button" target="_blank" style="padding: 15px 30px;">View the tutorial for this template (+ download link)</a>
-</div>
-```
+<!-- <div id="toc-container"></div> <!-- Placeholder for TOC -->

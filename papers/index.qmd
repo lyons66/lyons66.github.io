@@ -1,6 +1,18 @@
 ---
-title: "Research Papers"
+title: "RESEARCH PAPERS"
+subtitle: "For a more updated version, please visit my Google Scholar in the front page."
+page-layout: full
+title-block-banner: "pop_sh.png"
 ---
+
+```{=html}
+<style>
+.quarto-title-banner {
+  background-position: 50% 40%;
+  height: 200px;
+}
+</style>
+```
 
 Below is a list of my research papers with links to download or view them. Click on the titles to access the papers.
 
