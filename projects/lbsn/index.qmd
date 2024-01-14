@@ -1,5 +1,6 @@
 ---
-title: "Cluster Detection from 1 Billion LBSN Data"
+title: "1 Billion LBSN Data"
+subtitle: "Detecting city clusters in China based on mobile data"
 date: "March 2015"
 date-format: "MMM, YYYY"
 # author: Liu Liu @ MIT
