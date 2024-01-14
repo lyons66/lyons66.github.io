@@ -1,0 +1,112 @@
+---
+title: "C-IMAGE Project"
+date: "May 2014"
+date-format: "MMM, YYYY"
+# author: Liu Liu @ MIT
+author-title: "Main Researchers"
+author:
+  - name: Liu Liu
+    orcid: 0000-0003-0100-9763
+#     email: lyons66@mit.edu
+    # affiliations:
+    #   - name: Massachusetts Institute of Technology
+#       - url: https://www.mit.edu/
+  - name: Bolei Zhou
+    # affiliations:
+    #   - name: test
+# affiliation-title: "AFFILIATION"
+
+categories: [computer vision, city image, visualization]
+image: "cimage_cover.jpg"
+title-block-banner: "cimage_boston.jpg"
+page-layout: full
+
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-float:
+      collapsed: false
+      smooth-scroll: true
+      sticky: true
+    # number-sections: true
+---
+
+```{=html}
+<style>
+.quarto-title-banner {
+  background-position: 50% 50%;
+  height: 200px;
+}
+
+
+#title-block-header.quarto-title-block.default .quarto-title-meta {
+    display: grid;
+    grid-column: page-start/body-content-end;
+}
+
+#quarto-document-content {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#quarto-margin-sidebar {
+  padding-top: 0;
+}
+
+</style>
+```
+
+::: {.callout-tip}
+## PROJECT BRIEF
+
+This project originated from my thesis, which involved the collection of millions of photos from 26 cities. The objective was to utilize deep learning techniques to conduct scene recognition on these images. By categorizing the data and plotting the seven critical perceptions, the resulting perceptional maps provide 
+insights into how inhabitants perceive their living environment within each city.
+
+- [Liu, L., Zhou, B., Zhao, J., & Ryan, B. D. “C-IMAGE: city cognitive mapping through geo-tagged photos” GeoJournal, 81(6), 817-861.](https://link.springer.com/article/10.1007/s10708-016-9739-6)
+
+- [Zhou, B., Liu, L., Oliva, A., & Torralba, A. “Recognizing city identity via attribute analysis of geo-tagged images” European conference on computer vision (pp. 519-534).](https://link.springer.com/content/pdf/10.1007/978-3-319-10578-9_34.pdf)
+
+:::
+
+
+# The Idea
+---
+
+Half a century ago, Kevin Lynch’s City Image project provided a collaborative depiction of the “perceived city” by gathering input from the public through a method called “mental mapping.” Now, with the power of computer vision and the ability to leverage crowd-sourced geo-tagged photos, we can explore whether we can detect people’s sentiments towards their physical living environment. By analyzing these images using computer vision algorithms, we aim to gain insights into how individuals feel about their surroundings and further enhance our understanding of urban landscapes.
+
+<img src="cimage_cover.jpg" style="width: 100%">
+
+# Data Processing
+---
+
+The download of the Panoramio geo-tagged images are through Pranoramio data API and Flickr API. 
+
+<img src="cimage1.jpg" style="width: 100%">
+
+# Scene Classification
+---
+
+The images are classified based on [Places 365](http://places.csail.mit.edu/). For this study, I selected Panoramio and, subsequently, Flickr as the primary sources for data collection. Approximately 30 million photographs were gathered by the completion of the project. The geographical spread of these photos offers a unique perspective, allowing for a comparison with the urban image as conceptualized by Kevin Lynch, which was derived from a multitude of cognitive maps.
+
+<img src="cimage2.jpg" style="width: 100%">
+
+# Mapping the Perceptions
+---
+
+After being processed through scene recognition, currently called Places365, the photos were categorized into 102 attributes. I subsequently conducted a reclassification, streamlining the images to form a generalized portrayal of the city's public image. This led to retaining only those scenes that are associated with public spaces.
+
+By retaining only seven critical perceptions and plotting them on city maps, we can observe varying city patterns that truly reflect what the inhabitants "see.” This approach allows for fascinating discoveries that can be evaluated qualitatively and quantitatively. For instance, a comparison can be made between the perception of green spaces in Shanghai and Tokyo.
+
+<img src="cimage3.jpg" style="width: 100%">
+
+# Other Cases
+---
+
+This method is highly replicable and has been employed in various real-world projects following a relatively fixed procedure. Additionally, the critical perceptions can be broken down into more specific categories. For instance, I divided the green perception into seven sub-elements, which led to discoveries.
+
+<img src="cimage4.jpg" style="width: 100%">
+
+# Demo (Shenzhen)
+
+{{< video https://www.youtube.com/embed/5u-fNXwi7AY >}}

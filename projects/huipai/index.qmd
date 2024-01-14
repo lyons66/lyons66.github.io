@@ -1,0 +1,12 @@
+---
+title: "AI-Aided Camera App"
+date: "May 2020"
+date-format: "MMM, YYYY"
+author: Liu Liu @ CitoryTech
+categories: [computer vision, tools]
+image: "huipai_cover.png"
+---
+
+<img src="huipai_cover.png" style="height: 400px; width: 100%; object-fit: cover;">
+
+This app integrates deep models to learn the operation and mode of photo shooting from the massive works of professional photographers and realizes the comprehensive scoring of the subject, composition, color, depth of field, exposure, and other angles of the picture. It can automatically extract the current scene's geometric structure and professional characteristics and give improvement tips for composition. A live demo was recorded on 2020 Apr 30 in Shanghai with Huawei Mate 30.

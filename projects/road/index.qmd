@@ -1,0 +1,12 @@
+---
+title: "Road Assessment in Ulaanbaatar"
+date: "Oct 2021"
+date-format: "MMM, YYYY"
+author: Liu Liu @ CitoryTech, World Bank
+categories: [computer vision, urban planning, tools]
+image: "road_cover.jpg"
+---
+
+<img src="road_cover.jpg" style="height: 400px; width: 100%; object-fit: cover;">
+
+The condition of transportation assets can be effectively observed through user-generated content (UGC) images. Analyzing geo-tagged images makes it possible to link the condition reflected in the images to specific geographic locations. This approach has been employed for various transportation assets such as catch basins, guardrails, manholes, road curbs, road markings, road signs, roadways, and sidewalks. By associating these images with corresponding road segments, a comprehensive understanding of the condition of these assets can be generated. This enables better asset management and maintenance strategies, ultimately contributing to safer and more efficient transportation systems.

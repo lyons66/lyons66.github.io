@@ -1,0 +1,12 @@
+---
+title: "Recognizing Central Activity Zones"
+date: "Jan 2018"
+date-format: "MMM, YYYY"
+author: Liu Liu @ CAUPD
+categories: [urban planning, poi]
+image: "caz_cover.jpg"
+---
+
+<img src="caz_cover.jpg" style="height: 400px; width: 100%; object-fit: cover;">
+
+Utilizing the concept of entropy, the project aims to quantify the level of functional diversity within different areas of the city. By leveraging a dataset consisting of 300,000 points of interest (POI) from Dianping and office and residential POI data from Anjuke, the project assigns weights to these locations based on their respective scores. These scores indicate the areas with the highest spatial composition within the city. Typically, these dynamic places are considered the most vibrant and active within the urban landscape, reflecting a high degree of functional compounding.

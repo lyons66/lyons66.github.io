@@ -2,17 +2,18 @@
 title: "PROJECTS"
 subtitle: "I have been engaged to a variety of projects, mostly are physical metrics and their impacts on bahaviors."
 listing:
-  contents: posts
+  contents: ./
   sort: "date desc"
+  date-format: "MMM, YYYY"
   type: grid
   categories: true
-  sort-ui: false
-  filter-ui: false
+  sort-ui: true
+  filter-ui: true
   max-description-length: 150
   grid-columns: 3
 page-layout: full
 # title-block-banner: true
-title-block-banner: "pop_sh.png"
+title-block-banner: "img/pop_sh.png"
 ---
 
 <style>

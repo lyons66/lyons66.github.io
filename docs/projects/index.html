@@ -94,7 +94,7 @@ ul.task-list li input[type="checkbox"] {
 <style>
 
       .quarto-title-block .quarto-title-banner {
-        background-image: url(pop_sh.png);
+        background-image: url(img/pop_sh.png);
 background-size: cover;
       }
 </style>
@@ -212,12 +212,37 @@ background-size: cover;
 
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-title" data-direction="asc">
+          Title
+        </option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+         <option value="listing-author" data-direction="asc">
+          Author
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="computer vision,urban planning,tools" data-listing-date-sort="1633060800000" data-listing-file-modified-sort="1705009924164" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="../projects/posts/road/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="0" data-categories="computer vision,urban planning,tools" data-listing-date-sort="1633060800000" data-listing-file-modified-sort="1705254343397" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="../projects/road/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img src="../projects/posts/road/road_cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img src="../projects/road/road_cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -242,18 +267,18 @@ The condition of transportation assets can be effectively observed through user-
 Liu Liu @ CitoryTech, World Bank
 </div>
 <div class="listing-date">
-Oct 1, 2021
+Oct, 2021
 </div>
 </div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="computer vision,tools" data-listing-date-sort="1588305600000" data-listing-file-modified-sort="1705009630161" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="../projects/posts/huipai/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="1" data-categories="computer vision,tools" data-listing-date-sort="1588305600000" data-listing-file-modified-sort="1705254312283" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="../projects/huipai/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img src="../projects/posts/huipai/huipai_cover.png" class="thumbnail-image card-img" style="height: 150px;">
+<img src="../projects/huipai/huipai_cover.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -275,18 +300,18 @@ This app integrates deep models to learn the operation and mode of photo shootin
 Liu Liu @ CitoryTech
 </div>
 <div class="listing-date">
-May 1, 2020
+May, 2020
 </div>
 </div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="urban planning,poi" data-listing-date-sort="1514782800000" data-listing-file-modified-sort="1705010286350" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="../projects/posts/caz/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="2" data-categories="urban planning,poi" data-listing-date-sort="1514782800000" data-listing-file-modified-sort="1705254321415" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="../projects/caz/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img src="../projects/posts/caz/caz_cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img src="../projects/caz/caz_cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -308,18 +333,18 @@ Utilizing the concept of entropy, the project aims to quantify the level of func
 Liu Liu @ CAUPD
 </div>
 <div class="listing-date">
-Jan 1, 2018
+Jan, 2018
 </div>
 </div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="computer vision,sidewalk design" data-listing-date-sort="1514782800000" data-listing-file-modified-sort="1705010283027" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="../projects/posts/cityeye/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="3" data-categories="computer vision,sidewalk design" data-listing-date-sort="1514782800000" data-listing-file-modified-sort="1705254305844" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="../projects/cityeye/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img src="../projects/posts/cityeye/cityeye_cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img src="../projects/cityeye/cityeye_cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -341,18 +366,18 @@ CityEye is a WeChat mini application specifically designed for group field trips
 Liu Liu @ CitoryTech
 </div>
 <div class="listing-date">
-Jan 1, 2018
+Jan, 2018
 </div>
 </div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="computer vision,landscape design" data-listing-date-sort="1493611200000" data-listing-file-modified-sort="1705010215779" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="../projects/posts/riverview/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="4" data-categories="computer vision,landscape design" data-listing-date-sort="1493611200000" data-listing-file-modified-sort="1705254336922" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="../projects/riverview/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img src="../projects/posts/riverview/riverview_cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img src="../projects/riverview/riverview_cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -374,18 +399,18 @@ To preserve the natural landscapes along the Qiantang River, I analyzed a 200-ki
 Liu Liu @ CAUPD
 </div>
 <div class="listing-date">
-May 1, 2017
+May, 2017
 </div>
 </div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="computer vision,sidewalk design" data-listing-date-sort="1475294400000" data-listing-file-modified-sort="1705009773144" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="../projects/posts/streetalk/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="5" data-categories="computer vision,sidewalk design" data-listing-date-sort="1475294400000" data-listing-file-modified-sort="1705254350889" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="../projects/streetalk/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img src="../projects/posts/streetalk/streetalk_cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img src="../projects/streetalk/streetalk_cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -407,18 +432,18 @@ Using the perceptional map as a foundation, along with additional geo informatio
 Liu Liu @ CitoryTech
 </div>
 <div class="listing-date">
-Oct 1, 2016
+Oct, 2016
 </div>
 </div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="LBS,urban planning" data-listing-date-sort="1425186000000" data-listing-file-modified-sort="1705012006782" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="../projects/posts/lbsn/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="6" data-categories="LBS,urban planning" data-listing-date-sort="1425186000000" data-listing-file-modified-sort="1705260949191" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
+<a href="../projects/lbsn/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img src="../projects/posts/lbsn/lbsn_cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img src="../projects/lbsn/lbsn_cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -437,21 +462,21 @@ Both figures show the average daily population flow distribution among more than
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
-Liu Liu @ Tencent, CAUPD
+Liu Liu, Di An
 </div>
 <div class="listing-date">
-Mar 1, 2015
+Mar, 2015
 </div>
 </div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="7" data-categories="computer vision,city image,visualization" data-listing-date-sort="1398916800000" data-listing-file-modified-sort="1705009511097" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="../projects/posts/cimage/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="7" data-categories="computer vision,city image,visualization" data-listing-date-sort="1398916800000" data-listing-file-modified-sort="1705259231674" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<a href="../projects/cimage/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img src="../projects/posts/cimage/cimage_cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img src="../projects/cimage/cimage_cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -473,10 +498,10 @@ This project originated from my thesis, which involved the collection of million
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
-Liu Liu @ MIT
+Liu Liu, Bolei Zhou
 </div>
 <div class="listing-date">
-May 1, 2014
+May, 2014
 </div>
 </div>
 </div>

@@ -1,0 +1,12 @@
+---
+title: "CityEye WeChat mini APP"
+date: "Jan 2018"
+date-format: "MMM, YYYY"
+author: Liu Liu @ CitoryTech 
+categories: [computer vision, sidewalk design]
+image: "cityeye_cover.jpg"
+---
+
+<img src="cityeye_cover.jpg" style="height: 400px; width: 100%; object-fit: cover;">
+
+CityEye is a WeChat mini application specifically designed for group field trips. Currently, it caters to a user base of over 10,000 individuals, primarily consisting of design background students and planners. This innovative urban photo survey tool integrates various functionalities, including image collection, recognition, and data analysis. By combining these features, CityEye facilitates the efficient gathering of urban data, enabling users to analyze and interpret the collected images for their research or planning purposes.

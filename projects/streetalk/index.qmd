@@ -1,0 +1,12 @@
+---
+title: "StreeTalk Project"
+date: "Oct 2016"
+date-format: "MMM, YYYY"
+author: Liu Liu @ CitoryTech 
+categories: [computer vision, sidewalk design]
+image: "streetalk_cover.jpg"
+---
+
+<img src="streetalk_cover.jpg" style="height: 400px; width: 100%; object-fit: cover;">
+
+Using the perceptional map as a foundation, along with additional geo information such as points of interest (POI) and mobility data, I developed a web application that enables tourists or night runners to select various pedestrian routes within the city. Furthermore, I leveraged the vast dataset of over 100,000,000 photos to calculate safety scores for the entire country. These scores were subsequently sold to Daimler Innovative Lab the following year, providing them with valuable insights and information for their initiatives.
