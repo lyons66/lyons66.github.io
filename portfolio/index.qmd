@@ -3,7 +3,7 @@ title: "PORTFOLIO of DESIGN"
 subtitle: "Here is an archive of my portfolio during architectural study (2008-2011)."
 page-layout: full
 # title-block-banner: true
-title-block-banner: "pop_sh.png"
+title-block-banner: "portfolio_cover.png"
 editor: 
   markdown: 
     wrap: 72

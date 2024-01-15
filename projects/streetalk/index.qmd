@@ -1,12 +1,127 @@
 ---
 title: "StreeTalk Project"
+subtitle: "Measuring street perceptional scores"
 date: "Oct 2016"
 date-format: "MMM, YYYY"
-author: Liu Liu @ CitoryTech 
+# author: Liu Liu @ MIT
+author-title: "Main Researchers"
+author:
+  - name: Liu Liu
+    orcid: 0000-0003-0100-9763
+#     email: lyons66@mit.edu
+    # affiliations:
+    #   - name: Massachusetts Institute of Technology
+#       - url: https://www.mit.edu/
+  - name: Bolei Zhou
+  - name: Fan Zhang
+    # affiliations:
+    #   - name: test
+# affiliation-title: "AFFILIATION"
+
 categories: [computer vision, sidewalk design]
 image: "streetalk_cover.jpg"
+title-block-banner: "streetalk_cover.png"
+page-layout: full
+
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-float:
+      collapsed: false
+      smooth-scroll: true
+      sticky: true
+    # number-sections: true
 ---
 
-<img src="streetalk_cover.jpg" style="height: 400px; width: 100%; object-fit: cover;">
+```{=html}
+<style>
+.quarto-title-banner {
+  background-position: 50% 50%;
+  height: 200px;
+}
+
+
+#title-block-header.quarto-title-block.default .quarto-title-meta {
+    display: grid;
+    grid-column: page-start/body-content-end;
+}
+
+#quarto-document-content {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#quarto-margin-sidebar {
+  padding-top: 0;
+}
+
+</style>
+```
+::: callout-tip
+## PROJECT BRIEF
 
 Using the perceptional map as a foundation, along with additional geo information such as points of interest (POI) and mobility data, I developed a web application that enables tourists or night runners to select various pedestrian routes within the city. Furthermore, I leveraged the vast dataset of over 100,000,000 photos to calculate safety scores for the entire country. These scores were subsequently sold to Daimler Innovative Lab the following year, providing them with valuable insights and information for their initiatives.
+
+-   [Zhang, F., Zhou, B., Liu, L., Liu, Y., Fung, H. H., Lin, H., & Ratti, C. “Measuring human perceptions of a large-scale urban region using machine learning” Landscape and Urban Planning.](https://www.sciencedirect.com/science/article/pii/S0169204618308545)
+
+-   [Liu, L., Zhang, F., Zhou, B., Wang, Z., & Li, Y. “STREETALK: A NAVIGATION SYSTEM FOR PEDESTRIANS AND CYCLISTS” Landscape Architecture Frontiers.](https://oversea.cnki.net/knavi/JournalDetail?pcode=CJFD&pykm=jgsj)
+:::
+
+# The Idea
+---
+
+A personal experience of a terrible pedestrian encounter inspired this project. Motivated to improve pedestrian safety, I developed an algorithm that calculates safety scores by analyzing the visual context of street views. Using this algorithm, I created a pedestrian routing web application that determines routes based on the average safety score along each road. The aim was to provide users with safer and more secure paths for their journeys, enhancing the overall pedestrian experience in urban areas.
+
+<img src="streetalk_cover.jpg" style="width: 100%;">
+
+Back in 2016, I had just relocated to a new apartment and planned to meet a friend for a meal nearby. Unfortunately, Amap suggested a rather unpleasant walking route. The path was lined with crumbling roads, dimly lit areas, high walls on either side and even many slums concealed behind these walls, emitting an offensive odor.
+
+<img src="st1.jpg" style="width: 100%;">
+
+# Modeling the perceptional predictor
+---
+
+This experience sparked my project's concept: how many unsafe streets still exist within the urban region of Shanghai? To address this question, I trained a safety perception classifier and developed software that could automatically evaluate the safety score of a street. This led to the creation of a comprehensive safety map of Shanghai.
+
+<img src="st2.jpg" style="width: 100%;"/>
+
+# Demo Video
+---
+
+Below is a demo video showing how the score is applied for pedestrian routing.
+
+{{< video https://www.youtube.com/embed/lUATGLRVE5E >}}
+
+
+# Revisit the Dataset and Algorithm
+---
+
+## Place Pulse 2.0
+
+A significant source of street perception data is the ["Place Pulse" project](https://centerforcollectivelearning.org/urbanperception). It collects public feedback on various urban areas using a pairwise labeling interface. Initiated in 2010, the project's website showcases roughly 4,000 images from four cities: Boston, New York, Linz, and Salzburg. As shown in Figure 1, it gauges public perception across six dimensions. Participants are presented with pairs of street views and asked, "Which image looks safer?"
+
+Over the years, the dataset was enhanced to version 2.0, which includes 110,998 random street-view images gathered from 56 cities in 28 countries across six continents. From 2013 to 2016, a whopping 81,630 online volunteers took part in the survey, providing over 1,170,000 pairwise comparisons. Given the immense diversity and volume of image samples, participants, and corresponding responses, this dataset closely aligns with general human perceptual preferences regarding urban scenes.
+
+<img src="placepulse.png" style="width: 100%;"/>
+
+
+![The top 10 streetview in beautiful Trueskill scores](beautiful_top10.png){width=100%}
+
+![The bottom 10 streetview in beautiful Trueskill scores](beautiful_bottom10.png){width=100%}
+
+## Binary SVM for Baseline Measurement
+
+As previously discussed, the simplest and most effective method involves training a binary classification model to obtain a predictive model for safety score. Here, we display the accuracy results of binary SVM (Support Vector Machine) for all six models, across six dimensions.
+
+![](st4-1.png){width=49%}
+![](st4-2.png){width=49%}
+
+## The CAMs of street views
+
+Below are the negative and positive samples after adopting the updated models. 
+
+![The CAMs of street view with negative safe scores](CAMs_low.png){width=100%}
+
+![The CAMs of street view with positive safe scores](CAMs_high.png){width=100%}
+

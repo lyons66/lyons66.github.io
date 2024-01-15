@@ -3,7 +3,7 @@ title: "PROJECTS"
 subtitle: "I have been engaged to a variety of projects, mostly are physical metrics and their impacts on bahaviors."
 listing:
   contents: ./
-  sort: "date desc"
+  sort: "date"
   date-format: "MMM, YYYY"
   type: grid
   categories: true

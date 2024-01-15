@@ -6,7 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Liu Liu @ CitoryTech">
+<meta name="author" content="Liu Liu">
+<meta name="author" content="Bolei Zhou">
+<meta name="author" content="Fan Zhang">
 
 <title>Liu Liu - StreeTalk Project</title>
 <style>
@@ -61,11 +63,18 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>
+
+      .quarto-title-block .quarto-title-banner {
+        background-image: url(streetalk_cover.png);
+background-size: cover;
+      }
+</style>
 
 
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -92,6 +101,10 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="../../papers/index.html" rel="" target="">
  <span class="menu-text">Papers</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../talks/index.html" rel="" target="">
+ <span class="menu-text">Talks</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../portfolio/index.html" rel="" target="">
@@ -123,50 +136,171 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title">StreeTalk Project</h1>
+            <p class="subtitle lead">Measuring street perceptional scores</p>
+                                <div class="quarto-categories">
+                <div class="quarto-category">computer vision</div>
+                <div class="quarto-category">sidewalk design</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Main Researchers</div>
+      <div class="quarto-title-meta-contents">
+               <p>Liu Liu <a href="https://orcid.org/0000-0003-0100-9763" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+               <p>Bolei Zhou </p>
+               <p>Fan Zhang </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">Oct, 2016</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
-<!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">StreeTalk Project</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">computer vision</div>
-    <div class="quarto-category">sidewalk design</div>
-  </div>
-  </div>
-
-
-
-<div class="quarto-title-meta">
-
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Liu Liu @ CitoryTech </p>
-          </div>
-  </div>
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">Oct, 2016</p>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#the-idea" id="toc-the-idea" class="nav-link active" data-scroll-target="#the-idea">The Idea</a></li>
+  <li><a href="#modeling-the-perceptional-predictor" id="toc-modeling-the-perceptional-predictor" class="nav-link" data-scroll-target="#modeling-the-perceptional-predictor">Modeling the perceptional predictor</a></li>
+  <li><a href="#demo-video" id="toc-demo-video" class="nav-link" data-scroll-target="#demo-video">Demo Video</a></li>
+  <li><a href="#revisit-the-dataset-and-algorithm" id="toc-revisit-the-dataset-and-algorithm" class="nav-link" data-scroll-target="#revisit-the-dataset-and-algorithm">Revisit the Dataset and Algorithm</a>
+  <ul class="collapse">
+  <li><a href="#place-pulse-2.0" id="toc-place-pulse-2.0" class="nav-link" data-scroll-target="#place-pulse-2.0">Place Pulse 2.0</a></li>
+  <li><a href="#binary-svm-for-baseline-measurement" id="toc-binary-svm-for-baseline-measurement" class="nav-link" data-scroll-target="#binary-svm-for-baseline-measurement">Binary SVM for Baseline Measurement</a></li>
+  <li><a href="#the-cams-of-street-views" id="toc-the-cams-of-street-views" class="nav-link" data-scroll-target="#the-cams-of-street-views">The CAMs of street views</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
-  </div>
-  
-    
-  </div>
-  
+<!-- main -->
+<main class="content quarto-banner-title-block page-columns page-full column-page-left" id="quarto-document-content">
 
-</header>
 
-<p><img src="streetalk_cover.jpg" style="height: 400px; width: 100%; object-fit: cover;"></p>
+
+
+<style>
+.quarto-title-banner {
+  background-position: 50% 50%;
+  height: 200px;
+}
+
+
+#title-block-header.quarto-title-block.default .quarto-title-meta {
+    display: grid;
+    grid-column: page-start/body-content-end;
+}
+
+#quarto-document-content {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#quarto-margin-sidebar {
+  padding-top: 0;
+}
+
+</style>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+PROJECT BRIEF
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>Using the perceptional map as a foundation, along with additional geo information such as points of interest (POI) and mobility data, I developed a web application that enables tourists or night runners to select various pedestrian routes within the city. Furthermore, I leveraged the vast dataset of over 100,000,000 photos to calculate safety scores for the entire country. These scores were subsequently sold to Daimler Innovative Lab the following year, providing them with valuable insights and information for their initiatives.</p>
+<ul>
+<li><p><a href="https://www.sciencedirect.com/science/article/pii/S0169204618308545">Zhang, F., Zhou, B., Liu, L., Liu, Y., Fung, H. H., Lin, H., &amp; Ratti, C. “Measuring human perceptions of a large-scale urban region using machine learning” Landscape and Urban Planning.</a></p></li>
+<li><p><a href="https://oversea.cnki.net/knavi/JournalDetail?pcode=CJFD&amp;pykm=jgsj">Liu, L., Zhang, F., Zhou, B., Wang, Z., &amp; Li, Y. “STREETALK: A NAVIGATION SYSTEM FOR PEDESTRIANS AND CYCLISTS” Landscape Architecture Frontiers.</a></p></li>
+</ul>
+</div>
+</div>
+<section id="the-idea" class="level1">
+<h1>The Idea</h1>
+<hr>
+<p>A personal experience of a terrible pedestrian encounter inspired this project. Motivated to improve pedestrian safety, I developed an algorithm that calculates safety scores by analyzing the visual context of street views. Using this algorithm, I created a pedestrian routing web application that determines routes based on the average safety score along each road. The aim was to provide users with safer and more secure paths for their journeys, enhancing the overall pedestrian experience in urban areas.</p>
+<p><img src="streetalk_cover.jpg" style="width: 100%;"></p>
+<p>Back in 2016, I had just relocated to a new apartment and planned to meet a friend for a meal nearby. Unfortunately, Amap suggested a rather unpleasant walking route. The path was lined with crumbling roads, dimly lit areas, high walls on either side and even many slums concealed behind these walls, emitting an offensive odor.</p>
+<p><img src="st1.jpg" style="width: 100%;"></p>
+</section>
+<section id="modeling-the-perceptional-predictor" class="level1">
+<h1>Modeling the perceptional predictor</h1>
+<hr>
+<p>This experience sparked my project’s concept: how many unsafe streets still exist within the urban region of Shanghai? To address this question, I trained a safety perception classifier and developed software that could automatically evaluate the safety score of a street. This led to the creation of a comprehensive safety map of Shanghai.</p>
+<p><img src="st2.jpg" style="width: 100%;"></p>
+</section>
+<section id="demo-video" class="level1">
+<h1>Demo Video</h1>
+<hr>
+<p>Below is a demo video showing how the score is applied for pedestrian routing.</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/lUATGLRVE5E" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</section>
+<section id="revisit-the-dataset-and-algorithm" class="level1 page-columns page-full">
+<h1>Revisit the Dataset and Algorithm</h1>
+<hr>
+<section id="place-pulse-2.0" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="place-pulse-2.0">Place Pulse 2.0</h2>
+<p>A significant source of street perception data is the <a href="https://centerforcollectivelearning.org/urbanperception">“Place Pulse” project</a>. It collects public feedback on various urban areas using a pairwise labeling interface. Initiated in 2010, the project’s website showcases roughly 4,000 images from four cities: Boston, New York, Linz, and Salzburg. As shown in Figure 1, it gauges public perception across six dimensions. Participants are presented with pairs of street views and asked, “Which image looks safer?”</p>
+<p>Over the years, the dataset was enhanced to version 2.0, which includes 110,998 random street-view images gathered from 56 cities in 28 countries across six continents. From 2013 to 2016, a whopping 81,630 online volunteers took part in the survey, providing over 1,170,000 pairwise comparisons. Given the immense diversity and volume of image samples, participants, and corresponding responses, this dataset closely aligns with general human perceptual preferences regarding urban scenes.</p>
+<p><img src="placepulse.png" style="width: 100%;"></p>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="beautiful_top10.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption margin-caption">The top 10 streetview in beautiful Trueskill scores</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="beautiful_bottom10.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption margin-caption">The bottom 10 streetview in beautiful Trueskill scores</figcaption>
+</figure>
+</div>
+</section>
+<section id="binary-svm-for-baseline-measurement" class="level2">
+<h2 class="anchored" data-anchor-id="binary-svm-for-baseline-measurement">Binary SVM for Baseline Measurement</h2>
+<p>As previously discussed, the simplest and most effective method involves training a binary classification model to obtain a predictive model for safety score. Here, we display the accuracy results of binary SVM (Support Vector Machine) for all six models, across six dimensions.</p>
+<p><img src="st4-1.png" class="img-fluid" style="width:49.0%"> <img src="st4-2.png" class="img-fluid" style="width:49.0%"></p>
+</section>
+<section id="the-cams-of-street-views" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="the-cams-of-street-views">The CAMs of street views</h2>
+<p>Below are the negative and positive samples after adopting the updated models.</p>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="CAMs_low.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption margin-caption">The CAMs of street view with negative safe scores</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="CAMs_high.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption margin-caption">The CAMs of street view with positive safe scores</figcaption>
+</figure>
+</div>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

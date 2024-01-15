@@ -2,7 +2,7 @@
 title: "RESEARCH PAPERS"
 subtitle: "For a more updated version, please visit my Google Scholar in the front page."
 page-layout: full
-title-block-banner: "pop_sh.png"
+title-block-banner: "papers_cover.png"
 ---
 
 ```{=html}

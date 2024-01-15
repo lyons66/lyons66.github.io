@@ -16,8 +16,11 @@ website:
         href: projects/index.qmd
       - text: "Papers"
         href: papers/index.qmd
+      - text: "Talks"
+        href: talks/index.qmd
       - text: "Portfolio"
         href: portfolio/index.qmd
+
       # - text: "CV"
       #   href: cv/index.qmd
     

@@ -58,6 +58,7 @@ format:
 ```
 
 ::: {.callout-tip}
+
 ## PROJECT BRIEF
 
 This project originated from my thesis, which involved the collection of millions of photos from 26 cities. The objective was to utilize deep learning techniques to conduct scene recognition on these images. By categorizing the data and plotting the seven critical perceptions, the resulting perceptional maps provide 
@@ -66,7 +67,6 @@ insights into how inhabitants perceive their living environment within each city
 - [Liu, L., Zhou, B., Zhao, J., & Ryan, B. D. “C-IMAGE: city cognitive mapping through geo-tagged photos” GeoJournal, 81(6), 817-861.](https://link.springer.com/article/10.1007/s10708-016-9739-6)
 
 - [Zhou, B., Liu, L., Oliva, A., & Torralba, A. “Recognizing city identity via attribute analysis of geo-tagged images” European conference on computer vision (pp. 519-534).](https://link.springer.com/content/pdf/10.1007/978-3-319-10578-9_34.pdf)
-
 :::
 
 
@@ -107,6 +107,9 @@ This method is highly replicable and has been employed in various real-world pro
 
 <img src="cimage4.jpg" style="width: 100%">
 
-# Demo (Shenzhen)
+# Demo Video
+---
+
+Below is a demo video showing the distribution of image classification results in Shenzhen.
 
 {{< video https://www.youtube.com/embed/5u-fNXwi7AY >}}
