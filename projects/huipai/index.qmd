@@ -2,11 +2,109 @@
 title: "AI-Aided Camera App"
 date: "May 2020"
 date-format: "MMM, YYYY"
-author: Liu Liu @ CitoryTech
+# author: Liu Liu @ MIT
+author-title: "Main Researchers"
+author:
+  - name: Liu Liu
+    orcid: 0000-0003-0100-9763
+  - name: Ding Zhang
+  - name: Xin Xiong
+
 categories: [computer vision, tools]
 image: "huipai_cover.png"
+title-block-banner: "huipai_banner.png"
+page-layout: full
+
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-float:
+      collapsed: false
+      smooth-scroll: true
+      sticky: true
+    # number-sections: true
 ---
 
-<img src="huipai_cover.png" style="height: 400px; width: 100%; object-fit: cover;">
+```{=html}
+<style>
+.quarto-title-banner {
+  background-position: 50% 50%;
+  height: 200px;
+}
 
-This app integrates deep models to learn the operation and mode of photo shooting from the massive works of professional photographers and realizes the comprehensive scoring of the subject, composition, color, depth of field, exposure, and other angles of the picture. It can automatically extract the current scene's geometric structure and professional characteristics and give improvement tips for composition. A live demo was recorded on 2020 Apr 30 in Shanghai with Huawei Mate 30.
+
+#title-block-header.quarto-title-block.default .quarto-title-meta {
+    display: grid;
+    grid-column: page-start/body-content-end;
+}
+
+#quarto-document-content {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#quarto-margin-sidebar {
+  padding-top: 0;
+}
+
+</style>
+```
+
+::: callout-tip
+## PROJECT BRIEF
+
+This app integrates deep models to learn the operation and mode of photo shooting from the massive works of professional photographers and realizes the comprehensive scoring of the subject, composition, color, depth of field, exposure, and other angles of the picture. It can automatically extract the current scene's geometric structure and professional characteristics and give improvement tips for composition. A [live demo](./#demo-video) was recorded on 2020 Apr 30 in Shanghai with Huawei Mate 30.
+
+This project was terminated during the decrease of tourism in 2020. It's an independent project and the business plan can be viewed [here](https://www.dropbox.com/scl/fi/a5sbkv6chnl8cn9mgvpkt/BP-universal-2.pdf?rlkey=iclka76tnlumoq8gv9mrfucyi&dl=0). To obtain the password to view the BP, please [contact me](mailto:lyons66@mit.edu).
+
+:::
+
+# The Idea
+---
+
+The foundational idea behind developing this tool is to "help beginners transform into photography experts.” Based on the scene in view, it automatically offers users specific photography suggestions and provides "photography composition guidelines.”
+
+<img src="huipai_cover.png" style="width: 100%;">
+
+
+# Function 1: Composition Recognization
+---
+
+The tool analyzes the current camera frame, identifies the composition structure, and recommends suitable composition schemes. It can automatically identify 12 major categories and 34 subcategories of compositional benchmarks.
+
+<img src="huipai1.png" style="width: 100%;">
+
+<img src="huipai2.png" style="width: 100%;">
+
+There are two ways of giving users hints about the composition. First, we plot the guidelines on the pictures directly:
+
+<img src="huipai3.png" style="width: 100%;">
+
+<img src="huipai4.png" style="width: 100%;">
+
+<img src="huipai5.png" style="width: 100%;">
+
+Second, we provide typical photos with similar compositions:
+
+<img src="huipai6.png" style="width: 100%;">
+
+<img src="huipai7.png" style="width: 100%;">
+
+<img src="huipai8.png" style="width: 100%;">
+
+# Function 2: Suggestions based on Scenes
+---
+
+In addition to this, it can also recognize shooting scenes from 26 major categories and over 100 subcategories. For example, it can identify the current shooting scene and subject, then propose photography suggestions for optimizing the photo. By recognizing the content of the day's photography subject, it can analyze and understand the content of the subject being shot. Furthermore, it can identify the current pose structure (standing, sitting, etc.) of the person being photographed.
+
+<img src="huipai9.png" style="width: 100%;">
+
+<img src="huipai10.jpg" style="width: 100%;">
+
+# Demo Video
+---
+
+Below is a demo video we recorded based on Huawei Mate 30 in April, 2020.
+
+{{< video https://www.youtube.com/embed/1i6xQzHvZEU >}}

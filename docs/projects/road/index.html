@@ -6,7 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Liu Liu @ CitoryTech, World Bank">
+<meta name="author" content="Liu Liu">
+<meta name="author" content="Ding Zhang">
+<meta name="author" content="Hongdu Yi">
 
 <title>Liu Liu - Road Assessment in Ulaanbaatar</title>
 <style>
@@ -61,11 +63,18 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>
+
+      .quarto-title-block .quarto-title-banner {
+        background-image: url(road_banner.png);
+background-size: cover;
+      }
+</style>
 
 
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -127,51 +136,112 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title">Road Assessment in Ulaanbaatar</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">computer vision</div>
+                <div class="quarto-category">urban planning</div>
+                <div class="quarto-category">tools</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Main Researchers</div>
+      <div class="quarto-title-meta-contents">
+               <p>Liu Liu <a href="https://orcid.org/0000-0003-0100-9763" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+               <p>Ding Zhang </p>
+               <p>Hongdu Yi </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">Oct, 2021</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
-<!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Road Assessment in Ulaanbaatar</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">computer vision</div>
-    <div class="quarto-category">urban planning</div>
-    <div class="quarto-category">tools</div>
-  </div>
-  </div>
-
-
-
-<div class="quarto-title-meta">
-
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Liu Liu @ CitoryTech, World Bank </p>
-          </div>
-  </div>
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">Oct, 2021</p>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#the-idea" id="toc-the-idea" class="nav-link active" data-scroll-target="#the-idea">The Idea</a></li>
+  <li><a href="#demo-video" id="toc-demo-video" class="nav-link" data-scroll-target="#demo-video">Demo Video</a></li>
+  </ul>
+</nav>
     </div>
-  </div>
-  
-    
-  </div>
-  
+<!-- main -->
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
-</header>
 
-<p><img src="road_cover.jpg" style="height: 400px; width: 100%; object-fit: cover;"></p>
+
+
+<style>
+.quarto-title-banner {
+  background-position: 50% 50%;
+  height: 200px;
+}
+
+
+#title-block-header.quarto-title-block.default .quarto-title-meta {
+    display: grid;
+    grid-column: page-start/body-content-end;
+}
+
+#quarto-document-content {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#quarto-margin-sidebar {
+  padding-top: 0;
+}
+
+</style>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+PROJECT BRIEF
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The condition of transportation assets can be effectively observed through user-generated content (UGC) images. Analyzing geo-tagged images makes it possible to link the condition reflected in the images to specific geographic locations. This approach has been employed for various transportation assets such as catch basins, guardrails, manholes, road curbs, road markings, road signs, roadways, and sidewalks. By associating these images with corresponding road segments, a comprehensive understanding of the condition of these assets can be generated. This enables better asset management and maintenance strategies, ultimately contributing to safer and more efficient transportation systems.</p>
+<ul>
+<li><a href="https://link.springer.com/article/10.1007/s43762-022-00056-9">Zhang, D., Yi, H., Chen, Y., Jiang, N., Shao, J., &amp; Liu, L. “An urban infrastructure assessment system built on geo-tagged images and machine learning” Computational Urban Science.</a></li>
+</ul>
+</div>
+</div>
+<section id="the-idea" class="level1">
+<h1>The Idea</h1>
+<hr>
+<p>The labeled images would be used as training data sets. According to their Q score, a process of ‘classification-then-regression’ would be conducted. Deep learning models would be built to extract deep features of the labeled images with transportation assets in different conditions.</p>
+<p><img src="road_cover.jpg" style="width: 100%;"></p>
+</section>
+<section id="demo-video" class="level1">
+<h1>Demo Video</h1>
+<hr>
+<p>Below is a brief demo of our platform for the visualization of the analytic results.</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/kUF3dGZOqow" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

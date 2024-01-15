@@ -102,6 +102,7 @@ A brief of my previous research and work. Due to the time limit, mostly is about
 ::::
 :::::
 
+<img src="pk_SCL_talk.jpg" style="width: 99%; border-radius: 6px;">
 
 ## City Form Lab lunch talk @ MIT 2022
 

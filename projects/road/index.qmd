@@ -2,11 +2,78 @@
 title: "Road Assessment in Ulaanbaatar"
 date: "Oct 2021"
 date-format: "MMM, YYYY"
-author: Liu Liu @ CitoryTech, World Bank
+# author: Liu Liu @ MIT
+author-title: "Main Researchers"
+author:
+  - name: Liu Liu
+    orcid: 0000-0003-0100-9763
+  - name: Ding Zhang
+  - name: Hongdu Yi
+    # affiliations:
+    #   - name: test
+# affiliation-title: "AFFILIATION"
+
 categories: [computer vision, urban planning, tools]
 image: "road_cover.jpg"
+title-block-banner: "road_banner.png"
+page-layout: full
+
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-float:
+      collapsed: false
+      smooth-scroll: true
+      sticky: true
+    # number-sections: true
 ---
 
-<img src="road_cover.jpg" style="height: 400px; width: 100%; object-fit: cover;">
+```{=html}
+<style>
+.quarto-title-banner {
+  background-position: 50% 50%;
+  height: 200px;
+}
+
+
+#title-block-header.quarto-title-block.default .quarto-title-meta {
+    display: grid;
+    grid-column: page-start/body-content-end;
+}
+
+#quarto-document-content {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#quarto-margin-sidebar {
+  padding-top: 0;
+}
+
+</style>
+```
+
+
+::: callout-tip
+## PROJECT BRIEF
 
 The condition of transportation assets can be effectively observed through user-generated content (UGC) images. Analyzing geo-tagged images makes it possible to link the condition reflected in the images to specific geographic locations. This approach has been employed for various transportation assets such as catch basins, guardrails, manholes, road curbs, road markings, road signs, roadways, and sidewalks. By associating these images with corresponding road segments, a comprehensive understanding of the condition of these assets can be generated. This enables better asset management and maintenance strategies, ultimately contributing to safer and more efficient transportation systems.
+
+- [Zhang, D., Yi, H., Chen, Y., Jiang, N., Shao, J., & Liu, L. “An urban infrastructure assessment system built on geo-tagged images and machine learning” Computational Urban Science.](https://link.springer.com/article/10.1007/s43762-022-00056-9)
+
+:::
+
+# The Idea
+---
+
+The labeled images would be used as training data sets. According to their Q score, a process of ‘classification-then-regression’ would be conducted. Deep learning models would be built to extract deep features of the labeled images with transportation assets in different conditions.
+
+<img src="road_cover.jpg" style="width: 100%;">
+
+# Demo Video
+---
+Below is a brief demo of our platform for the visualization of the analytic results.
+
+{{< video https://www.youtube.com/embed/kUF3dGZOqow >}}
+

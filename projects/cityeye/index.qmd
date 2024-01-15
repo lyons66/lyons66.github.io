@@ -1,12 +1,83 @@
 ---
 title: "CityEye WeChat mini APP"
+subtitle: "Crowd sourcing photo collaboration for group field trip"
 date: "Jan 2018"
 date-format: "MMM, YYYY"
-author: Liu Liu @ CitoryTech 
-categories: [computer vision, sidewalk design]
+# author: Liu Liu @ MIT
+author-title: "Main Researchers"
+author:
+  - name: Liu Liu
+    orcid: 0000-0003-0100-9763
+#     email: lyons66@mit.edu
+    # affiliations:
+    #   - name: Massachusetts Institute of Technology
+#       - url: https://www.mit.edu/
+  - name: Ding Zhang
+  - name: Jinxing Shao
+    # affiliations:
+    #   - name: test
+# affiliation-title: "AFFILIATION"
+
+categories: [computer vision, tools]
 image: "cityeye_cover.jpg"
+title-block-banner: "cityeye_banner.png"
+page-layout: full
+
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-float:
+      collapsed: false
+      smooth-scroll: true
+      sticky: true
+    # number-sections: true
 ---
 
-<img src="cityeye_cover.jpg" style="height: 400px; width: 100%; object-fit: cover;">
+```{=html}
+<style>
+.quarto-title-banner {
+  background-position: 50% 50%;
+  height: 200px;
+}
+
+
+#title-block-header.quarto-title-block.default .quarto-title-meta {
+    display: grid;
+    grid-column: page-start/body-content-end;
+}
+
+#quarto-document-content {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#quarto-margin-sidebar {
+  padding-top: 0;
+}
+
+</style>
+```
+
+::: callout-tip
+## PROJECT BRIEF
 
 CityEye is a WeChat mini application specifically designed for group field trips. Currently, it caters to a user base of over 10,000 individuals, primarily consisting of design background students and planners. This innovative urban photo survey tool integrates various functionalities, including image collection, recognition, and data analysis. By combining these features, CityEye facilitates the efficient gathering of urban data, enabling users to analyze and interpret the collected images for their research or planning purposes.
+
+After 3 years of running, we accumulated over 5000 users globally. Yet unfortunately, the tool is currently shutdown due to a lack of budget. We will relaunch it if having enough funding in the future, and please feel free to [contact me](mailto:lyons66@mit.edu).
+
+:::
+
+
+# The Idea
+---
+
+<img src="cityeye_cover.jpg" style="width: 100%;">
+
+
+# The Function of the APP
+---
+
+<img src="cityeye1.jpg" style="width: 100%;">
+
+<img src="cityeye2.jpg" style="width: 100%;">

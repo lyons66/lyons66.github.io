@@ -58,6 +58,7 @@ format:
 
 </style>
 ```
+
 ::: callout-tip
 ## PROJECT BRIEF
 
