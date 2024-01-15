@@ -1,12 +1,102 @@
 ---
 title: "River View Analysis"
+subtitle: "Detecting and evaluating historical waterfront landscape"
 date: "May 2017"
 date-format: "MMM, YYYY"
-author: Liu Liu @ CAUPD
+# author: Liu Liu @ MIT
+author-title: "Main Researcher"
+author:
+  - name: Liu Liu
+    orcid: 0000-0003-0100-9763
+#     email: lyons66@mit.edu
+    # affiliations:
+    #   - name: Massachusetts Institute of Technology
+#       - url: https://www.mit.edu/
+    # affiliations:
+    #   - name: test
+# affiliation-title: "AFFILIATION"
+
 categories: [computer vision, landscape design]
 image: "riverview_cover.jpg"
+title-block-banner: "river_cover.png"
+page-layout: full
+
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-float:
+      collapsed: false
+      smooth-scroll: true
+      sticky: true
+    # number-sections: true
 ---
 
-<img src="riverview_cover.jpg" style="height: 400px; width: 100%; object-fit: cover;">
+
+```{=html}
+<style>
+.quarto-title-banner {
+  background-position: 50% 50%;
+  height: 200px;
+}
+
+
+#title-block-header.quarto-title-block.default .quarto-title-meta {
+    display: grid;
+    grid-column: page-start/body-content-end;
+}
+
+#quarto-document-content {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#quarto-margin-sidebar {
+  padding-top: 0;
+}
+
+</style>
+```
+::: callout-tip
+## PROJECT BRIEF
 
 To preserve the natural landscapes along the Qiantang River, I analyzed a 200-kilometer stretch of riverbank videos. By carefully examining the footage, I calculated the visual proportions of seven distinct elements present throughout the entire shoreline. Subsequently, I developed a visualization platform that identifies and maps these elements along the riverbank. This platform is a valuable tool in safeguarding the natural beauty and ecological integrity of the Qiantang River, enabling effective management and conservation efforts.
+
+This work has been re-presented in [Rez de Ville / Urban Ground Floors 2023](../../talks/#rez-de-ville-urban-ground-floors-2023).
+:::
+
+# The Idea
+---
+
+This project aims to protect the historical and cultural features of the Qiantang River and the upstream Fuchun River and Xin’an River, covering a more than 200-kilometer waterfront. The famous Fuchun Mountain Habitat map depicts the natural scenery on both sides of the strait, but now it has been damaged by the excessive development of many residential buildings.
+
+<img src="riverview_cover.jpg" style="width: 100%;">
+
+
+# Data Process
+---
+The project is conducted based on the video along the Qiantang River, where over 40000 frames are extracted along the three sections covering the north and south bank.
+
+<img src="river1.png" style="width: 100%;">
+
+After segmenting the video frames into different segmentations, we could view different landscape prototypes along the river. 
+
+<img src="river2.png" style="width: 100%;">
+
+
+# Result Analysis
+---
+
+One of the major triggers for this project is to identify over-developed real estate. By composing metrics such as building height / plant height, it is easily to locate those banks.
+
+<img src="river3.png" style="width: 100%;">
+
+Other methods are also applied for each section of the entire river.
+
+<img src="river4.jpg" style="width: 100%;">
+
+# Demo Video
+---
+Below is a platform we created for verifying the metrics for different waterfront view sections.
+
+{{< video https://www.youtube.com/embed/6q6vMNEecWs >}}

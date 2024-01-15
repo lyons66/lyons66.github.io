@@ -11,6 +11,16 @@ title-block-banner: "papers_cover.png"
   background-position: 50% 40%;
   height: 200px;
 }
+
+#quarto-document-content {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#quarto-margin-sidebar {
+  padding-top: 0;
+}
+
 </style>
 ```
 

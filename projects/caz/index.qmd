@@ -1,12 +1,77 @@
 ---
 title: "Recognizing Central Activity Zones"
+subtitle: "Leveraging the entropy of urban functionality based on POI data"
 date: "Jan 2018"
 date-format: "MMM, YYYY"
-author: Liu Liu @ CAUPD
+# author: Liu Liu @ MIT
+author-title: "Main Researchers"
+author:
+  - name: Liu Liu
+    orcid: 0000-0003-0100-9763
+#     email: lyons66@mit.edu
+    # affiliations:
+    #   - name: Massachusetts Institute of Technology
+#       - url: https://www.mit.edu/
+  - name: Zhuqing Liu
+    # affiliations:
+    #   - name: test
+# affiliation-title: "AFFILIATION"
+
 categories: [urban planning, poi]
 image: "caz_cover.jpg"
+title-block-banner: "caz_dark.png"
+page-layout: full
+
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-float:
+      collapsed: false
+      smooth-scroll: true
+      sticky: true
+    # number-sections: true
 ---
 
-<img src="caz_cover.jpg" style="height: 400px; width: 100%; object-fit: cover;">
+```{=html}
+<style>
+.quarto-title-banner {
+  background-position: 50% 50%;
+  height: 200px;
+}
+
+
+#title-block-header.quarto-title-block.default .quarto-title-meta {
+    display: grid;
+    grid-column: page-start/body-content-end;
+}
+
+#quarto-document-content {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#quarto-margin-sidebar {
+  padding-top: 0;
+}
+
+</style>
+```
+
+::: callout-tip
+## PROJECT BRIEF
 
 Utilizing the concept of entropy, the project aims to quantify the level of functional diversity within different areas of the city. By leveraging a dataset consisting of 300,000 points of interest (POI) from Dianping and office and residential POI data from Anjuke, the project assigns weights to these locations based on their respective scores. These scores indicate the areas with the highest spatial composition within the city. Typically, these dynamic places are considered the most vibrant and active within the urban landscape, reflecting a high degree of functional compounding.
+
+-   [Liu L., Liu Z. “The Recognition of CAZ in Shanghai Based on Evaluated POI.” In: Shen Z., Li M. (eds) Big Data Support of Urban Planning and Management, Advances in Geographic Information Science. Springer, Cham.](https://link.springer.com/chapter/10.1007/978-3-319-51929-6_6)
+
+:::
+
+# The Idea
+---
+
+Utilizing the concept of entropy, the project aims to quantify the level of functional diversity within different areas of the city. By leveraging a dataset consisting of 300,000 points of interest (POI) from Dianping and office and residential POI data from Anjuke, the project assigns weights to these locations based on their respective scores. These scores indicate the areas with the highest spatial composition within the city. Typically, these dynamic places are considered the most vibrant and active within the urban landscape, reflecting a high degree of functional compounding.
+
+<img src="caz_cover.jpg" style="width: 100%;">
+
+

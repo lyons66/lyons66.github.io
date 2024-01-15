@@ -39,21 +39,28 @@
     "href": "talks/index.html",
     "title": "Talks in Conferences and Events",
     "section": "",
-    "text": "INFORMATION\n\n\n\nDate: Sep 22-23, 2023  Location: School of Architecture and Planning, Massachusetts Institute of Technology\nThe 2023 Rez de Ville: In Transition seminar will delve into the evolving dynamics of urban ground floors amidst modern societal, economic, environmental, and technological shifts and explore the implications of these changes on diverse urban populations. Here is the talk list.\n\n\n\n\nView Here"
+    "text": "TIP\n\n\n\nTo obtain the slides view password, please contact me."
   },
   {
     "objectID": "talks/index.html#rez-de-ville-urban-ground-floors-2023",
     "href": "talks/index.html#rez-de-ville-urban-ground-floors-2023",
     "title": "Talks in Conferences and Events",
-    "section": "",
-    "text": "INFORMATION\n\n\n\nDate: Sep 22-23, 2023  Location: School of Architecture and Planning, Massachusetts Institute of Technology\nThe 2023 Rez de Ville: In Transition seminar will delve into the evolving dynamics of urban ground floors amidst modern societal, economic, environmental, and technological shifts and explore the implications of these changes on diverse urban populations. Here is the talk list.\n\n\n\n\nView Here"
+    "section": "Rez de Ville / Urban Ground Floors 2023",
+    "text": "Rez de Ville / Urban Ground Floors 2023\n\n\n\n\n\n\n\n\nINFORMATION\n\n\n\nDate: Sep 22-23, 2023  Location: School of Architecture and Planning, Massachusetts Institute of Technology\nThe 2023 Rez de Ville: In Transition seminar will delve into the evolving dynamics of urban ground floors amidst modern societal, economic, environmental, and technological shifts and explore the implications of these changes on diverse urban populations. Here is the talk list. A quick brief of the case can be found here.\n\n\n\n\nView Here"
   },
   {
-    "objectID": "talks/index.html#rez-de-ville-urban-ground-floors-2023-1",
-    "href": "talks/index.html#rez-de-ville-urban-ground-floors-2023-1",
+    "objectID": "talks/index.html#pechakucha-senseable-city-lab-2023",
+    "href": "talks/index.html#pechakucha-senseable-city-lab-2023",
     "title": "Talks in Conferences and Events",
-    "section": "Rez de Ville / Urban Ground Floors 2023",
-    "text": "Rez de Ville / Urban Ground Floors 2023\n\n\n\n\n\n\nINFORMATION\n\n\n\nDate: Sep 22-23, 2023  Location: School of Architecture and Planning, Massachusetts Institute of Technology\nThe 2023 Rez de Ville: In Transition seminar will delve into the evolving dynamics of urban ground floors amidst modern societal, economic, environmental, and technological shifts and explore the implications of these changes on diverse urban populations. Here is the talk list."
+    "section": "PechaKucha @ Senseable City Lab 2023",
+    "text": "PechaKucha @ Senseable City Lab 2023\n\n\n\n\n\n\n\n\nINFORMATION\n\n\n\nDate: Jul 26, 2023  Location: School of Architecture and Planning, Massachusetts Institute of Technology\nA brief of my previous research and work. Due to the time limit, mostly is about urban imagery analysis. It is the application for the research work at Senseable City Lab. The process was smooth and successful.\n\n\n\n\nView Here"
+  },
+  {
+    "objectID": "talks/index.html#city-form-lab-lunch-talk-mit-2022",
+    "href": "talks/index.html#city-form-lab-lunch-talk-mit-2022",
+    "title": "Talks in Conferences and Events",
+    "section": "City Form Lab lunch talk @ MIT 2022",
+    "text": "City Form Lab lunch talk @ MIT 2022\n\n\n\n\n\n\n\n\nINFORMATION\n\n\n\nDate: Oct 12, 2022  Location: School of Architecture and Planning, Massachusetts Institute of Technology\nA brief of my previous research and work. It’s a 45-min talk, the talk includes my previous data-driven research and practice. The audience are all City Form Lab members.\n\n\n\n\nView Here"
   },
   {
     "objectID": "projects/huipai/index.html",
@@ -95,7 +102,7 @@
     "href": "projects/caz/index.html",
     "title": "Recognizing Central Activity Zones",
     "section": "",
-    "text": "Utilizing the concept of entropy, the project aims to quantify the level of functional diversity within different areas of the city. By leveraging a dataset consisting of 300,000 points of interest (POI) from Dianping and office and residential POI data from Anjuke, the project assigns weights to these locations based on their respective scores. These scores indicate the areas with the highest spatial composition within the city. Typically, these dynamic places are considered the most vibrant and active within the urban landscape, reflecting a high degree of functional compounding."
+    "text": "PROJECT BRIEF\n\n\n\nUtilizing the concept of entropy, the project aims to quantify the level of functional diversity within different areas of the city. By leveraging a dataset consisting of 300,000 points of interest (POI) from Dianping and office and residential POI data from Anjuke, the project assigns weights to these locations based on their respective scores. These scores indicate the areas with the highest spatial composition within the city. Typically, these dynamic places are considered the most vibrant and active within the urban landscape, reflecting a high degree of functional compounding.\n\nLiu L., Liu Z. “The Recognition of CAZ in Shanghai Based on Evaluated POI.” In: Shen Z., Li M. (eds) Big Data Support of Urban Planning and Management, Advances in Geographic Information Science. Springer, Cham.\n\n\n\n\nThe Idea\n\nUtilizing the concept of entropy, the project aims to quantify the level of functional diversity within different areas of the city. By leveraging a dataset consisting of 300,000 points of interest (POI) from Dianping and office and residential POI data from Anjuke, the project assigns weights to these locations based on their respective scores. These scores indicate the areas with the highest spatial composition within the city. Typically, these dynamic places are considered the most vibrant and active within the urban landscape, reflecting a high degree of functional compounding."
   },
   {
     "objectID": "projects/cimage/index.html",
@@ -144,7 +151,7 @@
     "href": "projects/riverview/index.html",
     "title": "River View Analysis",
     "section": "",
-    "text": "To preserve the natural landscapes along the Qiantang River, I analyzed a 200-kilometer stretch of riverbank videos. By carefully examining the footage, I calculated the visual proportions of seven distinct elements present throughout the entire shoreline. Subsequently, I developed a visualization platform that identifies and maps these elements along the riverbank. This platform is a valuable tool in safeguarding the natural beauty and ecological integrity of the Qiantang River, enabling effective management and conservation efforts."
+    "text": "PROJECT BRIEF\n\n\n\nTo preserve the natural landscapes along the Qiantang River, I analyzed a 200-kilometer stretch of riverbank videos. By carefully examining the footage, I calculated the visual proportions of seven distinct elements present throughout the entire shoreline. Subsequently, I developed a visualization platform that identifies and maps these elements along the riverbank. This platform is a valuable tool in safeguarding the natural beauty and ecological integrity of the Qiantang River, enabling effective management and conservation efforts.\nThis work has been re-presented in Rez de Ville / Urban Ground Floors 2023.\n\n\n\nThe Idea\n\nThis project aims to protect the historical and cultural features of the Qiantang River and the upstream Fuchun River and Xin’an River, covering a more than 200-kilometer waterfront. The famous Fuchun Mountain Habitat map depicts the natural scenery on both sides of the strait, but now it has been damaged by the excessive development of many residential buildings.\n\n\n\nData Process\n\nThe project is conducted based on the video along the Qiantang River, where over 40000 frames are extracted along the three sections covering the north and south bank.\n\nAfter segmenting the video frames into different segmentations, we could view different landscape prototypes along the river.\n\n\n\nResult Analysis\n\nOne of the major triggers for this project is to identify over-developed real estate. By composing metrics such as building height / plant height, it is easily to locate those banks.\n\nOther methods are also applied for each section of the entire river.\n\n\n\nDemo Video\n\nBelow is a platform we created for verifying the metrics for different waterfront view sections."
   },
   {
     "objectID": "index.html",
