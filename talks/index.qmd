@@ -72,7 +72,7 @@ Location: School of Architecture and Planning, Massachusetts Institute of Techno
 :::: {.column width="30%" .center-text}
 <img src="rev_de_ville_cover.png" style="width: 93%; border-radius: 6px;">
 
-[View Here](https://www.dropbox.com/scl/fi/n0c2a5t3uxkin66kb0uag/Liu_Rez_de_Ville_0922.pdf?rlkey=g0gu5tceij6w8adz3mje3oqna&dl=0)
+[View Here](https://www.dropbox.com/scl/fi/ow4x5321a55fi7k037sek/Liu_Rez_de_Ville_0922.pdf?rlkey=em21waocgzcyknbt8udgnvz2z&dl=0)
 
 ::::
 :::::
@@ -97,14 +97,14 @@ A brief of my previous research and work. Due to the time limit, mostly is about
 :::: {.column width="30%" .center-text}
 <img src="pk_SCL_cover.png" style="width: 93%; border-radius: 6px;">
 
-[View Here](https://www.dropbox.com/scl/fi/0l5vvxx020x0g3osxjx3l/PK-SCL.pdf?rlkey=61ue0bvqzqv7m8qo6w7i3b2zz&dl=0)
+[View Here](https://www.dropbox.com/scl/fi/t52c1rybtjp97ft07e3y5/PK-SCL.pdf?rlkey=jmrbmk812ea1t75dsusw4u0b4&dl=0)
 
 ::::
 :::::
 
 <img src="pk_SCL_talk.jpg" style="width: 99%; border-radius: 6px;">
 
-## City Form Lab lunch talk @ MIT 2022
+## City Form Lab Lunch Talk @ MIT 2022
 
 ::::: {.columns}
 :::: {.column width="70%"}
@@ -121,9 +121,55 @@ A brief of my previous research and work. It's a 45-min talk, the talk includes 
 :::: {.column width="30%" .center-text}
 <img src="CFL_cover.png" style="width: 93%; border-radius: 6px;">
 
-[View Here](https://www.dropbox.com/scl/fi/x8jdv0s4yxq2cgqq6ln53/Presentation_1012_CFL.pdf?rlkey=um58ytg0hwwi36buosovil36r&dl=0)
+[View Here](https://www.dropbox.com/scl/fi/5rayygr67rq2x9tsxiweq/Presentation_1012_CFL.pdf?rlkey=wms72i1sykptosla23a186g8k&dl=0)
 
 ::::
 :::::
 
-<!-- <img src="hku.jpg" style="width: 99%; border-radius: 6px;"> -->
+## Seeing City Talk @ World Bank 2019
+
+::::: {.columns}
+:::: {.column width="70%"}
+::: {.callout-note}
+## INFORMATION
+
+Date: May 14, 2019
+<br>
+Location: World Bank Beijing Office
+
+It's an 30 mins talk about recent projects from CitoryTech team. The talk covered a series of urban data research, practice in our exploration of understanding our city with images. 
+:::
+::::
+:::: {.column width="30%" .center-text}
+<img src="seeingcity_wb_cover.png" style="width: 93%; border-radius: 6px;">
+
+[View Here](https://www.dropbox.com/scl/fi/a7f1h6jwvgi079umu5lo6/seeing_city_wb2019.pdf?rlkey=wxt76r6melzo1xz2h1p6brewe&dl=0)
+
+::::
+:::::
+
+<img src="wb.jpg" style="width: 99%; border-radius: 6px;">
+
+## Seeing City Talk @ HKU 2019
+
+::::: {.columns}
+:::: {.column width="70%"}
+::: {.callout-note}
+## INFORMATION
+
+Date: Mar 11, 2019
+<br>
+Location: Faculty of Architecture, Hong Kong University
+
+It's an 1-hour talk about recent projects from CitoryTech team. The talk covered a series of urban data research, practice in our exploration of understanding our city with images. I also introduced the development of crowd sourcing tools.
+:::
+::::
+:::: {.column width="30%" .center-text}
+<img src="seeingcity_cover.png" style="width: 93%; border-radius: 6px;">
+
+[View Here](https://www.dropbox.com/scl/fi/ncsx1qijpb66gem4o30tm/seeing_city_hku2019.pdf?rlkey=axlw89ixbei8pvohms5v1kef3&dl=0)
+
+::::
+:::::
+
+<img src="hku.jpg" style="width: 99%; border-radius: 6px;">
