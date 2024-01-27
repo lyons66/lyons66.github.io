@@ -1,5 +1,6 @@
 ---
 title: "C-IMAGE Project"
+subtitle: Understanding Human Perceptions through Geo-tagged Images
 date: "May 2014"
 date-format: "MMM, YYYY"
 # author: Liu Liu @ MIT
@@ -69,6 +70,11 @@ insights into how inhabitants perceive their living environment within each city
 - [Zhou, B., Liu, L., Oliva, A., & Torralba, A. “Recognizing city identity via attribute analysis of geo-tagged images” European conference on computer vision (pp. 519-534).](https://link.springer.com/content/pdf/10.1007/978-3-319-10578-9_34.pdf)
 :::
 
+# Interactive Maps
+---
+
+Below are interactive maps of the original C-IMAGE cities (recovered from my archive):
+[Amsterdam](./amsterdam/index.html), [Bangkok](./bangkok/index.html), [Barcelona](./barcelona/index.html), [Beijing](./beijing/index.html), [Hong Kong](./hongkong/index.html), [Kuala Lumpur](./kuala_lumpur/index.html), [London](./london/index.html), [New Delhi](./new_delhi/index.html), [New York](./new_york/index.html), [Paris](./paris/index.html), [Prague](./prague/index.html), [San Francisco](./san_francisco/index.html), [Seoul](./seoul/index.html), [Shanghai](./shanghai/index.html), [Singapore](./singapore/index.html), [Tokyo](./tokyo/index.html), [Toronto](./toronto/index.html), [Vienna](./vienna/index.html), [Zurich](./zurich/index.html)
 
 # The Idea
 ---
