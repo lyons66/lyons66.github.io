@@ -17,7 +17,7 @@ author:
     #   - name: test
 # affiliation-title: "AFFILIATION"
 
-categories: [LBS, urban planning]
+categories: [cellphone data, urban planning]
 image: "lbsn_cover.jpg"
 title-block-banner: "lbsn_cover.jpg"
 page-layout: full

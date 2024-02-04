@@ -17,7 +17,7 @@ author:
     #   - name: test
 # affiliation-title: "AFFILIATION"
 
-categories: [urban planning, poi]
+categories: [urban planning, poi, visualization]
 image: "caz_cover.jpg"
 title-block-banner: "caz_dark.png"
 page-layout: full

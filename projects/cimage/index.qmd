@@ -17,7 +17,7 @@ author:
     #   - name: test
 # affiliation-title: "AFFILIATION"
 
-categories: [computer vision, city image, visualization]
+categories: [computer vision, visualization]
 image: "cimage_cover.jpg"
 title-block-banner: "cimage_boston.jpg"
 page-layout: full

@@ -16,7 +16,7 @@ author:
     #   - name: test
 # affiliation-title: "AFFILIATION"
 
-categories: [computer vision, landscape design]
+categories: [computer vision, urban design]
 image: "riverview_cover.jpg"
 title-block-banner: "river_cover.png"
 page-layout: full

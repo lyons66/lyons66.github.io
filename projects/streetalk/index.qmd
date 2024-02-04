@@ -18,7 +18,7 @@ author:
     #   - name: test
 # affiliation-title: "AFFILIATION"
 
-categories: [computer vision, sidewalk design]
+categories: [computer vision, urban design]
 image: "streetalk_cover.jpg"
 title-block-banner: "streetalk_cover.png"
 page-layout: full

@@ -173,3 +173,31 @@ It's an 1-hour talk about recent projects from CitoryTech team. The talk covered
 :::::
 
 <img src="hku.jpg" style="width: 99%; border-radius: 6px;">
+
+## SODA Pitch @ Shanghai 2017
+
+::::: {.columns}
+:::: {.column width="70%"}
+::: {.callout-note}
+## INFORMATION
+
+Date: Nov, 2017
+<br>
+Location: Shanghai
+
+
+This is a 10-minute business plan presentation for our original project, [StreeTalk](../../projects/streetalk). We were honored to receive the seed award and seed funding for CitoryTech.
+
+Additionally, this project played a pivotal role in securing our first order from Daimler, through which we sold our safety maps, encompassing over 300 cities in China.
+
+:::
+::::
+:::: {.column width="30%" .center-text}
+<img src="soda_cover.png" style="width: 93%; border-radius: 6px;">
+
+[View Here](https://www.dropbox.com/scl/fi/kh0f8t20vfscnw2l6vh2q/StreeTalk_Final.pdf?rlkey=3zodawjy1bwv3eo0vxt8puwgf&dl=0)
+
+::::
+:::::
+
+<img src="soda.png" style="width: 99%; border-radius: 6px;">
