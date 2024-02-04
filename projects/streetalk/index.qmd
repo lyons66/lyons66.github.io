@@ -126,3 +126,12 @@ Below are the negative and positive samples after adopting the updated models.
 
 ![The CAMs of street view with positive safe scores](CAMs_high.png){width=100%}
 
+# Collaboration with Diamler
+
+In 2018, our model delivered safety maps for more than 300 cities across China. This data was utilized to create safe pedestrian routes for an app developed specifically for Daimler users.
+
+Initially, our clients were skeptical about our algorithm's effectiveness. To challenge our model, they sent us a batch of photos that did not consist of street view images. Surprisingly, in a scoring system out of 100, the image deemed safest was a nighttime picture, despite our training dataset lacking any night images. This unexpected result successfully demonstrated our model's robustness and subsequently sealed the deal.
+
+![The test images from Diamler and our safety scores](st6.png){width=100%}
+
+![Business Order from Diamler](st5.png){width=100%}
