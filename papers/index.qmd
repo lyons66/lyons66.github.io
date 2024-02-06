@@ -87,3 +87,9 @@ Below is a list of my research papers with links to download or view them. Click
   "An urban infrastructure assessment system built on geo-tagged images and machine learning"
   Computational Urban Science.
   [Download](https://link.springer.com/article/10.1007/s43762-022-00056-9)
+  
+---
+
+- **Colaninno, N., Basu, R., Hosseini, M., Alhassan, A., Liu, L., & Sevtsuk, A.**
+  "Urban Heat Risk Assessment: Exploring a Novel Pedestrian Network-Based Framework"
+  [View](https://hdl.handle.net/11311/1258854)
