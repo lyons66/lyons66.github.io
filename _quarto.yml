@@ -20,9 +20,8 @@ website:
         href: talks/index.qmd
       - text: "Portfolio"
         href: portfolio/index.qmd
-
-      # - text: "CV"
-      #   href: cv/index.qmd
+      - text: "Videos"
+        href: videos/index.qmd
     
     # your social media handles
     right:

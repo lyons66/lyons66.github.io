@@ -75,5 +75,10 @@ The labeled images would be used as training data sets. According to their Q sco
 ---
 Below is a brief demo of our platform for the visualization of the analytic results.
 
+{{< video https://www.youtube.com/embed/23kLzbIkhfI >}}
+
+{{< video https://www.youtube.com/embed/u87AOE6TUyY >}}
+
 {{< video https://www.youtube.com/embed/kUF3dGZOqow >}}
 
+{{< video https://www.youtube.com/embed/m8yKsU4kxs0 >}}

@@ -8,7 +8,7 @@ title-block-banner: "papers_cover.png"
 ```{=html}
 <style>
 .quarto-title-banner {
-  background-position: 50% 40%;
+  background-position: 50% 55%;
   height: 200px;
 }
 
