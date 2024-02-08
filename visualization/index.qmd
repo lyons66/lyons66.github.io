@@ -1,0 +1,348 @@
+---
+title: "Visualization"
+subtitle: "Brief view of other projects I directed"
+page-layout: full
+# title-block-banner: true
+title-block-banner: "visualization_cover.png"
+editor: 
+  markdown: 
+    wrap: 72
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-float:
+      collapsed: false
+      smooth-scroll: true
+      sticky: true
+---
+
+```{=html}
+<style>
+.quarto-title-banner {
+  background-position: 50% 40%;
+  height: 200px;
+}
+
+#title-block-header.quarto-title-block.default .quarto-title-meta {
+    display: grid;
+    grid-column: page-start/body-content-end;
+}
+
+#quarto-document-content {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#quarto-margin-sidebar {
+  padding-top: 0;
+}
+
+.callout-note{
+  margin: 0;
+}
+
+iframe {
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+.center-text {
+  text-align: center;
+}
+
+#TOC {
+  font-size: medium;
+}
+</style>
+```
+
+::: {.callout-tip}
+## TIP
+
+To obtain the slides view password, please [contact me](mailto:lyons66@mit.edu).
+:::
+
+<!-- ------------------------  -->
+
+## Urban Growth (2020)
+
+::::: {.columns}
+:::: {.column width="70%"}
+::: {.callout-note}
+
+## INFO
+
+In this project, we provided a well-known real estate developer with an assessment of the development overview and future evolution of China's five major city clusters. This study combined the LandScan population change data over the past 20 years with the scope of urban land boundaries inferred from VIIRS data, conducting a comprehensive and large-scale comparison over a long period between "people" and the spatial expansion of "cities."
+
+:::
+
+{{< video https://www.youtube.com/embed/S-w09WldSug >}}
+
+::::
+:::: {.column width="30%" .center-text}
+  <img src="landscan_cover.png" style="width: 93%; border-radius: 6px;">
+  
+  [Slides Here](https://www.dropbox.com/scl/fi/a9bbxgwyqryxhd0732u1w/_final.pdf?rlkey=32yha0pa99fsqk3wrw022tepl&dl=0)
+::::
+:::::
+
+<!-- ------------------------  -->
+
+## Aesthetic Evaluation (2019)
+
+::::: {.columns}
+:::: {.column width="70%"}
+::: {.callout-note}
+
+## INFO
+
+Adopting an approach similar to [Place Pulse](https://centerforcollectivelearning.org/urbanperception), we developed a tool for our government clients that integrates calibration scoring, assessment, and the automatic training and generation of recommended signage for stores.
+
+:::
+
+{{< video https://www.youtube.com/embed/-p7eQLrfLfQ >}}
+
+::::
+:::: {.column width="30%" .center-text}
+  <!-- <img src="landscan_cover.png" style="width: 93%; border-radius: 6px;"> -->
+
+  <!-- [Slides Here](https://www.dropbox.com/scl/fi/a9bbxgwyqryxhd0732u1w/_final.pdf?rlkey=32yha0pa99fsqk3wrw022tepl&dl=0) -->
+::::
+:::::
+
+<!-- ------------------------  -->
+
+## VGE for Lujiazui (2019)
+
+::::: {.columns}
+:::: {.column width="70%"}
+::: {.callout-note}
+
+## INFO
+In this project, we utilized Unreal Engine 4 (UE4) to reconstruct a game-like virtual space for the Lujiazui District in Shanghai. The project designed a skywalk, connecting the various buildings of this prime commercial center in the heart of Shanghai. This connection enhanced the environment and reshaped the public space, elevating the overall experience of the area.
+
+:::
+
+{{< video https://www.youtube.com/embed/2NCJdfmL4WA >}}
+
+::::
+:::: {.column width="30%" .center-text}
+  <!-- <img src="landscan_cover.png" style="width: 93%; border-radius: 6px;"> -->
+
+  <!-- [Slides Here](https://www.dropbox.com/scl/fi/a9bbxgwyqryxhd0732u1w/_final.pdf?rlkey=32yha0pa99fsqk3wrw022tepl&dl=0) -->
+::::
+:::::
+
+<!-- ------------------------  -->
+
+## 24 Hour of Jialing River (2018)
+
+::::: {.columns}
+:::: {.column width="70%"}
+::: {.callout-note}
+
+## INFO
+In this project, based on the 24-hour China Unicom mobile signaling data of Chongqing, we analyzed the population mobility data along the banks of the Jialing River. From this analysis, we identified the movement patterns of different types of populations.
+
+:::
+
+{{< video https://www.youtube.com/embed/Pqe9E_azcJE >}}
+
+::::
+:::: {.column width="30%" .center-text}
+  <img src="24H_cover.png" style="width: 93%; border-radius: 6px;">
+
+  [Slides Here](https://www.dropbox.com/scl/fi/krln5lmxtckvnknlx96us/2.pdf?rlkey=doftr87o4gpx1hevi6nbs682d&dl=0)
+::::
+:::::
+
+<!-- ------------------------  -->
+
+## Time contour (2018)
+
+::::: {.columns}
+:::: {.column width="70%"}
+::: {.callout-note}
+
+## INFO
+In this project, we built a web-app based on Didi driving speed data to retrieve the time contour of any point in Shanghai based on different period of a day. One of the original idea of this project is to find the "meeting point" for users within the same city after work.
+
+:::
+
+{{< video https://www.youtube.com/embed/n21XLng565Q >}}
+
+::::
+:::: {.column width="30%" .center-text}
+  <!-- <img src="landscan_cover.png" style="width: 93%; border-radius: 6px;"> -->
+
+  <!-- [Slides Here](https://www.dropbox.com/scl/fi/a9bbxgwyqryxhd0732u1w/_final.pdf?rlkey=32yha0pa99fsqk3wrw022tepl&dl=0) -->
+::::
+:::::
+
+<!-- ------------------------  -->
+
+
+## Visual Comfortness (2018)
+
+
+::::: {.columns}
+:::: {.column width="70%"}
+::: {.callout-note}
+
+## INFO
+This project involves a study on street environment comfort assessment conducted in a community in Nanjing. We collected videos of the walking environment throughout the community and conducted a comprehensive assessment using computer vision, including object detection, semantic segmentation, and more.
+
+Later on, a similar approach was carried out for a TOD study in Beijing in collaboration with World Bank. The report can be view [here](https://elibrary.worldbank.org/doi/abs/10.1596/33343).
+:::
+
+{{< video https://www.youtube.com/embed/ZvJbkeVkb8s >}}
+
+::::
+:::: {.column width="30%" .center-text}
+  <img src="TOD_cover.png" style="width: 93%; border-radius: 6px;">
+
+  [Report Here](https://openknowledge.worldbank.org/bitstream/handle/10986/33343/Assessing-Physical-Environment-of-TOD-Communities-around-Metro-Stations-Using-Big-Data-and-Machine-Learning.pdf?sequence=1)
+::::
+:::::
+
+<!-- ------------------------  -->
+
+## 24 Hour Cycling (2017)
+
+::::: {.columns}
+:::: {.column width="70%"}
+::: {.callout-note}
+
+## INFO
+This a visualization demo based on user data from Xingzhe shown on the 2017 Bicycle EXPO.
+
+:::
+
+{{< video https://www.youtube.com/embed/XWydp-yi814 >}}
+
+::::
+:::: {.column width="30%" .center-text}
+  <!-- <img src="landscan_cover.png" style="width: 93%; border-radius: 6px;"> -->
+
+  <!-- [Slides Here](https://www.dropbox.com/scl/fi/a9bbxgwyqryxhd0732u1w/_final.pdf?rlkey=32yha0pa99fsqk3wrw022tepl&dl=0) -->
+::::
+:::::
+
+<!-- ------------------------  -->
+
+## AI Book (2017)
+
+::::: {.columns}
+:::: {.column width="70%"}
+::: {.callout-note}
+
+## INFO
+This is a user interaction screen provided inside a popular bookstore designed by Tadao Ando.
+
+:::
+
+{{< video https://www.youtube.com/embed/spSA9lFGJTU >}}
+
+::::
+:::: {.column width="30%" .center-text}
+
+  <img src="media.png" style="width: 93%; border-radius: 6px;">
+  
+  [Media Exposure](https://www.youtube.com/watch?v=bq5B7d6kUyA)
+::::
+:::::
+
+<!-- ------------------------  -->
+
+## Patterns Finder (2017)
+
+::::: {.columns}
+:::: {.column width="70%"}
+::: {.callout-note}
+
+## INFO
+A working-on projects for any user who draws some lines to provide best matched satellite images all over the world.
+
+:::
+
+{{< video https://www.youtube.com/embed/FbtfPcLp1Nk >}}
+
+::::
+:::: {.column width="30%" .center-text}
+  <!-- <img src="landscan_cover.png" style="width: 93%; border-radius: 6px;"> -->
+
+  <!-- [Slides Here](https://www.dropbox.com/scl/fi/a9bbxgwyqryxhd0732u1w/_final.pdf?rlkey=32yha0pa99fsqk3wrw022tepl&dl=0) -->
+::::
+:::::
+
+<!-- ------------------------  -->
+
+## Informal Vendors (2016)
+
+::::: {.columns}
+:::: {.column width="70%"}
+::: {.callout-note}
+
+## INFO
+We extracted features from urban street scenes using a trained model and then further identified the vaguely defined content of "informal street vendors" through additional manual calibration. Applying fine-tuning to this specific scenario in urban research was an innovation at the time.
+
+:::
+
+{{< video https://www.youtube.com/embed/-K40QXviS5o >}}
+
+::::
+:::: {.column width="30%" .center-text}
+  <img src="informal_vendors.png" style="width: 93%; border-radius: 6px;">
+
+  <!-- [Slides Here](https://www.dropbox.com/scl/fi/a9bbxgwyqryxhd0732u1w/_final.pdf?rlkey=32yha0pa99fsqk3wrw022tepl&dl=0) -->
+::::
+:::::
+
+<!-- ------------------------  -->
+
+## Shenzen Pulse (2014)
+
+::::: {.columns}
+:::: {.column width="70%"}
+::: {.callout-note}
+
+## INFO
+We collected a vast amount of check-in data from Weibo and used it to visualize the evolution of maps based on 24-hour periods.
+
+:::
+
+{{< video https://www.youtube.com/embed/o5hiJueShGs >}}
+
+::::
+:::: {.column width="30%" .center-text}
+  <!-- <img src="landscan_cover.png" style="width: 93%; border-radius: 6px;"> -->
+
+  <!-- [Slides Here](https://www.dropbox.com/scl/fi/a9bbxgwyqryxhd0732u1w/_final.pdf?rlkey=32yha0pa99fsqk3wrw022tepl&dl=0) -->
+::::
+:::::
+
+<!-- ------------------------  -->
+
+## Boston Taxi (2013)
+
+::::: {.columns}
+:::: {.column width="70%"}
+::: {.callout-note}
+
+## INFO
+This is the visualization work based a Boston Taxi data challenge. 
+
+:::
+
+{{< video https://www.youtube.com/embed/DXQkZMXftdY >}}
+
+::::
+:::: {.column width="30%" .center-text}
+  <!-- <img src="landscan_cover.png" style="width: 93%; border-radius: 6px;"> -->
+
+  <!-- [Slides Here](https://www.dropbox.com/scl/fi/a9bbxgwyqryxhd0732u1w/_final.pdf?rlkey=32yha0pa99fsqk3wrw022tepl&dl=0) -->
+::::
+:::::
+
+<!-- <div id="toc-container"></div> <!-- Placeholder for TOC -->

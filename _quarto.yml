@@ -16,13 +16,12 @@ website:
         href: projects/index.qmd
       - text: "Papers"
         href: papers/index.qmd
-      - text: "Talks"
-        href: talks/index.qmd
+      - text: "Visualization"
+        href: visualization/index.qmd
+      - text: "presentations"
+        href: presentations/index.qmd
       - text: "Portfolio"
         href: portfolio/index.qmd
-      - text: "Videos"
-        href: videos/index.qmd
-    
     # your social media handles
     right:
       - text: "{{< iconify fa6-solid building-columns size=LARGE >}}"
@@ -52,9 +51,7 @@ website:
       <span class="container"><strong>Made with [Quarto](https://quarto.org/){target="_blank"}</strong></span>
     right: |
       <span class="container"><strong>[Contact Liu Liu](mailto:mail.lyons66@mit.edu){target="_blank"}</strong></span>
-#    right: |
-#      <span class="container"><strong>[CV & Resume](https://www.dropbox.com/scl/fo/ghrtsq5to79059lximk01/h?rlkey=cev0uzwgvu4jkus9eo6kkbgn7&dl=0){target="_blank"}</strong></span>
-
+      
 project:
   type: website
   output-dir: docs

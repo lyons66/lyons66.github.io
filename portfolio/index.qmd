@@ -1,6 +1,6 @@
 ---
-title: "PORTFOLIO of DESIGN"
-subtitle: "Here is an archive of my portfolio during architectural study (2008-2011)."
+title: "Portfolio"
+subtitle: "A collection of architectural designs from 2008 to 2011"
 page-layout: full
 # title-block-banner: true
 title-block-banner: "portfolio_cover.png"
@@ -33,6 +33,9 @@ format:
   padding-top: 0;
 }
 
+#TOC {
+  font-size: medium;
+}
 </style>
 ```
 
@@ -40,73 +43,73 @@ format:
 ## Combination \| City Redevelopment (2011)
 
 ::: {layout-ncol="1"}
-<img src="portfolio_design_Page_01.jpg" style="width: 100%; border: 1px solid #444444;"/>
+<img src="portfolio_design_Page_01.jpg" style="width: 75%; border: 0.3px solid black; border-radius: 10px;"/>
 
-<img src="portfolio_design_Page_02.jpg" style="width: 100%; border: 1px solid black;"/>
+<img src="portfolio_design_Page_02.jpg" style="width: 75%; border: 0.3px solid black; border-radius: 10px;"/>
 
-<img src="portfolio_design_Page_03.jpg" style="width: 100%; border: 1px solid black;"/>
+<img src="portfolio_design_Page_03.jpg" style="width: 75%; border: 0.3px solid black; border-radius: 10px;"/>
 
-<img src="portfolio_design_Page_04.jpg" style="width: 100%; border: 1px solid black;"/>
+<img src="portfolio_design_Page_04.jpg" style="width: 75%; border: 0.3px solid black; border-radius: 10px;"/>
 
-<img src="portfolio_design_Page_05.jpg" style="width: 100%; border: 1px solid black;"/>
+<img src="portfolio_design_Page_05.jpg" style="width: 75%; border: 0.3px solid black; border-radius: 10px;"/>
 
-<img src="portfolio_design_Page_06.jpg" style="width: 100%; border: 1px solid black;"/>
+<img src="portfolio_design_Page_06.jpg" style="width: 75%; border: 0.3px solid black; border-radius: 10px;"/>
 
-<img src="portfolio_design_Page_07.jpg" style="width: 100%; border: 1px solid black;"/>
+<img src="portfolio_design_Page_07.jpg" style="width: 75%; border: 0.3px solid black; border-radius: 10px;"/>
 :::
 
 ## Control vs Design \| Regulatory Detailed Planning (2010)
 
 ::: {layout-ncol="1"}
-<img src="portfolio_design_Page_08.jpg" style="width: 100%; border: 1px solid black;"/>
+<img src="portfolio_design_Page_08.jpg" style="width: 75%; border: 0.3px solid black; border-radius: 10px;"/>
 
-<img src="portfolio_design_Page_09.jpg" style="width: 100%; border: 1px solid black;"/>
+<img src="portfolio_design_Page_09.jpg" style="width: 75%; border: 0.3px solid black; border-radius: 10px;"/>
 
-<img src="portfolio_design_Page_10.jpg" style="width: 100%; border: 1px solid black;"/>
+<img src="portfolio_design_Page_10.jpg" style="width: 75%; border: 0.3px solid black; border-radius: 10px;"/>
 
-<img src="portfolio_design_Page_11.jpg" style="width: 100%; border: 1px solid black;"/>
+<img src="portfolio_design_Page_11.jpg" style="width: 75%; border: 0.3px solid black; border-radius: 10px;"/>
 
-<img src="portfolio_design_Page_12.jpg" style="width: 100%; border: 1px solid black;"/>
+<img src="portfolio_design_Page_12.jpg" style="width: 75%; border: 0.3px solid black; border-radius: 10px;"/>
 
-<img src="portfolio_design_Page_13.jpg" style="width: 100%; border: 1px solid black;"/>
+<img src="portfolio_design_Page_13.jpg" style="width: 75%; border: 0.3px solid black; border-radius: 10px;"/>
 :::
 
 ## Skin \| Green Bud (2011)
 
 ::: {layout-ncol="1"}
-<img src="portfolio_design_Page_14.jpg" style="width: 100%; border: 1px solid black;"/>
+<img src="portfolio_design_Page_14.jpg" style="width: 75%; border: 0.3px solid black; border-radius: 10px;"/>
 
-<img src="portfolio_design_Page_15.jpg" style="width: 100%; border: 1px solid black;"/>
+<img src="portfolio_design_Page_15.jpg" style="width: 75%; border: 0.3px solid black; border-radius: 10px;"/>
 
-<img src="portfolio_design_Page_16.jpg" style="width: 100%; border: 1px solid black;"/>
+<img src="portfolio_design_Page_16.jpg" style="width: 75%; border: 0.3px solid black; border-radius: 10px;"/>
 :::
 
 ## Joints \| Growing Structure (2008)
 
 ::: {layout-ncol="1"}
-<img src="portfolio_design_Page_17.jpg" style="width: 100%; border: 1px solid black;"/>
+<img src="portfolio_design_Page_17.jpg" style="width: 75%; border: 0.3px solid black; border-radius: 10px;"/>
 
-<img src="portfolio_design_Page_18.jpg" style="width: 100%; border: 1px solid black;"/>
+<img src="portfolio_design_Page_18.jpg" style="width: 75%; border: 0.3px solid black; border-radius: 10px;"/>
 :::
 
 ## Uniformity & Variety \| Budget Hotel (2008)
 
 ::: {layout-ncol="1"}
-<img src="portfolio_design_Page_19.jpg" style="width: 100%; border: 1px solid black;"/>
+<img src="portfolio_design_Page_19.jpg" style="width: 75%; border: 0.3px solid black; border-radius: 10px;"/>
 
-<img src="portfolio_design_Page_20.jpg" style="width: 100%; border: 1px solid black;"/>
+<img src="portfolio_design_Page_20.jpg" style="width: 75%; border: 0.3px solid black; border-radius: 10px;"/>
 
-<img src="portfolio_design_Page_21.jpg" style="width: 100%; border: 1px solid black;"/>
+<img src="portfolio_design_Page_21.jpg" style="width: 75%; border: 0.3px solid black; border-radius: 10px;"/>
 :::
 
 ## Cells x Functions \| Commnunity Center (2009)
 
 ::: {layout-ncol="1"}
-<img src="portfolio_design_Page_22.jpg" style="width: 100%; border: 1px solid black;"/>
+<img src="portfolio_design_Page_22.jpg" style="width: 75%; border: 0.3px solid black; border-radius: 10px;"/>
 
-<img src="portfolio_design_Page_23.jpg" style="width: 100%; border: 1px solid black;"/>
+<img src="portfolio_design_Page_23.jpg" style="width: 75%; border: 0.3px solid black; border-radius: 10px;"/>
 
-<img src="portfolio_design_Page_24.jpg" style="width: 100%; border: 1px solid black;"/>
+<img src="portfolio_design_Page_24.jpg" style="width: 75%; border: 0.3px solid black; border-radius: 10px;"/>
 :::
 
 

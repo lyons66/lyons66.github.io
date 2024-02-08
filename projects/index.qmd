@@ -1,6 +1,6 @@
 ---
-title: "PROJECTS"
-subtitle: "I have been engaged to a variety of projects, mostly are physical metrics and their impacts on bahaviors."
+title: "Projects"
+subtitle: "Data driven urban studies, geo-tagged imagery analysis, and products"
 listing:
   contents: ./
   sort: "date"
@@ -45,3 +45,5 @@ title-block-banner: "img/pop_sh.png"
 
 </style>
 ```
+
+For more projects, please visit the [visualization page](../visualization).

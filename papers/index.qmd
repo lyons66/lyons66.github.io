@@ -1,6 +1,6 @@
 ---
-title: "RESEARCH PAPERS"
-subtitle: "For a more updated version, please visit my Google Scholar in the front page."
+title: "Research papers"
+subtitle: "Selected from my Google Scholar profile"
 page-layout: full
 title-block-banner: "papers_cover.png"
 ---
