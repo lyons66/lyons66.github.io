@@ -1,5 +1,5 @@
 ---
-title: "Street Ballet (under development)"
+title: "Sidewalk Ballet (under development)"
 subtitle: "Detecting social behaviors on streets"
 date: "Jan 2024"
 date-format: "MMM, YYYY"
@@ -64,6 +64,9 @@ format:
 This project is currently in progress, focusing on analyzing social behaviors through street view imagery. By examining the nuances of street scenes, we aim to identify specific types of activities by employing large language models (LLMs) for filtering and analysis.
 
 :::
+
+<img src="sb_cover.png" style="width: 100%;">
+
 
 # The Data
 ---
