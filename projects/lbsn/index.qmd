@@ -65,6 +65,7 @@ Both figures show the average daily population flow distribution among more than
 
 - HongMou Zhang, Liu Liu, Pensen Wang, Jinhua Zhao, “Depicting the Blurred Regional Boundaries in China Using Individual Mobility Data”
 
+This work has been presented in [China Urban Planning Annual Conference 2016](../../presentations/#national-population-flow-analysis-based-on-1-billion-lbsn-data).
 :::
 
 # The Idea

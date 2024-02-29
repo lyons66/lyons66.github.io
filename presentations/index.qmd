@@ -258,6 +258,30 @@ Additionally, this project played a pivotal role in securing our first order fro
 ::::
 :::::
 
+## National Population Flow Analysis Based on 1 billion LBSN data
+
+::::: {.columns}
+:::: {.column width="70%"}
+::: {.callout-note}
+## Keynote Speech @ China Urban Planning Annual Conference 2016
+
+Date: Sep 26, 2016
+<br>
+Location: Shenyang
+
+A presentation on the study of national population movements, utilizing the Tencent LBSN dataset, was delivered. For the first time, it showcased an analysis of urban clusters and the regional framework across the whole country.
+
+A brief of the project can be found [here](../projects/lbsn).
+
+:::
+::::
+:::: {.column width="30%" .center-text}
+<img src="LBSN_cover.png" style="width: 93%; border-radius: 6px;">
+
+[Slides Here](https://www.dropbox.com/scl/fi/hehf9d75obpxynykai12t/.pdf?rlkey=8awk4f4kik2uvidged4zsbpa5&dl=0)
+
+::::
+:::::
 
 ## GTFS and AFC Data Analysis
 

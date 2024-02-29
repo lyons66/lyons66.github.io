@@ -62,7 +62,6 @@ format:
 ## PROJECT BRIEF
 
 This project is currently in progress, focusing on analyzing social behaviors through street view imagery. By examining the nuances of street scenes, we aim to identify specific types of activities by employing large language models (LLMs) for filtering and analysis.
-
 :::
 
 <img src="sb_cover.png" style="width: 100%;">

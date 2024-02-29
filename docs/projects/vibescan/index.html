@@ -8,7 +8,7 @@
 
 <meta name="author" content="Liu Liu">
 
-<title>Liu Liu - River View Analysis</title>
+<title>Liu Liu - VibeScan</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,7 +64,7 @@ ul.task-list li input[type="checkbox"] {
 <style>
 
       .quarto-title-block .quarto-title-banner {
-        background-image: url(river_cover.png);
+        background-image: url(vibescan_cover.png);
 background-size: cover;
       }
 </style>
@@ -141,11 +141,13 @@ background-size: cover;
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-left">
-      <h1 class="title">River View Analysis</h1>
-            <p class="subtitle lead">Detecting and evaluating historical waterfront landscape</p>
+      <h1 class="title">VibeScan</h1>
+            <p class="subtitle lead">Business District Analysis under Online Public Opinion Monitoring</p>
                                 <div class="quarto-categories">
                 <div class="quarto-category">computer vision</div>
                 <div class="quarto-category">urban design</div>
+                <div class="quarto-category">poi</div>
+                <div class="quarto-category">tools</div>
               </div>
                   </div>
   </div>
@@ -163,7 +165,7 @@ background-size: cover;
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">May, 2017</p>
+        <p class="date">Feb, 2022</p>
       </div>
     </div>
     
@@ -181,8 +183,11 @@ background-size: cover;
   <ul>
   <li><a href="#the-idea" id="toc-the-idea" class="nav-link active" data-scroll-target="#the-idea">The Idea</a></li>
   <li><a href="#data-process" id="toc-data-process" class="nav-link" data-scroll-target="#data-process">Data Process</a></li>
-  <li><a href="#result-analysis" id="toc-result-analysis" class="nav-link" data-scroll-target="#result-analysis">Result Analysis</a></li>
-  <li><a href="#demo-video" id="toc-demo-video" class="nav-link" data-scroll-target="#demo-video">Demo Video</a></li>
+  <li><a href="#key-results" id="toc-key-results" class="nav-link" data-scroll-target="#key-results">Key Results</a>
+  <ul class="collapse">
+  <li><a href="#analysis-of-miami-district" id="toc-analysis-of-miami-district" class="nav-link" data-scroll-target="#analysis-of-miami-district">Analysis of Miami District</a></li>
+  <li><a href="#analysis-of-hudson-yards" id="toc-analysis-of-hudson-yards" class="nav-link" data-scroll-target="#analysis-of-hudson-yards">Analysis of Hudson Yards</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -224,39 +229,77 @@ PROJECT BRIEF
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>To preserve the natural landscapes along the Qiantang River, I analyzed a 200-kilometer stretch of riverbank videos. By carefully examining the footage, I calculated the visual proportions of seven distinct elements present throughout the entire shoreline. Subsequently, I developed a visualization platform that identifies and maps these elements along the riverbank. This platform is a valuable tool in safeguarding the natural beauty and ecological integrity of the Qiantang River, enabling effective management and conservation efforts.</p>
-<p>This work has been re-presented in <a href="../../presentations/#rez-de-ville-urban-ground-floors-2023">Rez de Ville / Urban Ground Floors 2023</a>.</p>
+<p>This project aimed at developing a benchmarking and customer analysis system for commercial areas. Leveraging online feedback, data mining, and AI, it evaluates spaces against industry standards and projects like Miami Design District and Hudson Yards. This approach aids in strategic decision-making across planning, design, and operations, enhancing commercial viability and consumer engagement.</p>
+<p>For a detailed demonstration of the project, please refer to the slides: <a href="https://www.dropbox.com/scl/fi/9e1rhg07vftm3qkmwo6i5/0323.pdf?rlkey=hhmkl61vt7ip7kt06c5k7nc5k&amp;dl=0">Phase I</a> and <a href="https://www.dropbox.com/scl/fi/qgla46f59s2kmdm21dwq8/0531.pdf?rlkey=t6zcpi2w1igjsqwm9edimas37&amp;dl=0">Phase II</a>.</p>
 </div>
 </div>
 <section id="the-idea" class="level1">
 <h1>The Idea</h1>
 <hr>
-<p>This project aims to protect the historical and cultural features of the Qiantang River and the upstream Fuchun River and Xin’an River, covering a more than 200-kilometer waterfront. The famous Fuchun Mountain Habitat map depicts the natural scenery on both sides of the strait, but now it has been damaged by the excessive development of many residential buildings.</p>
-<p><img src="riverview_cover.jpg" style="width: 100%;"></p>
+<p>Is it possible to gauge public sentiment towards the operational strategies of commercial business sites, particularly in an era where enticing offline shopping has become a paramount challenge for many shopping districts? These areas have significantly invested in enhancing their landscape’s appeal. The question arises: how can we measure the return on investment for these temporary or even permanent enhancements and infrastructure in terms of value to developers? Evaluating the success and failure of space design is crucial. With the wealth of information available on social media platforms, can we harness this publicly accessible data and compile it into a comprehensive public opinion pool? By identifying effective strategies and contrasting them with unsuccessful examples, we can glean insights that are invaluable for future decision-making processes.</p>
+<p><img src="vibescan_cover2.png" style="width: 100%;"></p>
 </section>
 <section id="data-process" class="level1">
 <h1>Data Process</h1>
 <hr>
-<p>The project is conducted based on the video along the Qiantang River, where over 40000 frames are extracted along the three sections covering the north and south bank.</p>
-<p><img src="river1.png" style="width: 100%;"></p>
-<p>After segmenting the video frames into different segmentations, we could view different landscape prototypes along the river.</p>
-<p><img src="river2.png" style="width: 100%;"></p>
+<p>Tons of the data from social media are collected from a wide variety of both China and US social media platform. We usually follows comments and photos from user. For the shopping area cases in Phase I, we mainly collected 14M records (Famous international cases), and 7M in Phase II (Domestic newly built cases).</p>
+<p><img src="vibescan_data.png" style="width: 100%;"></p>
+<p><img src="vibescan_data2.png" style="width: 100%;"></p>
 </section>
-<section id="result-analysis" class="level1">
-<h1>Result Analysis</h1>
+<section id="key-results" class="level1">
+<h1>Key Results</h1>
 <hr>
-<p>One of the major triggers for this project is to identify over-developed real estate. By composing metrics such as building height / plant height, it is easily to locate those banks.</p>
-<p><img src="river3.png" style="width: 100%;"></p>
-<p>Other methods are also applied for each section of the entire river.</p>
-<p><img src="river4.jpg" style="width: 100%;"></p>
+<section id="analysis-of-miami-district" class="level3">
+<h3 class="anchored" data-anchor-id="analysis-of-miami-district">Analysis of Miami District</h3>
+<section id="hot-search-index-of-each-platform-of-miami-district." class="level4">
+<h4 class="anchored" data-anchor-id="hot-search-index-of-each-platform-of-miami-district.">Hot search index of each platform of Miami District.</h4>
+<p><img src="vibescan_m_1.jpeg" style="width: 100%;"></p>
 </section>
-<section id="demo-video" class="level1">
-<h1>Demo Video</h1>
-<hr>
-<p>Below is a platform we created for verifying the metrics for different waterfront view sections.</p>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/6q6vMNEecWs" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="brand-check-in-rhythm." class="level4">
+<h4 class="anchored" data-anchor-id="brand-check-in-rhythm.">Brand check-in rhythm.</h4>
+<p><img src="vibescan_m_2.jpeg" style="width: 100%;"></p>
+</section>
+<section id="the-investment-of-leading-merchants-in-space-design-and-the-resulting-influence-of-influcers-checking-in." class="level4">
+<h4 class="anchored" data-anchor-id="the-investment-of-leading-merchants-in-space-design-and-the-resulting-influence-of-influcers-checking-in.">The investment of leading merchants in space design and the resulting influence of influcers checking in.</h4>
+<p><img src="vibescan_m_3.jpeg" style="width: 100%;"></p>
+<p><img src="vibescan_m_4.jpeg" style="width: 100%;"></p>
+<p><img src="vibescan_m_5.jpeg" style="width: 100%;"></p>
+</section>
+<section id="usage-and-comparison-of-public-facilities-in-the-main-space." class="level4">
+<h4 class="anchored" data-anchor-id="usage-and-comparison-of-public-facilities-in-the-main-space.">Usage and comparison of public facilities in the main space.</h4>
+<p><img src="vibescan_m_6.jpeg" style="width: 100%;"></p>
+<p><img src="vibescan_m_7.jpeg" style="width: 100%;"></p>
+<p><img src="vibescan_m_8.jpeg" style="width: 100%;"></p>
+</section>
+</section>
+<section id="analysis-of-hudson-yards" class="level3">
+<h3 class="anchored" data-anchor-id="analysis-of-hudson-yards">Analysis of Hudson Yards</h3>
+<section id="hot-search-index-of-each-platform-of-miami-district.-1" class="level4">
+<h4 class="anchored" data-anchor-id="hot-search-index-of-each-platform-of-miami-district.-1">Hot search index of each platform of Miami District.</h4>
+<p><img src="vibescan_h_1.jpeg" style="width: 100%;"></p>
+</section>
+<section id="prediction-of-the-structure-of-the-visiting-crowd" class="level4">
+<h4 class="anchored" data-anchor-id="prediction-of-the-structure-of-the-visiting-crowd">Prediction of the structure of the visiting crowd</h4>
+<p><img src="vibescan_h_2.jpeg" style="width: 100%;"></p>
+</section>
+<section id="the-analysis-of-social-comments-on-vessel." class="level4">
+<h4 class="anchored" data-anchor-id="the-analysis-of-social-comments-on-vessel.">The analysis of social comments on Vessel.</h4>
+<p><img src="vibescan_h_3.jpeg" style="width: 100%;"></p>
+</section>
+<section id="the-analysis-of-social-comments-on-edge." class="level4">
+<h4 class="anchored" data-anchor-id="the-analysis-of-social-comments-on-edge.">The analysis of social comments on Edge.</h4>
+<p><img src="vibescan_h_4.jpeg" style="width: 100%;"></p>
+</section>
+<section id="the-analysis-of-social-comments-on-the-shed." class="level4">
+<h4 class="anchored" data-anchor-id="the-analysis-of-social-comments-on-the-shed.">The analysis of social comments on the Shed.</h4>
+<p><img src="vibescan_h_5.jpeg" style="width: 100%;"></p>
+</section>
+<section id="for-a-detailed-demonstration-of-the-project-please-refer-to-the-slides-phase-i-and-phase-ii." class="level4">
+<h4 class="anchored" data-anchor-id="for-a-detailed-demonstration-of-the-project-please-refer-to-the-slides-phase-i-and-phase-ii.">For a detailed demonstration of the project, please refer to the slides: <a href="https://www.dropbox.com/scl/fi/9e1rhg07vftm3qkmwo6i5/0323.pdf?rlkey=hhmkl61vt7ip7kt06c5k7nc5k&amp;dl=0">Phase I</a> and <a href="https://www.dropbox.com/scl/fi/qgla46f59s2kmdm21dwq8/0531.pdf?rlkey=t6zcpi2w1igjsqwm9edimas37&amp;dl=0">Phase II</a>.</h4>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
