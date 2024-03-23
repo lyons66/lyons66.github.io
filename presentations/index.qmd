@@ -60,6 +60,31 @@ format:
 To obtain the slides view password, please [contact me](mailto:lyons66@mit.edu).
 :::
 
+## Sidewalk Ballet
+
+::::: {.columns}
+:::: {.column width="70%"}
+::: {.callout-note}
+## Project Report @ Long Lounge, Building 7, MIT
+
+Date: Mar 21-22, 2023
+<br>
+Location: School of Architecture and Planning, Massachusetts Institute of Technology
+
+During the [SPRING 2024 HPI–MIT WORKSHOP](https://design.mit.edu/events/spring-2024-hpi-mit-workshop), we delivered the report about current progress in detecting social behaviors on sidewalks. Here is the poster of the project [sidewalk ballet](https://www.linkedin.com/feed/update/urn:li:activity:7175452746718793728/). In this project we explored a series of current on-the-shelf models and designed the pipeline of the entire work. More details will be release when our working paper is published, and will be updaed [here](../../projects/sidewalk_ballet).
+:::
+
+<img src="HPI-workshop.png" style="width: 100%; border-radius: 6px;">
+
+::::
+:::: {.column width="30%" .center-text}
+<img src="sidewalk_slide.png" style="width: 93%; border-radius: 6px;">
+
+[Slides Here](https://www.dropbox.com/scl/fi/3la6i4we6enx4o0i7m4sp/HPI-MIT_March_0322.pptx?rlkey=aevm2hb14oee7lohzf1w6c7re&dl=0)
+
+::::
+:::::
+
 
 ## Learning from ground floors
 
