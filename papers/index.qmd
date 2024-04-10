@@ -28,6 +28,12 @@ Below is a list of my research papers with links to download or view them. Click
 
 ---
 
+- **Liu Liu, & Andres Sevtsuk**
+  "Clarity or Confusion: A Review of Computer Vision Street Attributes in Urban Studies and Planning"
+  Accepted by Cities, April, 2024
+  
+---
+
 - **Zhou, B., Liu, L., Oliva, A., & Torralba, A.**
   "Recognizing city identity via attribute analysis of geo-tagged images"
   European conference on computer vision (pp. 519-534).
