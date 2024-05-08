@@ -60,6 +60,31 @@ format:
 To obtain the slides view password, please [contact me](mailto:lyons66@mit.edu).
 :::
 
+## Urban Big Data in China
+
+::::: {.columns}
+:::: {.column width="70%"}
+::: {.callout-note}
+## Panel Talk @ 11.001 Intro to Urban Design and Development
+
+Date: May 8, 2024
+<br>
+Location: 4-370, Massachusetts Institute of Technology
+
+This presentation explores my entrepreneurship journey, focusing on urban big data analytics in China. Specifically, I discuss four distinct types of data: open data, web-crawled data, purchased data, and geo-tagged visual data. For each category, I describe 2-3 datasets that I have worked with and detail specific research questions and case studies associated with them.
+:::
+
+<img src="urban_big_data_china.jpg" style="width: 100%; border-radius: 6px;">
+
+::::
+:::: {.column width="30%" .center-text}
+<img src="urban_big_data_china_cover.png" style="width: 93%; border-radius: 6px;">
+
+[Slides Here](https://www.dropbox.com/scl/fi/48238elft773cxeugqp22/UrbanBigData_China.pdf?rlkey=bbp8bkdoykqg3ee91z2uiesjx&dl=0)
+
+::::
+:::::
+
 ## Sidewalk Ballet
 
 ::::: {.columns}
