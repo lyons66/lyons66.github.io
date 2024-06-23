@@ -77,6 +77,12 @@ Below is a list of my research papers with links to download or view them. Click
 
 ---
 
+- **Hosseini, M., Cipriano, M., Eslami, S., Hodczak, D., Liu, L., Sevtsuk, A. and de Melo, G., 2024.**
+  "ELSA: Evaluating Localization of Social Activities in Urban Streets. arXiv preprint arXiv:2406.01551."
+  [Download](https://arxiv.org/abs/2406.01551)
+
+---
+
 - **Fang, W., Liu, L., & Zhou, J.**
   "Assessing Physical Environment of TOD Communities around Metro Stations: Using Big Data and Machine Learning"
   [Download](https://openknowledge.worldbank.org/bitstream/handle/10986/33343/Assessing-Physical-Environment-of-TOD-Communities-around-Metro-Stations-Using-Big-Data-and-Machine-Learning.pdf?sequence=1)
