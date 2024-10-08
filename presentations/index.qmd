@@ -60,6 +60,32 @@ format:
 To obtain the slides view password, please [contact me](mailto:lyons66@mit.edu).
 :::
 
+## Data Benchmark for Multi-modality models
+
+::::: {.columns}
+:::: {.column width="70%"}
+::: {.callout-note}
+## Final Presentation @ From Seeing to Hearing
+
+Date: Aug 22, 2024
+<br>
+Location: Lab 126 Sunnyvale, CA
+
+This presentation covers 2 projects I conducted during my research internship at Amazon AGI. They are both related to benchmarks for Audio Generation, in which I highlighted some gaps in today's AI-driven development. <strong>(slides are password protected.)</strong>
+:::
+
+<img src="amz.jpeg" style="width: 100%; border-radius: 6px;">
+
+::::
+:::: {.column width="30%" .center-text}
+<img src="amz-cover.png" style="width: 93%; border-radius: 6px;">
+
+[Slides Here](https://www.dropbox.com/scl/fi/tob7wuw37ydulin3mq67y/2024-08-22_week13.pdf?rlkey=h6lfpc078dtyrh9y2ufiei83s&st=okatm53u&dl=0)
+
+::::
+:::::
+
+
 ## Urban Big Data in China
 
 ::::: {.columns}
@@ -80,7 +106,7 @@ This presentation explores my entrepreneurship journey, focusing on urban big da
 :::: {.column width="30%" .center-text}
 <img src="urban_big_data_china_cover.png" style="width: 93%; border-radius: 6px;">
 
-[Slides Here](https://www.dropbox.com/scl/fi/48238elft773cxeugqp22/UrbanBigData_China.pdf?rlkey=bbp8bkdoykqg3ee91z2uiesjx&dl=0)
+[Slides Here](https://www.dropbox.com/scl/fi/48238elft773cxeugqp22/UrbanBigData_China.pdf?rlkey=t7qs2jn8w98s1ka7rtyl8baa4&st=zbt03fcb&dl=0)
 
 ::::
 :::::
