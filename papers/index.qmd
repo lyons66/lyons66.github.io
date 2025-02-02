@@ -24,7 +24,7 @@ title-block-banner: "papers_cover.png"
 </style>
 ```
 
-Below is a list of my research papers with links to download or view them. Click on the titles to access the papers.
+Research Papers
 
 ---
 
@@ -113,3 +113,9 @@ Below is a list of my research papers with links to download or view them. Click
 - **Colaninno, N., Basu, R., Hosseini, M., Alhassan, A., Liu, L., & Sevtsuk, A.**
   "Urban Heat Risk Assessment: Exploring a Novel Pedestrian Network-Based Framework"
   [View](https://hdl.handle.net/11311/1258854)
+
+---
+
+Granted Research Resources
+
+-	**Principal Investigator**, Observing the “Sidewalk Ballet”: Leveraging LMMs to Detect Social Interactions in Large-scale Urban Imagery Datasets, Advanced Cyberinfrastructure Coordination Ecosystem: Services & Support, Alexandria, VA, US, Funding Period: January 31, 2025 – January 30, 2026, [Project URI](https://www.xras.org/public/requests/197355-ACCESS-CIS250088)
