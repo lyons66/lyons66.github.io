@@ -15,16 +15,16 @@ about:
     - text: "{{< iconify mdi resume size=large >}} CV & Résumé"
       href: https://www.dropbox.com/scl/fo/ghrtsq5to79059lximk01/h?rlkey=cev0uzwgvu4jkus9eo6kkbgn7&dl=0
       
-    - text: "{{< iconify ant-design zhihu-square-filled size=large >}} Zhihu (知乎)"
-      href: "https://www.zhihu.com/people/liu-liu-69-84-88"
-
+    - text: "{{< iconify academicons orcid size=large >}} ORCID"
+      href: https://orcid.org/0000-0003-0100-9763
+      
     - text: "{{< iconify fa-brands github-square size=large >}} Github Repo"
       href: https://github.com/lyons66/lyons66.github.io
 ---
 
 I am a Ph.D. candidate at [MIT](https://dusp.mit.edu/people/liu-liu) studying Computational Urban Science, and working at [City Form Lab](https://cityform.mit.edu/). Being a scientist with eight years of entrepreneurship in data-driven urban analytics and six years of design training, I focused on the built environment and human behavior analysis by adopting computer vision. 
 
-Before returning to MIT, I am the founder of [CitoryTech Co LTD (城室科技)](https://www.citory.tech/), a start-up in urban computation specializing in urban visual AI. Besides, I was an external expert for Tencent, a consultant for the World Bank, and an urban researcher at the China Academy of Urban Planning and Design. Recently, I also completed an internship as an applied scientist at Amazon, working with the AGI Foundation.
+Before returning to MIT, I am the founder of [CitoryTech Co LTD (城室科技)](https://www.citory.tech/), a start-up in urban computation specializing in urban visual AI. Besides, I was an external expert for Tencent, a consultant for the World Bank, and an urban researcher at the China Academy of Urban Planning and Design. I am currently working as an Applied Scientist PhD Intern at Amazon, collaborating with the AGI Foundation.
 
 My academic interests lie in the interdisciplinary fields of AI, machine learning, optimization, and urban design research.
 

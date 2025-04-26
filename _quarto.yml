@@ -27,18 +27,14 @@ website:
       - text: "{{< iconify fa6-solid building-columns size=LARGE >}}"
         href: https://dusp.mit.edu/people/liu-liu
         aria-label: DUSP
-
-      - text: "{{< iconify fa linkedin size=LARGE >}}"
-        href: https://www.linkedin.com/in/liu-liu-08033547/
-        aria-label: LinkedIn
-        
-      - text: "{{< iconify fa-brands github size=LARGE >}}"
-        href: https://github.com/lyons66
-        aria-label: GitHub
-        
-      - text: "{{< iconify fa6-brands x-twitter size=LARGE >}}"
-        href: https://twitter.com/liuliu_lyons66
-        aria-label: X
+    
+      - text: "{{< iconify simple-icons xiaohongshu size=LARGE >}}"
+        href: https://www.xiaohongshu.com/user/profile/56585face4251d61448af39f
+        aria-label: Xiaohongshu
+    
+      - text: "{{< iconify ant-design zhihu-square-filled size=LARGE >}}"
+        href: "https://www.zhihu.com/people/liu-liu-69-84-88"
+        aria-label: Zhihu
         
 # To find the icons: https://icon-sets.iconify.design/ant-design/zhihu-circle-filled/
   
