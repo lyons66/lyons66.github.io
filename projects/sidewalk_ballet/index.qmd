@@ -1,7 +1,7 @@
 ---
-title: "Sidewalk Ballet (under development)"
+title: "Sidewalk Ballet"
 subtitle: "Detecting social behaviors on streets"
-date: "Jan 2024"
+date: "May 2025"
 date-format: "MMM, YYYY"
 # author: Liu Liu @ MIT
 author-title: "Main Researchers"
@@ -12,7 +12,7 @@ author:
     # affiliations:
     #   - name: Massachusetts Institute of Technology
 #       - url: https://www.mit.edu/
-  - name: Maryam Hosseini
+#  - name: Maryam Hosseini
     # affiliations:
     #   - name: test
 # affiliation-title: "AFFILIATION"
@@ -61,28 +61,22 @@ format:
 ::: {.callout-tip}
 ## PROJECT BRIEF
 
-This project is currently in progress, focusing on analyzing social behaviors through street view imagery. By examining the nuances of street scenes, we aim to identify specific types of activities by employing large language models (LLMs) for filtering and analysis.
+Traditional urban observational studies rely on direct field observation of public spaces such as sidewalks and plazas to understand how human behaviour and the built environment influence one another. Pioneering scholars, including William H. Whyte, Jan Gehl, and Allan Jacobs, produced influential empirical insights that continue to guide urban design practice. Such work, though invaluable, is labor-intensive, restricted to specific locations, and increasingly challenged by evolving social patterns shaped by digital interaction and algorithmic filter bubbles.
+
+Recent advances in artificial intelligence, especially computer vision, allow researchers to extract physical indicators from extensive collections of geo‑tagged imagery at an unprecedented scale. Measures such as the Green View Index have become common in urban analytics. However, most applications target the static attributes of the built environment, and very few explore the more intricate realm of human behaviour that earlier manual studies documented.
+
+My dissertation proposes a framework that fills this missing piece. I designed an end‑to‑end data collection, processing, and annotation pipeline that fine‑tunes multimodal vision‑language models to recognise the full spectrum of Human Activities and Interactions (HAI) visible in street‑view images. First, the methodological component adapts the models to label combined postures and actions, such as standing, sitting, walking, vending, cycling, using a phone, and over forty additional states, and to detect social groupings (single, dyad, small group, crowd) together with degrees of engagement such as face‑to‑face conversation versus passive co‑presence. The taxonomy is distilled from classic behavioural literature and extensive image inspection. Second, I propose to construct a family of HAI indicators aggregated to uniform sidewalk segments, including Solitary, Grouping, Engagement, Diversity, and Activity Entropy. These indicators are analysed against urban accessibility (pedestrian accessibility and pedestrian flows), design and perceptual attributes (sidewalk width, tree canopy, street‑furniture density, façade transparency, etc.), and socio‑demographic metrics (ethnic composition, age diversity, etc.) from census and mobility data. External comparison with high‑resolution GPS trajectory surveys confirms that segments with higher Activity Entropy or stronger Engagement scores align with observed patterns of pedestrian co‑presence.
+
 :::
 
-<img src="sb_cover.png" style="width: 100%;">
 
 
-# The Data
----
+The City Form Lab exhibit at the 2025 Venice Architecture Biennale showcases two ongoing research projects that examine the geography of foot-traffic and social interactions on the streets of New York: "NYC Walks" and "Sidewalk Ballet". The exhibit is part of the MIT Department of Architecture led exhibition The Next Earth at the Palazzo Diedo, the exhibition space of Berggruen Arts & Culture. 
 
-<img src="data.png" style="width: 100%;">
+<iframe 
+  title="vimeo-player"
+  src="https://player.vimeo.com/video/1082477060?h=dc898de3cf"
+  style="width: 100%; aspect-ratio: 16 / 9; border: none;"
+  allowfullscreen>
+</iframe>
 
-# Preliminary Distributions
----
-
-Street Vendors
-
-<img src="street_vendors.png" style="width: 100%;">
-
-Pet / Walking Dog
-
-<img src="pet.png" style="width: 100%;">
-
-Wheelchair
-
-<img src="wheelchair.png" style="width: 100%;">

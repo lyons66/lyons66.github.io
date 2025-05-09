@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Liu Liu - Projects</title>
+<title>Projects – Liu Liu</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -37,10 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-09fb599c36abb1eb6ca983279c3e259b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/iconify-1.0.8/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
@@ -48,7 +48,12 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -57,6 +62,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -99,18 +105,45 @@ background-size: cover;
       }
 </style>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
     <img src="../img/logo.png" alt="" class="navbar-logo">
     </a>
@@ -119,49 +152,49 @@ background-size: cover;
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../projects/index.html" rel="" target="" aria-current="page">
- <span class="menu-text">Projects</span></a>
+    <a class="nav-link active" href="../projects/index.html" aria-current="page"> 
+<span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../papers/index.html" rel="" target="">
- <span class="menu-text">Papers</span></a>
+    <a class="nav-link" href="../papers/index.html"> 
+<span class="menu-text">Papers</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../visualization/index.html" rel="" target="">
- <span class="menu-text">Visualization</span></a>
+    <a class="nav-link" href="../visualization/index.html"> 
+<span class="menu-text">Visualization</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../presentations/index.html" rel="" target="">
- <span class="menu-text">presentations</span></a>
+    <a class="nav-link" href="../presentations/index.html"> 
+<span class="menu-text">presentations</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../portfolio/index.html" rel="" target="">
- <span class="menu-text">Portfolio</span></a>
+    <a class="nav-link" href="../portfolio/index.html"> 
+<span class="menu-text">Portfolio</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="https://dusp.mit.edu/people/liu-liu" rel="" target="">
- <span class="menu-text"><iconify-icon inline="" icon="fa6-solid:building-columns" style="font-size: 1.75em;"></iconify-icon></span></a>
+    <a class="nav-link" href="https://dusp.mit.edu/people/liu-liu"> 
+<span class="menu-text"><iconify-icon inline="" icon="fa6-solid:building-columns" style="font-size: 1.75em;"></iconify-icon></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://www.xiaohongshu.com/user/profile/56585face4251d61448af39f" rel="" target="">
- <span class="menu-text"><iconify-icon inline="" icon="simple-icons:xiaohongshu" style="font-size: 1.75em;"></iconify-icon></span></a>
+    <a class="nav-link" href="https://www.xiaohongshu.com/user/profile/56585face4251d61448af39f"> 
+<span class="menu-text"><iconify-icon inline="" icon="simple-icons:xiaohongshu" style="font-size: 1.75em;"></iconify-icon></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://www.zhihu.com/people/liu-liu-69-84-88" rel="" target="">
- <span class="menu-text"><iconify-icon inline="" icon="ant-design:zhihu-square-filled" style="font-size: 1.75em;"></iconify-icon></span></a>
+    <a class="nav-link" href="https://www.zhihu.com/people/liu-liu-69-84-88"> 
+<span class="menu-text"><iconify-icon inline="" icon="ant-design:zhihu-square-filled" style="font-size: 1.75em;"></iconify-icon></span></a>
   </li>  
 </ul>
+          </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
-          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -175,7 +208,7 @@ background-size: cover;
   </div>
     
   
-  <div class="quarto-title-meta">
+  <div class="quarto-title-meta column-page-left">
 
       
     
@@ -187,9 +220,10 @@ background-size: cover;
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(10)</span></div><div class="category" data-category="cellphone data">cellphone data <span class="quarto-category-count">(1)</span></div><div class="category" data-category="computer vision">computer vision <span class="quarto-category-count">(8)</span></div><div class="category" data-category="poi">poi <span class="quarto-category-count">(2)</span></div><div class="category" data-category="tools">tools <span class="quarto-category-count">(4)</span></div><div class="category" data-category="urban design">urban design <span class="quarto-category-count">(4)</span></div><div class="category" data-category="urban planning">urban planning <span class="quarto-category-count">(3)</span></div><div class="category" data-category="visualization">visualization <span class="quarto-category-count">(2)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(10)</span></div><div class="category" data-category="Y2VsbHBob25lJTIwZGF0YQ==">cellphone data <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y29tcHV0ZXIlMjB2aXNpb24=">computer vision <span class="quarto-category-count">(8)</span></div><div class="category" data-category="cG9p">poi <span class="quarto-category-count">(2)</span></div><div class="category" data-category="dG9vbHM=">tools <span class="quarto-category-count">(4)</span></div><div class="category" data-category="dXJiYW4lMjBkZXNpZ24=">urban design <span class="quarto-category-count">(4)</span></div><div class="category" data-category="dXJiYW4lMjBwbGFubmluZw==">urban planning <span class="quarto-category-count">(3)</span></div><div class="category" data-category="dmlzdWFsaXphdGlvbg==">visualization <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+
 
 
 
@@ -253,297 +287,60 @@ background-size: cover;
     </div>
 </div>
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="computer vision,visualization" data-listing-date-sort="1398916800000" data-listing-file-modified-sort="1707009990592" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
-<a href="../projects/cimage/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="0" data-categories="Y29tcHV0ZXIlMjB2aXNpb24lMkN1cmJhbiUyMGRlc2lnbg==" data-listing-date-sort="1746072000000" data-listing-file-modified-sort="1746832145756" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="437">
+<a href="../projects/sidewalk_ballet/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img src="../projects/cimage/cimage_cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="../projects/sidewalk_ballet/sb_cover.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-C-IMAGE Project
+Sidewalk Ballet
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('computer vision'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('Y29tcHV0ZXIlMjB2aXNpb24='); return false;">
 computer vision
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('visualization'); return false;">
-visualization
-</div>
-</div>
-<div class="card-text listing-description">
-This project originated from my thesis, which involved the collection of millions of photos from 26 cities. The objective was to utilize deep…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Liu Liu, Bolei Zhou
-</div>
-<div class="listing-date">
-May, 2014
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="cellphone data,urban planning" data-listing-date-sort="1425186000000" data-listing-file-modified-sort="1709159731676" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
-<a href="../projects/lbsn/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="../projects/lbsn/lbsn_cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-1 Billion LBSN Data
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('cellphone data'); return false;">
-cellphone data
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('urban planning'); return false;">
-urban planning
-</div>
-</div>
-<div class="card-text listing-description">
-Both figures show the average daily population flow distribution among more than 2,000 county-level units. The picture on the left is the average…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Liu Liu, Di An
-</div>
-<div class="listing-date">
-Mar, 2015
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="computer vision,urban design" data-listing-date-sort="1475294400000" data-listing-file-modified-sort="1707010933896" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
-<a href="../projects/streetalk/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="../projects/streetalk/streetalk_cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-StreeTalk Project
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('computer vision'); return false;">
-computer vision
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('urban design'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('dXJiYW4lMjBkZXNpZ24='); return false;">
 urban design
 </div>
 </div>
 <div class="card-text listing-description">
-Using the perceptional map as a foundation, along with additional geo information such as points of interest (POI) and mobility data, I developed a…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Liu Liu, Bolei Zhou, Fan Zhang
-</div>
-<div class="listing-date">
-Oct, 2016
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="computer vision,urban design" data-listing-date-sort="1493611200000" data-listing-file-modified-sort="1709159599251" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
-<a href="../projects/riverview/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="../projects/riverview/riverview_cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-River View Analysis
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('computer vision'); return false;">
-computer vision
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('urban design'); return false;">
-urban design
-</div>
-</div>
-<div class="card-text listing-description">
-To preserve the natural landscapes along the Qiantang River, I analyzed a 200-kilometer stretch of riverbank videos. By carefully examining the…
+Traditional urban observational studies rely on direct field observation of public spaces such as sidewalks and plazas to understand how human…
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
 Liu Liu
 </div>
 <div class="listing-date">
-May, 2017
+May, 2025
 </div>
 </div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="urban planning,poi,visualization" data-listing-date-sort="1514782800000" data-listing-file-modified-sort="1707009967241" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
-<a href="../projects/caz/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="../projects/caz/caz_cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Recognizing Central Activity Zones
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('urban planning'); return false;">
-urban planning
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('poi'); return false;">
-poi
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('visualization'); return false;">
-visualization
-</div>
-</div>
-<div class="card-text listing-description">
-Utilizing the concept of entropy, the project aims to quantify the level of functional diversity within different areas of the city. By leveraging a…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Liu Liu, Zhuqing Liu
-</div>
-<div class="listing-date">
-Jan, 2018
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="5" data-categories="computer vision,tools" data-listing-date-sort="1514782800000" data-listing-file-modified-sort="1706319347856" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="../projects/cityeye/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="../projects/cityeye/cityeye_cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-CityEye WeChat mini APP
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('computer vision'); return false;">
-computer vision
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('tools'); return false;">
-tools
-</div>
-</div>
-<div class="card-text listing-description">
-CityEye is a WeChat mini application specifically designed for group field trips. Currently, it caters to a user base of over 10,000 individuals…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Liu Liu, Ding Zhang, Jinxing Shao
-</div>
-<div class="listing-date">
-Jan, 2018
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="6" data-categories="computer vision,tools" data-listing-date-sort="1588305600000" data-listing-file-modified-sort="1706323446441" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
-<a href="../projects/huipai/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="../projects/huipai/huipai_cover.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-AI-Aided Camera App
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('computer vision'); return false;">
-computer vision
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('tools'); return false;">
-tools
-</div>
-</div>
-<div class="card-text listing-description">
-This app integrates deep models to learn the operation and mode of photo shooting from the massive works of professional photographers and realizes…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Liu Liu, Ding Zhang, Xin Xiong
-</div>
-<div class="listing-date">
-May, 2020
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="7" data-categories="computer vision,urban planning,tools" data-listing-date-sort="1633060800000" data-listing-file-modified-sort="1707326033269" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
-<a href="../projects/road/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="../projects/road/road_cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Road Assessment in Ulaanbaatar
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('computer vision'); return false;">
-computer vision
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('urban planning'); return false;">
-urban planning
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('tools'); return false;">
-tools
-</div>
-</div>
-<div class="card-text listing-description">
-The condition of transportation assets can be effectively observed through user-generated content (UGC) images. Analyzing geo-tagged images makes it…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Liu Liu, Ding Zhang, Hongdu Yi
-</div>
-<div class="listing-date">
-Oct, 2021
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="8" data-categories="computer vision,urban design,poi,tools" data-listing-date-sort="1643691600000" data-listing-file-modified-sort="1709173257513" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="g-col-1" data-index="1" data-categories="Y29tcHV0ZXIlMjB2aXNpb24lMkN1cmJhbiUyMGRlc2lnbiUyQ3BvaSUyQ3Rvb2xz" data-listing-date-sort="1643691600000" data-listing-file-modified-sort="1709173257513" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="434">
 <a href="../projects/vibescan/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img src="../projects/vibescan/vibescan_cover2.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="../projects/vibescan/vibescan_cover2.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 VibeScan
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('computer vision'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('Y29tcHV0ZXIlMjB2aXNpb24='); return false;">
 computer vision
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('urban design'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('dXJiYW4lMjBkZXNpZ24='); return false;">
 urban design
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('poi'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('cG9p'); return false;">
 poi
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('tools'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('dG9vbHM='); return false;">
 tools
 </div>
 </div>
@@ -562,33 +359,270 @@ Feb, 2022
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="9" data-categories="computer vision,urban design" data-listing-date-sort="1704085200000" data-listing-file-modified-sort="1709159680072" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="../projects/sidewalk_ballet/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="2" data-categories="Y29tcHV0ZXIlMjB2aXNpb24lMkN1cmJhbiUyMHBsYW5uaW5nJTJDdG9vbHM=" data-listing-date-sort="1633060800000" data-listing-file-modified-sort="1707326033269" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="227">
+<a href="../projects/road/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img src="../projects/sidewalk_ballet/sb_cover.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="../projects/road/road_cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Sidewalk Ballet (under development)
+Road Assessment in Ulaanbaatar
 </h5>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('computer vision'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('Y29tcHV0ZXIlMjB2aXNpb24='); return false;">
 computer vision
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('urban design'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('dXJiYW4lMjBwbGFubmluZw=='); return false;">
+urban planning
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('dG9vbHM='); return false;">
+tools
+</div>
+</div>
+<div class="card-text listing-description">
+The condition of transportation assets can be effectively observed through user-generated content (UGC) images. Analyzing geo-tagged images makes it…
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Liu Liu, Ding Zhang, Hongdu Yi
+</div>
+<div class="listing-date">
+Oct, 2021
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="Y29tcHV0ZXIlMjB2aXNpb24lMkN0b29scw==" data-listing-date-sort="1588305600000" data-listing-file-modified-sort="1706323446441" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="362">
+<a href="../projects/huipai/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../projects/huipai/huipai_cover.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+AI-Aided Camera App
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Y29tcHV0ZXIlMjB2aXNpb24='); return false;">
+computer vision
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('dG9vbHM='); return false;">
+tools
+</div>
+</div>
+<div class="card-text listing-description">
+This app integrates deep models to learn the operation and mode of photo shooting from the massive works of professional photographers and realizes…
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Liu Liu, Ding Zhang, Xin Xiong
+</div>
+<div class="listing-date">
+May, 2020
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="dXJiYW4lMjBwbGFubmluZyUyQ3BvaSUyQ3Zpc3VhbGl6YXRpb24=" data-listing-date-sort="1514782800000" data-listing-file-modified-sort="1707009967241" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="647">
+<a href="../projects/caz/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../projects/caz/caz_cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Recognizing Central Activity Zones
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('dXJiYW4lMjBwbGFubmluZw=='); return false;">
+urban planning
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('cG9p'); return false;">
+poi
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('dmlzdWFsaXphdGlvbg=='); return false;">
+visualization
+</div>
+</div>
+<div class="card-text listing-description">
+Utilizing the concept of entropy, the project aims to quantify the level of functional diversity within different areas of the city. By leveraging a…
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Liu Liu, Zhuqing Liu
+</div>
+<div class="listing-date">
+Jan, 2018
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="Y29tcHV0ZXIlMjB2aXNpb24lMkN0b29scw==" data-listing-date-sort="1514782800000" data-listing-file-modified-sort="1706319347856" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="163">
+<a href="../projects/cityeye/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../projects/cityeye/cityeye_cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+CityEye WeChat mini APP
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Y29tcHV0ZXIlMjB2aXNpb24='); return false;">
+computer vision
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('dG9vbHM='); return false;">
+tools
+</div>
+</div>
+<div class="card-text listing-description">
+CityEye is a WeChat mini application specifically designed for group field trips. Currently, it caters to a user base of over 10,000 individuals…
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Liu Liu, Ding Zhang, Jinxing Shao
+</div>
+<div class="listing-date">
+Jan, 2018
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="6" data-categories="Y29tcHV0ZXIlMjB2aXNpb24lMkN1cmJhbiUyMGRlc2lnbg==" data-listing-date-sort="1493611200000" data-listing-file-modified-sort="1709159599251" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="302">
+<a href="../projects/riverview/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../projects/riverview/riverview_cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+River View Analysis
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Y29tcHV0ZXIlMjB2aXNpb24='); return false;">
+computer vision
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('dXJiYW4lMjBkZXNpZ24='); return false;">
 urban design
 </div>
 </div>
 <div class="card-text listing-description">
-This project is currently in progress, focusing on analyzing social behaviors through street view imagery. By…
+To preserve the natural landscapes along the Qiantang River, I analyzed a 200-kilometer stretch of riverbank videos. By carefully examining the…
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
-Liu Liu, Maryam Hosseini
+Liu Liu
 </div>
 <div class="listing-date">
-Jan, 2024
+May, 2017
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="7" data-categories="Y29tcHV0ZXIlMjB2aXNpb24lMkN1cmJhbiUyMGRlc2lnbg==" data-listing-date-sort="1475294400000" data-listing-file-modified-sort="1707010933896" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="735">
+<a href="../projects/streetalk/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../projects/streetalk/streetalk_cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+StreeTalk Project
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Y29tcHV0ZXIlMjB2aXNpb24='); return false;">
+computer vision
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('dXJiYW4lMjBkZXNpZ24='); return false;">
+urban design
+</div>
+</div>
+<div class="card-text listing-description">
+Using the perceptional map as a foundation, along with additional geo information such as points of interest (POI) and mobility data, I developed a…
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Liu Liu, Bolei Zhou, Fan Zhang
+</div>
+<div class="listing-date">
+Oct, 2016
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="8" data-categories="Y2VsbHBob25lJTIwZGF0YSUyQ3VyYmFuJTIwcGxhbm5pbmc=" data-listing-date-sort="1425186000000" data-listing-file-modified-sort="1709159731676" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1222">
+<a href="../projects/lbsn/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../projects/lbsn/lbsn_cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+1 Billion LBSN Data
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Y2VsbHBob25lJTIwZGF0YQ=='); return false;">
+cellphone data
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('dXJiYW4lMjBwbGFubmluZw=='); return false;">
+urban planning
+</div>
+</div>
+<div class="card-text listing-description">
+Both figures show the average daily population flow distribution among more than 2,000 county-level units. The picture on the left is the average…
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Liu Liu, Di An
+</div>
+<div class="listing-date">
+Mar, 2015
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="9" data-categories="Y29tcHV0ZXIlMjB2aXNpb24lMkN2aXN1YWxpemF0aW9u" data-listing-date-sort="1398916800000" data-listing-file-modified-sort="1707009990592" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="526">
+<a href="../projects/cimage/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../projects/cimage/cimage_cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+C-IMAGE Project
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Y29tcHV0ZXIlMjB2aXNpb24='); return false;">
+computer vision
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('dmlzdWFsaXphdGlvbg=='); return false;">
+visualization
+</div>
+</div>
+<div class="card-text listing-description">
+This project originated from my thesis, which involved the collection of millions of photos from 26 cities. The objective was to utilize deep…
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Liu Liu, Bolei Zhou
+</div>
+<div class="listing-date">
+May, 2014
 </div>
 </div>
 </div>
@@ -635,18 +669,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -678,11 +701,48 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -692,8 +752,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -705,7 +774,129 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -749,6 +940,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -774,6 +966,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -836,13 +1054,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left"><span class="container"><strong>Made with <a href="https://quarto.org/" target="_blank">Quarto</a></strong></span></div>   
+    <div class="nav-footer-left">
+<p><span class="container"><strong>Made with <a href="https://quarto.org/" target="_blank">Quarto</a></strong></span></p>
+</div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
-    <div class="nav-footer-right"><span class="container"><strong><a href="mailto:mail.lyons66@mit.edu" target="_blank">Contact Liu Liu</a></strong></span></div>
+    <div class="nav-footer-right">
+<p><span class="container"><strong><a href="mailto:mail.lyons66@mit.edu" target="_blank">Contact Liu Liu</a></strong></span></p>
+</div>
   </div>
 </footer>
+
 
 
 

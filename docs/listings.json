@@ -2,16 +2,16 @@
   {
     "listing": "/projects/index.html",
     "items": [
-      "/projects/cimage/index.html",
-      "/projects/lbsn/index.html",
-      "/projects/streetalk/index.html",
-      "/projects/riverview/index.html",
+      "/projects/sidewalk_ballet/index.html",
+      "/projects/vibescan/index.html",
+      "/projects/road/index.html",
+      "/projects/huipai/index.html",
       "/projects/caz/index.html",
       "/projects/cityeye/index.html",
-      "/projects/huipai/index.html",
-      "/projects/road/index.html",
-      "/projects/vibescan/index.html",
-      "/projects/sidewalk_ballet/index.html"
+      "/projects/riverview/index.html",
+      "/projects/streetalk/index.html",
+      "/projects/lbsn/index.html",
+      "/projects/cimage/index.html"
     ]
   }
 ]
