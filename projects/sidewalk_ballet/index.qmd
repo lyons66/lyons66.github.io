@@ -69,9 +69,11 @@ My dissertation proposes a framework that fills this missing piece. I designed a
 
 :::
 
-
+<img src="LiusDesk2.jpg" style="width: 100%;">
 
 The City Form Lab exhibit at the 2025 Venice Architecture Biennale showcases two ongoing research projects that examine the geography of foot-traffic and social interactions on the streets of New York: "NYC Walks" and "Sidewalk Ballet". The exhibit is part of the MIT Department of Architecture led exhibition The Next Earth at the Palazzo Diedo, the exhibition space of Berggruen Arts & Culture. 
+
+Here is the project page link: [https://cityform.mit.edu/projects/venice-architecture-biennale-2025](https://cityform.mit.edu/projects/venice-architecture-biennale-2025)
 
 <iframe 
   title="vimeo-player"

@@ -116,6 +116,28 @@ Research Papers
 
 ---
 
+Papers Under Review
+
+---
+
+-	**Kang, Y., Chen, J., Liu, L., Sharma, K., Mazzarello, M., Mora, S., Duarte, F.* (corresp.), & Ratti, C.**
+  “Human vs. AI Safety Perception? Decoding Human Safety Perception with Eye-Tracking Systems, Street View Images, and Explainable AI"
+  Computers, Environment and Urban Systems, major revision invited (Manuscript ID CEUS-D-25-00395).
+
+---
+
+-	**Zhang, H., Liu, L., Wang, P., & Zhao, J.**
+  "Depicting the Blurred Regional Boundaries in China Using Individual Mobility Data"
+  Computational Urban Science, under review (Manuscript ID CUSC-D-25-00097).
+
+---
+
+Publication Reviewer
+
+Cities, Nature Cities, Sustainable Cities and Society, Environment and Planning B: Urban Analytics and City Science, Journal of Transport and Land Use, Transactions in Urban Data, Science, and Technology, Annals of the American Association of Geographers, Computational Urban Science.
+
+---
+
 Granted Research Resources
 
 -	**Principal Investigator**, Observing the “Sidewalk Ballet”: Leveraging LMMs to Detect Social Interactions in Large-scale Urban Imagery Datasets, Advanced Cyberinfrastructure Coordination Ecosystem: Services & Support, Alexandria, VA, US, Funding Period: January 31, 2025 – January 30, 2026, [Project URI](https://www.xras.org/public/requests/197355-ACCESS-CIS250088)
