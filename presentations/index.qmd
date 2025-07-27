@@ -60,6 +60,36 @@ format:
 To obtain the slides view password, please [contact me](mailto:lyons66@mit.edu).
 :::
 
+## Seeing HAI: Human Activities and Interactions on Sidewalks through LLMs and Computer Vision
+
+::::: {.columns}
+:::: {.column width="70%"}
+::: {.callout-note}
+## Ph.D. Dissertation Colloquium
+
+Date: May 22, 2025
+<br>
+Location: 10-401, MIT
+
+This presentation outlined the two-year research plan for my doctoral dissertation, building upon the Sidewalk Ballet project.
+
+The dissertation consists of two main phases. In the first phase, I developed a three-step pipeline to detect social groups in sidewalk scenes using computer vision and large language models. In the second phase, I will integrate these social interaction findings with additional street-level features to construct a set of Human Activity and Interaction (HAI) indices. These indices aim to support both upstream and downstream applications in urban design research.
+
+All members of my dissertation committee attended the colloquium: Prof. Andres Sevtsuk, Prof. Jinhua Zhao, and Prof. Lawrence Vale. The external reviewer was Prof. Albert Saiz.
+
+:::
+
+<img src="Colloquium.jpg" style="width: 100%; border-radius: 6px;">
+
+::::
+:::: {.column width="30%" .center-text}
+<img src="Colloquium_final.jpg" style="width: 93%; border-radius: 6px;">
+
+[Slides Here](https://www.dropbox.com/scl/fi/4om4d2k8kcld4vmmocqg7/Colloquium_final.pdf?rlkey=3m3ahds2pe0nl3ssslspn451f&st=xdrhrj7m&dl=0)
+
+::::
+:::::
+
 ## Data Benchmark for Multi-modality models
 
 ::::: {.columns}
@@ -71,7 +101,8 @@ Date: Aug 22, 2024
 <br>
 Location: Lab 126 Sunnyvale, CA
 
-This presentation covers 2 projects I conducted during my research internship at Amazon AGI. They are both related to benchmarks for Audio Generation, in which I highlighted some gaps in today's AI-driven development. <strong>(slides are password protected.)</strong>
+This presentation covers 2 projects I conducted during my research internship at Amazon AGI. They are both related to benchmarks for Audio Generation, in which I highlighted some gaps in today's AI-driven development. The internal mauscript of the working papers can be found [here](https://lyons66.github.io/papers/#manuscripts-completed-not-submitted) in my "Papers" Section.
+
 :::
 
 <img src="amz.jpeg" style="width: 100%; border-radius: 6px;">
