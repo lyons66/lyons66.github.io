@@ -25,119 +25,106 @@ title-block-banner: "papers_cover.png"
 ```
 
 Research Papers
+==============
+
+## Peer-Reviewed Papers
+
+- **Liu, L., Marco Cipriano, Freya Tan, Alexandra Kudaeva, Andres Sevtsuk, & Gerard de Melo**  
+  *Observing the “Sidewalk Ballet”: Leveraging LLMs to Detect Social Interactions in Street-View Images*  
+  **CUPUM 2025 – Computational Urban Planning & Urban Management**, London, UK.  
+  [View](#)  
+
+- **Hosseini, M., Cipriano, M., Eslami, S., Hodczak, D., Liu, L., Sevtsuk, A., & de Melo, G.**  
+  *ELSA: Evaluating Localization of Social Activities in Urban Streets*  
+  *arXiv* preprint arXiv:2406.01551 (2024).  
+  [Download](https://arxiv.org/abs/2406.01551)  
+
+- **Liu, L., & Andres Sevtsuk**  
+  *Clarity or Confusion: A Review of Computer-Vision Street Attributes in Urban Studies and Planning*  
+  *Cities*, 150, 105022 (2024).  
+  [View](https://doi.org/10.1016/j.cities.2024.105022)  
+
+- **Colaninno, N., Rounaq Basu, Maryam Hosseini, Abdulaziz Alhassan, Liu Liu, & Andres Sevtsuk**  
+  *A Sidewalk-Level Urban Heat-Risk Assessment Framework Using Pedestrian Mobility and Urban Micro-climate Modelling*  
+  *Environment & Planning B: Urban Analytics and City Science* (2024).  
+  [View](https://journals.sagepub.com/doi/full/10.1177/23998083241280746)  
+
+- **Zhou, B., Liu, L., Oliva, A., & Torralba, A.**  
+  *Recognizing City Identity via Attribute Analysis of Geo-Tagged Images*  
+  *European Conference on Computer Vision* (ECCV 2014), pp. 519-534.  
+  [Download](https://link.springer.com/content/pdf/10.1007/978-3-319-10578-9_34.pdf)  
+
+- **Liu, L., Zhou, B., Zhao, J., & Ryan, B. D.**  
+  *C-IMAGE: City Cognitive Mapping through Geo-Tagged Photos*  
+  *GeoJournal*, 81 (6), 817-861 (2016).  
+  [View](https://link.springer.com/article/10.1007/s10708-016-9739-6)  
+
+- **Long, Y., & Liu, L.**  
+  *How Green Are the Streets? An Analysis for Central Areas of Chinese Cities Using Tencent Street View*  
+  *PLOS ONE*, 12 (2), e0171110 (2017).  
+  [Download](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0171110)  
+
+- **Zhang, F., Zhou, B., Liu, L., Liu, Y., Fung, H. H., Lin, H., & Carlo Ratti**  
+  *Measuring Human Perceptions of a Large-Scale Urban Region Using Machine Learning*  
+  *Landscape and Urban Planning*, 180, 148-160 (2018).  
+  [View](https://www.sciencedirect.com/science/article/pii/S0169204618308545)  
+
+- **Liu, L., Zhang, F., Zhou, B., Wang, Z., & Li, Y.**  
+  *STREETALK: A Navigation System for Pedestrians and Cyclists*  
+  *Landscape Architecture Frontiers* (2018).  
+  [Download](https://oversea.cnki.net/knavi/JournalDetail?pcode=CJFD&pykm=jgsj)  
+
+- **Cui, C., et al.**  
+  *The Spatial-Temporal Dynamics of Daily Inter-City Mobility in the Yangtze River Delta: An Analysis Using Big Data*  
+  *Habitat International* (2020).  
+  [View](https://www.sciencedirect.com/science/article/abs/pii/S0197397519311373)  
+
+- **Zhang, D., Yi, H., Chen, Y., Jiang, N., Shao, J., & Liu, L.**  
+  *An Urban Infrastructure Assessment System Built on Geo-Tagged Images and Machine Learning*  
+  *Computational Urban Science* 2 (1), 1-21 (2022).  
+  [Download](https://link.springer.com/article/10.1007/s43762-022-00056-9)  
+
+*(Additional Chinese-language papers are listed in the PDF CV.)*
 
 ---
 
-- **Liu Liu, & Andres Sevtsuk**
-  "Clarity or confusion: A review of computer vision street attributes in urban studies and planning"
-  Cities, 150, 105022
-  [View](https://doi.org/10.1016/j.cities.2024.105022)
-  
----
+## Papers Under Review
 
-- **Zhou, B., Liu, L., Oliva, A., & Torralba, A.**
-  "Recognizing city identity via attribute analysis of geo-tagged images"
-  European conference on computer vision (pp. 519-534).
-  [Download](https://link.springer.com/content/pdf/10.1007/978-3-319-10578-9_34.pdf)
+- **Liu, L., Kudaeva, A., Cipriano, M., Al Ghannam, F., Tan, F., de Melo, G., & Sevtsuk, A.**  
+  *MINGLE: VLMs for Semantically Complex Region Detection*  
+  Submitted to **AAAI 2026 – Artificial Intelligence for Social Impact Track**, under review.  
 
----
+- **Sevtsuk, A., Basu, R., Liu, L., Alhassan, A., & Kollar, J.**  
+  *NYC Walks: A City-Wide Foot-Traffic Model to Guide Pedestrian-Oriented Planning and Design*  
+  Submitted to **TRB Annual Meeting 2026**, under review (Manuscript ID TRBAM-26-00393).  
 
-- **Liu, L., Zhou, B., Zhao, J., & Ryan, B. D.**
-  "C-IMAGE: city cognitive mapping through geo-tagged photos"
-  GeoJournal, 81(6), 817-861.
-  [View](https://link.springer.com/article/10.1007/s10708-016-9739-6)
+- **Kang, Y., Chen, J., Liu, L., Sharma, K., Mazzarello, M., Mora, S., Duarte, F.* (corresp.), & Ratti, C.**  
+  *Human vs. AI Safety Perception? Decoding Human Safety Perception with Eye-Tracking Systems, Street-View Images, and Explainable AI*  
+  *Computers, Environment & Urban Systems*, major revision invited (Manuscript ID CEUS-D-25-00395).  
 
----
-
-- **Long, Y., & Liu, L.**
-  "How green are the streets? An analysis for central areas of Chinese cities using Tencent Street View"
-  PloS one, 12(2), e0171110.
-  [Download](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0171110)
+- **Zhang, H., Liu, L., Wang, P., & Zhao, J.**  
+  *Depicting the Blurred Regional Boundaries in China Using Individual Mobility Data*  
+  *Computational Urban Science*, under review (Manuscript ID CUSC-D-25-00097).  
 
 ---
 
-- **Nicola Colaninno, Rounaq Basu, Maryam Hosseini, Abdulaziz Alhassan, Liu Liu, Andres Sevtsuk**
-  "A sidewalk-level urban heat risk assessment framework using pedestrian mobility and urban microclimate modeling"
-  Environment and Planning B: Urban Analytics and City Science
-  [View](https://journals.sagepub.com/doi/full/10.1177/23998083241280746)
-  
----
+## Manuscripts Completed (Not Submitted)
 
-- **Liu L., Liu Z.**
-  "The Recognition of CAZ in Shanghai Based on Evaluated POI."
-  In: Shen Z., Li M. (eds) Big Data Support of Urban Planning and Management, Advances in Geographic Information Science. Springer, Cham.
-  [View](https://link.springer.com/chapter/10.1007/978-3-319-51929-6_6)
+- **Liu, L., Gao, X., Gao, Q., & Piramuthu, R.**  
+  *ABCxM: A Benchmark for Multimodal Models Playing Scores to Music*  
+  Completed during Applied Scientist PhD Internship, Amazon AGI, Sunnyvale CA (2024).  
+  Developed the first end-to-end benchmark and evaluation framework for notation-to-music generation.  
+  [View upon request](https://www.dropbox.com/scl/fi/07pv6n5h6n8c784nlh4k3/liu-liu_1.pdf?rlkey=sf34mrgrm85cz0wq557vgqq4a&st=jznjgqwt&dl=0)  
 
----
-
-- **Zhang, F., Zhou, B., Liu, L., Liu, Y., Fung, H. H., Lin, H., & Ratti, C.**
-  "Measuring human perceptions of a large-scale urban region using machine learning"
-  Landscape and Urban Planning.
-  [View](https://www.sciencedirect.com/science/article/pii/S0169204618308545)
+- **Liu, L., Gao, X., Gao, Q., & Piramuthu, R.**  
+  *VIS: A Benchmark for Foley Models and Visually Indicative Sounds*  
+  Completed during Applied Scientist PhD Internship, Amazon AGI, Sunnyvale CA (2024).  
+  Created human-annotated, multi-domain datasets for evaluating video-to-audio generation models.  
+  [View upon request](https://www.dropbox.com/scl/fi/6idfzeoj59iff4g8wxi69/liu-liu_2.pdf?rlkey=orjuocbjjipuzqjjg6d8ys7yu&st=f6ah28z6&dl=0)
 
 ---
 
-- **Liu, L., Zhang, F., Zhou, B., Wang, Z., & Li, Y.**
-  "STREETALK: A NAVIGATION SYSTEM FOR PEDESTRIANS AND CYCLISTS"
-  Landscape Architecture Frontiers.
-  [Download](https://oversea.cnki.net/knavi/JournalDetail?pcode=CJFD&pykm=jgsj)
+## Service & Grants
 
----
-
-- **Hosseini, M., Cipriano, M., Eslami, S., Hodczak, D., Liu, L., Sevtsuk, A. and de Melo, G., 2024.**
-  "ELSA: Evaluating Localization of Social Activities in Urban Streets. arXiv preprint arXiv:2406.01551."
-  [Download](https://arxiv.org/abs/2406.01551)
-
----
-
-- **Fang, W., Liu, L., & Zhou, J.**
-  "Assessing Physical Environment of TOD Communities around Metro Stations: Using Big Data and Machine Learning"
-  [Download](https://openknowledge.worldbank.org/bitstream/handle/10986/33343/Assessing-Physical-Environment-of-TOD-Communities-around-Metro-Stations-Using-Big-Data-and-Machine-Learning.pdf?sequence=1)
-
----
-
-- **Cui, C., et al.**
-  "The spatial-temporal dynamics of daily intercity mobility in the Yangtze River Delta: An analysis using big data"
-  Habitat International.
-  [View](https://www.sciencedirect.com/science/article/abs/pii/S0197397519311373)
-
----
-
-- **Zhang, D., Yi, H., Chen, Y., Jiang, N., Shao, J., & Liu, L.**
-  "An urban infrastructure assessment system built on geo-tagged images and machine learning"
-  Computational Urban Science.
-  [Download](https://link.springer.com/article/10.1007/s43762-022-00056-9)
-  
----
-
-- **Colaninno, N., Basu, R., Hosseini, M., Alhassan, A., Liu, L., & Sevtsuk, A.**
-  "Urban Heat Risk Assessment: Exploring a Novel Pedestrian Network-Based Framework"
-  [View](https://hdl.handle.net/11311/1258854)
-
----
-
-Papers Under Review
-
----
-
--	**Kang, Y., Chen, J., Liu, L., Sharma, K., Mazzarello, M., Mora, S., Duarte, F.* (corresp.), & Ratti, C.**
-  “Human vs. AI Safety Perception? Decoding Human Safety Perception with Eye-Tracking Systems, Street View Images, and Explainable AI"
-  Computers, Environment and Urban Systems, major revision invited (Manuscript ID CEUS-D-25-00395).
-
----
-
--	**Zhang, H., Liu, L., Wang, P., & Zhao, J.**
-  "Depicting the Blurred Regional Boundaries in China Using Individual Mobility Data"
-  Computational Urban Science, under review (Manuscript ID CUSC-D-25-00097).
-
----
-
-Publication Reviewer
-
-Cities, Nature Cities, Sustainable Cities and Society, Environment and Planning B: Urban Analytics and City Science, Journal of Transport and Land Use, Transactions in Urban Data, Science, and Technology, Annals of the American Association of Geographers, Computational Urban Science.
-
----
-
-Granted Research Resources
-
--	**Principal Investigator**, Observing the “Sidewalk Ballet”: Leveraging LMMs to Detect Social Interactions in Large-scale Urban Imagery Datasets, Advanced Cyberinfrastructure Coordination Ecosystem: Services & Support, Alexandria, VA, US, Funding Period: January 31, 2025 – January 30, 2026, [Project URI](https://www.xras.org/public/requests/197355-ACCESS-CIS250088)
+- **Reviewer** for *Cities*, *Nature Cities*, *Sustainable Cities & Society*, *Environment & Planning B*, *Journal of Transport & Land Use*, *Computational Urban Science*, and others (20 + reviews).  
+- **Principal Investigator**, “Observing the ‘Sidewalk Ballet’: Leveraging LMMs to Detect Social Interactions in Large-Scale Urban Imagery Datasets,” ACCESS CIS250088 (2025-2026).  
