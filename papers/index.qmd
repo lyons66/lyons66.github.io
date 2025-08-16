@@ -126,5 +126,5 @@ Research Papers
 
 ## Service & Grants
 
-- **Reviewer** for *Cities*, *Nature Cities*, *Sustainable Cities & Society*, *Environment & Planning B*, *Journal of Transport & Land Use*, *Computational Urban Science*, and others (20 + reviews).  
+- **Reviewer** for *Cities*, *Nature Cities*, *Sustainable Cities & Society*, *Environment & Planning B*, *Journal of Transport and Land Use*, *Computational Urban Science*, *Landscape and Urban Planning*, and others (20 + reviews).  
 - **Principal Investigator**, “Observing the ‘Sidewalk Ballet’: Leveraging LMMs to Detect Social Interactions in Large-Scale Urban Imagery Datasets,” ACCESS CIS250088 (2025-2026).  
