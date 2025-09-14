@@ -96,7 +96,7 @@ Research Papers
 
 - **Sevtsuk, A., Basu, R., Liu, L., Alhassan, A., & Kollar, J.**  
   *NYC Walks: A City-Wide Foot-Traffic Model to Guide Pedestrian-Oriented Planning and Design*  
-  Submitted to **TRB Annual Meeting 2026**, under review (Manuscript ID TRBAM-26-00393).  
+  Submitted to **Nature Cities**, under review.  
 
 - **Kang, Y., Chen, J., Liu, L., Sharma, K., Mazzarello, M., Mora, S., Duarte, F.* (corresp.), & Ratti, C.**  
   *Human vs. AI Safety Perception? Decoding Human Safety Perception with Eye-Tracking Systems, Street-View Images, and Explainable AI*  
@@ -105,6 +105,10 @@ Research Papers
 - **Zhang, H., Liu, L., Wang, P., & Zhao, J.**  
   *Depicting the Blurred Regional Boundaries in China Using Individual Mobility Data*  
   *Computational Urban Science*, under review (Manuscript ID CUSC-D-25-00097).  
+
+-	**Liu, Z., Gao, X., Niu, F., Gao, Q., Liu, L., & Piramuthu, R.**
+  *START: Spatial and Textual Learning for Chart Understanding*
+  Submitted to **WACV 2026**, under review.
 
 ---
 
@@ -126,5 +130,5 @@ Research Papers
 
 ## Service & Grants
 
-- **Reviewer** for *Cities*, *Nature Cities*, *Sustainable Cities & Society*, *Environment & Planning B*, *Journal of Transport and Land Use*, *Computational Urban Science*, *Landscape and Urban Planning*, and others (20 + reviews).  
+- **Reviewer** for *Cities*, *Nature Cities*, *Sustainable Cities & Society*, *Environment & Planning B*, *Journal of Transport and Land Use*, *Computational Urban Science*, *Landscape and Urban Planning*, *International Journal of Digital Earth*, and others (20 + reviews).  
 - **Principal Investigator**, “Observing the ‘Sidewalk Ballet’: Leveraging LMMs to Detect Social Interactions in Large-Scale Urban Imagery Datasets,” ACCESS CIS250088 (2025-2026).  
