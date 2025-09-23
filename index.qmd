@@ -22,9 +22,9 @@ about:
       href: https://github.com/lyons66/lyons66.github.io
 ---
 
-I am a Ph.D. candidate at [MIT](https://dusp.mit.edu/people/liu-liu) studying Computational Urban Science, and working at [City Form Lab](https://cityform.mit.edu/). Being a scientist with eight years of entrepreneurship in data-driven urban analytics and six years of design training, I focused on the built environment and human behavior analysis by adopting computer vision. 
+I am a Ph.D. candidate at [MIT](https://dusp.mit.edu/people/liu-liu) in Computational Urban Science, working at the [City Form Lab](https://cityform.mit.edu/). My research is inherently interdisciplinary, grounded in six years of design education and over five years of professional practice at China’s top urban planning institute, together with advanced training in computer vision, GIS, statistical learning, and multimodal LLMs. I study how built environments shape human behavior through spatial and computational lenses, and I have worked on frontier LLM research as a Ph.D. Applied Scientist Intern with the Amazon AGI Foundation. My projects span visual urban analysis, pedestrian mobility modeling, and perception studies, resulting in peer-reviewed publications and patents.
 
-Before returning to MIT, I am the founder of [CitoryTech Co LTD (城室科技)](https://www.citory.tech/), a start-up in urban computation specializing in urban visual AI. Besides, I was an external expert for Tencent, a consultant for the World Bank, and an urban researcher at the China Academy of Urban Planning and Design. I am currently working as an Applied Scientist PhD Intern at Amazon, collaborating with the AGI Foundation.
+Alongside academic research, I founded and led [CitoryTech Co LTD](https://www.citory.tech/), a research-driven startup in urban visual AI and spatiotemporal modeling. Over six years, I led more than 20 projects with clients such as the World Bank, Daimler, and Hong Kong Land, and built collaborations with universities including MIT, Tongji University, the University of Hong Kong (HKU), and Tsinghua University. These experiences strengthened my skills in team leadership, project management, and productization, and gave me practical insight into translating research into practice. I have also served as an external expert for Tencent and a consultant for the World Bank, bridging academic, industry, and policy domains.
 
-My academic interests lie in the interdisciplinary fields of AI, machine learning, optimization, and urban design research.
+
 
