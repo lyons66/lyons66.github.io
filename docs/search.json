@@ -525,6 +525,13 @@
     "text": "Seeing HAI: Human Activities and Interactions on Sidewalks through LLMs and Computer Vision\n\n\n\n\n\n\n\n\n2025 ACSP, Presentation\n\n\n\nDate: Oct 23, 2025  Location: Minneapolis\nThis presentation talks about the partial research from my dissertation research. In particular, I disucssed the potential challenges of detecting social groups in today’s computer vision-driven urban studies. I proposed a three-stage pipeline of VLM in supporting the detection of research.\n\n\n\n\n\nSlides Here\n\n\n\n\n\n\n\n\n\n\nPh.D. Dissertation Colloquium\n\n\n\nDate: May 22, 2025  Location: 10-401, MIT\nThis presentation outlined the two-year research plan for my doctoral dissertation, building upon the Sidewalk Ballet project.\nThe dissertation consists of two main phases. In the first phase, I developed a three-step pipeline to detect social groups in sidewalk scenes using computer vision and large language models. In the second phase, I will integrate these social interaction findings with additional street-level features to construct a set of Human Activity and Interaction (HAI) indices. These indices aim to support both upstream and downstream applications in urban design research.\nAll members of my dissertation committee attended the colloquium: Prof. Andres Sevtsuk, Prof. Jinhua Zhao, and Prof. Lawrence Vale. The external reviewer was Prof. Albert Saiz.\n\n\n\n\n\nSlides Here"
   },
   {
+    "objectID": "presentations/index.html#exploring-the-challenges-of-humanitys-last-exam",
+    "href": "presentations/index.html#exploring-the-challenges-of-humanitys-last-exam",
+    "title": "Presentations",
+    "section": "Exploring the Challenges of Humanity’s Last Exam",
+    "text": "Exploring the Challenges of Humanity’s Last Exam\n\n\n\n\n\n\n\n\nFinal Presentation @ HLE Exploration\n\n\n\nDate: Aug 20, 2025  Location: Lab 126 Sunnyvale, CA\nThis presentation introduces my analysis of the Humanity’s Last Exam (HLE) benchmark, a 2,500-question dataset spanning STEM, medicine, and humanities. I discussed the dataset’s quality issues, small-model performance, and reasoning behaviors. The work highlights how current distilled models (e.g., Qwen3 series) perform under strict evaluation and presents a framework to analyze reasoning errors and recurring problem-solving strategies.\n\n\n\n\nSlides Here"
+  },
+  {
     "objectID": "presentations/index.html#data-benchmark-for-multi-modality-models",
     "href": "presentations/index.html#data-benchmark-for-multi-modality-models",
     "title": "Presentations",

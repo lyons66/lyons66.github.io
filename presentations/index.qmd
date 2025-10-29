@@ -114,6 +114,30 @@ All members of my dissertation committee attended the colloquium: Prof. Andres S
 ::::
 :::::
 
+## Exploring the Challenges of Humanity's Last Exam
+
+::::: {.columns}
+:::: {.column width="70%"}
+::: {.callout-note}
+## Final Presentation @ HLE Exploration
+
+Date: Aug 20, 2025
+<br>
+Location: Lab 126 Sunnyvale, CA
+
+This presentation introduces my analysis of the Humanity’s Last Exam (HLE) benchmark, a 2,500-question dataset spanning STEM, medicine, and humanities. I discussed the dataset’s quality issues, small-model performance, and reasoning behaviors. The work highlights how current distilled models (e.g., Qwen3 series) perform under strict evaluation and presents a framework to analyze reasoning errors and recurring problem-solving strategies.
+
+:::
+::::
+:::: {.column width="30%" .center-text}
+<img src="hle_cover.png" style="width: 93%; border-radius: 6px;">
+
+[Slides Here](https://www.dropbox.com/scl/fi/r6h732kmzrjbol7w9nj0n/hle.pdf?rlkey=som0jh2u4al9dpzltuxrgrt8y&st=n2o1ahcz&dl=0)
+
+::::
+:::::
+
+
 ## Data Benchmark for Multi-modality models
 
 ::::: {.columns}
