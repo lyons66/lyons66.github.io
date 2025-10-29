@@ -39,42 +39,161 @@
     "href": "index.html",
     "title": "Liu Liu",
     "section": "",
-    "text": "I am a Ph.D. candidate at MIT in Computational Urban Science, working at the City Form Lab. My research is inherently interdisciplinary, grounded in six years of design education and over five years of professional practice at China’s top urban planning institute, together with advanced training in computer vision, GIS, statistical learning, and multimodal LLMs. I study how built environments shape human behavior through spatial and computational lenses, and I have worked on frontier LLM research as a Ph.D. Applied Scientist Intern with the Amazon AGI Foundation. My projects span visual urban analysis, pedestrian mobility modeling, and perception studies, resulting in peer-reviewed publications and patents.\nAlongside academic research, I founded and led CitoryTech Co LTD, a research-driven startup in urban visual AI and spatiotemporal modeling. Over six years, I led more than 20 projects with clients such as the World Bank, Daimler, and Hong Kong Land, and built collaborations with universities including MIT, Tongji University, the University of Hong Kong (HKU), and Tsinghua University. These experiences strengthened my skills in team leadership, project management, and productization, and gave me practical insight into translating research into practice. I have also served as an external expert for Tencent and a consultant for the World Bank, bridging academic, industry, and policy domains."
+    "text": "I am a Ph.D. candidate in Urban Science at MIT, working at the City Form Lab. My research investigates how built environments influence human behavior through spatial and computational perspectives, integrating computer vision, GIS, and multimodal learning (LLMs, VLMs, and beyond). My work spans visual urban analysis, pedestrian mobility modeling, and perception studies, and includes collaborations with the Amazon AGI Foundation, where I served as a Ph.D. Applied Scientist Intern.\nBefore joining MIT, I founded CitoryTech Co LTD, a startup specializing in urban visual AI and spatiotemporal modeling. I led over 20 projects with clients such as the World Bank, Daimler, and Hong Kong Land, and collaborated with universities including MIT, Tongji, HKU, and Tsinghua. I have also served as an external expert for Tencent and a consultant for the World Bank."
   },
   {
     "objectID": "projects/riverview/index.html",
     "href": "projects/riverview/index.html",
     "title": "River View Analysis",
     "section": "",
-    "text": "PROJECT BRIEF\n\n\n\nTo preserve the natural landscapes along the Qiantang River, I analyzed a 200-kilometer stretch of riverbank videos. By carefully examining the footage, I calculated the visual proportions of seven distinct elements present throughout the entire shoreline. Subsequently, I developed a visualization platform that identifies and maps these elements along the riverbank. This platform is a valuable tool in safeguarding the natural beauty and ecological integrity of the Qiantang River, enabling effective management and conservation efforts.\nThis work has been re-presented in Rez de Ville / Urban Ground Floors 2023.\n\n\n\nThe Idea\n\nThis project aims to protect the historical and cultural features of the Qiantang River and the upstream Fuchun River and Xin’an River, covering a more than 200-kilometer waterfront. The famous Fuchun Mountain Habitat map depicts the natural scenery on both sides of the strait, but now it has been damaged by the excessive development of many residential buildings.\n\n\n\nData Process\n\nThe project is conducted based on the video along the Qiantang River, where over 40000 frames are extracted along the three sections covering the north and south bank.\n\nAfter segmenting the video frames into different segmentations, we could view different landscape prototypes along the river.\n\n\n\nResult Analysis\n\nOne of the major triggers for this project is to identify over-developed real estate. By composing metrics such as building height / plant height, it is easily to locate those banks.\n\nOther methods are also applied for each section of the entire river.\n\n\n\nDemo Video\n\nBelow is a platform we created for verifying the metrics for different waterfront view sections."
+    "text": "PROJECT BRIEF\n\n\n\nTo preserve the natural landscapes along the Qiantang River, I analyzed a 200-kilometer stretch of riverbank videos. By carefully examining the footage, I calculated the visual proportions of seven distinct elements present throughout the entire shoreline. Subsequently, I developed a visualization platform that identifies and maps these elements along the riverbank. This platform is a valuable tool in safeguarding the natural beauty and ecological integrity of the Qiantang River, enabling effective management and conservation efforts.\nThis work has been re-presented in Rez de Ville / Urban Ground Floors 2023."
+  },
+  {
+    "objectID": "projects/riverview/index.html#the-idea",
+    "href": "projects/riverview/index.html#the-idea",
+    "title": "River View Analysis",
+    "section": "# The Idea",
+    "text": "# The Idea\nThis project aims to protect the historical and cultural features of the Qiantang River and the upstream Fuchun River and Xin’an River, covering a more than 200-kilometer waterfront. The famous Fuchun Mountain Habitat map depicts the natural scenery on both sides of the strait, but now it has been damaged by the excessive development of many residential buildings."
+  },
+  {
+    "objectID": "projects/riverview/index.html#data-process",
+    "href": "projects/riverview/index.html#data-process",
+    "title": "River View Analysis",
+    "section": "# Data Process",
+    "text": "# Data Process\nThe project is conducted based on the video along the Qiantang River, where over 40000 frames are extracted along the three sections covering the north and south bank.\n\nAfter segmenting the video frames into different segmentations, we could view different landscape prototypes along the river."
+  },
+  {
+    "objectID": "projects/riverview/index.html#result-analysis",
+    "href": "projects/riverview/index.html#result-analysis",
+    "title": "River View Analysis",
+    "section": "# Result Analysis",
+    "text": "# Result Analysis\nOne of the major triggers for this project is to identify over-developed real estate. By composing metrics such as building height / plant height, it is easily to locate those banks.\n\nOther methods are also applied for each section of the entire river."
+  },
+  {
+    "objectID": "projects/riverview/index.html#demo-video",
+    "href": "projects/riverview/index.html#demo-video",
+    "title": "River View Analysis",
+    "section": "# Demo Video",
+    "text": "# Demo Video\nBelow is a platform we created for verifying the metrics for different waterfront view sections."
   },
   {
     "objectID": "projects/huipai/index.html",
     "href": "projects/huipai/index.html",
     "title": "AI-Aided Camera App",
     "section": "",
-    "text": "PROJECT BRIEF\n\n\n\nThis app integrates deep models to learn the operation and mode of photo shooting from the massive works of professional photographers and realizes the comprehensive scoring of the subject, composition, color, depth of field, exposure, and other angles of the picture. It can automatically extract the current scene’s geometric structure and professional characteristics and give improvement tips for composition. A live demo was recorded on 2020 Apr 30 in Shanghai with Huawei Mate 30.\nThis project was terminated during the decrease of tourism in 2020. It’s an independent project and the business plan can be viewed here. To obtain the password to view the BP, please contact me.\n\n\n\nThe Idea\n\nThe foundational idea behind developing this tool is to “help beginners transform into photography experts.” Based on the scene in view, it automatically offers users specific photography suggestions and provides “photography composition guidelines.”\n\n\n\nFunction 1: Composition Recognization\n\nThe tool analyzes the current camera frame, identifies the composition structure, and recommends suitable composition schemes. It can automatically identify 12 major categories and 34 subcategories of compositional benchmarks.\n\n\nThere are two ways of giving users hints about the composition. First, we plot the guidelines on the pictures directly:\n\n\n\nSecond, we provide typical photos with similar compositions:\n\n\n\n\n\nFunction 2: Suggestions based on Scenes\n\nIn addition to this, it can also recognize shooting scenes from 26 major categories and over 100 subcategories. For example, it can identify the current shooting scene and subject, then propose photography suggestions for optimizing the photo. By recognizing the content of the day’s photography subject, it can analyze and understand the content of the subject being shot. Furthermore, it can identify the current pose structure (standing, sitting, etc.) of the person being photographed.\n\n\n\n\nDemo Video\n\nBelow is a demo video we recorded based on Huawei Mate 30 in April, 2020."
+    "text": "PROJECT BRIEF\n\n\n\nThis app integrates deep models to learn the operation and mode of photo shooting from the massive works of professional photographers and realizes the comprehensive scoring of the subject, composition, color, depth of field, exposure, and other angles of the picture. It can automatically extract the current scene’s geometric structure and professional characteristics and give improvement tips for composition. A live demo was recorded on 2020 Apr 30 in Shanghai with Huawei Mate 30.\nThis project was terminated during the decrease of tourism in 2020. It’s an independent project and the business plan can be viewed here. To obtain the password to view the BP, please contact me."
+  },
+  {
+    "objectID": "projects/huipai/index.html#the-idea",
+    "href": "projects/huipai/index.html#the-idea",
+    "title": "AI-Aided Camera App",
+    "section": "# The Idea",
+    "text": "# The Idea\nThe foundational idea behind developing this tool is to “help beginners transform into photography experts.” Based on the scene in view, it automatically offers users specific photography suggestions and provides “photography composition guidelines.”"
+  },
+  {
+    "objectID": "projects/huipai/index.html#function-1-composition-recognization",
+    "href": "projects/huipai/index.html#function-1-composition-recognization",
+    "title": "AI-Aided Camera App",
+    "section": "# Function 1: Composition Recognization",
+    "text": "# Function 1: Composition Recognization\nThe tool analyzes the current camera frame, identifies the composition structure, and recommends suitable composition schemes. It can automatically identify 12 major categories and 34 subcategories of compositional benchmarks.\n\n\nThere are two ways of giving users hints about the composition. First, we plot the guidelines on the pictures directly:\n\n\n\nSecond, we provide typical photos with similar compositions:"
+  },
+  {
+    "objectID": "projects/huipai/index.html#function-2-suggestions-based-on-scenes",
+    "href": "projects/huipai/index.html#function-2-suggestions-based-on-scenes",
+    "title": "AI-Aided Camera App",
+    "section": "# Function 2: Suggestions based on Scenes",
+    "text": "# Function 2: Suggestions based on Scenes\nIn addition to this, it can also recognize shooting scenes from 26 major categories and over 100 subcategories. For example, it can identify the current shooting scene and subject, then propose photography suggestions for optimizing the photo. By recognizing the content of the day’s photography subject, it can analyze and understand the content of the subject being shot. Furthermore, it can identify the current pose structure (standing, sitting, etc.) of the person being photographed."
+  },
+  {
+    "objectID": "projects/huipai/index.html#demo-video",
+    "href": "projects/huipai/index.html#demo-video",
+    "title": "AI-Aided Camera App",
+    "section": "# Demo Video",
+    "text": "# Demo Video\nBelow is a demo video we recorded based on Huawei Mate 30 in April, 2020."
   },
   {
     "objectID": "projects/lbsn/index.html",
     "href": "projects/lbsn/index.html",
     "title": "1 Billion LBSN Data",
     "section": "",
-    "text": "PROJECT BRIEF\n\n\n\nBoth figures show the average daily population flow distribution among more than 2,000 county-level units. The picture on the left is the average for workdays, and the picture on the right reflects the weekend situation. The former has a “diamond structure” dominated by the Beijing-Tianjin-Hebei, Yangtze River Delta, Pearl River Delta, Chengdu-Chongqing, and Mid-Delta metropolitan areas. The density of the latter reflects the strength of travel in various regions.\n\nHongMou Zhang, Liu Liu, Pensen Wang, Jinhua Zhao, “Depicting the Blurred Regional Boundaries in China Using Individual Mobility Data”\n\nThis work has been presented in China Urban Planning Annual Conference 2016.\n\n\n\nThe Idea\n\nAccording to the closeness of the connection, more than 2,000 county-level units are drawn into a pattern with a gravity layout. Through community detection, about 20 clusters are highlighted, and many share typical degrees of development. For example, most provincial capital cities belong to a single-center model, while the Yangtze and Pearl River Delta metropolitan areas present a network structure.\nThe Following Articles are translated from Chinese versions: City Clusters and City Flows.\n\n\n\nData Source\n\nTencent’s big data research has achieved the highest level in national-scale spatial research, with 600 million monthly active users. They conducted extensive research using large-scale sampling over a wide range of time and space. Utilizing the Tencent Cloud team’s data foundation and technical expertise, they focused on various topics such as migration patterns from Beijing, Shanghai, and Guangzhou, travel analysis during the Spring Festival, tourism trends on National Day, and early urban congestion warnings. To explore more about Tencent LBSN research, follow their official account, “Yi Chu Xing,” or check out the “WeChat-Wallet-City Service-City Heat Map” for area-specific heat maps.\nThis unprecedented collaboration between the two parties involved a customized cooperation plan to align their needs and ensure smooth research development. The study incorporated three types of research data: population distribution in 10-square-kilometer grid units across the country, population flow matrix across 2,242 county-level units, and message flow within the same county-level units. To ensure comprehensive analysis, the research spanned four distinct periods: five working days, weekends, National Day, and Spring Festival. (For clarification, “population” refers to the research subject below.)\n\n\n\nDistribution of National Population\n\nThe number of active Tencent users shows a strong correlation (correlation coefficient of 0.91) with the user count of 1.33 billion people in China’s Sixth Census, based on the division of county-level units.\nAnalyzing the user distribution on a city scale reveals a polarized pattern within Tencent’s system. In major cities with populations of 1 million or even 10 million, according to the Sixth Census, the concentration of Tencent users surpasses the statistical population. Similarly, unit areas with populations below 500,000 also have relatively high numbers of Tencent users. For ease of comparison, the coordinates in the figure are approximately scaled at a 1:2 ratio.\nApart from comparing census data, the 2014 national and provincial resident population statistics can also be utilized for provincial-level comparisons. In most provinces, the proportional relationship between the two datasets remains close to 1:2.\nInterestingly, when mapping the data spatially, provinces and cities with a higher proportion of Tencent users form a distinctive “ring” pattern. We propose a possible explanation for provinces and cities with lower proportions: the underdeveloped regions in the central and western areas, divided by the Hu Huanyong line, may have insufficient sample sizes of sparsely populated users. As a result, the two circled areas in Northeast China and Central China may more accurately reflect population loss. In other words, these areas might have a significant number of registered populations, but a large portion of them have relocated, and based on location point calculations, they are not considered current residents.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPopulation Flows\n\n\n\n\nCity Clusters\n\nThere are numerous definitions of urban agglomeration, and opinions among academics also vary. This article refrains from delving into extensive analysis or explanations. The following map, resembling a “nebula,” disregards the geographical locations of individual units. Instead, units are positioned closer to each other based on the strength of population flow connections, following the gravity model. (Gephi offers various layouts, and this is just one of them.) To ensure clarity, it is more suitable to use the term “urban community” rather than urban agglomeration to describe the research subject. Notably, the most prominent clusters, akin to dazzling stars in the night sky, primarily consist of renowned urban agglomerations and regions, such as Beijing-Tianjin-Hebei, Yangtze River Delta, Pearl River Delta, Chengdu-Chongqing, and more. Provincial capital cities, including Taiyuan, Xi’an, and Changsha lead the secondary star clusters.\n\nThere are also some particular star-like clusters, such as the one in Shandong Province, probably due to the mountain landscape.\n\nWhen projecting the distribution of these nebulae back into spatial positions, a completely different pattern emerges. By counting, we can identify 17 “urban associations.” Overall, these associations exhibit a spatial clustering pattern. However, unlike previous divisions of related urban agglomerations, most of these “urban associations” feature “breaks” or “enclaves.” This outcome is a result of not intentionally considering spatial adjacency constraints during calculations, and it objectively reflects the development imbalances between cities or regions, particularly in terms of population flow strength.\nLet’s take a closer look at the “Yangtze River Delta City Association” as an example. In addition to the conventional analysis that includes southern Jiangsu and northern Zhejiang, it is observed that Xuzhou, Lianyungang, and other cities in northern Jiangsu also have close ties to the association. This reflects the strengthening connection between the southern and northern parts of Jiangsu province, while a certain gap exists in the central area of Jiangsu. Furthermore, within the Yangtze River Delta region, Anhui is identified as another “community” centered around Hefei. This suggests that, based on existing population contact data, Anhui has not yet formed close connections with the developed regions of the Yangtze River Delta. Indeed, many “communities” align with provincial boundaries, adhering to the administrative management system in China. However, there are exceptions to this pattern. For instance, the “Pearl River Delta Urban Associations” extend their influence to Jiangxi, Hunan, Guangxi, and other neighboring areas beyond Guangdong Province. Furthermore, cities like Harbin in Heilongjiang, located far away, bypass the “Liaoshen urban community” and establish direct connections with Beijing, Tianjin, and Hebei. These exceptions highlight the complex dynamics of urban interactions that sometimes transcend administrative boundaries. In addition to utilizing data from working days for division, other time periods can also be employed for the same analysis. For instance, the provided image demonstrates a division based on the National Day period. In addition to employing the community detection model, another approach to analyze connections is through the use of K-Core. This method is generally associated with determining the prominence of a city. The higher the connectivity of a city or region, the higher its K-Core value, indicating its elevated status."
+    "text": "PROJECT BRIEF\n\n\n\nBoth figures show the average daily population flow distribution among more than 2,000 county-level units. The picture on the left is the average for workdays, and the picture on the right reflects the weekend situation. The former has a “diamond structure” dominated by the Beijing-Tianjin-Hebei, Yangtze River Delta, Pearl River Delta, Chengdu-Chongqing, and Mid-Delta metropolitan areas. The density of the latter reflects the strength of travel in various regions.\n\nHongMou Zhang, Liu Liu, Pensen Wang, Jinhua Zhao, “Depicting the Blurred Regional Boundaries in China Using Individual Mobility Data”\n\nThis work has been presented in China Urban Planning Annual Conference 2016."
+  },
+  {
+    "objectID": "projects/lbsn/index.html#the-idea",
+    "href": "projects/lbsn/index.html#the-idea",
+    "title": "1 Billion LBSN Data",
+    "section": "# The Idea",
+    "text": "# The Idea\nAccording to the closeness of the connection, more than 2,000 county-level units are drawn into a pattern with a gravity layout. Through community detection, about 20 clusters are highlighted, and many share typical degrees of development. For example, most provincial capital cities belong to a single-center model, while the Yangtze and Pearl River Delta metropolitan areas present a network structure.\nThe Following Articles are translated from Chinese versions: City Clusters and City Flows."
+  },
+  {
+    "objectID": "projects/lbsn/index.html#data-source",
+    "href": "projects/lbsn/index.html#data-source",
+    "title": "1 Billion LBSN Data",
+    "section": "# Data Source",
+    "text": "# Data Source\nTencent’s big data research has achieved the highest level in national-scale spatial research, with 600 million monthly active users. They conducted extensive research using large-scale sampling over a wide range of time and space. Utilizing the Tencent Cloud team’s data foundation and technical expertise, they focused on various topics such as migration patterns from Beijing, Shanghai, and Guangzhou, travel analysis during the Spring Festival, tourism trends on National Day, and early urban congestion warnings. To explore more about Tencent LBSN research, follow their official account, “Yi Chu Xing,” or check out the “WeChat-Wallet-City Service-City Heat Map” for area-specific heat maps.\nThis unprecedented collaboration between the two parties involved a customized cooperation plan to align their needs and ensure smooth research development. The study incorporated three types of research data: population distribution in 10-square-kilometer grid units across the country, population flow matrix across 2,242 county-level units, and message flow within the same county-level units. To ensure comprehensive analysis, the research spanned four distinct periods: five working days, weekends, National Day, and Spring Festival. (For clarification, “population” refers to the research subject below.)"
+  },
+  {
+    "objectID": "projects/lbsn/index.html#distribution-of-national-population",
+    "href": "projects/lbsn/index.html#distribution-of-national-population",
+    "title": "1 Billion LBSN Data",
+    "section": "# Distribution of National Population",
+    "text": "# Distribution of National Population\nThe number of active Tencent users shows a strong correlation (correlation coefficient of 0.91) with the user count of 1.33 billion people in China’s Sixth Census, based on the division of county-level units.\nAnalyzing the user distribution on a city scale reveals a polarized pattern within Tencent’s system. In major cities with populations of 1 million or even 10 million, according to the Sixth Census, the concentration of Tencent users surpasses the statistical population. Similarly, unit areas with populations below 500,000 also have relatively high numbers of Tencent users. For ease of comparison, the coordinates in the figure are approximately scaled at a 1:2 ratio.\nApart from comparing census data, the 2014 national and provincial resident population statistics can also be utilized for provincial-level comparisons. In most provinces, the proportional relationship between the two datasets remains close to 1:2.\nInterestingly, when mapping the data spatially, provinces and cities with a higher proportion of Tencent users form a distinctive “ring” pattern. We propose a possible explanation for provinces and cities with lower proportions: the underdeveloped regions in the central and western areas, divided by the Hu Huanyong line, may have insufficient sample sizes of sparsely populated users. As a result, the two circled areas in Northeast China and Central China may more accurately reflect population loss. In other words, these areas might have a significant number of registered populations, but a large portion of them have relocated, and based on location point calculations, they are not considered current residents."
+  },
+  {
+    "objectID": "projects/lbsn/index.html#population-flows",
+    "href": "projects/lbsn/index.html#population-flows",
+    "title": "1 Billion LBSN Data",
+    "section": "# Population Flows",
+    "text": "# Population Flows"
+  },
+  {
+    "objectID": "projects/lbsn/index.html#city-clusters",
+    "href": "projects/lbsn/index.html#city-clusters",
+    "title": "1 Billion LBSN Data",
+    "section": "# City Clusters",
+    "text": "# City Clusters\nThere are numerous definitions of urban agglomeration, and opinions among academics also vary. This article refrains from delving into extensive analysis or explanations. The following map, resembling a “nebula,” disregards the geographical locations of individual units. Instead, units are positioned closer to each other based on the strength of population flow connections, following the gravity model. (Gephi offers various layouts, and this is just one of them.) To ensure clarity, it is more suitable to use the term “urban community” rather than urban agglomeration to describe the research subject. Notably, the most prominent clusters, akin to dazzling stars in the night sky, primarily consist of renowned urban agglomerations and regions, such as Beijing-Tianjin-Hebei, Yangtze River Delta, Pearl River Delta, Chengdu-Chongqing, and more. Provincial capital cities, including Taiyuan, Xi’an, and Changsha lead the secondary star clusters.\n\nThere are also some particular star-like clusters, such as the one in Shandong Province, probably due to the mountain landscape.\n\nWhen projecting the distribution of these nebulae back into spatial positions, a completely different pattern emerges. By counting, we can identify 17 “urban associations.” Overall, these associations exhibit a spatial clustering pattern. However, unlike previous divisions of related urban agglomerations, most of these “urban associations” feature “breaks” or “enclaves.” This outcome is a result of not intentionally considering spatial adjacency constraints during calculations, and it objectively reflects the development imbalances between cities or regions, particularly in terms of population flow strength.\nLet’s take a closer look at the “Yangtze River Delta City Association” as an example. In addition to the conventional analysis that includes southern Jiangsu and northern Zhejiang, it is observed that Xuzhou, Lianyungang, and other cities in northern Jiangsu also have close ties to the association. This reflects the strengthening connection between the southern and northern parts of Jiangsu province, while a certain gap exists in the central area of Jiangsu. Furthermore, within the Yangtze River Delta region, Anhui is identified as another “community” centered around Hefei. This suggests that, based on existing population contact data, Anhui has not yet formed close connections with the developed regions of the Yangtze River Delta. Indeed, many “communities” align with provincial boundaries, adhering to the administrative management system in China. However, there are exceptions to this pattern. For instance, the “Pearl River Delta Urban Associations” extend their influence to Jiangxi, Hunan, Guangxi, and other neighboring areas beyond Guangdong Province. Furthermore, cities like Harbin in Heilongjiang, located far away, bypass the “Liaoshen urban community” and establish direct connections with Beijing, Tianjin, and Hebei. These exceptions highlight the complex dynamics of urban interactions that sometimes transcend administrative boundaries. In addition to utilizing data from working days for division, other time periods can also be employed for the same analysis. For instance, the provided image demonstrates a division based on the National Day period. In addition to employing the community detection model, another approach to analyze connections is through the use of K-Core. This method is generally associated with determining the prominence of a city. The higher the connectivity of a city or region, the higher its K-Core value, indicating its elevated status."
   },
   {
     "objectID": "projects/road/index.html",
     "href": "projects/road/index.html",
     "title": "Road Assessment in Ulaanbaatar",
     "section": "",
-    "text": "PROJECT BRIEF\n\n\n\nThe condition of transportation assets can be effectively observed through user-generated content (UGC) images. Analyzing geo-tagged images makes it possible to link the condition reflected in the images to specific geographic locations. This approach has been employed for various transportation assets such as catch basins, guardrails, manholes, road curbs, road markings, road signs, roadways, and sidewalks. By associating these images with corresponding road segments, a comprehensive understanding of the condition of these assets can be generated. This enables better asset management and maintenance strategies, ultimately contributing to safer and more efficient transportation systems.\n\nZhang, D., Yi, H., Chen, Y., Jiang, N., Shao, J., & Liu, L. “An urban infrastructure assessment system built on geo-tagged images and machine learning” Computational Urban Science.\n\n\n\n\nThe Idea\n\nThe labeled images would be used as training data sets. According to their Q score, a process of ‘classification-then-regression’ would be conducted. Deep learning models would be built to extract deep features of the labeled images with transportation assets in different conditions.\n\n\n\nDemo Video\n\nBelow is a brief demo of our platform for the visualization of the analytic results."
+    "text": "PROJECT BRIEF\n\n\n\nThe condition of transportation assets can be effectively observed through user-generated content (UGC) images. Analyzing geo-tagged images makes it possible to link the condition reflected in the images to specific geographic locations. This approach has been employed for various transportation assets such as catch basins, guardrails, manholes, road curbs, road markings, road signs, roadways, and sidewalks. By associating these images with corresponding road segments, a comprehensive understanding of the condition of these assets can be generated. This enables better asset management and maintenance strategies, ultimately contributing to safer and more efficient transportation systems.\n\nZhang, D., Yi, H., Chen, Y., Jiang, N., Shao, J., & Liu, L. “An urban infrastructure assessment system built on geo-tagged images and machine learning” Computational Urban Science."
+  },
+  {
+    "objectID": "projects/road/index.html#the-idea",
+    "href": "projects/road/index.html#the-idea",
+    "title": "Road Assessment in Ulaanbaatar",
+    "section": "# The Idea",
+    "text": "# The Idea\nThe labeled images would be used as training data sets. According to their Q score, a process of ‘classification-then-regression’ would be conducted. Deep learning models would be built to extract deep features of the labeled images with transportation assets in different conditions."
+  },
+  {
+    "objectID": "projects/road/index.html#demo-video",
+    "href": "projects/road/index.html#demo-video",
+    "title": "Road Assessment in Ulaanbaatar",
+    "section": "# Demo Video",
+    "text": "# Demo Video\nBelow is a brief demo of our platform for the visualization of the analytic results."
   },
   {
     "objectID": "projects/cityeye/index.html",
     "href": "projects/cityeye/index.html",
     "title": "CityEye WeChat mini APP",
     "section": "",
-    "text": "PROJECT BRIEF\n\n\n\nCityEye is a WeChat mini application specifically designed for group field trips. Currently, it caters to a user base of over 10,000 individuals, primarily consisting of design background students and planners. This innovative urban photo survey tool integrates various functionalities, including image collection, recognition, and data analysis. By combining these features, CityEye facilitates the efficient gathering of urban data, enabling users to analyze and interpret the collected images for their research or planning purposes.\nAfter 3 years of running, we accumulated over 5000 users globally. Yet unfortunately, the tool is currently shutdown due to a lack of budget. We will relaunch it if having enough funding in the future, and please feel free to contact me.\n\n\n\nThe Idea\n\n\n\n\nThe Function of the APP"
+    "text": "PROJECT BRIEF\n\n\n\nCityEye is a WeChat mini application specifically designed for group field trips. Currently, it caters to a user base of over 10,000 individuals, primarily consisting of design background students and planners. This innovative urban photo survey tool integrates various functionalities, including image collection, recognition, and data analysis. By combining these features, CityEye facilitates the efficient gathering of urban data, enabling users to analyze and interpret the collected images for their research or planning purposes.\nAfter 3 years of running, we accumulated over 5000 users globally. Yet unfortunately, the tool is currently shutdown due to a lack of budget. We will relaunch it if having enough funding in the future, and please feel free to contact me."
+  },
+  {
+    "objectID": "projects/cityeye/index.html#the-idea",
+    "href": "projects/cityeye/index.html#the-idea",
+    "title": "CityEye WeChat mini APP",
+    "section": "# The Idea",
+    "text": "# The Idea"
+  },
+  {
+    "objectID": "projects/cityeye/index.html#the-function-of-the-app",
+    "href": "projects/cityeye/index.html#the-function-of-the-app",
+    "title": "CityEye WeChat mini APP",
+    "section": "# The Function of the APP",
+    "text": "# The Function of the APP"
   },
   {
     "objectID": "visualization/index.html",
@@ -207,14 +326,91 @@
     "href": "projects/caz/index.html",
     "title": "Recognizing Central Activity Zones",
     "section": "",
-    "text": "PROJECT BRIEF\n\n\n\nUtilizing the concept of entropy, the project aims to quantify the level of functional diversity within different areas of the city. By leveraging a dataset consisting of 300,000 points of interest (POI) from Dianping and office and residential POI data from Anjuke, the project assigns weights to these locations based on their respective scores. These scores indicate the areas with the highest spatial composition within the city. Typically, these dynamic places are considered the most vibrant and active within the urban landscape, reflecting a high degree of functional compounding.\n\nLiu L., Liu Z. “The Recognition of CAZ in Shanghai Based on Evaluated POI.” In: Shen Z., Li M. (eds) Big Data Support of Urban Planning and Management, Advances in Geographic Information Science. Springer, Cham.\n\n\n\n\nThe Idea\n\nUtilizing the concept of entropy, the project aims to quantify the level of functional diversity within different areas of the city. By leveraging a dataset consisting of 300,000 points of interest (POI) from Dianping and office and residential POI data from Anjuke, the project assigns weights to these locations based on their respective scores. These scores indicate the areas with the highest spatial composition within the city. Typically, these dynamic places are considered the most vibrant and active within the urban landscape, reflecting a high degree of functional compounding.\n\n\n\nDataset\n\nI utilize a diverse dataset to analyze and identify the Central Activities Zone (CAZ) in Shanghai. This dataset primarily comprises Points of Interest (POI), which include various urban elements like retail outlets, catering services, office spaces, leisure, cultural, and recreational facilities. These POIs are crucial in determining the functional mixture of different urban areas, which in turn helps in recognizing and delineating the CAZ. The dataset’s depth and variety allow for a comprehensive analysis of urban dynamics and the multifunctional nature of Shanghai’s central areas. Updated to August in 2016, this project has captured a total number of 386,628 POI records within the outer ring of downtown Shanghai.\n\n\n\nMethod\n\nThe research method for recognizing Central Activities Zones (CAZ) in Shanghai based on evaluated POI data involves several steps:\nDataset Preparation: Utilizes a dataset of Points of Interest (POI) in Shanghai. The data includes various attributes like shop ID, score, category, and average price.\nCategory Reclassification: Involves regrouping the vast number of POI categories into six general categories: retail, catering, office, recreation, leisure, and culture. This reclassification considers the diversity inherent in CAZs.\nCalibration of Mixture: This step focuses on measuring the degree of functional mixture within areas, which is a key characteristic of CAZs. It involves two dimensions: volume and diversity. The process includes:\nValue Aggregation Map: Normalizing and aggregating heat maps for each category to represent the intensity of functions. Function Intersection Map: Identifying areas with diverse functions by overlaying processed heat maps and classifying places based on the number of overlapping functions. The research aims to identify dynamic and functionally diverse areas in Shanghai that could be recognized as CAZs.\n Value aggregation map of Shanghai (left), the magnified core area (top right)\n Function intersection map of Shanghai (left), and magnified three places: Lujiazui (top), Nanjing Road (middle), Zhongshan Park (bottom)\n The heat map of compiled functions (left) and the contour map of mixture degree (right) and the top 14 mixed-use districts within middle ring of Shanghai\n\n\nFinding the most dynamic areas\n\nThe study identifies the most dynamic areas in Shanghai based on the aggregation and intersection maps created from evaluated POI data. These maps enabled the researchers to determine places with large overall value and multiple functions.\n\nAs for the original target of this project, we demonstrate three possible scenarios for defining the CAZ boundary in Shanghai."
+    "text": "PROJECT BRIEF\n\n\n\nUtilizing the concept of entropy, the project aims to quantify the level of functional diversity within different areas of the city. By leveraging a dataset consisting of 300,000 points of interest (POI) from Dianping and office and residential POI data from Anjuke, the project assigns weights to these locations based on their respective scores. These scores indicate the areas with the highest spatial composition within the city. Typically, these dynamic places are considered the most vibrant and active within the urban landscape, reflecting a high degree of functional compounding.\n\nLiu L., Liu Z. “The Recognition of CAZ in Shanghai Based on Evaluated POI.” In: Shen Z., Li M. (eds) Big Data Support of Urban Planning and Management, Advances in Geographic Information Science. Springer, Cham."
+  },
+  {
+    "objectID": "projects/caz/index.html#the-idea",
+    "href": "projects/caz/index.html#the-idea",
+    "title": "Recognizing Central Activity Zones",
+    "section": "# The Idea",
+    "text": "# The Idea\nUtilizing the concept of entropy, the project aims to quantify the level of functional diversity within different areas of the city. By leveraging a dataset consisting of 300,000 points of interest (POI) from Dianping and office and residential POI data from Anjuke, the project assigns weights to these locations based on their respective scores. These scores indicate the areas with the highest spatial composition within the city. Typically, these dynamic places are considered the most vibrant and active within the urban landscape, reflecting a high degree of functional compounding."
+  },
+  {
+    "objectID": "projects/caz/index.html#dataset",
+    "href": "projects/caz/index.html#dataset",
+    "title": "Recognizing Central Activity Zones",
+    "section": "# Dataset",
+    "text": "# Dataset\nI utilize a diverse dataset to analyze and identify the Central Activities Zone (CAZ) in Shanghai. This dataset primarily comprises Points of Interest (POI), which include various urban elements like retail outlets, catering services, office spaces, leisure, cultural, and recreational facilities. These POIs are crucial in determining the functional mixture of different urban areas, which in turn helps in recognizing and delineating the CAZ. The dataset’s depth and variety allow for a comprehensive analysis of urban dynamics and the multifunctional nature of Shanghai’s central areas. Updated to August in 2016, this project has captured a total number of 386,628 POI records within the outer ring of downtown Shanghai."
+  },
+  {
+    "objectID": "projects/caz/index.html#method",
+    "href": "projects/caz/index.html#method",
+    "title": "Recognizing Central Activity Zones",
+    "section": "# Method",
+    "text": "# Method\nThe research method for recognizing Central Activities Zones (CAZ) in Shanghai based on evaluated POI data involves several steps:\nDataset Preparation: Utilizes a dataset of Points of Interest (POI) in Shanghai. The data includes various attributes like shop ID, score, category, and average price.\nCategory Reclassification: Involves regrouping the vast number of POI categories into six general categories: retail, catering, office, recreation, leisure, and culture. This reclassification considers the diversity inherent in CAZs.\nCalibration of Mixture: This step focuses on measuring the degree of functional mixture within areas, which is a key characteristic of CAZs. It involves two dimensions: volume and diversity. The process includes:\nValue Aggregation Map: Normalizing and aggregating heat maps for each category to represent the intensity of functions. Function Intersection Map: Identifying areas with diverse functions by overlaying processed heat maps and classifying places based on the number of overlapping functions. The research aims to identify dynamic and functionally diverse areas in Shanghai that could be recognized as CAZs.\n Value aggregation map of Shanghai (left), the magnified core area (top right)\n Function intersection map of Shanghai (left), and magnified three places: Lujiazui (top), Nanjing Road (middle), Zhongshan Park (bottom)\n The heat map of compiled functions (left) and the contour map of mixture degree (right) and the top 14 mixed-use districts within middle ring of Shanghai"
+  },
+  {
+    "objectID": "projects/caz/index.html#finding-the-most-dynamic-areas",
+    "href": "projects/caz/index.html#finding-the-most-dynamic-areas",
+    "title": "Recognizing Central Activity Zones",
+    "section": "# Finding the most dynamic areas",
+    "text": "# Finding the most dynamic areas\nThe study identifies the most dynamic areas in Shanghai based on the aggregation and intersection maps created from evaluated POI data. These maps enabled the researchers to determine places with large overall value and multiple functions.\n\nAs for the original target of this project, we demonstrate three possible scenarios for defining the CAZ boundary in Shanghai."
   },
   {
     "objectID": "projects/cimage/index.html",
     "href": "projects/cimage/index.html",
     "title": "C-IMAGE Project",
     "section": "",
-    "text": "PROJECT BRIEF\n\n\n\nThis project originated from my thesis, which involved the collection of millions of photos from 26 cities. The objective was to utilize deep learning techniques to conduct scene recognition on these images. By categorizing the data and plotting the seven critical perceptions, the resulting perceptional maps provide insights into how inhabitants perceive their living environment within each city.\n\nLiu, L., Zhou, B., Zhao, J., & Ryan, B. D. “C-IMAGE: city cognitive mapping through geo-tagged photos” GeoJournal, 81(6), 817-861.\nZhou, B., Liu, L., Oliva, A., & Torralba, A. “Recognizing city identity via attribute analysis of geo-tagged images” European conference on computer vision (pp. 519-534).\n\n\n\n\nInteractive Maps\n\nBelow are interactive maps of the original C-IMAGE cities (recovered from my archive): Amsterdam, Bangkok, Barcelona, Beijing, Hong Kong, Kuala Lumpur, London, New Delhi, New York, Paris, Prague, San Francisco, Seoul, Shanghai, Singapore, Tokyo, Toronto, Vienna, Zurich\n\n\nThe Idea\n\nHalf a century ago, Kevin Lynch’s City Image project provided a collaborative depiction of the “perceived city” by gathering input from the public through a method called “mental mapping.” Now, with the power of computer vision and the ability to leverage crowd-sourced geo-tagged photos, we can explore whether we can detect people’s sentiments towards their physical living environment. By analyzing these images using computer vision algorithms, we aim to gain insights into how individuals feel about their surroundings and further enhance our understanding of urban landscapes.\n\n\n\nData Processing\n\nThe download of the Panoramio geo-tagged images are through Pranoramio data API and Flickr API.\n\n\n\nScene Classification\n\nThe images are classified based on Places 365. For this study, I selected Panoramio and, subsequently, Flickr as the primary sources for data collection. Approximately 30 million photographs were gathered by the completion of the project. The geographical spread of these photos offers a unique perspective, allowing for a comparison with the urban image as conceptualized by Kevin Lynch, which was derived from a multitude of cognitive maps.\n\n\n\nMapping the Perceptions\n\nAfter being processed through scene recognition, currently called Places365, the photos were categorized into 102 attributes. I subsequently conducted a reclassification, streamlining the images to form a generalized portrayal of the city’s public image. This led to retaining only those scenes that are associated with public spaces.\nBy retaining only seven critical perceptions and plotting them on city maps, we can observe varying city patterns that truly reflect what the inhabitants “see.” This approach allows for fascinating discoveries that can be evaluated qualitatively and quantitatively. For instance, a comparison can be made between the perception of green spaces in Shanghai and Tokyo.\n\n\n\nOther Cases\n\nThis method is highly replicable and has been employed in various real-world projects following a relatively fixed procedure. Additionally, the critical perceptions can be broken down into more specific categories. For instance, I divided the green perception into seven sub-elements, which led to discoveries.\n\n\n\nDemo Video\n\nBelow is a demo video showing the distribution of image classification results in Shenzhen."
+    "text": "PROJECT BRIEF\n\n\n\nThis project originated from my thesis, which involved the collection of millions of photos from 26 cities. The objective was to utilize deep learning techniques to conduct scene recognition on these images. By categorizing the data and plotting the seven critical perceptions, the resulting perceptional maps provide insights into how inhabitants perceive their living environment within each city.\n\nLiu, L., Zhou, B., Zhao, J., & Ryan, B. D. “C-IMAGE: city cognitive mapping through geo-tagged photos” GeoJournal, 81(6), 817-861.\nZhou, B., Liu, L., Oliva, A., & Torralba, A. “Recognizing city identity via attribute analysis of geo-tagged images” European conference on computer vision (pp. 519-534)."
+  },
+  {
+    "objectID": "projects/cimage/index.html#interactive-maps",
+    "href": "projects/cimage/index.html#interactive-maps",
+    "title": "C-IMAGE Project",
+    "section": "# Interactive Maps",
+    "text": "# Interactive Maps\nBelow are interactive maps of the original C-IMAGE cities (recovered from my archive): Amsterdam, Bangkok, Barcelona, Beijing, Hong Kong, Kuala Lumpur, London, New Delhi, New York, Paris, Prague, San Francisco, Seoul, Shanghai, Singapore, Tokyo, Toronto, Vienna, Zurich"
+  },
+  {
+    "objectID": "projects/cimage/index.html#the-idea",
+    "href": "projects/cimage/index.html#the-idea",
+    "title": "C-IMAGE Project",
+    "section": "# The Idea",
+    "text": "# The Idea\nHalf a century ago, Kevin Lynch’s City Image project provided a collaborative depiction of the “perceived city” by gathering input from the public through a method called “mental mapping.” Now, with the power of computer vision and the ability to leverage crowd-sourced geo-tagged photos, we can explore whether we can detect people’s sentiments towards their physical living environment. By analyzing these images using computer vision algorithms, we aim to gain insights into how individuals feel about their surroundings and further enhance our understanding of urban landscapes."
+  },
+  {
+    "objectID": "projects/cimage/index.html#data-processing",
+    "href": "projects/cimage/index.html#data-processing",
+    "title": "C-IMAGE Project",
+    "section": "# Data Processing",
+    "text": "# Data Processing\nThe download of the Panoramio geo-tagged images are through Pranoramio data API and Flickr API."
+  },
+  {
+    "objectID": "projects/cimage/index.html#scene-classification",
+    "href": "projects/cimage/index.html#scene-classification",
+    "title": "C-IMAGE Project",
+    "section": "# Scene Classification",
+    "text": "# Scene Classification\nThe images are classified based on Places 365. For this study, I selected Panoramio and, subsequently, Flickr as the primary sources for data collection. Approximately 30 million photographs were gathered by the completion of the project. The geographical spread of these photos offers a unique perspective, allowing for a comparison with the urban image as conceptualized by Kevin Lynch, which was derived from a multitude of cognitive maps."
+  },
+  {
+    "objectID": "projects/cimage/index.html#mapping-the-perceptions",
+    "href": "projects/cimage/index.html#mapping-the-perceptions",
+    "title": "C-IMAGE Project",
+    "section": "# Mapping the Perceptions",
+    "text": "# Mapping the Perceptions\nAfter being processed through scene recognition, currently called Places365, the photos were categorized into 102 attributes. I subsequently conducted a reclassification, streamlining the images to form a generalized portrayal of the city’s public image. This led to retaining only those scenes that are associated with public spaces.\nBy retaining only seven critical perceptions and plotting them on city maps, we can observe varying city patterns that truly reflect what the inhabitants “see.” This approach allows for fascinating discoveries that can be evaluated qualitatively and quantitatively. For instance, a comparison can be made between the perception of green spaces in Shanghai and Tokyo."
+  },
+  {
+    "objectID": "projects/cimage/index.html#other-cases",
+    "href": "projects/cimage/index.html#other-cases",
+    "title": "C-IMAGE Project",
+    "section": "# Other Cases",
+    "text": "# Other Cases\nThis method is highly replicable and has been employed in various real-world projects following a relatively fixed procedure. Additionally, the critical perceptions can be broken down into more specific categories. For instance, I divided the green perception into seven sub-elements, which led to discoveries."
+  },
+  {
+    "objectID": "projects/cimage/index.html#demo-video",
+    "href": "projects/cimage/index.html#demo-video",
+    "title": "C-IMAGE Project",
+    "section": "# Demo Video",
+    "text": "# Demo Video\nBelow is a demo video showing the distribution of image classification results in Shenzhen."
   },
   {
     "objectID": "projects/streetalk/index.html",
@@ -222,6 +418,34 @@
     "title": "StreeTalk Project",
     "section": "",
     "text": "PROJECT BRIEF\n\n\n\nUsing the perceptional map as a foundation, along with additional geo information such as points of interest (POI) and mobility data, I developed a web application that enables tourists or night runners to select various pedestrian routes within the city. Furthermore, I leveraged the vast dataset of over 100,000,000 photos to calculate safety scores for the entire country. These scores were subsequently sold to Daimler Innovative Lab the following year, providing them with valuable insights and information for their initiatives.\n\nZhang, F., Zhou, B., Liu, L., Liu, Y., Fung, H. H., Lin, H., & Ratti, C. “Measuring human perceptions of a large-scale urban region using machine learning” Landscape and Urban Planning.\nLiu, L., Zhang, F., Zhou, B., Wang, Z., & Li, Y. “STREETALK: A NAVIGATION SYSTEM FOR PEDESTRIANS AND CYCLISTS” Landscape Architecture Frontiers."
+  },
+  {
+    "objectID": "projects/streetalk/index.html#the-idea",
+    "href": "projects/streetalk/index.html#the-idea",
+    "title": "StreeTalk Project",
+    "section": "# The Idea",
+    "text": "# The Idea\nA personal experience of a terrible pedestrian encounter inspired this project. Motivated to improve pedestrian safety, I developed an algorithm that calculates safety scores by analyzing the visual context of street views. Using this algorithm, I created a pedestrian routing web application that determines routes based on the average safety score along each road. The aim was to provide users with safer and more secure paths for their journeys, enhancing the overall pedestrian experience in urban areas.\n\nBack in 2016, I had just relocated to a new apartment and planned to meet a friend for a meal nearby. Unfortunately, Amap suggested a rather unpleasant walking route. The path was lined with crumbling roads, dimly lit areas, high walls on either side and even many slums concealed behind these walls, emitting an offensive odor."
+  },
+  {
+    "objectID": "projects/streetalk/index.html#modeling-the-perceptional-predictor",
+    "href": "projects/streetalk/index.html#modeling-the-perceptional-predictor",
+    "title": "StreeTalk Project",
+    "section": "# Modeling the perceptional predictor",
+    "text": "# Modeling the perceptional predictor\nThis experience sparked my project’s concept: how many unsafe streets still exist within the urban region of Shanghai? To address this question, I trained a safety perception classifier and developed software that could automatically evaluate the safety score of a street. This led to the creation of a comprehensive safety map of Shanghai."
+  },
+  {
+    "objectID": "projects/streetalk/index.html#demo-video",
+    "href": "projects/streetalk/index.html#demo-video",
+    "title": "StreeTalk Project",
+    "section": "# Demo Video",
+    "text": "# Demo Video\nBelow is a demo video showing how the score is applied for pedestrian routing."
+  },
+  {
+    "objectID": "projects/streetalk/index.html#revisit-the-dataset-and-algorithm",
+    "href": "projects/streetalk/index.html#revisit-the-dataset-and-algorithm",
+    "title": "StreeTalk Project",
+    "section": "# Revisit the Dataset and Algorithm",
+    "text": "# Revisit the Dataset and Algorithm"
   },
   {
     "objectID": "projects/streetalk/index.html#place-pulse-2.0",
@@ -249,7 +473,7 @@
     "href": "projects/index.html",
     "title": "Projects",
     "section": "",
-    "text": "For more projects, please visit the visualization page.\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nSidewalk Ballet\n\n\n\ncomputer vision\n\n\nurban design\n\n\n\n\n\n\n\nLiu Liu\n\n\nMay, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVibeScan\n\n\n\ncomputer vision\n\n\nurban design\n\n\npoi\n\n\ntools\n\n\n\n\n\n\n\nLiu Liu\n\n\nFeb, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRoad Assessment in Ulaanbaatar\n\n\n\ncomputer vision\n\n\nurban planning\n\n\ntools\n\n\n\n\n\n\n\nLiu Liu, Ding Zhang, Hongdu Yi\n\n\nOct, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAI-Aided Camera App\n\n\n\ncomputer vision\n\n\ntools\n\n\n\n\n\n\n\nLiu Liu, Ding Zhang, Xin Xiong\n\n\nMay, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRecognizing Central Activity Zones\n\n\n\nurban planning\n\n\npoi\n\n\nvisualization\n\n\n\n\n\n\n\nLiu Liu, Zhuqing Liu\n\n\nJan, 2018\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCityEye WeChat mini APP\n\n\n\ncomputer vision\n\n\ntools\n\n\n\n\n\n\n\nLiu Liu, Ding Zhang, Jinxing Shao\n\n\nJan, 2018\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRiver View Analysis\n\n\n\ncomputer vision\n\n\nurban design\n\n\n\n\n\n\n\nLiu Liu\n\n\nMay, 2017\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStreeTalk Project\n\n\n\ncomputer vision\n\n\nurban design\n\n\n\n\n\n\n\nLiu Liu, Bolei Zhou, Fan Zhang\n\n\nOct, 2016\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n1 Billion LBSN Data\n\n\n\ncellphone data\n\n\nurban planning\n\n\n\n\n\n\n\nLiu Liu, Di An\n\n\nMar, 2015\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nC-IMAGE Project\n\n\n\ncomputer vision\n\n\nvisualization\n\n\n\n\n\n\n\nLiu Liu, Bolei Zhou\n\n\nMay, 2014\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "For more projects, please visit the visualization page.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nSidewalk Ballet\n\n\n\ncomputer vision\n\nurban design\n\n\n\n\n\n\n\nLiu Liu\n\n\nMay, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nVibeScan\n\n\n\ncomputer vision\n\nurban design\n\npoi\n\ntools\n\n\n\n\n\n\n\nLiu Liu\n\n\nFeb, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\nRoad Assessment in Ulaanbaatar\n\n\n\ncomputer vision\n\nurban planning\n\ntools\n\n\n\n\n\n\n\nLiu Liu, Ding Zhang, Hongdu Yi\n\n\nOct, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\nAI-Aided Camera App\n\n\n\ncomputer vision\n\ntools\n\n\n\n\n\n\n\nLiu Liu, Ding Zhang, Xin Xiong\n\n\nMay, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nRecognizing Central Activity Zones\n\n\n\nurban planning\n\npoi\n\nvisualization\n\n\n\n\n\n\n\nLiu Liu, Zhuqing Liu\n\n\nJan, 2018\n\n\n\n\n\n\n\n\n\n\n\n\n\nCityEye WeChat mini APP\n\n\n\ncomputer vision\n\ntools\n\n\n\n\n\n\n\nLiu Liu, Ding Zhang, Jinxing Shao\n\n\nJan, 2018\n\n\n\n\n\n\n\n\n\n\n\n\n\nRiver View Analysis\n\n\n\ncomputer vision\n\nurban design\n\n\n\n\n\n\n\nLiu Liu\n\n\nMay, 2017\n\n\n\n\n\n\n\n\n\n\n\n\n\nStreeTalk Project\n\n\n\ncomputer vision\n\nurban design\n\n\n\n\n\n\n\nLiu Liu, Bolei Zhou, Fan Zhang\n\n\nOct, 2016\n\n\n\n\n\n\n\n\n\n\n\n\n\n1 Billion LBSN Data\n\n\n\ncellphone data\n\nurban planning\n\n\n\n\n\n\n\nLiu Liu, Di An\n\n\nMar, 2015\n\n\n\n\n\n\n\n\n\n\n\n\n\nC-IMAGE Project\n\n\n\ncomputer vision\n\nvisualization\n\n\n\n\n\n\n\nLiu Liu, Bolei Zhou\n\n\nMay, 2014\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/sidewalk_ballet/index.html",
@@ -263,7 +487,28 @@
     "href": "projects/vibescan/index.html",
     "title": "VibeScan",
     "section": "",
-    "text": "PROJECT BRIEF\n\n\n\nThis project aimed at developing a benchmarking and customer analysis system for commercial areas. Leveraging online feedback, data mining, and AI, it evaluates spaces against industry standards and projects like Miami Design District and Hudson Yards. This approach aids in strategic decision-making across planning, design, and operations, enhancing commercial viability and consumer engagement.\nFor a detailed demonstration of the project, please refer to the slides: Phase I and Phase II.\n\n\n\nThe Idea\n\nIs it possible to gauge public sentiment towards the operational strategies of commercial business sites, particularly in an era where enticing offline shopping has become a paramount challenge for many shopping districts? These areas have significantly invested in enhancing their landscape’s appeal. The question arises: how can we measure the return on investment for these temporary or even permanent enhancements and infrastructure in terms of value to developers? Evaluating the success and failure of space design is crucial. With the wealth of information available on social media platforms, can we harness this publicly accessible data and compile it into a comprehensive public opinion pool? By identifying effective strategies and contrasting them with unsuccessful examples, we can glean insights that are invaluable for future decision-making processes.\n\n\n\nData Process\n\nTons of the data from social media are collected from a wide variety of both China and US social media platform. We usually follows comments and photos from user. For the shopping area cases in Phase I, we mainly collected 14M records (Famous international cases), and 7M in Phase II (Domestic newly built cases).\n\n\n\n\nKey Results\n\n\nAnalysis of Miami District\n\nHot search index of each platform of Miami District.\n\n\n\nBrand check-in rhythm.\n\n\n\nThe investment of leading merchants in space design and the resulting influence of influcers checking in.\n\n\n\n\n\nUsage and comparison of public facilities in the main space.\n\n\n\n\n\n\nAnalysis of Hudson Yards\n\nHot search index of each platform of Miami District.\n\n\n\nPrediction of the structure of the visiting crowd\n\n\n\nThe analysis of social comments on Vessel.\n\n\n\nThe analysis of social comments on Edge.\n\n\n\nThe analysis of social comments on the Shed.\n\n\n\nFor a detailed demonstration of the project, please refer to the slides: Phase I and Phase II."
+    "text": "PROJECT BRIEF\n\n\n\nThis project aimed at developing a benchmarking and customer analysis system for commercial areas. Leveraging online feedback, data mining, and AI, it evaluates spaces against industry standards and projects like Miami Design District and Hudson Yards. This approach aids in strategic decision-making across planning, design, and operations, enhancing commercial viability and consumer engagement.\nFor a detailed demonstration of the project, please refer to the slides: Phase I and Phase II."
+  },
+  {
+    "objectID": "projects/vibescan/index.html#the-idea",
+    "href": "projects/vibescan/index.html#the-idea",
+    "title": "VibeScan",
+    "section": "# The Idea",
+    "text": "# The Idea\nIs it possible to gauge public sentiment towards the operational strategies of commercial business sites, particularly in an era where enticing offline shopping has become a paramount challenge for many shopping districts? These areas have significantly invested in enhancing their landscape’s appeal. The question arises: how can we measure the return on investment for these temporary or even permanent enhancements and infrastructure in terms of value to developers? Evaluating the success and failure of space design is crucial. With the wealth of information available on social media platforms, can we harness this publicly accessible data and compile it into a comprehensive public opinion pool? By identifying effective strategies and contrasting them with unsuccessful examples, we can glean insights that are invaluable for future decision-making processes."
+  },
+  {
+    "objectID": "projects/vibescan/index.html#data-process",
+    "href": "projects/vibescan/index.html#data-process",
+    "title": "VibeScan",
+    "section": "# Data Process",
+    "text": "# Data Process\nTons of the data from social media are collected from a wide variety of both China and US social media platform. We usually follows comments and photos from user. For the shopping area cases in Phase I, we mainly collected 14M records (Famous international cases), and 7M in Phase II (Domestic newly built cases)."
+  },
+  {
+    "objectID": "projects/vibescan/index.html#key-results",
+    "href": "projects/vibescan/index.html#key-results",
+    "title": "VibeScan",
+    "section": "# Key Results",
+    "text": "# Key Results\n\nAnalysis of Miami District\n\nHot search index of each platform of Miami District.\n\n\n\nBrand check-in rhythm.\n\n\n\nThe investment of leading merchants in space design and the resulting influence of influcers checking in.\n\n\n\n\n\nUsage and comparison of public facilities in the main space.\n\n\n\n\n\n\nAnalysis of Hudson Yards\n\nHot search index of each platform of Miami District.\n\n\n\nPrediction of the structure of the visiting crowd\n\n\n\nThe analysis of social comments on Vessel.\n\n\n\nThe analysis of social comments on Edge.\n\n\n\nThe analysis of social comments on the Shed.\n\n\n\nFor a detailed demonstration of the project, please refer to the slides: Phase I and Phase II."
   },
   {
     "objectID": "presentations/index.html",
@@ -277,7 +522,7 @@
     "href": "presentations/index.html#seeing-hai-human-activities-and-interactions-on-sidewalks-through-llms-and-computer-vision",
     "title": "Presentations",
     "section": "Seeing HAI: Human Activities and Interactions on Sidewalks through LLMs and Computer Vision",
-    "text": "Seeing HAI: Human Activities and Interactions on Sidewalks through LLMs and Computer Vision\n\n\n\n\n\n\n\n\nPh.D. Dissertation Colloquium\n\n\n\nDate: May 22, 2025  Location: 10-401, MIT\nThis presentation outlined the two-year research plan for my doctoral dissertation, building upon the Sidewalk Ballet project.\nThe dissertation consists of two main phases. In the first phase, I developed a three-step pipeline to detect social groups in sidewalk scenes using computer vision and large language models. In the second phase, I will integrate these social interaction findings with additional street-level features to construct a set of Human Activity and Interaction (HAI) indices. These indices aim to support both upstream and downstream applications in urban design research.\nAll members of my dissertation committee attended the colloquium: Prof. Andres Sevtsuk, Prof. Jinhua Zhao, and Prof. Lawrence Vale. The external reviewer was Prof. Albert Saiz.\n\n\n\n\n\nSlides Here"
+    "text": "Seeing HAI: Human Activities and Interactions on Sidewalks through LLMs and Computer Vision\n\n\n\n\n\n\n\n\n2025 ACSP, Presentation\n\n\n\nDate: Oct 23, 2025  Location: Minneapolis\nThis presentation talks about the partial research from my dissertation research. In particular, I disucssed the potential challenges of detecting social groups in today’s computer vision-driven urban studies. I proposed a three-stage pipeline of VLM in supporting the detection of research.\n\n\n\n\n\nSlides Here\n\n\n\n\n\n\n\n\n\n\nPh.D. Dissertation Colloquium\n\n\n\nDate: May 22, 2025  Location: 10-401, MIT\nThis presentation outlined the two-year research plan for my doctoral dissertation, building upon the Sidewalk Ballet project.\nThe dissertation consists of two main phases. In the first phase, I developed a three-step pipeline to detect social groups in sidewalk scenes using computer vision and large language models. In the second phase, I will integrate these social interaction findings with additional street-level features to construct a set of Human Activity and Interaction (HAI) indices. These indices aim to support both upstream and downstream applications in urban design research.\nAll members of my dissertation committee attended the colloquium: Prof. Andres Sevtsuk, Prof. Jinhua Zhao, and Prof. Lawrence Vale. The external reviewer was Prof. Albert Saiz.\n\n\n\n\n\nSlides Here"
   },
   {
     "objectID": "presentations/index.html#data-benchmark-for-multi-modality-models",
