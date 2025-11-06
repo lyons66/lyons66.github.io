@@ -29,15 +29,13 @@ Research Papers
 
 ## Peer-Reviewed Papers
 
-- **Liu, L., Marco Cipriano, Freya Tan, Alexandra Kudaeva, Andres Sevtsuk, & Gerard de Melo**  
-  *Observing the “Sidewalk Ballet”: Leveraging LLMs to Detect Social Interactions in Street-View Images*  
-  **CUPUM 2025 – Computational Urban Planning & Urban Management**, London, UK.  
-  [View](#)  
+- **Liu, L., Kudaeva, A., Cipriano, M., Al Ghannam, F., Tan, F., de Melo, G., & Sevtsuk, A.**  
+  *MINGLE: VLMs for Semantically Complex Region Detection*  
+  Accepted by **AAAI 2026 – Artificial Intelligence for Social Impact Track**  
 
-- **Hosseini, M., Cipriano, M., Eslami, S., Hodczak, D., Liu, L., Sevtsuk, A., & de Melo, G.**  
-  *ELSA: Evaluating Localization of Social Activities in Urban Streets*  
-  *arXiv* preprint arXiv:2406.01551 (2024).  
-  [Download](https://arxiv.org/abs/2406.01551)  
+- **Kang, Y., Chen, J., Liu, L., Sharma, K., Mazzarello, M., Mora, S., Duarte, F.* (corresp.), & Ratti, C.**  
+  *Human vs. AI Safety Perception? Decoding Human Safety Perception with Eye-Tracking Systems, Street-View Images, and Explainable AI*  
+  *Computers, Environment & Urban Systems*, (Accepted Manuscript ID CEUS-D-25-00395).  
 
 - **Liu, L., & Andres Sevtsuk**  
   *Clarity or Confusion: A Review of Computer-Vision Street Attributes in Urban Studies and Planning*  
@@ -90,17 +88,9 @@ Research Papers
 
 ## Papers Under Review
 
-- **Liu, L., Kudaeva, A., Cipriano, M., Al Ghannam, F., Tan, F., de Melo, G., & Sevtsuk, A.**  
-  *MINGLE: VLMs for Semantically Complex Region Detection*  
-  Submitted to **AAAI 2026 – Artificial Intelligence for Social Impact Track**, under review.  
-
 - **Sevtsuk, A., Basu, R., Liu, L., Alhassan, A., & Kollar, J.**  
   *NYC Walks: A City-Wide Foot-Traffic Model to Guide Pedestrian-Oriented Planning and Design*  
-  Submitted to **Nature Cities**, under review.  
-
-- **Kang, Y., Chen, J., Liu, L., Sharma, K., Mazzarello, M., Mora, S., Duarte, F.* (corresp.), & Ratti, C.**  
-  *Human vs. AI Safety Perception? Decoding Human Safety Perception with Eye-Tracking Systems, Street-View Images, and Explainable AI*  
-  *Computers, Environment & Urban Systems*, major revision invited (Manuscript ID CEUS-D-25-00395).  
+  Submitted to **Nature Cities**, under review.
 
 - **Zhang, H., Liu, L., Wang, P., & Zhao, J.**  
   *Depicting the Blurred Regional Boundaries in China Using Individual Mobility Data*  
@@ -125,6 +115,11 @@ Research Papers
   Completed during Applied Scientist PhD Internship, Amazon AGI, Sunnyvale CA (2024).  
   Created human-annotated, multi-domain datasets for evaluating video-to-audio generation models.  
   [View upon request](https://www.dropbox.com/scl/fi/6idfzeoj59iff4g8wxi69/liu-liu_2.pdf?rlkey=orjuocbjjipuzqjjg6d8ys7yu&st=f6ah28z6&dl=0)
+
+- **Hosseini, M., Cipriano, M., Eslami, S., Hodczak, D., Liu, L., Sevtsuk, A., & de Melo, G.**  
+  *ELSA: Evaluating Localization of Social Activities in Urban Streets*  
+  *arXiv* preprint arXiv:2406.01551 (2024).  
+  [Download](https://arxiv.org/abs/2406.01551)  
 
 ---
 
