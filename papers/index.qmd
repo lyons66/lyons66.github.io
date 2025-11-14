@@ -24,10 +24,17 @@ title-block-banner: "papers_cover.png"
 </style>
 ```
 
-Research Papers
-==============
+Usually I do not update this page frequently. For the most recent publication list, please refer to my [Curriculum Vitae](https://www.dropbox.com/scl/fo/ghrtsq5to79059lximk01/h?rlkey=cev0uzwgvu4jkus9eo6kkbgn7&dl=0) and [Google Scholar](https://scholar.google.com/citations?user=D3PSmFsAAAAJ) profile.
 
 ## Peer-Reviewed Papers
+
+- **Sevtsuk, A., Basu, R., Liu, L., Alhassan, A., & Kollar, J.**  
+  *NYC Walks: A City-Wide Foot-Traffic Model to Guide Pedestrian-Oriented Planning and Design*  
+  Accepted by **Nature Cities**.
+  
+-	**Liu, Z., Gao, X., Niu, F., Gao, Q., Liu, L., & Piramuthu, R.**
+  *START: Spatial and Textual Learning for Chart Understanding*
+  Accepted by **WACV 2026**.
 
 - **Liu, L., Kudaeva, A., Cipriano, M., Al Ghannam, F., Tan, F., de Melo, G., & Sevtsuk, A.**  
   *MINGLE: VLMs for Semantically Complex Region Detection*  
@@ -82,28 +89,26 @@ Research Papers
   *Computational Urban Science* 2 (1), 1-21 (2022).  
   [Download](https://link.springer.com/article/10.1007/s43762-022-00056-9)  
 
-*(Additional Chinese-language papers are listed in the PDF CV.)*
-
----
-
-## Papers Under Review
-
-- **Sevtsuk, A., Basu, R., Liu, L., Alhassan, A., & Kollar, J.**  
-  *NYC Walks: A City-Wide Foot-Traffic Model to Guide Pedestrian-Oriented Planning and Design*  
-  Submitted to **Nature Cities**, under review.
+#### Papers Under Review
 
 - **Zhang, H., Liu, L., Wang, P., & Zhao, J.**  
   *Depicting the Blurred Regional Boundaries in China Using Individual Mobility Data*  
-  *Computational Urban Science*, under review (Manuscript ID CUSC-D-25-00097).  
+  *Computational Urban Science*, under review (Manuscript ID CUSC-D-25-00097). 
 
--	**Liu, Z., Gao, X., Niu, F., Gao, Q., Liu, L., & Piramuthu, R.**
-  *START: Spatial and Textual Learning for Chart Understanding*
-  Submitted to **WACV 2026**, under review.
+#### Preprint
 
----
+- **Hosseini, M., Cipriano, M., Eslami, S., Hodczak, D., Liu, L., Sevtsuk, A., & de Melo, G.**  
+  *ELSA: Evaluating Localization of Social Activities in Urban Streets*  
+  *arXiv* preprint arXiv:2406.01551 (2024).  
+  [Download](https://arxiv.org/abs/2406.01551)  
 
-## Manuscripts Completed (Not Submitted)
+#### Manuscripts Completed (No Submission)
 
+- **Liu, L., Gao, X., Gao, Q., & Piramuthu, R.**  
+  *Exploring the Challenges of Humanity’s Last Exam Dataset Analysis, Small Model Evaluation, and Enhancement Trials*  
+  Completed during Applied Scientist PhD Internship, Amazon AGI, Sunnyvale CA (2025).  
+  [View upon request](https://www.dropbox.com/scl/fi/8eshq8b80b9mmp4c19ukt/Exploring_the_Challenges_of_Humanity_s_Last_Exam.pdf?rlkey=qgvc22lbsc78j86apggtklqpv&st=lvqor1f4&dl=0)
+  
 - **Liu, L., Gao, X., Gao, Q., & Piramuthu, R.**  
   *ABCxM: A Benchmark for Multimodal Models Playing Scores to Music*  
   Completed during Applied Scientist PhD Internship, Amazon AGI, Sunnyvale CA (2024).  
@@ -116,14 +121,17 @@ Research Papers
   Created human-annotated, multi-domain datasets for evaluating video-to-audio generation models.  
   [View upon request](https://www.dropbox.com/scl/fi/6idfzeoj59iff4g8wxi69/liu-liu_2.pdf?rlkey=orjuocbjjipuzqjjg6d8ys7yu&st=f6ah28z6&dl=0)
 
-- **Hosseini, M., Cipriano, M., Eslami, S., Hodczak, D., Liu, L., Sevtsuk, A., & de Melo, G.**  
-  *ELSA: Evaluating Localization of Social Activities in Urban Streets*  
-  *arXiv* preprint arXiv:2406.01551 (2024).  
-  [Download](https://arxiv.org/abs/2406.01551)  
+
+*Additional papers writtern in Chinese are listed in the *[*Curriculum Vitae*](https://www.dropbox.com/scl/fo/ghrtsq5to79059lximk01/h?rlkey=cev0uzwgvu4jkus9eo6kkbgn7&dl=0) *only.*
 
 ---
 
 ## Service & Grants
 
-- **Reviewer** for *Cities*, *Nature Cities*, *Sustainable Cities & Society*, *Environment & Planning B*, *Journal of Transport and Land Use*, *Computational Urban Science*, *Landscape and Urban Planning*, *International Journal of Digital Earth*, and others (20 + reviews).  
+-	**Co-Investigator (Subproject PI)**, National Key Research and Development Program of China — “Multi-dimensional Street Quality Enhancement and Coordinated Control Technology Platform Construction” (Subproject: 2023YFC3805305-03, PI: Liu Liu, Suzhou Citory Technology Co., Ltd.), Funding Period: December 2023 – November 2026.
 - **Principal Investigator**, “Observing the ‘Sidewalk Ballet’: Leveraging LMMs to Detect Social Interactions in Large-Scale Urban Imagery Datasets,” ACCESS CIS250088 (2025-2026).  
+-	**Co-Principal Investigator**, Moments: Leveraging Continuous Visual and Auditory Experiences to Assess Urban Attraction (CIS250360), Advanced Cyberinfrastructure Coordination Ecosystem: Services & Support (ACCESS), Alexandria, VA, US, Funding Period: October 2025 – October 2026 [↗]
+
+
+- **Reviewer** for *Cities*, *Nature Cities*, *Sustainable Cities & Society*, *Environment & Planning B*, *Journal of Transport and Land Use*, *Transactions in Urban Data, Science, and Technology*, *Annals of the American Association of Geographers*,  *Computational Urban Science*, *Landscape and Urban Planning*, *International Journal of Digital Earth*, and others (20 + reviews).  
+

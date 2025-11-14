@@ -86,6 +86,34 @@ This presentation talks about the partial research from my dissertation research
 ::::
 :::::
 
+## Exploring the Challenges of Humanity's Last Exam
+
+::::: {.columns}
+:::: {.column width="70%"}
+::: {.callout-note}
+## Final Presentation @ HLE Exploration
+
+Date: Aug 20, 2025
+<br>
+Location: Sunnyvale, CA
+
+This presentation introduces my analysis of the Humanity’s Last Exam (HLE) benchmark at Amazon AGI, a 2,500-question dataset spanning STEM, medicine, and humanities. I discussed the dataset’s quality issues, small-model performance, and reasoning behaviors. The work highlights how current distilled models (e.g., Qwen3 series) perform under strict evaluation and presents a framework to analyze reasoning errors and recurring problem-solving strategies. The mauscript of the working papers can be found [here](https://lyons66.github.io/papers/#manuscripts-completed-not-submitted) in my "Papers" Section upon request.
+
+:::
+
+<img src="amz-cover2.jpeg" style="width: 100%; border-radius: 6px;">
+
+::::
+:::: {.column width="30%" .center-text}
+<img src="hle_cover.png" style="width: 93%; border-radius: 6px;">
+
+[Slides Upon Request](https://www.dropbox.com/scl/fi/r6h732kmzrjbol7w9nj0n/hle.pdf?rlkey=som0jh2u4al9dpzltuxrgrt8y&st=n2o1ahcz&dl=0)
+
+::::
+:::::
+
+## Seeing HAI: Human Activities and Interactions on Sidewalks through LLMs and Computer Vision
+
 ::::: {.columns}
 :::: {.column width="70%"}
 ::: {.callout-note}
@@ -114,30 +142,6 @@ All members of my dissertation committee attended the colloquium: Prof. Andres S
 ::::
 :::::
 
-## Exploring the Challenges of Humanity's Last Exam
-
-::::: {.columns}
-:::: {.column width="70%"}
-::: {.callout-note}
-## Final Presentation @ HLE Exploration
-
-Date: Aug 20, 2025
-<br>
-Location: Lab 126 Sunnyvale, CA
-
-This presentation introduces my analysis of the Humanity’s Last Exam (HLE) benchmark, a 2,500-question dataset spanning STEM, medicine, and humanities. I discussed the dataset’s quality issues, small-model performance, and reasoning behaviors. The work highlights how current distilled models (e.g., Qwen3 series) perform under strict evaluation and presents a framework to analyze reasoning errors and recurring problem-solving strategies.
-
-:::
-::::
-:::: {.column width="30%" .center-text}
-<img src="hle_cover.png" style="width: 93%; border-radius: 6px;">
-
-[Slides Here](https://www.dropbox.com/scl/fi/r6h732kmzrjbol7w9nj0n/hle.pdf?rlkey=som0jh2u4al9dpzltuxrgrt8y&st=n2o1ahcz&dl=0)
-
-::::
-:::::
-
-
 ## Data Benchmark for Multi-modality models
 
 ::::: {.columns}
@@ -147,9 +151,9 @@ This presentation introduces my analysis of the Humanity’s Last Exam (HLE) ben
 
 Date: Aug 22, 2024
 <br>
-Location: Lab 126 Sunnyvale, CA
+Location: Sunnyvale, CA
 
-This presentation covers 2 projects I conducted during my research internship at Amazon AGI. They are both related to benchmarks for Audio Generation, in which I highlighted some gaps in today's AI-driven development. The internal mauscript of the working papers can be found [here](https://lyons66.github.io/papers/#manuscripts-completed-not-submitted) in my "Papers" Section.
+This presentation covers 2 projects I conducted during my research internship at Amazon AGI. They are both related to benchmarks for Audio Generation, in which I highlighted some gaps in today's AI-driven development. The mauscript of the working papers can be found [here](https://lyons66.github.io/papers/#manuscripts-completed-not-submitted) in my "Papers" Section upon request.
 
 :::
 
@@ -159,7 +163,7 @@ This presentation covers 2 projects I conducted during my research internship at
 :::: {.column width="30%" .center-text}
 <img src="amz-cover.png" style="width: 93%; border-radius: 6px;">
 
-[Slides Here](https://www.dropbox.com/scl/fi/tob7wuw37ydulin3mq67y/2024-08-22_week13.pdf?rlkey=h6lfpc078dtyrh9y2ufiei83s&st=okatm53u&dl=0)
+[Slides Upon Request](https://www.dropbox.com/scl/fi/tob7wuw37ydulin3mq67y/2024-08-22_week13.pdf?rlkey=h6lfpc078dtyrh9y2ufiei83s&st=okatm53u&dl=0)
 
 ::::
 :::::
