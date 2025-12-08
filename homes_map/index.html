@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>The VALE Grid 2025 for 11.001</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.4.0/mapbox-gl.css" rel="stylesheet">
+    
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.4.0/mapbox-gl.js"></script>
+    
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="map"></div>
+
+    <script>
+        // !! ⚠️ 重要：请替换为你的 Mapbox Access Token
+        mapboxgl.accessToken = 'pk.eyJ1IjoibHlvbnM2NiIsImEiOiJVT0FsWVlnIn0.KcZyux8p-KtgzfJkC8w3_A';
+
+        // 初始化 Mapbox 地图
+        const map = new mapboxgl.Map({
+            container: 'map', // 地图容器的 ID
+            style: 'mapbox://styles/mapbox/standard', // 使用卫星街道风格
+            center: [-98.5, 39.5], // 初始中心点：美国中部
+            zoom: 3, // 初始缩放级别：显示整个美国
+            projection: 'globe' // 🚀 关键：启用 3D 地球投影
+        });
+
+        // -----------------------
+        // Mapbox 地图加载完成后执行数据处理
+        // -----------------------
+        map.on('load', () => {
+            // 使用原生 fetch API 加载 CSV 文件
+            fetch('data.csv')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP 错误! 状态码: ${response.status}`);
+                    }
+                    return response.text();
+                })
+                .then(csvText => {
+                    // 手动解析 CSV 数据
+                    const lines = csvText.trim().split('\n');
+                    if (lines.length < 2) {
+                        throw new Error('CSV 文件格式错误：至少需要表头和数据行');
+                    }
+                    
+                    // 解析表头
+                    const headers = lines[0].split(',').map(h => h.trim().replace(/^"|"$/g, ''));
+                    
+                    // 解析数据行
+                    const data = [];
+                    for (let i = 1; i < lines.length; i++) {
+                        const line = lines[i];
+                        if (!line.trim()) continue; // 跳过空行
+                        
+                        // 简单的 CSV 解析（处理引号内的逗号）
+                        const values = [];
+                        let current = '';
+                        let inQuotes = false;
+                        
+                        for (let j = 0; j < line.length; j++) {
+                            const char = line[j];
+                            if (char === '"') {
+                                inQuotes = !inQuotes;
+                            } else if (char === ',' && !inQuotes) {
+                                values.push(current.trim());
+                                current = '';
+                            } else {
+                                current += char;
+                            }
+                        }
+                        values.push(current.trim()); // 添加最后一个值
+                        
+                        // 创建对象
+                        const row = {};
+                        headers.forEach((header, index) => {
+                            row[header] = values[index] ? values[index].replace(/^"|"$/g, '') : '';
+                        });
+                        data.push(row);
+                    }
+                    
+                    return data;
+                })
+                .then((data) => {
+                    // 过滤并转换数据，确保坐标有效
+                    const validFeatures = [];
+                    const invalidFeatures = [];
+                    
+                    data.forEach((row, index) => {
+                        const lon = parseFloat(row.lon);
+                        const lat = parseFloat(row.lat);
+                        
+                        // 验证坐标是否有效
+                        if (isNaN(lon) || isNaN(lat)) {
+                            invalidFeatures.push(row);
+                            return;
+                        }
+                        
+                        // 验证坐标范围（经度 -180 到 180，纬度 -90 到 90）
+                        if (lon < -180 || lon > 180 || lat < -90 || lat > 90) {
+                            invalidFeatures.push(row);
+                            return;
+                        }
+                        
+                        validFeatures.push({
+                            'type': 'Feature',
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [lon, lat]
+                            },
+                            'properties': {
+                                'name': row.name || '未知地点',
+                                'user_name': row.user_name || ''
+                            }
+                        });
+                    });
+                    
+                    if (validFeatures.length === 0) {
+                        alert('错误：没有有效的数据点可以显示。请检查 CSV 文件中的坐标数据。');
+                        return;
+                    }
+                    
+                    // 将 CSV 数据转换为 GeoJSON 格式
+                    const geojsonData = {
+                        'type': 'FeatureCollection',
+                        'features': validFeatures
+                    };
+                    
+                    // 检查数据源是否已存在，如果存在则先移除
+                    if (map.getSource('points-data')) {
+                        map.removeLayer('point-layer');
+                        map.removeSource('points-data');
+                    }
+                    
+                    // 1. 添加数据源 (Source)
+                    map.addSource('points-data', {
+                        'type': 'geojson',
+                        'data': geojsonData
+                    });
+
+                    // 2. 添加数据层 (Layer)
+                    map.addLayer({
+                        'id': 'point-layer',
+                        'type': 'circle', // 使用圆形标记
+                        'source': 'points-data',
+                        'paint': {
+                            'circle-radius': 8,
+                            'circle-color': '#ff3333', // 亮红色标记
+                            'circle-stroke-color': '#ffffff',
+                            'circle-stroke-width': 2,
+                            'circle-opacity': 0.9
+                        }
+                    });
+
+                    // -----------------------
+                    // 添加点击事件监听器 (Click Event)
+                    // -----------------------
+                    map.on('click', 'point-layer', (e) => {
+                        // 确保点击到的是一个有效的 Feature
+                        if (!e.features.length) return;
+                        
+                        const feature = e.features[0];
+                        
+                        // 创建并显示 Pop-up 弹窗
+                        new mapboxgl.Popup()
+                            .setLngLat(feature.geometry.coordinates)
+                            .setHTML(`<h3>${feature.properties.name}</h3>`) // 显示地点名称
+                            .addTo(map);
+                    });
+
+                    // 更改光标样式
+                    map.on('mouseenter', 'point-layer', () => {
+                        map.getCanvas().style.cursor = 'pointer';
+                    });
+                    map.on('mouseleave', 'point-layer', () => {
+                        map.getCanvas().style.cursor = '';
+                    });
+                })
+                .catch((error) => {
+                    alert('错误：无法加载 data.csv 文件。请检查文件是否存在且路径正确。\n\n错误信息: ' + error.message);
+                });
+        });
+
+    </script>
+</body>
+</html>
