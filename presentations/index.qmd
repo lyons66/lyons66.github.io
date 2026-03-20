@@ -60,6 +60,30 @@ format:
 To obtain the slides view password, please [contact me](mailto:lyons66@mit.edu).
 :::
 
+## Sidewalk Moments: Are Richer Visual Representations Always More Human-Aligned in Urban Experience?
+
+::::: {.columns}
+:::: {.column width="70%"}
+::: {.callout-note}
+## 2026 AAG, Presentation
+
+Date: Mar 19, 2026
+<br>
+Location: San Francisco
+
+This presentation details a three-year side project investigating the differences between video-based deep features and aggregated image features extracted from city-walk footage.
+
+:::
+
+::::
+:::: {.column width="30%" .center-text}
+<img src="AAG 2026-cover.png" style="width: 93%; border-radius: 6px;">
+
+[Slides Here](https://www.dropbox.com/scl/fi/ijnc3q0wexww39d33zjj4/AAG-2026.pdf?rlkey=qxqkgv2daubnzyerpfr0xi36h&st=npa6ct1s&dl=0)
+
+::::
+:::::
+
 ## Seeing HAI: Human Activities and Interactions on Sidewalks through LLMs and Computer Vision
 
 ::::: {.columns}

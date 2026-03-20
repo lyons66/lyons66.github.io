@@ -46,7 +46,7 @@
     "href": "projects/riverview/index.html",
     "title": "River View Analysis",
     "section": "",
-    "text": "PROJECT BRIEF\n\n\n\nTo preserve the natural landscapes along the Qiantang River, I analyzed a 200-kilometer stretch of riverbank videos. By carefully examining the footage, I calculated the visual proportions of seven distinct elements present throughout the entire shoreline. Subsequently, I developed a visualization platform that identifies and maps these elements along the riverbank. This platform is a valuable tool in safeguarding the natural beauty and ecological integrity of the Qiantang River, enabling effective management and conservation efforts.\nThis work has been re-presented in Rez de Ville / Urban Ground Floors 2023."
+    "text": "TipPROJECT BRIEF\n\n\n\nTo preserve the natural landscapes along the Qiantang River, I analyzed a 200-kilometer stretch of riverbank videos. By carefully examining the footage, I calculated the visual proportions of seven distinct elements present throughout the entire shoreline. Subsequently, I developed a visualization platform that identifies and maps these elements along the riverbank. This platform is a valuable tool in safeguarding the natural beauty and ecological integrity of the Qiantang River, enabling effective management and conservation efforts.\nThis work has been re-presented in Rez de Ville / Urban Ground Floors 2023."
   },
   {
     "objectID": "projects/riverview/index.html#the-idea",
@@ -81,7 +81,7 @@
     "href": "projects/huipai/index.html",
     "title": "AI-Aided Camera App",
     "section": "",
-    "text": "PROJECT BRIEF\n\n\n\nThis app integrates deep models to learn the operation and mode of photo shooting from the massive works of professional photographers and realizes the comprehensive scoring of the subject, composition, color, depth of field, exposure, and other angles of the picture. It can automatically extract the current scene’s geometric structure and professional characteristics and give improvement tips for composition. A live demo was recorded on 2020 Apr 30 in Shanghai with Huawei Mate 30.\nThis project was terminated during the decrease of tourism in 2020. It’s an independent project and the business plan can be viewed here. To obtain the password to view the BP, please contact me."
+    "text": "TipPROJECT BRIEF\n\n\n\nThis app integrates deep models to learn the operation and mode of photo shooting from the massive works of professional photographers and realizes the comprehensive scoring of the subject, composition, color, depth of field, exposure, and other angles of the picture. It can automatically extract the current scene’s geometric structure and professional characteristics and give improvement tips for composition. A live demo was recorded on 2020 Apr 30 in Shanghai with Huawei Mate 30.\nThis project was terminated during the decrease of tourism in 2020. It’s an independent project and the business plan can be viewed here. To obtain the password to view the BP, please contact me."
   },
   {
     "objectID": "projects/huipai/index.html#the-idea",
@@ -116,7 +116,7 @@
     "href": "projects/lbsn/index.html",
     "title": "1 Billion LBSN Data",
     "section": "",
-    "text": "PROJECT BRIEF\n\n\n\nBoth figures show the average daily population flow distribution among more than 2,000 county-level units. The picture on the left is the average for workdays, and the picture on the right reflects the weekend situation. The former has a “diamond structure” dominated by the Beijing-Tianjin-Hebei, Yangtze River Delta, Pearl River Delta, Chengdu-Chongqing, and Mid-Delta metropolitan areas. The density of the latter reflects the strength of travel in various regions.\n\nHongMou Zhang, Liu Liu, Pensen Wang, Jinhua Zhao, “Depicting the Blurred Regional Boundaries in China Using Individual Mobility Data”\n\nThis work has been presented in China Urban Planning Annual Conference 2016."
+    "text": "TipPROJECT BRIEF\n\n\n\nBoth figures show the average daily population flow distribution among more than 2,000 county-level units. The picture on the left is the average for workdays, and the picture on the right reflects the weekend situation. The former has a “diamond structure” dominated by the Beijing-Tianjin-Hebei, Yangtze River Delta, Pearl River Delta, Chengdu-Chongqing, and Mid-Delta metropolitan areas. The density of the latter reflects the strength of travel in various regions.\n\nHongMou Zhang, Liu Liu, Pensen Wang, Jinhua Zhao, “Depicting the Blurred Regional Boundaries in China Using Individual Mobility Data”\n\nThis work has been presented in China Urban Planning Annual Conference 2016."
   },
   {
     "objectID": "projects/lbsn/index.html#the-idea",
@@ -158,7 +158,7 @@
     "href": "projects/road/index.html",
     "title": "Road Assessment in Ulaanbaatar",
     "section": "",
-    "text": "PROJECT BRIEF\n\n\n\nThe condition of transportation assets can be effectively observed through user-generated content (UGC) images. Analyzing geo-tagged images makes it possible to link the condition reflected in the images to specific geographic locations. This approach has been employed for various transportation assets such as catch basins, guardrails, manholes, road curbs, road markings, road signs, roadways, and sidewalks. By associating these images with corresponding road segments, a comprehensive understanding of the condition of these assets can be generated. This enables better asset management and maintenance strategies, ultimately contributing to safer and more efficient transportation systems.\n\nZhang, D., Yi, H., Chen, Y., Jiang, N., Shao, J., & Liu, L. “An urban infrastructure assessment system built on geo-tagged images and machine learning” Computational Urban Science."
+    "text": "TipPROJECT BRIEF\n\n\n\nThe condition of transportation assets can be effectively observed through user-generated content (UGC) images. Analyzing geo-tagged images makes it possible to link the condition reflected in the images to specific geographic locations. This approach has been employed for various transportation assets such as catch basins, guardrails, manholes, road curbs, road markings, road signs, roadways, and sidewalks. By associating these images with corresponding road segments, a comprehensive understanding of the condition of these assets can be generated. This enables better asset management and maintenance strategies, ultimately contributing to safer and more efficient transportation systems.\n\nZhang, D., Yi, H., Chen, Y., Jiang, N., Shao, J., & Liu, L. “An urban infrastructure assessment system built on geo-tagged images and machine learning” Computational Urban Science."
   },
   {
     "objectID": "projects/road/index.html#the-idea",
@@ -179,7 +179,7 @@
     "href": "projects/cityeye/index.html",
     "title": "CityEye WeChat mini APP",
     "section": "",
-    "text": "PROJECT BRIEF\n\n\n\nCityEye is a WeChat mini application specifically designed for group field trips. Currently, it caters to a user base of over 10,000 individuals, primarily consisting of design background students and planners. This innovative urban photo survey tool integrates various functionalities, including image collection, recognition, and data analysis. By combining these features, CityEye facilitates the efficient gathering of urban data, enabling users to analyze and interpret the collected images for their research or planning purposes.\nAfter 3 years of running, we accumulated over 5000 users globally. Yet unfortunately, the tool is currently shutdown due to a lack of budget. We will relaunch it if having enough funding in the future, and please feel free to contact me."
+    "text": "TipPROJECT BRIEF\n\n\n\nCityEye is a WeChat mini application specifically designed for group field trips. Currently, it caters to a user base of over 10,000 individuals, primarily consisting of design background students and planners. This innovative urban photo survey tool integrates various functionalities, including image collection, recognition, and data analysis. By combining these features, CityEye facilitates the efficient gathering of urban data, enabling users to analyze and interpret the collected images for their research or planning purposes.\nAfter 3 years of running, we accumulated over 5000 users globally. Yet unfortunately, the tool is currently shutdown due to a lack of budget. We will relaunch it if having enough funding in the future, and please feel free to contact me."
   },
   {
     "objectID": "projects/cityeye/index.html#the-idea",
@@ -200,91 +200,91 @@
     "href": "visualization/index.html",
     "title": "Visualization",
     "section": "",
-    "text": "TIP\n\n\n\nTo obtain the slides view password, please contact me."
+    "text": "TipTIP\n\n\n\nTo obtain the slides view password, please contact me."
   },
   {
     "objectID": "visualization/index.html#urban-growth-2020",
     "href": "visualization/index.html#urban-growth-2020",
     "title": "Visualization",
     "section": "Urban Growth (2020)",
-    "text": "Urban Growth (2020)\n\n\n\n\n\n\n\n\nINFO\n\n\n\nIn this project, we provided a well-known real estate developer with an assessment of the development overview and future evolution of China’s five major city clusters. This study combined the LandScan population change data over the past 20 years with the scope of urban land boundaries inferred from VIIRS data, conducting a comprehensive and large-scale comparison over a long period between “people” and the spatial expansion of “cities.”\n\n\n\n\n\nSlides Here"
+    "text": "Urban Growth (2020)\n\n\n\n\n\n\n\n\nNoteINFO\n\n\n\nIn this project, we provided a well-known real estate developer with an assessment of the development overview and future evolution of China’s five major city clusters. This study combined the LandScan population change data over the past 20 years with the scope of urban land boundaries inferred from VIIRS data, conducting a comprehensive and large-scale comparison over a long period between “people” and the spatial expansion of “cities.”\n\n\n\n\n\nSlides Here"
   },
   {
     "objectID": "visualization/index.html#aesthetic-evaluation-2019",
     "href": "visualization/index.html#aesthetic-evaluation-2019",
     "title": "Visualization",
     "section": "Aesthetic Evaluation (2019)",
-    "text": "Aesthetic Evaluation (2019)\n\n\n\n\n\n\n\n\nINFO\n\n\n\nAdopting an approach similar to Place Pulse, we developed a tool for our government clients that integrates calibration scoring, assessment, and the automatic training and generation of recommended signage for stores."
+    "text": "Aesthetic Evaluation (2019)\n\n\n\n\n\n\n\n\nNoteINFO\n\n\n\nAdopting an approach similar to Place Pulse, we developed a tool for our government clients that integrates calibration scoring, assessment, and the automatic training and generation of recommended signage for stores."
   },
   {
     "objectID": "visualization/index.html#vge-for-lujiazui-2019",
     "href": "visualization/index.html#vge-for-lujiazui-2019",
     "title": "Visualization",
     "section": "VGE for Lujiazui (2019)",
-    "text": "VGE for Lujiazui (2019)\n\n\n\n\n\n\n\n\nINFO\n\n\n\nIn this project, we utilized Unreal Engine 4 (UE4) to reconstruct a game-like virtual space for the Lujiazui District in Shanghai. The project designed a skywalk, connecting the various buildings of this prime commercial center in the heart of Shanghai. This connection enhanced the environment and reshaped the public space, elevating the overall experience of the area."
+    "text": "VGE for Lujiazui (2019)\n\n\n\n\n\n\n\n\nNoteINFO\n\n\n\nIn this project, we utilized Unreal Engine 4 (UE4) to reconstruct a game-like virtual space for the Lujiazui District in Shanghai. The project designed a skywalk, connecting the various buildings of this prime commercial center in the heart of Shanghai. This connection enhanced the environment and reshaped the public space, elevating the overall experience of the area."
   },
   {
     "objectID": "visualization/index.html#hour-of-jialing-river-2018",
     "href": "visualization/index.html#hour-of-jialing-river-2018",
     "title": "Visualization",
     "section": "24 Hour of Jialing River (2018)",
-    "text": "24 Hour of Jialing River (2018)\n\n\n\n\n\n\n\n\nINFO\n\n\n\nIn this project, based on the 24-hour China Unicom mobile signaling data of Chongqing, we analyzed the population mobility data along the banks of the Jialing River. From this analysis, we identified the movement patterns of different types of populations.\n\n\n\n\n\nSlides Here"
+    "text": "24 Hour of Jialing River (2018)\n\n\n\n\n\n\n\n\nNoteINFO\n\n\n\nIn this project, based on the 24-hour China Unicom mobile signaling data of Chongqing, we analyzed the population mobility data along the banks of the Jialing River. From this analysis, we identified the movement patterns of different types of populations.\n\n\n\n\n\nSlides Here"
   },
   {
     "objectID": "visualization/index.html#time-contour-2018",
     "href": "visualization/index.html#time-contour-2018",
     "title": "Visualization",
     "section": "Time contour (2018)",
-    "text": "Time contour (2018)\n\n\n\n\n\n\n\n\nINFO\n\n\n\nIn this project, we built a web-app based on Didi driving speed data to retrieve the time contour of any point in Shanghai based on different period of a day. One of the original idea of this project is to find the “meeting point” for users within the same city after work."
+    "text": "Time contour (2018)\n\n\n\n\n\n\n\n\nNoteINFO\n\n\n\nIn this project, we built a web-app based on Didi driving speed data to retrieve the time contour of any point in Shanghai based on different period of a day. One of the original idea of this project is to find the “meeting point” for users within the same city after work."
   },
   {
     "objectID": "visualization/index.html#visual-comfortness-2018",
     "href": "visualization/index.html#visual-comfortness-2018",
     "title": "Visualization",
     "section": "Visual Comfortness (2018)",
-    "text": "Visual Comfortness (2018)\n\n\n\n\n\n\n\n\nINFO\n\n\n\nThis project involves a study on street environment comfort assessment conducted in a community in Nanjing. We collected videos of the walking environment throughout the community and conducted a comprehensive assessment using computer vision, including object detection, semantic segmentation, and more.\nLater on, a similar approach was carried out for a TOD study in Beijing in collaboration with World Bank. The report can be view here.\n\n\n\n\n\nReport Here"
+    "text": "Visual Comfortness (2018)\n\n\n\n\n\n\n\n\nNoteINFO\n\n\n\nThis project involves a study on street environment comfort assessment conducted in a community in Nanjing. We collected videos of the walking environment throughout the community and conducted a comprehensive assessment using computer vision, including object detection, semantic segmentation, and more.\nLater on, a similar approach was carried out for a TOD study in Beijing in collaboration with World Bank. The report can be view here.\n\n\n\n\n\nReport Here"
   },
   {
     "objectID": "visualization/index.html#hour-cycling-2017",
     "href": "visualization/index.html#hour-cycling-2017",
     "title": "Visualization",
     "section": "24 Hour Cycling (2017)",
-    "text": "24 Hour Cycling (2017)\n\n\n\n\n\n\n\n\nINFO\n\n\n\nThis a visualization demo based on user data from Xingzhe shown on the 2017 Bicycle EXPO."
+    "text": "24 Hour Cycling (2017)\n\n\n\n\n\n\n\n\nNoteINFO\n\n\n\nThis a visualization demo based on user data from Xingzhe shown on the 2017 Bicycle EXPO."
   },
   {
     "objectID": "visualization/index.html#ai-book-2017",
     "href": "visualization/index.html#ai-book-2017",
     "title": "Visualization",
     "section": "AI Book (2017)",
-    "text": "AI Book (2017)\n\n\n\n\n\n\n\n\nINFO\n\n\n\nThis is a user interaction screen provided inside a popular bookstore designed by Tadao Ando.\n\n\n\n\n\nMedia Exposure"
+    "text": "AI Book (2017)\n\n\n\n\n\n\n\n\nNoteINFO\n\n\n\nThis is a user interaction screen provided inside a popular bookstore designed by Tadao Ando.\n\n\n\n\n\nMedia Exposure"
   },
   {
     "objectID": "visualization/index.html#patterns-finder-2017",
     "href": "visualization/index.html#patterns-finder-2017",
     "title": "Visualization",
     "section": "Patterns Finder (2017)",
-    "text": "Patterns Finder (2017)\n\n\n\n\n\n\n\n\nINFO\n\n\n\nA working-on projects for any user who draws some lines to provide best matched satellite images all over the world."
+    "text": "Patterns Finder (2017)\n\n\n\n\n\n\n\n\nNoteINFO\n\n\n\nA working-on projects for any user who draws some lines to provide best matched satellite images all over the world."
   },
   {
     "objectID": "visualization/index.html#informal-vendors-2016",
     "href": "visualization/index.html#informal-vendors-2016",
     "title": "Visualization",
     "section": "Informal Vendors (2016)",
-    "text": "Informal Vendors (2016)\n\n\n\n\n\n\n\n\nINFO\n\n\n\nWe extracted features from urban street scenes using a trained model and then further identified the vaguely defined content of “informal street vendors” through additional manual calibration. Applying fine-tuning to this specific scenario in urban research was an innovation at the time."
+    "text": "Informal Vendors (2016)\n\n\n\n\n\n\n\n\nNoteINFO\n\n\n\nWe extracted features from urban street scenes using a trained model and then further identified the vaguely defined content of “informal street vendors” through additional manual calibration. Applying fine-tuning to this specific scenario in urban research was an innovation at the time."
   },
   {
     "objectID": "visualization/index.html#shenzen-pulse-2014",
     "href": "visualization/index.html#shenzen-pulse-2014",
     "title": "Visualization",
     "section": "Shenzen Pulse (2014)",
-    "text": "Shenzen Pulse (2014)\n\n\n\n\n\n\n\n\nINFO\n\n\n\nWe collected a vast amount of check-in data from Weibo and used it to visualize the evolution of maps based on 24-hour periods."
+    "text": "Shenzen Pulse (2014)\n\n\n\n\n\n\n\n\nNoteINFO\n\n\n\nWe collected a vast amount of check-in data from Weibo and used it to visualize the evolution of maps based on 24-hour periods."
   },
   {
     "objectID": "visualization/index.html#boston-taxi-2013",
     "href": "visualization/index.html#boston-taxi-2013",
     "title": "Visualization",
     "section": "Boston Taxi (2013)",
-    "text": "Boston Taxi (2013)\n\n\n\n\n\n\n\n\nINFO\n\n\n\nThis is the visualization work based a Boston Taxi data challenge."
+    "text": "Boston Taxi (2013)\n\n\n\n\n\n\n\n\nNoteINFO\n\n\n\nThis is the visualization work based a Boston Taxi data challenge."
   },
   {
     "objectID": "papers/index.html",
@@ -312,7 +312,7 @@
     "href": "projects/caz/index.html",
     "title": "Recognizing Central Activity Zones",
     "section": "",
-    "text": "PROJECT BRIEF\n\n\n\nUtilizing the concept of entropy, the project aims to quantify the level of functional diversity within different areas of the city. By leveraging a dataset consisting of 300,000 points of interest (POI) from Dianping and office and residential POI data from Anjuke, the project assigns weights to these locations based on their respective scores. These scores indicate the areas with the highest spatial composition within the city. Typically, these dynamic places are considered the most vibrant and active within the urban landscape, reflecting a high degree of functional compounding.\n\nLiu L., Liu Z. “The Recognition of CAZ in Shanghai Based on Evaluated POI.” In: Shen Z., Li M. (eds) Big Data Support of Urban Planning and Management, Advances in Geographic Information Science. Springer, Cham."
+    "text": "TipPROJECT BRIEF\n\n\n\nUtilizing the concept of entropy, the project aims to quantify the level of functional diversity within different areas of the city. By leveraging a dataset consisting of 300,000 points of interest (POI) from Dianping and office and residential POI data from Anjuke, the project assigns weights to these locations based on their respective scores. These scores indicate the areas with the highest spatial composition within the city. Typically, these dynamic places are considered the most vibrant and active within the urban landscape, reflecting a high degree of functional compounding.\n\nLiu L., Liu Z. “The Recognition of CAZ in Shanghai Based on Evaluated POI.” In: Shen Z., Li M. (eds) Big Data Support of Urban Planning and Management, Advances in Geographic Information Science. Springer, Cham."
   },
   {
     "objectID": "projects/caz/index.html#the-idea",
@@ -347,7 +347,7 @@
     "href": "projects/cimage/index.html",
     "title": "C-IMAGE Project",
     "section": "",
-    "text": "PROJECT BRIEF\n\n\n\nThis project originated from my thesis, which involved the collection of millions of photos from 26 cities. The objective was to utilize deep learning techniques to conduct scene recognition on these images. By categorizing the data and plotting the seven critical perceptions, the resulting perceptional maps provide insights into how inhabitants perceive their living environment within each city.\n\nLiu, L., Zhou, B., Zhao, J., & Ryan, B. D. “C-IMAGE: city cognitive mapping through geo-tagged photos” GeoJournal, 81(6), 817-861.\nZhou, B., Liu, L., Oliva, A., & Torralba, A. “Recognizing city identity via attribute analysis of geo-tagged images” European conference on computer vision (pp. 519-534)."
+    "text": "TipPROJECT BRIEF\n\n\n\nThis project originated from my thesis, which involved the collection of millions of photos from 26 cities. The objective was to utilize deep learning techniques to conduct scene recognition on these images. By categorizing the data and plotting the seven critical perceptions, the resulting perceptional maps provide insights into how inhabitants perceive their living environment within each city.\n\nLiu, L., Zhou, B., Zhao, J., & Ryan, B. D. “C-IMAGE: city cognitive mapping through geo-tagged photos” GeoJournal, 81(6), 817-861.\nZhou, B., Liu, L., Oliva, A., & Torralba, A. “Recognizing city identity via attribute analysis of geo-tagged images” European conference on computer vision (pp. 519-534)."
   },
   {
     "objectID": "projects/cimage/index.html#interactive-maps",
@@ -403,7 +403,7 @@
     "href": "projects/streetalk/index.html",
     "title": "StreeTalk Project",
     "section": "",
-    "text": "PROJECT BRIEF\n\n\n\nUsing the perceptional map as a foundation, along with additional geo information such as points of interest (POI) and mobility data, I developed a web application that enables tourists or night runners to select various pedestrian routes within the city. Furthermore, I leveraged the vast dataset of over 100,000,000 photos to calculate safety scores for the entire country. These scores were subsequently sold to Daimler Innovative Lab the following year, providing them with valuable insights and information for their initiatives.\n\nZhang, F., Zhou, B., Liu, L., Liu, Y., Fung, H. H., Lin, H., & Ratti, C. “Measuring human perceptions of a large-scale urban region using machine learning” Landscape and Urban Planning.\nLiu, L., Zhang, F., Zhou, B., Wang, Z., & Li, Y. “STREETALK: A NAVIGATION SYSTEM FOR PEDESTRIANS AND CYCLISTS” Landscape Architecture Frontiers."
+    "text": "TipPROJECT BRIEF\n\n\n\nUsing the perceptional map as a foundation, along with additional geo information such as points of interest (POI) and mobility data, I developed a web application that enables tourists or night runners to select various pedestrian routes within the city. Furthermore, I leveraged the vast dataset of over 100,000,000 photos to calculate safety scores for the entire country. These scores were subsequently sold to Daimler Innovative Lab the following year, providing them with valuable insights and information for their initiatives.\n\nZhang, F., Zhou, B., Liu, L., Liu, Y., Fung, H. H., Lin, H., & Ratti, C. “Measuring human perceptions of a large-scale urban region using machine learning” Landscape and Urban Planning.\nLiu, L., Zhang, F., Zhou, B., Wang, Z., & Li, Y. “STREETALK: A NAVIGATION SYSTEM FOR PEDESTRIANS AND CYCLISTS” Landscape Architecture Frontiers."
   },
   {
     "objectID": "projects/streetalk/index.html#the-idea",
@@ -466,14 +466,14 @@
     "href": "projects/sidewalk_ballet/index.html",
     "title": "Sidewalk Ballet",
     "section": "",
-    "text": "PROJECT BRIEF\n\n\n\nTraditional urban observational studies rely on direct field observation of public spaces such as sidewalks and plazas to understand how human behaviour and the built environment influence one another. Pioneering scholars, including William H. Whyte, Jan Gehl, and Allan Jacobs, produced influential empirical insights that continue to guide urban design practice. Such work, though invaluable, is labor-intensive, restricted to specific locations, and increasingly challenged by evolving social patterns shaped by digital interaction and algorithmic filter bubbles.\nRecent advances in artificial intelligence, especially computer vision, allow researchers to extract physical indicators from extensive collections of geo‑tagged imagery at an unprecedented scale. Measures such as the Green View Index have become common in urban analytics. However, most applications target the static attributes of the built environment, and very few explore the more intricate realm of human behaviour that earlier manual studies documented.\nMy dissertation proposes a framework that fills this missing piece. I designed an end‑to‑end data collection, processing, and annotation pipeline that fine‑tunes multimodal vision‑language models to recognise the full spectrum of Human Activities and Interactions (HAI) visible in street‑view images. First, the methodological component adapts the models to label combined postures and actions, such as standing, sitting, walking, vending, cycling, using a phone, and over forty additional states, and to detect social groupings (single, dyad, small group, crowd) together with degrees of engagement such as face‑to‑face conversation versus passive co‑presence. The taxonomy is distilled from classic behavioural literature and extensive image inspection. Second, I propose to construct a family of HAI indicators aggregated to uniform sidewalk segments, including Solitary, Grouping, Engagement, Diversity, and Activity Entropy. These indicators are analysed against urban accessibility (pedestrian accessibility and pedestrian flows), design and perceptual attributes (sidewalk width, tree canopy, street‑furniture density, façade transparency, etc.), and socio‑demographic metrics (ethnic composition, age diversity, etc.) from census and mobility data. External comparison with high‑resolution GPS trajectory surveys confirms that segments with higher Activity Entropy or stronger Engagement scores align with observed patterns of pedestrian co‑presence.\n\n\n\nThe City Form Lab exhibit at the 2025 Venice Architecture Biennale showcases two ongoing research projects that examine the geography of foot-traffic and social interactions on the streets of New York: “NYC Walks” and “Sidewalk Ballet”. The exhibit is part of the MIT Department of Architecture led exhibition The Next Earth at the Palazzo Diedo, the exhibition space of Berggruen Arts & Culture.\nHere is the project page link: https://cityform.mit.edu/projects/venice-architecture-biennale-2025"
+    "text": "TipPROJECT BRIEF\n\n\n\nTraditional urban observational studies rely on direct field observation of public spaces such as sidewalks and plazas to understand how human behaviour and the built environment influence one another. Pioneering scholars, including William H. Whyte, Jan Gehl, and Allan Jacobs, produced influential empirical insights that continue to guide urban design practice. Such work, though invaluable, is labor-intensive, restricted to specific locations, and increasingly challenged by evolving social patterns shaped by digital interaction and algorithmic filter bubbles.\nRecent advances in artificial intelligence, especially computer vision, allow researchers to extract physical indicators from extensive collections of geo‑tagged imagery at an unprecedented scale. Measures such as the Green View Index have become common in urban analytics. However, most applications target the static attributes of the built environment, and very few explore the more intricate realm of human behaviour that earlier manual studies documented.\nMy dissertation proposes a framework that fills this missing piece. I designed an end‑to‑end data collection, processing, and annotation pipeline that fine‑tunes multimodal vision‑language models to recognise the full spectrum of Human Activities and Interactions (HAI) visible in street‑view images. First, the methodological component adapts the models to label combined postures and actions, such as standing, sitting, walking, vending, cycling, using a phone, and over forty additional states, and to detect social groupings (single, dyad, small group, crowd) together with degrees of engagement such as face‑to‑face conversation versus passive co‑presence. The taxonomy is distilled from classic behavioural literature and extensive image inspection. Second, I propose to construct a family of HAI indicators aggregated to uniform sidewalk segments, including Solitary, Grouping, Engagement, Diversity, and Activity Entropy. These indicators are analysed against urban accessibility (pedestrian accessibility and pedestrian flows), design and perceptual attributes (sidewalk width, tree canopy, street‑furniture density, façade transparency, etc.), and socio‑demographic metrics (ethnic composition, age diversity, etc.) from census and mobility data. External comparison with high‑resolution GPS trajectory surveys confirms that segments with higher Activity Entropy or stronger Engagement scores align with observed patterns of pedestrian co‑presence.\n\n\n\nThe City Form Lab exhibit at the 2025 Venice Architecture Biennale showcases two ongoing research projects that examine the geography of foot-traffic and social interactions on the streets of New York: “NYC Walks” and “Sidewalk Ballet”. The exhibit is part of the MIT Department of Architecture led exhibition The Next Earth at the Palazzo Diedo, the exhibition space of Berggruen Arts & Culture.\nHere is the project page link: https://cityform.mit.edu/projects/venice-architecture-biennale-2025"
   },
   {
     "objectID": "projects/vibescan/index.html",
     "href": "projects/vibescan/index.html",
     "title": "VibeScan",
     "section": "",
-    "text": "PROJECT BRIEF\n\n\n\nThis project aimed at developing a benchmarking and customer analysis system for commercial areas. Leveraging online feedback, data mining, and AI, it evaluates spaces against industry standards and projects like Miami Design District and Hudson Yards. This approach aids in strategic decision-making across planning, design, and operations, enhancing commercial viability and consumer engagement.\nFor a detailed demonstration of the project, please refer to the slides: Phase I and Phase II."
+    "text": "TipPROJECT BRIEF\n\n\n\nThis project aimed at developing a benchmarking and customer analysis system for commercial areas. Leveraging online feedback, data mining, and AI, it evaluates spaces against industry standards and projects like Miami Design District and Hudson Yards. This approach aids in strategic decision-making across planning, design, and operations, enhancing commercial viability and consumer engagement.\nFor a detailed demonstration of the project, please refer to the slides: Phase I and Phase II."
   },
   {
     "objectID": "projects/vibescan/index.html#the-idea",
@@ -501,97 +501,104 @@
     "href": "presentations/index.html",
     "title": "Presentations",
     "section": "",
-    "text": "TIP\n\n\n\nTo obtain the slides view password, please contact me."
+    "text": "TipTIP\n\n\n\nTo obtain the slides view password, please contact me."
+  },
+  {
+    "objectID": "presentations/index.html#sidewalk-moments-are-richer-visual-representations-always-more-human-aligned-in-urban-experience",
+    "href": "presentations/index.html#sidewalk-moments-are-richer-visual-representations-always-more-human-aligned-in-urban-experience",
+    "title": "Presentations",
+    "section": "Sidewalk Moments: Are Richer Visual Representations Always More Human-Aligned in Urban Experience?",
+    "text": "Sidewalk Moments: Are Richer Visual Representations Always More Human-Aligned in Urban Experience?\n\n\n\n\n\n\n\n\nNote2026 AAG, Presentation\n\n\n\nDate: Mar 19, 2026  Location: San Francisco\nThis presentation details a three-year side project investigating the differences between video-based deep features and aggregated image features extracted from city-walk footage.\n\n\n\n\nSlides Here"
   },
   {
     "objectID": "presentations/index.html#seeing-hai-human-activities-and-interactions-on-sidewalks-through-llms-and-computer-vision",
     "href": "presentations/index.html#seeing-hai-human-activities-and-interactions-on-sidewalks-through-llms-and-computer-vision",
     "title": "Presentations",
     "section": "Seeing HAI: Human Activities and Interactions on Sidewalks through LLMs and Computer Vision",
-    "text": "Seeing HAI: Human Activities and Interactions on Sidewalks through LLMs and Computer Vision\n\n\n\n\n\n\n\n\n2025 ACSP, Presentation\n\n\n\nDate: Oct 23, 2025  Location: Minneapolis\nThis presentation talks about the partial research from my dissertation research. In particular, I disucssed the potential challenges of detecting social groups in today’s computer vision-driven urban studies. I proposed a three-stage pipeline of VLM in supporting the detection of research.\n\n\n\n\n\nSlides Here"
+    "text": "Seeing HAI: Human Activities and Interactions on Sidewalks through LLMs and Computer Vision\n\n\n\n\n\n\n\n\nNote2025 ACSP, Presentation\n\n\n\nDate: Oct 23, 2025  Location: Minneapolis\nThis presentation talks about the partial research from my dissertation research. In particular, I disucssed the potential challenges of detecting social groups in today’s computer vision-driven urban studies. I proposed a three-stage pipeline of VLM in supporting the detection of research.\n\n\n\n\n\nSlides Here"
   },
   {
     "objectID": "presentations/index.html#exploring-the-challenges-of-humanitys-last-exam",
     "href": "presentations/index.html#exploring-the-challenges-of-humanitys-last-exam",
     "title": "Presentations",
     "section": "Exploring the Challenges of Humanity’s Last Exam",
-    "text": "Exploring the Challenges of Humanity’s Last Exam\n\n\n\n\n\n\n\n\nFinal Presentation @ HLE Exploration\n\n\n\nDate: Aug 20, 2025  Location: Sunnyvale, CA\nThis presentation introduces my analysis of the Humanity’s Last Exam (HLE) benchmark at Amazon AGI, a 2,500-question dataset spanning STEM, medicine, and humanities. I discussed the dataset’s quality issues, small-model performance, and reasoning behaviors. The work highlights how current distilled models (e.g., Qwen3 series) perform under strict evaluation and presents a framework to analyze reasoning errors and recurring problem-solving strategies. The mauscript of the working papers can be found here in my “Papers” Section upon request.\n\n\n\n\n\nSlides Upon Request"
+    "text": "Exploring the Challenges of Humanity’s Last Exam\n\n\n\n\n\n\n\n\nNoteFinal Presentation @ HLE Exploration\n\n\n\nDate: Aug 20, 2025  Location: Sunnyvale, CA\nThis presentation introduces my analysis of the Humanity’s Last Exam (HLE) benchmark at Amazon AGI, a 2,500-question dataset spanning STEM, medicine, and humanities. I discussed the dataset’s quality issues, small-model performance, and reasoning behaviors. The work highlights how current distilled models (e.g., Qwen3 series) perform under strict evaluation and presents a framework to analyze reasoning errors and recurring problem-solving strategies. The mauscript of the working papers can be found here in my “Papers” Section upon request.\n\n\n\n\n\nSlides Upon Request"
   },
   {
     "objectID": "presentations/index.html#seeing-hai-human-activities-and-interactions-on-sidewalks-through-llms-and-computer-vision-1",
     "href": "presentations/index.html#seeing-hai-human-activities-and-interactions-on-sidewalks-through-llms-and-computer-vision-1",
     "title": "Presentations",
     "section": "Seeing HAI: Human Activities and Interactions on Sidewalks through LLMs and Computer Vision",
-    "text": "Seeing HAI: Human Activities and Interactions on Sidewalks through LLMs and Computer Vision\n\n\n\n\n\n\n\n\nPh.D. Dissertation Colloquium\n\n\n\nDate: May 22, 2025  Location: 10-401, MIT\nThis presentation outlined the two-year research plan for my doctoral dissertation, building upon the Sidewalk Ballet project.\nThe dissertation consists of two main phases. In the first phase, I developed a three-step pipeline to detect social groups in sidewalk scenes using computer vision and large language models. In the second phase, I will integrate these social interaction findings with additional street-level features to construct a set of Human Activity and Interaction (HAI) indices. These indices aim to support both upstream and downstream applications in urban design research.\nAll members of my dissertation committee attended the colloquium: Prof. Andres Sevtsuk, Prof. Jinhua Zhao, and Prof. Lawrence Vale. The external reviewer was Prof. Albert Saiz.\n\n\n\n\n\nSlides Here"
+    "text": "Seeing HAI: Human Activities and Interactions on Sidewalks through LLMs and Computer Vision\n\n\n\n\n\n\n\n\nNotePh.D. Dissertation Colloquium\n\n\n\nDate: May 22, 2025  Location: 10-401, MIT\nThis presentation outlined the two-year research plan for my doctoral dissertation, building upon the Sidewalk Ballet project.\nThe dissertation consists of two main phases. In the first phase, I developed a three-step pipeline to detect social groups in sidewalk scenes using computer vision and large language models. In the second phase, I will integrate these social interaction findings with additional street-level features to construct a set of Human Activity and Interaction (HAI) indices. These indices aim to support both upstream and downstream applications in urban design research.\nAll members of my dissertation committee attended the colloquium: Prof. Andres Sevtsuk, Prof. Jinhua Zhao, and Prof. Lawrence Vale. The external reviewer was Prof. Albert Saiz.\n\n\n\n\n\nSlides Here"
   },
   {
     "objectID": "presentations/index.html#data-benchmark-for-multi-modality-models",
     "href": "presentations/index.html#data-benchmark-for-multi-modality-models",
     "title": "Presentations",
     "section": "Data Benchmark for Multi-modality models",
-    "text": "Data Benchmark for Multi-modality models\n\n\n\n\n\n\n\n\nFinal Presentation @ From Seeing to Hearing\n\n\n\nDate: Aug 22, 2024  Location: Sunnyvale, CA\nThis presentation covers 2 projects I conducted during my research internship at Amazon AGI. They are both related to benchmarks for Audio Generation, in which I highlighted some gaps in today’s AI-driven development. The mauscript of the working papers can be found here in my “Papers” Section upon request.\n\n\n\n\n\nSlides Upon Request"
+    "text": "Data Benchmark for Multi-modality models\n\n\n\n\n\n\n\n\nNoteFinal Presentation @ From Seeing to Hearing\n\n\n\nDate: Aug 22, 2024  Location: Sunnyvale, CA\nThis presentation covers 2 projects I conducted during my research internship at Amazon AGI. They are both related to benchmarks for Audio Generation, in which I highlighted some gaps in today’s AI-driven development. The mauscript of the working papers can be found here in my “Papers” Section upon request.\n\n\n\n\n\nSlides Upon Request"
   },
   {
     "objectID": "presentations/index.html#urban-big-data-in-china",
     "href": "presentations/index.html#urban-big-data-in-china",
     "title": "Presentations",
     "section": "Urban Big Data in China",
-    "text": "Urban Big Data in China\n\n\n\n\n\n\n\n\nPanel Talk @ 11.001 Intro to Urban Design and Development\n\n\n\nDate: May 8, 2024  Location: 4-370, Massachusetts Institute of Technology\nThis presentation explores my entrepreneurship journey, focusing on urban big data analytics in China. Specifically, I discuss four distinct types of data: open data, web-crawled data, purchased data, and geo-tagged visual data. For each category, I describe 2-3 datasets that I have worked with and detail specific research questions and case studies associated with them.\n\n\n\n\n\nSlides Here"
+    "text": "Urban Big Data in China\n\n\n\n\n\n\n\n\nNotePanel Talk @ 11.001 Intro to Urban Design and Development\n\n\n\nDate: May 8, 2024  Location: 4-370, Massachusetts Institute of Technology\nThis presentation explores my entrepreneurship journey, focusing on urban big data analytics in China. Specifically, I discuss four distinct types of data: open data, web-crawled data, purchased data, and geo-tagged visual data. For each category, I describe 2-3 datasets that I have worked with and detail specific research questions and case studies associated with them.\n\n\n\n\n\nSlides Here"
   },
   {
     "objectID": "presentations/index.html#sidewalk-ballet",
     "href": "presentations/index.html#sidewalk-ballet",
     "title": "Presentations",
     "section": "Sidewalk Ballet",
-    "text": "Sidewalk Ballet\n\n\n\n\n\n\n\n\nProject Report @ Long Lounge, Building 7, MIT\n\n\n\nDate: Mar 21-22, 2024  Location: School of Architecture and Planning, Massachusetts Institute of Technology\nDuring the SPRING 2024 HPI–MIT WORKSHOP, we delivered the report about current progress in detecting social behaviors on sidewalks. Here is the poster of the project sidewalk ballet. In this project we explored a series of current on-the-shelf models and designed the pipeline of the entire work. More details will be release when our working paper is published, and will be updaed here.\n\n\n\n\n\nSlides Here"
+    "text": "Sidewalk Ballet\n\n\n\n\n\n\n\n\nNoteProject Report @ Long Lounge, Building 7, MIT\n\n\n\nDate: Mar 21-22, 2024  Location: School of Architecture and Planning, Massachusetts Institute of Technology\nDuring the SPRING 2024 HPI–MIT WORKSHOP, we delivered the report about current progress in detecting social behaviors on sidewalks. Here is the poster of the project sidewalk ballet. In this project we explored a series of current on-the-shelf models and designed the pipeline of the entire work. More details will be release when our working paper is published, and will be updaed here.\n\n\n\n\n\nSlides Here"
   },
   {
     "objectID": "presentations/index.html#learning-from-ground-floors",
     "href": "presentations/index.html#learning-from-ground-floors",
     "title": "Presentations",
     "section": "Learning from ground floors",
-    "text": "Learning from ground floors\n\n\n\n\n\n\n\n\nGuest Talk @ Rez de Ville (Urban Ground Floors) 2023\n\n\n\nDate: Sep 22-23, 2023  Location: School of Architecture and Planning, Massachusetts Institute of Technology\nThe 2023 Rez de Ville: In Transition seminar will delve into the evolving dynamics of urban ground floors amidst modern societal, economic, environmental, and technological shifts and explore the implications of these changes on diverse urban populations. Here is the talk list. A quick brief of the case can be found here.\n\n\n\n\n\nSlides Here"
+    "text": "Learning from ground floors\n\n\n\n\n\n\n\n\nNoteGuest Talk @ Rez de Ville (Urban Ground Floors) 2023\n\n\n\nDate: Sep 22-23, 2023  Location: School of Architecture and Planning, Massachusetts Institute of Technology\nThe 2023 Rez de Ville: In Transition seminar will delve into the evolving dynamics of urban ground floors amidst modern societal, economic, environmental, and technological shifts and explore the implications of these changes on diverse urban populations. Here is the talk list. A quick brief of the case can be found here.\n\n\n\n\n\nSlides Here"
   },
   {
     "objectID": "presentations/index.html#mapping-with-image",
     "href": "presentations/index.html#mapping-with-image",
     "title": "Presentations",
     "section": "Mapping with Image",
-    "text": "Mapping with Image\n\n\n\n\n\n\n\n\nPechaKucha @ Senseable City Lab 2023\n\n\n\nDate: Jul 26, 2023  Location: School of Architecture and Planning, Massachusetts Institute of Technology\nA brief of my previous research and work. Due to the time limit, mostly is about urban imagery analysis. It is the application for the research work at Senseable City Lab. The process was smooth and successful.\n\n\n\n\n\nSlides Here\n\n\n\n\n\n\n\n\n\n\nGuest Talk @ Zhengzhou International Urban Design Conference 2019\n\n\n\nDate: Oct 17, 2019  Location: Zhengzhou, China\n\n\n\n\n\nSlides Here\n\n\n\n\n\n\n\n\n\n\nGuest Talk @ ESCAP, UN 2019\n\n\n\nDate: Jul 25, 2019  Location: Jakarta, Indonesia\nMy team is invited as a representative of FCIC to participate in the project initiation meeting on “Improving the Use and Sharing of Geospatial Information to Promote Resilient and Sustainable Development.” This event, hosted by the United Nations Economic and Social Commission for Asia and the Pacific (UN-ESCAP) and organized by the Indonesian National Institute of Aeronautics and Space (LAPAN). During this meeting, we engaged in vibrant discussions with representatives from Cambodia, Mongolia, Thailand, Kyrgyzstan, Indonesia, and experts from research institutions such as The Chinese University of Hong Kong, the Remote Sensing Institute of the Chinese Academy of Sciences, and the City University of Macau.\n\n\n\n\n\nSlides Here"
+    "text": "Mapping with Image\n\n\n\n\n\n\n\n\nNotePechaKucha @ Senseable City Lab 2023\n\n\n\nDate: Jul 26, 2023  Location: School of Architecture and Planning, Massachusetts Institute of Technology\nA brief of my previous research and work. Due to the time limit, mostly is about urban imagery analysis. It is the application for the research work at Senseable City Lab. The process was smooth and successful.\n\n\n\n\n\nSlides Here\n\n\n\n\n\n\n\n\n\n\nNoteGuest Talk @ Zhengzhou International Urban Design Conference 2019\n\n\n\nDate: Oct 17, 2019  Location: Zhengzhou, China\n\n\n\n\n\nSlides Here\n\n\n\n\n\n\n\n\n\n\nNoteGuest Talk @ ESCAP, UN 2019\n\n\n\nDate: Jul 25, 2019  Location: Jakarta, Indonesia\nMy team is invited as a representative of FCIC to participate in the project initiation meeting on “Improving the Use and Sharing of Geospatial Information to Promote Resilient and Sustainable Development.” This event, hosted by the United Nations Economic and Social Commission for Asia and the Pacific (UN-ESCAP) and organized by the Indonesian National Institute of Aeronautics and Space (LAPAN). During this meeting, we engaged in vibrant discussions with representatives from Cambodia, Mongolia, Thailand, Kyrgyzstan, Indonesia, and experts from research institutions such as The Chinese University of Hong Kong, the Remote Sensing Institute of the Chinese Academy of Sciences, and the City University of Macau.\n\n\n\n\n\nSlides Here"
   },
   {
     "objectID": "presentations/index.html#experience-with-urban-data",
     "href": "presentations/index.html#experience-with-urban-data",
     "title": "Presentations",
     "section": "Experience with urban data",
-    "text": "Experience with urban data\n\n\n\n\n\n\n\n\nLunch Talk @ City Form Lab\n\n\n\nDate: Oct 12, 2022  Location: School of Architecture and Planning, Massachusetts Institute of Technology\nA brief of my previous research and work. It’s a 45-min talk, the talk includes my previous data-driven research and practice. The audience are all City Form Lab members.\n\n\n\n\nSlides Here"
+    "text": "Experience with urban data\n\n\n\n\n\n\n\n\nNoteLunch Talk @ City Form Lab\n\n\n\nDate: Oct 12, 2022  Location: School of Architecture and Planning, Massachusetts Institute of Technology\nA brief of my previous research and work. It’s a 45-min talk, the talk includes my previous data-driven research and practice. The audience are all City Form Lab members.\n\n\n\n\nSlides Here"
   },
   {
     "objectID": "presentations/index.html#seeing-city",
     "href": "presentations/index.html#seeing-city",
     "title": "Presentations",
     "section": "Seeing City",
-    "text": "Seeing City\n\n\n\n\n\n\n\n\nGuest Talk @ World Bank 2019\n\n\n\nDate: May 14, 2019  Location: World Bank Beijing Office\nIt’s an 30 mins talk about recent projects from CitoryTech team. The talk covered a series of urban data research, practice in our exploration of understanding our city with images.\n\n\n\n\n\nSlides Here\n\n\n\n\n\n\n\n\n\n\nGuest Lecture @ HKU 2019\n\n\n\nDate: Mar 11, 2019  Location: Faculty of Architecture, Hong Kong University\nIt’s an 1-hour talk about recent projects from CitoryTech team. The talk covered a series of urban data research, practice in our exploration of understanding our city with images. I also introduced the development of crowd sourcing tools.\n\n\n\n\n\nSlides Here"
+    "text": "Seeing City\n\n\n\n\n\n\n\n\nNoteGuest Talk @ World Bank 2019\n\n\n\nDate: May 14, 2019  Location: World Bank Beijing Office\nIt’s an 30 mins talk about recent projects from CitoryTech team. The talk covered a series of urban data research, practice in our exploration of understanding our city with images.\n\n\n\n\n\nSlides Here\n\n\n\n\n\n\n\n\n\n\nNoteGuest Lecture @ HKU 2019\n\n\n\nDate: Mar 11, 2019  Location: Faculty of Architecture, Hong Kong University\nIt’s an 1-hour talk about recent projects from CitoryTech team. The talk covered a series of urban data research, practice in our exploration of understanding our city with images. I also introduced the development of crowd sourcing tools.\n\n\n\n\n\nSlides Here"
   },
   {
     "objectID": "presentations/index.html#streetalk-pitch",
     "href": "presentations/index.html#streetalk-pitch",
     "title": "Presentations",
     "section": "StreeTalk Pitch",
-    "text": "StreeTalk Pitch\n\n\n\n\n\n\n\n\nPresentation @ SODA 2017\n\n\n\nDate: Nov, 2017  Location: Shanghai\nThis is a 10-minute business plan presentation for our original project, StreeTalk. We were honored to receive the seed award and seed funding for CitoryTech.\nAdditionally, this project played a pivotal role in securing our first order from Daimler, through which we sold our safety maps, encompassing over 300 cities in China.\n\n\n\n\n\nSlides Here"
+    "text": "StreeTalk Pitch\n\n\n\n\n\n\n\n\nNotePresentation @ SODA 2017\n\n\n\nDate: Nov, 2017  Location: Shanghai\nThis is a 10-minute business plan presentation for our original project, StreeTalk. We were honored to receive the seed award and seed funding for CitoryTech.\nAdditionally, this project played a pivotal role in securing our first order from Daimler, through which we sold our safety maps, encompassing over 300 cities in China.\n\n\n\n\n\nSlides Here"
   },
   {
     "objectID": "presentations/index.html#national-population-flow-analysis-based-on-1-billion-lbsn-data",
     "href": "presentations/index.html#national-population-flow-analysis-based-on-1-billion-lbsn-data",
     "title": "Presentations",
     "section": "National Population Flow Analysis Based on 1 billion LBSN data",
-    "text": "National Population Flow Analysis Based on 1 billion LBSN data\n\n\n\n\n\n\n\n\nKeynote Speech @ China Urban Planning Annual Conference 2016\n\n\n\nDate: Sep 26, 2016  Location: Shenyang\nA presentation on the study of national population movements, utilizing the Tencent LBSN dataset, was delivered. For the first time, it showcased an analysis of urban clusters and the regional framework across the whole country.\nA brief of the project can be found here.\n\n\n\n\nSlides Here"
+    "text": "National Population Flow Analysis Based on 1 billion LBSN data\n\n\n\n\n\n\n\n\nNoteKeynote Speech @ China Urban Planning Annual Conference 2016\n\n\n\nDate: Sep 26, 2016  Location: Shenyang\nA presentation on the study of national population movements, utilizing the Tencent LBSN dataset, was delivered. For the first time, it showcased an analysis of urban clusters and the regional framework across the whole country.\nA brief of the project can be found here.\n\n\n\n\nSlides Here"
   },
   {
     "objectID": "presentations/index.html#gtfs-and-afc-data-analysis",
     "href": "presentations/index.html#gtfs-and-afc-data-analysis",
     "title": "Presentations",
     "section": "GTFS and AFC Data Analysis",
-    "text": "GTFS and AFC Data Analysis\n\n\n\n\n\n\n\n\nPresentation @ MTA 2013\n\n\n\nDate: Aug, 2013  Location: New York\nThis is a 30-minute presentation\n\n\n\n\n\nSlides Here"
+    "text": "GTFS and AFC Data Analysis\n\n\n\n\n\n\n\n\nNotePresentation @ MTA 2013\n\n\n\nDate: Aug, 2013  Location: New York\nThis is a 30-minute presentation\n\n\n\n\n\nSlides Here"
   }
 ]
