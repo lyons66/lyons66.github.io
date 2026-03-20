@@ -31,7 +31,7 @@ format:
       collapsed: false
       smooth-scroll: true
       sticky: true
-    # number-sections: true
+    css: ../project-style.css
 ---
 
 ```{=html}
@@ -40,22 +40,6 @@ format:
   background-position: 50% 50%;
   height: 200px;
 }
-
-
-#title-block-header.quarto-title-block.default .quarto-title-meta {
-    display: grid;
-    grid-column: page-start/body-content-end;
-}
-
-#quarto-document-content {
-  margin-top: 0;
-  padding-top: 0;
-}
-
-#quarto-margin-sidebar {
-  padding-top: 0;
-}
-
 </style>
 ```
 

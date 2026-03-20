@@ -12,16 +12,14 @@ website:
     
     # your sub-pages
     left:
+      - text: "Publications"
+        href: papers/index.qmd
       - text: "Projects"
         href: projects/index.qmd
-      - text: "Papers"
-        href: papers/index.qmd
+      - text: "Presentations"
+        href: presentations/index.qmd
       - text: "Visualization"
         href: visualization/index.qmd
-      - text: "presentations"
-        href: presentations/index.qmd
-      - text: "Portfolio"
-        href: portfolio/index.qmd
     # your social media handles
     right:
       - text: "{{< iconify fa6-solid building-columns size=LARGE >}}"

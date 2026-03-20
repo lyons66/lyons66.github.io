@@ -196,6 +196,76 @@
     "text": "# The Function of the APP"
   },
   {
+    "objectID": "projects/caz/index.html",
+    "href": "projects/caz/index.html",
+    "title": "Recognizing Central Activity Zones",
+    "section": "",
+    "text": "TipPROJECT BRIEF\n\n\n\nUtilizing the concept of entropy, the project aims to quantify the level of functional diversity within different areas of the city. By leveraging a dataset consisting of 300,000 points of interest (POI) from Dianping and office and residential POI data from Anjuke, the project assigns weights to these locations based on their respective scores. These scores indicate the areas with the highest spatial composition within the city. Typically, these dynamic places are considered the most vibrant and active within the urban landscape, reflecting a high degree of functional compounding.\n\nLiu L., Liu Z. “The Recognition of CAZ in Shanghai Based on Evaluated POI.” In: Shen Z., Li M. (eds) Big Data Support of Urban Planning and Management, Advances in Geographic Information Science. Springer, Cham."
+  },
+  {
+    "objectID": "projects/caz/index.html#the-idea",
+    "href": "projects/caz/index.html#the-idea",
+    "title": "Recognizing Central Activity Zones",
+    "section": "# The Idea",
+    "text": "# The Idea\nUtilizing the concept of entropy, the project aims to quantify the level of functional diversity within different areas of the city. By leveraging a dataset consisting of 300,000 points of interest (POI) from Dianping and office and residential POI data from Anjuke, the project assigns weights to these locations based on their respective scores. These scores indicate the areas with the highest spatial composition within the city. Typically, these dynamic places are considered the most vibrant and active within the urban landscape, reflecting a high degree of functional compounding."
+  },
+  {
+    "objectID": "projects/caz/index.html#dataset",
+    "href": "projects/caz/index.html#dataset",
+    "title": "Recognizing Central Activity Zones",
+    "section": "# Dataset",
+    "text": "# Dataset\nI utilize a diverse dataset to analyze and identify the Central Activities Zone (CAZ) in Shanghai. This dataset primarily comprises Points of Interest (POI), which include various urban elements like retail outlets, catering services, office spaces, leisure, cultural, and recreational facilities. These POIs are crucial in determining the functional mixture of different urban areas, which in turn helps in recognizing and delineating the CAZ. The dataset’s depth and variety allow for a comprehensive analysis of urban dynamics and the multifunctional nature of Shanghai’s central areas. Updated to August in 2016, this project has captured a total number of 386,628 POI records within the outer ring of downtown Shanghai."
+  },
+  {
+    "objectID": "projects/caz/index.html#method",
+    "href": "projects/caz/index.html#method",
+    "title": "Recognizing Central Activity Zones",
+    "section": "# Method",
+    "text": "# Method\nThe research method for recognizing Central Activities Zones (CAZ) in Shanghai based on evaluated POI data involves several steps:\nDataset Preparation: Utilizes a dataset of Points of Interest (POI) in Shanghai. The data includes various attributes like shop ID, score, category, and average price.\nCategory Reclassification: Involves regrouping the vast number of POI categories into six general categories: retail, catering, office, recreation, leisure, and culture. This reclassification considers the diversity inherent in CAZs.\nCalibration of Mixture: This step focuses on measuring the degree of functional mixture within areas, which is a key characteristic of CAZs. It involves two dimensions: volume and diversity. The process includes:\nValue Aggregation Map: Normalizing and aggregating heat maps for each category to represent the intensity of functions. Function Intersection Map: Identifying areas with diverse functions by overlaying processed heat maps and classifying places based on the number of overlapping functions. The research aims to identify dynamic and functionally diverse areas in Shanghai that could be recognized as CAZs.\n Value aggregation map of Shanghai (left), the magnified core area (top right)\n Function intersection map of Shanghai (left), and magnified three places: Lujiazui (top), Nanjing Road (middle), Zhongshan Park (bottom)\n The heat map of compiled functions (left) and the contour map of mixture degree (right) and the top 14 mixed-use districts within middle ring of Shanghai"
+  },
+  {
+    "objectID": "projects/caz/index.html#finding-the-most-dynamic-areas",
+    "href": "projects/caz/index.html#finding-the-most-dynamic-areas",
+    "title": "Recognizing Central Activity Zones",
+    "section": "# Finding the most dynamic areas",
+    "text": "# Finding the most dynamic areas\nThe study identifies the most dynamic areas in Shanghai based on the aggregation and intersection maps created from evaluated POI data. These maps enabled the researchers to determine places with large overall value and multiple functions.\n\nAs for the original target of this project, we demonstrate three possible scenarios for defining the CAZ boundary in Shanghai."
+  },
+  {
+    "objectID": "papers/index.html",
+    "href": "papers/index.html",
+    "title": "Publications",
+    "section": "",
+    "text": "For the most up-to-date list, see my Curriculum Vitae and Google Scholar profile. 1,564 citations  ·  Mar 2026"
+  },
+  {
+    "objectID": "papers/index.html#publications",
+    "href": "papers/index.html#publications",
+    "title": "Publications",
+    "section": "Publications",
+    "text": "Publications\n\nPeer-Reviewed Articles\n\n  2026\n  \n    MINGLE: VLMs for Semantically Complex Region Detection\n    Liu, L., Kudaeva, A., Cipriano, M., Al Ghannam, F., Tan, F., de Melo, G., & Sevtsuk, A.\n    Proceedings of the AAAI Conference on Artificial Intelligence, 40(45).\n    DOI\n  \n\n\n\n  2026\n  \n    Spatial Distribution of Foot Traffic in New York City and Applications for Urban Planning\n    Sevtsuk, A., Basu, R., Liu, L., Alhassan, A., & Kollar, J.\n    Nature Cities, 1–10.\n    DOI\n  \n\n\n\n  2026\n  \n    Reconceptualising Regional Boundaries: Depicting Blurred Regions in China Through Individual Mobility Data\n    Zhang, H., Liu, L., Wang, P., & Zhao, J.\n    Computational Urban Science, 6(1), 5.\n    DOI\n  \n\n\n\n  2026\n  \n    START: Spatial and Textual Learning for Chart Understanding\n    Liu, Z., Gao, X., Niu, F., Gao, Q., Liu, L., & Piramuthu, R.\n    IEEE/CVF Winter Conference on Applications of Computer Vision (WACV).\n    arXiv\n  \n\n\n\n  2026\n  \n    Decoding Human Safety Perception with Eye-Tracking Systems, Street View Images, and Explainable AI\n    Kang, Y., Chen, J., Liu, L., Sharma, K., Mazzarello, M., Mora, S., Duarte, F., & Ratti, C.\n    Computers, Environment and Urban Systems, 123, 102356.\n    DOI\n  \n\n\n\n  2025\n  \n    A Sidewalk-Level Urban Heat Risk Assessment Framework Using Pedestrian Mobility and Urban Microclimate Modeling\n    Colaninno, N., Basu, R., Hosseini, M., Alhassan, A., Liu, L., & Sevtsuk, A.\n    Environment and Planning B: Urban Analytics and City Science, 52(5), 1071–1090.\n    DOI\n  \n\n\n\n  2024\n  \n    Clarity or Confusion: A Review of Computer Vision Street Attributes in Urban Studies and Planning\n    Liu, L., & Sevtsuk, A.\n    Cities, 150, 105022.\n    DOI\n  \n\n\n\n  2022\n  \n    An Urban Infrastructure Assessment System Built on Geo-Tagged Images and Machine Learning\n    Zhang, D., Yi, H., Chen, Y., Jiang, N., Shao, J., & Liu, L.\n    Computational Urban Science, 2(1), 1–21.\n    DOI\n  \n\n\n\n  2020\n  \n    The Spatial-Temporal Dynamics of Daily Intercity Mobility in the Yangtze River Delta: An Analysis Using Big Data\n    Cui, C., Wu, X., Liu, L., & Zhang, W.\n    Habitat International, 106, 102174.\n    DOI\n  \n\n\n\n  2018\n  \n    Measuring Human Perceptions of a Large-Scale Urban Region Using Machine Learning\n    Zhang, F., Zhou, B., Liu, L., Liu, Y., Fung, H., Lin, H., & Ratti, C.\n    Landscape and Urban Planning, 180, 148–160.\n    DOI\n  \n\n\n\n  2018\n  \n    STREETALK: A Navigation System for Pedestrians and Cyclists\n    Liu, L., Zhang, F., Zhou, B., Wang, Z., & Li, Y.\n    Landscape Architecture Frontiers, 6(2), 94–101.\n    DOI\n  \n\n\n\n  2017\n  \n    How Green Are the Streets? An Analysis for Central Areas of Chinese Cities Using Tencent Street View\n    Long, Y., & Liu, L.\n    PLOS ONE, 12(2), e0171110.\n    DOI\n  \n\n\n\n  2016\n  \n    C-IMAGE: City Cognitive Mapping through Geo-Tagged Photos\n    Liu, L., Zhou, B., Zhao, J., & Ryan, B. D.\n    GeoJournal, 81(6), 817–861.\n    DOI\n  \n\n\n\n  2014\n  \n    Recognizing City Identity via Attribute Analysis of Geo-Tagged Images\n    Zhou, B., Liu, L., Oliva, A., & Torralba, A.\n    European Conference on Computer Vision (ECCV), 519–534.\n    DOI\n  \n\n\n\nBook Chapters\n\n  2018\n  \n    The Recognition of CAZ in Shanghai Based on Evaluated POI\n    Liu, L., & Liu, Z.\n    Big Data Support of Urban Planning and Management: The Experience in China, 99–112.\n    DOI\n  \n\n\n\nManuscripts Under Review\n\n  2026\n  \n    Sidewalk Occupancy Prediction via 2D-3D Consistency Learning with Pseudo Labels\n    Ma, Y., Lin, J., Liu, L., He, H., Ricketts, L., Squicciarini, B., Liu, Y., & Zhou, B.\n    Under Review Submitted to the European Conference on Computer Vision (ECCV).\n  \n\n\n\nManuscripts in Preparation\n\n  2026\n  \n    Where Pedestrians Interact: Mapping Street-Level Sociability across U.S. Cities\n    Liu, L., & Sevtsuk, A.\n    In Preparation\n  \n\n\n\n  2026\n  \n    Are Richer Visual Representations Always More Human-Aligned in Urban Experience?\n    Liu, L., Tan, F., & Duarte, F.\n    In Preparation\n  \n\n\n\nTechnical Reports & Benchmark Papers\n\n  2025\n  \n    Exploring the Challenges of Humanity's Last Exam\n    Liu, L., Gao, X., Gao, Q., & Piramuthu, R.\n    Technical Report Applied Scientist PhD Internship, Amazon AGI, Sunnyvale, CA.\n    View upon request\n  \n\n\n\n  2024\n  \n    ABCxM: A Benchmark for Multimodal Models Playing Scores to Music\n    Liu, L., Gao, X., Gao, Q., & Piramuthu, R.\n    Technical Report Applied Scientist PhD Internship, Amazon AGI, Sunnyvale, CA.\n    View upon request\n  \n\n\n\n  2024\n  \n    VIS: A Benchmark for Foley Models and Visually Indicative Sounds\n    Liu, L., Gao, X., Gao, Q., & Piramuthu, R.\n    Technical Report Applied Scientist PhD Internship, Amazon AGI, Sunnyvale, CA.\n    View upon request\n  \n\n\n\n  2024\n  \n    ELSA: Evaluating Localization of Social Activities in Urban Streets\n    Hosseini, M., Cipriano, M., Eslami, S., Hodczak, D., Liu, L., Sevtsuk, A., & de Melo, G.\n    arXiv preprint.\n    arXiv\n  \n\n\n\n  2020\n  \n    Assessing Physical Environment of TOD Communities around Metro Stations: Using Big Data and Machine Learning\n    Fang, W., Liu, L., & Zhou, J.\n    World Bank, Washington, DC.\n    DOI\n  \n\nAdditional papers written in Chinese are listed in the Curriculum Vitae only."
+  },
+  {
+    "objectID": "papers/index.html#grants-funding",
+    "href": "papers/index.html#grants-funding",
+    "title": "Publications",
+    "section": "Grants & Funding",
+    "text": "Grants & Funding\n\nResearch Grants\n\n  Principal Investigator\n  \"Observing the 'Sidewalk Ballet': Leveraging LMMs to Detect Social Interactions in Large-Scale Urban Imagery Datasets\" (CIS250088), Advanced Cyberinfrastructure Coordination Ecosystem: Services & Support (ACCESS), Alexandria, VA.\n  ~$140,000\n  Jan 2025 – Jan 2027\n\n\n\n  Subproject Principal Investigator\n  National Key Research and Development Program of China — \"Multi-dimensional Street Quality Enhancement and Coordinated Control Technology Platform Construction\" (Project No. 2023YFC3805305-03).\n  RMB 1,000,000\n  Dec 2023 – Nov 2026\n\n\n\n  Co-Principal Investigator\n  \"Moments: Leveraging Continuous Visual and Auditory Experiences to Assess Urban Attraction\" (CIS250360), Advanced Cyberinfrastructure Coordination Ecosystem: Services & Support (ACCESS), Alexandria, VA.\n  ~$11,000\n  Oct 2025 – Oct 2026\n\n\n\nInternal Grants\n\n  OGE Conference Grant, Office of Graduate Education, MIT.\n  $1,000\n  2025\n\n\n\n  Graduate Student Career Exploration Grant, Career Advising & Professional Development (CAPD), MIT.\n  $1,500\n  2025"
+  },
+  {
+    "objectID": "papers/index.html#academic-service",
+    "href": "papers/index.html#academic-service",
+    "title": "Publications",
+    "section": "Academic Service",
+    "text": "Academic Service\n\nJournal Reviewer\n\n  Cities, Nature Cities, Sustainable Cities and Society, Environment and Planning B: Urban Analytics and City Science, Journal of Transport and Land Use, Transactions in Urban Data, Science, and Technology, Annals of the American Association of Geographers, Computational Urban Science, Landscape and Urban Planning, International Journal of Digital Earth, and others (20+ reviews).\n\n\n\nCommittee & Other\n\n  Committee Member\n  Urban Imagery Committee, Urban Planning Society of China (UPSC)\n\n\n\n  Listed Expert\n  Shanghai Science and Technology Talent Expert Database\n\n\n\n  Mentorship\n  Peer Application Support (PASS) — supporting diversity in graduate admissions, MIT (2022, 2023, 2024)"
+  },
+  {
+    "objectID": "papers/index.html#design-portfolio",
+    "href": "papers/index.html#design-portfolio",
+    "title": "Publications",
+    "section": "Design Portfolio",
+    "text": "Design Portfolio\n\n  A collection of architectural and urban design work from my undergraduate years at Tongji University (2008–2011), spanning city redevelopment, regulatory planning, structural design, and community architecture.\n\n\n\n  \n    View Portfolio →\n  \n  \n    PDF version available upon request"
+  },
+  {
     "objectID": "visualization/index.html",
     "href": "visualization/index.html",
     "title": "Visualization",
@@ -287,60 +357,32 @@
     "text": "Boston Taxi (2013)\n\n\n\n\n\n\n\n\nNoteINFO\n\n\n\nThis is the visualization work based a Boston Taxi data challenge."
   },
   {
-    "objectID": "papers/index.html",
-    "href": "papers/index.html",
-    "title": "Research papers",
+    "objectID": "projects/mingle/index.html",
+    "href": "projects/mingle/index.html",
+    "title": "MINGLE",
     "section": "",
-    "text": "Usually I do not update this page frequently. For the most recent publication list, please refer to my Curriculum Vitae and Google Scholar profile."
+    "text": "TipPROJECT BRIEF\n\n\n\nDetecting who is interacting with whom in a city street is something humans do effortlessly — yet it remains one of the hardest tasks for computer vision. A “social group” is not a physical object with clear edges; it is a relational, emergent pattern among two or more people sharing attention, conversation, or collective movement. Standard object detectors struggle with this: they excel at finding discrete, bounded entities, but fail when the target is defined by social context rather than visual shape.\nMINGLE (Multi-person Interaction-aware Neural Group Localization and Extraction) addresses this gap with a modular three-stage pipeline that combines human detection, depth-aware vision-language model reasoning, and spatial aggregation. The paper was accepted at AAAI 2026 (AI for Social Impact Track) and introduces a 100K-image annotated dataset — the first of its kind — for benchmarking social group detection in urban street-view imagery."
   },
   {
-    "objectID": "papers/index.html#peer-reviewed-papers",
-    "href": "papers/index.html#peer-reviewed-papers",
-    "title": "Research papers",
-    "section": "Peer-Reviewed Papers",
-    "text": "Peer-Reviewed Papers\n\nSevtsuk, A., Basu, R., Liu, L., Alhassan, A., & Kollar, J.\nNYC Walks: A City-Wide Foot-Traffic Model to Guide Pedestrian-Oriented Planning and Design\nAccepted by Nature Cities.\nLiu, Z., Gao, X., Niu, F., Gao, Q., Liu, L., & Piramuthu, R. START: Spatial and Textual Learning for Chart Understanding Accepted by WACV 2026.\nLiu, L., Kudaeva, A., Cipriano, M., Al Ghannam, F., Tan, F., de Melo, G., & Sevtsuk, A.\nMINGLE: VLMs for Semantically Complex Region Detection\nAccepted by AAAI 2026 – Artificial Intelligence for Social Impact Track\nKang, Y., Chen, J., Liu, L., Sharma, K., Mazzarello, M., Mora, S., Duarte, F.* (corresp.), & Ratti, C.\nHuman vs. AI Safety Perception? Decoding Human Safety Perception with Eye-Tracking Systems, Street-View Images, and Explainable AI\nComputers, Environment & Urban Systems, (Accepted Manuscript ID CEUS-D-25-00395).\nLiu, L., & Andres Sevtsuk\nClarity or Confusion: A Review of Computer-Vision Street Attributes in Urban Studies and Planning\nCities, 150, 105022 (2024).\nView\nColaninno, N., Rounaq Basu, Maryam Hosseini, Abdulaziz Alhassan, Liu Liu, & Andres Sevtsuk\nA Sidewalk-Level Urban Heat-Risk Assessment Framework Using Pedestrian Mobility and Urban Micro-climate Modelling\nEnvironment & Planning B: Urban Analytics and City Science (2024).\nView\nZhou, B., Liu, L., Oliva, A., & Torralba, A.\nRecognizing City Identity via Attribute Analysis of Geo-Tagged Images\nEuropean Conference on Computer Vision (ECCV 2014), pp. 519-534.\nDownload\nLiu, L., Zhou, B., Zhao, J., & Ryan, B. D.\nC-IMAGE: City Cognitive Mapping through Geo-Tagged Photos\nGeoJournal, 81 (6), 817-861 (2016).\nView\nLong, Y., & Liu, L.\nHow Green Are the Streets? An Analysis for Central Areas of Chinese Cities Using Tencent Street View\nPLOS ONE, 12 (2), e0171110 (2017).\nDownload\nZhang, F., Zhou, B., Liu, L., Liu, Y., Fung, H. H., Lin, H., & Carlo Ratti\nMeasuring Human Perceptions of a Large-Scale Urban Region Using Machine Learning\nLandscape and Urban Planning, 180, 148-160 (2018).\nView\nLiu, L., Zhang, F., Zhou, B., Wang, Z., & Li, Y.\nSTREETALK: A Navigation System for Pedestrians and Cyclists\nLandscape Architecture Frontiers (2018).\nDownload\nCui, C., et al.\nThe Spatial-Temporal Dynamics of Daily Inter-City Mobility in the Yangtze River Delta: An Analysis Using Big Data\nHabitat International (2020).\nView\nZhang, D., Yi, H., Chen, Y., Jiang, N., Shao, J., & Liu, L.\nAn Urban Infrastructure Assessment System Built on Geo-Tagged Images and Machine Learning\nComputational Urban Science 2 (1), 1-21 (2022).\nDownload\n\n\nPapers Under Review\n\nZhang, H., Liu, L., Wang, P., & Zhao, J.\nDepicting the Blurred Regional Boundaries in China Using Individual Mobility Data\nComputational Urban Science, under review (Manuscript ID CUSC-D-25-00097).\n\n\n\nPreprint\n\nHosseini, M., Cipriano, M., Eslami, S., Hodczak, D., Liu, L., Sevtsuk, A., & de Melo, G.\nELSA: Evaluating Localization of Social Activities in Urban Streets\narXiv preprint arXiv:2406.01551 (2024).\nDownload\n\n\n\nManuscripts Completed (No Submission)\n\nLiu, L., Gao, X., Gao, Q., & Piramuthu, R.\nExploring the Challenges of Humanity’s Last Exam Dataset Analysis, Small Model Evaluation, and Enhancement Trials\nCompleted during Applied Scientist PhD Internship, Amazon AGI, Sunnyvale CA (2025).\nView upon request\nLiu, L., Gao, X., Gao, Q., & Piramuthu, R.\nABCxM: A Benchmark for Multimodal Models Playing Scores to Music\nCompleted during Applied Scientist PhD Internship, Amazon AGI, Sunnyvale CA (2024).\nDeveloped the first end-to-end benchmark and evaluation framework for notation-to-music generation.\nView upon request\nLiu, L., Gao, X., Gao, Q., & Piramuthu, R.\nVIS: A Benchmark for Foley Models and Visually Indicative Sounds\nCompleted during Applied Scientist PhD Internship, Amazon AGI, Sunnyvale CA (2024).\nCreated human-annotated, multi-domain datasets for evaluating video-to-audio generation models.\nView upon request\n\nAdditional papers writtern in Chinese are listed in the Curriculum Vitae only."
+    "objectID": "projects/mingle/index.html#stage-1-person-detection",
+    "href": "projects/mingle/index.html#stage-1-person-detection",
+    "title": "MINGLE",
+    "section": "Stage 1 — Person Detection",
+    "text": "Stage 1 — Person Detection\nAn ATSS-Swin-L-DyHead detector first identifies all individual people in the scene with high-confidence bounding boxes. This separates the problem of finding people from the problem of reasoning about their relationships."
   },
   {
-    "objectID": "papers/index.html#service-grants",
-    "href": "papers/index.html#service-grants",
-    "title": "Research papers",
-    "section": "Service & Grants",
-    "text": "Service & Grants\n\nCo-Investigator (Subproject PI), National Key Research and Development Program of China — “Multi-dimensional Street Quality Enhancement and Coordinated Control Technology Platform Construction” (Subproject: 2023YFC3805305-03, PI: Liu Liu, Suzhou Citory Technology Co., Ltd.), Funding Period: December 2023 – November 2026.\nPrincipal Investigator, “Observing the ‘Sidewalk Ballet’: Leveraging LMMs to Detect Social Interactions in Large-Scale Urban Imagery Datasets,” ACCESS CIS250088 (2025-2026).\n\nCo-Principal Investigator, Moments: Leveraging Continuous Visual and Auditory Experiences to Assess Urban Attraction (CIS250360), Advanced Cyberinfrastructure Coordination Ecosystem: Services & Support (ACCESS), Alexandria, VA, US, Funding Period: October 2025 – October 2026 [↗]\nReviewer for Cities, Nature Cities, Sustainable Cities & Society, Environment & Planning B, Journal of Transport and Land Use, Transactions in Urban Data, Science, and Technology, Annals of the American Association of Geographers, Computational Urban Science, Landscape and Urban Planning, International Journal of Digital Earth, and others (20 + reviews)."
+    "objectID": "projects/mingle/index.html#stage-2-pairwise-affiliation-classification",
+    "href": "projects/mingle/index.html#stage-2-pairwise-affiliation-classification",
+    "title": "MINGLE",
+    "section": "Stage 2 — Pairwise Affiliation Classification",
+    "text": "Stage 2 — Pairwise Affiliation Classification\nFor every pair of detected individuals, MINGLE constructs a prompt containing:\n\nRGB crops of each person’s bounding box\nA depth-map crop of the scene, generated by a monocular depth estimator\nNumeric depth values and absolute depth differences inserted directly into the text prompt\n\nThis multimodal prompt is fed to a fine-tuned Qwen2-VL / Qwen2.5-VL model, which classifies each pair as interacting, not interacting, or uncertain. The use of explicit depth cues is a key innovation: distance in the image plane is an unreliable proxy for physical proximity (due to perspective), so depth information lets the model reason about actual spatial separation between individuals.\nComputational cost is managed by filtering out pairs whose image-plane distance or depth difference exceeds configurable thresholds, dramatically reducing the number of VLM calls without meaningful loss in accuracy."
   },
   {
-    "objectID": "projects/caz/index.html",
-    "href": "projects/caz/index.html",
-    "title": "Recognizing Central Activity Zones",
-    "section": "",
-    "text": "TipPROJECT BRIEF\n\n\n\nUtilizing the concept of entropy, the project aims to quantify the level of functional diversity within different areas of the city. By leveraging a dataset consisting of 300,000 points of interest (POI) from Dianping and office and residential POI data from Anjuke, the project assigns weights to these locations based on their respective scores. These scores indicate the areas with the highest spatial composition within the city. Typically, these dynamic places are considered the most vibrant and active within the urban landscape, reflecting a high degree of functional compounding.\n\nLiu L., Liu Z. “The Recognition of CAZ in Shanghai Based on Evaluated POI.” In: Shen Z., Li M. (eds) Big Data Support of Urban Planning and Management, Advances in Geographic Information Science. Springer, Cham."
-  },
-  {
-    "objectID": "projects/caz/index.html#the-idea",
-    "href": "projects/caz/index.html#the-idea",
-    "title": "Recognizing Central Activity Zones",
-    "section": "# The Idea",
-    "text": "# The Idea\nUtilizing the concept of entropy, the project aims to quantify the level of functional diversity within different areas of the city. By leveraging a dataset consisting of 300,000 points of interest (POI) from Dianping and office and residential POI data from Anjuke, the project assigns weights to these locations based on their respective scores. These scores indicate the areas with the highest spatial composition within the city. Typically, these dynamic places are considered the most vibrant and active within the urban landscape, reflecting a high degree of functional compounding."
-  },
-  {
-    "objectID": "projects/caz/index.html#dataset",
-    "href": "projects/caz/index.html#dataset",
-    "title": "Recognizing Central Activity Zones",
-    "section": "# Dataset",
-    "text": "# Dataset\nI utilize a diverse dataset to analyze and identify the Central Activities Zone (CAZ) in Shanghai. This dataset primarily comprises Points of Interest (POI), which include various urban elements like retail outlets, catering services, office spaces, leisure, cultural, and recreational facilities. These POIs are crucial in determining the functional mixture of different urban areas, which in turn helps in recognizing and delineating the CAZ. The dataset’s depth and variety allow for a comprehensive analysis of urban dynamics and the multifunctional nature of Shanghai’s central areas. Updated to August in 2016, this project has captured a total number of 386,628 POI records within the outer ring of downtown Shanghai."
-  },
-  {
-    "objectID": "projects/caz/index.html#method",
-    "href": "projects/caz/index.html#method",
-    "title": "Recognizing Central Activity Zones",
-    "section": "# Method",
-    "text": "# Method\nThe research method for recognizing Central Activities Zones (CAZ) in Shanghai based on evaluated POI data involves several steps:\nDataset Preparation: Utilizes a dataset of Points of Interest (POI) in Shanghai. The data includes various attributes like shop ID, score, category, and average price.\nCategory Reclassification: Involves regrouping the vast number of POI categories into six general categories: retail, catering, office, recreation, leisure, and culture. This reclassification considers the diversity inherent in CAZs.\nCalibration of Mixture: This step focuses on measuring the degree of functional mixture within areas, which is a key characteristic of CAZs. It involves two dimensions: volume and diversity. The process includes:\nValue Aggregation Map: Normalizing and aggregating heat maps for each category to represent the intensity of functions. Function Intersection Map: Identifying areas with diverse functions by overlaying processed heat maps and classifying places based on the number of overlapping functions. The research aims to identify dynamic and functionally diverse areas in Shanghai that could be recognized as CAZs.\n Value aggregation map of Shanghai (left), the magnified core area (top right)\n Function intersection map of Shanghai (left), and magnified three places: Lujiazui (top), Nanjing Road (middle), Zhongshan Park (bottom)\n The heat map of compiled functions (left) and the contour map of mixture degree (right) and the top 14 mixed-use districts within middle ring of Shanghai"
-  },
-  {
-    "objectID": "projects/caz/index.html#finding-the-most-dynamic-areas",
-    "href": "projects/caz/index.html#finding-the-most-dynamic-areas",
-    "title": "Recognizing Central Activity Zones",
-    "section": "# Finding the most dynamic areas",
-    "text": "# Finding the most dynamic areas\nThe study identifies the most dynamic areas in Shanghai based on the aggregation and intersection maps created from evaluated POI data. These maps enabled the researchers to determine places with large overall value and multiple functions.\n\nAs for the original target of this project, we demonstrate three possible scenarios for defining the CAZ boundary in Shanghai."
+    "objectID": "projects/mingle/index.html#stage-3-group-aggregation",
+    "href": "projects/mingle/index.html#stage-3-group-aggregation",
+    "title": "MINGLE",
+    "section": "Stage 3 — Group Aggregation",
+    "text": "Stage 3 — Group Aggregation\nA greedy clustering algorithm merges pairwise classifications into coherent group regions. Any set of two or more individuals with mutual “interacting” links forms a social group, and a single bounding box is computed from the extreme coordinates of its members. The result is a social group region — a new type of detection output that captures collective, relational structure rather than individual bodies.\n\nFigure 3. The full MINGLE pipeline (top row) and its output format (bottom row). Stage 1 detects individuals; Stage 2 classifies each person pair using depth-aware VLM prompts; Stage 3 aggregates pairs into group bounding boxes. The bottom row shows how group detections and a Social Activity Index are computed for a given street image."
   },
   {
     "objectID": "projects/cimage/index.html",
@@ -459,7 +501,7 @@
     "href": "projects/index.html",
     "title": "Projects",
     "section": "",
-    "text": "For more projects, please visit the visualization page.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nSidewalk Ballet\n\n\n\ncomputer vision\n\nurban design\n\n\n\n\n\n\n\nLiu Liu\n\n\nMay, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nVibeScan\n\n\n\ncomputer vision\n\nurban design\n\npoi\n\ntools\n\n\n\n\n\n\n\nLiu Liu\n\n\nFeb, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\nRoad Assessment in Ulaanbaatar\n\n\n\ncomputer vision\n\nurban planning\n\ntools\n\n\n\n\n\n\n\nLiu Liu, Ding Zhang, Hongdu Yi\n\n\nOct, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\nAI-Aided Camera App\n\n\n\ncomputer vision\n\ntools\n\n\n\n\n\n\n\nLiu Liu, Ding Zhang, Xin Xiong\n\n\nMay, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nRecognizing Central Activity Zones\n\n\n\nurban planning\n\npoi\n\nvisualization\n\n\n\n\n\n\n\nLiu Liu, Zhuqing Liu\n\n\nJan, 2018\n\n\n\n\n\n\n\n\n\n\n\n\n\nCityEye WeChat mini APP\n\n\n\ncomputer vision\n\ntools\n\n\n\n\n\n\n\nLiu Liu, Ding Zhang, Jinxing Shao\n\n\nJan, 2018\n\n\n\n\n\n\n\n\n\n\n\n\n\nRiver View Analysis\n\n\n\ncomputer vision\n\nurban design\n\n\n\n\n\n\n\nLiu Liu\n\n\nMay, 2017\n\n\n\n\n\n\n\n\n\n\n\n\n\nStreeTalk Project\n\n\n\ncomputer vision\n\nurban design\n\n\n\n\n\n\n\nLiu Liu, Bolei Zhou, Fan Zhang\n\n\nOct, 2016\n\n\n\n\n\n\n\n\n\n\n\n\n\n1 Billion LBSN Data\n\n\n\ncellphone data\n\nurban planning\n\n\n\n\n\n\n\nLiu Liu, Di An\n\n\nMar, 2015\n\n\n\n\n\n\n\n\n\n\n\n\n\nC-IMAGE Project\n\n\n\ncomputer vision\n\nvisualization\n\n\n\n\n\n\n\nLiu Liu, Bolei Zhou\n\n\nMay, 2014\n\n\n\n\n\n\nNo matching items"
+    "text": "For more projects, please visit the visualization page.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nMINGLE\n\n\n\ncomputer vision\n\nAI\n\nurban design\n\n\n\n\n\n\n\nLiu Liu\n\n\nJan, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nSidewalk Ballet\n\n\n\ncomputer vision\n\nurban design\n\n\n\n\n\n\n\nLiu Liu\n\n\nMay, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nVibeScan\n\n\n\ncomputer vision\n\nurban design\n\npoi\n\ntools\n\n\n\n\n\n\n\nLiu Liu\n\n\nFeb, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\nRoad Assessment in Ulaanbaatar\n\n\n\ncomputer vision\n\nurban planning\n\ntools\n\n\n\n\n\n\n\nLiu Liu, Ding Zhang, Hongdu Yi\n\n\nOct, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\nAI-Aided Camera App\n\n\n\ncomputer vision\n\ntools\n\n\n\n\n\n\n\nLiu Liu, Ding Zhang, Xin Xiong\n\n\nMay, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nRecognizing Central Activity Zones\n\n\n\nurban planning\n\npoi\n\nvisualization\n\n\n\n\n\n\n\nLiu Liu, Zhuqing Liu\n\n\nJan, 2018\n\n\n\n\n\n\n\n\n\n\n\n\n\nCityEye WeChat mini APP\n\n\n\ncomputer vision\n\ntools\n\n\n\n\n\n\n\nLiu Liu, Ding Zhang, Jinxing Shao\n\n\nJan, 2018\n\n\n\n\n\n\n\n\n\n\n\n\n\nRiver View Analysis\n\n\n\ncomputer vision\n\nurban design\n\n\n\n\n\n\n\nLiu Liu\n\n\nMay, 2017\n\n\n\n\n\n\n\n\n\n\n\n\n\nStreeTalk Project\n\n\n\ncomputer vision\n\nurban design\n\n\n\n\n\n\n\nLiu Liu, Bolei Zhou, Fan Zhang\n\n\nOct, 2016\n\n\n\n\n\n\n\n\n\n\n\n\n\n1 Billion LBSN Data\n\n\n\ncellphone data\n\nurban planning\n\n\n\n\n\n\n\nLiu Liu, Di An\n\n\nMar, 2015\n\n\n\n\n\n\n\n\n\n\n\n\n\nC-IMAGE Project\n\n\n\ncomputer vision\n\nvisualization\n\n\n\n\n\n\n\nLiu Liu, Bolei Zhou\n\n\nMay, 2014\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/sidewalk_ballet/index.html",

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Research papers – Liu Liu</title>
+<title>Publications – Liu Liu</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -101,24 +101,20 @@ background-size: cover;
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
+    <a class="nav-link active" href="../papers/index.html" aria-current="page"> 
+<span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../projects/index.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../papers/index.html" aria-current="page"> 
-<span class="menu-text">Papers</span></a>
+    <a class="nav-link" href="../presentations/index.html"> 
+<span class="menu-text">Presentations</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../visualization/index.html"> 
 <span class="menu-text">Visualization</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../presentations/index.html"> 
-<span class="menu-text">presentations</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../portfolio/index.html"> 
-<span class="menu-text">Portfolio</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -145,8 +141,8 @@ background-size: cover;
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page">
-      <h1 class="title">Research papers</h1>
-            <p class="subtitle lead">Selected from my Google Scholar profile</p>
+      <h1 class="title">Publications</h1>
+            <p class="subtitle lead">Papers, Grants, Service &amp; Design Background</p>
                       </div>
   </div>
     
@@ -171,120 +167,522 @@ background-size: cover;
 
 
 <style>
+/* ── Banner ── */
 .quarto-title-banner {
   background-position: 50% 55%;
   height: 200px;
 }
-
 #quarto-document-content {
   margin-top: 0;
   padding-top: 0;
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+#quarto-margin-sidebar { padding-top: 0; }
+
+/* ── Section headings ── */
+h2.section-heading {
+  margin-top: 2.8rem;
+  margin-bottom: 0.2rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 2.5px solid #2563eb;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1e293b;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+h3.sub-heading {
+  margin-top: 1.8rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #94a3b8;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
-#quarto-margin-sidebar {
-  padding-top: 0;
+/* ── Publication entries ── */
+.pub-entry {
+  display: flex;
+  gap: 1.1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+.pub-entry:last-child { border-bottom: none; }
+
+.pub-year {
+  min-width: 2.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #94a3b8;
+  padding-top: 0.25rem;
+  text-align: right;
+  flex-shrink: 0;
+  font-variant-numeric: tabular-nums;
 }
 
+.pub-body { flex: 1; min-width: 0; }
+
+.pub-title {
+  font-size: 0.97rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.25rem;
+  line-height: 1.45;
+}
+
+.pub-authors {
+  font-size: 0.84rem;
+  color: #64748b;
+  margin-bottom: 0.2rem;
+  line-height: 1.5;
+}
+
+.pub-authors strong {
+  color: #1e293b;
+  font-weight: 700;
+}
+
+.pub-venue {
+  font-size: 0.84rem;
+  color: #64748b;
+  margin-bottom: 0.35rem;
+}
+
+.pub-venue em {
+  color: #2563eb;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.pub-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.1rem 0.45rem;
+  border-radius: 3px;
+  margin-right: 0.3rem;
+  margin-bottom: 0.25rem;
+  vertical-align: middle;
+}
+.badge-review { background: #fef3c7; color: #92400e; }
+.badge-prep   { background: #ede9fe; color: #5b21b6; }
+.badge-tech   { background: #f0fdf4; color: #166534; }
+
+.pub-links { margin-top: 0.35rem; }
+.pub-links a {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.18rem 0.55rem;
+  border: 1px solid #2563eb;
+  border-radius: 4px;
+  color: #2563eb;
+  text-decoration: none;
+  margin-right: 0.35rem;
+  transition: background 0.15s, color 0.15s;
+}
+.pub-links a:hover {
+  background: #2563eb;
+  color: #fff;
+}
+
+/* ── Grant entries ── */
+.grant-entry {
+  padding: 0.85rem 0;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 0.9rem;
+}
+.grant-entry:last-child { border-bottom: none; }
+.grant-role {
+  font-weight: 700;
+  color: #2563eb;
+  margin-right: 0.3rem;
+}
+.grant-amount {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #059669;
+  margin-left: 0.4rem;
+}
+.grant-period {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  margin-left: 0.3rem;
+}
+
+/* ── Service ── */
+.service-block {
+  font-size: 0.9rem;
+  color: #374151;
+  line-height: 1.7;
+  padding: 0.5rem 0;
+}
+.service-label {
+  font-weight: 700;
+  color: #1e293b;
+  display: block;
+  margin-bottom: 0.15rem;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #94a3b8;
+}
+
+/* ── Intro note ── */
+.intro-note {
+  font-size: 0.88rem;
+  color: #64748b;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+.intro-note a { color: #2563eb; }
+
+.scholar-stat {
+  display: inline-block;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 6px;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.82rem;
+  color: #1d4ed8;
+  font-weight: 600;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
 </style>
-<p>Usually I do not update this page frequently. For the most recent publication list, please refer to my <a href="https://www.dropbox.com/scl/fo/ghrtsq5to79059lximk01/h?rlkey=cev0uzwgvu4jkus9eo6kkbgn7&amp;dl=0">Curriculum Vitae</a> and <a href="https://scholar.google.com/citations?user=D3PSmFsAAAAJ">Google Scholar</a> profile.</p>
-<section id="peer-reviewed-papers" class="level2">
-<h2 class="anchored" data-anchor-id="peer-reviewed-papers">Peer-Reviewed Papers</h2>
-<ul>
-<li><p><strong>Sevtsuk, A., Basu, R., Liu, L., Alhassan, A., &amp; Kollar, J.</strong><br>
-<em>NYC Walks: A City-Wide Foot-Traffic Model to Guide Pedestrian-Oriented Planning and Design</em><br>
-Accepted by <strong>Nature Cities</strong>.</p></li>
-<li><p><strong>Liu, Z., Gao, X., Niu, F., Gao, Q., Liu, L., &amp; Piramuthu, R.</strong> <em>START: Spatial and Textual Learning for Chart Understanding</em> Accepted by <strong>WACV 2026</strong>.</p></li>
-<li><p><strong>Liu, L., Kudaeva, A., Cipriano, M., Al Ghannam, F., Tan, F., de Melo, G., &amp; Sevtsuk, A.</strong><br>
-<em>MINGLE: VLMs for Semantically Complex Region Detection</em><br>
-Accepted by <strong>AAAI 2026 – Artificial Intelligence for Social Impact Track</strong></p></li>
-<li><p><strong>Kang, Y., Chen, J., Liu, L., Sharma, K., Mazzarello, M., Mora, S., Duarte, F.* (corresp.), &amp; Ratti, C.</strong><br>
-<em>Human vs.&nbsp;AI Safety Perception? Decoding Human Safety Perception with Eye-Tracking Systems, Street-View Images, and Explainable AI</em><br>
-<em>Computers, Environment &amp; Urban Systems</em>, (Accepted Manuscript ID CEUS-D-25-00395).</p></li>
-<li><p><strong>Liu, L., &amp; Andres Sevtsuk</strong><br>
-<em>Clarity or Confusion: A Review of Computer-Vision Street Attributes in Urban Studies and Planning</em><br>
-<em>Cities</em>, 150, 105022 (2024).<br>
-<a href="https://doi.org/10.1016/j.cities.2024.105022">View</a></p></li>
-<li><p><strong>Colaninno, N., Rounaq Basu, Maryam Hosseini, Abdulaziz Alhassan, Liu Liu, &amp; Andres Sevtsuk</strong><br>
-<em>A Sidewalk-Level Urban Heat-Risk Assessment Framework Using Pedestrian Mobility and Urban Micro-climate Modelling</em><br>
-<em>Environment &amp; Planning B: Urban Analytics and City Science</em> (2024).<br>
-<a href="https://journals.sagepub.com/doi/full/10.1177/23998083241280746">View</a></p></li>
-<li><p><strong>Zhou, B., Liu, L., Oliva, A., &amp; Torralba, A.</strong><br>
-<em>Recognizing City Identity via Attribute Analysis of Geo-Tagged Images</em><br>
-<em>European Conference on Computer Vision</em> (ECCV 2014), pp.&nbsp;519-534.<br>
-<a href="https://link.springer.com/content/pdf/10.1007/978-3-319-10578-9_34.pdf">Download</a></p></li>
-<li><p><strong>Liu, L., Zhou, B., Zhao, J., &amp; Ryan, B. D.</strong><br>
-<em>C-IMAGE: City Cognitive Mapping through Geo-Tagged Photos</em><br>
-<em>GeoJournal</em>, 81 (6), 817-861 (2016).<br>
-<a href="https://link.springer.com/article/10.1007/s10708-016-9739-6">View</a></p></li>
-<li><p><strong>Long, Y., &amp; Liu, L.</strong><br>
-<em>How Green Are the Streets? An Analysis for Central Areas of Chinese Cities Using Tencent Street View</em><br>
-<em>PLOS ONE</em>, 12 (2), e0171110 (2017).<br>
-<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0171110">Download</a></p></li>
-<li><p><strong>Zhang, F., Zhou, B., Liu, L., Liu, Y., Fung, H. H., Lin, H., &amp; Carlo Ratti</strong><br>
-<em>Measuring Human Perceptions of a Large-Scale Urban Region Using Machine Learning</em><br>
-<em>Landscape and Urban Planning</em>, 180, 148-160 (2018).<br>
-<a href="https://www.sciencedirect.com/science/article/pii/S0169204618308545">View</a></p></li>
-<li><p><strong>Liu, L., Zhang, F., Zhou, B., Wang, Z., &amp; Li, Y.</strong><br>
-<em>STREETALK: A Navigation System for Pedestrians and Cyclists</em><br>
-<em>Landscape Architecture Frontiers</em> (2018).<br>
-<a href="https://oversea.cnki.net/knavi/JournalDetail?pcode=CJFD&amp;pykm=jgsj">Download</a></p></li>
-<li><p><strong>Cui, C., et al.</strong><br>
-<em>The Spatial-Temporal Dynamics of Daily Inter-City Mobility in the Yangtze River Delta: An Analysis Using Big Data</em><br>
-<em>Habitat International</em> (2020).<br>
-<a href="https://www.sciencedirect.com/science/article/abs/pii/S0197397519311373">View</a></p></li>
-<li><p><strong>Zhang, D., Yi, H., Chen, Y., Jiang, N., Shao, J., &amp; Liu, L.</strong><br>
-<em>An Urban Infrastructure Assessment System Built on Geo-Tagged Images and Machine Learning</em><br>
-<em>Computational Urban Science</em> 2 (1), 1-21 (2022).<br>
-<a href="https://link.springer.com/article/10.1007/s43762-022-00056-9">Download</a></p></li>
-</ul>
-<section id="papers-under-review" class="level4">
-<h4 class="anchored" data-anchor-id="papers-under-review">Papers Under Review</h4>
-<ul>
-<li><strong>Zhang, H., Liu, L., Wang, P., &amp; Zhao, J.</strong><br>
-<em>Depicting the Blurred Regional Boundaries in China Using Individual Mobility Data</em><br>
-<em>Computational Urban Science</em>, under review (Manuscript ID CUSC-D-25-00097).</li>
-</ul>
+<p class="intro-note">
+For the most up-to-date list, see my <a href="https://www.dropbox.com/scl/fo/ghrtsq5to79059lximk01/h?rlkey=cev0uzwgvu4jkus9eo6kkbgn7&amp;dl=0">Curriculum Vitae</a> and <a href="https://scholar.google.com/citations?user=D3PSmFsAAAAJ">Google Scholar</a> profile. <span class="scholar-stat">1,564 citations &nbsp;·&nbsp; Mar 2026</span>
+</p>
+<section id="publications" class="level2 section-heading">
+<h2 class="section-heading anchored" data-anchor-id="publications">Publications</h2>
+<section id="peer-reviewed-articles" class="level3 sub-heading">
+<h3 class="sub-heading anchored" data-anchor-id="peer-reviewed-articles">Peer-Reviewed Articles</h3>
+<div class="pub-entry">
+  <div class="pub-year">2026</div>
+  <div class="pub-body">
+    <div class="pub-title">MINGLE: VLMs for Semantically Complex Region Detection</div>
+    <div class="pub-authors"><strong>Liu, L.</strong>, Kudaeva, A., Cipriano, M., Al Ghannam, F., Tan, F., de Melo, G., &amp; Sevtsuk, A.</div>
+    <div class="pub-venue"><em>Proceedings of the AAAI Conference on Artificial Intelligence</em>, 40(45).</div>
+    <div class="pub-links"><a href="https://doi.org/10.1609/aaai.v40i45.41239">DOI</a></div>
+  </div>
+</div>
+
+<div class="pub-entry">
+  <div class="pub-year">2026</div>
+  <div class="pub-body">
+    <div class="pub-title">Spatial Distribution of Foot Traffic in New York City and Applications for Urban Planning</div>
+    <div class="pub-authors">Sevtsuk, A., Basu, R., <strong>Liu, L.</strong>, Alhassan, A., &amp; Kollar, J.</div>
+    <div class="pub-venue"><em>Nature Cities</em>, 1–10.</div>
+    <div class="pub-links"><a href="https://doi.org/10.1038/s44284-025-00383-y">DOI</a></div>
+  </div>
+</div>
+
+<div class="pub-entry">
+  <div class="pub-year">2026</div>
+  <div class="pub-body">
+    <div class="pub-title">Reconceptualising Regional Boundaries: Depicting Blurred Regions in China Through Individual Mobility Data</div>
+    <div class="pub-authors">Zhang, H., <strong>Liu, L.</strong>, Wang, P., &amp; Zhao, J.</div>
+    <div class="pub-venue"><em>Computational Urban Science</em>, 6(1), 5.</div>
+    <div class="pub-links"><a href="https://doi.org/10.1007/s43762-026-00242-z">DOI</a></div>
+  </div>
+</div>
+
+<div class="pub-entry">
+  <div class="pub-year">2026</div>
+  <div class="pub-body">
+    <div class="pub-title">START: Spatial and Textual Learning for Chart Understanding</div>
+    <div class="pub-authors">Liu, Z., Gao, X., Niu, F., Gao, Q., <strong>Liu, L.</strong>, &amp; Piramuthu, R.</div>
+    <div class="pub-venue"><em>IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)</em>.</div>
+    <div class="pub-links"><a href="https://doi.org/10.48550/arxiv.2512.07186">arXiv</a></div>
+  </div>
+</div>
+
+<div class="pub-entry">
+  <div class="pub-year">2026</div>
+  <div class="pub-body">
+    <div class="pub-title">Decoding Human Safety Perception with Eye-Tracking Systems, Street View Images, and Explainable AI</div>
+    <div class="pub-authors">Kang, Y., Chen, J., <strong>Liu, L.</strong>, Sharma, K., Mazzarello, M., Mora, S., Duarte, F., &amp; Ratti, C.</div>
+    <div class="pub-venue"><em>Computers, Environment and Urban Systems</em>, 123, 102356.</div>
+    <div class="pub-links"><a href="https://doi.org/10.1016/j.compenvurbsys.2025.102356">DOI</a></div>
+  </div>
+</div>
+
+<div class="pub-entry">
+  <div class="pub-year">2025</div>
+  <div class="pub-body">
+    <div class="pub-title">A Sidewalk-Level Urban Heat Risk Assessment Framework Using Pedestrian Mobility and Urban Microclimate Modeling</div>
+    <div class="pub-authors">Colaninno, N., Basu, R., Hosseini, M., Alhassan, A., <strong>Liu, L.</strong>, &amp; Sevtsuk, A.</div>
+    <div class="pub-venue"><em>Environment and Planning B: Urban Analytics and City Science</em>, 52(5), 1071–1090.</div>
+    <div class="pub-links"><a href="https://doi.org/10.1177/23998083241280746">DOI</a></div>
+  </div>
+</div>
+
+<div class="pub-entry">
+  <div class="pub-year">2024</div>
+  <div class="pub-body">
+    <div class="pub-title">Clarity or Confusion: A Review of Computer Vision Street Attributes in Urban Studies and Planning</div>
+    <div class="pub-authors"><strong>Liu, L.</strong>, &amp; Sevtsuk, A.</div>
+    <div class="pub-venue"><em>Cities</em>, 150, 105022.</div>
+    <div class="pub-links"><a href="https://doi.org/10.1016/j.cities.2024.105022">DOI</a></div>
+  </div>
+</div>
+
+<div class="pub-entry">
+  <div class="pub-year">2022</div>
+  <div class="pub-body">
+    <div class="pub-title">An Urban Infrastructure Assessment System Built on Geo-Tagged Images and Machine Learning</div>
+    <div class="pub-authors">Zhang, D., Yi, H., Chen, Y., Jiang, N., Shao, J., &amp; <strong>Liu, L.</strong></div>
+    <div class="pub-venue"><em>Computational Urban Science</em>, 2(1), 1–21.</div>
+    <div class="pub-links"><a href="https://doi.org/10.1007/s43762-022-00056-9">DOI</a></div>
+  </div>
+</div>
+
+<div class="pub-entry">
+  <div class="pub-year">2020</div>
+  <div class="pub-body">
+    <div class="pub-title">The Spatial-Temporal Dynamics of Daily Intercity Mobility in the Yangtze River Delta: An Analysis Using Big Data</div>
+    <div class="pub-authors">Cui, C., Wu, X., <strong>Liu, L.</strong>, &amp; Zhang, W.</div>
+    <div class="pub-venue"><em>Habitat International</em>, 106, 102174.</div>
+    <div class="pub-links"><a href="https://doi.org/10.1016/j.habitatint.2020.102174">DOI</a></div>
+  </div>
+</div>
+
+<div class="pub-entry">
+  <div class="pub-year">2018</div>
+  <div class="pub-body">
+    <div class="pub-title">Measuring Human Perceptions of a Large-Scale Urban Region Using Machine Learning</div>
+    <div class="pub-authors">Zhang, F., Zhou, B., <strong>Liu, L.</strong>, Liu, Y., Fung, H., Lin, H., &amp; Ratti, C.</div>
+    <div class="pub-venue"><em>Landscape and Urban Planning</em>, 180, 148–160.</div>
+    <div class="pub-links"><a href="https://doi.org/10.1016/j.landurbplan.2018.08.020">DOI</a></div>
+  </div>
+</div>
+
+<div class="pub-entry">
+  <div class="pub-year">2018</div>
+  <div class="pub-body">
+    <div class="pub-title">STREETALK: A Navigation System for Pedestrians and Cyclists</div>
+    <div class="pub-authors"><strong>Liu, L.</strong>, Zhang, F., Zhou, B., Wang, Z., &amp; Li, Y.</div>
+    <div class="pub-venue"><em>Landscape Architecture Frontiers</em>, 6(2), 94–101.</div>
+    <div class="pub-links"><a href="https://doi.org/10.15302/j-laf-20180210">DOI</a></div>
+  </div>
+</div>
+
+<div class="pub-entry">
+  <div class="pub-year">2017</div>
+  <div class="pub-body">
+    <div class="pub-title">How Green Are the Streets? An Analysis for Central Areas of Chinese Cities Using Tencent Street View</div>
+    <div class="pub-authors">Long, Y., &amp; <strong>Liu, L.</strong></div>
+    <div class="pub-venue"><em>PLOS ONE</em>, 12(2), e0171110.</div>
+    <div class="pub-links"><a href="https://doi.org/10.1371/journal.pone.0171110">DOI</a></div>
+  </div>
+</div>
+
+<div class="pub-entry">
+  <div class="pub-year">2016</div>
+  <div class="pub-body">
+    <div class="pub-title">C-IMAGE: City Cognitive Mapping through Geo-Tagged Photos</div>
+    <div class="pub-authors"><strong>Liu, L.</strong>, Zhou, B., Zhao, J., &amp; Ryan, B. D.</div>
+    <div class="pub-venue"><em>GeoJournal</em>, 81(6), 817–861.</div>
+    <div class="pub-links"><a href="https://doi.org/10.1007/s10708-016-9739-6">DOI</a></div>
+  </div>
+</div>
+
+<div class="pub-entry">
+  <div class="pub-year">2014</div>
+  <div class="pub-body">
+    <div class="pub-title">Recognizing City Identity via Attribute Analysis of Geo-Tagged Images</div>
+    <div class="pub-authors">Zhou, B., <strong>Liu, L.</strong>, Oliva, A., &amp; Torralba, A.</div>
+    <div class="pub-venue"><em>European Conference on Computer Vision (ECCV)</em>, 519–534.</div>
+    <div class="pub-links"><a href="https://doi.org/10.1007/978-3-319-10578-9_34">DOI</a></div>
+  </div>
+</div>
 </section>
-<section id="preprint" class="level4">
-<h4 class="anchored" data-anchor-id="preprint">Preprint</h4>
-<ul>
-<li><strong>Hosseini, M., Cipriano, M., Eslami, S., Hodczak, D., Liu, L., Sevtsuk, A., &amp; de Melo, G.</strong><br>
-<em>ELSA: Evaluating Localization of Social Activities in Urban Streets</em><br>
-<em>arXiv</em> preprint arXiv:2406.01551 (2024).<br>
-<a href="https://arxiv.org/abs/2406.01551">Download</a></li>
-</ul>
+<section id="book-chapters" class="level3 sub-heading">
+<h3 class="sub-heading anchored" data-anchor-id="book-chapters">Book Chapters</h3>
+<div class="pub-entry">
+  <div class="pub-year">2018</div>
+  <div class="pub-body">
+    <div class="pub-title">The Recognition of CAZ in Shanghai Based on Evaluated POI</div>
+    <div class="pub-authors"><strong>Liu, L.</strong>, &amp; Liu, Z.</div>
+    <div class="pub-venue"><em>Big Data Support of Urban Planning and Management: The Experience in China</em>, 99–112.</div>
+    <div class="pub-links"><a href="https://doi.org/10.1007/978-3-319-51929-6_6">DOI</a></div>
+  </div>
+</div>
 </section>
-<section id="manuscripts-completed-no-submission" class="level4">
-<h4 class="anchored" data-anchor-id="manuscripts-completed-no-submission">Manuscripts Completed (No Submission)</h4>
-<ul>
-<li><p><strong>Liu, L., Gao, X., Gao, Q., &amp; Piramuthu, R.</strong><br>
-<em>Exploring the Challenges of Humanity’s Last Exam Dataset Analysis, Small Model Evaluation, and Enhancement Trials</em><br>
-Completed during Applied Scientist PhD Internship, Amazon AGI, Sunnyvale CA (2025).<br>
-<a href="https://www.dropbox.com/scl/fi/8eshq8b80b9mmp4c19ukt/Exploring_the_Challenges_of_Humanity_s_Last_Exam.pdf?rlkey=qgvc22lbsc78j86apggtklqpv&amp;st=lvqor1f4&amp;dl=0">View upon request</a></p></li>
-<li><p><strong>Liu, L., Gao, X., Gao, Q., &amp; Piramuthu, R.</strong><br>
-<em>ABCxM: A Benchmark for Multimodal Models Playing Scores to Music</em><br>
-Completed during Applied Scientist PhD Internship, Amazon AGI, Sunnyvale CA (2024).<br>
-Developed the first end-to-end benchmark and evaluation framework for notation-to-music generation.<br>
-<a href="https://www.dropbox.com/scl/fi/07pv6n5h6n8c784nlh4k3/liu-liu_1.pdf?rlkey=sf34mrgrm85cz0wq557vgqq4a&amp;st=jznjgqwt&amp;dl=0">View upon request</a></p></li>
-<li><p><strong>Liu, L., Gao, X., Gao, Q., &amp; Piramuthu, R.</strong><br>
-<em>VIS: A Benchmark for Foley Models and Visually Indicative Sounds</em><br>
-Completed during Applied Scientist PhD Internship, Amazon AGI, Sunnyvale CA (2024).<br>
-Created human-annotated, multi-domain datasets for evaluating video-to-audio generation models.<br>
-<a href="https://www.dropbox.com/scl/fi/6idfzeoj59iff4g8wxi69/liu-liu_2.pdf?rlkey=orjuocbjjipuzqjjg6d8ys7yu&amp;st=f6ah28z6&amp;dl=0">View upon request</a></p></li>
-</ul>
-<p><em>Additional papers writtern in Chinese are listed in the </em><a href="https://www.dropbox.com/scl/fo/ghrtsq5to79059lximk01/h?rlkey=cev0uzwgvu4jkus9eo6kkbgn7&amp;dl=0"><em>Curriculum Vitae</em></a> <em>only.</em></p>
+<section id="manuscripts-under-review" class="level3 sub-heading">
+<h3 class="sub-heading anchored" data-anchor-id="manuscripts-under-review">Manuscripts Under Review</h3>
+<div class="pub-entry">
+  <div class="pub-year">2026</div>
+  <div class="pub-body">
+    <div class="pub-title">Sidewalk Occupancy Prediction via 2D-3D Consistency Learning with Pseudo Labels</div>
+    <div class="pub-authors">Ma, Y., Lin, J., <strong>Liu, L.</strong>, He, H., Ricketts, L., Squicciarini, B., Liu, Y., &amp; Zhou, B.</div>
+    <div class="pub-venue"><span class="pub-badge badge-review">Under Review</span> Submitted to the <em>European Conference on Computer Vision (ECCV)</em>.</div>
+  </div>
+</div>
+</section>
+<section id="manuscripts-in-preparation" class="level3 sub-heading">
+<h3 class="sub-heading anchored" data-anchor-id="manuscripts-in-preparation">Manuscripts in Preparation</h3>
+<div class="pub-entry">
+  <div class="pub-year">2026</div>
+  <div class="pub-body">
+    <div class="pub-title">Where Pedestrians Interact: Mapping Street-Level Sociability across U.S. Cities</div>
+    <div class="pub-authors"><strong>Liu, L.</strong>, &amp; Sevtsuk, A.</div>
+    <div class="pub-venue"><span class="pub-badge badge-prep">In Preparation</span></div>
+  </div>
+</div>
+
+<div class="pub-entry">
+  <div class="pub-year">2026</div>
+  <div class="pub-body">
+    <div class="pub-title">Are Richer Visual Representations Always More Human-Aligned in Urban Experience?</div>
+    <div class="pub-authors"><strong>Liu, L.</strong>, Tan, F., &amp; Duarte, F.</div>
+    <div class="pub-venue"><span class="pub-badge badge-prep">In Preparation</span></div>
+  </div>
+</div>
+</section>
+<section id="technical-reports-benchmark-papers" class="level3 sub-heading">
+<h3 class="sub-heading anchored" data-anchor-id="technical-reports-benchmark-papers">Technical Reports &amp; Benchmark Papers</h3>
+<div class="pub-entry">
+  <div class="pub-year">2025</div>
+  <div class="pub-body">
+    <div class="pub-title">Exploring the Challenges of Humanity's Last Exam</div>
+    <div class="pub-authors"><strong>Liu, L.</strong>, Gao, X., Gao, Q., &amp; Piramuthu, R.</div>
+    <div class="pub-venue"><span class="pub-badge badge-tech">Technical Report</span> Applied Scientist PhD Internship, Amazon AGI, Sunnyvale, CA.</div>
+    <div class="pub-links"><a href="https://www.dropbox.com/scl/fi/8eshq8b80b9mmp4c19ukt/Exploring_the_Challenges_of_Humanity_s_Last_Exam.pdf?rlkey=qgvc22lbsc78j86apggtklqpv&amp;st=lvqor1f4&amp;dl=0">View upon request</a></div>
+  </div>
+</div>
+
+<div class="pub-entry">
+  <div class="pub-year">2024</div>
+  <div class="pub-body">
+    <div class="pub-title">ABCxM: A Benchmark for Multimodal Models Playing Scores to Music</div>
+    <div class="pub-authors"><strong>Liu, L.</strong>, Gao, X., Gao, Q., &amp; Piramuthu, R.</div>
+    <div class="pub-venue"><span class="pub-badge badge-tech">Technical Report</span> Applied Scientist PhD Internship, Amazon AGI, Sunnyvale, CA.</div>
+    <div class="pub-links"><a href="https://www.dropbox.com/scl/fi/07pv6n5h6n8c784nlh4k3/liu-liu_1.pdf?rlkey=sf34mrgrm85cz0wq557vgqq4a&amp;st=jznjgqwt&amp;dl=0">View upon request</a></div>
+  </div>
+</div>
+
+<div class="pub-entry">
+  <div class="pub-year">2024</div>
+  <div class="pub-body">
+    <div class="pub-title">VIS: A Benchmark for Foley Models and Visually Indicative Sounds</div>
+    <div class="pub-authors"><strong>Liu, L.</strong>, Gao, X., Gao, Q., &amp; Piramuthu, R.</div>
+    <div class="pub-venue"><span class="pub-badge badge-tech">Technical Report</span> Applied Scientist PhD Internship, Amazon AGI, Sunnyvale, CA.</div>
+    <div class="pub-links"><a href="https://www.dropbox.com/scl/fi/6idfzeoj59iff4g8wxi69/liu-liu_2.pdf?rlkey=orjuocbjjipuzqjjg6d8ys7yu&amp;st=f6ah28z6&amp;dl=0">View upon request</a></div>
+  </div>
+</div>
+
+<div class="pub-entry">
+  <div class="pub-year">2024</div>
+  <div class="pub-body">
+    <div class="pub-title">ELSA: Evaluating Localization of Social Activities in Urban Streets</div>
+    <div class="pub-authors">Hosseini, M., Cipriano, M., Eslami, S., Hodczak, D., <strong>Liu, L.</strong>, Sevtsuk, A., &amp; de Melo, G.</div>
+    <div class="pub-venue"><em>arXiv</em> preprint.</div>
+    <div class="pub-links"><a href="https://doi.org/10.48550/arxiv.2406.01551">arXiv</a></div>
+  </div>
+</div>
+
+<div class="pub-entry">
+  <div class="pub-year">2020</div>
+  <div class="pub-body">
+    <div class="pub-title">Assessing Physical Environment of TOD Communities around Metro Stations: Using Big Data and Machine Learning</div>
+    <div class="pub-authors">Fang, W., <strong>Liu, L.</strong>, &amp; Zhou, J.</div>
+    <div class="pub-venue"><em>World Bank</em>, Washington, DC.</div>
+    <div class="pub-links"><a href="https://doi.org/10.1596/33343">DOI</a></div>
+  </div>
+</div>
+<p><em>Additional papers written in Chinese are listed in the <a href="https://www.dropbox.com/scl/fo/ghrtsq5to79059lximk01/h?rlkey=cev0uzwgvu4jkus9eo6kkbgn7&amp;dl=0">Curriculum Vitae</a> only.</em></p>
 <hr>
 </section>
 </section>
-<section id="service-grants" class="level2">
-<h2 class="anchored" data-anchor-id="service-grants">Service &amp; Grants</h2>
-<ul>
-<li><p><strong>Co-Investigator (Subproject PI)</strong>, National Key Research and Development Program of China — “Multi-dimensional Street Quality Enhancement and Coordinated Control Technology Platform Construction” (Subproject: 2023YFC3805305-03, PI: Liu Liu, Suzhou Citory Technology Co., Ltd.), Funding Period: December 2023 – November 2026.</p></li>
-<li><p><strong>Principal Investigator</strong>, “Observing the ‘Sidewalk Ballet’: Leveraging LMMs to Detect Social Interactions in Large-Scale Urban Imagery Datasets,” ACCESS CIS250088 (2025-2026).<br>
-</p></li>
-<li><p><strong>Co-Principal Investigator</strong>, Moments: Leveraging Continuous Visual and Auditory Experiences to Assess Urban Attraction (CIS250360), Advanced Cyberinfrastructure Coordination Ecosystem: Services &amp; Support (ACCESS), Alexandria, VA, US, Funding Period: October 2025 – October 2026 [↗]</p></li>
-<li><p><strong>Reviewer</strong> for <em>Cities</em>, <em>Nature Cities</em>, <em>Sustainable Cities &amp; Society</em>, <em>Environment &amp; Planning B</em>, <em>Journal of Transport and Land Use</em>, <em>Transactions in Urban Data, Science, and Technology</em>, <em>Annals of the American Association of Geographers</em>, <em>Computational Urban Science</em>, <em>Landscape and Urban Planning</em>, <em>International Journal of Digital Earth</em>, and others (20 + reviews).</p></li>
-</ul>
+<section id="grants-funding" class="level2 section-heading">
+<h2 class="section-heading anchored" data-anchor-id="grants-funding">Grants &amp; Funding</h2>
+<section id="research-grants" class="level3 sub-heading">
+<h3 class="sub-heading anchored" data-anchor-id="research-grants">Research Grants</h3>
+<div class="grant-entry">
+  <span class="grant-role">Principal Investigator</span>
+  "Observing the 'Sidewalk Ballet': Leveraging LMMs to Detect Social Interactions in Large-Scale Urban Imagery Datasets" (CIS250088), Advanced Cyberinfrastructure Coordination Ecosystem: Services &amp; Support (ACCESS), Alexandria, VA.
+  <span class="grant-amount">~$140,000</span>
+  <span class="grant-period">Jan 2025 – Jan 2027</span>
+</div>
+
+<div class="grant-entry">
+  <span class="grant-role">Subproject Principal Investigator</span>
+  National Key Research and Development Program of China — "Multi-dimensional Street Quality Enhancement and Coordinated Control Technology Platform Construction" (Project No. 2023YFC3805305-03).
+  <span class="grant-amount">RMB 1,000,000</span>
+  <span class="grant-period">Dec 2023 – Nov 2026</span>
+</div>
+
+<div class="grant-entry">
+  <span class="grant-role">Co-Principal Investigator</span>
+  "Moments: Leveraging Continuous Visual and Auditory Experiences to Assess Urban Attraction" (CIS250360), Advanced Cyberinfrastructure Coordination Ecosystem: Services &amp; Support (ACCESS), Alexandria, VA.
+  <span class="grant-amount">~$11,000</span>
+  <span class="grant-period">Oct 2025 – Oct 2026</span>
+</div>
+</section>
+<section id="internal-grants" class="level3 sub-heading">
+<h3 class="sub-heading anchored" data-anchor-id="internal-grants">Internal Grants</h3>
+<div class="grant-entry">
+  <span class="grant-role">OGE Conference Grant</span>, Office of Graduate Education, MIT.
+  <span class="grant-amount">$1,000</span>
+  <span class="grant-period">2025</span>
+</div>
+
+<div class="grant-entry">
+  <span class="grant-role">Graduate Student Career Exploration Grant</span>, Career Advising &amp; Professional Development (CAPD), MIT.
+  <span class="grant-amount">$1,500</span>
+  <span class="grant-period">2025</span>
+</div>
+<hr>
+</section>
+</section>
+<section id="academic-service" class="level2 section-heading">
+<h2 class="section-heading anchored" data-anchor-id="academic-service">Academic Service</h2>
+<section id="journal-reviewer" class="level3 sub-heading">
+<h3 class="sub-heading anchored" data-anchor-id="journal-reviewer">Journal Reviewer</h3>
+<div class="service-block">
+  <em>Cities</em>, <em>Nature Cities</em>, <em>Sustainable Cities and Society</em>, <em>Environment and Planning B: Urban Analytics and City Science</em>, <em>Journal of Transport and Land Use</em>, <em>Transactions in Urban Data, Science, and Technology</em>, <em>Annals of the American Association of Geographers</em>, <em>Computational Urban Science</em>, <em>Landscape and Urban Planning</em>, <em>International Journal of Digital Earth</em>, and others (20+ reviews).
+</div>
+</section>
+<section id="committee-other" class="level3 sub-heading">
+<h3 class="sub-heading anchored" data-anchor-id="committee-other">Committee &amp; Other</h3>
+<div class="service-block">
+  <span class="service-label">Committee Member</span>
+  Urban Imagery Committee, Urban Planning Society of China (UPSC)
+</div>
+
+<div class="service-block">
+  <span class="service-label">Listed Expert</span>
+  Shanghai Science and Technology Talent Expert Database
+</div>
+
+<div class="service-block">
+  <span class="service-label">Mentorship</span>
+  Peer Application Support (PASS) — supporting diversity in graduate admissions, MIT (2022, 2023, 2024)
+</div>
+<hr>
+</section>
+</section>
+<section id="design-portfolio" class="level2 section-heading">
+<h2 class="section-heading anchored" data-anchor-id="design-portfolio">Design Portfolio</h2>
+<div style="font-size: 0.9rem; color: #374151; line-height: 1.75; padding: 0.75rem 0;">
+  A collection of architectural and urban design work from my undergraduate years at Tongji University (2008–2011), spanning city redevelopment, regulatory planning, structural design, and community architecture.
+</div>
+
+<div style="margin-top: 0.75rem;">
+  <a href="../portfolio/index.html" style="display: inline-block; font-size: 0.82rem; font-weight: 600; padding: 0.4rem 1rem;
+            background: #1e293b; color: #fff; border-radius: 4px; text-decoration: none;">
+    View Portfolio →
+  </a>
+  <span style="font-size: 0.8rem; color: #94a3b8; margin-left: 0.8rem;">
+    PDF version available upon request
+  </span>
+</div>
 
 
 </section>
