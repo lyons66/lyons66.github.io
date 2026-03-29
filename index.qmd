@@ -12,7 +12,7 @@ about:
     - text: "{{< iconify mdi linkedin size=large >}} LinkedIn"
       href: https://www.linkedin.com/in/liu-liu-08033547/
       
-    - text: "{{< iconify mdi resume size=large >}} CV & Résumé"
+    - text: "{{< iconify mdi resume size=large >}} Curriculum Vitae"
       href: https://www.dropbox.com/scl/fo/ghrtsq5to79059lximk01/h?rlkey=cev0uzwgvu4jkus9eo6kkbgn7&dl=0
       
     - text: "{{< iconify academicons orcid size=large >}} ORCID"
