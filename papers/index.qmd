@@ -199,7 +199,7 @@ h3.sub-heading {
 
 <p class="intro-note">
 For the most up-to-date list, see my <a href="https://www.dropbox.com/scl/fo/ghrtsq5to79059lximk01/h?rlkey=cev0uzwgvu4jkus9eo6kkbgn7&dl=0">Curriculum Vitae</a> and <a href="https://scholar.google.com/citations?user=D3PSmFsAAAAJ">Google Scholar</a> profile.
-<span class="scholar-stat">1,564 citations &nbsp;·&nbsp; Mar 2026</span>
+<span class="scholar-stat">1,680 citations &nbsp;·&nbsp; Jun 2026</span>
 </p>
 
 ## Publications {.section-heading}
@@ -368,22 +368,9 @@ For the most up-to-date list, see my <a href="https://www.dropbox.com/scl/fo/ghr
 <div class="pub-entry">
   <div class="pub-year">2026</div>
   <div class="pub-body">
-    <div class="pub-title">Sidewalk Occupancy Prediction via 2D-3D Consistency Learning with Pseudo Labels</div>
-    <div class="pub-authors">Ma, Y., Lin, J., <strong>Liu, L.</strong>, He, H., Ricketts, L., Squicciarini, B., Liu, Y., &amp; Zhou, B.</div>
-    <div class="pub-venue"><span class="pub-badge badge-review">Under Review</span> Submitted to the <em>European Conference on Computer Vision (ECCV)</em>.</div>
-  </div>
-</div>
-```
-
-### Manuscripts in Preparation {.sub-heading}
-
-```{=html}
-<div class="pub-entry">
-  <div class="pub-year">2026</div>
-  <div class="pub-body">
-    <div class="pub-title">Where Pedestrians Interact: Mapping Street-Level Sociability across U.S. Cities</div>
+    <div class="pub-title">A Vision-Language Framework for Measuring Social Life on Sidewalks</div>
     <div class="pub-authors"><strong>Liu, L.</strong>, &amp; Sevtsuk, A.</div>
-    <div class="pub-venue"><span class="pub-badge badge-prep">In Preparation</span></div>
+    <div class="pub-venue"><span class="pub-badge badge-review">Under Review</span> Submitted to <em>Computers, Environment and Urban Systems</em>.</div>
   </div>
 </div>
 
@@ -392,7 +379,16 @@ For the most up-to-date list, see my <a href="https://www.dropbox.com/scl/fo/ghr
   <div class="pub-body">
     <div class="pub-title">Are Richer Visual Representations Always More Human-Aligned in Urban Experience?</div>
     <div class="pub-authors"><strong>Liu, L.</strong>, Tan, F., &amp; Duarte, F.</div>
-    <div class="pub-venue"><span class="pub-badge badge-prep">In Preparation</span></div>
+    <div class="pub-venue"><span class="pub-badge badge-review">Under Review</span> Submitted to <em>Scientific Reports</em>.</div>
+  </div>
+</div>
+
+<div class="pub-entry">
+  <div class="pub-year">2026</div>
+  <div class="pub-body">
+    <div class="pub-title">Monocular 3D Occupancy Perception for Robots on Sidewalks via Hybrid 2D–3D Learning</div>
+    <div class="pub-authors">Ma, Y., Lin, J., <strong>Liu, L.</strong>, He, H., Ricketts, L., Squicciarini, B., Liu, Y., &amp; Zhou, B.</div>
+    <div class="pub-venue"><span class="pub-badge badge-review">Under Review</span> Submitted to the <em>Conference on Robot Learning (CoRL)</em>.</div>
   </div>
 </div>
 ```
@@ -463,7 +459,7 @@ For the most up-to-date list, see my <a href="https://www.dropbox.com/scl/fo/ghr
 <div class="grant-entry">
   <span class="grant-role">Principal Investigator</span>
   "Observing the 'Sidewalk Ballet': Leveraging LMMs to Detect Social Interactions in Large-Scale Urban Imagery Datasets" (CIS250088), Advanced Cyberinfrastructure Coordination Ecosystem: Services &amp; Support (ACCESS), Alexandria, VA.
-  <span class="grant-amount">~$140,000</span>
+  <span class="grant-amount">~$300,000*</span>
   <span class="grant-period">Jan 2025 – Jan 2027</span>
 </div>
 
@@ -477,14 +473,30 @@ For the most up-to-date list, see my <a href="https://www.dropbox.com/scl/fo/ghr
 <div class="grant-entry">
   <span class="grant-role">Co-Principal Investigator</span>
   "Moments: Leveraging Continuous Visual and Auditory Experiences to Assess Urban Attraction" (CIS250360), Advanced Cyberinfrastructure Coordination Ecosystem: Services &amp; Support (ACCESS), Alexandria, VA.
-  <span class="grant-amount">~$11,000</span>
+  <span class="grant-amount">~$36,000*</span>
   <span class="grant-period">Oct 2025 – Oct 2026</span>
 </div>
+
+<div class="grant-entry">
+  <span class="grant-role">Co-Principal Investigator</span>
+  "Pedestrian Volume Estimation Across Maine Towns" (CIS260972), Advanced Cyberinfrastructure Coordination Ecosystem: Services &amp; Support (ACCESS), Alexandria, VA.
+  <span class="grant-period">Mar 2026 – Mar 2027</span>
+</div>
 ```
+
+<p class="intro-note" style="margin-top: 0.6rem; margin-bottom: 0;">
+*ACCESS awards are allocations of high-performance computing (GPU) resources; the dollar figures are the estimated value of the compute granted, not cash funding.
+</p>
 
 ### Internal Grants {.sub-heading}
 
 ```{=html}
+<div class="grant-entry">
+  <span class="grant-role">Sagalyn-Hack Grant</span>, Department of Urban Studies and Planning (DUSP), MIT.
+  <span class="grant-amount">$10,000</span>
+  <span class="grant-period">2026</span>
+</div>
+
 <div class="grant-entry">
   <span class="grant-role">OGE Conference Grant</span>, Office of Graduate Education, MIT.
   <span class="grant-amount">$1,000</span>
