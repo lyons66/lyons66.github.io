@@ -445,63 +445,63 @@
     "href": "projects/streetalk/index.html",
     "title": "StreeTalk Project",
     "section": "",
-    "text": "TipPROJECT BRIEF\n\n\n\nUsing the perceptional map as a foundation, along with additional geo information such as points of interest (POI) and mobility data, I developed a web application that enables tourists or night runners to select various pedestrian routes within the city. Furthermore, I leveraged the vast dataset of over 100,000,000 photos to calculate safety scores for the entire country. These scores were subsequently sold to Daimler Innovative Lab the following year, providing them with valuable insights and information for their initiatives.\n\nZhang, F., Zhou, B., Liu, L., Liu, Y., Fung, H. H., Lin, H., & Ratti, C. “Measuring human perceptions of a large-scale urban region using machine learning” Landscape and Urban Planning.\nLiu, L., Zhang, F., Zhou, B., Wang, Z., & Li, Y. “STREETALK: A NAVIGATION SYSTEM FOR PEDESTRIANS AND CYCLISTS” Landscape Architecture Frontiers."
+    "text": "TipPROJECT BRIEF\n\n\n\nStreeTalk links street-view imagery, human perception data, and computer vision to pedestrian route choice. I led the development of a perception-modeling and routing workflow that estimated perceived street safety and allowed users to compare walking routes using both distance and visual-environment scores. The broader data pipeline processed more than 100 million images and produced perceived-safety maps for more than 300 cities in China. In 2018, the work was adapted for a commissioned application with Daimler Innovation Lab.\n\nZhang, F., Zhou, B., Liu, L., Liu, Y., Fung, H. H., Lin, H., & Ratti, C. “Measuring human perceptions of a large-scale urban region using machine learning.” Landscape and Urban Planning.\nLiu, L., Zhang, F., Zhou, B., Wang, Z., & Li, Y. “StreeTalk: A navigation system for pedestrians and cyclists.” Landscape Architecture Frontiers."
   },
   {
     "objectID": "projects/streetalk/index.html#the-idea",
     "href": "projects/streetalk/index.html#the-idea",
     "title": "StreeTalk Project",
     "section": "# The Idea",
-    "text": "# The Idea\nA personal experience of a terrible pedestrian encounter inspired this project. Motivated to improve pedestrian safety, I developed an algorithm that calculates safety scores by analyzing the visual context of street views. Using this algorithm, I created a pedestrian routing web application that determines routes based on the average safety score along each road. The aim was to provide users with safer and more secure paths for their journeys, enhancing the overall pedestrian experience in urban areas.\n\nBack in 2016, I had just relocated to a new apartment and planned to meet a friend for a meal nearby. Unfortunately, Amap suggested a rather unpleasant walking route. The path was lined with crumbling roads, dimly lit areas, high walls on either side and even many slums concealed behind these walls, emitting an offensive odor."
+    "text": "# The Idea\nThe project began with a practical route-choice problem: a navigation app suggested a short walking route whose physical environment felt poorly maintained, enclosed, and uncomfortable. That experience raised a broader question: could street-view imagery and human perception data help a routing system account for the visual experience of walking, rather than distance alone?\n\nIn 2016, shortly after I moved to a new apartment in Shanghai, Amap suggested a walking route to a nearby restaurant. The suggested route included deteriorated pavement, limited lighting, long blank walls, and few visible signs of pedestrian activity. These conditions motivated an experiment in modeling perceived street safety and incorporating it into pedestrian navigation."
   },
   {
-    "objectID": "projects/streetalk/index.html#modeling-the-perceptional-predictor",
-    "href": "projects/streetalk/index.html#modeling-the-perceptional-predictor",
+    "objectID": "projects/streetalk/index.html#modeling-perceived-street-safety",
+    "href": "projects/streetalk/index.html#modeling-perceived-street-safety",
     "title": "StreeTalk Project",
-    "section": "# Modeling the perceptional predictor",
-    "text": "# Modeling the perceptional predictor\nThis experience sparked my project’s concept: how many unsafe streets still exist within the urban region of Shanghai? To address this question, I trained a safety perception classifier and developed software that could automatically evaluate the safety score of a street. This led to the creation of a comprehensive safety map of Shanghai."
+    "section": "# Modeling Perceived Street Safety",
+    "text": "# Modeling Perceived Street Safety\nI trained a street-view classifier to estimate perceived-safety scores and used its outputs to build a citywide perception map of Shanghai. The resulting software connected image-based scores to street segments, creating the spatial layer required for perception-aware pedestrian routing."
   },
   {
     "objectID": "projects/streetalk/index.html#demo-video",
     "href": "projects/streetalk/index.html#demo-video",
     "title": "StreeTalk Project",
     "section": "# Demo Video",
-    "text": "# Demo Video\nBelow is a demo video showing how the score is applied for pedestrian routing."
+    "text": "# Demo Video\nBelow is a demo video showing how the perceived-safety score is applied for pedestrian routing."
   },
   {
     "objectID": "projects/streetalk/index.html#revisit-the-dataset-and-algorithm",
     "href": "projects/streetalk/index.html#revisit-the-dataset-and-algorithm",
     "title": "StreeTalk Project",
     "section": "# Revisit the Dataset and Algorithm",
-    "text": "# Revisit the Dataset and Algorithm"
+    "text": "# Revisit the Dataset and Algorithm\nThe following sections document a later technical revisit of the perception datasets and modeling workflow used in this line of research."
   },
   {
     "objectID": "projects/streetalk/index.html#place-pulse-2.0",
     "href": "projects/streetalk/index.html#place-pulse-2.0",
     "title": "StreeTalk Project",
     "section": "Place Pulse 2.0",
-    "text": "Place Pulse 2.0\nA significant source of street perception data is the “Place Pulse” project. It collects public feedback on various urban areas using a pairwise labeling interface. Initiated in 2010, the project’s website showcases roughly 4,000 images from four cities: Boston, New York, Linz, and Salzburg. As shown in Figure 1, it gauges public perception across six dimensions. Participants are presented with pairs of street views and asked, “Which image looks safer?”\nOver the years, the dataset was enhanced to version 2.0, which includes 110,998 random street-view images gathered from 56 cities in 28 countries across six continents. From 2013 to 2016, a whopping 81,630 online volunteers took part in the survey, providing over 1,170,000 pairwise comparisons. Given the immense diversity and volume of image samples, participants, and corresponding responses, this dataset closely aligns with general human perceptual preferences regarding urban scenes.\n\n\n\n\nThe top 10 streetview in beautiful Trueskill scores\n\n\n\n\n\nThe bottom 10 streetview in beautiful Trueskill scores"
+    "text": "Place Pulse 2.0\nA significant source of street perception data is the “Place Pulse” project. It collects public feedback on various urban areas using a pairwise labeling interface. Initiated in 2010, the project’s website showcases roughly 4,000 images from four cities: Boston, New York, Linz, and Salzburg. As shown in Figure 1, it gauges public perception across six dimensions. Participants are presented with pairs of street views and asked, “Which image looks safer?”\nOver the years, the dataset was enhanced to version 2.0, which includes 110,998 random street-view images gathered from 56 cities in 28 countries across six continents. From 2013 to 2016, 81,630 online participants took part in the survey, providing over 1,170,000 pairwise comparisons. Its geographic and participant coverage made it a useful large-scale benchmark for studying perceived qualities of urban scenes, while still requiring care when transferring models across local contexts.\n\n\n\n\nThe top 10 street-view images by “beautiful” TrueSkill scores\n\n\n\n\n\nThe bottom 10 street-view images by “beautiful” TrueSkill scores"
   },
   {
     "objectID": "projects/streetalk/index.html#binary-svm-for-baseline-measurement",
     "href": "projects/streetalk/index.html#binary-svm-for-baseline-measurement",
     "title": "StreeTalk Project",
     "section": "Binary SVM for Baseline Measurement",
-    "text": "Binary SVM for Baseline Measurement\nAs previously discussed, the simplest and most effective method involves training a binary classification model to obtain a predictive model for safety score. Here, we display the accuracy results of binary SVM (Support Vector Machine) for all six models, across six dimensions."
+    "text": "Binary SVM for Baseline Measurement\nAs a baseline, I trained binary support vector machine classifiers for the six perception dimensions and compared their predictive accuracy. The accuracy results for all six models are shown below."
   },
   {
-    "objectID": "projects/streetalk/index.html#the-cams-of-street-views",
-    "href": "projects/streetalk/index.html#the-cams-of-street-views",
+    "objectID": "projects/streetalk/index.html#class-activation-maps-for-street-view-images",
+    "href": "projects/streetalk/index.html#class-activation-maps-for-street-view-images",
     "title": "StreeTalk Project",
-    "section": "The CAMs of street views",
-    "text": "The CAMs of street views\nBelow are the negative and positive samples after adopting the updated models.\n\n\n\nThe CAMs of street view with negative safe scores\n\n\n\n\n\nThe CAMs of street view with positive safe scores"
+    "section": "Class Activation Maps for Street-View Images",
+    "text": "Class Activation Maps for Street-View Images\nClass activation maps provide a visual diagnostic of the image regions contributing to positive and negative model predictions. They help inspect model attention, but should not be treated as direct evidence of human attention or causal environmental effects. Below are negative and positive samples from the updated models.\n\n\n\nClass activation maps for street views with low predicted perceived-safety scores\n\n\n\n\n\nClass activation maps for street views with high predicted perceived-safety scores"
   },
   {
     "objectID": "projects/index.html",
     "href": "projects/index.html",
     "title": "Projects",
     "section": "",
-    "text": "For more projects, please visit the visualization page.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nMINGLE\n\n\n\ncomputer vision\n\nAI\n\nurban design\n\n\n\n\n\n\n\nLiu Liu\n\n\nJan, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nSidewalk Ballet\n\n\n\ncomputer vision\n\nurban design\n\n\n\n\n\n\n\nLiu Liu\n\n\nMay, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nVibeScan\n\n\n\ncomputer vision\n\nurban design\n\npoi\n\ntools\n\n\n\n\n\n\n\nLiu Liu\n\n\nFeb, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\nRoad Assessment in Ulaanbaatar\n\n\n\ncomputer vision\n\nurban planning\n\ntools\n\n\n\n\n\n\n\nLiu Liu, Ding Zhang, Hongdu Yi\n\n\nOct, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\nAI-Aided Camera App\n\n\n\ncomputer vision\n\ntools\n\n\n\n\n\n\n\nLiu Liu, Ding Zhang, Xin Xiong\n\n\nMay, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nRecognizing Central Activity Zones\n\n\n\nurban planning\n\npoi\n\nvisualization\n\n\n\n\n\n\n\nLiu Liu, Zhuqing Liu\n\n\nJan, 2018\n\n\n\n\n\n\n\n\n\n\n\n\n\nCityEye WeChat mini APP\n\n\n\ncomputer vision\n\ntools\n\n\n\n\n\n\n\nLiu Liu, Ding Zhang, Jinxing Shao\n\n\nJan, 2018\n\n\n\n\n\n\n\n\n\n\n\n\n\nRiver View Analysis\n\n\n\ncomputer vision\n\nurban design\n\n\n\n\n\n\n\nLiu Liu\n\n\nMay, 2017\n\n\n\n\n\n\n\n\n\n\n\n\n\nStreeTalk Project\n\n\n\ncomputer vision\n\nurban design\n\n\n\n\n\n\n\nLiu Liu, Bolei Zhou, Fan Zhang\n\n\nOct, 2016\n\n\n\n\n\n\n\n\n\n\n\n\n\n1 Billion LBSN Data\n\n\n\ncellphone data\n\nurban planning\n\n\n\n\n\n\n\nLiu Liu, Di An\n\n\nMar, 2015\n\n\n\n\n\n\n\n\n\n\n\n\n\nC-IMAGE Project\n\n\n\ncomputer vision\n\nvisualization\n\n\n\n\n\n\n\nLiu Liu, Bolei Zhou\n\n\nMay, 2014\n\n\n\n\n\n\nNo matching items"
+    "text": "For more projects, please visit the visualization page.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nMINGLE\n\n\n\ncomputer vision\n\nAI\n\nurban design\n\n\n\n\n\n\n\nLiu Liu\n\n\nJan, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nSidewalk Ballet\n\n\n\ncomputer vision\n\nurban design\n\n\n\n\n\n\n\nLiu Liu\n\n\nMay, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nVibeScan\n\n\n\ncomputer vision\n\nurban design\n\npoi\n\ntools\n\n\n\nClient: Hongkong Land  ·  Project context: West Bund Financial City spatial benchmarking  ·  Role: Project Lead; Founder and…\n\n\n\nLiu Liu\n\n\nFeb, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\nRoad Assessment in Ulaanbaatar\n\n\n\ncomputer vision\n\nurban planning\n\ntools\n\n\n\n\n\n\n\nLiu Liu, Ding Zhang, Hongdu Yi\n\n\nOct, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\nAI-Aided Camera App\n\n\n\ncomputer vision\n\ntools\n\n\n\n\n\n\n\nLiu Liu, Ding Zhang, Xin Xiong\n\n\nMay, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nRecognizing Central Activity Zones\n\n\n\nurban planning\n\npoi\n\nvisualization\n\n\n\n\n\n\n\nLiu Liu, Zhuqing Liu\n\n\nJan, 2018\n\n\n\n\n\n\n\n\n\n\n\n\n\nCityEye WeChat mini APP\n\n\n\ncomputer vision\n\ntools\n\n\n\n\n\n\n\nLiu Liu, Ding Zhang, Jinxing Shao\n\n\nJan, 2018\n\n\n\n\n\n\n\n\n\n\n\n\n\nRiver View Analysis\n\n\n\ncomputer vision\n\nurban design\n\n\n\n\n\n\n\nLiu Liu\n\n\nMay, 2017\n\n\n\n\n\n\n\n\n\n\n\n\n\nStreeTalk Project\n\n\n\ncomputer vision\n\nurban design\n\n\n\nRole: Project Lead; Founder and Research Director, CitoryTech  ·  Client application: Daimler Innovation Lab\n\n\n\nLiu Liu, Bolei Zhou, Fan Zhang\n\n\nOct, 2016\n\n\n\n\n\n\n\n\n\n\n\n\n\n1 Billion LBSN Data\n\n\n\ncellphone data\n\nurban planning\n\n\n\n\n\n\n\nLiu Liu, Di An\n\n\nMar, 2015\n\n\n\n\n\n\n\n\n\n\n\n\n\nC-IMAGE Project\n\n\n\ncomputer vision\n\nvisualization\n\n\n\n\n\n\n\nLiu Liu, Bolei Zhou\n\n\nMay, 2014\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/sidewalk_ballet/index.html",
@@ -515,28 +515,42 @@
     "href": "projects/vibescan/index.html",
     "title": "VibeScan",
     "section": "",
-    "text": "TipPROJECT BRIEF\n\n\n\nThis project aimed at developing a benchmarking and customer analysis system for commercial areas. Leveraging online feedback, data mining, and AI, it evaluates spaces against industry standards and projects like Miami Design District and Hudson Yards. This approach aids in strategic decision-making across planning, design, and operations, enhancing commercial viability and consumer engagement.\nFor a detailed demonstration of the project, please refer to the slides: Phase I and Phase II."
+    "text": "TipPROJECT BRIEF\n\n\n\nVibeScan is a commercial-district benchmarking and customer-analysis system developed through CitoryTech for Hongkong Land’s West Bund Financial City work. I led the integration of social-media comments and images, points of interest, and spatial data to compare how visitors responded to design, programming, amenities, and operations across international and Chinese commercial districts. Phase I analyzed approximately 14 million records from international reference cases; Phase II analyzed approximately 7 million records from recently developed Chinese cases. The resulting evidence supported planning, design, tenant strategy, and operational decision-making.\nFor a detailed demonstration of the project, please refer to the slides: Phase I and Phase II."
   },
   {
     "objectID": "projects/vibescan/index.html#the-idea",
     "href": "projects/vibescan/index.html#the-idea",
     "title": "VibeScan",
     "section": "# The Idea",
-    "text": "# The Idea\nIs it possible to gauge public sentiment towards the operational strategies of commercial business sites, particularly in an era where enticing offline shopping has become a paramount challenge for many shopping districts? These areas have significantly invested in enhancing their landscape’s appeal. The question arises: how can we measure the return on investment for these temporary or even permanent enhancements and infrastructure in terms of value to developers? Evaluating the success and failure of space design is crucial. With the wealth of information available on social media platforms, can we harness this publicly accessible data and compile it into a comprehensive public opinion pool? By identifying effective strategies and contrasting them with unsuccessful examples, we can glean insights that are invaluable for future decision-making processes."
+    "text": "# The Idea\nCommercial districts invest heavily in public-space design, temporary installations, events, and amenities, but conventional performance indicators reveal little about which interventions attract attention, encourage visits, or shape public response. VibeScan treats publicly available online comments and images as an additional evidence source for comparing spatial and operational strategies across districts. The aim is not to replace surveys or financial analysis, but to connect observable public response with specific places, facilities, and design decisions."
   },
   {
     "objectID": "projects/vibescan/index.html#data-process",
     "href": "projects/vibescan/index.html#data-process",
     "title": "VibeScan",
     "section": "# Data Process",
-    "text": "# Data Process\nTons of the data from social media are collected from a wide variety of both China and US social media platform. We usually follows comments and photos from user. For the shopping area cases in Phase I, we mainly collected 14M records (Famous international cases), and 7M in Phase II (Domestic newly built cases)."
+    "text": "# Data Process\nThe workflow collected publicly available comments and user-contributed images from multiple social-media platforms in China and the United States. Records were cleaned, geolocated where possible, and organized around districts, destinations, facilities, events, and recurring topics. Phase I analyzed approximately 14 million records from established international cases; Phase II analyzed approximately 7 million records from recently developed Chinese cases. The project combined text mining, image analysis, point-of-interest data, and spatial comparison to produce district-level benchmarks."
   },
   {
     "objectID": "projects/vibescan/index.html#key-results",
     "href": "projects/vibescan/index.html#key-results",
     "title": "VibeScan",
     "section": "# Key Results",
-    "text": "# Key Results\n\nAnalysis of Miami District\n\nHot search index of each platform of Miami District.\n\n\n\nBrand check-in rhythm.\n\n\n\nThe investment of leading merchants in space design and the resulting influence of influcers checking in.\n\n\n\n\n\nUsage and comparison of public facilities in the main space.\n\n\n\n\n\n\nAnalysis of Hudson Yards\n\nHot search index of each platform of Miami District.\n\n\n\nPrediction of the structure of the visiting crowd\n\n\n\nThe analysis of social comments on Vessel.\n\n\n\nThe analysis of social comments on Edge.\n\n\n\nThe analysis of social comments on the Shed.\n\n\n\nFor a detailed demonstration of the project, please refer to the slides: Phase I and Phase II."
+    "text": "# Key Results"
+  },
+  {
+    "objectID": "projects/vibescan/index.html#miami-design-district-benchmark",
+    "href": "projects/vibescan/index.html#miami-design-district-benchmark",
+    "title": "VibeScan",
+    "section": "Miami Design District Benchmark",
+    "text": "Miami Design District Benchmark\n\nSearch Interest Across Platforms\nSearch-index trends were compared across Chinese and U.S. platforms to show how much online attention the district attracts on each channel and how that attention changes over time. This helps operators understand where public conversation about a district actually takes place.\n\n\n\nBrand and Visitor Check-In Patterns\nCheck-in records were organized by brand and over time to show which tenants draw visits and how visitor activity fluctuates. The comparison supports tenant-mix and programming discussions by making each brand’s drawing power visible.\n\n\n\nSpatial Investments and Influencer Attention\nThese charts relate leading merchants’ investments in space and installation design to subsequent check-in and creator/influencer activity. The comparison is descriptive: it shows which spatial investments coincided with online attention, without asserting a causal effect.\n\n\n\n\n\nUse of Public Amenities\nComments and images referencing public facilities in the district’s main spaces were used to compare how amenities are actually used and discussed by visitors, informing decisions about which facilities merit investment."
+  },
+  {
+    "objectID": "projects/vibescan/index.html#hudson-yards-benchmark",
+    "href": "projects/vibescan/index.html#hudson-yards-benchmark",
+    "title": "VibeScan",
+    "section": "Hudson Yards Benchmark",
+    "text": "Hudson Yards Benchmark\n\nSearch Interest Across Platforms\nSearch-index trends for Hudson Yards were compared across platforms, parallel to the Miami Design District analysis, to benchmark the district’s online visibility.\n\n\n\nEstimated Visitor Composition\nPublicly available profile and content signals were used to estimate the composition of the visiting population, supporting comparisons of which audiences each district attracts.\n\n\n\nPublic Response to Vessel\nComments mentioning Vessel were mined for recurring topics and sentiment, showing how the public responded to the district’s signature landmark.\n\n\n\nPublic Response to Edge\nComments mentioning the Edge observation deck were analyzed the same way, indicating how a paid attraction contributes to the district’s public profile.\n\n\n\nPublic Response to The Shed\nComments mentioning The Shed were analyzed to show how a cultural venue shapes public response to the district."
   },
   {
     "objectID": "presentations/index.html",

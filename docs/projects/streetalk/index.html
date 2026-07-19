@@ -9,6 +9,7 @@
 <meta name="author" content="Liu Liu">
 <meta name="author" content="Bolei Zhou">
 <meta name="author" content="Fan Zhang">
+<meta name="description" content="Role: Project Lead; Founder and Research Director, CitoryTech &nbsp;·&nbsp; Client application: Daimler Innovation Lab">
 
 <title>StreeTalk Project – Liu Liu</title>
 <style>
@@ -146,8 +147,13 @@ background-size: cover;
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-left">
       <h1 class="title">StreeTalk Project</h1>
-            <p class="subtitle lead">Measuring street perceptional scores</p>
-                                <div class="quarto-categories">
+            <p class="subtitle lead">Street-View Perception Modeling for Pedestrian Routing</p>
+                  <div>
+        <div class="description">
+          Role: Project Lead; Founder and Research Director, CitoryTech &nbsp;·&nbsp; Client application: Daimler Innovation Lab
+        </div>
+      </div>
+                          <div class="quarto-categories">
                 <div class="quarto-category">computer vision</div>
                 <div class="quarto-category">urban design</div>
               </div>
@@ -186,13 +192,13 @@ background-size: cover;
    
   <ul>
   <li><a href="#the-idea" id="toc-the-idea" class="nav-link active" data-scroll-target="#the-idea"># The Idea</a></li>
-  <li><a href="#modeling-the-perceptional-predictor" id="toc-modeling-the-perceptional-predictor" class="nav-link" data-scroll-target="#modeling-the-perceptional-predictor"># Modeling the perceptional predictor</a></li>
+  <li><a href="#modeling-perceived-street-safety" id="toc-modeling-perceived-street-safety" class="nav-link" data-scroll-target="#modeling-perceived-street-safety"># Modeling Perceived Street Safety</a></li>
   <li><a href="#demo-video" id="toc-demo-video" class="nav-link" data-scroll-target="#demo-video"># Demo Video</a></li>
   <li><a href="#revisit-the-dataset-and-algorithm" id="toc-revisit-the-dataset-and-algorithm" class="nav-link" data-scroll-target="#revisit-the-dataset-and-algorithm"># Revisit the Dataset and Algorithm</a></li>
   <li><a href="#place-pulse-2.0" id="toc-place-pulse-2.0" class="nav-link" data-scroll-target="#place-pulse-2.0">Place Pulse 2.0</a></li>
   <li><a href="#binary-svm-for-baseline-measurement" id="toc-binary-svm-for-baseline-measurement" class="nav-link" data-scroll-target="#binary-svm-for-baseline-measurement">Binary SVM for Baseline Measurement</a></li>
-  <li><a href="#the-cams-of-street-views" id="toc-the-cams-of-street-views" class="nav-link" data-scroll-target="#the-cams-of-street-views">The CAMs of street views</a></li>
-  <li><a href="#collaboration-with-diamler" id="toc-collaboration-with-diamler" class="nav-link" data-scroll-target="#collaboration-with-diamler">Collaboration with Diamler</a></li>
+  <li><a href="#class-activation-maps-for-street-view-images" id="toc-class-activation-maps-for-street-view-images" class="nav-link" data-scroll-target="#class-activation-maps-for-street-view-images">Class Activation Maps for Street-View Images</a></li>
+  <li><a href="#collaboration-with-daimler" id="toc-collaboration-with-daimler" class="nav-link" data-scroll-target="#collaboration-with-daimler">Collaboration with Daimler</a></li>
   </ul>
 </nav>
     </div>
@@ -219,86 +225,87 @@ background-size: cover;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Using the perceptional map as a foundation, along with additional geo information such as points of interest (POI) and mobility data, I developed a web application that enables tourists or night runners to select various pedestrian routes within the city. Furthermore, I leveraged the vast dataset of over 100,000,000 photos to calculate safety scores for the entire country. These scores were subsequently sold to Daimler Innovative Lab the following year, providing them with valuable insights and information for their initiatives.</p>
+<p>StreeTalk links street-view imagery, human perception data, and computer vision to pedestrian route choice. I led the development of a perception-modeling and routing workflow that estimated perceived street safety and allowed users to compare walking routes using both distance and visual-environment scores. The broader data pipeline processed more than 100 million images and produced perceived-safety maps for more than 300 cities in China. In 2018, the work was adapted for a commissioned application with Daimler Innovation Lab.</p>
 <ul>
-<li><p><a href="https://www.sciencedirect.com/science/article/pii/S0169204618308545">Zhang, F., Zhou, B., Liu, L., Liu, Y., Fung, H. H., Lin, H., &amp; Ratti, C. “Measuring human perceptions of a large-scale urban region using machine learning” Landscape and Urban Planning.</a></p></li>
-<li><p><a href="https://oversea.cnki.net/knavi/JournalDetail?pcode=CJFD&amp;pykm=jgsj">Liu, L., Zhang, F., Zhou, B., Wang, Z., &amp; Li, Y. “STREETALK: A NAVIGATION SYSTEM FOR PEDESTRIANS AND CYCLISTS” Landscape Architecture Frontiers.</a></p></li>
+<li><p><a href="https://www.sciencedirect.com/science/article/pii/S0169204618308545">Zhang, F., Zhou, B., Liu, L., Liu, Y., Fung, H. H., Lin, H., &amp; Ratti, C. “Measuring human perceptions of a large-scale urban region using machine learning.” <em>Landscape and Urban Planning</em>.</a></p></li>
+<li><p><a href="https://oversea.cnki.net/knavi/JournalDetail?pcode=CJFD&amp;pykm=jgsj">Liu, L., Zhang, F., Zhou, B., Wang, Z., &amp; Li, Y. “StreeTalk: A navigation system for pedestrians and cyclists.” <em>Landscape Architecture Frontiers</em>.</a></p></li>
 </ul>
 </div>
 </div>
 <section id="the-idea" class="level2">
 <h2 class="anchored" data-anchor-id="the-idea"># The Idea</h2>
-<p>A personal experience of a terrible pedestrian encounter inspired this project. Motivated to improve pedestrian safety, I developed an algorithm that calculates safety scores by analyzing the visual context of street views. Using this algorithm, I created a pedestrian routing web application that determines routes based on the average safety score along each road. The aim was to provide users with safer and more secure paths for their journeys, enhancing the overall pedestrian experience in urban areas.</p>
+<p>The project began with a practical route-choice problem: a navigation app suggested a short walking route whose physical environment felt poorly maintained, enclosed, and uncomfortable. That experience raised a broader question: could street-view imagery and human perception data help a routing system account for the visual experience of walking, rather than distance alone?</p>
 <p><img src="streetalk_cover.jpg" style="width: 100%;"></p>
-<p>Back in 2016, I had just relocated to a new apartment and planned to meet a friend for a meal nearby. Unfortunately, Amap suggested a rather unpleasant walking route. The path was lined with crumbling roads, dimly lit areas, high walls on either side and even many slums concealed behind these walls, emitting an offensive odor.</p>
+<p>In 2016, shortly after I moved to a new apartment in Shanghai, Amap suggested a walking route to a nearby restaurant. The suggested route included deteriorated pavement, limited lighting, long blank walls, and few visible signs of pedestrian activity. These conditions motivated an experiment in modeling perceived street safety and incorporating it into pedestrian navigation.</p>
 <p><img src="st1.jpg" style="width: 100%;"></p>
 </section>
-<section id="modeling-the-perceptional-predictor" class="level2">
-<h2 class="anchored" data-anchor-id="modeling-the-perceptional-predictor"># Modeling the perceptional predictor</h2>
-<p>This experience sparked my project’s concept: how many unsafe streets still exist within the urban region of Shanghai? To address this question, I trained a safety perception classifier and developed software that could automatically evaluate the safety score of a street. This led to the creation of a comprehensive safety map of Shanghai.</p>
+<section id="modeling-perceived-street-safety" class="level2">
+<h2 class="anchored" data-anchor-id="modeling-perceived-street-safety"># Modeling Perceived Street Safety</h2>
+<p>I trained a street-view classifier to estimate perceived-safety scores and used its outputs to build a citywide perception map of Shanghai. The resulting software connected image-based scores to street segments, creating the spatial layer required for perception-aware pedestrian routing.</p>
 <p><img src="st2.jpg" style="width: 100%;"></p>
 </section>
 <section id="demo-video" class="level2">
 <h2 class="anchored" data-anchor-id="demo-video"># Demo Video</h2>
-<p>Below is a demo video showing how the score is applied for pedestrian routing.</p>
+<p>Below is a demo video showing how the perceived-safety score is applied for pedestrian routing.</p>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/lUATGLRVE5E" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 </section>
 <section id="revisit-the-dataset-and-algorithm" class="level2">
 <h2 class="anchored" data-anchor-id="revisit-the-dataset-and-algorithm"># Revisit the Dataset and Algorithm</h2>
+<p>The following sections document a later technical revisit of the perception datasets and modeling workflow used in this line of research.</p>
 </section>
 <section id="place-pulse-2.0" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="place-pulse-2.0">Place Pulse 2.0</h2>
 <p>A significant source of street perception data is the <a href="https://centerforcollectivelearning.org/urbanperception">“Place Pulse” project</a>. It collects public feedback on various urban areas using a pairwise labeling interface. Initiated in 2010, the project’s website showcases roughly 4,000 images from four cities: Boston, New York, Linz, and Salzburg. As shown in Figure 1, it gauges public perception across six dimensions. Participants are presented with pairs of street views and asked, “Which image looks safer?”</p>
-<p>Over the years, the dataset was enhanced to version 2.0, which includes 110,998 random street-view images gathered from 56 cities in 28 countries across six continents. From 2013 to 2016, a whopping 81,630 online volunteers took part in the survey, providing over 1,170,000 pairwise comparisons. Given the immense diversity and volume of image samples, participants, and corresponding responses, this dataset closely aligns with general human perceptual preferences regarding urban scenes.</p>
+<p>Over the years, the dataset was enhanced to version 2.0, which includes 110,998 random street-view images gathered from 56 cities in 28 countries across six continents. From 2013 to 2016, 81,630 online participants took part in the survey, providing over 1,170,000 pairwise comparisons. Its geographic and participant coverage made it a useful large-scale benchmark for studying perceived qualities of urban scenes, while still requiring care when transferring models across local contexts.</p>
 <p><img src="placepulse.png" style="width: 100%;"></p>
 <div class="quarto-figure quarto-figure-center page-columns page-full">
 <figure class="figure page-columns page-full">
 <p><img src="beautiful_top10.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption class="margin-caption">The top 10 streetview in beautiful Trueskill scores</figcaption>
+<figcaption class="margin-caption">The top 10 street-view images by “beautiful” TrueSkill scores</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center page-columns page-full">
 <figure class="figure page-columns page-full">
 <p><img src="beautiful_bottom10.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption class="margin-caption">The bottom 10 streetview in beautiful Trueskill scores</figcaption>
+<figcaption class="margin-caption">The bottom 10 street-view images by “beautiful” TrueSkill scores</figcaption>
 </figure>
 </div>
 </section>
 <section id="binary-svm-for-baseline-measurement" class="level2">
 <h2 class="anchored" data-anchor-id="binary-svm-for-baseline-measurement">Binary SVM for Baseline Measurement</h2>
-<p>As previously discussed, the simplest and most effective method involves training a binary classification model to obtain a predictive model for safety score. Here, we display the accuracy results of binary SVM (Support Vector Machine) for all six models, across six dimensions.</p>
+<p>As a baseline, I trained binary support vector machine classifiers for the six perception dimensions and compared their predictive accuracy. The accuracy results for all six models are shown below.</p>
 <p><img src="st4-1.png" class="img-fluid" style="width:49.0%"> <img src="st4-2.png" class="img-fluid" style="width:49.0%"></p>
 </section>
-<section id="the-cams-of-street-views" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="the-cams-of-street-views">The CAMs of street views</h2>
-<p>Below are the negative and positive samples after adopting the updated models.</p>
+<section id="class-activation-maps-for-street-view-images" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="class-activation-maps-for-street-view-images">Class Activation Maps for Street-View Images</h2>
+<p>Class activation maps provide a visual diagnostic of the image regions contributing to positive and negative model predictions. They help inspect model attention, but should not be treated as direct evidence of human attention or causal environmental effects. Below are negative and positive samples from the updated models.</p>
 <div class="quarto-figure quarto-figure-center page-columns page-full">
 <figure class="figure page-columns page-full">
 <p><img src="CAMs_low.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption class="margin-caption">The CAMs of street view with negative safe scores</figcaption>
+<figcaption class="margin-caption">Class activation maps for street views with low predicted perceived-safety scores</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center page-columns page-full">
 <figure class="figure page-columns page-full">
 <p><img src="CAMs_high.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption class="margin-caption">The CAMs of street view with positive safe scores</figcaption>
+<figcaption class="margin-caption">Class activation maps for street views with high predicted perceived-safety scores</figcaption>
 </figure>
 </div>
 </section>
-<section id="collaboration-with-diamler" class="level1 page-columns page-full">
-<h1>Collaboration with Diamler</h1>
-<p>In 2018, our model delivered safety maps for more than 300 cities across China. This data was utilized to create safe pedestrian routes for an app developed specifically for Daimler users.</p>
-<p>Initially, our clients were skeptical about our algorithm’s effectiveness. To challenge our model, they sent us a batch of photos that did not consist of street view images. Surprisingly, in a scoring system out of 100, the image deemed safest was a nighttime picture, despite our training dataset lacking any night images. This unexpected result successfully demonstrated our model’s robustness and subsequently sealed the deal.</p>
+<section id="collaboration-with-daimler" class="level1 page-columns page-full">
+<h1>Collaboration with Daimler</h1>
+<p>In 2018, the project delivered perceived-safety maps for more than 300 cities in China for a Daimler Innovation Lab application. The spatial scores supported pedestrian route alternatives that considered both network distance and modeled street perception.</p>
+<p>As part of client validation, Daimler supplied a set of non-standard test images, including scenes outside the street-view conditions represented in the training data. The model’s response to these images, including a nighttime scene, helped the team discuss generalization limits and increased the client’s confidence in proceeding with the commissioned application. This exercise was an applied validation step, not a substitute for systematic out-of-distribution evaluation.</p>
 <div class="quarto-figure quarto-figure-center page-columns page-full">
 <figure class="figure page-columns page-full">
 <p><img src="st6.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption class="margin-caption">The test images from Diamler and our safety scores</figcaption>
+<figcaption class="margin-caption">Test images supplied by Daimler and their model-generated perception scores</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center page-columns page-full">
 <figure class="figure page-columns page-full">
 <p><img src="st5.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption class="margin-caption">Business Order from Diamler</figcaption>
+<figcaption class="margin-caption">Commissioned project documentation from Daimler</figcaption>
 </figure>
 </div>
 

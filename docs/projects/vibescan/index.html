@@ -7,6 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Liu Liu">
+<meta name="description" content="Client: Hongkong Land &nbsp;·&nbsp; Project context: West Bund Financial City spatial benchmarking &nbsp;·&nbsp; Role: Project Lead; Founder and Research Director, CitoryTech">
 
 <title>VibeScan – Liu Liu</title>
 <style>
@@ -144,8 +145,13 @@ background-size: cover;
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-left">
       <h1 class="title">VibeScan</h1>
-            <p class="subtitle lead">Business District Analysis under Online Public Opinion Monitoring</p>
-                                <div class="quarto-categories">
+            <p class="subtitle lead">Social-Media Analytics for Commercial-District Benchmarking</p>
+                  <div>
+        <div class="description">
+          Client: Hongkong Land &nbsp;·&nbsp; Project context: West Bund Financial City spatial benchmarking &nbsp;·&nbsp; Role: Project Lead; Founder and Research Director, CitoryTech
+        </div>
+      </div>
+                          <div class="quarto-categories">
                 <div class="quarto-category">computer vision</div>
                 <div class="quarto-category">urban design</div>
                 <div class="quarto-category">poi</div>
@@ -185,11 +191,23 @@ background-size: cover;
   <ul>
   <li><a href="#the-idea" id="toc-the-idea" class="nav-link active" data-scroll-target="#the-idea"># The Idea</a></li>
   <li><a href="#data-process" id="toc-data-process" class="nav-link" data-scroll-target="#data-process"># Data Process</a></li>
-  <li><a href="#key-results" id="toc-key-results" class="nav-link" data-scroll-target="#key-results"># Key Results</a>
+  <li><a href="#key-results" id="toc-key-results" class="nav-link" data-scroll-target="#key-results"># Key Results</a></li>
+  <li><a href="#miami-design-district-benchmark" id="toc-miami-design-district-benchmark" class="nav-link" data-scroll-target="#miami-design-district-benchmark">Miami Design District Benchmark</a>
   <ul class="collapse">
-  <li><a href="#analysis-of-miami-district" id="toc-analysis-of-miami-district" class="nav-link" data-scroll-target="#analysis-of-miami-district">Analysis of Miami District</a></li>
-  <li><a href="#analysis-of-hudson-yards" id="toc-analysis-of-hudson-yards" class="nav-link" data-scroll-target="#analysis-of-hudson-yards">Analysis of Hudson Yards</a></li>
+  <li><a href="#search-interest-across-platforms" id="toc-search-interest-across-platforms" class="nav-link" data-scroll-target="#search-interest-across-platforms">Search Interest Across Platforms</a></li>
+  <li><a href="#brand-and-visitor-check-in-patterns" id="toc-brand-and-visitor-check-in-patterns" class="nav-link" data-scroll-target="#brand-and-visitor-check-in-patterns">Brand and Visitor Check-In Patterns</a></li>
+  <li><a href="#spatial-investments-and-influencer-attention" id="toc-spatial-investments-and-influencer-attention" class="nav-link" data-scroll-target="#spatial-investments-and-influencer-attention">Spatial Investments and Influencer Attention</a></li>
+  <li><a href="#use-of-public-amenities" id="toc-use-of-public-amenities" class="nav-link" data-scroll-target="#use-of-public-amenities">Use of Public Amenities</a></li>
   </ul></li>
+  <li><a href="#hudson-yards-benchmark" id="toc-hudson-yards-benchmark" class="nav-link" data-scroll-target="#hudson-yards-benchmark">Hudson Yards Benchmark</a>
+  <ul class="collapse">
+  <li><a href="#search-interest-across-platforms-1" id="toc-search-interest-across-platforms-1" class="nav-link" data-scroll-target="#search-interest-across-platforms-1">Search Interest Across Platforms</a></li>
+  <li><a href="#estimated-visitor-composition" id="toc-estimated-visitor-composition" class="nav-link" data-scroll-target="#estimated-visitor-composition">Estimated Visitor Composition</a></li>
+  <li><a href="#public-response-to-vessel" id="toc-public-response-to-vessel" class="nav-link" data-scroll-target="#public-response-to-vessel">Public Response to Vessel</a></li>
+  <li><a href="#public-response-to-edge" id="toc-public-response-to-edge" class="nav-link" data-scroll-target="#public-response-to-edge">Public Response to Edge</a></li>
+  <li><a href="#public-response-to-the-shed" id="toc-public-response-to-the-shed" class="nav-link" data-scroll-target="#public-response-to-the-shed">Public Response to The Shed</a></li>
+  </ul></li>
+  <li><a href="#client-deliverable" id="toc-client-deliverable" class="nav-link" data-scroll-target="#client-deliverable">Client Deliverable</a></li>
   </ul>
 </nav>
     </div>
@@ -216,74 +234,85 @@ background-size: cover;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>This project aimed at developing a benchmarking and customer analysis system for commercial areas. Leveraging online feedback, data mining, and AI, it evaluates spaces against industry standards and projects like Miami Design District and Hudson Yards. This approach aids in strategic decision-making across planning, design, and operations, enhancing commercial viability and consumer engagement.</p>
+<p>VibeScan is a commercial-district benchmarking and customer-analysis system developed through CitoryTech for Hongkong Land’s West Bund Financial City work. I led the integration of social-media comments and images, points of interest, and spatial data to compare how visitors responded to design, programming, amenities, and operations across international and Chinese commercial districts. Phase I analyzed approximately 14 million records from international reference cases; Phase II analyzed approximately 7 million records from recently developed Chinese cases. The resulting evidence supported planning, design, tenant strategy, and operational decision-making.</p>
 <p>For a detailed demonstration of the project, please refer to the slides: <a href="https://www.dropbox.com/scl/fi/9e1rhg07vftm3qkmwo6i5/0323.pdf?rlkey=hhmkl61vt7ip7kt06c5k7nc5k&amp;dl=0">Phase I</a> and <a href="https://www.dropbox.com/scl/fi/qgla46f59s2kmdm21dwq8/0531.pdf?rlkey=t6zcpi2w1igjsqwm9edimas37&amp;dl=0">Phase II</a>.</p>
 </div>
 </div>
 <section id="the-idea" class="level2">
 <h2 class="anchored" data-anchor-id="the-idea"># The Idea</h2>
-<p>Is it possible to gauge public sentiment towards the operational strategies of commercial business sites, particularly in an era where enticing offline shopping has become a paramount challenge for many shopping districts? These areas have significantly invested in enhancing their landscape’s appeal. The question arises: how can we measure the return on investment for these temporary or even permanent enhancements and infrastructure in terms of value to developers? Evaluating the success and failure of space design is crucial. With the wealth of information available on social media platforms, can we harness this publicly accessible data and compile it into a comprehensive public opinion pool? By identifying effective strategies and contrasting them with unsuccessful examples, we can glean insights that are invaluable for future decision-making processes.</p>
+<p>Commercial districts invest heavily in public-space design, temporary installations, events, and amenities, but conventional performance indicators reveal little about which interventions attract attention, encourage visits, or shape public response. VibeScan treats publicly available online comments and images as an additional evidence source for comparing spatial and operational strategies across districts. The aim is not to replace surveys or financial analysis, but to connect observable public response with specific places, facilities, and design decisions.</p>
 <p><img src="vibescan_cover2.png" style="width: 100%;"></p>
 </section>
 <section id="data-process" class="level2">
 <h2 class="anchored" data-anchor-id="data-process"># Data Process</h2>
-<p>Tons of the data from social media are collected from a wide variety of both China and US social media platform. We usually follows comments and photos from user. For the shopping area cases in Phase I, we mainly collected 14M records (Famous international cases), and 7M in Phase II (Domestic newly built cases).</p>
+<p>The workflow collected publicly available comments and user-contributed images from multiple social-media platforms in China and the United States. Records were cleaned, geolocated where possible, and organized around districts, destinations, facilities, events, and recurring topics. Phase I analyzed approximately 14 million records from established international cases; Phase II analyzed approximately 7 million records from recently developed Chinese cases. The project combined text mining, image analysis, point-of-interest data, and spatial comparison to produce district-level benchmarks.</p>
 <p><img src="vibescan_data.png" style="width: 100%;"></p>
 <p><img src="vibescan_data2.png" style="width: 100%;"></p>
 </section>
 <section id="key-results" class="level2">
 <h2 class="anchored" data-anchor-id="key-results"># Key Results</h2>
-<section id="analysis-of-miami-district" class="level3">
-<h3 class="anchored" data-anchor-id="analysis-of-miami-district">Analysis of Miami District</h3>
-<section id="hot-search-index-of-each-platform-of-miami-district." class="level4">
-<h4 class="anchored" data-anchor-id="hot-search-index-of-each-platform-of-miami-district.">Hot search index of each platform of Miami District.</h4>
+</section>
+<section id="miami-design-district-benchmark" class="level2">
+<h2 class="anchored" data-anchor-id="miami-design-district-benchmark">Miami Design District Benchmark</h2>
+<section id="search-interest-across-platforms" class="level3">
+<h3 class="anchored" data-anchor-id="search-interest-across-platforms">Search Interest Across Platforms</h3>
+<p>Search-index trends were compared across Chinese and U.S. platforms to show how much online attention the district attracts on each channel and how that attention changes over time. This helps operators understand where public conversation about a district actually takes place.</p>
 <p><img src="vibescan_m_1.jpeg" style="width: 100%;"></p>
 </section>
-<section id="brand-check-in-rhythm." class="level4">
-<h4 class="anchored" data-anchor-id="brand-check-in-rhythm.">Brand check-in rhythm.</h4>
+<section id="brand-and-visitor-check-in-patterns" class="level3">
+<h3 class="anchored" data-anchor-id="brand-and-visitor-check-in-patterns">Brand and Visitor Check-In Patterns</h3>
+<p>Check-in records were organized by brand and over time to show which tenants draw visits and how visitor activity fluctuates. The comparison supports tenant-mix and programming discussions by making each brand’s drawing power visible.</p>
 <p><img src="vibescan_m_2.jpeg" style="width: 100%;"></p>
 </section>
-<section id="the-investment-of-leading-merchants-in-space-design-and-the-resulting-influence-of-influcers-checking-in." class="level4">
-<h4 class="anchored" data-anchor-id="the-investment-of-leading-merchants-in-space-design-and-the-resulting-influence-of-influcers-checking-in.">The investment of leading merchants in space design and the resulting influence of influcers checking in.</h4>
+<section id="spatial-investments-and-influencer-attention" class="level3">
+<h3 class="anchored" data-anchor-id="spatial-investments-and-influencer-attention">Spatial Investments and Influencer Attention</h3>
+<p>These charts relate leading merchants’ investments in space and installation design to subsequent check-in and creator/influencer activity. The comparison is descriptive: it shows which spatial investments coincided with online attention, without asserting a causal effect.</p>
 <p><img src="vibescan_m_3.jpeg" style="width: 100%;"></p>
 <p><img src="vibescan_m_4.jpeg" style="width: 100%;"></p>
 <p><img src="vibescan_m_5.jpeg" style="width: 100%;"></p>
 </section>
-<section id="usage-and-comparison-of-public-facilities-in-the-main-space." class="level4">
-<h4 class="anchored" data-anchor-id="usage-and-comparison-of-public-facilities-in-the-main-space.">Usage and comparison of public facilities in the main space.</h4>
+<section id="use-of-public-amenities" class="level3">
+<h3 class="anchored" data-anchor-id="use-of-public-amenities">Use of Public Amenities</h3>
+<p>Comments and images referencing public facilities in the district’s main spaces were used to compare how amenities are actually used and discussed by visitors, informing decisions about which facilities merit investment.</p>
 <p><img src="vibescan_m_6.jpeg" style="width: 100%;"></p>
 <p><img src="vibescan_m_7.jpeg" style="width: 100%;"></p>
 <p><img src="vibescan_m_8.jpeg" style="width: 100%;"></p>
 </section>
 </section>
-<section id="analysis-of-hudson-yards" class="level3">
-<h3 class="anchored" data-anchor-id="analysis-of-hudson-yards">Analysis of Hudson Yards</h3>
-<section id="hot-search-index-of-each-platform-of-miami-district.-1" class="level4">
-<h4 class="anchored" data-anchor-id="hot-search-index-of-each-platform-of-miami-district.-1">Hot search index of each platform of Miami District.</h4>
+<section id="hudson-yards-benchmark" class="level2">
+<h2 class="anchored" data-anchor-id="hudson-yards-benchmark">Hudson Yards Benchmark</h2>
+<section id="search-interest-across-platforms-1" class="level3">
+<h3 class="anchored" data-anchor-id="search-interest-across-platforms-1">Search Interest Across Platforms</h3>
+<p>Search-index trends for Hudson Yards were compared across platforms, parallel to the Miami Design District analysis, to benchmark the district’s online visibility.</p>
 <p><img src="vibescan_h_1.jpeg" style="width: 100%;"></p>
 </section>
-<section id="prediction-of-the-structure-of-the-visiting-crowd" class="level4">
-<h4 class="anchored" data-anchor-id="prediction-of-the-structure-of-the-visiting-crowd">Prediction of the structure of the visiting crowd</h4>
+<section id="estimated-visitor-composition" class="level3">
+<h3 class="anchored" data-anchor-id="estimated-visitor-composition">Estimated Visitor Composition</h3>
+<p>Publicly available profile and content signals were used to estimate the composition of the visiting population, supporting comparisons of which audiences each district attracts.</p>
 <p><img src="vibescan_h_2.jpeg" style="width: 100%;"></p>
 </section>
-<section id="the-analysis-of-social-comments-on-vessel." class="level4">
-<h4 class="anchored" data-anchor-id="the-analysis-of-social-comments-on-vessel.">The analysis of social comments on Vessel.</h4>
+<section id="public-response-to-vessel" class="level3">
+<h3 class="anchored" data-anchor-id="public-response-to-vessel">Public Response to Vessel</h3>
+<p>Comments mentioning Vessel were mined for recurring topics and sentiment, showing how the public responded to the district’s signature landmark.</p>
 <p><img src="vibescan_h_3.jpeg" style="width: 100%;"></p>
 </section>
-<section id="the-analysis-of-social-comments-on-edge." class="level4">
-<h4 class="anchored" data-anchor-id="the-analysis-of-social-comments-on-edge.">The analysis of social comments on Edge.</h4>
+<section id="public-response-to-edge" class="level3">
+<h3 class="anchored" data-anchor-id="public-response-to-edge">Public Response to Edge</h3>
+<p>Comments mentioning the Edge observation deck were analyzed the same way, indicating how a paid attraction contributes to the district’s public profile.</p>
 <p><img src="vibescan_h_4.jpeg" style="width: 100%;"></p>
 </section>
-<section id="the-analysis-of-social-comments-on-the-shed." class="level4">
-<h4 class="anchored" data-anchor-id="the-analysis-of-social-comments-on-the-shed.">The analysis of social comments on the Shed.</h4>
+<section id="public-response-to-the-shed" class="level3">
+<h3 class="anchored" data-anchor-id="public-response-to-the-shed">Public Response to The Shed</h3>
+<p>Comments mentioning The Shed were analyzed to show how a cultural venue shapes public response to the district.</p>
 <p><img src="vibescan_h_5.jpeg" style="width: 100%;"></p>
 </section>
-<section id="for-a-detailed-demonstration-of-the-project-please-refer-to-the-slides-phase-i-and-phase-ii." class="level4">
-<h4 class="anchored" data-anchor-id="for-a-detailed-demonstration-of-the-project-please-refer-to-the-slides-phase-i-and-phase-ii.">For a detailed demonstration of the project, please refer to the slides: <a href="https://www.dropbox.com/scl/fi/9e1rhg07vftm3qkmwo6i5/0323.pdf?rlkey=hhmkl61vt7ip7kt06c5k7nc5k&amp;dl=0">Phase I</a> and <a href="https://www.dropbox.com/scl/fi/qgla46f59s2kmdm21dwq8/0531.pdf?rlkey=t6zcpi2w1igjsqwm9edimas37&amp;dl=0">Phase II</a>.</h4>
+</section>
+<section id="client-deliverable" class="level1">
+<h1>Client Deliverable</h1>
+<p>The project translated the benchmarking results into a spatial decision-support package for the West Bund Financial City context. Deliverables connected public response and customer patterns to design features, amenities, reference projects, and operational strategies. The work was intended to help the client compare precedents and prioritize questions for planning, design, leasing, and district operations.</p>
+<p>For a detailed demonstration of the project, please refer to the slides: <a href="https://www.dropbox.com/scl/fi/9e1rhg07vftm3qkmwo6i5/0323.pdf?rlkey=hhmkl61vt7ip7kt06c5k7nc5k&amp;dl=0">Phase I</a> and <a href="https://www.dropbox.com/scl/fi/qgla46f59s2kmdm21dwq8/0531.pdf?rlkey=t6zcpi2w1igjsqwm9edimas37&amp;dl=0">Phase II</a>.</p>
 
 
-</section>
-</section>
 </section>
 
 </main> <!-- /main -->
