@@ -6,12 +6,14 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Andres Sevtsuk">
+<meta name="author" content="Rounaq Basu">
 <meta name="author" content="Liu Liu">
-<meta name="author" content="Bolei Zhou">
-<meta name="author" content="Fan Zhang">
-<meta name="description" content="Role: Project Lead; Founder and Research Director, CitoryTech &nbsp;·&nbsp; Client application: Daimler Innovation Lab">
+<meta name="author" content="Abdulaziz Alhassan">
+<meta name="author" content="Justin Kollar">
+<meta name="description" content="A City Form Lab collaboration estimating pedestrian volumes across New York City’s sidewalk, crosswalk, and footpath network.">
 
-<title>StreeTalk Project – Liu Liu</title>
+<title>NYC Walks – Liu Liu</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -77,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
 <style>
 
       .quarto-title-block .quarto-title-banner {
-        background-image: url(streetalk_cover.png);
+        background-image: url(nyc_walks_cover.jpeg);
 background-size: cover;
       }
 </style>
@@ -148,16 +150,18 @@ background-size: cover;
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-left">
-      <h1 class="title">StreeTalk Project</h1>
-            <p class="subtitle lead">Street-View Perception Modeling for Pedestrian Routing</p>
+      <h1 class="title">NYC Walks</h1>
+            <p class="subtitle lead">Citywide foot-traffic modeling for New York City</p>
                   <div>
         <div class="description">
-          Role: Project Lead; Founder and Research Director, CitoryTech &nbsp;·&nbsp; Client application: Daimler Innovation Lab
+          A City Form Lab collaboration estimating pedestrian volumes across New York City’s sidewalk, crosswalk, and footpath network.
         </div>
       </div>
                           <div class="quarto-categories">
-                <div class="quarto-category">computer vision</div>
-                <div class="quarto-category">urban design</div>
+                <div class="quarto-category">Lab Collaboration</div>
+                <div class="quarto-category">Geospatial Analysis</div>
+                <div class="quarto-category">Pedestrian Modeling</div>
+                <div class="quarto-category">Urban Planning</div>
               </div>
                   </div>
   </div>
@@ -166,18 +170,20 @@ background-size: cover;
   <div class="quarto-title-meta column-page-left">
 
       <div>
-      <div class="quarto-title-meta-heading">Main Researchers</div>
+      <div class="quarto-title-meta-heading">Research Team</div>
       <div class="quarto-title-meta-contents">
+               <p>Andres Sevtsuk </p>
+               <p>Rounaq Basu </p>
                <p>Liu Liu <a href="https://orcid.org/0000-0003-0100-9763" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-               <p>Bolei Zhou </p>
-               <p>Fan Zhang </p>
+               <p>Abdulaziz Alhassan </p>
+               <p>Justin Kollar </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">Oct, 2016</p>
+        <p class="date">Feb, 2026</p>
       </div>
     </div>
     
@@ -193,19 +199,15 @@ background-size: cover;
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#the-idea" id="toc-the-idea" class="nav-link active" data-scroll-target="#the-idea"># The Idea</a></li>
-  <li><a href="#modeling-perceived-street-safety" id="toc-modeling-perceived-street-safety" class="nav-link" data-scroll-target="#modeling-perceived-street-safety"># Modeling Perceived Street Safety</a></li>
-  <li><a href="#demo-video" id="toc-demo-video" class="nav-link" data-scroll-target="#demo-video"># Demo Video</a></li>
-  <li><a href="#revisit-the-dataset-and-algorithm" id="toc-revisit-the-dataset-and-algorithm" class="nav-link" data-scroll-target="#revisit-the-dataset-and-algorithm"># Revisit the Dataset and Algorithm</a></li>
-  <li><a href="#place-pulse-2.0" id="toc-place-pulse-2.0" class="nav-link" data-scroll-target="#place-pulse-2.0">Place Pulse 2.0</a></li>
-  <li><a href="#binary-svm-for-baseline-measurement" id="toc-binary-svm-for-baseline-measurement" class="nav-link" data-scroll-target="#binary-svm-for-baseline-measurement">Binary SVM for Baseline Measurement</a></li>
-  <li><a href="#class-activation-maps-for-street-view-images" id="toc-class-activation-maps-for-street-view-images" class="nav-link" data-scroll-target="#class-activation-maps-for-street-view-images">Class Activation Maps for Street-View Images</a></li>
-  <li><a href="#collaboration-with-daimler" id="toc-collaboration-with-daimler" class="nav-link" data-scroll-target="#collaboration-with-daimler">Collaboration with Daimler</a></li>
+  <li><a href="#project-overview" id="toc-project-overview" class="nav-link active" data-scroll-target="#project-overview">Project overview</a></li>
+  <li><a href="#my-contribution" id="toc-my-contribution" class="nav-link" data-scroll-target="#my-contribution">My contribution</a></li>
+  <li><a href="#findings-and-planning-applications" id="toc-findings-and-planning-applications" class="nav-link" data-scroll-target="#findings-and-planning-applications">Findings and planning applications</a></li>
+  <li><a href="#publication" id="toc-publication" class="nav-link" data-scroll-target="#publication">Publication</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block page-columns page-full column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
 
@@ -213,103 +215,53 @@ background-size: cover;
 
 <style>
 .quarto-title-banner {
-  background-position: 50% 50%;
-  height: 200px;
+  background-position: 50% 34%;
+  height: 220px;
 }
 </style>
-<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>PROJECT BRIEF
+<span class="screen-reader-only">Note</span>Research context
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>StreeTalk links street-view imagery, human perception data, and computer vision to pedestrian route choice. I led the development of a perception-modeling and routing workflow that estimated perceived street safety and allowed users to compare walking routes using both distance and visual-environment scores. The broader data pipeline processed more than 100 million images and produced perceived-safety maps for more than 300 cities in China. In 2018, the work was adapted for a commissioned application with Daimler Innovation Lab.</p>
+<p><strong>MIT City Form Lab collaborative project</strong><br> My role: Key collaborator in geospatial data engineering, spatial computation, model validation, and research visualization.</p>
+<p>This is a lab project. It is presented separately from my independent dissertation research, <a href="../seeing_hai/">Seeing HAI</a>.</p>
+</div>
+</div>
+<section id="project-overview" class="level1">
+<h1>Project overview</h1>
+<p>Walking is central to urban travel, but cities rarely have consistent pedestrian counts for an entire street network. NYC Walks developed a citywide model of foot traffic during six peak travel periods in New York City. The model estimates pedestrian volumes across a network of <strong>315,577 connected sidewalk, crosswalk, and footpath segments</strong>.</p>
+<p>The work uses urban network analysis to connect trip origins and destinations through the pedestrian network, then calibrates the resulting estimates against observed counts. The citywide model provides a common baseline for comparing pedestrian demand, street classifications, infrastructure needs, and exposure to traffic risk.</p>
+</section>
+<section id="my-contribution" class="level1">
+<h1>My contribution</h1>
+<p>Within the broader City Form Lab team, I:</p>
 <ul>
-<li><p><a href="https://www.sciencedirect.com/science/article/pii/S0169204618308545">Zhang, F., Zhou, B., Liu, L., Liu, Y., Fung, H. H., Lin, H., &amp; Ratti, C. “Measuring human perceptions of a large-scale urban region using machine learning.” <em>Landscape and Urban Planning</em>.</a></p></li>
-<li><p><a href="https://oversea.cnki.net/knavi/JournalDetail?pcode=CJFD&amp;pykm=jgsj">Liu, L., Zhang, F., Zhou, B., Wang, Z., &amp; Li, Y. “StreeTalk: A navigation system for pedestrians and cyclists.” <em>Landscape Architecture Frontiers</em>.</a></p></li>
+<li>contributed to large-scale geospatial data engineering and spatial computation;</li>
+<li>tested and validated workflows used to detect and assemble sidewalk and crosswalk networks;</li>
+<li>produced pedestrian-flow figures and visual comparisons between estimated volumes and observed counts; and</li>
+<li>contributed analyses and revisions to the published paper.</li>
 </ul>
-</div>
-</div>
-<section id="the-idea" class="level2">
-<h2 class="anchored" data-anchor-id="the-idea"># The Idea</h2>
-<p>The project began with a practical route-choice problem: a navigation app suggested a short walking route whose physical environment felt poorly maintained, enclosed, and uncomfortable. That experience raised a broader question: could street-view imagery and human perception data help a routing system account for the visual experience of walking, rather than distance alone?</p>
-<p><img src="streetalk_cover.jpg" style="width: 100%;"></p>
-<p>In 2016, shortly after I moved to a new apartment in Shanghai, Amap suggested a walking route to a nearby restaurant. The suggested route included deteriorated pavement, limited lighting, long blank walls, and few visible signs of pedestrian activity. These conditions motivated an experiment in modeling perceived street safety and incorporating it into pedestrian navigation.</p>
-<p><img src="st1.jpg" style="width: 100%;"></p>
+<p>These contributions are narrower than the full project. The research design was conceived by Andres Sevtsuk, and the modeling, calibration, safety analysis, and writing were distributed across the author team.</p>
 </section>
-<section id="modeling-perceived-street-safety" class="level2">
-<h2 class="anchored" data-anchor-id="modeling-perceived-street-safety"># Modeling Perceived Street Safety</h2>
-<p>I trained a street-view classifier to estimate perceived-safety scores and used its outputs to build a citywide perception map of Shanghai. The resulting software connected image-based scores to street segments, creating the spatial layer required for perception-aware pedestrian routing.</p>
-<p><img src="st2.jpg" style="width: 100%;"></p>
+<section id="findings-and-planning-applications" class="level1">
+<h1>Findings and planning applications</h1>
+<p>The published analysis identifies outer-borough streets whose estimated foot traffic is comparable with parts of central Manhattan but whose official classifications give them less pedestrian priority. It also compares crash counts with estimated pedestrian exposure and finds that some of the highest exposure-adjusted risks occur outside Manhattan.</p>
+<p>These results show how a citywide pedestrian baseline can help agencies identify places where infrastructure classification, investment, and observed demand do not align.</p>
+<p><img src="nyc_walks_cover.jpeg" style="width: 100%; margin: 1.2rem 0;"></p>
+<p><em>City-scale pedestrian network analysis in New York City.</em></p>
 </section>
-<section id="demo-video" class="level2">
-<h2 class="anchored" data-anchor-id="demo-video"># Demo Video</h2>
-<p>Below is a demo video showing how the perceived-safety score is applied for pedestrian routing.</p>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/lUATGLRVE5E" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-</section>
-<section id="revisit-the-dataset-and-algorithm" class="level2">
-<h2 class="anchored" data-anchor-id="revisit-the-dataset-and-algorithm"># Revisit the Dataset and Algorithm</h2>
-<p>The following sections document a later technical revisit of the perception datasets and modeling workflow used in this line of research.</p>
-</section>
-<section id="place-pulse-2.0" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="place-pulse-2.0">Place Pulse 2.0</h2>
-<p>A significant source of street perception data is the <a href="https://centerforcollectivelearning.org/urbanperception">“Place Pulse” project</a>. It collects public feedback on various urban areas using a pairwise labeling interface. Initiated in 2010, the project’s website showcases roughly 4,000 images from four cities: Boston, New York, Linz, and Salzburg. As shown in Figure 1, it gauges public perception across six dimensions. Participants are presented with pairs of street views and asked, “Which image looks safer?”</p>
-<p>Over the years, the dataset was enhanced to version 2.0, which includes 110,998 random street-view images gathered from 56 cities in 28 countries across six continents. From 2013 to 2016, 81,630 online participants took part in the survey, providing over 1,170,000 pairwise comparisons. Its geographic and participant coverage made it a useful large-scale benchmark for studying perceived qualities of urban scenes, while still requiring care when transferring models across local contexts.</p>
-<p><img src="placepulse.png" style="width: 100%;"></p>
-<div class="quarto-figure quarto-figure-center page-columns page-full">
-<figure class="figure page-columns page-full">
-<p><img src="beautiful_top10.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption class="margin-caption">The top 10 street-view images by “beautiful” TrueSkill scores</figcaption>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center page-columns page-full">
-<figure class="figure page-columns page-full">
-<p><img src="beautiful_bottom10.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption class="margin-caption">The bottom 10 street-view images by “beautiful” TrueSkill scores</figcaption>
-</figure>
-</div>
-</section>
-<section id="binary-svm-for-baseline-measurement" class="level2">
-<h2 class="anchored" data-anchor-id="binary-svm-for-baseline-measurement">Binary SVM for Baseline Measurement</h2>
-<p>As a baseline, I trained binary support vector machine classifiers for the six perception dimensions and compared their predictive accuracy. The accuracy results for all six models are shown below.</p>
-<p><img src="st4-1.png" class="img-fluid" style="width:49.0%"> <img src="st4-2.png" class="img-fluid" style="width:49.0%"></p>
-</section>
-<section id="class-activation-maps-for-street-view-images" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="class-activation-maps-for-street-view-images">Class Activation Maps for Street-View Images</h2>
-<p>Class activation maps provide a visual diagnostic of the image regions contributing to positive and negative model predictions. They help inspect model attention, but should not be treated as direct evidence of human attention or causal environmental effects. Below are negative and positive samples from the updated models.</p>
-<div class="quarto-figure quarto-figure-center page-columns page-full">
-<figure class="figure page-columns page-full">
-<p><img src="CAMs_low.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption class="margin-caption">Class activation maps for street views with low predicted perceived-safety scores</figcaption>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center page-columns page-full">
-<figure class="figure page-columns page-full">
-<p><img src="CAMs_high.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption class="margin-caption">Class activation maps for street views with high predicted perceived-safety scores</figcaption>
-</figure>
-</div>
-</section>
-<section id="collaboration-with-daimler" class="level1 page-columns page-full">
-<h1>Collaboration with Daimler</h1>
-<p>In 2018, the project delivered perceived-safety maps for more than 300 cities in China for a Daimler Innovation Lab application. The spatial scores supported pedestrian route alternatives that considered both network distance and modeled street perception.</p>
-<p>As part of client validation, Daimler supplied a set of non-standard test images, including scenes outside the street-view conditions represented in the training data. The model’s response to these images, including a nighttime scene, helped the team discuss generalization limits and increased the client’s confidence in proceeding with the commissioned application. This exercise was an applied validation step, not a substitute for systematic out-of-distribution evaluation.</p>
-<div class="quarto-figure quarto-figure-center page-columns page-full">
-<figure class="figure page-columns page-full">
-<p><img src="st6.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption class="margin-caption">Test images supplied by Daimler and their model-generated perception scores</figcaption>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center page-columns page-full">
-<figure class="figure page-columns page-full">
-<p><img src="st5.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption class="margin-caption">Commissioned project documentation from Daimler</figcaption>
-</figure>
-</div>
+<section id="publication" class="level1">
+<h1>Publication</h1>
+<blockquote class="blockquote">
+<p>Sevtsuk, A., Basu, R., Liu, L., Alhassan, A., &amp; Kollar, J. (2026). “Spatial Distribution of Foot Traffic in New York City and Applications for Urban Planning.” <em>Nature Cities</em>, 3, 136–145. <a href="https://doi.org/10.1038/s44284-025-00383-y">Paper</a></p>
+</blockquote>
+<p>The project was also presented with Sidewalk Ballet in the City Form Lab installation at the <a href="https://cityform.mit.edu/projects/venice-architecture-biennale-2025">2025 Venice Architecture Biennale</a>.</p>
 
 
 </section>

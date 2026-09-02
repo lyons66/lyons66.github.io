@@ -2,16 +2,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Liu Liu">
 <meta name="author" content="Ding Zhang">
 <meta name="author" content="Hongdu Yi">
+<meta name="description" content="A World Bank-supported municipal project assessing road and sidewalk assets from geo-tagged street imagery across Ulaanbaatar.">
 
-<title>Road Assessment in Ulaanbaatar – Liu Liu</title>
+<title>Road Asset Assessment in Ulaanbaatar – Liu Liu</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -35,15 +39,14 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../img/favicon.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-38438b5754c853e9868c24c05b617253.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-3a05eadec12e3d005b929c1a5d369705.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../../site_libs/quarto-contrib/iconify-1.0.8/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
@@ -145,11 +148,18 @@ background-size: cover;
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-left">
-      <h1 class="title">Road Assessment in Ulaanbaatar</h1>
-                                <div class="quarto-categories">
-                <div class="quarto-category">computer vision</div>
-                <div class="quarto-category">urban planning</div>
-                <div class="quarto-category">tools</div>
+      <h1 class="title">Road Asset Assessment in Ulaanbaatar</h1>
+            <p class="subtitle lead">Computer vision and a citywide maintenance-monitoring platform</p>
+                  <div>
+        <div class="description">
+          A World Bank-supported municipal project assessing road and sidewalk assets from geo-tagged street imagery across Ulaanbaatar.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">Applied Practice</div>
+                <div class="quarto-category">Urban AI</div>
+                <div class="quarto-category">Computer Vision</div>
+                <div class="quarto-category">Decision Support</div>
               </div>
                   </div>
   </div>
@@ -158,7 +168,7 @@ background-size: cover;
   <div class="quarto-title-meta column-page-left">
 
       <div>
-      <div class="quarto-title-meta-heading">Main Researchers</div>
+      <div class="quarto-title-meta-heading">Project Team</div>
       <div class="quarto-title-meta-contents">
                <p>Liu Liu <a href="https://orcid.org/0000-0003-0100-9763" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
                <p>Ding Zhang </p>
@@ -185,8 +195,11 @@ background-size: cover;
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#the-idea" id="toc-the-idea" class="nav-link active" data-scroll-target="#the-idea"># The Idea</a></li>
-  <li><a href="#demo-video" id="toc-demo-video" class="nav-link" data-scroll-target="#demo-video"># Demo Video</a></li>
+  <li><a href="#the-decision-problem" id="toc-the-decision-problem" class="nav-link active" data-scroll-target="#the-decision-problem">The decision problem</a></li>
+  <li><a href="#my-role-and-delivery" id="toc-my-role-and-delivery" class="nav-link" data-scroll-target="#my-role-and-delivery">My role and delivery</a></li>
+  <li><a href="#method-and-limitations" id="toc-method-and-limitations" class="nav-link" data-scroll-target="#method-and-limitations">Method and limitations</a></li>
+  <li><a href="#publication" id="toc-publication" class="nav-link" data-scroll-target="#publication">Publication</a></li>
+  <li><a href="#platform-demonstrations" id="toc-platform-demonstrations" class="nav-link" data-scroll-target="#platform-demonstrations">Platform demonstrations</a></li>
   </ul>
 </nav>
     </div>
@@ -203,30 +216,43 @@ background-size: cover;
   height: 200px;
 }
 </style>
-<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>PROJECT BRIEF
+<span class="screen-reader-only">Note</span>Project context
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The condition of transportation assets can be effectively observed through user-generated content (UGC) images. Analyzing geo-tagged images makes it possible to link the condition reflected in the images to specific geographic locations. This approach has been employed for various transportation assets such as catch basins, guardrails, manholes, road curbs, road markings, road signs, roadways, and sidewalks. By associating these images with corresponding road segments, a comprehensive understanding of the condition of these assets can be generated. This enables better asset management and maintenance strategies, ultimately contributing to safer and more efficient transportation systems.</p>
-<ul>
-<li><a href="https://link.springer.com/article/10.1007/s43762-022-00056-9">Zhang, D., Yi, H., Chen, Y., Jiang, N., Shao, J., &amp; Liu, L. “An urban infrastructure assessment system built on geo-tagged images and machine learning” Computational Urban Science.</a></li>
-</ul>
+<p><strong>Commissioned applied research for the Ulaanbaatar municipal government within a World Bank-supported infrastructure program</strong><br> My role: Project lead at CitoryTech, responsible for the analytical approach, system development, and delivery.</p>
 </div>
 </div>
-<section id="the-idea" class="level2">
-<h2 class="anchored" data-anchor-id="the-idea"># The Idea</h2>
-<p>The labeled images would be used as training data sets. According to their Q score, a process of ‘classification-then-regression’ would be conducted. Deep learning models would be built to extract deep features of the labeled images with transportation assets in different conditions.</p>
-<p><img src="road_cover.jpg" style="width: 100%;"></p>
+<section id="the-decision-problem" class="level1">
+<h1>The decision problem</h1>
+<p>Ulaanbaatar needed a repeatable way to inspect road and sidewalk infrastructure across the city. Municipal vehicles already traveled through the street network and collected imagery. The project converted those images into a condition-monitoring system that could help staff decide where field inspection and selective repair were most urgent.</p>
+<p>The system evaluated nine types of road and transportation assets, including pavement damage, sidewalks, curbs, road markings, signs, manholes, and guardrails. Each detected asset was assigned a condition category and linked to its road segment. Maintenance priority could then consider both physical condition and the importance of the location, including how many people were likely to use it.</p>
 </section>
-<section id="demo-video" class="level2">
-<h2 class="anchored" data-anchor-id="demo-video"># Demo Video</h2>
-<p>Below is a brief demo of our platform for the visualization of the analytic results.</p>
+<section id="my-role-and-delivery" class="level1">
+<h1>My role and delivery</h1>
+<p>The World Bank introduced our team to the municipal client. I led the project through method design, model development, system integration, and delivery. The final product was a monitoring platform with an interactive map, color-coded road segments, and image-level evidence for the assessed assets.</p>
+<p>This format allowed staff to move from a citywide overview to individual locations rather than relying on a single aggregate score. The analytical output was designed to support maintenance prioritization, reporting, and targeted field verification.</p>
+<p><img src="road_cover.jpg" style="width: 100%; margin: 1.2rem 0;"></p>
+</section>
+<section id="method-and-limitations" class="level1">
+<h1>Method and limitations</h1>
+<p>The workflow combined asset detection with condition assessment. Labeled images supplied the training data, while geo-referenced predictions connected each observation to the road network and the monitoring interface.</p>
+<p>The model’s coverage was limited to the asset categories represented in the training data. Adding a new asset type, or encountering a substantially different image source, required new labels and model evaluation. We treated the platform as an updateable inspection aid rather than a replacement for municipal judgment or field checks.</p>
+</section>
+<section id="publication" class="level1">
+<h1>Publication</h1>
+<blockquote class="blockquote">
+<p>Zhang, D., Yi, H., Chen, Y., Jiang, N., Shao, J., &amp; Liu, L. (2022). “An Urban Infrastructure Assessment System Built on Geo-Tagged Images and Machine Learning.” <em>Computational Urban Science</em>, 2(1), 1–21. <a href="https://doi.org/10.1007/s43762-022-00056-9">Paper</a></p>
+</blockquote>
+</section>
+<section id="platform-demonstrations" class="level1">
+<h1>Platform demonstrations</h1>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/23kLzbIkhfI" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/u87AOE6TUyY" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/kUF3dGZOqow" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>

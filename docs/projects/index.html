@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Projects – Liu Liu</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -34,15 +37,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-38438b5754c853e9868c24c05b617253.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-3a05eadec12e3d005b929c1a5d369705.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/iconify-1.0.8/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
@@ -73,20 +75,76 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-independent-research .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-title','listing-categories','listing-description','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
       searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-independent-research'] = new List('listing-independent-research', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-collaborative-research .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-categories','listing-description','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-collaborative-research'] = new List('listing-collaborative-research', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-applied-practice .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-categories','listing-description','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-applied-practice'] = new List('listing-applied-practice', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -108,7 +166,7 @@ background-size: cover;
 </style>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -202,7 +260,7 @@ window.Quarto = {
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-left">
       <h1 class="title">Projects</h1>
-            <p class="subtitle lead">Data driven urban studies, geo-tagged imagery analysis, and products</p>
+            <p class="subtitle lead">Independent research, collaborations, and applied urban AI</p>
                       </div>
   </div>
     
@@ -219,7 +277,7 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(11)</span></div><div class="category" data-category="QUk=">AI <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y2VsbHBob25lJTIwZGF0YQ==">cellphone data <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y29tcHV0ZXIlMjB2aXNpb24=">computer vision <span class="quarto-category-count">(9)</span></div><div class="category" data-category="cG9p">poi <span class="quarto-category-count">(2)</span></div><div class="category" data-category="dG9vbHM=">tools <span class="quarto-category-count">(4)</span></div><div class="category" data-category="dXJiYW4lMjBkZXNpZ24=">urban design <span class="quarto-category-count">(5)</span></div><div class="category" data-category="dXJiYW4lMjBwbGFubmluZw==">urban planning <span class="quarto-category-count">(3)</span></div><div class="category" data-category="dmlzdWFsaXphdGlvbg==">visualization <span class="quarto-category-count">(2)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(15)</span></div><div class="category" data-category="QXBwbGllZCUyMFByYWN0aWNl">Applied Practice <span class="quarto-category-count">(2)</span></div><div class="category" data-category="QXV0b25vbW91cyUyME5hdmlnYXRpb24=">Autonomous Navigation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q29tcHV0ZXIlMjBWaXNpb24=">Computer Vision <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Y29tcHV0ZXIlMjB2aXNpb24=">computer vision <span class="quarto-category-count">(6)</span></div><div class="category" data-category="RGVjaXNpb24lMjBTdXBwb3J0">Decision Support <span class="quarto-category-count">(1)</span></div><div class="category" data-category="R2Vvc3BhdGlhbCUyMEFuYWx5c2lz">Geospatial Analysis <span class="quarto-category-count">(2)</span></div><div class="category" data-category="SHVtYW4lMjBQZXJjZXB0aW9u">Human Perception <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SW5kZXBlbmRlbnQlMjBSZXNlYXJjaA==">Independent Research <span class="quarto-category-count">(3)</span></div><div class="category" data-category="TGFiJTIwQ29sbGFib3JhdGlvbg==">Lab Collaboration <span class="quarto-category-count">(3)</span></div><div class="category" data-category="TW9iaWxpdHklMjBEYXRh">Mobility Data <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TXVsdGltb2RhbCUyMEFJ">Multimodal AI <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UGVkZXN0cmlhbiUyMCUyNiUyMFB1YmxpYyUyMExpZmU=">Pedestrian &amp; Public Life <span class="quarto-category-count">(3)</span></div><div class="category" data-category="UGVkZXN0cmlhbiUyME1vZGVsaW5n">Pedestrian Modeling <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cG9p">poi <span class="quarto-category-count">(2)</span></div><div class="category" data-category="UmVnaW9uYWwlMjBQbGFubmluZw==">Regional Planning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U2lkZXdhbGtz">Sidewalks <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dG9vbHM=">tools <span class="quarto-category-count">(3)</span></div><div class="category" data-category="VXJiYW4lMjBBSQ==">Urban AI <span class="quarto-category-count">(4)</span></div><div class="category" data-category="dXJiYW4lMjBkZXNpZ24=">urban design <span class="quarto-category-count">(3)</span></div><div class="category" data-category="VXJiYW4lMjBQbGFubmluZw==">Urban Planning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dXJiYW4lMjBwbGFubmluZw==">urban planning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dmlzdWFsaXphdGlvbg==">visualization <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -236,12 +294,36 @@ window.Quarto = {
 .card:hover {
   border-color: #000000;
   border-width: thin;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .quarto-title-banner {
   background-position: 50% 40%;
   height: 200px;
+  position: relative;
+  isolation: isolate;
+  color: #fff;
+}
+
+.quarto-title-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: rgba(0, 0, 0, 0.58);
+  pointer-events: none;
+}
+
+.quarto-title-banner > * {
+  position: relative;
+  z-index: 1;
+}
+
+.quarto-title-banner .title,
+.quarto-title-banner .subtitle,
+.quarto-title-banner .description {
+  color: #fff;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.75);
 }
 
 #quarto-document-content {
@@ -250,43 +332,93 @@ window.Quarto = {
 }
 
 #quarto-margin-sidebar {
+  margin-top: 0;
   padding-top: 0;
+  display: none;
 }
 
+.project-section-note {
+  max-width: 880px;
+  color: #5f6b78;
+  margin-bottom: 1.1rem;
+}
+
+h2 {
+  margin-top: 2.6rem;
+}
 </style>
-<p>For more projects, please visit the <a href="../visualization">visualization page</a>.</p>
-
-
-
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">Order By</option>
-      <option value="index" data-direction="asc">Default</option>
-      <option value="listing-title" data-direction="asc">
-        Title
-      </option>
-      <option value="listing-date-sort" data-direction="asc">
-        Date - Oldest
-      </option>
-      <option value="listing-date-sort" data-direction="desc">
-        Date - Newest
-      </option>
-      <option value="listing-author" data-direction="asc">
-        Author
-      </option>
-    </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
+<section id="independent-research" class="level2">
+<h2 class="anchored" data-anchor-id="independent-research">Independent Research</h2>
+<p class="project-section-note">
+Research questions and programs that I lead. Collaborative authorship is identified on each page, but these projects are organized around my independent research agenda rather than a lab-wide project.
+</p>
+<div id="listing-independent-research" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Y29tcHV0ZXIlMjB2aXNpb24lMkNBSSUyQ3VyYmFuJTIwZGVzaWdu" data-listing-date-sort="1767254400000" data-listing-file-modified-sort="1774001389922" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1097">
+<div class="g-col-1" data-index="0" data-categories="SW5kZXBlbmRlbnQlMjBSZXNlYXJjaCUyQ1VyYmFuJTIwQUklMkNDb21wdXRlciUyMFZpc2lvbiUyQ1BlZGVzdHJpYW4lMjAlMjYlMjBQdWJsaWMlMjBMaWZl" data-listing-date-sort="1785556800000" data-listing-file-modified-sort="1788357944735" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="638">
+<a href="../projects/seeing_hai/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../projects/seeing_hai/seeing_hai_cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Seeing HAI
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW5kZXBlbmRlbnQlMjBSZXNlYXJjaA=='); return false;">Independent Research</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VXJiYW4lMjBBSQ=='); return false;">Urban AI</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q29tcHV0ZXIlMjBWaXNpb24='); return false;">Computer Vision</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGVkZXN0cmlhbiUyMCUyNiUyMFB1YmxpYyUyMExpZmU='); return false;">Pedestrian &amp; Public Life</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Liu Liu’s independent Ph.D.&nbsp;dissertation research on measuring public life at city scale with visual data and vision-language models.</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Aug, 2026
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="SW5kZXBlbmRlbnQlMjBSZXNlYXJjaCUyQ011bHRpbW9kYWwlMjBBSSUyQ0NvbXB1dGVyJTIwVmlzaW9uJTJDSHVtYW4lMjBQZXJjZXB0aW9u" data-listing-date-sort="1782878400000" data-listing-file-modified-sort="1788318285886" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="341">
+<a href="../projects/sidewalk_moments/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../projects/sidewalk_moments/clip_image_examples.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Sidewalk Moments
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW5kZXBlbmRlbnQlMjBSZXNlYXJjaA=='); return false;">Independent Research</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TXVsdGltb2RhbCUyMEFJ'); return false;">Multimodal AI</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q29tcHV0ZXIlMjBWaXNpb24='); return false;">Computer Vision</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SHVtYW4lMjBQZXJjZXB0aW9u'); return false;">Human Perception</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>An independent multimodal study comparing video, temporally averaged images, audio, and text as representations of urban engagement.</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Jul, 2026
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="SW5kZXBlbmRlbnQlMjBSZXNlYXJjaCUyQ1VyYmFuJTIwQUklMkNDb21wdXRlciUyMFZpc2lvbiUyQ1BlZGVzdHJpYW4lMjAlMjYlMjBQdWJsaWMlMjBMaWZl" data-listing-date-sort="1767243600000" data-listing-file-modified-sort="1788317884135" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="996">
 <a href="../projects/mingle/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -298,20 +430,19 @@ MINGLE
 </h5>
 <div class="listing-categories">
 
-<div class="listing-category" onclick="window.quartoListingCategory('Y29tcHV0ZXIlMjB2aXNpb24='); return false;">computer vision</div>
+<div class="listing-category" onclick="window.quartoListingCategory('SW5kZXBlbmRlbnQlMjBSZXNlYXJjaA=='); return false;">Independent Research</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('QUk='); return false;">AI</div>
+<div class="listing-category" onclick="window.quartoListingCategory('VXJiYW4lMjBBSQ=='); return false;">Urban AI</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('dXJiYW4lMjBkZXNpZ24='); return false;">urban design</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Q29tcHV0ZXIlMjBWaXNpb24='); return false;">Computer Vision</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGVkZXN0cmlhbiUyMCUyNiUyMFB1YmxpYyUyMExpZmU='); return false;">Pedestrian &amp; Public Life</div>
 
 </div>
 <div class="card-text listing-description delink">
-Detecting who is interacting with whom in a city street is something humans do effortlessly — yet it remains one of the hardest tasks for computer…
+<p>A dissertation method for detecting socially interacting groups as relationships among people in urban street imagery.</p>
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Liu Liu
-</div>
+<div class="card-attribution card-text-small end">
 <div class="listing-date">
 Jan, 2026
 </div>
@@ -319,7 +450,82 @@ Jan, 2026
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="Y29tcHV0ZXIlMjB2aXNpb24lMkN1cmJhbiUyMGRlc2lnbg==" data-listing-date-sort="1746082800000" data-listing-file-modified-sort="1774001259800" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="423">
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+<section id="lab-collaborative-research" class="level2">
+<h2 class="anchored" data-anchor-id="lab-collaborative-research">Lab &amp; Collaborative Research</h2>
+<p class="project-section-note">
+Projects developed within research labs or multi-institution teams. Each page separates the full project from my specific role and contribution.
+</p>
+<div id="listing-collaborative-research" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="TGFiJTIwQ29sbGFib3JhdGlvbiUyQ0NvbXB1dGVyJTIwVmlzaW9uJTJDQXV0b25vbW91cyUyME5hdmlnYXRpb24lMkNTaWRld2Fsa3M=" data-listing-date-sort="1780286400000" data-listing-file-modified-sort="1788317884134" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="278">
+<a href="../projects/walkocc/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../projects/walkocc/walkocc_pipeline.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+WalkOCC
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('TGFiJTIwQ29sbGFib3JhdGlvbg=='); return false;">Lab Collaboration</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q29tcHV0ZXIlMjBWaXNpb24='); return false;">Computer Vision</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QXV0b25vbW91cyUyME5hdmlnYXRpb24='); return false;">Autonomous Navigation</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U2lkZXdhbGtz'); return false;">Sidewalks</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>A UCLA VAIL collaboration on hybrid 2D and 3D sidewalk occupancy perception, with Liu Liu contributing to the 2D semantic component.</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Jun, 2026
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="TGFiJTIwQ29sbGFib3JhdGlvbiUyQ0dlb3NwYXRpYWwlMjBBbmFseXNpcyUyQ1BlZGVzdHJpYW4lMjBNb2RlbGluZyUyQ1VyYmFuJTIwUGxhbm5pbmc=" data-listing-date-sort="1769922000000" data-listing-file-modified-sort="1788317884130" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="357">
+<a href="../projects/nyc_walks/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../projects/nyc_walks/nyc_walks_cover.jpeg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+NYC Walks
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('TGFiJTIwQ29sbGFib3JhdGlvbg=='); return false;">Lab Collaboration</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('R2Vvc3BhdGlhbCUyMEFuYWx5c2lz'); return false;">Geospatial Analysis</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGVkZXN0cmlhbiUyME1vZGVsaW5n'); return false;">Pedestrian Modeling</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VXJiYW4lMjBQbGFubmluZw=='); return false;">Urban Planning</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>A City Form Lab collaboration estimating pedestrian volumes across New York City’s sidewalk, crosswalk, and footpath network.</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Feb, 2026
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="TGFiJTIwQ29sbGFib3JhdGlvbiUyQ1VyYmFuJTIwQUklMkNDb21wdXRlciUyMFZpc2lvbiUyQ1BlZGVzdHJpYW4lMjAlMjYlMjBQdWJsaWMlMjBMaWZl" data-listing-date-sort="1746072000000" data-listing-file-modified-sort="1788317884144" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="365">
 <a href="../projects/sidewalk_ballet/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -331,18 +537,19 @@ Sidewalk Ballet
 </h5>
 <div class="listing-categories">
 
-<div class="listing-category" onclick="window.quartoListingCategory('Y29tcHV0ZXIlMjB2aXNpb24='); return false;">computer vision</div>
+<div class="listing-category" onclick="window.quartoListingCategory('TGFiJTIwQ29sbGFib3JhdGlvbg=='); return false;">Lab Collaboration</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('dXJiYW4lMjBkZXNpZ24='); return false;">urban design</div>
+<div class="listing-category" onclick="window.quartoListingCategory('VXJiYW4lMjBBSQ=='); return false;">Urban AI</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q29tcHV0ZXIlMjBWaXNpb24='); return false;">Computer Vision</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGVkZXN0cmlhbiUyMCUyNiUyMFB1YmxpYyUyMExpZmU='); return false;">Pedestrian &amp; Public Life</div>
 
 </div>
 <div class="card-text listing-description delink">
-Traditional urban observational studies rely on direct field observation of public spaces such as sidewalks and plazas to understand how human…
+<p>A collaboration between MIT City Form Lab and the Hasso Plattner Institute, with Liu Liu serving as the Sidewalk Ballet project lead at MIT.</p>
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Liu Liu
-</div>
+<div class="card-attribution card-text-small end">
 <div class="listing-date">
 May, 2025
 </div>
@@ -350,7 +557,40 @@ May, 2025
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="Y29tcHV0ZXIlMjB2aXNpb24lMkN1cmJhbiUyMGRlc2lnbiUyQ3BvaSUyQ3Rvb2xz" data-listing-date-sort="1643702400000" data-listing-file-modified-sort="1784500545864" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="663">
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+<section id="applied-urban-ai-practice" class="level2">
+<h2 class="anchored" data-anchor-id="applied-urban-ai-practice">Applied Urban AI &amp; Practice</h2>
+<p class="project-section-note">
+Selected commissioned research, urban analytics systems, and earlier work from professional practice.
+</p>
+<div id="listing-applied-practice" class="quarto-listing quarto-listing-container-grid">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+    <select id="listing-applied-practice-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-applied-practice'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+      <option value="" disabled="" selected="" hidden="">Order By</option>
+      <option value="index" data-direction="asc">Default</option>
+      <option value="listing-title" data-direction="asc">
+        Title
+      </option>
+      <option value="listing-date-sort" data-direction="asc">
+        Date - Oldest
+      </option>
+      <option value="listing-date-sort" data-direction="desc">
+        Date - Newest
+      </option>
+    </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="Y29tcHV0ZXIlMjB2aXNpb24lMkN1cmJhbiUyMGRlc2lnbiUyQ3BvaSUyQ3Rvb2xz" data-listing-date-sort="1643691600000" data-listing-file-modified-sort="1784500545864" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="663">
 <a href="../projects/vibescan/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -374,10 +614,7 @@ VibeScan
 <div class="card-text listing-description delink">
 <p>Client: Hongkong Land &nbsp;·&nbsp; Project context: West Bund Financial City spatial benchmarking &nbsp;·&nbsp; Role: Project Lead; Founder and…</p>
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Liu Liu
-</div>
+<div class="card-attribution card-text-small end">
 <div class="listing-date">
 Feb, 2022
 </div>
@@ -385,7 +622,7 @@ Feb, 2022
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="Y29tcHV0ZXIlMjB2aXNpb24lMkN1cmJhbiUyMHBsYW5uaW5nJTJDdG9vbHM=" data-listing-date-sort="1633071600000" data-listing-file-modified-sort="1774001307147" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="204">
+<div class="g-col-1" data-index="1" data-categories="QXBwbGllZCUyMFByYWN0aWNlJTJDVXJiYW4lMjBBSSUyQ0NvbXB1dGVyJTIwVmlzaW9uJTJDRGVjaXNpb24lMjBTdXBwb3J0" data-listing-date-sort="1633060800000" data-listing-file-modified-sort="1788317897651" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="358">
 <a href="../projects/road/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -393,24 +630,23 @@ Feb, 2022
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Road Assessment in Ulaanbaatar
+Road Asset Assessment in Ulaanbaatar
 </h5>
 <div class="listing-categories">
 
-<div class="listing-category" onclick="window.quartoListingCategory('Y29tcHV0ZXIlMjB2aXNpb24='); return false;">computer vision</div>
+<div class="listing-category" onclick="window.quartoListingCategory('QXBwbGllZCUyMFByYWN0aWNl'); return false;">Applied Practice</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('dXJiYW4lMjBwbGFubmluZw=='); return false;">urban planning</div>
+<div class="listing-category" onclick="window.quartoListingCategory('VXJiYW4lMjBBSQ=='); return false;">Urban AI</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('dG9vbHM='); return false;">tools</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Q29tcHV0ZXIlMjBWaXNpb24='); return false;">Computer Vision</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGVjaXNpb24lMjBTdXBwb3J0'); return false;">Decision Support</div>
 
 </div>
 <div class="card-text listing-description delink">
-The condition of transportation assets can be effectively observed through user-generated content (UGC) images. Analyzing geo-tagged images makes it…
+<p>A World Bank-supported municipal project assessing road and sidewalk assets from geo-tagged street imagery across Ulaanbaatar.</p>
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Liu Liu, Ding Zhang, Hongdu Yi
-</div>
+<div class="card-attribution card-text-small end">
 <div class="listing-date">
 Oct, 2021
 </div>
@@ -418,7 +654,7 @@ Oct, 2021
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="Y29tcHV0ZXIlMjB2aXNpb24lMkN0b29scw==" data-listing-date-sort="1588316400000" data-listing-file-modified-sort="1774001358958" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="339">
+<div class="g-col-1" data-index="2" data-categories="Y29tcHV0ZXIlMjB2aXNpb24lMkN0b29scw==" data-listing-date-sort="1588305600000" data-listing-file-modified-sort="1774001358958" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="339">
 <a href="../projects/huipai/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -438,10 +674,7 @@ AI-Aided Camera App
 <div class="card-text listing-description delink">
 This app integrates deep models to learn the operation and mode of photo shooting from the massive works of professional photographers and realizes…
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Liu Liu, Ding Zhang, Xin Xiong
-</div>
+<div class="card-attribution card-text-small end">
 <div class="listing-date">
 May, 2020
 </div>
@@ -449,7 +682,35 @@ May, 2020
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="dXJiYW4lMjBwbGFubmluZyUyQ3BvaSUyQ3Zpc3VhbGl6YXRpb24=" data-listing-date-sort="1514793600000" data-listing-file-modified-sort="1774001367516" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="624">
+<div class="g-col-1" data-index="3" data-categories="Y29tcHV0ZXIlMjB2aXNpb24lMkN0b29scw==" data-listing-date-sort="1514782800000" data-listing-file-modified-sort="1774001340136" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="140">
+<a href="../projects/cityeye/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../projects/cityeye/cityeye_cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+CityEye WeChat mini APP
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y29tcHV0ZXIlMjB2aXNpb24='); return false;">computer vision</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('dG9vbHM='); return false;">tools</div>
+
+</div>
+<div class="card-text listing-description delink">
+CityEye is a WeChat mini application specifically designed for group field trips. Currently, it caters to a user base of over 10,000 individuals…
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Jan, 2018
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="dXJiYW4lMjBwbGFubmluZyUyQ3BvaSUyQ3Zpc3VhbGl6YXRpb24=" data-listing-date-sort="1514782800000" data-listing-file-modified-sort="1774001367516" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="624">
 <a href="../projects/caz/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -471,10 +732,7 @@ Recognizing Central Activity Zones
 <div class="card-text listing-description delink">
 Utilizing the concept of entropy, the project aims to quantify the level of functional diversity within different areas of the city. By leveraging a…
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Liu Liu, Zhuqing Liu
-</div>
+<div class="card-attribution card-text-small end">
 <div class="listing-date">
 Jan, 2018
 </div>
@@ -482,38 +740,7 @@ Jan, 2018
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="Y29tcHV0ZXIlMjB2aXNpb24lMkN0b29scw==" data-listing-date-sort="1514793600000" data-listing-file-modified-sort="1774001340136" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="140">
-<a href="../projects/cityeye/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../projects/cityeye/cityeye_cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-CityEye WeChat mini APP
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Y29tcHV0ZXIlMjB2aXNpb24='); return false;">computer vision</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('dG9vbHM='); return false;">tools</div>
-
-</div>
-<div class="card-text listing-description delink">
-CityEye is a WeChat mini application specifically designed for group field trips. Currently, it caters to a user base of over 10,000 individuals…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Liu Liu, Ding Zhang, Jinxing Shao
-</div>
-<div class="listing-date">
-Jan, 2018
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="7" data-categories="Y29tcHV0ZXIlMjB2aXNpb24lMkN1cmJhbiUyMGRlc2lnbg==" data-listing-date-sort="1493622000000" data-listing-file-modified-sort="1774001374488" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="279">
+<div class="g-col-1" data-index="5" data-categories="Y29tcHV0ZXIlMjB2aXNpb24lMkN1cmJhbiUyMGRlc2lnbg==" data-listing-date-sort="1493611200000" data-listing-file-modified-sort="1774001374488" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="279">
 <a href="../projects/riverview/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -533,10 +760,7 @@ River View Analysis
 <div class="card-text listing-description delink">
 To preserve the natural landscapes along the Qiantang River, I analyzed a 200-kilometer stretch of riverbank videos. By carefully examining the…
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Liu Liu
-</div>
+<div class="card-attribution card-text-small end">
 <div class="listing-date">
 May, 2017
 </div>
@@ -544,7 +768,7 @@ May, 2017
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="8" data-categories="Y29tcHV0ZXIlMjB2aXNpb24lMkN1cmJhbiUyMGRlc2lnbg==" data-listing-date-sort="1475305200000" data-listing-file-modified-sort="1784500519174" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="729">
+<div class="g-col-1" data-index="6" data-categories="Y29tcHV0ZXIlMjB2aXNpb24lMkN1cmJhbiUyMGRlc2lnbg==" data-listing-date-sort="1475294400000" data-listing-file-modified-sort="1784500519174" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="729">
 <a href="../projects/streetalk/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -564,10 +788,7 @@ StreeTalk Project
 <div class="card-text listing-description delink">
 <p>Role: Project Lead; Founder and Research Director, CitoryTech &nbsp;·&nbsp; Client application: Daimler Innovation Lab</p>
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Liu Liu, Bolei Zhou, Fan Zhang
-</div>
+<div class="card-attribution card-text-small end">
 <div class="listing-date">
 Oct, 2016
 </div>
@@ -575,7 +796,7 @@ Oct, 2016
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="9" data-categories="Y2VsbHBob25lJTIwZGF0YSUyQ3VyYmFuJTIwcGxhbm5pbmc=" data-listing-date-sort="1425196800000" data-listing-file-modified-sort="1774001381079" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1199">
+<div class="g-col-1" data-index="7" data-categories="QXBwbGllZCUyMFByYWN0aWNlJTJDTW9iaWxpdHklMjBEYXRhJTJDR2Vvc3BhdGlhbCUyMEFuYWx5c2lzJTJDUmVnaW9uYWwlMjBQbGFubmluZw==" data-listing-date-sort="1425186000000" data-listing-file-modified-sort="1788317897652" data-listing-date-modified-sort="1769922000000" data-listing-reading-time-sort="2" data-listing-word-count-sort="340">
 <a href="../projects/lbsn/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -583,22 +804,23 @@ Oct, 2016
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-1 Billion LBSN Data
+National Mobility Networks in China
 </h5>
 <div class="listing-categories">
 
-<div class="listing-category" onclick="window.quartoListingCategory('Y2VsbHBob25lJTIwZGF0YQ=='); return false;">cellphone data</div>
+<div class="listing-category" onclick="window.quartoListingCategory('QXBwbGllZCUyMFByYWN0aWNl'); return false;">Applied Practice</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('dXJiYW4lMjBwbGFubmluZw=='); return false;">urban planning</div>
+<div class="listing-category" onclick="window.quartoListingCategory('TW9iaWxpdHklMjBEYXRh'); return false;">Mobility Data</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('R2Vvc3BhdGlhbCUyMEFuYWx5c2lz'); return false;">Geospatial Analysis</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UmVnaW9uYWwlMjBQbGFubmluZw=='); return false;">Regional Planning</div>
 
 </div>
 <div class="card-text listing-description delink">
-Both figures show the average daily population flow distribution among more than 2,000 county-level units. The picture on the left is the average…
+<p>A national-scale mobility analysis that uses anonymized location-based social-network data to examine city clusters and blurred regional boundaries…</p>
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Liu Liu, Di An
-</div>
+<div class="card-attribution card-text-small end">
 <div class="listing-date">
 Mar, 2015
 </div>
@@ -606,7 +828,7 @@ Mar, 2015
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="10" data-categories="Y29tcHV0ZXIlMjB2aXNpb24lMkN2aXN1YWxpemF0aW9u" data-listing-date-sort="1398927600000" data-listing-file-modified-sort="1774001279260" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="503">
+<div class="g-col-1" data-index="8" data-categories="Y29tcHV0ZXIlMjB2aXNpb24lMkN2aXN1YWxpemF0aW9u" data-listing-date-sort="1398916800000" data-listing-file-modified-sort="1774001279260" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="503">
 <a href="../projects/cimage/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -626,10 +848,7 @@ C-IMAGE Project
 <div class="card-text listing-description delink">
 This project originated from my thesis, which involved the collection of millions of photos from 26 cities. The objective was to utilize deep…
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Liu Liu, Bolei Zhou
-</div>
+<div class="card-attribution card-text-small end">
 <div class="listing-date">
 May, 2014
 </div>
@@ -639,7 +858,14 @@ May, 2014
 </div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</div>
+<p>For additional maps and prototypes, visit the <a href="../visualization/">Visualization page</a>.</p>
+
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

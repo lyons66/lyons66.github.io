@@ -2,14 +2,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Liu Liu">
+<meta name="author" content="Alisa Kudaeva">
+<meta name="author" content="Marco Cipriano">
+<meta name="author" content="Fajer Al Ghannam">
+<meta name="author" content="Freya Huying Tan">
+<meta name="author" content="Gerard de Melo">
+<meta name="author" content="Andres Sevtsuk">
+<meta name="description" content="A dissertation method for detecting socially interacting groups as relationships among people in urban street imagery.">
 
 <title>MINGLE – Liu Liu</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -33,15 +43,14 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../img/favicon.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-38438b5754c853e9868c24c05b617253.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-3a05eadec12e3d005b929c1a5d369705.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../../site_libs/quarto-contrib/iconify-1.0.8/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
@@ -145,10 +154,16 @@ background-size: cover;
     <div class="quarto-title column-page-left">
       <h1 class="title">MINGLE</h1>
             <p class="subtitle lead">VLMs for Semantically Complex Region Detection in Urban Scenes</p>
-                                <div class="quarto-categories">
-                <div class="quarto-category">computer vision</div>
-                <div class="quarto-category">AI</div>
-                <div class="quarto-category">urban design</div>
+                  <div>
+        <div class="description">
+          A dissertation method for detecting socially interacting groups as relationships among people in urban street imagery.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">Independent Research</div>
+                <div class="quarto-category">Urban AI</div>
+                <div class="quarto-category">Computer Vision</div>
+                <div class="quarto-category">Pedestrian &amp; Public Life</div>
               </div>
                   </div>
   </div>
@@ -160,6 +175,12 @@ background-size: cover;
       <div class="quarto-title-meta-heading">Main Researchers</div>
       <div class="quarto-title-meta-contents">
                <p>Liu Liu <a href="https://orcid.org/0000-0003-0100-9763" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+               <p>Alisa Kudaeva </p>
+               <p>Marco Cipriano </p>
+               <p>Fajer Al Ghannam </p>
+               <p>Freya Huying Tan </p>
+               <p>Gerard de Melo </p>
+               <p>Andres Sevtsuk </p>
             </div>
     </div>
       
@@ -185,9 +206,9 @@ background-size: cover;
   <li><a href="#the-problem" id="toc-the-problem" class="nav-link active" data-scroll-target="#the-problem">The Problem</a></li>
   <li><a href="#the-mingle-pipeline" id="toc-the-mingle-pipeline" class="nav-link" data-scroll-target="#the-mingle-pipeline">The MINGLE Pipeline</a>
   <ul class="collapse">
-  <li><a href="#stage-1-person-detection" id="toc-stage-1-person-detection" class="nav-link" data-scroll-target="#stage-1-person-detection">Stage 1 — Person Detection</a></li>
-  <li><a href="#stage-2-pairwise-affiliation-classification" id="toc-stage-2-pairwise-affiliation-classification" class="nav-link" data-scroll-target="#stage-2-pairwise-affiliation-classification">Stage 2 — Pairwise Affiliation Classification</a></li>
-  <li><a href="#stage-3-group-aggregation" id="toc-stage-3-group-aggregation" class="nav-link" data-scroll-target="#stage-3-group-aggregation">Stage 3 — Group Aggregation</a></li>
+  <li><a href="#stage-1-person-detection" id="toc-stage-1-person-detection" class="nav-link" data-scroll-target="#stage-1-person-detection">Stage 1: Person detection</a></li>
+  <li><a href="#stage-2-pairwise-affiliation-classification" id="toc-stage-2-pairwise-affiliation-classification" class="nav-link" data-scroll-target="#stage-2-pairwise-affiliation-classification">Stage 2: Pairwise affiliation classification</a></li>
+  <li><a href="#stage-3-group-aggregation" id="toc-stage-3-group-aggregation" class="nav-link" data-scroll-target="#stage-3-group-aggregation">Stage 3: Group aggregation</a></li>
   </ul></li>
   <li><a href="#dataset" id="toc-dataset" class="nav-link" data-scroll-target="#dataset">Dataset</a></li>
   <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
@@ -208,33 +229,44 @@ background-size: cover;
   height: 200px;
 }
 </style>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Research context
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Method developed within my independent dissertation research, <a href="../seeing_hai/">Seeing HAI</a></strong><br> Lead author: Liu Liu · Collaborative paper with researchers at MIT and the Hasso Plattner Institute</p>
+<p>MINGLE is a dissertation method and a coauthored research output. It is also used within the separate <a href="../sidewalk_ballet/">Sidewalk Ballet</a> lab collaboration.</p>
+</div>
+</div>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>PROJECT BRIEF
+<span class="screen-reader-only">Tip</span>Project brief
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Detecting who is interacting with whom in a city street is something humans do effortlessly — yet it remains one of the hardest tasks for computer vision. A “social group” is not a physical object with clear edges; it is a relational, emergent pattern among two or more people sharing attention, conversation, or collective movement. Standard object detectors struggle with this: they excel at finding discrete, bounded entities, but fail when the target is defined by social context rather than visual shape.</p>
-<p>MINGLE (<strong>M</strong>ulti-person <strong>I</strong>nteraction-aware <strong>N</strong>eural <strong>G</strong>roup <strong>L</strong>ocalization and <strong>E</strong>xtraction) addresses this gap with a modular three-stage pipeline that combines human detection, depth-aware vision-language model reasoning, and spatial aggregation. The paper was accepted at <strong>AAAI 2026</strong> (AI for Social Impact Track) and introduces a 100K-image annotated dataset — the first of its kind — for benchmarking social group detection in urban street-view imagery.</p>
+<p>People can usually recognize who is interacting with whom in a street scene, but this remains difficult for computer vision. A social group is not a physical object with clear edges. It is a relational pattern among two or more people who may share attention, conversation, or movement. Standard object detectors identify bounded entities, but the target here is defined by social context.</p>
+<p>MINGLE (<strong>M</strong>ulti-person <strong>I</strong>nteraction-aware <strong>N</strong>eural <strong>G</strong>roup <strong>L</strong>ocalization and <strong>E</strong>xtraction) combines person detection, depth-aware vision-language reasoning, and spatial aggregation. The paper was published in the <strong>AAAI 2026 AI for Social Impact Track</strong> and introduces annotations and metadata for 100,000 urban street images.</p>
 </div>
 </div>
 <section id="the-problem" class="level1">
 <h1>The Problem</h1>
 <hr>
-<p>Seminal urban scholars — William H. Whyte, Jan Gehl, Allan Jacobs — established that observing where and how people gather in public space is essential to understanding urban vitality. Their insights remain foundational in urban design practice. Yet their methods required trained fieldworkers stationed at specific locations, producing data that were place-bound, labor-intensive, and impossible to scale.</p>
-<p>Modern street-view imagery now covers billions of urban scenes worldwide. If we could automatically detect social interactions within this imagery, we could measure sidewalk sociability at the scale of entire cities — linking human co-presence to accessibility, street design, and land use in ways never before possible.</p>
-<p>The core difficulty is semantic complexity. A social group has no fixed shape, color, or texture. It is defined by <em>relationships</em> — proximity, body orientation, shared gaze, co-movement. As the paper puts it:</p>
-<blockquote class="blockquote">
-<p><em>“Detecting such groups requires interpreting subtle visual cues — proximity, body orientation, and co-movement — that transcend conventional object-detection paradigms.”</em></p>
-</blockquote>
+<p>William H. Whyte, Jan Gehl, and Allan Jacobs established the importance of observing where and how people gather in public space. Their methods required trained fieldworkers at selected locations, producing detailed observations that were difficult to repeat across a city.</p>
+<p>Street-view imagery makes it possible to revisit this observational tradition at a larger scale. Detecting social interactions in these images can support comparisons between human co-presence, accessibility, street design, and land use.</p>
+<p>The core difficulty is semantic complexity. A social group has no fixed shape, color, or texture. It is defined by relationships such as proximity, body orientation, shared gaze, and co-movement.</p>
 <p>Off-the-shelf detectors return bounding boxes around individuals, not coalitions. Zero-shot prompting of large vision-language models (VLMs) like GPT-4o yields F1 scores near zero on this task. A new approach is needed.</p>
 <p><img src="intro.png" style="width: 100%; margin: 1.2rem 0;"></p>
 <p><em>Figure 1. Comparison of three approaches on the same New York street scene. MINGLE (top) correctly identifies and localizes socially interacting groups with tight bounding boxes. Traditional object detection (middle) has no category for “social group.” Zero-shot VLM prompting (bottom) produces noisy, unreliable results.</em></p>
-<p>A concrete illustration of why standard open-vocabulary detection fails: when queried with “groups of people interacting,” a state-of-the-art open-vocabulary detector returns a single bounding box around one person — missing the social structure entirely.</p>
+<p>When queried with “groups of people interacting,” the tested open-vocabulary detector returns one bounding box around one person rather than the relationship among people.</p>
 <p><img src="OVD.png" style="width: 100%; margin: 1.2rem 0;"></p>
 <p><em>Figure 2. Open vocabulary detection given the query “groups of people interacting” (right) detects only one individual, failing to capture any social group structure.</em></p>
 </section>
@@ -243,11 +275,11 @@ background-size: cover;
 <hr>
 <p>MINGLE solves the problem in three stages, each addressing a distinct challenge:</p>
 <section id="stage-1-person-detection" class="level2">
-<h2 class="anchored" data-anchor-id="stage-1-person-detection">Stage 1 — Person Detection</h2>
+<h2 class="anchored" data-anchor-id="stage-1-person-detection">Stage 1: Person detection</h2>
 <p>An ATSS-Swin-L-DyHead detector first identifies all individual people in the scene with high-confidence bounding boxes. This separates the problem of <em>finding people</em> from the problem of <em>reasoning about their relationships</em>.</p>
 </section>
 <section id="stage-2-pairwise-affiliation-classification" class="level2">
-<h2 class="anchored" data-anchor-id="stage-2-pairwise-affiliation-classification">Stage 2 — Pairwise Affiliation Classification</h2>
+<h2 class="anchored" data-anchor-id="stage-2-pairwise-affiliation-classification">Stage 2: Pairwise affiliation classification</h2>
 <p>For every pair of detected individuals, MINGLE constructs a prompt containing:</p>
 <ul>
 <li><strong>RGB crops</strong> of each person’s bounding box</li>
@@ -258,8 +290,8 @@ background-size: cover;
 <p>Computational cost is managed by filtering out pairs whose image-plane distance or depth difference exceeds configurable thresholds, dramatically reducing the number of VLM calls without meaningful loss in accuracy.</p>
 </section>
 <section id="stage-3-group-aggregation" class="level2">
-<h2 class="anchored" data-anchor-id="stage-3-group-aggregation">Stage 3 — Group Aggregation</h2>
-<p>A greedy clustering algorithm merges pairwise classifications into coherent group regions. Any set of two or more individuals with mutual “interacting” links forms a social group, and a single bounding box is computed from the extreme coordinates of its members. The result is a <strong>social group region</strong> — a new type of detection output that captures collective, relational structure rather than individual bodies.</p>
+<h2 class="anchored" data-anchor-id="stage-3-group-aggregation">Stage 3: Group aggregation</h2>
+<p>A greedy clustering algorithm merges pairwise classifications into group regions. A set of two or more individuals with mutual “interacting” links forms a social group, and a bounding box is computed from the extreme coordinates of its members. The resulting <strong>social group region</strong> represents collective structure rather than a single body.</p>
 <p><img src="pipeline.png" style="width: 100%; margin: 1.2rem 0;"></p>
 <p><em>Figure 3. The full MINGLE pipeline (top row) and its output format (bottom row). Stage 1 detects individuals; Stage 2 classifies each person pair using depth-aware VLM prompts; Stage 3 aggregates pairs into group bounding boxes. The bottom row shows how group detections and a Social Activity Index are computed for a given street image.</em></p>
 </section>
@@ -296,7 +328,7 @@ background-size: cover;
 </table>
 <p>The dataset contains <strong>588,430 human instances</strong> and <strong>72,537 annotated social group regions</strong>, combining manual human labels with pipeline-validated pseudo-labels. A separate pairwise fine-tuning set of <strong>79,265 annotated person pairs</strong> was collected to train the VLM classifier (76K training / 2K test), with human labels of “Yes,” “No,” or “Not Sure” for each pair.</p>
 <p><img src="dataset.png" style="width: 100%; margin: 1.2rem 0;"></p>
-<p><em>Figure 4. Dataset composition and statistics. Left: source distribution across four street-view providers. Right: histograms of people per image, groups per image, and group size — showing the dataset covers a wide range of scene densities.</em></p>
+<p><em>Figure 4. Dataset composition and statistics. Left: source distribution across four street-view providers. Right: histograms of people per image, groups per image, and group size.</em></p>
 </section>
 <section id="results" class="level1">
 <h1>Results</h1>
@@ -333,7 +365,7 @@ background-size: cover;
 </tr>
 </tbody>
 </table>
-<p><strong>Full pipeline — social group region detection</strong> (Table 3):</p>
+<p><strong>Full pipeline: social group region detection</strong> (Table 3):</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -361,7 +393,7 @@ background-size: cover;
 </tr>
 </tbody>
 </table>
-<p>The near-zero scores for baseline VLMs confirm that off-the-shelf models cannot handle this relational, multi-entity detection task — even with strong prompting. MINGLE’s pipeline design, combining specialized detection with depth-grounded pairwise reasoning, is what makes the difference.</p>
+<p>The tested baseline VLMs produce near-zero region-detection scores. In these experiments, combining specialized person detection with depth-grounded pairwise reasoning substantially improves performance.</p>
 <p>The depth and distance filtering ablation (Table 4) shows that aggressive filtering reduces VLM calls substantially with minimal impact on accuracy, making the pipeline practical for city-scale deployment.</p>
 </section>
 <section id="publication" class="level1">

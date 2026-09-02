@@ -2,15 +2,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Hongmou Zhang">
 <meta name="author" content="Liu Liu">
-<meta name="author" content="Di An">
+<meta name="author" content="Pensen Wang">
+<meta name="author" content="Jinhua Zhao">
+<meta name="description" content="A national-scale mobility analysis that uses anonymized location-based social-network data to examine city clusters and blurred regional boundaries in China.">
 
-<title>1 Billion LBSN Data – Liu Liu</title>
+<title>National Mobility Networks in China – Liu Liu</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -34,15 +40,14 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../img/favicon.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-38438b5754c853e9868c24c05b617253.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-3a05eadec12e3d005b929c1a5d369705.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../../site_libs/quarto-contrib/iconify-1.0.8/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
@@ -144,11 +149,18 @@ background-size: cover;
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-left">
-      <h1 class="title">1 Billion LBSN Data</h1>
-            <p class="subtitle lead">Detecting city clusters in China based on mobile data</p>
-                                <div class="quarto-categories">
-                <div class="quarto-category">cellphone data</div>
-                <div class="quarto-category">urban planning</div>
+      <h1 class="title">National Mobility Networks in China</h1>
+            <p class="subtitle lead">Reconceptualizing regional boundaries through individual mobility data</p>
+                  <div>
+        <div class="description">
+          A national-scale mobility analysis that uses anonymized location-based social-network data to examine city clusters and blurred regional boundaries in China.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">Applied Practice</div>
+                <div class="quarto-category">Mobility Data</div>
+                <div class="quarto-category">Geospatial Analysis</div>
+                <div class="quarto-category">Regional Planning</div>
               </div>
                   </div>
   </div>
@@ -157,10 +169,12 @@ background-size: cover;
   <div class="quarto-title-meta column-page-left">
 
       <div>
-      <div class="quarto-title-meta-heading">Main Researchers</div>
+      <div class="quarto-title-meta-heading">Research Team</div>
       <div class="quarto-title-meta-contents">
+               <p>Hongmou Zhang </p>
                <p>Liu Liu <a href="https://orcid.org/0000-0003-0100-9763" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-               <p>Di An </p>
+               <p>Pensen Wang </p>
+               <p>Jinhua Zhao </p>
             </div>
     </div>
       
@@ -171,6 +185,12 @@ background-size: cover;
       </div>
     </div>
     
+      <div>
+      <div class="quarto-title-meta-heading">Modified</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date-modified">Feb, 2026</p>
+      </div>
+    </div>
       
     </div>
     
@@ -183,11 +203,10 @@ background-size: cover;
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#the-idea" id="toc-the-idea" class="nav-link active" data-scroll-target="#the-idea"># The Idea</a></li>
-  <li><a href="#data-source" id="toc-data-source" class="nav-link" data-scroll-target="#data-source"># Data Source</a></li>
-  <li><a href="#distribution-of-national-population" id="toc-distribution-of-national-population" class="nav-link" data-scroll-target="#distribution-of-national-population"># Distribution of National Population</a></li>
-  <li><a href="#population-flows" id="toc-population-flows" class="nav-link" data-scroll-target="#population-flows"># Population Flows</a></li>
-  <li><a href="#city-clusters" id="toc-city-clusters" class="nav-link" data-scroll-target="#city-clusters"># City Clusters</a></li>
+  <li><a href="#research-question" id="toc-research-question" class="nav-link active" data-scroll-target="#research-question">Research question</a></li>
+  <li><a href="#analytical-approach" id="toc-analytical-approach" class="nav-link" data-scroll-target="#analytical-approach">Analytical approach</a></li>
+  <li><a href="#findings" id="toc-findings" class="nav-link" data-scroll-target="#findings">Findings</a></li>
+  <li><a href="#publication-and-earlier-dissemination" id="toc-publication-and-earlier-dissemination" class="nav-link" data-scroll-target="#publication-and-earlier-dissemination">Publication and earlier dissemination</a></li>
   </ul>
 </nav>
     </div>
@@ -204,68 +223,48 @@ background-size: cover;
   height: 200px;
 }
 </style>
-<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>PROJECT BRIEF
+<span class="screen-reader-only">Note</span>Project context
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Both figures show the average daily population flow distribution among more than 2,000 county-level units. The picture on the left is the average for workdays, and the picture on the right reflects the weekend situation. The former has a “diamond structure” dominated by the Beijing-Tianjin-Hebei, Yangtze River Delta, Pearl River Delta, Chengdu-Chongqing, and Mid-Delta metropolitan areas. The density of the latter reflects the strength of travel in various regions.</p>
+<p><strong>National-scale applied research conducted with Tencent mobility data</strong><br> My role: Lead analyst responsible for geospatial analysis, network analysis, and visualization. The research began in 2015 and led to a peer-reviewed article published in 2026.</p>
+</div>
+</div>
+<section id="research-question" class="level1">
+<h1>Research question</h1>
+<p>Administrative boundaries provide one view of a region, but daily mobility often connects places across those lines. This project examined whether large-scale movement networks could reveal regional structures that are clustered, overlapping, or spatially discontinuous.</p>
+<p>The analysis used anonymized location-based social-network traces aggregated to <strong>2,242 county-level units</strong>. It compared population distribution and movement matrices across workdays, weekends, National Day, and the Spring Festival period.</p>
+<p><img src="lbsn2.jpg" style="width: 100%; margin: 1.2rem 0;"></p>
+</section>
+<section id="analytical-approach" class="level1">
+<h1>Analytical approach</h1>
+<p>County-level units were represented as nodes and movement between them as weighted links. Community detection identified groups of places with strong internal connections without requiring every member to share a border. Network layouts provided a second view in which geographic distance was removed and strongly connected places moved closer together.</p>
+<p>This combination made it possible to compare three forms of regional structure:</p>
 <ul>
-<li>HongMou Zhang, Liu Liu, Pensen Wang, Jinhua Zhao, “Depicting the Blurred Regional Boundaries in China Using Individual Mobility Data”</li>
+<li>spatially continuous clusters that resemble familiar metropolitan regions;</li>
+<li>cross-boundary connections that extend beyond established planning regions; and</li>
+<li>enclaves or breaks produced by strong mobility links between non-adjacent places.</li>
 </ul>
-<p>This work has been presented in <a href="../../presentations/#national-population-flow-analysis-based-on-1-billion-lbsn-data">China Urban Planning Annual Conference 2016</a>.</p>
-</div>
-</div>
-<section id="the-idea" class="level2">
-<h2 class="anchored" data-anchor-id="the-idea"># The Idea</h2>
-<p>According to the closeness of the connection, more than 2,000 county-level units are drawn into a pattern with a gravity layout. Through community detection, about 20 clusters are highlighted, and many share typical degrees of development. For example, most provincial capital cities belong to a single-center model, while the Yangtze and Pearl River Delta metropolitan areas present a network structure.</p>
-<p>The Following Articles are translated from Chinese versions: <a href="https://mp.weixin.qq.com/s/lyplSQO_87AFrmXDa6OaZQ">City Clusters</a> and <a href="https://mp.weixin.qq.com/s/c1fiJPYPtpIqhijGT23Z1w">City Flows</a>.</p>
-<p><img src="lbsn2.jpg" style="width: 100%"></p>
+<p><img src="lbsn5.png" style="width: 100%; margin: 1.2rem 0;"></p>
 </section>
-<section id="data-source" class="level2">
-<h2 class="anchored" data-anchor-id="data-source"># Data Source</h2>
-<p>Tencent’s big data research has achieved the highest level in national-scale spatial research, with 600 million monthly active users. They conducted extensive research using large-scale sampling over a wide range of time and space. Utilizing the Tencent Cloud team’s data foundation and technical expertise, they focused on various topics such as migration patterns from Beijing, Shanghai, and Guangzhou, travel analysis during the Spring Festival, tourism trends on National Day, and early urban congestion warnings. To explore more about Tencent LBSN research, follow their official account, “Yi Chu Xing,” or check out the “WeChat-Wallet-City Service-City Heat Map” for area-specific heat maps.</p>
-<p>This unprecedented collaboration between the two parties involved a customized cooperation plan to align their needs and ensure smooth research development. The study incorporated three types of research data: population distribution in 10-square-kilometer grid units across the country, population flow matrix across 2,242 county-level units, and message flow within the same county-level units. To ensure comprehensive analysis, the research spanned four distinct periods: five working days, weekends, National Day, and Spring Festival. (For clarification, “population” refers to the research subject below.)</p>
-<p><img src="lbsn3.png" style="width: 100%"></p>
+<section id="findings" class="level1">
+<h1>Findings</h1>
+<p>The resulting communities overlap with several established urban regions, including the Beijing-Tianjin-Hebei, Yangtze River Delta, Pearl River Delta, and Chengdu-Chongqing systems. They also reveal discontinuities and long-distance ties that conventional contiguous regionalization can obscure.</p>
+<p>Provincial boundaries remain visible in many communities, suggesting that administrative organization still shapes mobility. Other clusters extend across those borders, showing why functional regions are better treated as graded and networked rather than as fixed lines.</p>
+<p><img src="lbsn8.png" style="width: 100%; margin: 1.2rem 0;"></p>
 </section>
-<section id="distribution-of-national-population" class="level2">
-<h2 class="anchored" data-anchor-id="distribution-of-national-population"># Distribution of National Population</h2>
-<p>The number of active Tencent users shows a strong correlation (correlation coefficient of 0.91) with the user count of 1.33 billion people in China’s Sixth Census, based on the division of county-level units.</p>
-<p>Analyzing the user distribution on a city scale reveals a polarized pattern within Tencent’s system. In major cities with populations of 1 million or even 10 million, according to the Sixth Census, the concentration of Tencent users surpasses the statistical population. Similarly, unit areas with populations below 500,000 also have relatively high numbers of Tencent users. For ease of comparison, the coordinates in the figure are approximately scaled at a 1:2 ratio.</p>
-<p>Apart from comparing census data, the 2014 national and provincial resident population statistics can also be utilized for provincial-level comparisons. In most provinces, the proportional relationship between the two datasets remains close to 1:2.</p>
-<p>Interestingly, when mapping the data spatially, provinces and cities with a higher proportion of Tencent users form a distinctive “ring” pattern. We propose a possible explanation for provinces and cities with lower proportions: the underdeveloped regions in the central and western areas, divided by the Hu Huanyong line, may have insufficient sample sizes of sparsely populated users. As a result, the two circled areas in Northeast China and Central China may more accurately reflect population loss. In other words, these areas might have a significant number of registered populations, but a large portion of them have relocated, and based on location point calculations, they are not considered current residents.</p>
-<p><img src="lbsn4.png" style="width: 100%"></p>
-<!-- :::: {.columns} -->
-<!-- ::: {.column width="33%"} -->
-<!-- <img src="lbsn4-1.png" style="height: 200px; object-fit: cover;"> -->
-<!-- <!-- <img src="huipai_cover.png" style="height: 400px; width: 100%; object-fit: cover;"> -->
-<!-- ::: -->
-<!-- ::: {.column width="33%"} -->
-<!-- <img src="lbsn4-2.png" style="height: 200px; object-fit: cover;"> -->
-<!-- ::: -->
-<!-- ::: {.column width="33%"} -->
-<!-- <img src="lbsn4-3.png" style="height: 200px; object-fit: cover;"> -->
-<!-- ::: -->
-<!-- :::: -->
-</section>
-<section id="population-flows" class="level2">
-<h2 class="anchored" data-anchor-id="population-flows"># Population Flows</h2>
-<p><img src="lbsn5.png" style="width: 100%"></p>
-</section>
-<section id="city-clusters" class="level2">
-<h2 class="anchored" data-anchor-id="city-clusters"># City Clusters</h2>
-<p>There are numerous definitions of urban agglomeration, and opinions among academics also vary. This article refrains from delving into extensive analysis or explanations. The following map, resembling a “nebula,” disregards the geographical locations of individual units. Instead, units are positioned closer to each other based on the strength of population flow connections, following the gravity model. (Gephi offers various layouts, and this is just one of them.) To ensure clarity, it is more suitable to use the term “urban community” rather than urban agglomeration to describe the research subject. Notably, the most prominent clusters, akin to dazzling stars in the night sky, primarily consist of renowned urban agglomerations and regions, such as Beijing-Tianjin-Hebei, Yangtze River Delta, Pearl River Delta, Chengdu-Chongqing, and more. Provincial capital cities, including Taiyuan, Xi’an, and Changsha lead the secondary star clusters.</p>
-<p><img src="lbsn6.jpg" style="width: 100%"></p>
-<p>There are also some particular star-like clusters, such as the one in Shandong Province, probably due to the mountain landscape.</p>
-<p><img src="lbsn7.jpg" style="width: 100%"></p>
-<p>When projecting the distribution of these nebulae back into spatial positions, a completely different pattern emerges. By counting, we can identify 17 “urban associations.” Overall, these associations exhibit a spatial clustering pattern. However, unlike previous divisions of related urban agglomerations, most of these “urban associations” feature “breaks” or “enclaves.” This outcome is a result of not intentionally considering spatial adjacency constraints during calculations, and it objectively reflects the development imbalances between cities or regions, particularly in terms of population flow strength.</p>
-<p>Let’s take a closer look at the “Yangtze River Delta City Association” as an example. In addition to the conventional analysis that includes southern Jiangsu and northern Zhejiang, it is observed that Xuzhou, Lianyungang, and other cities in northern Jiangsu also have close ties to the association. This reflects the strengthening connection between the southern and northern parts of Jiangsu province, while a certain gap exists in the central area of Jiangsu. Furthermore, within the Yangtze River Delta region, Anhui is identified as another “community” centered around Hefei. This suggests that, based on existing population contact data, Anhui has not yet formed close connections with the developed regions of the Yangtze River Delta. Indeed, many “communities” align with provincial boundaries, adhering to the administrative management system in China. However, there are exceptions to this pattern. For instance, the “Pearl River Delta Urban Associations” extend their influence to Jiangxi, Hunan, Guangxi, and other neighboring areas beyond Guangdong Province. Furthermore, cities like Harbin in Heilongjiang, located far away, bypass the “Liaoshen urban community” and establish direct connections with Beijing, Tianjin, and Hebei. These exceptions highlight the complex dynamics of urban interactions that sometimes transcend administrative boundaries. In addition to utilizing data from working days for division, other time periods can also be employed for the same analysis. For instance, the provided image demonstrates a division based on the National Day period. In addition to employing the community detection model, another approach to analyze connections is through the use of K-Core. This method is generally associated with determining the prominence of a city. The higher the connectivity of a city or region, the higher its K-Core value, indicating its elevated status.</p>
-<p><img src="lbsn8.png" style="width: 100%"></p>
+<section id="publication-and-earlier-dissemination" class="level1">
+<h1>Publication and earlier dissemination</h1>
+<blockquote class="blockquote">
+<p>Zhang, H., Liu, L., Wang, P., &amp; Zhao, J. (2026). “Reconceptualizing Regional Boundaries: Depicting Blurred Regions in China through Individual Mobility Data.” <em>Computational Urban Science</em>, 6(1), 5. <a href="https://doi.org/10.1007/s43762-026-00242-z">Paper</a></p>
+</blockquote>
+<p>Earlier versions of the work were presented at the <a href="../../presentations/#national-population-flow-analysis-based-on-1-billion-lbsn-data">2016 China Urban Planning Annual Conference</a> and discussed in two Chinese-language essays: <a href="https://mp.weixin.qq.com/s/lyplSQO_87AFrmXDa6OaZQ">City Clusters</a> and <a href="https://mp.weixin.qq.com/s/c1fiJPYPtpIqhijGT23Z1w">City Flows</a>.</p>
 
 
 </section>
