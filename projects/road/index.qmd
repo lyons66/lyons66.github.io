@@ -1,19 +1,16 @@
 ---
-title: "Road Assessment in Ulaanbaatar"
+title: "Road Asset Assessment in Ulaanbaatar"
+subtitle: "Computer vision and a citywide maintenance-monitoring platform"
+description: "A World Bank-supported municipal project assessing road and sidewalk assets from geo-tagged street imagery across Ulaanbaatar."
 date: "Oct 2021"
 date-format: "MMM, YYYY"
-# author: Liu Liu @ MIT
-author-title: "Main Researchers"
+author-title: "Project Team"
 author:
   - name: Liu Liu
     orcid: 0000-0003-0100-9763
   - name: Ding Zhang
   - name: Hongdu Yi
-    # affiliations:
-    #   - name: test
-# affiliation-title: "AFFILIATION"
-
-categories: [computer vision, urban planning, tools]
+categories: [Applied Practice, Urban AI, Computer Vision, Decision Support]
 image: "road_cover.jpg"
 title-block-banner: "road_banner.png"
 page-layout: full
@@ -38,26 +35,38 @@ format:
 </style>
 ```
 
+::: {.callout-note}
+## Project context
 
-::: callout-tip
-## PROJECT BRIEF
-
-The condition of transportation assets can be effectively observed through user-generated content (UGC) images. Analyzing geo-tagged images makes it possible to link the condition reflected in the images to specific geographic locations. This approach has been employed for various transportation assets such as catch basins, guardrails, manholes, road curbs, road markings, road signs, roadways, and sidewalks. By associating these images with corresponding road segments, a comprehensive understanding of the condition of these assets can be generated. This enables better asset management and maintenance strategies, ultimately contributing to safer and more efficient transportation systems.
-
-- [Zhang, D., Yi, H., Chen, Y., Jiang, N., Shao, J., & Liu, L. “An urban infrastructure assessment system built on geo-tagged images and machine learning” Computational Urban Science.](https://link.springer.com/article/10.1007/s43762-022-00056-9)
-
+**Commissioned applied research for the Ulaanbaatar municipal government within a World Bank-supported infrastructure program**<br>
+My role: Project lead at CitoryTech, responsible for the analytical approach, system development, and delivery.
 :::
 
-# The Idea
----
+# The decision problem
 
-The labeled images would be used as training data sets. According to their Q score, a process of ‘classification-then-regression’ would be conducted. Deep learning models would be built to extract deep features of the labeled images with transportation assets in different conditions.
+Ulaanbaatar needed a repeatable way to inspect road and sidewalk infrastructure across the city. Municipal vehicles already traveled through the street network and collected imagery. The project converted those images into a condition-monitoring system that could help staff decide where field inspection and selective repair were most urgent.
 
-<img src="road_cover.jpg" style="width: 100%;">
+The system evaluated nine types of road and transportation assets, including pavement damage, sidewalks, curbs, road markings, signs, manholes, and guardrails. Each detected asset was assigned a condition category and linked to its road segment. Maintenance priority could then consider both physical condition and the importance of the location, including how many people were likely to use it.
 
-# Demo Video
----
-Below is a brief demo of our platform for the visualization of the analytic results.
+# My role and delivery
+
+The World Bank introduced our team to the municipal client. I led the project through method design, model development, system integration, and delivery. The final product was a monitoring platform with an interactive map, color-coded road segments, and image-level evidence for the assessed assets.
+
+This format allowed staff to move from a citywide overview to individual locations rather than relying on a single aggregate score. The analytical output was designed to support maintenance prioritization, reporting, and targeted field verification.
+
+<img src="road_cover.jpg" style="width: 100%; margin: 1.2rem 0;">
+
+# Method and limitations
+
+The workflow combined asset detection with condition assessment. Labeled images supplied the training data, while geo-referenced predictions connected each observation to the road network and the monitoring interface.
+
+The model's coverage was limited to the asset categories represented in the training data. Adding a new asset type, or encountering a substantially different image source, required new labels and model evaluation. We treated the platform as an updateable inspection aid rather than a replacement for municipal judgment or field checks.
+
+# Publication
+
+> Zhang, D., Yi, H., Chen, Y., Jiang, N., Shao, J., & Liu, L. (2022). "An Urban Infrastructure Assessment System Built on Geo-Tagged Images and Machine Learning." *Computational Urban Science*, 2(1), 1–21. [Paper](https://doi.org/10.1007/s43762-022-00056-9)
+
+# Platform demonstrations
 
 {{< video https://www.youtube.com/embed/23kLzbIkhfI >}}
 

@@ -1,19 +1,57 @@
 ---
 title: "Projects"
-subtitle: "Data driven urban studies, geo-tagged imagery analysis, and products"
-listing:
-  contents: ./
-  sort: "date desc"
-  date-format: "MMM, YYYY"
-  type: grid
-  categories: true
-  sort-ui: true
-  filter-ui: true
-  max-description-length: 150
-  grid-columns: 3
+subtitle: "Independent research, collaborations, and applied urban AI"
 page-layout: full
-# title-block-banner: true
 title-block-banner: "img/pop_sh.png"
+listing:
+  - id: independent-research
+    contents:
+      - seeing_hai/index.qmd
+      - mingle/index.qmd
+      - sidewalk_moments/index.qmd
+    type: grid
+    grid-columns: 3
+    categories: true
+    fields: [image, title, categories, description, date]
+    sort: "date desc"
+    date-format: "MMM, YYYY"
+    sort-ui: false
+    filter-ui: false
+    max-description-length: 170
+  - id: collaborative-research
+    contents:
+      - nyc_walks/index.qmd
+      - sidewalk_ballet/index.qmd
+      - walkocc/index.qmd
+    type: grid
+    grid-columns: 3
+    categories: true
+    fields: [image, title, categories, description, date]
+    sort: "date desc"
+    date-format: "MMM, YYYY"
+    sort-ui: false
+    filter-ui: false
+    max-description-length: 170
+  - id: applied-practice
+    contents:
+      - road/index.qmd
+      - streetalk/index.qmd
+      - vibescan/index.qmd
+      - lbsn/index.qmd
+      - cimage/index.qmd
+      - cityeye/index.qmd
+      - huipai/index.qmd
+      - riverview/index.qmd
+      - caz/index.qmd
+    type: grid
+    grid-columns: 3
+    categories: true
+    fields: [image, title, categories, description, date]
+    sort: "date desc"
+    date-format: "MMM, YYYY"
+    sort-ui: true
+    filter-ui: true
+    max-description-length: 150
 ---
 
 ```{=html}
@@ -26,7 +64,7 @@ title-block-banner: "img/pop_sh.png"
 .card:hover {
   border-color: #000000;
   border-width: thin;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .quarto-title-banner {
@@ -40,10 +78,48 @@ title-block-banner: "img/pop_sh.png"
 }
 
 #quarto-margin-sidebar {
+  margin-top: 0;
   padding-top: 0;
+  display: none;
 }
 
+.project-section-note {
+  max-width: 880px;
+  color: #5f6b78;
+  margin-bottom: 1.1rem;
+}
+
+h2 {
+  margin-top: 2.6rem;
+}
 </style>
 ```
 
-For more projects, please visit the [visualization page](../visualization).
+## Independent Research
+
+<p class="project-section-note">
+Research questions and programs that I lead. Collaborative authorship is identified on each page, but these projects are organized around my independent research agenda rather than a lab-wide project.
+</p>
+
+::: {#independent-research}
+:::
+
+## Lab & Collaborative Research
+
+<p class="project-section-note">
+Projects developed within research labs or multi-institution teams. Each page separates the full project from my specific role and contribution.
+</p>
+
+::: {#collaborative-research}
+:::
+
+## Applied Urban AI & Practice
+
+<p class="project-section-note">
+Selected commissioned research, urban analytics systems, and earlier work from professional practice.
+</p>
+
+::: {#applied-practice}
+:::
+
+For additional maps and prototypes, visit the [Visualization page](../visualization/).

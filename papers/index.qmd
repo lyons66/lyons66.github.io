@@ -199,7 +199,7 @@ h3.sub-heading {
 
 <p class="intro-note">
 For the most up-to-date list, see my <a href="https://www.dropbox.com/scl/fo/ghrtsq5to79059lximk01/h?rlkey=cev0uzwgvu4jkus9eo6kkbgn7&dl=0">Curriculum Vitae</a> and <a href="https://scholar.google.com/citations?user=D3PSmFsAAAAJ">Google Scholar</a> profile.
-<span class="scholar-stat">1,680 citations &nbsp;·&nbsp; Jun 2026</span>
+<span class="scholar-stat">1,764 citations &nbsp;·&nbsp; Aug 2026</span>
 </p>
 
 ## Publications {.section-heading}
@@ -213,7 +213,7 @@ For the most up-to-date list, see my <a href="https://www.dropbox.com/scl/fo/ghr
     <div class="pub-title">MINGLE: VLMs for Semantically Complex Region Detection</div>
     <div class="pub-authors"><strong>Liu, L.</strong>, Kudaeva, A., Cipriano, M., Al Ghannam, F., Tan, F., de Melo, G., &amp; Sevtsuk, A.</div>
     <div class="pub-venue"><em>Proceedings of the AAAI Conference on Artificial Intelligence</em>, 40(45).</div>
-    <div class="pub-links"><a href="https://doi.org/10.1609/aaai.v40i45.41239">DOI</a></div>
+    <div class="pub-links"><a href="https://doi.org/10.1609/aaai.v40i45.41239">DOI</a><a href="../projects/mingle/">Project</a></div>
   </div>
 </div>
 
@@ -223,17 +223,17 @@ For the most up-to-date list, see my <a href="https://www.dropbox.com/scl/fo/ghr
     <div class="pub-title">Spatial Distribution of Foot Traffic in New York City and Applications for Urban Planning</div>
     <div class="pub-authors">Sevtsuk, A., Basu, R., <strong>Liu, L.</strong>, Alhassan, A., &amp; Kollar, J.</div>
     <div class="pub-venue"><em>Nature Cities</em>, 1–10.</div>
-    <div class="pub-links"><a href="https://doi.org/10.1038/s44284-025-00383-y">DOI</a></div>
+    <div class="pub-links"><a href="https://doi.org/10.1038/s44284-025-00383-y">DOI</a><a href="../projects/nyc_walks/">Project</a></div>
   </div>
 </div>
 
 <div class="pub-entry">
   <div class="pub-year">2026</div>
   <div class="pub-body">
-    <div class="pub-title">Reconceptualising Regional Boundaries: Depicting Blurred Regions in China Through Individual Mobility Data</div>
+    <div class="pub-title">Reconceptualizing Regional Boundaries: Depicting Blurred Regions in China through Individual Mobility Data</div>
     <div class="pub-authors">Zhang, H., <strong>Liu, L.</strong>, Wang, P., &amp; Zhao, J.</div>
     <div class="pub-venue"><em>Computational Urban Science</em>, 6(1), 5.</div>
-    <div class="pub-links"><a href="https://doi.org/10.1007/s43762-026-00242-z">DOI</a></div>
+    <div class="pub-links"><a href="https://doi.org/10.1007/s43762-026-00242-z">DOI</a><a href="../projects/lbsn/">Project</a></div>
   </div>
 </div>
 
@@ -243,7 +243,7 @@ For the most up-to-date list, see my <a href="https://www.dropbox.com/scl/fo/ghr
     <div class="pub-title">START: Spatial and Textual Learning for Chart Understanding</div>
     <div class="pub-authors">Liu, Z., Gao, X., Niu, F., Gao, Q., <strong>Liu, L.</strong>, &amp; Piramuthu, R.</div>
     <div class="pub-venue"><em>IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)</em>.</div>
-    <div class="pub-links"><a href="https://doi.org/10.48550/arxiv.2512.07186">arXiv</a></div>
+    <div class="pub-links"><a href="https://openaccess.thecvf.com/content/WACV2026/html/Liu_START_Spatial_and_Textual_Learning_for_Chart_Understanding_WACV_2026_paper.html">Paper</a><a href="https://doi.org/10.48550/arxiv.2512.07186">arXiv</a></div>
   </div>
 </div>
 
@@ -283,7 +283,7 @@ For the most up-to-date list, see my <a href="https://www.dropbox.com/scl/fo/ghr
     <div class="pub-title">An Urban Infrastructure Assessment System Built on Geo-Tagged Images and Machine Learning</div>
     <div class="pub-authors">Zhang, D., Yi, H., Chen, Y., Jiang, N., Shao, J., &amp; <strong>Liu, L.</strong></div>
     <div class="pub-venue"><em>Computational Urban Science</em>, 2(1), 1–21.</div>
-    <div class="pub-links"><a href="https://doi.org/10.1007/s43762-022-00056-9">DOI</a></div>
+    <div class="pub-links"><a href="https://doi.org/10.1007/s43762-022-00056-9">DOI</a><a href="../projects/road/">Project</a></div>
   </div>
 </div>
 
@@ -371,25 +371,32 @@ For the most up-to-date list, see my <a href="https://www.dropbox.com/scl/fo/ghr
     <div class="pub-title">A Vision-Language Framework for Measuring Social Life on Sidewalks</div>
     <div class="pub-authors"><strong>Liu, L.</strong>, &amp; Sevtsuk, A.</div>
     <div class="pub-venue"><span class="pub-badge badge-review">Under Review</span> Submitted to <em>Computers, Environment and Urban Systems</em>.</div>
+    <div class="pub-links"><a href="../projects/seeing_hai/">Dissertation Project</a></div>
   </div>
 </div>
 
 <div class="pub-entry">
   <div class="pub-year">2026</div>
   <div class="pub-body">
-    <div class="pub-title">Are Richer Visual Representations Always More Human-Aligned in Urban Experience?</div>
+    <div class="pub-title">Sidewalk Moments: Are Richer Representations Always More Human-Aligned? Evidence from City-Walk Videos</div>
     <div class="pub-authors"><strong>Liu, L.</strong>, Tan, F., &amp; Duarte, F.</div>
     <div class="pub-venue"><span class="pub-badge badge-review">Under Review</span> Submitted to <em>Scientific Reports</em>.</div>
-    <div class="pub-links"><a href="https://arxiv.org/abs/2607.20903">arXiv</a></div>
+    <div class="pub-links"><a href="https://arxiv.org/abs/2607.20903">arXiv</a><a href="../projects/sidewalk_moments/">Project</a></div>
   </div>
 </div>
+```
+
+### Preprints & Manuscripts in Preparation {.sub-heading}
+
+```{=html}
 
 <div class="pub-entry">
   <div class="pub-year">2026</div>
   <div class="pub-body">
     <div class="pub-title">Monocular 3D Occupancy Perception for Robots on Sidewalks via Hybrid 2D–3D Learning</div>
     <div class="pub-authors">Ma, Y., Lin, J., <strong>Liu, L.</strong>, He, H., Ricketts, L., Squicciarini, B., Liu, Y., &amp; Zhou, B.</div>
-    <div class="pub-venue"><span class="pub-badge badge-review">Under Review</span> Submitted to the <em>Conference on Robot Learning (CoRL)</em>.</div>
+    <div class="pub-venue"><span class="pub-badge badge-prep">Preprint</span> Available as an arXiv preprint; revised manuscript in preparation.</div>
+    <div class="pub-links"><a href="https://arxiv.org/abs/2606.19122">arXiv</a><a href="https://vail.cs.ucla.edu/walkocc/">Official Project</a><a href="../projects/walkocc/">My Contribution</a></div>
   </div>
 </div>
 ```
@@ -403,7 +410,6 @@ For the most up-to-date list, see my <a href="https://www.dropbox.com/scl/fo/ghr
     <div class="pub-title">Exploring the Challenges of Humanity's Last Exam</div>
     <div class="pub-authors"><strong>Liu, L.</strong>, Gao, X., Gao, Q., &amp; Piramuthu, R.</div>
     <div class="pub-venue"><span class="pub-badge badge-tech">Technical Report</span> Applied Scientist PhD Internship, Amazon AGI, Sunnyvale, CA.</div>
-    <div class="pub-links"><a href="https://www.dropbox.com/scl/fi/8eshq8b80b9mmp4c19ukt/Exploring_the_Challenges_of_Humanity_s_Last_Exam.pdf?rlkey=qgvc22lbsc78j86apggtklqpv&st=lvqor1f4&dl=0">View upon request</a></div>
   </div>
 </div>
 
@@ -413,7 +419,7 @@ For the most up-to-date list, see my <a href="https://www.dropbox.com/scl/fo/ghr
     <div class="pub-title">ABCxM: A Benchmark for Multimodal Models Playing Scores to Music</div>
     <div class="pub-authors"><strong>Liu, L.</strong>, Gao, X., Gao, Q., &amp; Piramuthu, R.</div>
     <div class="pub-venue"><span class="pub-badge badge-tech">Technical Report</span> Applied Scientist PhD Internship, Amazon AGI, Sunnyvale, CA.</div>
-    <div class="pub-links"><a href="https://www.dropbox.com/scl/fi/07pv6n5h6n8c784nlh4k3/liu-liu_1.pdf?rlkey=sf34mrgrm85cz0wq557vgqq4a&st=jznjgqwt&dl=0">View upon request</a></div>
+    <div class="pub-links"><a href="https://www.dropbox.com/scl/fi/07pv6n5h6n8c784nlh4k3/liu-liu_1.pdf?rlkey=sf34mrgrm85cz0wq557vgqq4a&st=jznjgqwt&dl=0">Manuscript</a></div>
   </div>
 </div>
 
@@ -423,7 +429,7 @@ For the most up-to-date list, see my <a href="https://www.dropbox.com/scl/fo/ghr
     <div class="pub-title">VIS: A Benchmark for Foley Models and Visually Indicative Sounds</div>
     <div class="pub-authors"><strong>Liu, L.</strong>, Gao, X., Gao, Q., &amp; Piramuthu, R.</div>
     <div class="pub-venue"><span class="pub-badge badge-tech">Technical Report</span> Applied Scientist PhD Internship, Amazon AGI, Sunnyvale, CA.</div>
-    <div class="pub-links"><a href="https://www.dropbox.com/scl/fi/6idfzeoj59iff4g8wxi69/liu-liu_2.pdf?rlkey=orjuocbjjipuzqjjg6d8ys7yu&st=f6ah28z6&dl=0">View upon request</a></div>
+    <div class="pub-links"><a href="https://www.dropbox.com/scl/fi/6idfzeoj59iff4g8wxi69/liu-liu_2.pdf?rlkey=orjuocbjjipuzqjjg6d8ys7yu&st=f6ah28z6&dl=0">Manuscript</a></div>
   </div>
 </div>
 
@@ -446,6 +452,16 @@ For the most up-to-date list, see my <a href="https://www.dropbox.com/scl/fo/ghr
     <div class="pub-links"><a href="https://doi.org/10.1596/33343">DOI</a></div>
   </div>
 </div>
+
+<div class="pub-entry">
+  <div class="pub-year">2020</div>
+  <div class="pub-body">
+    <div class="pub-title">Cost-Effectiveness Analysis of Antiepidemic Policies and Global Situation Assessment of COVID-19</div>
+    <div class="pub-authors">Xu, L., et al.</div>
+    <div class="pub-venue"><em>arXiv</em> preprint.</div>
+    <div class="pub-links"><a href="https://arxiv.org/abs/2004.07765">arXiv</a></div>
+  </div>
+</div>
 ```
 
 *Additional papers written in Chinese are listed in the [Curriculum Vitae](https://www.dropbox.com/scl/fo/ghrtsq5to79059lximk01/h?rlkey=cev0uzwgvu4jkus9eo6kkbgn7&dl=0) only.*
@@ -460,7 +476,7 @@ For the most up-to-date list, see my <a href="https://www.dropbox.com/scl/fo/ghr
 <div class="grant-entry">
   <span class="grant-role">Principal Investigator</span>
   "Observing the 'Sidewalk Ballet': Leveraging LMMs to Detect Social Interactions in Large-Scale Urban Imagery Datasets" (CIS250088), Advanced Cyberinfrastructure Coordination Ecosystem: Services &amp; Support (ACCESS), Alexandria, VA.
-  <span class="grant-amount">~$300,000*</span>
+  <span class="grant-amount">$296,679*</span>
   <span class="grant-period">Jan 2025 – Jan 2027</span>
 </div>
 
@@ -474,7 +490,7 @@ For the most up-to-date list, see my <a href="https://www.dropbox.com/scl/fo/ghr
 <div class="grant-entry">
   <span class="grant-role">Co-Principal Investigator</span>
   "Moments: Leveraging Continuous Visual and Auditory Experiences to Assess Urban Attraction" (CIS250360), Advanced Cyberinfrastructure Coordination Ecosystem: Services &amp; Support (ACCESS), Alexandria, VA.
-  <span class="grant-amount">~$36,000*</span>
+  <span class="grant-amount">$36,218*</span>
   <span class="grant-period">Oct 2025 – Oct 2026</span>
 </div>
 

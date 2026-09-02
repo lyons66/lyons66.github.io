@@ -1,14 +1,21 @@
 ---
 title: "MINGLE"
 subtitle: "VLMs for Semantically Complex Region Detection in Urban Scenes"
+description: "A dissertation method for detecting socially interacting groups as relationships among people in urban street imagery."
 date: "Jan 2026"
 date-format: "MMM, YYYY"
 author-title: "Main Researchers"
 author:
   - name: Liu Liu
     orcid: 0000-0003-0100-9763
+  - name: Alisa Kudaeva
+  - name: Marco Cipriano
+  - name: Fajer Al Ghannam
+  - name: Freya Huying Tan
+  - name: Gerard de Melo
+  - name: Andres Sevtsuk
 
-categories: [computer vision, AI, urban design]
+categories: [Independent Research, Urban AI, Computer Vision, Pedestrian & Public Life]
 image: "mingle_cover.png"
 title-block-banner: "mingle_banner.png"
 page-layout: full
@@ -33,25 +40,32 @@ format:
 </style>
 ```
 
+::: {.callout-note}
+## Research context
+
+**Method developed within my independent dissertation research, [Seeing HAI](../seeing_hai/)**<br>
+Lead author: Liu Liu · Collaborative paper with researchers at MIT and the Hasso Plattner Institute
+
+MINGLE is a dissertation method and a coauthored research output. It is also used within the separate [Sidewalk Ballet](../sidewalk_ballet/) lab collaboration.
+:::
+
 ::: {.callout-tip}
-## PROJECT BRIEF
+## Project brief
 
-Detecting who is interacting with whom in a city street is something humans do effortlessly — yet it remains one of the hardest tasks for computer vision. A "social group" is not a physical object with clear edges; it is a relational, emergent pattern among two or more people sharing attention, conversation, or collective movement. Standard object detectors struggle with this: they excel at finding discrete, bounded entities, but fail when the target is defined by social context rather than visual shape.
+People can usually recognize who is interacting with whom in a street scene, but this remains difficult for computer vision. A social group is not a physical object with clear edges. It is a relational pattern among two or more people who may share attention, conversation, or movement. Standard object detectors identify bounded entities, but the target here is defined by social context.
 
-MINGLE (**M**ulti-person **I**nteraction-aware **N**eural **G**roup **L**ocalization and **E**xtraction) addresses this gap with a modular three-stage pipeline that combines human detection, depth-aware vision-language model reasoning, and spatial aggregation. The paper was accepted at **AAAI 2026** (AI for Social Impact Track) and introduces a 100K-image annotated dataset — the first of its kind — for benchmarking social group detection in urban street-view imagery.
+MINGLE (**M**ulti-person **I**nteraction-aware **N**eural **G**roup **L**ocalization and **E**xtraction) combines person detection, depth-aware vision-language reasoning, and spatial aggregation. The paper was published in the **AAAI 2026 AI for Social Impact Track** and introduces annotations and metadata for 100,000 urban street images.
 :::
 
 # The Problem
 
 ---
 
-Seminal urban scholars — William H. Whyte, Jan Gehl, Allan Jacobs — established that observing where and how people gather in public space is essential to understanding urban vitality. Their insights remain foundational in urban design practice. Yet their methods required trained fieldworkers stationed at specific locations, producing data that were place-bound, labor-intensive, and impossible to scale.
+William H. Whyte, Jan Gehl, and Allan Jacobs established the importance of observing where and how people gather in public space. Their methods required trained fieldworkers at selected locations, producing detailed observations that were difficult to repeat across a city.
 
-Modern street-view imagery now covers billions of urban scenes worldwide. If we could automatically detect social interactions within this imagery, we could measure sidewalk sociability at the scale of entire cities — linking human co-presence to accessibility, street design, and land use in ways never before possible.
+Street-view imagery makes it possible to revisit this observational tradition at a larger scale. Detecting social interactions in these images can support comparisons between human co-presence, accessibility, street design, and land use.
 
-The core difficulty is semantic complexity. A social group has no fixed shape, color, or texture. It is defined by *relationships* — proximity, body orientation, shared gaze, co-movement. As the paper puts it:
-
-> *"Detecting such groups requires interpreting subtle visual cues — proximity, body orientation, and co-movement — that transcend conventional object-detection paradigms."*
+The core difficulty is semantic complexity. A social group has no fixed shape, color, or texture. It is defined by relationships such as proximity, body orientation, shared gaze, and co-movement.
 
 Off-the-shelf detectors return bounding boxes around individuals, not coalitions. Zero-shot prompting of large vision-language models (VLMs) like GPT-4o yields F1 scores near zero on this task. A new approach is needed.
 
@@ -59,7 +73,7 @@ Off-the-shelf detectors return bounding boxes around individuals, not coalitions
 
 *Figure 1. Comparison of three approaches on the same New York street scene. MINGLE (top) correctly identifies and localizes socially interacting groups with tight bounding boxes. Traditional object detection (middle) has no category for "social group." Zero-shot VLM prompting (bottom) produces noisy, unreliable results.*
 
-A concrete illustration of why standard open-vocabulary detection fails: when queried with "groups of people interacting," a state-of-the-art open-vocabulary detector returns a single bounding box around one person — missing the social structure entirely.
+When queried with "groups of people interacting," the tested open-vocabulary detector returns one bounding box around one person rather than the relationship among people.
 
 <img src="OVD.png" style="width: 100%; margin: 1.2rem 0;">
 
@@ -71,11 +85,11 @@ A concrete illustration of why standard open-vocabulary detection fails: when qu
 
 MINGLE solves the problem in three stages, each addressing a distinct challenge:
 
-## Stage 1 — Person Detection
+## Stage 1: Person detection
 
 An ATSS-Swin-L-DyHead detector first identifies all individual people in the scene with high-confidence bounding boxes. This separates the problem of *finding people* from the problem of *reasoning about their relationships*.
 
-## Stage 2 — Pairwise Affiliation Classification
+## Stage 2: Pairwise affiliation classification
 
 For every pair of detected individuals, MINGLE constructs a prompt containing:
 
@@ -87,9 +101,9 @@ This multimodal prompt is fed to a **fine-tuned Qwen2-VL / Qwen2.5-VL** model, w
 
 Computational cost is managed by filtering out pairs whose image-plane distance or depth difference exceeds configurable thresholds, dramatically reducing the number of VLM calls without meaningful loss in accuracy.
 
-## Stage 3 — Group Aggregation
+## Stage 3: Group aggregation
 
-A greedy clustering algorithm merges pairwise classifications into coherent group regions. Any set of two or more individuals with mutual "interacting" links forms a social group, and a single bounding box is computed from the extreme coordinates of its members. The result is a **social group region** — a new type of detection output that captures collective, relational structure rather than individual bodies.
+A greedy clustering algorithm merges pairwise classifications into group regions. A set of two or more individuals with mutual "interacting" links forms a social group, and a bounding box is computed from the extreme coordinates of its members. The resulting **social group region** represents collective structure rather than a single body.
 
 <img src="pipeline.png" style="width: 100%; margin: 1.2rem 0;">
 
@@ -112,7 +126,7 @@ The dataset contains **588,430 human instances** and **72,537 annotated social g
 
 <img src="dataset.png" style="width: 100%; margin: 1.2rem 0;">
 
-*Figure 4. Dataset composition and statistics. Left: source distribution across four street-view providers. Right: histograms of people per image, groups per image, and group size — showing the dataset covers a wide range of scene densities.*
+*Figure 4. Dataset composition and statistics. Left: source distribution across four street-view providers. Right: histograms of people per image, groups per image, and group size.*
 
 # Results
 
@@ -128,14 +142,14 @@ MINGLE substantially outperforms all baselines:
 | Qwen2-VL (zero-shot) | 0.53 | — | — |
 | **MINGLE (fine-tuned, 76K)** | **0.70** | **0.73** | **0.66** |
 
-**Full pipeline — social group region detection** (Table 3):
+**Full pipeline: social group region detection** (Table 3):
 
 | Method | mIoU | F1 | Precision | Recall |
 |---|---|---|---|---|
 | Baseline VLMs | ~0.00–0.02 | — | — | — |
 | **MINGLE** | **0.64** | **0.60** | **0.75** | **0.61** |
 
-The near-zero scores for baseline VLMs confirm that off-the-shelf models cannot handle this relational, multi-entity detection task — even with strong prompting. MINGLE's pipeline design, combining specialized detection with depth-grounded pairwise reasoning, is what makes the difference.
+The tested baseline VLMs produce near-zero region-detection scores. In these experiments, combining specialized person detection with depth-grounded pairwise reasoning substantially improves performance.
 
 The depth and distance filtering ablation (Table 4) shows that aggressive filtering reduces VLM calls substantially with minimal impact on accuracy, making the pipeline practical for city-scale deployment.
 

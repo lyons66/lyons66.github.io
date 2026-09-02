@@ -1,23 +1,14 @@
 ---
 title: "Sidewalk Ballet"
-subtitle: "Detecting social behaviors on streets"
+subtitle: "A City Form Lab collaboration on social interactions in public space"
+description: "A collaboration between MIT City Form Lab and the Hasso Plattner Institute, with Liu Liu serving as the Sidewalk Ballet project lead at MIT."
 date: "May 2025"
 date-format: "MMM, YYYY"
-# author: Liu Liu @ MIT
-author-title: "Main Researchers"
+author-title: "MIT Project Lead"
 author:
   - name: Liu Liu
     orcid: 0000-0003-0100-9763
-#     email: lyons66@mit.edu
-    # affiliations:
-    #   - name: Massachusetts Institute of Technology
-#       - url: https://www.mit.edu/
-#  - name: Maryam Hosseini
-    # affiliations:
-    #   - name: test
-# affiliation-title: "AFFILIATION"
-
-categories: [computer vision, urban design]
+categories: [Lab Collaboration, Urban AI, Computer Vision, Pedestrian & Public Life]
 image: "sb_cover.png"
 title-block-banner: "sb_banner.png"
 page-layout: full
@@ -42,27 +33,39 @@ format:
 </style>
 ```
 
-::: {.callout-tip}
-## PROJECT BRIEF
+::: {.callout-note}
+## Research context
 
-Traditional urban observational studies rely on direct field observation of public spaces such as sidewalks and plazas to understand how human behaviour and the built environment influence one another. Pioneering scholars, including William H. Whyte, Jan Gehl, and Allan Jacobs, produced influential empirical insights that continue to guide urban design practice. Such work, though invaluable, is labor-intensive, restricted to specific locations, and increasingly challenged by evolving social patterns shaped by digital interaction and algorithmic filter bubbles.
+**MIT City Form Lab and Hasso Plattner Institute collaboration**<br>
+My role: Sidewalk Ballet project lead at MIT
 
-Recent advances in artificial intelligence, especially computer vision, allow researchers to extract physical indicators from extensive collections of geo‑tagged imagery at an unprecedented scale. Measures such as the Green View Index have become common in urban analytics. However, most applications target the static attributes of the built environment, and very few explore the more intricate realm of human behaviour that earlier manual studies documented.
-
-My dissertation proposes a framework that fills this missing piece. I designed an end‑to‑end data collection, processing, and annotation pipeline that fine‑tunes multimodal vision‑language models to recognise the full spectrum of Human Activities and Interactions (HAI) visible in street‑view images. First, the methodological component adapts the models to label combined postures and actions, such as standing, sitting, walking, vending, cycling, using a phone, and over forty additional states, and to detect social groupings (single, dyad, small group, crowd) together with degrees of engagement such as face‑to‑face conversation versus passive co‑presence. The taxonomy is distilled from classic behavioural literature and extensive image inspection. Second, I propose to construct a family of HAI indicators aggregated to uniform sidewalk segments, including Solitary, Grouping, Engagement, Diversity, and Activity Entropy. These indicators are analysed against urban accessibility (pedestrian accessibility and pedestrian flows), design and perceptual attributes (sidewalk width, tree canopy, street‑furniture density, façade transparency, etc.), and socio‑demographic metrics (ethnic composition, age diversity, etc.) from census and mobility data. External comparison with high‑resolution GPS trajectory surveys confirms that segments with higher Activity Entropy or stronger Engagement scores align with observed patterns of pedestrian co‑presence.
-
+Sidewalk Ballet is a collaborative lab project and public installation. It is not the title of my dissertation. My independent doctoral research is [*Seeing HAI: Human Activities and Interactions on Sidewalks and Pedestrian Spaces through VLMs*](../seeing_hai/).
 :::
 
-<img src="LiusDesk2.jpg" style="width: 100%;">
+# The collaboration
 
-The City Form Lab exhibit at the 2025 Venice Architecture Biennale showcases two ongoing research projects that examine the geography of foot-traffic and social interactions on the streets of New York: "NYC Walks" and "Sidewalk Ballet". The exhibit is part of the MIT Department of Architecture led exhibition The Next Earth at the Palazzo Diedo, the exhibition space of Berggruen Arts & Culture. 
+Sidewalk Ballet examines where social activities occur on city sidewalks and public spaces. The project uses computer vision and vision-language models to identify situations in which people talk, eat, walk together, play, or otherwise participate in a shared activity. These observations can then be mapped across a city and compared with pedestrian movement and the spatial context of each street.
 
-Here is the project page link: [https://cityform.mit.edu/projects/venice-architecture-biennale-2025](https://cityform.mit.edu/projects/venice-architecture-biennale-2025)
+The project is a collaboration between the **MIT City Form Lab** and the **Artificial Intelligence and Intelligent Systems group at the Hasso Plattner Institute**. Andres Sevtsuk directs the City Form Lab. At MIT, I lead the Sidewalk Ballet project, with Freya Huying Tan contributing to the project team. Marco Cipriano leads the work at Hasso Plattner Institute with Gerard de Melo as co-principal investigator.
 
-<iframe 
-  title="vimeo-player"
+# My role
+
+As the MIT project lead, I have worked on the research pipeline for detecting social interactions in street imagery, coordinated the project's development at MIT, and led the translation of the work into a public installation. Some methods used in this collaboration also appear in my independent doctoral research, including [MINGLE](../mingle/), but the dissertation and the lab project remain distinct in scope and authorship.
+
+<img src="sb_cover.png" style="width: 100%; margin: 1.2rem 0;">
+
+# Venice Architecture Biennale 2025
+
+The City Form Lab exhibit at the **2025 Venice Architecture Biennale** presented Sidewalk Ballet alongside [NYC Walks](../nyc_walks/). The installation was configured as a working graduate-student desk, showing the tools, visualizations, and research process behind city-scale analyses of pedestrian movement and social interaction.
+
+The exhibit formed part of *The Next Earth: Computation, Crisis, Cosmology*, the MIT Department of Architecture exhibition at Palazzo Diedo. It ran from May 10 to November 23, 2025.
+
+- [City Form Lab project and team page](https://cityform.mit.edu/projects/venice-architecture-biennale-2025)
+- [Seeing HAI, my independent dissertation research](../seeing_hai/)
+
+<iframe
+  title="NYC Walks and Sidewalk Ballet at the Venice Architecture Biennale"
   src="https://player.vimeo.com/video/1082477060?h=dc898de3cf"
   style="width: 100%; aspect-ratio: 16 / 9; border: none;"
   allowfullscreen>
 </iframe>
-

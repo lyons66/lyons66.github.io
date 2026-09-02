@@ -60,7 +60,7 @@ format:
 To obtain the slides view password, please [contact me](mailto:lyons66@mit.edu).
 :::
 
-## Sidewalk Moments: Are Richer Visual Representations Always More Human-Aligned in Urban Experience?
+## Sidewalk Moments: Are Richer Representations Always More Human-Aligned? Evidence from City-Walk Videos
 
 ::::: {.columns}
 :::: {.column width="70%"}
@@ -71,7 +71,7 @@ Date: Mar 19, 2026
 <br>
 Location: San Francisco
 
-This presentation details a three-year side project investigating the differences between video-based deep features and aggregated image features extracted from city-walk footage.
+This presentation reports an independent research project comparing video, temporally averaged images, audio, and text as representations of urban engagement in city-walk footage. The paper is under review at *Scientific Reports*. [Project page](../projects/sidewalk_moments/)
 
 :::
 
@@ -84,7 +84,7 @@ This presentation details a three-year side project investigating the difference
 ::::
 :::::
 
-## Seeing HAI: Human Activities and Interactions on Sidewalks through LLMs and Computer Vision
+## Seeing HAI: Human Activities and Interactions on Sidewalks and Pedestrian Spaces through VLMs
 
 ::::: {.columns}
 :::: {.column width="70%"}
@@ -95,7 +95,7 @@ Date: Oct 23, 2025
 <br>
 Location: Minneapolis
 
-This presentation talks about the partial research from my dissertation research. In particular, I disucssed the potential challenges of detecting social groups in today's computer vision-driven urban studies. I proposed a three-stage pipeline of VLM in supporting the detection of research. 
+This presentation reports one methodological part of my independent dissertation research. It discusses why social groups are difficult to represent as conventional object categories and introduces the three-stage MINGLE pipeline for detecting relational groups in street imagery. [Dissertation project](../projects/seeing_hai/) · [MINGLE](../projects/mingle/)
 
 :::
 
@@ -121,7 +121,7 @@ Date: Aug 20, 2025
 <br>
 Location: Sunnyvale, CA
 
-This presentation introduces my analysis of the Humanity’s Last Exam (HLE) benchmark at Amazon AGI, a 2,500-question dataset spanning STEM, medicine, and humanities. I discussed the dataset’s quality issues, small-model performance, and reasoning behaviors. The work highlights how current distilled models (e.g., Qwen3 series) perform under strict evaluation and presents a framework to analyze reasoning errors and recurring problem-solving strategies. The mauscript of the working papers can be found [here](https://lyons66.github.io/papers/#manuscripts-completed-not-submitted) in my "Papers" Section upon request.
+This presentation introduces my analysis of the Humanity’s Last Exam (HLE) benchmark at Amazon AGI, a 2,500-question dataset spanning STEM, medicine, and humanities. I discussed the dataset’s quality issues, small-model performance, and reasoning behaviors. The work examines how current distilled models perform under strict evaluation and presents a framework for analyzing reasoning errors and recurring problem-solving strategies. The technical report is listed in my [Publications](../papers/#technical-reports-benchmark-papers) section.
 
 :::
 
@@ -136,7 +136,7 @@ This presentation introduces my analysis of the Humanity’s Last Exam (HLE) ben
 ::::
 :::::
 
-## Seeing HAI: Human Activities and Interactions on Sidewalks through LLMs and Computer Vision
+## Seeing HAI: Human Activities and Interactions on Sidewalks and Pedestrian Spaces through VLMs
 
 ::::: {.columns}
 :::: {.column width="70%"}
@@ -147,9 +147,9 @@ Date: May 22, 2025
 <br>
 Location: 10-401, MIT
 
-This presentation outlined the two-year research plan for my doctoral dissertation, building upon the Sidewalk Ballet project.
+This presentation introduced my independent doctoral research, *Seeing HAI: Human Activities and Interactions on Sidewalks and Pedestrian Spaces through VLMs*. The dissertation is distinct from Sidewalk Ballet, a separate City Form Lab collaboration that I lead at MIT.
 
-The dissertation consists of two main phases. In the first phase, I developed a three-step pipeline to detect social groups in sidewalk scenes using computer vision and large language models. In the second phase, I will integrate these social interaction findings with additional street-level features to construct a set of Human Activity and Interaction (HAI) indices. These indices aim to support both upstream and downstream applications in urban design research.
+The dissertation begins with a three-stage method for detecting social groups in sidewalk scenes. It then expands from grouping to a wider set of visible activities and interactions and develops Human Activity and Interaction indicators at the sidewalk-segment level. [Dissertation project page](../projects/seeing_hai/)
 
 All members of my dissertation committee attended the colloquium: Prof. Andres Sevtsuk, Prof. Jinhua Zhao, and Prof. Lawrence Vale. The external reviewer was Prof. Albert Saiz.
 
@@ -177,7 +177,7 @@ Date: Aug 22, 2024
 <br>
 Location: Sunnyvale, CA
 
-This presentation covers 2 projects I conducted during my research internship at Amazon AGI. They are both related to benchmarks for Audio Generation, in which I highlighted some gaps in today's AI-driven development. The mauscript of the working papers can be found [here](https://lyons66.github.io/papers/#manuscripts-completed-not-submitted) in my "Papers" Section upon request.
+This presentation covers two benchmark projects from my Amazon AGI research internship. Both examine audio generation, pairing music notation or video with audio and comparing model outputs with human judgments and automatic measures. The technical reports are listed in my [Publications](../papers/#technical-reports-benchmark-papers) section.
 
 :::
 
@@ -229,7 +229,7 @@ Date: Mar 21-22, 2024
 <br>
 Location: School of Architecture and Planning, Massachusetts Institute of Technology
 
-During the [SPRING 2024 HPI–MIT WORKSHOP](https://design.mit.edu/events/spring-2024-hpi-mit-workshop), we delivered the report about current progress in detecting social behaviors on sidewalks. Here is the poster of the project [sidewalk ballet](https://www.linkedin.com/feed/update/urn:li:activity:7175452746718793728/). In this project we explored a series of current on-the-shelf models and designed the pipeline of the entire work. More details will be release when our working paper is published, and will be updaed [here](../../projects/sidewalk_ballet).
+At the [Spring 2024 HPI–MIT Workshop](https://design.mit.edu/events/spring-2024-hpi-mit-workshop), the MIT City Form Lab and Hasso Plattner Institute teams presented early work from Sidewalk Ballet. The collaboration examined available computer-vision and vision-language models for detecting social activity on sidewalks and developed the initial research pipeline. I serve as the Sidewalk Ballet project lead at MIT. [Project page](../projects/sidewalk_ballet/)
 :::
 
 <img src="HPI-workshop.png" style="width: 100%; border-radius: 6px;">
