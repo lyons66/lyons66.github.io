@@ -7,6 +7,34 @@
   display: grid;
   grid-column: page-start/body-content-end;
 }
+
+/* ── Project title banners ──
+   Banner text is white, so every project image receives the same dark veil. */
+.quarto-title-banner {
+  position: relative;
+  isolation: isolate;
+  color: #fff;
+}
+.quarto-title-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: rgba(0, 0, 0, 0.58);
+  pointer-events: none;
+}
+.quarto-title-banner > * {
+  position: relative;
+  z-index: 1;
+}
+.quarto-title-banner .title,
+.quarto-title-banner .subtitle,
+.quarto-title-banner .description,
+.quarto-title-banner .quarto-category {
+  color: #fff;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.75);
+}
+
 #quarto-document-content {
   margin-top: 0;
   padding-top: 0;
@@ -74,6 +102,20 @@
   border-radius: 4px;
   display: block;
   margin-top: 0.8rem;
+}
+
+/* ── Embedded project demos ── */
+.project-video-figure {
+  margin: 1.25rem 0 1.8rem;
+}
+.project-video-figure video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #d8dee6;
+  border-radius: 6px;
+  background: #0b1020;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.14);
 }
 
 /* ── Image captions

@@ -12,6 +12,8 @@ categories: [Independent Research, Urban AI, Computer Vision, Pedestrian & Publi
 image: "seeing_hai_cover.jpg"
 title-block-banner: "seeing_hai_cover.jpg"
 page-layout: full
+resources:
+  - great_streets_poster.jpg
 
 format:
   html:
@@ -57,6 +59,18 @@ The dissertation develops this work in three connected parts:
 1. **Relational detection.** Detect social groups as relationships among people rather than as a conventional object category.
 2. **Measurement of sidewalk life.** Extend the annotation framework from social grouping to a wider range of visible activities and interactions.
 3. **Urban analysis and validation.** Aggregate observations to sidewalk segments, compare them with pedestrian flow and street characteristics, and examine when the resulting measures are credible across places and data sources.
+
+# The Great Streets visualization
+
+*The Great Streets* is a working interface for moving between citywide patterns and the street-level observations behind them. The prototype connects segment-level indicators in a 3D map with source street-view images and person-level activity and interaction labels. This makes the measurement pipeline inspectable: a user can select a street segment, compare observations across imagery sources and times, and trace an aggregate value back to the visible evidence.
+
+<figure class="project-video-figure">
+  <video controls playsinline preload="metadata" poster="great_streets_poster.jpg" aria-label="Screen recording of The Great Streets visualization">
+    <source src="great_streets_visualization.mp4" type="video/mp4">
+    Your browser does not support embedded video.
+  </video>
+  <figcaption>Screen recording of the prototype using New York City data. The interface links segment-level indicators, 3D context, source imagery, and visual labels.</figcaption>
+</figure>
 
 # Current research outputs
 
