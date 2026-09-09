@@ -5,6 +5,7 @@
 
 /.quarto/
 .DS_Store
-./local/*
+/local/
+notes.md
 
 **/*.quarto_ipynb

@@ -1,7 +1,7 @@
 ---
 title: "Seeing HAI"
-subtitle: "Human Activities and Interactions on Sidewalks and Pedestrian Spaces through VLMs"
-description: "Liu Liu's independent Ph.D. dissertation research on measuring public life at city scale with visual data and vision-language models."
+subtitle: "Human Activities and Interactions on Sidewalks through LLMs and Computer Vision"
+description: "Liu Liu's Ph.D. dissertation: measuring the social life of sidewalks at city and national scale with street-level imagery and vision-language models."
 date: "Aug 2026"
 date-format: "MMM, YYYY"
 author-title: "Lead Researcher"
@@ -9,8 +9,8 @@ author:
   - name: Liu Liu
     orcid: 0000-0003-0100-9763
 categories: [Independent Research, Urban AI, Computer Vision, Pedestrian & Public Life]
-image: "seeing_hai_cover.jpg"
-title-block-banner: "seeing_hai_cover.jpg"
+image: "seeing_hai_cover2.jpg"
+title-block-banner: "seeing_hai_banner.jpg"
 page-layout: full
 resources:
   - great_streets_poster.jpg
@@ -29,7 +29,7 @@ format:
 ```{=html}
 <style>
 .quarto-title-banner {
-  background-position: 50% 48%;
+  background-position: 50% 45%;
   height: 220px;
 }
 </style>
@@ -38,29 +38,71 @@ format:
 ::: {.callout-note}
 ## Research context
 
-**Independent Ph.D. dissertation research, MIT Department of Urban Studies and Planning**<br>
-Advisor: Andres Sevtsuk · Expected completion: June 2027
+**Ph.D. dissertation research, MIT Department of Urban Studies and Planning**<br>
+Committee: Andres Sevtsuk (chair), Jinhua Zhao, Lawrence Vale · Expected completion: June 2027
 
 *Seeing HAI* is the title and organizing framework of my dissertation. It is distinct from [Sidewalk Ballet](../sidewalk_ballet/), a City Form Lab collaboration and public installation that I lead at MIT. The two projects intersect, but they have different scopes, research ownership, and outputs.
 :::
 
-# Research question
+# Research Question
+
+---
 
 Pedestrian counts describe how many people move through a street, but they do not show whether people stop, talk, rest, vend, play, or spend time together. Two sidewalks can carry similar foot traffic while supporting very different forms of public life. My dissertation asks how visual AI can extend close observation of these activities across cities without allowing a model's available labels to define what matters.
 
 The research combines ideas from urban studies with computer vision, vision-language models, and geospatial analysis. Its aim is to produce measures that remain interpretable as they move from individual street images to sidewalk segments and city-scale comparisons.
 
-# Data and framework
+# How This Research Came Together
 
-I assembled **5.7 million timestamped street-level panoramas covering almost 500 U.S. cities**. The processing pipeline reconstructs sidewalk-facing views and codes each visible person across ten observable dimensions, including social grouping, posture, mobility state, activity, and spatial context.
+---
 
-The dissertation develops this work in three connected parts:
+The dissertation did not begin as a dissertation. It grew out of a sequence of projects, each of which exposed the question the next one had to answer.
 
-1. **Relational detection.** Detect social groups as relationships among people rather than as a conventional object category.
-2. **Measurement of sidewalk life.** Extend the annotation framework from social grouping to a wider range of visible activities and interactions.
-3. **Urban analysis and validation.** Aggregate observations to sidewalk segments, compare them with pedestrian flow and street characteristics, and examine when the resulting measures are credible across places and data sources.
+1. **Mapping the field.** My first project after returning to academia was [*Clarity or Confusion*](../clarity/), a systematic review of computer vision street attributes published in *Cities* (2024). Cataloging 104 attributes across 146 papers made one gap unmistakable: computer vision had learned to describe the physical street in detail, while the human activities and interactions that classic observational studies cared most about were nearly absent.
 
-# The Great Streets visualization
+2. **Encountering the problem.** Through [Sidewalk Ballet](../sidewalk_ballet/), the City Form Lab collaboration I lead at MIT, I began working directly on detecting social activity in street imagery — and found that no existing method handled its central difficulty well. A social group is not an object with visual edges; it is a relationship among people. That unsolved problem became the seed of the dissertation.
+
+3. **Building the missing method.** [MINGLE](../mingle/), published in the **AAAI 2026 AI for Social Impact Track**, solved the group-detection prerequisite: it combines person detection, depth-aware vision-language reasoning, and group aggregation to identify socially interacting groups, trained and evaluated on **79,265 human judgments** with annotations released for **100,000 urban street images**. MINGLE bridges the lab collaboration and the dissertation; with it in place, the dissertation proper could begin.
+
+<img src="group_detection_pipeline.png" style="width: 100%;">
+
+*The three-stage group detection approach: person detection with depth estimation, pairwise interaction prediction by a vision-language model, and aggregation into social groups.*
+
+# The Dissertation: Method, Findings, Data
+
+---
+
+The dissertation develops in three connected parts. Each takes the same underlying framework — reconstructing sidewalk-facing views from street-level panoramas and coding each visible person across ten observable dimensions, including social grouping, posture, mobility state, and activity — and pushes it in a different direction.
+
+## Method: A Vision-Language Framework for Measuring Social Life on Sidewalks
+
+The method paper builds the measurement instrument. Timestamped street-level panoramas are reprojected into sidewalk-facing sideviews, and a VLM-based system codes each visible person across ten independent observable dimensions — a design that resolves a systematic failure mode in which models prompted with high-level social categories conflate what is visible with what is inferred. The framework distills each image into a small set of interpretable indices: a **Social Dwelling Index (SDI)** that jointly considers grouping and dwelling, activity labels documenting behavioral diversity, and flags for accessibility-sensitive populations.
+
+<img src="two_views.jpg" style="width: 100%;">
+
+*From panorama to sideview: raw camera tiles are stitched into panoramas and reprojected into sidewalk-facing views that preserve the pedestrian realm on each side of the street.*
+
+Applied to **102,514 sideviews in New York City**, the framework shows that pedestrian volume and social activity are nearly uncorrelated (*r* = 0.168): the streets with the highest foot traffic are not where social life is most intense. The manuscript, *A Vision-Language Framework for Measuring Social Life on Sidewalks*, is under review at *Computers, Environment and Urban Systems*.
+
+<img src="nyc_decoupling_map.jpg" style="width: 100%;">
+
+*The decoupling of pedestrian volume and social activity in New York City. Blue areas — including Midtown Manhattan — carry more foot traffic than their social activity suggests; red areas host more social life than their counts would predict.*
+
+## Findings: What Kinds of Streets Support Social Life (in progress)
+
+The findings paper applies the method across New York City's full street network, converting Apple and Bing street-level imagery into activity and interaction indices, and examines how they relate to sociodemographic context, street design, and land-use functionality. This part of the dissertation is ongoing; the website reports it as a research plan rather than as completed empirical findings.
+
+## Data: Stay Together — 496 U.S. Cities
+
+The data paper scales the collection nationally. It documents a dataset derived from **7,139,672 timestamped views** from Apple Look Around and Bing Streetside across **496 U.S. cities**, organized into 3.7 million block frontages with intersection views kept separate, and spanning weekday and weekend, midday and evening capture windows from 2011 to 2025. Alongside the resource, the draft reports exploratory patterns — for example, at a fixed number of detected people, views from denser tracts less often show those people together as one group. The derived data are being prepared for public release; the manuscript, *Stay Together: Street-Level Social Indicators for Sidewalk Life Across 496 U.S. Cities*, is in preparation.
+
+<img src="stay_together_atlas.png" style="width: 100%;">
+
+*Where people stay together, and where they stay put: grouping and dwelling indices across 496 U.S. cities, with 2-km grid detail for the twelve largest.*
+
+# The Great Streets Visualization
+
+---
 
 *The Great Streets* is a working interface for moving between citywide patterns and the street-level observations behind them. The prototype connects segment-level indicators in a 3D map with source street-view images and person-level activity and interaction labels. This makes the measurement pipeline inspectable: a user can select a street segment, compare observations across imagery sources and times, and trace an aggregate value back to the visible evidence.
 
@@ -72,27 +114,10 @@ The dissertation develops this work in three connected parts:
   <figcaption>Screen recording of the prototype using New York City data. The interface links segment-level indicators, 3D context, source imagery, and visual labels.</figcaption>
 </figure>
 
-# Current research outputs
+# Related Material
 
-## MINGLE
-
-[MINGLE](../mingle/) is the first method developed within the dissertation. It combines person detection, depth-aware vision-language reasoning, and group aggregation to identify socially interacting groups in street imagery. The project uses **79,265 human judgments** for model training and evaluation and releases annotations and metadata for **100,000 urban street images**.
-
-The paper was published in the **AAAI 2026 AI for Social Impact Track**:
-
-> Liu, L., Kudaeva, A., Cipriano, M., Al Ghannam, F., Tan, F., de Melo, G., & Sevtsuk, A. (2026). "MINGLE: VLMs for Semantically Complex Region Detection." *Proceedings of the AAAI Conference on Artificial Intelligence*, 40(45). [Paper](https://doi.org/10.1609/aaai.v40i45.41239)
-
-## Measuring social life on sidewalks
-
-A companion manuscript applies an expanded activity and interaction framework to **102,514 street views in New York City**. It studies how pedestrian volume and visible forms of social life differ as measures of street use. The manuscript, *A Vision-Language Framework for Measuring Social Life on Sidewalks*, is under review at *Computers, Environment and Urban Systems*.
-
-## Ongoing dissertation work
-
-The remaining work develops Human Activity and Interaction indicators at the sidewalk-segment level and evaluates their relationships with accessibility, pedestrian flow, street design, and neighborhood context. Because this part of the dissertation is ongoing, the website reports it as a research plan rather than as a completed empirical finding.
-
-# Related material
-
+- [Clarity or Confusion, the literature review that framed this research](../clarity/)
 - [MINGLE project and paper](../mingle/)
+- [Sidewalk Ballet, a separate City Form Lab collaboration](../sidewalk_ballet/)
 - [Publications](../../papers/)
 - [Dissertation colloquium and research presentations](../../presentations/)
-- [Sidewalk Ballet, a separate City Form Lab collaboration](../sidewalk_ballet/)

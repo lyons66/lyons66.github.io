@@ -39,7 +39,7 @@ format:
 **MIT City Form Lab and Hasso Plattner Institute collaboration**<br>
 My role: Sidewalk Ballet project lead at MIT
 
-Sidewalk Ballet is a collaborative lab project and public installation. It is not the title of my dissertation. My independent doctoral research is [*Seeing HAI: Human Activities and Interactions on Sidewalks and Pedestrian Spaces through VLMs*](../seeing_hai/).
+Sidewalk Ballet is a collaborative lab project and public installation. It is not the title of my dissertation. My independent doctoral research is [*Seeing HAI: Human Activities and Interactions on Sidewalks through LLMs and Computer Vision*](../seeing_hai/).
 :::
 
 # The collaboration

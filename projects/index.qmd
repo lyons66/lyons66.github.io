@@ -9,6 +9,7 @@ listing:
       - seeing_hai/index.qmd
       - mingle/index.qmd
       - sidewalk_moments/index.qmd
+      - clarity/index.qmd
     type: grid
     grid-columns: 3
     categories: true

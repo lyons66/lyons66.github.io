@@ -49,6 +49,10 @@ website:
 project:
   type: website
   output-dir: docs
+  # notes.md is a private scratch file (gitignored); never render it into the site
+  render:
+    - "**"
+    - "!notes.md"
 
   preview: 
     port: 22222
