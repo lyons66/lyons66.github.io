@@ -7,5 +7,6 @@
 .DS_Store
 /local/
 notes.md
+handoff.md
 
 **/*.quarto_ipynb

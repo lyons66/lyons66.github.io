@@ -1,134 +1,237 @@
 /*-- scss:defaults --*/
 
-/* From https://github.com/andrewheiss/ath-quarto/blob/main/html/ath.scss */
-
-$white:    #ffffff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #868e96 !default;
-$gray-700: #495057 !default;
-$gray-800: #373a3c !default;
-$gray-900: #212529 !default;
-$black:    #000000 !default;
-
-$blue:    #2780e3 !default;
-$indigo:  #6610f2 !default;
-$purple:  #170C3A !default;
-$pink:    #A52C60 !default;
-$red:     #CF4446 !default;
-$orange:  #EE6A24 !default;
-$light-orange:  #FB9E07 !default;
-$yellow:  #F6D645 !default;
-$green:   #118230 !default;
-$teal:    #068194 !default;
-$cyan:    #3093CF !default;
-
-$primary:   $yellow!default;
-$secondary: $gray-700 !default;
-$success:   $green !default;
-$info:      $cyan !default;
-$warning:   $orange !default;
-$danger:    $red !default;
-$light:     $gray-400 !default;
-$dark:      $black !default;
-
-
-
-// Links
-$link-color: $orange !default;
-$link-decoration: none !default;
-$link-hover-color: $red !default;
-$link-hover-decoration: underline !default;
-
-// Footer
-$footer-bg: $gray-900 !default;
-$footer-fg: $gray-300 !default;
-
-// Inline code
-$code-bg: $gray-200 !default;
-$code-color: $gray-900 !default;
-
-// TOC
-$toc-color: $orange;
-$toc-font-size: 1em;
-
-// Code copy
-$btn-code-copy-color-active: $orange !default;
-
+$web-font-path: false;
+$font-family-sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+$headings-font-family: $font-family-sans-serif;
+$headings-font-weight: 800;
+$body-color: #343a40;
+$body-bg: #ffffff;
+$primary: #ee6a24;
+$link-color: #d14a11;
+$link-hover-color: #ad3505;
+$link-decoration: none;
+$link-hover-decoration: underline;
+$line-height-base: 1.7;
+$footer-bg: #f7f8fa;
+$footer-fg: #59616b;
+$code-bg: #f1f3f5;
+$code-color: #343a40;
+$toc-color: #d14a11;
+$toc-font-size: 0.8rem;
+$btn-code-copy-color-active: #d14a11;
 
 /*-- scss:rules --*/
 
-.navbar {
-  background-color: #000000 !important;  // 黑色
+:root {
+  --site-ink: #0b0d10;
+  --site-muted: #626a74;
+  --site-accent: #d14a11;
+  --site-line: #e1e5ea;
+  --site-surface: #f7f8fa;
+  --site-width: 1140px;
 }
+
+body { -webkit-font-smoothing: antialiased; }
+a { text-underline-offset: 0.2em; }
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--site-accent);
+  outline-offset: 4px;
+}
+
+/* A common navigation scale, with a quiet active-page accent. */
+.navbar {
+  background: #08090b !important;
+  padding-block: 0.65rem;
+}
+.navbar > .container-fluid {
+  max-width: calc(var(--site-width) + 3rem);
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+.navbar-brand { font-size: 1.2rem; font-weight: 600; letter-spacing: -0.035em; }
+.navbar-logo { max-height: 28px; }
+.navbar .nav-link {
+  font-size: 0.82rem;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 0;
+  color: #dedfe2;
+  padding-block: 0.4rem;
+}
+.navbar .nav-link:hover { color: #fff; }
+.navbar .nav-link.active {
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: #ee6a24;
+  text-underline-offset: 0.55em;
+  text-decoration-thickness: 2px;
+}
+
+/* Shared banner geometry and type. Long subtitles can wrap naturally. */
+#title-block-header .quarto-title-banner {
+  position: relative;
+  isolation: isolate;
+  height: auto !important;
+  min-height: 220px;
+  padding-block: 2.5rem;
+  align-content: center;
+  background-color: #111318;
+  background-size: cover;
+  color: #fff;
+  margin-bottom: 0;
+}
+#title-block-header .quarto-title-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* Most overview banners already include shading in the source image.
+     Only project pages with bright imagery opt into a neutral text veil. */
+  background: var(--banner-overlay, transparent);
+  z-index: 0;
+  pointer-events: none;
+}
+.quarto-title-banner > * { position: relative; z-index: 1; }
+.quarto-title-banner .quarto-title {
+  grid-column: 1 / -1;
+  width: calc(100% - 3rem);
+  max-width: var(--site-width);
+  margin-inline: auto;
+}
+#title-block-header .title {
+  font-size: clamp(2rem, 3.3vw, 2.65rem);
+  font-weight: 900;
+  line-height: 1.16;
+  letter-spacing: -0.045em;
+  color: var(--site-ink);
+}
+#title-block-header .quarto-title-banner :is(.title, .subtitle, .description) {
+  color: #fff;
+  text-shadow: none;
+}
+#title-block-header .subtitle {
+  max-width: 70ch;
+  margin-top: 0.75rem;
+  margin-bottom: 0;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+/* A single rhythm for page content and headings. */
+#quarto-content {
+  width: 100%;
+  max-width: calc(var(--site-width) + 3rem);
+  margin-inline: auto;
+}
+#title-block-header.quarto-title-block.default .quarto-title-meta {
+  grid-column: 1 / -1;
+  width: calc(100% - 3rem);
+  max-width: var(--site-width);
+  margin-inline: auto;
+}
+main#quarto-document-content {
+  width: 100%;
+  max-width: var(--site-width);
+  margin-inline: auto;
+  margin-top: 0;
+  padding-top: 2.5rem;
+  padding-bottom: 3.5rem;
+}
+main.content > section > h2,
+main.content h2.section-heading {
+  margin-top: 2.75rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid var(--site-line);
+  font-size: 1.4rem;
+  font-weight: 800;
+  line-height: 1.35;
+  letter-spacing: -0.025em;
+  text-transform: none;
+  color: var(--site-ink);
+}
+main.content > section:first-of-type > h2 { margin-top: 0; }
+main.content p { line-height: 1.75; }
+main.content img { max-width: 100%; }
+main.content > section { scroll-margin-top: 5.5rem; }
+#quarto-margin-sidebar { padding-top: 2.5rem; }
+#quarto-margin-sidebar #TOC { font-size: 0.78rem; line-height: 1.5; }
+#TOC .nav-link { padding-block: 0.3rem; }
+
+/* Shared panels for talks, demos, and project briefs. */
+div.callout {
+  border-color: var(--site-line);
+  border-radius: 6px;
+  box-shadow: none;
+  border-left: 3px solid #2780e3;
+}
+div.callout.callout-note { border-left-color: #2780e3; }
+div.callout.callout-tip { border-left-color: #31a354; }
+main#quarto-document-content > div.callout:first-of-type { margin-top: 0.5rem; }
+div.callout.callout-style-default > .callout-header { background: var(--site-surface); }
+div.callout.callout-note > .callout-header { background: #eef5fd; }
+div.callout.callout-tip > .callout-header { background: #eef9f1; }
+div.callout.callout-style-default .callout-title-container {
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--site-ink);
+  letter-spacing: 0;
+}
+div.callout.callout-style-default .callout-body { font-size: 0.94rem; }
+div.callout.callout-style-default .callout-body > :last-child { margin-bottom: 0.5rem; }
+.columns { gap: 1.5rem; }
+.columns > .column { min-width: 0; }
+.center-text { text-align: center; font-size: 0.82rem; }
+.center-text img { display: block; margin: 0 auto 0.75rem; }
+
+/* About page retains its existing portrait and content. */
+div.quarto-about-jolla { margin-top: 3.5rem; padding-top: 0; }
+div.quarto-about-jolla #title-block-header .title {
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+div.quarto-about-jolla img.about-image { width: 215px !important; height: 215px !important; object-fit: cover; }
+div.quarto-about-jolla .about-links { gap: 0.55rem; padding-block: 0.75rem 1.8rem; }
+div.quarto-about-jolla .about-link {
+  font-size: 0.79rem;
+  padding: 0.35rem 0.7rem;
+  border: 1px solid var(--site-line);
+  border-radius: 5px;
+  color: var(--site-ink);
+}
+div.quarto-about-jolla .about-link:hover { background: var(--site-surface); color: var(--site-accent); }
+div.quarto-about-jolla main#quarto-document-content {
+  max-width: 960px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.home-bio { text-align: left; font-weight: 400; }
+.home-bio a { font-weight: 400; }
+.home-bio strong { font-weight: 800; color: var(--site-ink); }
 
 .nav-footer {
-    align-items: flex-start;  // Align all flex items to the top
-    flex-wrap: wrap;
-    border: 0 !important;
-    min-height: 3em;
-    //font-family: $footer-font-family;
-
-    a {
-        color: $primary;
-    }
-
-    .faux-block {
-        display: block;
-        padding-bottom: 0.4em;
-    }
-
-    // In the default Quarto template, .nav-footer-center has position: absolute 
-    // turned on, which makes the div not be a flex item
-    // This changes that so that it *is* a flex item
-    .nav-footer-center {
-        text-align: center;
-        position: inherit;
-        margin-top: 0;
-
-        @media (max-width: map-get($grid-breakpoints, md)) {
-            margin-top: 0.5em;
-            margin-bottom: 1.5em;
-        }
-    }
-
-    // When the screen is medium or smaller, make each footer chunk be 100% width 
-    // and centered; otherwise make them be 33% width and left/right/centerd
-    .nav-footer-left,
-    .nav-footer-right,
-    .nav-footer-center {
-        text-align: center;
-        width: 100%;
-        min-height: 2em;
-    }
-
-    @media (min-width: map-get($grid-breakpoints, md)) {
-        .nav-footer-left {
-            text-align: left;
-        }
-
-        .nav-footer-right {
-            text-align: right;
-        }
-
-        .nav-footer-left,
-        .nav-footer-right,
-        .nav-footer-center {
-            flex: 1 1 33%;
-        }
-    }
+  max-width: calc(var(--site-width) + 3rem);
+  margin-inline: auto;
+  align-items: center;
+  min-height: 5rem;
+  padding: 1.25rem 1.5rem;
+  border-top: 1px solid var(--site-line);
+  font-size: 0.78rem;
 }
+.nav-footer a { color: var(--site-muted); }
+.nav-footer strong { font-weight: 500; }
+.nav-footer-center { position: static; }
 
-// Quarto 标题 Banner 背景
-.quarto-title-banner {
-  background-color: #000000 !important;
-  color: #ffffff !important;
-}
-
-.title-block-banner {
-  background-color: #000000 !important;
-  color: #ffffff !important;
+@media (max-width: 767px) {
+  #title-block-header .quarto-title-banner { min-height: 185px; padding-block: 2rem; }
+  #title-block-header .subtitle { font-size: 0.96rem; }
+  main#quarto-document-content { padding-top: 1.75rem; padding-bottom: 2.5rem; }
+  main.content > section > h2, main.content h2.section-heading { font-size: 1.25rem; }
+  .navbar > .container-fluid { padding-inline: 1rem; }
+  .columns { flex-direction: column; gap: 1rem; }
+  .columns > .column { width: 100% !important; }
+  .columns > .column.center-text { max-width: 360px; margin-inline: auto; }
+  .nav-footer { gap: 0.75rem; }
+  div.quarto-about-jolla { margin-top: 2rem; }
+  div.quarto-about-jolla img.about-image { width: 180px !important; height: 180px !important; }
 }

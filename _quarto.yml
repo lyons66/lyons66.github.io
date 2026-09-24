@@ -49,10 +49,15 @@ website:
 project:
   type: website
   output-dir: docs
-  # notes.md is a private scratch file (gitignored); never render it into the site
+  # Render only public pages. Private notes and local work never enter docs/search.
   render:
-    - "**"
-    - "!notes.md"
+    - index.qmd
+    - 404.qmd
+    - papers/index.qmd
+    - projects/**/*.qmd
+    - presentations/index.qmd
+    - visualization/index.qmd
+    - portfolio/index.qmd
 
   preview: 
     port: 22222
@@ -65,7 +70,8 @@ execute:
 
 format:
   html:
-    fontsize: 1.1em
+    fontsize: 17px
+    include-in-header: html/fonts.html
     theme: 
       - sandstone
       - html/styles.scss
@@ -78,7 +84,7 @@ format:
     grid:
       sidebar-width: 200px
       body-width: 1000px
-      margin-width: 300px
+      margin-width: 240px
       gutter-width: 1.5rem
   
 resources:
