@@ -68,6 +68,8 @@ The model's coverage was limited to the asset categories represented in the trai
 
 # Platform demonstrations
 
+[Explore more project visualizations](../../visualization/#project-visualizations).
+
 {{< video https://www.youtube.com/embed/23kLzbIkhfI >}}
 
 {{< video https://www.youtube.com/embed/u87AOE6TUyY >}}

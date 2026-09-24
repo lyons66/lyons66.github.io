@@ -1,6 +1,6 @@
 ---
 title: "Projects"
-subtitle: "Independent research, collaborations, and applied urban AI"
+subtitle: "Independent research, collaborations, and projects I led at CitoryTech"
 page-layout: full
 title-block-banner: "img/pop_sh.png"
 format:
@@ -13,8 +13,9 @@ listing:
       - mingle/index.qmd
       - sidewalk_moments/index.qmd
       - clarity/index.qmd
+      - cimage/index.qmd
     type: grid
-    grid-columns: 2
+    grid-columns: 3
     fields: [image, title, date]
     sort: "date desc"
     date-format: "MMM, YYYY"
@@ -25,6 +26,8 @@ listing:
       - nyc_walks/index.qmd
       - sidewalk_ballet/index.qmd
       - walkocc/index.qmd
+      - lbsn/index.qmd
+      - green_view/index.qmd
     type: grid
     grid-columns: 3
     fields: [image, title, date]
@@ -34,11 +37,12 @@ listing:
     filter-ui: false
   - id: applied-practice
     contents:
+      - jinmao/index.qmd
+      - age_friendly/index.qmd
+      - tod/index.qmd
       - road/index.qmd
       - streetalk/index.qmd
       - vibescan/index.qmd
-      - lbsn/index.qmd
-      - cimage/index.qmd
       - cityeye/index.qmd
       - huipai/index.qmd
       - riverview/index.qmd
@@ -57,7 +61,7 @@ listing:
 ## Independent Research
 
 <p class="project-section-note">
-Research questions and programs that I lead. Collaborative authorship is identified on each page, but these projects are organized around my independent research agenda rather than a lab-wide project.
+Studies within my independent research agenda, from my master's thesis to current doctoral work. Coauthors and individual contributions are identified on each project page.
 </p>
 
 ::: {#independent-research}
@@ -66,16 +70,16 @@ Research questions and programs that I lead. Collaborative authorship is identif
 ## Lab & Collaborative Research
 
 <p class="project-section-note">
-Projects developed within research labs or multi-institution teams. Each page separates the full project from my specific role and contribution.
+Research developed with individual collaborators, research labs, and multi-institution teams. Each page identifies the collaboration and my specific contribution.
 </p>
 
 ::: {#collaborative-research}
 :::
 
-## Applied Urban AI & Practice
+## Projects I Led at CitoryTech {#applied-urban-ai-practice}
 
 <p class="project-section-note">
-Selected commissioned research, urban analytics systems, and earlier work from professional practice.
+Across every project below, I served as principal investigator (PI), project lead, and core researcher at CitoryTech.
 </p>
 
 ::: {#applied-practice}

@@ -1,0 +1,74 @@
+---
+title: "TOD Station-Area Assessment"
+subtitle: "Connecting walking access, street environments, and transit-oriented development"
+description-meta: "A CitoryTech project led by Liu Liu, evaluating the environments around 201 Beijing metro stations through walking catchments, street imagery, and spatial indicators."
+date: "2019-05-14"
+date-format: "YYYY"
+language:
+  title-block-published: "Project year"
+author-title: "Project Lead"
+author:
+  - name: Liu Liu
+    orcid: 0000-0003-0100-9763
+categories: [Applied Practice, Transit-Oriented Development, Walkability]
+image: "cover.jpg"
+title-block-banner: "cover.jpg"
+page-layout: full
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    fig-cap-location: bottom
+    lightbox: true
+    css: ../project-style.css
+---
+
+```{=html}
+<style>
+.quarto-title-banner { --banner-overlay: rgba(0, 0, 0, 0.6); }
+</style>
+```
+
+::: {.callout-note}
+## Project context
+
+**Transit-oriented development research at CitoryTech · Beijing · 2019**<br>
+My role: Project lead; founder and research director of CitoryTech.
+:::
+
+# The question
+
+A metro station can be well connected to the transit network while offering an uncomfortable or inconvenient walk outside its entrances. I led this project at CitoryTech to evaluate **station-area environments from the pedestrian’s perspective**, connecting transport access with the quality and character of surrounding streets.
+
+The principal analysis covered **201 operating metro stations within Beijing’s Fifth Ring Road**. Ten-minute walking catchments defined the study areas, allowing the assessment to follow the street network and actual walking access around each station.
+
+![Five-minute and ten-minute walking catchments around the study stations. Differences in their shape and area reveal how street networks affect access beyond a station entrance.](walking_catchments.jpg){fig-alt="Two maps of Beijing metro stations showing five-minute walking catchments on the left and ten-minute catchments on the right." loading="lazy"}
+
+# An integrated assessment
+
+Our team combined street-view image analysis, perception modeling, points of interest, transport connections, and spatial measures. The assessment organized this evidence into four complementary dimensions.
+
+| Dimension | Evidence examined |
+|---|---|
+| Convenience | Transfer opportunities, walking and cycling access, service diversity, and land-use mix |
+| Comfort | Sky visibility, greenery, lighting, street furniture, and model-estimated perceptions of safety and beauty |
+| Vitality | Activity-related observations and the presence of commercial and informal uses |
+| Visual character | Similarities and differences in station-area streetscapes |
+
+The report also explored station-interior observation through a pilot at Jinshajiang Road station in Shanghai and described a crowdsourced image-collection workflow. The Beijing station-area analysis remained the main comparative assessment.
+
+![The four-dimensional assessment framework in the original report, linking convenience, comfort, vitality, and visual character to their component indicators.](assessment_framework.jpg){fig-alt="Indicator hierarchy for the station-area assessment, with four main dimensions and their constituent transport, environmental, activity, and streetscape measures." loading="lazy"}
+
+# From comparison to station diagnosis
+
+Station profiles connected the scores back to local street conditions. For example, the Xizhimen profile paired its strong transport connections with concerns about comfort, street activity, and the environment around a major interchange. The report used these profiles to discuss possible improvements to lighting, seating, pedestrian facilities, and service provision.
+
+![Xizhimen station’s indicator profile alongside street-view examples. The profile makes differences among the assessment’s components visible instead of relying solely on a total score.](station_profile.jpg){fig-alt="Radar chart of Xizhimen station-area indicators, accompanied by two street-view images of its surroundings." loading="lazy"}
+
+# My role and project output
+
+I led the CitoryTech team’s work on this project. The report assembled a common evaluation framework, comparative station maps, and detailed station profiles to support discussion of **targeted station-area improvements**.
+
+Street-view observations describe the conditions captured in the imagery. Perceived-safety scores represent visual judgments, while people or vehicles visible in an image are observations rather than measured traffic flows. These distinctions matter when translating the assessment into planning decisions.
+
+Figures: CitoryTech project report, 2019. Related work: [CityEye](../cityeye/), the collaborative image-collection tool described in the report, and the [earlier Nanjing street-environment visualization](../../visualization/#visual-comfortness-2018).

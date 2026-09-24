@@ -116,6 +116,8 @@ The data paper scales the collection nationally. It documents a dataset derived 
   <figcaption>Screen recording of the prototype using New York City data. The interface links segment-level indicators, 3D context, source imagery, and visual labels.</figcaption>
 </figure>
 
+[Explore more project visualizations](../../visualization/#project-visualizations).
+
 # Related Material
 
 - [Clarity or Confusion, the literature review that framed this research](../clarity/)

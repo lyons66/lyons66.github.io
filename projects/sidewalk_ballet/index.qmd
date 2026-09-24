@@ -69,3 +69,5 @@ The exhibit formed part of *The Next Earth: Computation, Crisis, Cosmology*, the
   style="width: 100%; aspect-ratio: 16 / 9; border: none;"
   allowfullscreen>
 </iframe>
+
+[Explore more project visualizations](../../visualization/#project-visualizations).

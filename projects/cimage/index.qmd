@@ -17,7 +17,7 @@ author:
     #   - name: test
 # affiliation-title: "AFFILIATION"
 
-categories: [computer vision, visualization]
+categories: [Independent Research, Master's Thesis, Computer Vision, Visualization]
 image: "cimage_cover.jpg"
 title-block-banner: "cimage_boston.jpg"
 page-layout: full
@@ -46,7 +46,7 @@ format:
 
 ## PROJECT BRIEF
 
-This project originated from my thesis, which involved the collection of millions of photos from 26 cities. The objective was to utilize deep learning techniques to conduct scene recognition on these images. By categorizing the data and plotting the seven critical perceptions, the resulting perceptional maps provide 
+This project originated from **my master's thesis at MIT**, which involved the collection of millions of photos from 26 cities. The objective was to utilize deep learning techniques to conduct scene recognition on these images. By categorizing the data and plotting the seven critical perceptions, the resulting perceptional maps provide
 insights into how inhabitants perceive their living environment within each city.
 
 - [Liu, L., Zhou, B., Zhao, J., & Ryan, B. D. “C-IMAGE: city cognitive mapping through geo-tagged photos” GeoJournal, 81(6), 817-861.](https://link.springer.com/article/10.1007/s10708-016-9739-6)
@@ -103,3 +103,5 @@ This method is highly replicable and has been employed in various real-world pro
 Below is a demo video showing the distribution of image classification results in Shenzhen.
 
 {{< video https://www.youtube.com/embed/5u-fNXwi7AY >}}
+
+[Explore more project visualizations](../../visualization/#project-visualizations).

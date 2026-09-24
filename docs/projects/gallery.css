@@ -31,7 +31,6 @@
   overflow: hidden;
   background: #f4f5f7;
 }
-#listing-independent-research .card-img-top { aspect-ratio: 2 / 1; }
 .quarto-grid-item img.card-img {
   display: block;
   width: 100%;
@@ -43,6 +42,7 @@
 }
 .quarto-grid-item img[src*="/sidewalk_moments/"],
 .quarto-grid-item img[src*="/walkocc/"],
+.quarto-grid-item img[src*="/green_view/"],
 .quarto-grid-item img[src*="/clarity/"] { object-fit: contain; }
 .quarto-grid-item .card-body.post-contents {
   height: auto;
@@ -92,12 +92,9 @@
 }
 @media (max-width: 991px) and (min-width: 601px) {
   .quarto-listing .list.grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  #listing-independent-research .card-img-top { aspect-ratio: 16 / 10; }
 }
 @media (max-width: 600px) {
   .quarto-listing .list.grid { grid-template-columns: minmax(0, 1fr); gap: 1.25rem; }
-  .quarto-grid-item p.card-img-top,
-  #listing-independent-research .card-img-top { aspect-ratio: 16 / 10; }
   #quarto-document-content > section + section { margin-top: 2.5rem; }
   .quarto-grid-item .card-body.post-contents { padding: 0.9rem 1rem; }
 }

@@ -92,3 +92,5 @@ In addition to this, it can also recognize shooting scenes from 26 major categor
 Below is a demo video we recorded based on Huawei Mate 30 in April, 2020.
 
 {{< video https://www.youtube.com/embed/1i6xQzHvZEU >}}
+
+[Explore more project visualizations](../../visualization/#project-visualizations).

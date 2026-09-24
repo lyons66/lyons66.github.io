@@ -1,7 +1,7 @@
 ---
 title: "National Mobility Networks in China"
 subtitle: "Reconceptualizing regional boundaries through individual mobility data"
-description: "A national-scale mobility analysis that uses anonymized location-based social-network data to examine city clusters and blurred regional boundaries in China."
+description-meta: "Research with Hongmou Zhang using anonymized location-based social-network data to examine city clusters and regional boundaries in China."
 date: "Mar 2015"
 date-format: "MMM, YYYY"
 date-modified: "Feb 2026"
@@ -12,7 +12,7 @@ author:
     orcid: 0000-0003-0100-9763
   - name: Pensen Wang
   - name: Jinhua Zhao
-categories: [Applied Practice, Mobility Data, Geospatial Analysis, Regional Planning]
+categories: [Collaborative Research, Mobility Data, Geospatial Analysis, Regional Planning]
 image: "lbsn_cover.jpg"
 title-block-banner: "lbsn_cover.jpg"
 page-layout: full
@@ -40,8 +40,8 @@ format:
 ::: {.callout-note}
 ## Project context
 
-**National-scale applied research conducted with Tencent mobility data**<br>
-My role: Lead analyst responsible for geospatial analysis, network analysis, and visualization. The research began in 2015 and led to a peer-reviewed article published in 2026.
+**Research collaboration with Hongmou Zhang**<br>
+My role: Lead analyst responsible for geospatial analysis, network analysis, and visualization. Working with Hongmou Zhang, Pensen Wang, and Jinhua Zhao, we examined regional structure using Tencent mobility data. The research began in 2015 and led to a peer-reviewed article published in 2026.
 :::
 
 # Research question

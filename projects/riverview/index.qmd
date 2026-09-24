@@ -45,7 +45,7 @@ format:
 
 To preserve the natural landscapes along the Qiantang River, I analyzed a 200-kilometer stretch of riverbank videos. By carefully examining the footage, I calculated the visual proportions of seven distinct elements present throughout the entire shoreline. Subsequently, I developed a visualization platform that identifies and maps these elements along the riverbank. This platform is a valuable tool in safeguarding the natural beauty and ecological integrity of the Qiantang River, enabling effective management and conservation efforts.
 
-This work has been re-presented in [Rez de Ville / Urban Ground Floors 2023](../../presentations/#rez-de-ville-urban-ground-floors-2023).
+This work has been re-presented in [Rez de Ville / Urban Ground Floors 2023](../../presentations/#learning-from-ground-floors).
 :::
 
 # The Idea
@@ -83,3 +83,5 @@ Other methods are also applied for each section of the entire river.
 Below is a platform we created for verifying the metrics for different waterfront view sections.
 
 {{< video https://www.youtube.com/embed/6q6vMNEecWs >}}
+
+[Explore more project visualizations](../../visualization/#project-visualizations).

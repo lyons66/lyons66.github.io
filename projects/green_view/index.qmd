@@ -1,0 +1,55 @@
+---
+title: "How Green Are the Streets?"
+subtitle: "Measuring visible greenery across Chinese city centers"
+description-meta: "Collaborative research on street greenery by Ying Long and Liu Liu, published in PLOS ONE in 2017."
+date: "2017-02-14"
+date-format: "MMM, YYYY"
+author-title: "Research Team"
+author:
+  - name: Ying Long
+  - name: Liu Liu
+    orcid: 0000-0003-0100-9763
+categories: [Collaborative Research, Street Greenery, Urban Measurement]
+image: "framework.png"
+title-block-banner: "framework.png"
+page-layout: full
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    fig-cap-location: bottom
+    lightbox: true
+    css: ../project-style.css
+---
+
+```{=html}
+<style>
+.quarto-title-banner { --banner-overlay: rgba(0, 0, 0, 0.7); }
+</style>
+```
+
+::: {.callout-note}
+## Research context
+
+**Research collaboration with Ying Long · PLOS ONE · 2017**
+
+[Read the paper](https://doi.org/10.1371/journal.pone.0171110)
+:::
+
+# Measuring visible greenery
+
+How much greenery is visible from the street? We analyzed **over one million Tencent Street View images** from central areas of **245 Chinese cities**, using color analysis to estimate a green view index and aggregate it across streets and blocks.
+
+![Measurement workflow, from directional images to street and block indicators.](framework.png){fig-alt="Four directional street images feed a color-based greenery measure, aggregated to streets and blocks."}
+
+# Comparing cities
+
+Seasonal imagery differences led us to restrict the comparative analysis to **131 cities**. The maps distinguish average greenness from its variation within each city, revealing differences that a single citywide score can hide.
+
+![City comparisons: average green view index and within-city variation.](cities.png){fig-alt="Two maps showing city averages and classifications by average and variation." loading="lazy"}
+
+# Reading the measure carefully
+
+Color-based greenery estimates can include non-vegetation objects and vary with season and lighting. They describe the sampled views, rather than total vegetation coverage or measured health outcomes.
+
+Figures 3 and 5 from [Long and Liu (2017)](https://doi.org/10.1371/journal.pone.0171110), reproduced under [CC BY](https://creativecommons.org/licenses/by/4.0/).

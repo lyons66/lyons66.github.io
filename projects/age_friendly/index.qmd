@@ -1,0 +1,66 @@
+---
+title: "Child- and Age-Friendly Streets"
+subtitle: "Street-level evidence for more inclusive neighborhood environments in Shanghai"
+description-meta: "A CitoryTech project led by Liu Liu, combining street imagery, spatial indicators, and an assessment interface to study environments for children and older adults."
+date: "2021-09-20"
+date-format: "YYYY"
+language:
+  title-block-published: "Project year"
+author-title: "Project Lead"
+author:
+  - name: Liu Liu
+    orcid: 0000-0003-0100-9763
+categories: [Applied Practice, Inclusive Streets, Urban AI]
+image: "cover.jpg"
+title-block-banner: "cover.jpg"
+page-layout: full
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    fig-cap-location: bottom
+    lightbox: true
+    css: ../project-style.css
+---
+
+::: {.callout-note}
+## Project context
+
+**Street-environment research and assessment at CitoryTech · Shanghai · 2021**<br>
+My role: Project lead; founder and research director of CitoryTech.
+:::
+
+# The question
+
+How can a city identify street environments that better support children and older adults? I led this project at CitoryTech to connect the everyday requirements of these groups with **observable street conditions and access to neighborhood services**.
+
+The work combined street imagery, computer vision, points of interest, and spatial analysis. It organized the evidence into four dimensions—safety-related conditions, health-related conditions, convenience, and comfort—so that an overall assessment could be traced back to specific features of a street.
+
+![Street-level indicator maps from the project. The four panels show the framework’s safety, health, convenience, and comfort dimensions; they represent environmental assessments rather than observed health or safety outcomes.](street_assessments.jpg){fig-alt="Four maps of the same Shanghai street network, showing separate indicator scores for safety, health, convenience, and comfort." loading="lazy"}
+
+# From street observations to indicators
+
+The framework brought together features such as sidewalk continuity and condition, crossings, curb ramps, separation from motor traffic, greenery, street furniture, and access to services. Image-derived observations and geographic measures were organized into a hierarchy of indicators.
+
+The documented workflow divided the street network into **50-metre segments** and used nearby imagery to identify segments with visual coverage. Spatial measures were standardized against the Shanghai study area and combined through weighted aggregation. Keeping the indicator hierarchy visible allowed a reader to examine the components behind a composite score.
+
+| Dimension | Examples of the conditions examined |
+|---|---|
+| Safety-related conditions | Walking continuity, crossings, separation from traffic, and accessibility features |
+| Health-related conditions | Green visibility, walking and cycling space, seating, and public-space cleanliness |
+| Convenience | Access to commercial, educational, medical, recreational, and public-transport facilities |
+| Comfort | Street enclosure, greenery, visual character, and environmental attractiveness |
+
+![The assessment interface presents the indicator hierarchy, connecting the four main dimensions to more specific street and service measures.](indicator_interface.jpg){fig-alt="Project interface with an expandable hierarchy of street-environment indicators organized into four assessment dimensions." loading="lazy"}
+
+# My role and project output
+
+I led the CitoryTech team’s work on the project. The materials brought together an indicator framework, spatial calculations, street-level maps, and a web assessment interface. Together, these outputs made it possible to move between an overall view of neighborhood conditions and the individual measures that informed it.
+
+![The project’s web interface introduces the assessment of street environments for children and older adults.](platform.jpg){fig-alt="Homepage of the child- and age-friendly street assessment interface developed in the project." loading="lazy"}
+
+# Interpreting the assessment
+
+The indicators describe features of the built environment. Image-based perception scores are **model-estimated judgments**, and the resulting maps do not by themselves establish whether a street produces better health outcomes or is experienced as safe by every child or older adult. The framework provides evidence to examine alongside field observations and the experiences of residents.
+
+Figures: CitoryTech project materials, 2021. Related work: [StreeTalk](../streetalk/), on street-view perception modeling and pedestrian routing.

@@ -311,7 +311,7 @@ For the most up-to-date list, see my <a href="https://www.dropbox.com/scl/fo/ghr
     <div class="pub-title">How Green Are the Streets? An Analysis for Central Areas of Chinese Cities Using Tencent Street View</div>
     <div class="pub-authors">Long, Y., &amp; <strong>Liu, L.</strong></div>
     <div class="pub-venue"><em>PLOS ONE</em>, 12(2), e0171110.</div>
-    <div class="pub-links"><a href="https://doi.org/10.1371/journal.pone.0171110">DOI</a></div>
+    <div class="pub-links"><a href="https://doi.org/10.1371/journal.pone.0171110">DOI</a><a href="../projects/green_view/">Project</a></div>
   </div>
 </div>
 
@@ -321,7 +321,7 @@ For the most up-to-date list, see my <a href="https://www.dropbox.com/scl/fo/ghr
     <div class="pub-title">C-IMAGE: City Cognitive Mapping through Geo-Tagged Photos</div>
     <div class="pub-authors"><strong>Liu, L.</strong>, Zhou, B., Zhao, J., &amp; Ryan, B. D.</div>
     <div class="pub-venue"><em>GeoJournal</em>, 81(6), 817–861.</div>
-    <div class="pub-links"><a href="https://doi.org/10.1007/s10708-016-9739-6">DOI</a></div>
+    <div class="pub-links"><a href="https://doi.org/10.1007/s10708-016-9739-6">DOI</a><a href="../projects/cimage/">Project</a></div>
   </div>
 </div>
 

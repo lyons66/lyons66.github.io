@@ -79,6 +79,8 @@ Below is a demo video showing how the perceived-safety score is applied for pede
 
 {{< video https://www.youtube.com/embed/lUATGLRVE5E >}}
 
+[Explore more project visualizations](../../visualization/#project-visualizations).
+
 
 # Revisit the Dataset and Algorithm
 ---

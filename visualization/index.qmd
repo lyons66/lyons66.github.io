@@ -1,6 +1,6 @@
 ---
 title: "Visualization"
-subtitle: "Brief view of other projects I directed"
+subtitle: "Interactive maps, research interfaces, and project demonstrations"
 page-layout: full
 # title-block-banner: true
 title-block-banner: "visualization_cover.png"
@@ -57,15 +57,25 @@ iframe {
 </style>
 ```
 
-::: {.callout-tip}
-## TIP
+## Project visualizations {#project-visualizations}
 
-To obtain the slides view password, please [contact me](mailto:lyons66@mit.edu).
-:::
+Explore demonstrations within the project pages, or scroll down for additional visual work. Visit [Projects](../projects/) for research context, methods, and contributions.
+
+| Project | Explore |
+|:---|:---|
+| Seeing HAI | [The Great Streets interface](../projects/seeing_hai/#the-great-streets-visualization) |
+| Sidewalk Ballet | [Venice exhibition video](../projects/sidewalk_ballet/#venice-architecture-biennale-2025) |
+| AI-Aided Camera App | [Camera demonstration](../projects/huipai/#demo-video) |
+| Urban Infrastructure Assessment | [Platform demonstrations](../projects/road/#platform-demonstrations) |
+| River View Analysis | [Waterfront assessment interface](../projects/riverview/#demo-video) |
+| StreeTalk | [Pedestrian routing demonstration](../projects/streetalk/#demo-video) |
+| C-IMAGE | [Interactive city maps](../projects/cimage/#interactive-maps) · [Shenzhen demonstration](../projects/cimage/#demo-video) |
+
+For password-protected slides below, please [contact me](mailto:lyons66@mit.edu).
 
 <!-- ------------------------  -->
 
-## Urban Growth (2020)
+## Urban Growth (2020) {#urban-growth-2020}
 
 ::::: {.columns}
 :::: {.column width="70%"}
@@ -73,7 +83,9 @@ To obtain the slides view password, please [contact me](mailto:lyons66@mit.edu).
 
 ## INFO
 
-In this project, we provided a well-known real estate developer with an assessment of the development overview and future evolution of China's five major city clusters. This study combined the LandScan population change data over the past 20 years with the scope of urban land boundaries inferred from VIIRS data, conducting a comprehensive and large-scale comparison over a long period between "people" and the spatial expansion of "cities."
+This visualization accompanies the CitoryTech study I led for Jinmao Group on China's five major city regions. It brings together LandScan population estimates and night-time-light-derived urban land boundaries to compare population change with urban expansion.
+
+[Read the Population and Urban Growth case study](../projects/jinmao/).
 
 :::
 
@@ -183,7 +195,7 @@ In this project, we built a web-app based on Didi driving speed data to retrieve
 <!-- ------------------------  -->
 
 
-## Visual Comfortness (2018)
+## Visual Comfortness (2018) {#visual-comfortness-2018}
 
 
 ::::: {.columns}
@@ -193,7 +205,7 @@ In this project, we built a web-app based on Didi driving speed data to retrieve
 ## INFO
 This project involves a study on street environment comfort assessment conducted in a community in Nanjing. We collected videos of the walking environment throughout the community and conducted a comprehensive assessment using computer vision, including object detection, semantic segmentation, and more.
 
-Later on, a similar approach was carried out for a TOD study in Beijing in collaboration with World Bank. The report can be view [here](https://elibrary.worldbank.org/doi/abs/10.1596/33343).
+Related work: the [TOD Station-Area Assessment](../projects/tod/) applied a broader framework around Beijing metro stations. The video below shows the Nanjing community study. The subsequent Beijing report is [available through the World Bank](https://elibrary.worldbank.org/doi/abs/10.1596/33343).
 :::
 
 {{< video https://www.youtube.com/embed/ZvJbkeVkb8s >}}
