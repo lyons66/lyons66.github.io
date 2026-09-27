@@ -71,7 +71,7 @@ Date: Mar 19, 2026
 <br>
 Location: San Francisco
 
-This presentation reports an independent research project comparing video, temporally averaged images, audio, and text as representations of urban engagement in city-walk footage. The paper is under review at *Scientific Reports*. [Project page](../projects/sidewalk_moments/)
+This presentation reports an independent research project comparing video, temporally averaged images, audio, and text as representations of urban engagement in city-walk footage. The manuscript is being prepared for submission. [Project page](../projects/sidewalk_moments/)
 
 :::
 

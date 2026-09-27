@@ -84,7 +84,7 @@ The method paper builds the measurement instrument. Timestamped street-level pan
 
 *From panorama to sideview: raw camera tiles are stitched into panoramas and reprojected into sidewalk-facing views that preserve the pedestrian realm on each side of the street.*
 
-Applied to **102,514 sideviews in New York City**, the framework shows that pedestrian volume and social activity are nearly uncorrelated (*r* = 0.168): the streets with the highest foot traffic are not where social life is most intense. The manuscript, *A Vision-Language Framework for Measuring Social Life on Sidewalks*, is under review at *Computers, Environment and Urban Systems*.
+Applied to **102,514 sideviews in New York City**, the framework shows that pedestrian volume and social activity are nearly uncorrelated (*r* = 0.168): the streets with the highest foot traffic are not where social life is most intense. The manuscript, *A Vision-Language Framework for Measuring Social Life on Sidewalks*, is under review at *Computers, Environment and Urban Systems*. [arXiv preprint](https://arxiv.org/abs/2609.28476)
 
 <img src="nyc_decoupling_map.jpg" style="width: 100%;">
 
