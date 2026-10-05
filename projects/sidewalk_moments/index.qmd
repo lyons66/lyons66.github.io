@@ -69,8 +69,10 @@ Video features align most strongly with the continuous engagement signal, follow
 
 The gap analysis suggests that the two representations retain different information. Video performs better in activity-driven scenes with dynamic content, while temporally averaged images align more closely with judgments in scenes dominated by stable spatial composition.
 
+These results make representation a substantive choice in urban research: it determines which aspects of a scene a model retains and which it leaves out. Richer features cannot simply be assumed to be better proxies for human experience. Here, replay behavior provides a specific signal of engagement, complemented by human validation; it does not stand in for every aspect of perception or experience in public space.
+
 # Paper and presentation
 
 > Liu, L., Tan, F. H., & Duarte, F. (2026). "Sidewalk Moments: Are Richer Representations Always More Human-Aligned? Evidence from City-Walk Videos." Preparing for submission. [arXiv](https://arxiv.org/abs/2607.20903)
 
-The work was presented at the **2026 Annual Meeting of the American Association of Geographers** in San Francisco. [Presentation materials](../../presentations/#sidewalk-moments-are-richer-visual-representations-always-more-human-aligned-in-urban-experience)
+The work was presented at the **2026 Annual Meeting of the American Association of Geographers** in San Francisco. [Presentation materials](../../presentations/#sidewalk-moments-are-richer-representations-always-more-human-aligned-evidence-from-city-walk-videos)

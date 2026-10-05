@@ -357,7 +357,7 @@ For the most up-to-date list, see my <a href="https://www.dropbox.com/scl/fo/ghr
   <div class="pub-body">
     <div class="pub-title">A Vision-Language Framework for Measuring Social Life on Sidewalks</div>
     <div class="pub-authors"><strong>Liu, L.</strong>, &amp; Sevtsuk, A.</div>
-    <div class="pub-venue"><span class="pub-badge badge-review">Under Review</span> Submitted to <em>Computers, Environment and Urban Systems</em>.</div>
+    <div class="pub-venue"><span class="pub-badge badge-review">Under Review</span> Preprint available on arXiv; under review at <em>Computers, Environment and Urban Systems</em>.</div>
     <div class="pub-links"><a href="https://arxiv.org/abs/2609.28476">arXiv</a><a href="../projects/seeing_hai/">Dissertation Project</a></div>
   </div>
 </div>
@@ -366,6 +366,16 @@ For the most up-to-date list, see my <a href="https://www.dropbox.com/scl/fo/ghr
 ### Preprints & Manuscripts in Preparation {.sub-heading}
 
 ```{=html}
+
+<div class="pub-entry">
+  <div class="pub-year">2026</div>
+  <div class="pub-body">
+    <div class="pub-title">Stay Together: Street-Level Social Indicators for Sidewalk Life Across 496 U.S. Cities</div>
+    <div class="pub-authors"><strong>Liu, L.</strong>, &amp; Sevtsuk, A.</div>
+    <div class="pub-venue"><span class="pub-badge badge-prep">Manuscript in preparation</span></div>
+    <div class="pub-links"><a href="../projects/seeing_hai/#data-stay-together-496-u.s.-cities">Data Project</a></div>
+  </div>
+</div>
 
 <div class="pub-entry">
   <div class="pub-year">2026</div>

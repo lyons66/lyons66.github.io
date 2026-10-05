@@ -90,7 +90,9 @@ Beyond the catalog itself, the review identifies three structural problems in th
 - **Unbalanced research focus.** Effort concentrates on model and feature selection, while measurement validity and standardization receive far less attention.
 - **Unclear effectiveness.** In the 24-paper subcollection, how much explanatory power street attributes add to urban models is often difficult to establish.
 
-The review closes with recommendations for standardized measurement and clearer definitions — and it exposed a substantive gap: the attributes computer vision had delivered describe the *physical* street almost exclusively. The human activities and interactions that classic observational studies cared most about were nearly absent from the catalog. That gap became the starting point for [Seeing HAI](../seeing_hai/), my dissertation.
+Across the review, many different urban questions depend on a small family of readily extractable metrics, especially greenery. This creates a mismatch between what urbanists want to understand and what computer vision is equipped to measure. Human activities and interactions — central to classic observational studies of public life — remain weakly represented.
+
+The review calls for clearer definitions and standardized measurement. It also shaped the starting point for [Seeing HAI](../seeing_hai/), my dissertation: begin with an urban question, define the observable evidence it requires, and then develop the method to measure it.
 
 # Related Material
 
