@@ -60,6 +60,34 @@ format:
 To obtain the slides view password, please [contact me](mailto:lyons66@mit.edu).
 :::
 
+## Stay Together: Street-Level Social Indicators for Sidewalk Life Across 496 U.S. Cities {#acsp-2026}
+
+::::: {.columns}
+:::: {.column width="70%"}
+::: {.callout-note}
+## 2026 ACSP, Presentation
+
+Date: Oct 8, 2026
+<br>
+Location: Pittsburgh, PA, USA
+
+This presentation introduces a dataset and street-level indicators of sidewalk life across 496 U.S. cities. Using timestamped street-view and intersection imagery, the study measures pedestrian activities and social interactions, distinguishing passing through from spending time on a street. It presents preliminary findings on how social use of sidewalks relates to pedestrian volume. [Dissertation project and data study](../projects/seeing_hai/#data-stay-together-496-u.s.-cities)
+
+:::
+
+<a href="acsp2026.png"><img src="acsp2026.png" alt="ACSP's post featuring Liu Liu presenting the Stay Together study in Pittsburgh at the 2026 conference." style="width: 100%; height: auto; border-radius: 6px;"></a>
+
+Featured by ACSP
+
+::::
+:::: {.column width="30%" .center-text}
+<img src="slides_acsp2026.png" alt="Slide preview: sampling frame and imagery coverage across 496 U.S. cities." style="width: 93%; height: auto; border-radius: 6px;">
+
+[Slides Upon Request](https://www.dropbox.com/scl/fi/8eveynuph7oj1hftpt9fs/slides_acsp2026.pdf?rlkey=chb3dvd2m1dyv8pebsg7hzy1p&st=zfwlcqlm&dl=0)
+
+::::
+:::::
+
 ## Sidewalk Moments: Are Richer Representations Always More Human-Aligned? Evidence from City-Walk Videos
 
 ::::: {.columns}
