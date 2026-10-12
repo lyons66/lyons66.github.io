@@ -353,11 +353,11 @@ For the most up-to-date list, see my <a href="https://www.dropbox.com/scl/fo/ghr
 
 ```{=html}
 <div class="pub-entry" id="seen-but-not-felt">
-  <div class="pub-year">2027</div>
+  <div class="pub-year">2026</div>
   <div class="pub-body">
     <div class="pub-title">Seen but Not Felt: A TLS-Verified Benchmark for Centimeter-Scale Sidewalk Terrain Reconstruction</div>
-    <div class="pub-authors">Nandi, Y., Zhizheng, L., <strong>Liu, L.</strong>, &amp; Bolei, Z.</div>
-    <div class="pub-venue"><span class="pub-badge badge-review">Under Review</span> Submitted to <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2027.</div>
+    <div class="pub-authors">Yang, N., Liu, Z., <strong>Liu, L.</strong>, &amp; Zhou, B.</div>
+    <div class="pub-venue"><span class="pub-badge badge-review">Under Review</span> Submitted to <em>IEEE International Conference on Robotics and Automation (ICRA 2027)</em>.</div>
   </div>
 </div>
 
