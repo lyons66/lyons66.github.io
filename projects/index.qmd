@@ -40,6 +40,7 @@ listing:
       - jinmao/index.qmd
       - age_friendly/index.qmd
       - tod/index.qmd
+      - livable_neighborhoods/index.qmd
       - road/index.qmd
       - streetalk/index.qmd
       - vibescan/index.qmd
@@ -51,7 +52,7 @@ listing:
     grid-columns: 3
     fields: [image, title, date]
     sort: "date desc"
-    date-format: "MMM, YYYY"
+    date-format: "YYYY"
     sort-ui: false
     filter-ui: false
 ---

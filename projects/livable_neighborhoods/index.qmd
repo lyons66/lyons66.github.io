@@ -1,0 +1,89 @@
+---
+title: "Livable Neighborhood Assessment"
+subtitle: "A walking survey with 360° cameras in Nanjing’s Tianjin Xincun neighborhood"
+description-meta: "A CitoryTech project connecting a 360-degree walking survey, computer vision, and perceived neighborhood quality in Tianjin Xincun, Nanjing."
+date: "Jan 2018"
+date-format: "YYYY"
+resources:
+  - fieldwork-poster.jpg
+  - analysis-poster.jpg
+language:
+  title-block-published: "Project year"
+author-title: "Project Lead"
+author:
+  - name: Liu Liu
+    orcid: 0000-0003-0100-9763
+categories: [Applied Practice, Neighborhood Livability, Computer Vision]
+image: "cover.jpg"
+title-block-banner: "cover.jpg"
+page-layout: full
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    fig-cap-location: bottom
+    lightbox: true
+    css:
+      - ../project-style.css
+      - livable-neighborhoods.css
+---
+
+::: {.callout-note}
+## Project context
+
+**Neighborhood-environment assessment at CitoryTech · Tianjin Xincun, Nanjing · 2018**<br>
+My role: Project lead at CitoryTech.
+:::
+
+# The question
+
+How can neighborhood renewal respond to the spaces residents encounter on an everyday walk? In this project, we carried a **360° camera through an older residential neighborhood in central Nanjing**, recording its internal lanes and shared outdoor spaces. The aim was to connect visible street conditions with how people perceive the quality of their neighborhood.
+
+The study combined field imagery, computer vision, and perception assessment across four dimensions: **perceived safety, walking comfort and convenience, the friendliness of shared public spaces, and visual character**.
+
+# Field survey and video analysis {#field-survey}
+
+Collecting imagery on foot brought narrow residential lanes and spaces between buildings into the survey. The footage documented the surroundings along the walking route, including greenery, parked vehicles, building edges, and everyday street objects.
+
+The analysis used front, back, left, and right views of the walking environment. **Object detection and segmentation** identified visible elements in the footage, providing a way to examine which features appeared alongside different assessments of neighborhood quality.
+
+```{=html}
+<div class="project-video-pair">
+<figure class="project-video-figure">
+  <h2>360° walking survey</h2>
+  <video controls playsinline preload="none" poster="fieldwork-poster.jpg" aria-label="Field footage from the neighborhood walking survey with a 360-degree camera" aria-describedby="field-survey-caption" width="740" height="718">
+    <source src="field-survey.mp4" type="video/mp4">
+    Your browser does not support embedded video. <a href="field-survey.mp4">Watch the field-survey video.</a>
+  </video>
+  <figcaption id="field-survey-caption">A walking survey with a handheld 360° camera. Video capture: <strong>Jinxin Shao</strong>. The camera operator’s face is blurred for privacy.</figcaption>
+</figure>
+<figure class="project-video-figure">
+  <h2>Computer vision analysis</h2>
+  <video controls playsinline preload="none" poster="analysis-poster.jpg" aria-label="Four directional views of the neighborhood survey with object detections and segmentation masks" aria-describedby="analysis-caption" width="960" height="960">
+    <source src="four-direction-analysis.mp4" type="video/mp4">
+    Your browser does not support embedded video. <a href="four-direction-analysis.mp4">Watch the analysis video.</a>
+  </video>
+  <figcaption id="analysis-caption">Four directional views of the neighborhood survey: front and right views above, left and back views below. Colored overlays show detected objects and segmentation masks.</figcaption>
+</figure>
+</div>
+```
+
+# Mapping neighborhood quality {#video-analysis}
+
+Perception ratings and image features supported comparisons across locations, while maps showed how assessments varied along the neighborhood’s walking routes. The four dimensions kept the evaluation connected to specific experiences of a place, rather than a single overall livability score.
+
+```{=html}
+<figure class="project-video-figure">
+  <video controls playsinline preload="none" poster="cover.jpg" aria-label="Video demonstration of the Tianjin Xincun neighborhood assessment platform and 3D map" aria-describedby="neighborhood-map-caption" width="1728" height="1080">
+    <source src="neighborhood-map.mp4" type="video/mp4">
+    Your browser does not support embedded video. <a href="neighborhood-map.mp4">Watch the neighborhood assessment platform video.</a>
+  </video>
+  <figcaption id="neighborhood-map-caption">Video demonstration of the Tianjin Xincun neighborhood assessment platform, with street-level indicators and a 3D map.</figcaption>
+</figure>
+```
+
+The assessments describe perceived environmental quality. They do not establish actual crime risk or a causal effect of an individual street feature. Their purpose is to help identify locations and conditions for closer examination during neighborhood renewal.
+
+Related projects: [StreeTalk](../streetalk/) explores street-view perception and pedestrian routing; [TOD Station-Area Assessment](../tod/) examines the environments around Beijing metro stations.
+
+Images and videos: CitoryTech project materials.

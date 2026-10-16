@@ -1,4 +1,4 @@
-/* Projects overview: muted color, generous images, compact captions. */
+/* Projects overview: original image colors, generous images, compact captions. */
 #quarto-margin-sidebar { display: none; }
 #quarto-document-content > section + section { margin-top: 3.25rem; }
 #quarto-document-content > section > h2 { margin-top: 0; }
@@ -37,8 +37,7 @@
   height: 100% !important;
   object-fit: cover;
   border-radius: 0;
-  filter: saturate(0.65);
-  transition: filter 280ms ease, transform 360ms cubic-bezier(0.2, 0.7, 0.3, 1);
+  transition: transform 360ms cubic-bezier(0.2, 0.7, 0.3, 1);
 }
 .quarto-grid-item img[src*="/sidewalk_moments/"],
 .quarto-grid-item img[src*="/walkocc/"],
@@ -82,7 +81,6 @@
 }
 .quarto-grid-link:is(:hover, :focus-visible) .card-title { color: var(--site-accent); }
 .quarto-grid-link:is(:hover, :focus-visible) img.card-img {
-  filter: saturate(1) brightness(1.025);
   transform: scale(1.045);
 }
 #quarto-document-content > section:last-of-type > p:last-child:not(.project-section-note) {
