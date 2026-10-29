@@ -39,6 +39,7 @@ listing:
     contents:
       - jinmao/index.qmd
       - age_friendly/index.qmd
+      - qiuhao/index.qmd
       - tod/index.qmd
       - livable_neighborhoods/index.qmd
       - road/index.qmd

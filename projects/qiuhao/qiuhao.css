@@ -1,0 +1,186 @@
+/* Local styles for Qiuhao. Product artwork is displayed without recoloring. */
+#title-block-header .quarto-title-banner {
+  --banner-overlay: transparent;
+  background-color: #10364d;
+  background-image: none;
+  min-height: 300px;
+  padding-block: 3rem;
+  overflow: hidden;
+}
+
+#title-block-header .quarto-title-banner::before {
+  display: block;
+  /* Use the original 1440px artwork without the extra desktop zoom. */
+  left: 0;
+  width: 100%;
+  background-image:
+    linear-gradient(90deg, #10364d 18%, rgba(16, 54, 77, 0.88) 32%, rgba(16, 54, 77, 0.60) 58%, rgba(16, 54, 77, 0.72)),
+    url("indicator-map-hd.png");
+  background-size: 100% 100%, min(100%, 1440px) auto;
+  background-position: center, center 55%;
+  background-repeat: no-repeat;
+}
+
+#title-block-header .quarto-title-banner .quarto-title {
+  padding-right: 330px;
+  box-sizing: border-box;
+}
+
+#title-block-header .quarto-title-banner .quarto-title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  width: 250px;
+  height: 162px;
+  background: url("qiuhao-logo.png") center / contain no-repeat;
+  pointer-events: none;
+}
+
+#title-block-header .quarto-title-banner .title {
+  font-size: clamp(3rem, 5.2vw, 4.2rem);
+  line-height: 1.1;
+  letter-spacing: -0.045em;
+}
+
+#title-block-header .quarto-title-banner .subtitle {
+  max-width: 42ch;
+  font-size: 1.12rem;
+  color: #e8f0f4;
+  margin-top: 0.9rem;
+}
+
+#title-block-header .quarto-title-banner .quarto-categories {
+  margin-top: 1.35rem;
+  gap: 0.45rem;
+}
+
+#title-block-header .quarto-title-banner .quarto-category {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.28);
+  font-size: 0.65rem;
+  letter-spacing: 0.04em;
+}
+
+.qiuhao-intro {
+  margin: 0.3rem 0 2rem;
+}
+
+#quarto-document-content .qiuhao-context {
+  color: var(--site-muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.qiuhao-modules {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.qiuhao-modules a {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  padding: 1rem 0;
+  border-top: 3px solid var(--site-accent);
+  color: var(--site-ink);
+  text-decoration: none;
+}
+
+.qiuhao-modules a:hover strong,
+.qiuhao-modules a:focus-visible strong {
+  color: var(--site-accent);
+}
+
+.qiuhao-modules a:focus-visible {
+  outline: 2px solid var(--site-accent);
+  outline-offset: 5px;
+}
+
+.qiuhao-module-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--site-muted);
+}
+
+.qiuhao-modules strong {
+  font-size: 1.03rem;
+  line-height: 1.4;
+}
+
+.qiuhao-modules a > span:last-child {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: #495057;
+}
+
+.qiuhao-interface-pair,
+.qiuhao-survey-screens {
+  display: grid;
+  gap: 1.3rem;
+  margin: 1.5rem 0 2rem;
+  align-items: start;
+}
+
+.qiuhao-interface-pair { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.qiuhao-survey-screens { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+.qiuhao-interface-pair figure,
+.qiuhao-survey-screens figure { margin: 0; min-width: 0; }
+
+#quarto-document-content .qiuhao-interface-pair img,
+#quarto-document-content .qiuhao-survey-screens img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border: 1px solid #e0e5e9;
+}
+
+#quarto-document-content .qiuhao-survey-screens img {
+  width: min(100%, 235px);
+  margin-inline: auto;
+}
+
+.qiuhao-survey-screens figcaption { max-width: 235px; margin-inline: auto; }
+
+@media (max-width: 700px) {
+  .qiuhao-modules { grid-template-columns: 1fr; gap: 0.5rem; }
+  .qiuhao-interface-pair { grid-template-columns: 1fr; }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  #title-block-header .quarto-title-banner .quarto-title { padding-right: 240px; }
+  #title-block-header .quarto-title-banner .quarto-title::after { width: 185px; height: 120px; }
+}
+
+@media (max-width: 600px) {
+  #title-block-header .quarto-title-banner { padding-block: 1.65rem; min-height: 0; }
+  #title-block-header .quarto-title-banner::before { background-size: 100% 100%, auto 200%; }
+  #title-block-header .quarto-title-banner .quarto-title { padding-right: 0; }
+  #title-block-header .quarto-title-banner .quarto-title::after {
+    width: 112px;
+    height: 73px;
+    top: 0;
+    right: 0;
+    transform: none;
+  }
+  #title-block-header .quarto-title-banner .title {
+    display: flex;
+    align-items: center;
+    min-height: 74px;
+    padding-right: 130px;
+    font-size: clamp(2.45rem, 8vw, 3rem);
+  }
+  #title-block-header .quarto-title-banner .subtitle { margin-top: 0.8rem; font-size: 1rem; }
+  #title-block-header .quarto-title-banner .quarto-categories { margin-top: 1.1rem; }
+}
+
+@media (max-width: 560px) {
+  .qiuhao-survey-screens { grid-template-columns: 1fr; gap: 1.5rem; }
+}
