@@ -1,7 +1,7 @@
 ---
 title: "Seeing HAI"
-subtitle: "Human Activities and Interactions on Sidewalks and Pedestrian Spaces through VLMs"
-description: "Liu Liu's Ph.D. dissertation: measuring the social life of sidewalks at city and national scale with street-level imagery and vision-language models."
+subtitle: "Measuring how people stay, gather, and use sidewalks"
+description-meta: "Liu Liu's Ph.D. dissertation: measuring the social life of sidewalks at city and national scale with street-level imagery and vision-language models."
 date: "Aug 2026"
 date-format: "MMM, YYYY"
 author-title: "Lead Researcher"
@@ -18,128 +18,216 @@ resources:
 format:
   html:
     toc: true
-    toc-depth: 3
+    toc-depth: 1
     fig-cap-location: bottom
     lightbox: true
     toc-float:
       collapsed: false
-      smooth-scroll: true
+      smooth-scroll: false
       sticky: true
-    css: ../project-style.css
+    css:
+      - ../project-style.css
+      - seeing-hai.css
 ---
+
+<span id="research-question" class="anchor-alias" aria-hidden="true"></span>
+
+Seeing HAI measures how people use sidewalks: who is moving or staying, who is together, and what they are doing. My MIT dissertation uses street-level images and vision-language models to extend close observation of public life across streets and cities. It asks what pedestrian counts miss when equally busy sidewalks support different activities and forms of social presence. The measures describe what is visible at the moment an image was captured.
+
+# Same count, different public life {#count-vs-grouping}
+
+Each pair below has nearly the same number of people, but shows very different forms of sidewalk social life.
 
 ```{=html}
-<style>
-.quarto-title-banner {
-  background-position: 50% 45%;
-  height: 220px;
-}
-.sdi-comparison {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.2rem;
-  margin: 1.2rem 0;
-}
-.sdi-comparison figure { margin: 0; }
-.sdi-comparison img { width: 100%; height: auto; }
-
-.slide6-crop { position: relative; display: block; overflow: hidden; width: 100%; aspect-ratio: var(--crop-w) / var(--crop-h); }
-.slide6-crop img { margin: 0 !important; border: 0; position: absolute; display: block; width: calc(1920 / var(--crop-w) * 100%); max-width: none !important; height: auto; left: calc(var(--crop-x) / var(--crop-w) * -100%); top: calc(var(--crop-y) / var(--crop-h) * -100%); }
-.slide6-figure { margin: 1.2rem 0 1.6rem; }
-.slide6-figure figcaption { margin-top: .6rem; color: var(--site-muted); font-size: .85rem; line-height: 1.5; }
-.measurement-table { max-width: 100%; overflow-x: auto; }
-@media (max-width: 640px) {
-  .sdi-comparison { grid-template-columns: 1fr; }
-  #quarto-document-content .measurement-table th,
-  #quarto-document-content .measurement-table td { padding: 0.5rem 0.35rem; }
-}
-</style>
+<div class="count-comparisons" aria-label="Three image pairs from M10 Figure 8">
+<div class="count-pair" role="group" aria-label="Comparison 1">
+<figure>
+  <a class="lightbox" href="sdi_low1.webp" data-gallery="count-pairs" data-title="Pair 1, left: N = 9. People on their own, mainly passing through.">
+    <img src="sdi_low1.webp" width="1600" height="800" alt="Pair 1, left: N = 9. People on their own, mainly passing through." loading="eager" decoding="async">
+  </a>
+  <figcaption><strong>N = 9.</strong> People on their own, mainly passing through.</figcaption>
+</figure>
+<figure>
+  <a class="lightbox" href="sdi_high1.webp" data-gallery="count-pairs" data-title="Pair 1, right: N = 9. Groups and people standing or seated.">
+    <img src="sdi_high1.webp" width="1600" height="800" alt="Pair 1, right: N = 9. Groups and people standing or seated." loading="eager" decoding="async">
+  </a>
+  <figcaption><strong>N = 9.</strong> Groups and people standing or seated.</figcaption>
+</figure>
+</div>
+<div class="count-pair" role="group" aria-label="Comparison 2">
+<figure>
+  <a class="lightbox" href="sdi_low2.webp" data-gallery="count-pairs" data-title="Pair 2, left: N = 9. People on their own, mainly passing through.">
+    <img src="sdi_low2.webp" width="1600" height="800" alt="Pair 2, left: N = 9. People on their own, mainly passing through." loading="lazy" decoding="async">
+  </a>
+  <figcaption><strong>N = 9.</strong> People on their own, mainly passing through.</figcaption>
+</figure>
+<figure>
+  <a class="lightbox" href="sdi_high2.webp" data-gallery="count-pairs" data-title="Pair 2, right: N = 10. A group of four, a pair, and four people alone.">
+    <img src="sdi_high2.webp" width="1600" height="800" alt="Pair 2, right: N = 10. A group of four, a pair, and four people alone." loading="lazy" decoding="async">
+  </a>
+  <figcaption><strong>N = 10.</strong> A group of four, a pair, and four people alone.</figcaption>
+</figure>
+</div>
+<div class="count-pair" role="group" aria-label="Comparison 3">
+<figure>
+  <a class="lightbox" href="sdi_low3.webp" data-gallery="count-pairs" data-title="Pair 3, left: N = 9. People on their own, mainly passing through.">
+    <img src="sdi_low3.webp" width="1600" height="800" alt="Pair 3, left: N = 9. People on their own, mainly passing through." loading="lazy" decoding="async">
+  </a>
+  <figcaption><strong>N = 9.</strong> People on their own, mainly passing through.</figcaption>
+</figure>
+<figure>
+  <a class="lightbox" href="sdi_high3.webp" data-gallery="count-pairs" data-title="Pair 3, right: N = 10. Several pairs; most people are stationary.">
+    <img src="sdi_high3.webp" width="1600" height="800" alt="Pair 3, right: N = 10. Several pairs; most people are stationary." loading="lazy" decoding="async">
+  </a>
+  <figcaption><strong>N = 10.</strong> Several pairs; most people are stationary.</figcaption>
+</figure>
+</div>
+</div>
 ```
 
-::: {.callout-note}
-## Research context
+These examples are from Figure 8 of [*A Vision-Language Framework for Measuring Social Life on Sidewalks*](https://arxiv.org/abs/2609.28476) (M10; under review).
 
-**Ph.D. dissertation research, MIT Department of Urban Studies and Planning**<br>
-Committee: Andres Sevtsuk (chair), Jinhua Zhao, Lawrence Vale · Expected completion: June 2027
+# What people do on sidewalks {#activities}
 
-*Seeing HAI* is the title and organizing framework of my dissertation. It is distinct from [Sidewalk Ballet](../sidewalk_ballet/), a City Form Lab collaboration and public installation that I lead at MIT. The two projects intersect, but they have different scopes, research ownership, and outputs.
+These activities appear in street-level images; many would be missed by a pedestrian count or an object detector alone.
 
-**[Approved dissertation proposal (PDF)](https://www.dropbox.com/scl/fi/6b0csugj5mr8n1u4bc98u/Dissertation-Research-Proposal-250423_Liu.pdf?rlkey=e3w0m8vrksbr1ewnh8ydruhxv&st=ff0xemho&dl=0)** — the document is password-protected; please [email me](mailto:lyons66@mit.edu) for the password.
-:::
+```{=html}
+<div class="activity-collage" role="group" aria-label="Everyday sidewalk activities, from the first activity collage">
+<div class="activity-row" style="--activity-columns:346fr 412fr 509fr 554fr;">
+<figure>
+  <span class="activity-crop" style="--source-w:1876; --crop-x:0; --crop-y:0; --crop-w:346; --crop-h:384;">
+    <img src="activities-1.webp" width="1876" height="866" alt="Street vending; example from the original activity collage, with faces blurred." loading="lazy" decoding="async">
+  </span>
+  <figcaption>Street vending</figcaption>
+</figure>
+<figure>
+  <span class="activity-crop" style="--source-w:1876; --crop-x:367; --crop-y:0; --crop-w:412; --crop-h:384;">
+    <img src="activities-1.webp" width="1876" height="866" alt="Talking beside strollers; example from the original activity collage, with faces blurred." loading="lazy" decoding="async">
+  </span>
+  <figcaption>Talking beside strollers</figcaption>
+</figure>
+<figure>
+  <span class="activity-crop" style="--source-w:1876; --crop-x:796; --crop-y:0; --crop-w:509; --crop-h:384;">
+    <img src="activities-1.webp" width="1876" height="866" alt="Children's activities; example from the original activity collage, with faces blurred." loading="lazy" decoding="async">
+  </span>
+  <figcaption>Children's activities</figcaption>
+</figure>
+<figure>
+  <span class="activity-crop" style="--source-w:1876; --crop-x:1321; --crop-y:0; --crop-w:554; --crop-h:384;">
+    <img src="activities-1.webp" width="1876" height="866" alt="Dining and drinking together; example from the original activity collage, with faces blurred." loading="lazy" decoding="async">
+  </span>
+  <figcaption>Dining and drinking together</figcaption>
+</figure>
+</div>
+<div class="activity-row" style="--activity-columns:542fr 304fr 277fr 706fr;">
+<figure>
+  <span class="activity-crop" style="--source-w:1876; --crop-x:0; --crop-y:430; --crop-w:542; --crop-h:387;">
+    <img src="activities-1.webp" width="1876" height="866" alt="Walking dogs; example from the original activity collage, with faces blurred." loading="lazy" decoding="async">
+  </span>
+  <figcaption>Walking dogs</figcaption>
+</figure>
+<figure>
+  <span class="activity-crop" style="--source-w:1876; --crop-x:557; --crop-y:430; --crop-w:304; --crop-h:387;">
+    <img src="activities-1.webp" width="1876" height="866" alt="Talking in a group; example from the original activity collage, with faces blurred." loading="lazy" decoding="async">
+  </span>
+  <figcaption>Talking in a group</figcaption>
+</figure>
+<figure>
+  <span class="activity-crop" style="--source-w:1876; --crop-x:877; --crop-y:430; --crop-w:277; --crop-h:387;">
+    <img src="activities-1.webp" width="1876" height="866" alt="Talking on the sidewalk; example from the original activity collage, with faces blurred." loading="lazy" decoding="async">
+  </span>
+  <figcaption>Talking on the sidewalk</figcaption>
+</figure>
+<figure>
+  <span class="activity-crop" style="--source-w:1876; --crop-x:1168; --crop-y:430; --crop-w:706; --crop-h:387;">
+    <img src="activities-1.webp" width="1876" height="866" alt="Sitting and watching; example from the original activity collage, with faces blurred." loading="lazy" decoding="async">
+  </span>
+  <figcaption>Sitting and watching</figcaption>
+</figure>
+</div>
+</div>
+<div class="activity-collage" role="group" aria-label="Further sidewalk activities, from the second activity collage">
+<div class="activity-row" style="--activity-columns:706fr 223fr 414fr;">
+<figure>
+  <span class="activity-crop" style="--source-w:1876; --crop-x:0; --crop-y:0; --crop-w:706; --crop-h:374;">
+    <img src="activities-2.webp" width="1876" height="854" alt="Protest rally; example from the original activity collage, with faces blurred." loading="lazy" decoding="async">
+  </span>
+  <figcaption>Protest rally</figcaption>
+</figure>
+<figure>
+  <span class="activity-crop" style="--source-w:1876; --crop-x:721; --crop-y:0; --crop-w:223; --crop-h:374;">
+    <img src="activities-2.webp" width="1876" height="854" alt="Fishing; example from the original activity collage, with faces blurred." loading="lazy" decoding="async">
+  </span>
+  <figcaption>Fishing</figcaption>
+</figure>
+<figure>
+  <span class="activity-crop" style="--source-w:1876; --crop-x:959; --crop-y:0; --crop-w:414; --crop-h:374;">
+    <img src="activities-2.webp" width="1876" height="854" alt="Hugging; example from the original activity collage, with faces blurred." loading="lazy" decoding="async">
+  </span>
+  <figcaption>Hugging</figcaption>
+</figure>
+</div>
+<div class="activity-row" style="--activity-columns:286fr 725fr 373fr 447fr;">
+<figure>
+  <span class="activity-crop" style="--source-w:1876; --crop-x:0; --crop-y:432; --crop-w:286; --crop-h:374;">
+    <img src="activities-2.webp" width="1876" height="854" alt="Interaction with the street-view vehicle; example from the original activity collage, with faces blurred." loading="lazy" decoding="async">
+  </span>
+  <figcaption>Interaction with the street-view vehicle</figcaption>
+</figure>
+<figure>
+  <span class="activity-crop" style="--source-w:1876; --crop-x:301; --crop-y:432; --crop-w:725; --crop-h:374;">
+    <img src="activities-2.webp" width="1876" height="854" alt="Political expression; example from the original activity collage, with faces blurred." loading="lazy" decoding="async">
+  </span>
+  <figcaption>Political expression</figcaption>
+</figure>
+<figure>
+  <span class="activity-crop" style="--source-w:1876; --crop-x:1040; --crop-y:432; --crop-w:373; --crop-h:374;">
+    <img src="activities-2.webp" width="1876" height="854" alt="Fixing a tire; example from the original activity collage, with faces blurred." loading="lazy" decoding="async">
+  </span>
+  <figcaption>Fixing a tire</figcaption>
+</figure>
+<figure>
+  <span class="activity-crop" style="--source-w:1876; --crop-x:1428; --crop-y:432; --crop-w:447; --crop-h:374;">
+    <img src="activities-2.webp" width="1876" height="854" alt="Seated with belongings; example from the original activity collage, with faces blurred." loading="lazy" decoding="async">
+  </span>
+  <figcaption>Seated with belongings</figcaption>
+</figure>
+</div>
+</div>
+```
 
-# Research Question
+Faces are blurred in the source images, and no individual is identified.
 
----
+These examples define the measurement problem: finding people is only the first step. To study sidewalk life, we also need to describe how people are together, what they are doing, and where and when they were observed.
 
-A sidewalk is a place to sit, talk, linger, work, care for others, and take part in public life. It is also a shared space where strangers from different backgrounds can encounter one another. Pedestrian counts alone reveal little about these activities: two sidewalks can carry similar foot traffic while supporting very different forms of public life. My dissertation asks how visual AI can extend close observation of sidewalk life across cities while keeping its measures grounded in what images can actually show.
+# How observations become measures {#how-it-works}
 
-I see this as a lifelong research program, with the dissertation laying its foundation. The first complete sequence now runs from **raw street imagery, through observations of people and groups, to GIS-based spatial analysis**. Each stage continues to evolve, but the connection makes it possible to trace a city-scale measure back to the people, places, and visible evidence from which it was constructed.
+<span id="the-dissertation-method-findings-data" class="anchor-alias" aria-hidden="true"></span>
+<span id="method-a-vision-language-framework-for-measuring-social-life-on-sidewalks" class="anchor-alias" aria-hidden="true"></span>
 
-# The Dissertation: Method, Findings, Data
-
----
-
-The dissertation develops in three connected parts: **Method** builds a measurement framework, **Findings** examines spatial patterns in New York City, and **Data** extends the observation to cities across the United States. A shared pipeline combines two parallel branches, social-group detection and per-person attribute coding, before constructing indicators for spatial analysis.
+The method connects human observation with image-based measurement. Human judgments about whether pairs of people are together provide training examples for [MINGLE](../mingle/), published at AAAI 2026. My [M10 framework](https://arxiv.org/abs/2609.28476) extends that approach by combining social-group detection with per-person coding, then turning their outputs into interpretable measures. The paper, coauthored with Andres Sevtsuk, is under review at *Computers, Environment and Urban Systems*.
 
 ![The complete five-stage framework: timestamped imagery, parallel group and activity detection, cross-branch refinement and fusion, rule-based indicators, and city-scale analysis. The provisional sex fields shown in the diagram are excluded from primary analyses. Click to enlarge.](method_framework.png){fig-alt="Five-stage workflow showing street panoramas reprojected into sideviews, parallel group and per-person attribute detection, validity filtering and cross-branch refinement, indicator construction, and New York City maps." loading="lazy"}
 
-## Method: A Vision-Language Framework for Measuring Social Life on Sidewalks
+## Recognize social groups {#identify-social-groups}
 
-**[Read the arXiv preprint](https://arxiv.org/abs/2609.28476)** · Liu Liu and Andres Sevtsuk · Under review at *Computers, Environment and Urban Systems*.
+A social group is a relationship among people, so proximity alone is insufficient. Occlusion, depth differences, and the lack of motion in a still image make it difficult to distinguish people together from people who happen to be close. The framework detects people with **SAM3**, estimates depth with **PatchFusion**, and uses a fine-tuned **Qwen2.5-VL-3B** model to judge pairs before assembling them into groups. The preprint reports **F1 = 80.64%** for this pairwise model, using an expanded **76K training corpus**.
 
-### Capture time and place
+## Describe visible states {#code-each-persons-visible-attributes}
 
-Observing people requires knowing when an image was captured. Collection therefore uses imagery with explicit capture timestamps, organized into four windows: weekday and weekend, each at **12:00–14:00 and 17:00–19:00**. This preserves the time of the observed activity, rather than treating imagery as a timeless record of the street. The broader collection includes Apple Look Around, Bing Streetside, and Mapillary; the national data paper below uses the Apple and Bing subset.
+Alongside grouping, **Qwen3-VL-30B-A3B-Instruct** records ten fields per person: validity, posture, locomotion, object, object relation, support surface, zone type, uniform presence, apparent age group, and model-perceived sex. Separating these fields lets a person be recorded as walking, holding a phone, and occupying a particular part of the sidewalk, rather than forcing the observation into a single activity label. The preprint reports **88.5% mean field accuracy on 999 held-out samples**.
 
-### From street view to side view {#align-imagery-with-the-street-network}
-
-Each panorama is reprojected into **left and right sideviews that face the sidewalks**, with a 150° field of view and a 1600 × 800 pixel frame. The example below connects the source panorama and its two resulting photographs to the **capture point, road direction, and opposite viewing directions on the street network**. Keeping that relationship explicit preserves which side of the street each image observes.
-
-<figure class="slide6-figure">
-  <a class="lightbox slide6-crop" href="page6_spatial_overview.jpg" data-gallery="page6-spatial" data-title="Spatial workflow and collection overview from my dissertation presentation. Current data-paper scope is described below." style="--crop-x:20; --crop-y:275; --crop-w:1260; --crop-h:316;">
-    <img src="page6_spatial_overview.jpg" alt="The original panorama, left and right sidewalk photographs, and a street map with red arrows connecting each photograph to its viewing direction on opposite sides of the road." loading="lazy">
-  </a>
-  <figcaption>From street view to side view: the red arrows connect the two photographs to their sidewalk-facing directions on the road network. Click to view the full presentation figure.</figcaption>
-</figure>
-
-### From sidewalks to intersections
-
-Intersections need a different frame. A wide view retains the corners and crossings together; the accompanying map shows intersection observation locations on the street network. These observations remain separate from the two-sided mid-block views.
-
-<figure class="slide6-figure">
-  <a class="lightbox slide6-crop" href="page6_spatial_overview.jpg" data-gallery="page6-spatial" data-title="Spatial workflow and collection overview from my dissertation presentation. Current data-paper scope is described below." style="--crop-x:1318; --crop-y:275; --crop-w:586; --crop-h:316;">
-    <img src="page6_spatial_overview.jpg" alt="A panoramic intersection photograph above a map of the surrounding street network with blue intersection-location markers." loading="lazy">
-  </a>
-  <figcaption>An intersection panorama and the corresponding collection of intersection locations on the street network. Click to view the full presentation figure.</figcaption>
-</figure>
-
-For spatial analysis, sidewalk-facing views are assigned to side-specific block frontages on the TIGER/Line road network, while intersection records retain their junction association. View and frontage identifiers, capture time, and the crosswalk to road segments connect the visual observations to land use, transportation, and demographic data.
-
-### Identify social groups
-
-A group has no single visual boundary. Occlusion, depth differences, and the absence of motion make it difficult to distinguish people together from people who happen to be close. Building on MINGLE, the method replaces its person detector with **SAM3**, improves depth estimation with **PatchFusion**, and uses a fully fine-tuned vision-language model to judge pairs before assembling them into groups.
-
-The published preprint reports an expanded **76K training corpus** and a final **Qwen2.5-VL-3B** pairwise model with **F1 = 80.64%**. This is the group-detection branch of the dissertation framework; it extends the earlier MINGLE paper.
-
-![The group-detection branch: detect people and estimate depth, assess pairwise interactions in focused views, and aggregate the pairwise judgments into groups.](group_detection_pipeline.png){fig-alt="A street scene and depth map feed cropped person-pair comparisons, whose interaction judgments are aggregated into social groups." loading="lazy"}
-
-### Code each person's visible attributes
-
-In parallel, **Qwen3-VL-30B-A3B-Instruct** queries each person using a structured vocabulary of **ten fields**: validity, posture, locomotion, object, object relation, support surface, zone type, uniform presence, apparent age group, and model-perceived sex. A person walking while holding a phone is coded through separate locomotion, object, and object-relation fields, avoiding the ambiguity of a single high-level activity label. In the public preprint, this coding model achieves **88.5% mean field accuracy on 999 held-out pedestrian samples**.
-
-The vocabulary draws on the observational work of Whyte and Mehta. It separates visible evidence from interpretations of intent, relationships, or social meaning. Apparent age group and model-perceived sex remain exploratory outputs rather than demographic ground truth; sex is excluded from primary analyses because provider face blurring makes it structurally unreliable.
+The vocabulary draws on Whyte and Mehta's observational research. It distinguishes visible states from interpretations of intent or social meaning. Apparent age and model-perceived sex are exploratory estimates; sex is excluded from primary analyses because provider face blurring makes it unreliable.
 
 ![Examples from the attribute vocabulary: posture, locomotion, objects and object relations, support surfaces, spatial zones, uniforms, and apparent age. Labels describe model readings of visible evidence; apparent age is an exploratory estimate.](observable_attributes.png){fig-alt="A grid of street-image examples organized by eight attribute fields, illustrating seated and moving people, objects such as strollers and bicycles, and sidewalk contexts." loading="lazy"}
 
-### Refine and combine the two branches
+## Connect groups and activities {#refine-and-combine-the-two-branches}
 
-The two branches inform one another. A validity filter removes detections such as people in advertisements, inside vehicles, or outside the target pedestrian space before groups are rebuilt. Group-level consistency helps refine locomotion labels, and the resulting group IDs are joined to the per-person attributes. The output retains both person-level evidence and image-level records with location and capture time.
+The two branches inform one another. A validity filter removes detections in advertisements, inside vehicles, or outside the target pedestrian space before groups are rebuilt. Group-level consistency helps refine locomotion labels; group IDs then join to the per-person fields. Rules applied to these records produce activity, spatial-context, and accessibility-related indicators, with location and capture time retained for every observation.
 
-Rule-based combinations then produce grouping and dwelling indices, activity and spatial-context flags, and indicators relevant to accessibility. This step makes explicit how a model reading becomes a measure used in urban analysis.
+## Build interpretable measures {#build-interpretable-measures}
 
-### Build interpretable measures
-
-Three image-level indices summarize the resulting observations. For an image containing $N$ observed people, each person receives a grouping weight $\alpha$: **1 for a solo person, 2 for a dyad, and 3 for a group of three or more**. The dwelling weight $\beta$ is **3 for stationary, seated people who are not riding; 2 for stationary, non-seated people; and 1 otherwise**. These are ordinal weights, with sensitivity checks reported in the method paper.
+Grouping and dwelling summarize two aspects of the scenes shown above. Each person receives a grouping weight $\alpha$: **1 when alone, 2 in a pair, and 3 in a group of three or more**. A dwelling weight $\beta$ is **3 for a stationary, seated person who is not riding; 2 for a stationary, non-seated person; and 1 otherwise**.
 
 ::: {.measurement-table tabindex="0" role="region" aria-label="Definitions of the three sidewalk activity indices"}
 | Index | Definition | What it summarizes |
@@ -149,34 +237,51 @@ Three image-level indices summarize the resulting observations. For an image con
 | Social Dwelling Index (SDI) | $\frac{1}{N}\sum_{i=1}^{N}\alpha_{g(i)}\beta_{s(i)}$ | Grouping and dwelling combined for each person |
 :::
 
-These indices describe **visible configurations in a static image**. They do not establish how long someone stayed, why they were there, or the quality of their social experience. SDI averages the per-person products of grouping and dwelling weights, so scenes with similar pedestrian counts can have different values.
+SDI averages the per-person products of the two weights, which is why scenes with similar headcounts can differ. These ordinal measures describe visible configurations, rather than the duration of a visit, someone's reasons for being there, or the quality of a social experience. The method paper reports sensitivity checks for alternative weights.
 
-:::: {.sdi-comparison}
-::: {.sdi-example}
-![Nine detected people · SDI 1.11](sdi_low.png){fig-alt="Street-view example of a commercial corner with dispersed pedestrians, with nine detected people and SDI 1.11." loading="lazy"}
-:::
-::: {.sdi-example}
-![Nine detected people · SDI 4.89](sdi_high.png){fig-alt="Street-view example of a neighborhood storefront with more grouped dwelling, with nine detected people and SDI 4.89." loading="lazy"}
-:::
-::::
+# Connect observations to streets {#align-imagery-with-the-street-network}
 
-Applied to **102,514 sideviews in New York City**, pedestrian count and SDI have a weak image-level correlation (*r* = 0.168). The distinction supports examining grouping and dwelling alongside counts when describing observed sidewalk activity.
+These measures become useful for urban research when the visual evidence can be connected to a location and an observation time. The spatial workflow retains that connection from the source panorama to a particular side of a street or an intersection.
 
-<img src="nyc_decoupling_map.jpg" style="width: 100%;">
+## Keep capture time explicit {#capture-time-and-place}
 
-*Standardized differences between pedestrian count and SDI in New York City. Blue areas have relatively higher counts than SDI; red areas have relatively higher SDI than counts.*
+Imagery with capture timestamps is organized into four observation windows: weekday and weekend, each at **12:00–14:00 and 17:00–19:00**. This keeps the observed activity tied to when it occurred. The broader collection includes Apple Look Around, Bing Streetside, and Mapillary; the national analysis below uses the Apple and Bing subset.
 
-## Findings: What Kinds of Streets Support Social Life (in progress)
+## From panorama to sidewalk-facing views
 
-Preliminary block-frontage models compare pedestrian count with WGI, WDI, and SDI across New York City, examining their relationships with sociodemographic context, street design, and land use. Factors associated with higher counts are not consistently associated with more grouping or dwelling, suggesting that these measures capture related but distinct dimensions of observed street activity.
+Each panorama is reprojected into **left and right sidewalk-facing views**, with a **150° field of view** and a **1600 × 800 pixel frame**. The original presentation figure links the two photographs to the capture point, road direction, and opposite viewing directions on the street network, preserving which side of the street each image observes.
 
-This analysis is ongoing. The results are descriptive rather than causal, and remain sensitive to imagery coverage, model uncertainty, and spatial dependence.
+<figure class="slide6-figure">
+  <a class="lightbox slide6-crop" href="page6_spatial_overview.jpg" data-gallery="page6-spatial" data-title="Spatial workflow and collection overview from my dissertation presentation. Current data-paper scope is described below." style="--crop-x:20; --crop-y:275; --crop-w:1260; --crop-h:316;">
+    <img src="page6_spatial_overview.jpg" alt="The original panorama, left and right sidewalk photographs, and a street map with red arrows connecting each photograph to its viewing direction on opposite sides of the road." loading="lazy">
+  </a>
+  <figcaption>From street view to side view: the red arrows connect the two photographs to their sidewalk-facing directions on the road network. Click to view the full presentation figure.</figcaption>
+</figure>
 
-## Data: Stay Together — 496 U.S. Cities
+## Keep intersections distinct {#from-sidewalks-to-intersections}
 
-**Manuscript in preparation** · Liu Liu and Andres Sevtsuk · 2026
+At intersections, a wide view retains corners and crossings together. These records remain separate from mid-block views. For spatial analysis, sidewalk-facing observations are assigned to side-specific block frontages on the **TIGER/Line** road network, while intersection records retain their junction association. View and frontage identifiers, capture time, and a road-segment crosswalk support linkage to land use, transportation, and demographic data.
 
-The collection extends from individual street views to a national corpus. The presentation's coverage maps show the United States and closer views of New York City, Chicago, San Francisco, and Boston. They describe imagery collection; the data paper's analytical subset and counts are specified below.
+<figure class="slide6-figure">
+  <a class="lightbox slide6-crop" href="page6_spatial_overview.jpg" data-gallery="page6-spatial" data-title="Spatial workflow and collection overview from my dissertation presentation. Current data-paper scope is described below." style="--crop-x:1318; --crop-y:275; --crop-w:586; --crop-h:316;">
+    <img src="page6_spatial_overview.jpg" alt="A panoramic intersection photograph above a map of the surrounding street network with blue intersection-location markers." loading="lazy">
+  </a>
+  <figcaption>An intersection panorama and the corresponding collection of intersection locations on the street network. Click to view the full presentation figure.</figcaption>
+</figure>
+
+# What counts miss in New York City {#findings-what-kinds-of-streets-support-social-life-in-progress}
+
+Applying the framework to **102,514 New York City sideviews** makes the distinction in the opening examples visible across the city: pedestrian count and SDI have a weak image-level correlation (**r = 0.168**). Mapping their standardized difference shows where relatively high counts coincide with less grouping and dwelling, and where the reverse occurs.
+
+![Standardized differences between pedestrian count and SDI in New York City. Blue areas have relatively higher counts than SDI; red areas have relatively higher SDI than counts.](nyc_decoupling_map.jpg){fig-alt="New York City map comparing standardized pedestrian count with the Social Dwelling Index; blue indicates relatively higher counts and red relatively higher SDI." loading="lazy"}
+
+This motivates the dissertation's ongoing **Findings** study: which street environments are associated with grouping and dwelling, alongside foot traffic? Preliminary block-frontage models examine sociodemographic context, street design, and land use. Factors associated with higher counts are not consistently associated with more grouping or dwelling. This work remains in progress; the associations are descriptive and sensitive to imagery coverage, model uncertainty, and spatial dependence.
+
+# From one city to 496 {#data-stay-together-496-u.s.-cities}
+
+The next step asks whether these forms of observed sidewalk life can be studied across cities. *Stay Together: Street-Level Social Indicators for Sidewalk Life Across 496 U.S. Cities*, coauthored with Andres Sevtsuk, develops that national research resource. The manuscript is **in preparation**.
+
+The assembled panel contains **7,139,672 timestamped views** from Apple Look Around and Bing Streetside across **496 U.S. cities**, captured during **2011–2025**. Its **5,692,332 sidewalk-facing views** are organized into **3,725,328 block frontages**. A separate file retains **1,447,340 intersection views** as individual observations. Shared identifiers and a crosswalk to TIGER/Line road segments allow researchers to link observations to other spatial data.
 
 <figure class="slide6-figure">
   <a class="lightbox slide6-crop" href="page6_spatial_overview.jpg" data-gallery="page6-spatial" data-title="Spatial workflow and collection overview from my dissertation presentation. Current data-paper scope is described below." style="--crop-x:20; --crop-y:662; --crop-w:1884; --crop-h:315;">
@@ -185,27 +290,27 @@ The collection extends from individual street views to a national corpus. The pr
   <figcaption>From one city to a national corpus: imagery coverage at national and city scales. Click to view the full presentation figure.</figcaption>
 </figure>
 
-*Stay Together: Street-Level Social Indicators for Sidewalk Life Across 496 U.S. Cities* carries the measurement framework into a national research resource across **496 U.S. cities**. The assembled panel contains **7,139,672 timestamped views** from Apple Look Around and Bing Streetside. Its **5,692,332 sidewalk-facing views** are organized into **3,725,328 block frontages**, with identifiers and a crosswalk to TIGER/Line road segments. A separate file retains **1,447,340 intersection views** as individual observations, rather than combining them with frontages. This structure supports linkage to other spatial datasets and aggregation at units chosen by the researcher.
+The presentation maps document collection coverage, while the counts above describe the data paper's analytical subset. Mapillary imagery is excluded from that analysis and the planned release of indices: its uncontrolled capture geometry prevented almost all of those images from being assigned to block frontages.
 
-Capture dates span **2011–2025**, organized into four observation windows: weekday and weekend, each at midday (12:00–14:00) and evening (17:00–19:00). Mapillary imagery was also collected but is excluded from this paper's analyses and planned release of indices: its uncontrolled capture geometry prevented almost all of those images from being assigned to a block frontage.
+## Compare like with like
 
-The analysis examines **grouping (WGI)** and **visible posture and locomotion (WDI)** separately. SDI is included in the planned release but is not used in this paper's empirical analysis. A central methodological finding concerns crowd size: a view showing one person necessarily has WGI = 1, so comparisons that pool different person counts can reverse the apparent relationship between grouping and neighborhood density.
+The national analysis examines **grouping (WGI)** and **visible posture and locomotion (WDI)** separately. SDI is included in the planned release but not used in this paper's empirical analysis. Comparisons must also account for crowd size: a view containing one person necessarily has WGI = 1, so pooling different person counts can reverse an apparent association with neighborhood density.
 
-Holding the detected count at **exactly two people**, the share classified as one group falls from **38.0% in the lowest tract-density quintile to 26.8% in the highest**. These are descriptive patterns in the available imagery, not evidence that density causes people to socialize less. They demonstrate why comparison requires attention to both the measurement and the composition of the observations.
+Holding the detected count at **exactly two people**, the share classified as one group falls from **38.0% in the lowest tract-density quintile to 26.8% in the highest**. This descriptive pattern demonstrates the importance of the comparison being made; it does not establish that density causes less socializing.
 
 ![Grouping and tract density, conditioning on the number of detected people and capture window. The pooled relationship differs from the within-count patterns.](data_density_strata.png){fig-alt="Two-panel analysis showing mean WGI across density quintiles at fixed person counts, alongside negative correlations of density with WGI and WDI within each person-count and time-window combination." loading="lazy"}
 
-Coverage remains sparse: people were detected on **430,984 frontages (11.6%)**, and grouping and dwelling are undefined on the rest. The median frontage has one view. Coverage is opportunistic, and the national sample has not received an independent annotation audit. The records therefore support research on observed configurations, rather than validated rankings of places.
+## Build a research resource with explicit limits
 
-The panel is assembled and in use. **Derived tables, schemas, and documentation are being prepared for public release**; source imagery will not be redistributed.
+The national maps summarize grouping and dwelling where the imagery supports measurement. People were detected on **430,984 frontages (11.6%)**; grouping and dwelling are undefined on the rest. The median frontage has one view. Coverage is opportunistic, and the national sample has not received an independent annotation audit, so these records support research on observed configurations rather than validated rankings of places.
 
 ![National patterns in grouping and dwelling across 6,066 measurable 2-km grid cells in 472 cities, with grouping shown within twelve selected cities. The full dataset covers 496 cities.](stay_together_atlas.png){fig-alt="National maps of grouping and dwelling across measurable 2-kilometer grid cells, with detailed grouping maps for twelve selected cities." loading="lazy"}
 
-# The Great Streets Visualization
+The panel is assembled and in use. **Derived tables, schemas, and documentation are being prepared for public release**; source imagery will not be redistributed.
 
----
+# Inspect the evidence {#the-great-streets-visualization}
 
-*The Great Streets* is a working interface for moving between citywide patterns and the street-level observations behind them. The prototype connects segment-level indicators in a 3D map with source street-view images and person-level activity and interaction labels. This makes the measurement pipeline inspectable: a user can select a street segment, compare observations across imagery sources and times, and trace an aggregate value back to the visible evidence.
+The final connection is back to the images. *The Great Streets* prototype lets a user move from segment-level indicators in a 3D map to the source views and person-level labels. Comparing observations across sources and times makes it possible to trace a mapped value back to the visible evidence from which it was constructed.
 
 <figure class="project-video-figure">
   <video controls playsinline preload="metadata" poster="great_streets_poster.jpg" aria-label="Screen recording of The Great Streets visualization">
@@ -215,24 +320,43 @@ The panel is assembled and in use. **Derived tables, schemas, and documentation 
   <figcaption>Screen recording of the prototype using New York City data. The interface links segment-level indicators, 3D context, source imagery, and visual labels.</figcaption>
 </figure>
 
-[Explore more project visualizations](../../visualization/#project-visualizations).
+[More project visualizations](../../visualization/#project-visualizations).
 
-# How This Research Came Together
+# Dissertation and related work {#papers-and-links}
 
----
+## Research context {#how-this-research-came-together}
 
-Three earlier projects shaped the dissertation's questions and methods:
+Seeing HAI is my Ph.D. dissertation at the **MIT Department of Urban Studies and Planning**, connecting **Method**, **Findings**, and **Data** within one research program. My committee is Andres Sevtsuk (chair), Jinhua Zhao, and Lawrence Vale; expected completion is **June 2027**.
 
-1. **Mapping the field.** [*Clarity or Confusion*](../clarity/), my review in *Cities* (2024), cataloged 104 street attributes across 146 papers. It found detailed measures of physical environments, but few of the human activities and interactions central to observational urban research.
+The questions grew from [*Clarity or Confusion*](../clarity/), my *Cities* (2024) review of 104 street attributes across 146 papers, which found few measures of human activities and interactions. [MINGLE](../mingle/) provided a method for detecting social groups. This work also connects with [Sidewalk Ballet](../sidewalk_ballet/), the separate City Form Lab collaboration I lead at MIT, where socially interacting groups became a practical measurement problem.
 
-2. **Encountering the problem.** In [Sidewalk Ballet](../sidewalk_ballet/), the City Form Lab collaboration I lead at MIT, detecting social activity exposed a methodological gap: a social group is defined by relationships among people rather than the visual boundaries of an object.
+<span id="related-material" class="anchor-alias" aria-hidden="true"></span>
 
-3. **Building a foundation.** [MINGLE](../mingle/), published in the **AAAI 2026 AI for Social Impact Track**, combines person detection, depth-aware pairwise reasoning, and group aggregation. This precursor connects the lab collaboration to the dissertation's broader study of activities, interactions, and their spatial patterns.
+- **Method:** [*A Vision-Language Framework for Measuring Social Life on Sidewalks*](https://arxiv.org/abs/2609.28476) · M10 · Under review at *Computers, Environment and Urban Systems*.
+- **Group detection:** [*MINGLE: VLMs for Semantically Complex Region Detection*](https://doi.org/10.1609/aaai.v40i45.41239) · AAAI 2026 · [Project](../mingle/).
+- **National data:** [*Stay Together: Street-Level Social Indicators for Sidewalk Life Across 496 U.S. Cities*](#data-stay-together-496-u.s.-cities) · M11 · Manuscript in preparation.
+- **Presentations:** [Dissertation colloquium and research talks](../../presentations/).
+- **Proposal:** [Approved dissertation proposal (PDF)](https://www.dropbox.com/scl/fi/6b0csugj5mr8n1u4bc98u/Dissertation-Research-Proposal-250423_Liu.pdf?rlkey=e3w0m8vrksbr1ewnh8ydruhxv&st=ff0xemho&dl=0) · Password-protected; [email me](mailto:lyons66@mit.edu) for access.
+- **Publications:** [Full publication list](../../papers/).
+- **Contact:** [lyons66@mit.edu](mailto:lyons66@mit.edu).
 
-# Related Material
-
-- [Clarity or Confusion, the literature review that framed this research](../clarity/)
-- [MINGLE project and paper](../mingle/)
-- [Sidewalk Ballet, a separate City Form Lab collaboration](../sidewalk_ballet/)
-- [Publications](../../papers/)
-- [Dissertation colloquium and research presentations](../../presentations/)
+```{=html}
+<script>
+(() => {
+  function positionAnchorHeading() {
+    let id;
+    try { id = decodeURIComponent(window.location.hash.slice(1)); }
+    catch { return; }
+    const target = id && document.getElementById(id);
+    if (!target) return;
+    const section = target.classList.contains('anchor-alias') ? target.closest('section') : target;
+    const heading = section && section.querySelector(':scope > h1, :scope > h2, :scope > h3, :scope > h4');
+    const landing = heading || target;
+    requestAnimationFrame(() => requestAnimationFrame(() => landing.scrollIntoView({block: 'start'})));
+  }
+  document.addEventListener('DOMContentLoaded', positionAnchorHeading);
+  window.addEventListener('load', positionAnchorHeading);
+  window.addEventListener('hashchange', positionAnchorHeading);
+})();
+</script>
+```

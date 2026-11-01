@@ -1,0 +1,85 @@
+/* Local layouts for Seeing HAI. All photographs retain their source framing. */
+html { scroll-behavior: auto !important; }
+#title-block-header .quarto-title-banner { background-position: 50% 45%; }
+#quarto-document-content section,
+#quarto-document-content :is(h1, h2, h3, h4),
+.anchor-alias { scroll-margin-top: 5rem; }
+.anchor-alias { display: block; height: 0; }
+#quarto-document-content section:target::before,
+.anchor-alias:target::before { display: none; }
+#count-vs-grouping, #activities { scroll-margin-top: 5rem; margin-top: 2.4rem; }
+#count-vs-grouping > h1, #activities > h1 { margin-top: 0; scroll-margin-top: 5rem; }
+/* Quarto's legacy target spacer would otherwise add a second navbar offset. */
+#count-vs-grouping:target::before, #activities:target::before { display: none; }
+
+.count-comparisons { margin: 1.25rem 0 1.4rem; }
+.count-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+.count-pair figure { margin: 0; min-width: 0; }
+#quarto-document-content .count-pair img { width: 100%; height: auto; margin: 0; }
+#quarto-document-content .count-pair figcaption {
+  border: 0;
+  padding: 0;
+  margin: 0.55rem 0 0;
+  color: var(--site-ink);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.activity-collage { margin: 1.5rem 0 1.8rem; }
+.activity-row {
+  display: grid;
+  grid-template-columns: var(--activity-columns);
+  gap: 0.85rem;
+  align-items: start;
+  margin-top: 1rem;
+}
+.activity-row figure { margin: 0; min-width: 0; }
+.activity-crop {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: var(--crop-w) / var(--crop-h);
+  border-radius: 4px;
+}
+#quarto-document-content .activity-crop img {
+  position: absolute;
+  display: block;
+  width: calc(var(--source-w) / var(--crop-w) * 100%);
+  max-width: none;
+  height: auto;
+  left: calc(var(--crop-x) / var(--crop-w) * -100%);
+  top: calc(var(--crop-y) / var(--crop-h) * -100%);
+  border: 0;
+  border-radius: 0;
+  margin: 0;
+}
+#quarto-document-content .activity-row figcaption {
+  border: 0;
+  margin: 0.45rem 0 0;
+  padding: 0;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--site-ink);
+  font-weight: 600;
+}
+
+/* Original spatial figures remain in the main research narrative. */
+.slide6-crop { position: relative; display: block; overflow: hidden; width: 100%; aspect-ratio: var(--crop-w) / var(--crop-h); }
+.slide6-crop img { margin: 0 !important; border: 0; position: absolute; display: block; width: calc(1920 / var(--crop-w) * 100%); max-width: none !important; height: auto; left: calc(var(--crop-x) / var(--crop-w) * -100%); top: calc(var(--crop-y) / var(--crop-h) * -100%); }
+.slide6-figure { margin: 1.2rem 0 1.6rem; }
+.slide6-figure figcaption { margin-top: .6rem; color: var(--site-muted); font-size: .85rem; line-height: 1.5; }
+.measurement-table { max-width: 100%; overflow-x: auto; }
+
+@media (max-width: 640px) {
+  .count-pair { grid-template-columns: 1fr; }
+  .count-pair { gap: 1rem; margin-bottom: 2rem; }
+  .activity-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #quarto-document-content .measurement-table th,
+  #quarto-document-content .measurement-table td { padding: 0.5rem 0.35rem; }
+}
