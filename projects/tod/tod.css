@@ -1,0 +1,71 @@
+/* Publication highlight, scoped to the TOD case study. */
+.tod-publication {
+  display: grid;
+  grid-template-columns: 155px minmax(0, 1fr);
+  gap: 1.6rem;
+  align-items: center;
+  margin: 1.8rem 0 2.2rem;
+  padding: 1.35rem;
+  border: 1px solid #d6e2ec;
+  border-left: 4px solid #075594;
+  border-radius: 6px;
+  background: #f6f9fc;
+}
+
+.tod-report-cover {
+  display: block;
+  width: 100%;
+}
+
+#quarto-document-content .tod-report-cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border-radius: 2px;
+  box-shadow: 0 4px 12px rgb(15 23 42 / 12%);
+}
+
+#quarto-document-content .tod-publication-label {
+  margin: 0 0 0.45rem;
+  color: #075594;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+#quarto-document-content #tod-publication-title {
+  margin: 0 0 0.35rem;
+  font-size: clamp(1.05rem, 1.5vw, 1.3rem);
+  line-height: 1.3;
+}
+
+#quarto-document-content .tod-report-subtitle {
+  margin-bottom: 0.55rem;
+  font-size: 0.94rem;
+}
+
+.tod-publication > div {
+  min-width: 0;
+}
+
+#quarto-document-content .tod-publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  margin: 0.8rem 0 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .tod-publication {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+    padding: 1.05rem;
+  }
+
+  .tod-report-cover {
+    width: 120px;
+  }
+}

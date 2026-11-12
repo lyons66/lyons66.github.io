@@ -8,7 +8,7 @@
 
 <meta name="author" content="Liu Liu">
 <meta name="dcterms.date" content="2019-01-01">
-<meta name="description" content="A CitoryTech project led by Liu Liu, evaluating the environments around 201 Beijing metro stations through walking catchments, street imagery, and spatial indicators.">
+<meta name="description" content="A World Bank publication coauthored by Liu Liu, evaluating 201 Beijing metro-station areas through street imagery, machine learning, and pedestrian accessibility. Liu led the CitoryTech analysis team and is the report’s second author.">
 
 <title>TOD Station-Area Assessment – Liu Liu</title>
 <style>
@@ -89,6 +89,7 @@ background-size: cover;
 
 
 <link rel="stylesheet" href="../project-style.css">
+<link rel="stylesheet" href="tod.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -154,7 +155,7 @@ background-size: cover;
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-left">
       <h1 class="title">TOD Station-Area Assessment</h1>
-            <p class="subtitle lead">Connecting walking access, street environments, and transit-oriented development</p>
+            <p class="subtitle lead">Street-view evidence for transit-oriented development in Beijing</p>
                                 <div class="quarto-categories">
                 <div class="quarto-category">Applied Practice</div>
                 <div class="quarto-category">Transit-Oriented Development</div>
@@ -192,10 +193,11 @@ background-size: cover;
     <h2 id="toc-title">On this page</h2>
 
   <ul class="collapse">
-  <li><a href="#the-question" id="toc-the-question" class="nav-link active" data-scroll-target="#the-question">The question</a></li>
-  <li><a href="#an-integrated-assessment" id="toc-an-integrated-assessment" class="nav-link" data-scroll-target="#an-integrated-assessment">An integrated assessment</a></li>
-  <li><a href="#from-comparison-to-station-diagnosis" id="toc-from-comparison-to-station-diagnosis" class="nav-link" data-scroll-target="#from-comparison-to-station-diagnosis">From comparison to station diagnosis</a></li>
-  <li><a href="#my-role-and-project-output" id="toc-my-role-and-project-output" class="nav-link" data-scroll-target="#my-role-and-project-output">My role and project output</a></li>
+  <li><a href="#define-the-pedestrian-catchment" id="toc-define-the-pedestrian-catchment" class="nav-link active" data-scroll-target="#define-the-pedestrian-catchment">Define the pedestrian catchment</a></li>
+  <li><a href="#combine-access-and-street-experience" id="toc-combine-access-and-street-experience" class="nav-link" data-scroll-target="#combine-access-and-street-experience">Combine access and street experience</a></li>
+  <li><a href="#compare-stations-in-context" id="toc-compare-stations-in-context" class="nav-link" data-scroll-target="#compare-stations-in-context">Compare stations in context</a></li>
+  <li><a href="#turn-profiles-into-local-priorities" id="toc-turn-profiles-into-local-priorities" class="nav-link" data-scroll-target="#turn-profiles-into-local-priorities">Turn profiles into local priorities</a></li>
+  <li><a href="#my-contribution-and-scope" id="toc-my-contribution-and-scope" class="nav-link" data-scroll-target="#my-contribution-and-scope">My contribution and scope</a></li>
   </ul>
 </nav>
     </div>
@@ -219,23 +221,36 @@ background-size: cover;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>Transit-oriented development research at CitoryTech · Beijing · 2019</strong><br> My role: Project lead; founder and research director of CitoryTech.</p>
+<p><strong>World Bank study · Beijing · CitoryTech project, 2019 · Published January 2020</strong><br> My role: CitoryTech project lead and <strong>second author</strong> of the World Bank report.</p>
 </div>
 </div>
-<section id="the-question" class="level1">
-<h1>The question</h1>
-<p>A metro station can be well connected to the transit network while offering an uncomfortable or inconvenient walk outside its entrances. I led this project at CitoryTech to evaluate <strong>station-area environments from the pedestrian’s perspective</strong>, connecting transport access with the quality and character of surrounding streets.</p>
-<p>The principal analysis covered <strong>201 operating metro stations within Beijing’s Fifth Ring Road</strong>. Ten-minute walking catchments defined the study areas, allowing the assessment to follow the street network and actual walking access around each station.</p>
+<p>A metro station can be well connected to the transit network while offering an uncomfortable or inconvenient walk outside its entrances. This project asked how planners could assess those environments consistently across a city. I led CitoryTech’s analysis team and coauthored the resulting World Bank working paper with Wanli Fang and Jianhao Zhou.</p>
+<div class="tod-publication" role="region" aria-labelledby="tod-publication-title">
+  <a class="tod-report-cover" href="https://openknowledge.worldbank.org/entities/publication/6d2172cd-ee09-54e6-8cd9-3119ec32aeb5" aria-label="Read the World Bank publication">
+    <img src="report-cover.png" alt="Cover of the World Bank working paper, Assessing Physical Environment of TOD Communities around Metro Stations, January 2020." width="935" height="1210" loading="lazy">
+  </a>
+  <div>
+    <p class="tod-publication-label">World Bank Working Paper · January 2020</p>
+    <h2 id="tod-publication-title" class="anchored">Assessing Physical Environment of TOD Communities around Metro Stations</h2>
+    <p class="tod-report-subtitle">Using Big Data and Machine Learning</p>
+    <p>Fang, W., <strong>Liu, L.</strong>, &amp; Zhou, J. (2020). World Bank, Washington, DC.</p>
+    <p class="tod-publication-links"><a href="https://openknowledge.worldbank.org/entities/publication/6d2172cd-ee09-54e6-8cd9-3119ec32aeb5">World Bank publication</a><a href="https://documents.worldbank.org/curated/en/433621581930100479/pdf/Assessing-Physical-Environment-of-TOD-Communities-around-Metro-Stations-Using-Big-Data-and-Machine-Learning.pdf">Read PDF</a><a href="https://doi.org/10.1596/33343">DOI</a></p>
+  </div>
+</div>
+<section id="define-the-pedestrian-catchment" class="level1">
+<h1>Define the pedestrian catchment</h1>
+<p>The study covered <strong>201 metro stations within Beijing’s Fifth Ring Road</strong>, measuring conditions within each station’s <strong>10-minute walking catchment</strong>. Rather than applying a fixed-radius buffer, these areas followed the street network, accounting for disconnected streets, major roads, and other barriers.</p>
+<p>The resulting walking catchments ranged from <strong>53 to 208 hectares</strong>. That variation is itself useful planning evidence: stations with similar geographic proximity can provide very different access to surrounding neighborhoods.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="walking_catchments.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Five-minute and ten-minute walking catchments around the study stations. Differences in their shape and area reveal how street networks affect access beyond a station entrance."><img src="walking_catchments.jpg" class="img-fluid figure-img" loading="lazy" alt="Two maps of Beijing metro stations showing five-minute walking catchments on the left and ten-minute catchments on the right."></a></p>
-<figcaption>Five-minute and ten-minute walking catchments around the study stations. Differences in their shape and area reveal how street networks affect access beyond a station entrance.</figcaption>
+<p><a href="report-walking-catchments.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Ten-minute walking catchments at Muxidi, Huagong, Yongdingmenwai, and Huoqiying stations. Their shapes reveal constraints imposed by road networks and barriers. World Bank report, Figure 10, p.&nbsp;12; basemaps: Gaode (AMap)."><img src="report-walking-catchments.png" class="img-fluid figure-img" style="width:72.0%" loading="lazy" alt="Four maps showing irregular ten-minute walking catchments at Beijing metro stations, constrained by major roads, disconnected streets, a river, and green space."></a></p>
+<figcaption>Ten-minute walking catchments at Muxidi, Huagong, Yongdingmenwai, and Huoqiying stations. Their shapes reveal constraints imposed by road networks and barriers. World Bank report, Figure 10, p.&nbsp;12; basemaps: Gaode (AMap).</figcaption>
 </figure>
 </div>
 </section>
-<section id="an-integrated-assessment" class="level1">
-<h1>An integrated assessment</h1>
-<p>Our team combined street-view image analysis, perception modeling, points of interest, transport connections, and spatial measures. The assessment organized this evidence into four complementary dimensions.</p>
+<section id="combine-access-and-street-experience" class="level1">
+<h1>Combine access and street experience</h1>
+<p>Street-view imagery supplied evidence about what pedestrians encounter outside the station. We combined <strong>image recognition</strong>, <strong>models of human visual perception</strong>, and <strong>spatial analysis</strong> with points of interest and transit information. The framework organized this evidence into <strong>four dimensions and 14 indicator groups</strong>.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 50%">
@@ -250,45 +265,56 @@ background-size: cover;
 <tbody>
 <tr class="odd">
 <td>Convenience</td>
-<td>Transfer opportunities, walking and cycling access, service diversity, and land-use mix</td>
+<td>Transit connections, walking and cycling access, amenities, and mixed urban functions</td>
 </tr>
 <tr class="even">
 <td>Comfort</td>
-<td>Sky visibility, greenery, lighting, street furniture, and model-estimated perceptions of safety and beauty</td>
+<td>Sky openness, visible greenery, lighting, seating, and predicted perceptions of safety and aesthetics</td>
 </tr>
 <tr class="odd">
-<td>Vitality</td>
-<td>Activity-related observations and the presence of commercial and informal uses</td>
+<td>Vibrancy</td>
+<td>Image-based observations of pedestrians, bicycles, vehicles, and street vendors</td>
 </tr>
 <tr class="even">
-<td>Visual character</td>
-<td>Similarities and differences in station-area streetscapes</td>
+<td>Characteristics</td>
+<td>Similarity and uniqueness of station-area streetscapes</td>
 </tr>
 </tbody>
 </table>
-<p>The report also explored station-interior observation through a pilot at Jinshajiang Road station in Shanghai and described a crowdsourced image-collection workflow. The Beijing station-area analysis remained the main comparative assessment.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="assessment_framework.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="The four-dimensional assessment framework in the original report, linking convenience, comfort, vitality, and visual character to their component indicators."><img src="assessment_framework.jpg" class="img-fluid figure-img" loading="lazy" alt="Indicator hierarchy for the station-area assessment, with four main dimensions and their constituent transport, environmental, activity, and streetscape measures."></a></p>
-<figcaption>The four-dimensional assessment framework in the original report, linking convenience, comfort, vitality, and visual character to their component indicators.</figcaption>
+<p><a href="report-framework.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="The published framework links four assessment dimensions to 14 indicator groups. The report’s safety and aesthetics indicators represent predicted visual perceptions. World Bank report, Figure 4, p.&nbsp;7."><img src="report-framework.png" class="img-fluid figure-img" style="width:88.0%" loading="lazy" alt="English-language indicator hierarchy with convenience, comfort, vibrancy, and characteristics branching into fourteen indicator groups."></a></p>
+<figcaption>The published framework links four assessment dimensions to 14 indicator groups. The report’s safety and aesthetics indicators represent predicted visual perceptions. World Bank report, Figure 4, p.&nbsp;7.</figcaption>
 </figure>
 </div>
 </section>
-<section id="from-comparison-to-station-diagnosis" class="level1">
-<h1>From comparison to station diagnosis</h1>
-<p>Station profiles connected the scores back to local street conditions. For example, the Xizhimen profile paired its strong transport connections with concerns about comfort, street activity, and the environment around a major interchange. The report used these profiles to discuss possible improvements to lighting, seating, pedestrian facilities, and service provision.</p>
+<section id="compare-stations-in-context" class="level1">
+<h1>Compare stations in context</h1>
+<p>For citywide comparison, the report normalized indicators to a common scale and used the Analytic Hierarchy Process to aggregate convenience, comfort, and vibrancy. Streetscape clustering identified <strong>six types of station-area landscapes</strong>, including historic, commercial-office, high-rise, suburban, park, and green urban settings. Aggregation weights varied by landscape type, recognizing that station areas have different contexts.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="station_profile.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Xizhimen station’s indicator profile alongside street-view examples. The profile makes differences among the assessment’s components visible instead of relying solely on a total score."><img src="station_profile.jpg" class="img-fluid figure-img" loading="lazy" alt="Radar chart of Xizhimen station-area indicators, accompanied by two street-view images of its surroundings."></a></p>
-<figcaption>Xizhimen station’s indicator profile alongside street-view examples. The profile makes differences among the assessment’s components visible instead of relying solely on a total score.</figcaption>
+<p><a href="report-landscape-types.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Station-area landscape categories across Beijing and relationships among visually similar station areas. World Bank report, p.&nbsp;38."><img src="report-landscape-types.png" class="img-fluid figure-img" loading="lazy" alt="Map of Beijing stations colored by six landscape categories beside a network diagram linking visually similar station areas."></a></p>
+<figcaption>Station-area landscape categories across Beijing and relationships among visually similar station areas. World Bank report, p.&nbsp;38.</figcaption>
 </figure>
 </div>
 </section>
-<section id="my-role-and-project-output" class="level1">
-<h1>My role and project output</h1>
-<p>I led the CitoryTech team’s work on this project. The report assembled a common evaluation framework, comparative station maps, and detailed station profiles to support discussion of <strong>targeted station-area improvements</strong>.</p>
-<p>Street-view observations describe the conditions captured in the imagery. Perceived-safety scores represent visual judgments, while people or vehicles visible in an image are observations rather than measured traffic flows. These distinctions matter when translating the assessment into planning decisions.</p>
-<p>Figures: CitoryTech project report, 2019. Related work: <a href="../cityeye/">CityEye</a>, the collaborative image-collection tool described in the report, and the <a href="../../visualization/#visual-comfortness-2018">earlier Nanjing street-environment visualization</a>.</p>
+<section id="turn-profiles-into-local-priorities" class="level1">
+<h1>Turn profiles into local priorities</h1>
+<p>Station profiles connected the comparative assessment back to specific streets. At <strong>Guomao</strong>, the report identified strong transit connections, abundant amenities, and high vibrancy, alongside more moderate comfort and limited streetscape distinctiveness. Its proposed improvements included more diverse vegetation, compatible cultural or artistic elements, and a more bicycle-friendly environment.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="report-guomao-profile.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Guomao station’s indicator profile and street-view examples connect transport access, urban functions, and street conditions. World Bank report, p.&nbsp;38."><img src="report-guomao-profile.png" class="img-fluid figure-img" loading="lazy" alt="Guomao station radar chart with indicators for transit, amenities, greenery, perceptions, and observed activity beside two street-view photographs."></a></p>
+<figcaption>Guomao station’s indicator profile and street-view examples connect transport access, urban functions, and street conditions. World Bank report, p.&nbsp;38.</figcaption>
+</figure>
+</div>
+<p>The aim was to support <strong>targeted station-area improvements</strong> and a repeatable basis for comparison across stations, corridors, and future surveys. The report presents diagnostic findings and possible interventions; it does not evaluate the effects of implemented changes.</p>
+</section>
+<section id="my-contribution-and-scope" class="level1">
+<h1>My contribution and scope</h1>
+<p>I led the CitoryTech team’s work and am the report’s second author. The acknowledgements identify me as <strong>Data Scientist (consultant)</strong> and credit the street-view and big-data analysis to Liu Liu, Jinxin Shao, Hongdu Yi, Ding Zhang, Nan Jiang, and Xin Xiong at CitoryTech. The World Bank study was conducted under the GEF Sustainable Cities Integrated Approach Pilot Project (P156507).</p>
+<p>The measures describe conditions visible in the sampled imagery. Predicted safety is a visual judgment; people and vehicles detected in an image are observations rather than measured traffic flows. The published assessment focuses on environments <strong>outside</strong> metro stations, with station interiors discussed as future work.</p>
+<p>Related work: <a href="../cityeye/">CityEye</a>, CitoryTech’s collaborative image-collection tool, and the <a href="../livable_neighborhoods/">Nanjing Livable Neighborhood Assessment</a>, a separate field-survey and image-analysis project.</p>
+<p>Figures are cropped from Fang, Liu, and Zhou (2020), © World Bank, under <a href="https://creativecommons.org/licenses/by/3.0/igo/">CC BY 3.0 IGO</a>. The walking-catchment basemaps are credited in the report to Gaode (AMap). Original figure colors, labels, and plotted values are retained. <a href="https://openknowledge.worldbank.org/entities/publication/6d2172cd-ee09-54e6-8cd9-3119ec32aeb5">Publication and full report</a>.</p>
 
 
 </section>
