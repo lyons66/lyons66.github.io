@@ -4,7 +4,9 @@ subtitle: "Sidewalk semantics for autonomous navigation"
 description: "A UCLA VAIL collaboration on hybrid 2D and 3D sidewalk occupancy perception, with Liu Liu contributing to the 2D semantic component."
 date: "Jun 2026"
 date-format: "MMM, YYYY"
-author-title: "Project Role"
+language:
+  title-block-published: "Research date"
+author-title: "Project contributor"
 author:
   - name: Liu Liu
     orcid: 0000-0003-0100-9763
@@ -16,7 +18,9 @@ page-layout: full
 format:
   html:
     toc: true
-    toc-depth: 3
+    toc-depth: 2
+    fig-cap-location: bottom
+    lightbox: true
     toc-float:
       collapsed: false
       smooth-scroll: true
@@ -33,13 +37,11 @@ format:
 </style>
 ```
 
-::: {.callout-note}
+::: {.callout-note .project-context}
 ## Research context
 
 **Collaborative research at UCLA's Vision and Autonomy Intelligence Lab**<br>
-My role: Key collaborator on the 2D semantic component
-
-This page distinguishes my contribution from the complete 3D occupancy framework developed by the broader author team.
+**My role:** Collaborator on the 2D semantic component. The broader team developed the hybrid 2D–3D occupancy framework. A [preprint is available](https://arxiv.org/abs/2606.19122), with a [revised manuscript in preparation](../../papers/#walkocc).
 :::
 
 # Project overview
@@ -48,13 +50,13 @@ WalkOCC studies monocular 3D semantic occupancy perception for robots moving thr
 
 The resulting framework addresses a practical constraint in sidewalk robotics: paired 3D sensor data and occupancy annotations are expensive, while monocular street imagery is much easier to collect at scale.
 
-<img src="walkocc_pipeline.png" style="width: 100%; margin: 1.2rem 0;">
+![Overview of the hybrid 2D and 3D learning framework. Figure from the WalkOCC project page.](walkocc_pipeline.png){fig-alt="WalkOCC hybrid 2D–3D semantic occupancy learning pipeline." loading="lazy"}
 
 *Overview of the hybrid 2D and 3D learning framework. Figure from the WalkOCC project page.*
 
 # My contribution
 
-My work focused on the 2D semantic component rather than the 3D architecture. I:
+My work focused on the 2D semantic component. I:
 
 - fine-tuned SAM 3 on sidewalk-robot imagery to segment fine-grained elements including curbs, gutters, crosswalks, and driveways;
 - participated in discussions of the semantic taxonomy and evaluation design;
@@ -67,5 +69,6 @@ These tasks draw on my urban visual research, particularly the definition and va
 
 > Ma, Y., Lin, J., Liu, L., He, H., Ricketts, L., Squicciarini, B., Liu, Y., & Zhou, B. (2026). "Monocular 3D Occupancy Perception for Robots on Sidewalks via Hybrid 2D–3D Learning." Available as an arXiv preprint; revised manuscript in preparation.
 
+- [Publication entry](../../papers/#walkocc)
 - [Official project page](https://vail.cs.ucla.edu/walkocc/)
 - [arXiv preprint](https://arxiv.org/abs/2606.19122)

@@ -1,16 +1,19 @@
 ---
 title: "AI-Aided Camera App"
+subtitle: "Composition and scene guidance at the moment of photography"
+description-meta: "A CitoryTech camera prototype offering composition and scene-based photography guidance."
 date: "May 2020"
 date-format: "MMM, YYYY"
-# author: Liu Liu @ MIT
-author-title: "Main Researchers"
+language:
+  title-block-published: "Project date"
+author-title: "Project team"
 author:
   - name: Liu Liu
     orcid: 0000-0003-0100-9763
   - name: Ding Zhang
   - name: Xin Xiong
 
-categories: [computer vision, tools]
+categories: [Applied Practice, Computer Vision, Product Development]
 image: "huipai_cover.png"
 title-block-banner: "huipai_banner.png"
 page-layout: full
@@ -18,7 +21,9 @@ page-layout: full
 format:
   html:
     toc: true
-    toc-depth: 3
+    toc-depth: 2
+    fig-cap-location: bottom
+    lightbox: true
     toc-float:
       collapsed: false
       smooth-scroll: true
@@ -35,62 +40,58 @@ format:
 </style>
 ```
 
-::: callout-tip
-## PROJECT BRIEF
+::: {.callout-note .project-context}
+## Project context
 
-This app integrates deep models to learn the operation and mode of photo shooting from the massive works of professional photographers and realizes the comprehensive scoring of the subject, composition, color, depth of field, exposure, and other angles of the picture. It can automatically extract the current scene's geometric structure and professional characteristics and give improvement tips for composition. A [live demo](./#demo-video) was recorded on 2020 Apr 30 in Shanghai with Huawei Mate 30.
-
-This project was terminated during the decrease of tourism in 2020. It's an independent project and the business plan can be viewed [here](https://www.dropbox.com/scl/fi/a5sbkv6chnl8cn9mgvpkt/BP-universal-2.pdf?rlkey=iclka76tnlumoq8gv9mrfucyi&dl=0). To obtain the password to view the BP, please [contact me](mailto:lyons66@mit.edu).
-
+**CitoryTech product development** · AI-assisted photography prototype<br>
+**My role:** Project lead, working with Ding Zhang and Xin Xiong. The prototype provided composition and scene-based suggestions while a user framed a photograph. Development ended in 2020 as tourism declined.
 :::
 
-# The Idea
----
+# Product idea {#the-idea}
 
-The foundational idea behind developing this tool is to "help beginners transform into photography experts.” Based on the scene in view, it automatically offers users specific photography suggestions and provides "photography composition guidelines.”
+The camera app translated image analysis into guidance at the moment of photography. It recognized the current scene and composition, then offered reference photographs or overlaid guidelines to help users consider alternative framing.
 
-<img src="huipai_cover.png" style="width: 100%;">
+![Overview of the AI-assisted camera prototype.](huipai_cover.png){fig-alt="AI-assisted camera app overview." loading="lazy"}
 
+# Composition guidance {#function-1-composition-recognization}
 
-# Function 1: Composition Recognization
----
+The prototype classified composition into **12 main categories and 34 subcategories**. It used these classifications to suggest framing options for the current camera view.
 
-The tool analyzes the current camera frame, identifies the composition structure, and recommends suitable composition schemes. It can automatically identify 12 major categories and 34 subcategories of compositional benchmarks.
+![Composition categories used by the prototype.](huipai1.png){fig-alt="Camera-app composition category examples." loading="lazy"}
 
-<img src="huipai1.png" style="width: 100%;">
+![Examples of composition recognition.](huipai2.png){fig-alt="Composition-recognition examples from the camera prototype." loading="lazy"}
 
-<img src="huipai2.png" style="width: 100%;">
+One form of feedback overlaid guidelines directly on the camera image:
 
-There are two ways of giving users hints about the composition. First, we plot the guidelines on the pictures directly:
+![Composition-guideline overlay, example one.](huipai3.png){fig-alt="First example of guidelines overlaid on a camera frame." loading="lazy"}
 
-<img src="huipai3.png" style="width: 100%;">
+![Composition-guideline overlay, example two.](huipai4.png){fig-alt="Second example of guidelines overlaid on a camera frame." loading="lazy"}
 
-<img src="huipai4.png" style="width: 100%;">
+![Composition-guideline overlay, example three.](huipai5.png){fig-alt="Third example of guidelines overlaid on a camera frame." loading="lazy"}
 
-<img src="huipai5.png" style="width: 100%;">
+The app also displayed reference photographs with related compositions:
 
-Second, we provide typical photos with similar compositions:
+![Reference photographs for a suggested composition.](huipai6.png){fig-alt="First set of composition reference photographs." loading="lazy"}
 
-<img src="huipai6.png" style="width: 100%;">
+![Additional composition references.](huipai7.png){fig-alt="Second set of composition reference photographs." loading="lazy"}
 
-<img src="huipai7.png" style="width: 100%;">
+![Reference-image suggestions in the prototype.](huipai8.png){fig-alt="Third set of composition reference photographs." loading="lazy"}
 
-<img src="huipai8.png" style="width: 100%;">
+# Scene-based suggestions {#function-2-suggestions-based-on-scenes}
 
-# Function 2: Suggestions based on Scenes
----
+Scene recognition covered **26 main categories and more than 100 subcategories**. The prototype identified subjects and scene types to provide context-specific suggestions. For portraits, it also distinguished poses such as standing and sitting.
 
-In addition to this, it can also recognize shooting scenes from 26 major categories and over 100 subcategories. For example, it can identify the current shooting scene and subject, then propose photography suggestions for optimizing the photo. By recognizing the content of the day's photography subject, it can analyze and understand the content of the subject being shot. Furthermore, it can identify the current pose structure (standing, sitting, etc.) of the person being photographed.
+![Scene-recognition and photography suggestions.](huipai9.png){fig-alt="Scene-based photography suggestions in the camera app." loading="lazy"}
 
-<img src="huipai9.png" style="width: 100%;">
+![Examples from the prototype camera interface.](huipai10.jpg){fig-alt="AI-assisted camera prototype interface examples." loading="lazy"}
 
-<img src="huipai10.jpg" style="width: 100%;">
+# Demonstration {#demo-video}
 
-# Demo Video
----
-
-Below is a demo video we recorded based on Huawei Mate 30 in April, 2020.
+This demonstration was recorded in Shanghai on **April 30, 2020**, using a Huawei Mate 30.
 
 {{< video https://www.youtube.com/embed/1i6xQzHvZEU >}}
 
-[Explore more project visualizations](../../visualization/#project-visualizations).
+# Related materials
+
+- [Business plan](https://www.dropbox.com/scl/fi/a5sbkv6chnl8cn9mgvpkt/BP-universal-2.pdf?rlkey=iclka76tnlumoq8gv9mrfucyi&dl=0) · Password-protected; [contact me](mailto:lyons66@mit.edu) for access.
+- [More project visualizations](../../visualization/#project-visualizations).

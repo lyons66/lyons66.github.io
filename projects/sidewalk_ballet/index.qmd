@@ -1,10 +1,12 @@
 ---
-title: "Sidewalk Ballet"
+title: "Sidewalk Ballet at Venice"
 subtitle: "A City Form Lab collaboration on social interactions in public space"
 description: "A collaboration between MIT City Form Lab and the Hasso Plattner Institute, with Liu Liu serving as the Sidewalk Ballet project lead at MIT."
 date: "May 2025"
 date-format: "MMM, YYYY"
-author-title: "MIT Project Lead"
+language:
+  title-block-published: "Research date"
+author-title: "MIT project lead"
 author:
   - name: Liu Liu
     orcid: 0000-0003-0100-9763
@@ -16,7 +18,9 @@ page-layout: full
 format:
   html:
     toc: true
-    toc-depth: 3
+    toc-depth: 2
+    fig-cap-location: bottom
+    lightbox: true
     toc-float:
       collapsed: false
       smooth-scroll: true
@@ -33,13 +37,11 @@ format:
 </style>
 ```
 
-::: {.callout-note}
+::: {.callout-note .project-context}
 ## Research context
 
 **MIT City Form Lab and Hasso Plattner Institute collaboration**<br>
-My role: Sidewalk Ballet project lead at MIT
-
-Sidewalk Ballet is a collaborative lab project and public installation. It is not the title of my dissertation. My independent doctoral research is [*Seeing HAI: Human Activities and Interactions on Sidewalks through LLMs and Computer Vision*](../seeing_hai/).
+**My role:** Sidewalk Ballet project lead at MIT. This page documents the collaborative research and its public installation at the **2025 Venice Architecture Biennale**. The group-detection methods connect with [MINGLE](../mingle/) and my doctoral dissertation, now titled [Sidewalk Ballet](../seeing_hai/).
 :::
 
 # The collaboration
@@ -52,7 +54,7 @@ The project is a collaboration between the **MIT City Form Lab** and the **Artif
 
 As the MIT project lead, I have worked on the research pipeline for detecting social interactions in street imagery, coordinated the project's development at MIT, and led the translation of the work into a public installation. Some methods used in this collaboration also appear in my independent doctoral research, including [MINGLE](../mingle/), but the dissertation and the lab project remain distinct in scope and authorship.
 
-<img src="sb_cover.png" style="width: 100%; margin: 1.2rem 0;">
+![The Sidewalk Ballet collaboration translates street-level social-interaction analysis into a public installation.](sb_cover.png){fig-alt="Sidewalk Ballet collaborative project and installation overview." loading="lazy"}
 
 # Venice Architecture Biennale 2025
 
@@ -61,7 +63,7 @@ The City Form Lab exhibit at the **2025 Venice Architecture Biennale** presented
 The exhibit formed part of *The Next Earth: Computation, Crisis, Cosmology*, the MIT Department of Architecture exhibition at Palazzo Diedo. It ran from May 10 to November 23, 2025.
 
 - [City Form Lab project and team page](https://cityform.mit.edu/projects/venice-architecture-biennale-2025)
-- [Seeing HAI, my independent dissertation research](../seeing_hai/)
+- [Sidewalk Ballet, my dissertation research](../seeing_hai/)
 
 <iframe
   title="NYC Walks and Sidewalk Ballet at the Venice Architecture Biennale"

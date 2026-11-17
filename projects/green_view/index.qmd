@@ -4,7 +4,9 @@ subtitle: "Measuring visible greenery across Chinese city centers"
 description-meta: "Collaborative research on street greenery by Ying Long and Liu Liu, published in PLOS ONE in 2017."
 date: "2017-02-14"
 date-format: "MMM, YYYY"
-author-title: "Research Team"
+language:
+  title-block-published: "Research date"
+author-title: "Research team"
 author:
   - name: Ying Long
   - name: Liu Liu
@@ -28,12 +30,11 @@ format:
 </style>
 ```
 
-::: {.callout-note}
+::: {.callout-note .project-context}
 ## Research context
 
-**Research collaboration with Ying Long · PLOS ONE · 2017**
-
-[Read the paper](https://doi.org/10.1371/journal.pone.0171110)
+**Research collaboration with Ying Long**<br>
+**My role:** Coauthor. The study developed and compared image-based street-greenery measures across Chinese city centers. Published in [*PLOS ONE* in 2017](../../papers/#street-greenery). [Read the paper](https://doi.org/10.1371/journal.pone.0171110).
 :::
 
 # Measuring visible greenery

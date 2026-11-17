@@ -65,16 +65,16 @@
   font-size: 0.9rem;
   font-weight: 700;
   color: var(--site-ink);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  text-transform: none;
+  letter-spacing: 0;
 }
 #quarto-document-content h4 {
   margin-top: 1rem;
   font-size: 0.88rem;
   font-weight: 700;
   color: var(--site-ink);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
+  text-transform: none;
+  letter-spacing: 0;
 }
 
 /* ── Body text ── */
@@ -150,15 +150,57 @@
   border-bottom: none;
 }
 
-/* ── Callout (PROJECT BRIEF) ── */
-.callout-tip {
-  border-radius: 6px;
-  margin-bottom: 1.8rem;
+/* ── Opening research and project context ── */
+#quarto-document-content .project-context.callout {
+  border: 1px solid #dbe2e8;
+  border-left: 3px solid #52657a;
+  border-radius: 5px;
+  background: #f7f9fb;
+  margin: 0.2rem 0 1.6rem;
+  box-shadow: none;
 }
-.callout-tip .callout-title {
-  font-size: 0.78rem;
+#quarto-document-content .project-context .callout-header {
+  background: transparent;
+  padding: 0.8rem 1rem 0.25rem;
+}
+#quarto-document-content .project-context .callout-title-container {
+  font-size: 0.92rem;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0;
+  text-transform: none;
+}
+#quarto-document-content .project-context .callout-body {
+  padding: 0.25rem 1rem 0.75rem;
+  font-size: 0.9rem;
+}
+#quarto-document-content .project-context p,
+#quarto-document-content .project-context li {
+  line-height: 1.65;
+}
+#quarto-document-content .project-context p:last-child,
+#quarto-document-content .project-context ul:last-child {
+  margin-bottom: 0;
+}
+
+/* Paired research figures share a row on wide screens and stack on phones. */
+.project-figure-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  align-items: start;
+}
+.project-figure-pair > * { min-width: 0; }
+.project-figure-pair img { width: 100%; height: auto; }
+@media (max-width: 600px) {
+  .project-figure-pair { grid-template-columns: 1fr; }
+  #quarto-document-content .project-context .callout-header {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  #quarto-document-content .project-context .callout-body {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
 }
 
 /* ── Blockquote (used for pull-quotes / paper citations) ── */

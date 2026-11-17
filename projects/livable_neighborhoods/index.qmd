@@ -9,7 +9,7 @@ resources:
   - analysis-poster.jpg
 language:
   title-block-published: "Project year"
-author-title: "Project Lead"
+author-title: "Project lead"
 author:
   - name: Liu Liu
     orcid: 0000-0003-0100-9763
@@ -28,11 +28,11 @@ format:
       - livable-neighborhoods.css
 ---
 
-::: {.callout-note}
+::: {.callout-note .project-context}
 ## Project context
 
 **Neighborhood-environment assessment at CitoryTech · Tianjin Xincun, Nanjing · 2018**<br>
-My role: Project lead at CitoryTech.
+**My role:** Project lead at CitoryTech.
 :::
 
 # The question

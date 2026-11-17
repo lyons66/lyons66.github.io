@@ -1,22 +1,17 @@
 ---
 title: "River View Analysis"
-subtitle: "Detecting and evaluating historical waterfront landscape"
+subtitle: "Video-based assessment of historic waterfront landscapes"
+description-meta: "A CitoryTech project mapping the visible composition of more than 200 km of historic riverfront from video."
 date: "May 2017"
 date-format: "MMM, YYYY"
-# author: Liu Liu @ MIT
-author-title: "Main Researcher"
+language:
+  title-block-published: "Project date"
+author-title: "Project lead"
 author:
   - name: Liu Liu
     orcid: 0000-0003-0100-9763
-#     email: lyons66@mit.edu
-    # affiliations:
-    #   - name: Massachusetts Institute of Technology
-#       - url: https://www.mit.edu/
-    # affiliations:
-    #   - name: test
-# affiliation-title: "AFFILIATION"
 
-categories: [computer vision, urban design]
+categories: [Applied Practice, Computer Vision, Landscape Assessment]
 image: "riverview_cover.jpg"
 title-block-banner: "river_cover.png"
 page-layout: full
@@ -24,7 +19,9 @@ page-layout: full
 format:
   html:
     toc: true
-    toc-depth: 3
+    toc-depth: 2
+    fig-cap-location: bottom
+    lightbox: true
     toc-float:
       collapsed: false
       smooth-scroll: true
@@ -40,48 +37,40 @@ format:
 }
 </style>
 ```
-::: callout-tip
-## PROJECT BRIEF
 
-To preserve the natural landscapes along the Qiantang River, I analyzed a 200-kilometer stretch of riverbank videos. By carefully examining the footage, I calculated the visual proportions of seven distinct elements present throughout the entire shoreline. Subsequently, I developed a visualization platform that identifies and maps these elements along the riverbank. This platform is a valuable tool in safeguarding the natural beauty and ecological integrity of the Qiantang River, enabling effective management and conservation efforts.
+::: {.callout-note .project-context}
+## Project context
 
-This work has been re-presented in [Rez de Ville / Urban Ground Floors 2023](../../presentations/#learning-from-ground-floors).
+**CitoryTech landscape-assessment project**<br>
+**My role:** Project lead, developing video-based landscape measures and a geographic visualization interface. The study covered more than 200 km of waterfront along the Qiantang, Fuchun, and Xin'an rivers. It was later presented at [Rez de Ville / Urban Ground Floors 2023](../../presentations/#learning-from-ground-floors).
 :::
 
-# The Idea
----
+# Planning question {#the-idea}
 
-This project aims to protect the historical and cultural features of the Qiantang River and the upstream Fuchun River and Xin’an River, covering a more than 200-kilometer waterfront. The famous Fuchun Mountain Habitat map depicts the natural scenery on both sides of the strait, but now it has been damaged by the excessive development of many residential buildings.
+How can planners compare the visible character of a long, historically significant waterfront? This project used riverbank video to document natural features and development, creating a spatial record for examining where buildings and vegetation shaped the view.
 
-<img src="riverview_cover.jpg" style="width: 100%;">
+![Overview of the riverfront landscape assessment.](riverview_cover.jpg){fig-alt="River View Analysis project overview." loading="lazy"}
 
+# Data and processing {#data-process}
 
-# Data Process
----
-The project is conducted based on the video along the Qiantang River, where over 40000 frames are extracted along the three sections covering the north and south bank.
+More than **40,000 frames** were extracted from video covering three sections along the north and south banks. Image segmentation estimated the visual proportions of **seven landscape elements**, and the results were connected to locations along the waterfront.
 
-<img src="river1.png" style="width: 100%;">
+![Video-frame extraction and spatial organization along the river.](river1.png){fig-alt="Riverbank video processing and geographic organization." loading="lazy"}
 
-After segmenting the video frames into different segmentations, we could view different landscape prototypes along the river. 
+![Landscape segmentation used to compare the composition of waterfront views.](river2.png){fig-alt="Riverbank frames segmented into landscape elements." loading="lazy"}
 
-<img src="river2.png" style="width: 100%;">
+# Comparing waterfront conditions {#result-analysis}
 
+The analysis compared the relative prominence of buildings and vegetation, including measures relating building height to plant height. These visual diagnostics helped locate sections for closer planning review; they describe the visible landscape rather than establish ecological impacts.
 
-# Result Analysis
----
+![Comparison of buildings and vegetation along selected waterfront sections.](river3.png){fig-alt="Visual landscape measures along the riverbank." loading="lazy"}
 
-One of the major triggers for this project is to identify over-developed real estate. By composing metrics such as building height / plant height, it is easily to locate those banks.
+![Additional section-level comparisons in the waterfront study.](river4.jpg){fig-alt="Section-level results from the riverfront landscape assessment." loading="lazy"}
 
-<img src="river3.png" style="width: 100%;">
+# Demonstration {#demo-video}
 
-Other methods are also applied for each section of the entire river.
-
-<img src="river4.jpg" style="width: 100%;">
-
-# Demo Video
----
-Below is a platform we created for verifying the metrics for different waterfront view sections.
+The visualization platform links mapped indicators to the corresponding waterfront views, allowing users to inspect the evidence behind a measure.
 
 {{< video https://www.youtube.com/embed/6q6vMNEecWs >}}
 
-[Explore more project visualizations](../../visualization/#project-visualizations).
+[More project visualizations](../../visualization/#project-visualizations).

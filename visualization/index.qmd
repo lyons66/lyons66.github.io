@@ -63,8 +63,8 @@ Explore demonstrations within the project pages, or scroll down for additional v
 
 | Project | Explore |
 |:---|:---|
-| Seeing HAI | [The Great Streets interface](../projects/seeing_hai/#the-great-streets-visualization) |
-| Sidewalk Ballet | [Venice exhibition video](../projects/sidewalk_ballet/#venice-architecture-biennale-2025) |
+| Sidewalk Ballet (dissertation) | [The Great Streets interface](../projects/seeing_hai/#the-great-streets-visualization) |
+| Sidewalk Ballet at Venice | [Venice exhibition video](../projects/sidewalk_ballet/#venice-architecture-biennale-2025) |
 | AI-Aided Camera App | [Camera demonstration](../projects/huipai/#demo-video) |
 | Urban Infrastructure Assessment | [Platform demonstrations](../projects/road/#platform-demonstrations) |
 | River View Analysis | [Waterfront assessment interface](../projects/riverview/#demo-video) |

@@ -175,7 +175,7 @@ Date: May 22, 2025
 <br>
 Location: 10-401, MIT
 
-This presentation introduced my independent doctoral research, *Seeing HAI: Human Activities and Interactions on Sidewalks and Pedestrian Spaces through VLMs*. The dissertation is distinct from Sidewalk Ballet, a separate City Form Lab collaboration that I lead at MIT.
+This presentation introduced my independent doctoral research, *Seeing HAI: Human Activities and Interactions on Sidewalks and Pedestrian Spaces through VLMs*. The dissertation is now titled [Sidewalk Ballet](../projects/seeing_hai/). Related methods also support the [City Form Lab collaboration](../projects/sidewalk_ballet/) that I lead at MIT.
 
 The dissertation begins with a three-stage method for detecting social groups in sidewalk scenes. It then expands from grouping to a wider set of visible activities and interactions and develops Human Activity and Interaction indicators at the sidewalk-segment level. [Dissertation project page](../projects/seeing_hai/)
 

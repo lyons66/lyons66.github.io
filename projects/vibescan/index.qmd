@@ -1,23 +1,17 @@
 ---
 title: "VibeScan"
-subtitle: "Social-Media Analytics for Commercial-District Benchmarking"
-description: "Client: Hongkong Land &nbsp;·&nbsp; Project context: West Bund Financial City spatial benchmarking &nbsp;·&nbsp; Role: Project Lead; Founder and Research Director, CitoryTech"
+subtitle: "Social-media analysis for commercial-district benchmarking"
+description-meta: "A CitoryTech commercial-district benchmarking project for Hongkong Land's West Bund Financial City work."
 date: "Feb 2022"
 date-format: "MMM, YYYY"
-# author: Liu Liu @ MIT
-author-title: "Main Researcher"
+language:
+  title-block-published: "Project date"
+author-title: "Project lead"
 author:
   - name: Liu Liu
     orcid: 0000-0003-0100-9763
-#     email: lyons66@mit.edu
-    # affiliations:
-    #   - name: Massachusetts Institute of Technology
-#       - url: https://www.mit.edu/
-    # affiliations:
-    #   - name: test
-# affiliation-title: "AFFILIATION"
 
-categories: [computer vision, urban design, poi, tools]
+categories: [Applied Practice, Urban Analytics, Social Media, Commercial Districts]
 image: "vibescan_cover2.png"
 title-block-banner: "vibescan_cover.png"
 page-layout: full
@@ -25,7 +19,9 @@ page-layout: full
 format:
   html:
     toc: true
-    toc-depth: 3
+    toc-depth: 2
+    fig-cap-location: bottom
+    lightbox: true
     toc-float:
       collapsed: false
       smooth-scroll: true
@@ -41,101 +37,93 @@ format:
 }
 </style>
 ```
-::: callout-tip
-## PROJECT BRIEF
+::: {.callout-note .project-context}
+## Project context
 
-VibeScan is a commercial-district benchmarking and customer-analysis system developed through CitoryTech for Hongkong Land's West Bund Financial City work. I led the integration of social-media comments and images, points of interest, and spatial data to compare how visitors responded to design, programming, amenities, and operations across international and Chinese commercial districts. Phase I analyzed approximately 14 million records from international reference cases; Phase II analyzed approximately 7 million records from recently developed Chinese cases. The resulting evidence supported planning, design, tenant strategy, and operational decision-making.
-
-For a detailed demonstration of the project, please refer to the slides: [Phase I](https://www.dropbox.com/scl/fi/9e1rhg07vftm3qkmwo6i5/0323.pdf?rlkey=hhmkl61vt7ip7kt06c5k7nc5k&dl=0) and [Phase II](https://www.dropbox.com/scl/fi/qgla46f59s2kmdm21dwq8/0531.pdf?rlkey=t6zcpi2w1igjsqwm9edimas37&dl=0).
+**CitoryTech commission for Hongkong Land** · West Bund Financial City<br>
+**My role:** Project lead, integrating social-media images and comments, points of interest, and spatial analysis into a commercial-district benchmarking system. **Phase I** analyzed approximately **14 million records** from international reference cases; **Phase II** analyzed approximately **7 million records** from Chinese cases. The deliverables informed comparisons of design, tenant strategy, amenities, and operations.
 :::
 
-# The Idea
----
-
+# Project question {#the-idea}
 Commercial districts invest heavily in public-space design, temporary installations, events, and amenities, but conventional performance indicators reveal little about which interventions attract attention, encourage visits, or shape public response. VibeScan treats publicly available online comments and images as an additional evidence source for comparing spatial and operational strategies across districts. The aim is not to replace surveys or financial analysis, but to connect observable public response with specific places, facilities, and design decisions.
 
-<img src="vibescan_cover2.png" style="width: 100%;">
+![Commercial-district comparisons connect online public response with spatial and operational questions.](vibescan_cover2.png){fig-alt="VibeScan commercial-district benchmarking overview." loading="lazy"}
 
-
-# Data Process
----
+# Data and processing {#data-process}
 The workflow collected publicly available comments and user-contributed images from multiple social-media platforms in China and the United States. Records were cleaned, geolocated where possible, and organized around districts, destinations, facilities, events, and recurring topics. Phase I analyzed approximately 14 million records from established international cases; Phase II analyzed approximately 7 million records from recently developed Chinese cases. The project combined text mining, image analysis, point-of-interest data, and spatial comparison to produce district-level benchmarks.
 
-<img src="vibescan_data.png" style="width: 100%;">
+![Data sources and processing for the district comparisons.](vibescan_data.png){fig-alt="VibeScan data-collection and analytical workflow." loading="lazy"}
 
-<img src="vibescan_data2.png" style="width: 100%;">
+![Organization of the reference-case data for comparison.](vibescan_data2.png){fig-alt="Reference-case data structure in the VibeScan project." loading="lazy"}
 
+# Benchmark comparisons {#key-results}
+## Miami Design District {#miami-design-district-benchmark}
 
-# Key Results
----
+### Search interest across platforms {#search-interest-across-platforms}
 
-## Miami Design District Benchmark
+Search-index trends were compared across Chinese and U.S. platforms to show how much online attention the district attracts on each channel and how that attention changes over time. The comparison shows how the sampled online attention varied across channels and over time.
 
-### Search Interest Across Platforms
+![Miami Design District: online search interest across platforms.](vibescan_m_1.jpeg){fig-alt="Search-interest comparison for Miami Design District." loading="lazy"}
 
-Search-index trends were compared across Chinese and U.S. platforms to show how much online attention the district attracts on each channel and how that attention changes over time. This helps operators understand where public conversation about a district actually takes place.
+### Brand and check-in patterns {#brand-and-visitor-check-in-patterns}
 
-<img src="vibescan_m_1.jpeg" style="width: 100%;">
+Check-in records were organized by brand and over time to compare recorded activity around tenants. These patterns supported discussions of tenant mix and programming, while reflecting the platform's users rather than all visitors.
 
-### Brand and Visitor Check-In Patterns
+![Miami Design District: recorded check-ins by brand and over time.](vibescan_m_2.jpeg){fig-alt="Brand-level check-in patterns for Miami Design District." loading="lazy"}
 
-Check-in records were organized by brand and over time to show which tenants draw visits and how visitor activity fluctuates. The comparison supports tenant-mix and programming discussions by making each brand's drawing power visible.
-
-<img src="vibescan_m_2.jpeg" style="width: 100%;">
-
-### Spatial Investments and Influencer Attention
+### Spatial investments and creator attention {#spatial-investments-and-influencer-attention}
 
 These charts relate leading merchants' investments in space and installation design to subsequent check-in and creator/influencer activity. The comparison is descriptive: it shows which spatial investments coincided with online attention, without asserting a causal effect.
 
-<img src="vibescan_m_3.jpeg" style="width: 100%;">
+![Miami Design District: spatial investments and recorded online attention.](vibescan_m_3.jpeg){fig-alt="First comparison of spatial investments and online attention in Miami Design District." loading="lazy"}
 
-<img src="vibescan_m_4.jpeg" style="width: 100%;">
+![Miami Design District: additional comparisons of installations and creator activity.](vibescan_m_4.jpeg){fig-alt="Second comparison of design installations and creator activity in Miami Design District." loading="lazy"}
 
-<img src="vibescan_m_5.jpeg" style="width: 100%;">
+![Miami Design District: further examples from the spatial benchmarking analysis.](vibescan_m_5.jpeg){fig-alt="Third spatial benchmarking comparison for Miami Design District." loading="lazy"}
 
-### Use of Public Amenities
+### Public amenities in online records {#use-of-public-amenities}
 
-Comments and images referencing public facilities in the district's main spaces were used to compare how amenities are actually used and discussed by visitors, informing decisions about which facilities merit investment.
+Comments and images referencing public facilities in the district's main spaces were used to compare how contributors documented and discussed amenities, informing decisions about which facilities merit investment.
 
-<img src="vibescan_m_6.jpeg" style="width: 100%;">
+![Miami Design District: public amenities documented in online records.](vibescan_m_6.jpeg){fig-alt="First analysis of public amenities in Miami Design District." loading="lazy"}
 
-<img src="vibescan_m_7.jpeg" style="width: 100%;">
+![Miami Design District: additional examples of amenities and public response.](vibescan_m_7.jpeg){fig-alt="Second analysis of public amenities in Miami Design District." loading="lazy"}
 
-<img src="vibescan_m_8.jpeg" style="width: 100%;">
+![Miami Design District: further comparison of public-space facilities.](vibescan_m_8.jpeg){fig-alt="Third analysis of public amenities in Miami Design District." loading="lazy"}
 
-## Hudson Yards Benchmark
+## Hudson Yards {#hudson-yards-benchmark}
 
-### Search Interest Across Platforms
+### Search interest across platforms {#search-interest-across-platforms-1}
 
 Search-index trends for Hudson Yards were compared across platforms, parallel to the Miami Design District analysis, to benchmark the district's online visibility.
 
-<img src="vibescan_h_1.jpeg" style="width: 100%;">
+![Hudson Yards: online search interest across platforms.](vibescan_h_1.jpeg){fig-alt="Search-interest comparison for Hudson Yards." loading="lazy"}
 
-### Estimated Visitor Composition
+### Estimated contributor composition {#estimated-visitor-composition}
 
-Publicly available profile and content signals were used to estimate the composition of the visiting population, supporting comparisons of which audiences each district attracts.
+Publicly available profile and content signals were used to compare the apparent composition of online contributors. These estimates describe the sampled accounts and do not establish the demographic composition of all visitors.
 
-<img src="vibescan_h_2.jpeg" style="width: 100%;">
+![Hudson Yards: estimated characteristics of sampled online contributors.](vibescan_h_2.jpeg){fig-alt="Profile-based estimates for online contributors discussing Hudson Yards." loading="lazy"}
 
-### Public Response to Vessel
+### Public response to Vessel {#public-response-to-vessel}
 
 Comments mentioning Vessel were mined for recurring topics and sentiment, showing how the public responded to the district's signature landmark.
 
-<img src="vibescan_h_3.jpeg" style="width: 100%;">
+![Hudson Yards: recurring topics and sentiment in comments about Vessel.](vibescan_h_3.jpeg){fig-alt="Comment analysis for Vessel at Hudson Yards." loading="lazy"}
 
-### Public Response to Edge
+### Public response to Edge {#public-response-to-edge}
 
 Comments mentioning the Edge observation deck were analyzed the same way, indicating how a paid attraction contributes to the district's public profile.
 
-<img src="vibescan_h_4.jpeg" style="width: 100%;">
+![Hudson Yards: recurring topics and sentiment in comments about Edge.](vibescan_h_4.jpeg){fig-alt="Comment analysis for Edge at Hudson Yards." loading="lazy"}
 
-### Public Response to The Shed
+### Public response to The Shed {#public-response-to-the-shed}
 
 Comments mentioning The Shed were analyzed to show how a cultural venue shapes public response to the district.
 
-<img src="vibescan_h_5.jpeg" style="width: 100%;">
+![Hudson Yards: recurring topics and sentiment in comments about The Shed.](vibescan_h_5.jpeg){fig-alt="Comment analysis for The Shed at Hudson Yards." loading="lazy"}
 
-# Client Deliverable
+# Client deliverable {#client-deliverable}
 
 The project translated the benchmarking results into a spatial decision-support package for the West Bund Financial City context. Deliverables connected public response and customer patterns to design features, amenities, reference projects, and operational strategies. The work was intended to help the client compare precedents and prioritize questions for planning, design, leasing, and district operations.
 

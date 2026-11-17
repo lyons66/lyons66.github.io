@@ -1,25 +1,19 @@
 ---
-title: "StreeTalk Project"
-subtitle: "Street-View Perception Modeling for Pedestrian Routing"
-description: "Role: Project Lead; Founder and Research Director, CitoryTech &nbsp;·&nbsp; Client application: Daimler Innovation Lab"
+title: "StreeTalk"
+subtitle: "Street-view perception modeling for pedestrian routing"
+description-meta: "A perception-aware pedestrian-routing workflow, adapted by CitoryTech for a commissioned Daimler Innovation Lab application in 2018."
 date: "Oct 2016"
 date-format: "MMM, YYYY"
-# author: Liu Liu @ MIT
-author-title: "Main Researchers"
+language:
+  title-block-published: "Project date"
+author-title: "Project team"
 author:
   - name: Liu Liu
     orcid: 0000-0003-0100-9763
-#     email: lyons66@mit.edu
-    # affiliations:
-    #   - name: Massachusetts Institute of Technology
-#       - url: https://www.mit.edu/
   - name: Bolei Zhou
   - name: Fan Zhang
-    # affiliations:
-    #   - name: test
-# affiliation-title: "AFFILIATION"
 
-categories: [computer vision, urban design]
+categories: [Applied Practice, Computer Vision, Urban Perception, Product Development]
 image: "streetalk_cover.jpg"
 title-block-banner: "streetalk_cover.png"
 page-layout: full
@@ -27,7 +21,9 @@ page-layout: full
 format:
   html:
     toc: true
-    toc-depth: 3
+    toc-depth: 2
+    fig-cap-location: bottom
+    lightbox: true
     toc-float:
       collapsed: false
       smooth-scroll: true
@@ -44,37 +40,26 @@ format:
 </style>
 ```
 
-::: callout-tip
-## PROJECT BRIEF
+::: {.callout-note .project-context}
+## Project context
 
-StreeTalk links street-view imagery, human perception data, and computer vision to pedestrian route choice. I led the development of a perception-modeling and routing workflow that estimated perceived street safety and allowed users to compare walking routes using both distance and visual-environment scores. The broader data pipeline processed more than 100 million images and produced perceived-safety maps for more than 300 cities in China. In 2018, the work was adapted for a commissioned application with Daimler Innovation Lab.
-
--   [Zhang, F., Zhou, B., Liu, L., Liu, Y., Fung, H. H., Lin, H., & Ratti, C. "Measuring human perceptions of a large-scale urban region using machine learning." *Landscape and Urban Planning*.](https://www.sciencedirect.com/science/article/pii/S0169204618308545)
-
--   [Liu, L., Zhang, F., Zhou, B., Wang, Z., & Li, Y. "StreeTalk: A navigation system for pedestrians and cyclists." *Landscape Architecture Frontiers*.](https://oversea.cnki.net/knavi/JournalDetail?pcode=CJFD&pykm=jgsj)
+**CitoryTech product development and commissioned application for Daimler Innovation Lab**<br>
+**My role:** Project lead. StreeTalk began as a routing prototype in **2016** and was adapted for Daimler in **2018**. The workflow connected street imagery and human judgments to perceived-safety scores and pedestrian route alternatives. Related research appeared in [*Landscape and Urban Planning*](../../papers/#urban-perceptions) and [*Landscape Architecture Frontiers*](../../papers/#streetalk).
 :::
 
-# The Idea
----
+# Project question {#the-idea}
+In 2016, after moving to a new apartment in Shanghai, I followed an Amap walking route that passed deteriorated pavement, limited lighting, and long blank walls. That experience motivated a question: could pedestrian navigation account for the visual experience of a route as well as its distance?
 
-The project began with a practical route-choice problem: a navigation app suggested a short walking route whose physical environment felt poorly maintained, enclosed, and uncomfortable. That experience raised a broader question: could street-view imagery and human perception data help a routing system account for the visual experience of walking, rather than distance alone?
+![StreeTalk connects visual-environment scores to pedestrian route choice.](streetalk_cover.jpg){fig-alt="StreeTalk perception-aware pedestrian routing overview." loading="lazy"}
 
-<img src="streetalk_cover.jpg" style="width: 100%;">
+![The route-choice example that motivated the prototype.](st1.jpg){fig-alt="Street environments compared in the original StreeTalk route example." loading="lazy"}
 
-In 2016, shortly after I moved to a new apartment in Shanghai, Amap suggested a walking route to a nearby restaurant. The suggested route included deteriorated pavement, limited lighting, long blank walls, and few visible signs of pedestrian activity. These conditions motivated an experiment in modeling perceived street safety and incorporating it into pedestrian navigation.
-
-<img src="st1.jpg" style="width: 100%;">
-
-# Modeling Perceived Street Safety
----
-
+# Modeling perceived street safety {#modeling-perceived-street-safety}
 I trained a street-view classifier to estimate perceived-safety scores and used its outputs to build a citywide perception map of Shanghai. The resulting software connected image-based scores to street segments, creating the spatial layer required for perception-aware pedestrian routing.
 
-<img src="st2.jpg" style="width: 100%;"/>
+![Perceived-safety predictions are linked to street segments to support alternative walking routes.](st2.jpg){fig-alt="StreeTalk street-safety map and routing interface." loading="lazy"}
 
-# Demo Video
----
-
+# Demonstration {#demo-video}
 Below is a demo video showing how the perceived-safety score is applied for pedestrian routing.
 
 {{< video https://www.youtube.com/embed/lUATGLRVE5E >}}
@@ -82,9 +67,7 @@ Below is a demo video showing how the perceived-safety score is applied for pede
 [Explore more project visualizations](../../visualization/#project-visualizations).
 
 
-# Revisit the Dataset and Algorithm
----
-
+# Dataset and model development {#revisit-the-dataset-and-algorithm}
 The following sections document a later technical revisit of the perception datasets and modeling workflow used in this line of research.
 
 ## Place Pulse 2.0
@@ -93,21 +76,23 @@ A significant source of street perception data is the ["Place Pulse" project](ht
 
 Over the years, the dataset was enhanced to version 2.0, which includes 110,998 random street-view images gathered from 56 cities in 28 countries across six continents. From 2013 to 2016, 81,630 online participants took part in the survey, providing over 1,170,000 pairwise comparisons. Its geographic and participant coverage made it a useful large-scale benchmark for studying perceived qualities of urban scenes, while still requiring care when transferring models across local contexts.
 
-<img src="placepulse.png" style="width: 100%;"/>
-
+![The Place Pulse interface collects pairwise judgments about street scenes.](placepulse.png){fig-alt="Place Pulse street-image comparison interface." loading="lazy"}
 
 ![The top 10 street-view images by "beautiful" TrueSkill scores](beautiful_top10.png){width=100%}
 
 ![The bottom 10 street-view images by "beautiful" TrueSkill scores](beautiful_bottom10.png){width=100%}
 
-## Binary SVM for Baseline Measurement
+## Binary SVM baseline {#binary-svm-for-baseline-measurement}
 
 As a baseline, I trained binary support vector machine classifiers for the six perception dimensions and compared their predictive accuracy. The accuracy results for all six models are shown below.
 
-![](st4-1.png){width=49%}
-![](st4-2.png){width=49%}
+::: {.project-figure-pair}
+![Binary SVM baseline results, panel one.](st4-1.png){fig-alt="First panel of binary SVM perception-classification results." loading="lazy"}
 
-## Class Activation Maps for Street-View Images
+![Binary SVM baseline results, panel two.](st4-2.png){fig-alt="Second panel of binary SVM perception-classification results." loading="lazy"}
+:::
+
+## Class activation maps {#class-activation-maps-for-street-view-images}
 
 Class activation maps provide a visual diagnostic of the image regions contributing to positive and negative model predictions. They help inspect model attention, but should not be treated as direct evidence of human attention or causal environmental effects. Below are negative and positive samples from the updated models.
 
@@ -115,7 +100,7 @@ Class activation maps provide a visual diagnostic of the image regions contribut
 
 ![Class activation maps for street views with high predicted perceived-safety scores](CAMs_high.png){width=100%}
 
-# Collaboration with Daimler
+# Commissioned application for Daimler {#collaboration-with-daimler}
 
 In 2018, the project delivered perceived-safety maps for more than 300 cities in China for a Daimler Innovation Lab application. The spatial scores supported pedestrian route alternatives that considered both network distance and modeled street perception.
 
@@ -124,3 +109,8 @@ As part of client validation, Daimler supplied a set of non-standard test images
 ![Test images supplied by Daimler and their model-generated perception scores](st6.png){width=100%}
 
 ![Commissioned project documentation from Daimler](st5.png){width=100%}
+
+# Publications
+
+- Zhang, F., Zhou, B., Liu, L., Liu, Y., Fung, H. H., Lin, H., & Ratti, C. **Measuring Human Perceptions of a Large-Scale Urban Region Using Machine Learning.** *Landscape and Urban Planning*. [Paper](https://www.sciencedirect.com/science/article/pii/S0169204618308545) · [Publication entry](../../papers/#urban-perceptions).
+- Liu, L., Zhang, F., Zhou, B., Wang, Z., & Li, Y. **StreeTalk: A Navigation System for Pedestrians and Cyclists.** *Landscape Architecture Frontiers*. [Journal](https://oversea.cnki.net/knavi/JournalDetail?pcode=CJFD&pykm=jgsj) · [Publication entry](../../papers/#streetalk).

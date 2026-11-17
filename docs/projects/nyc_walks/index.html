@@ -50,6 +50,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-3a2f58de107bfa6a176889d393f2f250.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../../site_libs/quarto-contrib/iconify-1.0.8/iconify-icon.min.js"></script>
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -173,7 +176,7 @@ background-size: cover;
   <div class="quarto-title-meta column-page-left">
 
       <div>
-      <div class="quarto-title-meta-heading">Research Team</div>
+      <div class="quarto-title-meta-heading">Research team</div>
       <div class="quarto-title-meta-contents">
                <p>Andres Sevtsuk </p>
                <p>Rounaq Basu </p>
@@ -184,7 +187,7 @@ background-size: cover;
     </div>
       
       <div>
-      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-heading">Research date</div>
       <div class="quarto-title-meta-contents">
         <p class="date">Feb, 2026</p>
       </div>
@@ -201,7 +204,7 @@ background-size: cover;
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
-  <ul>
+  <ul class="collapse">
   <li><a href="#project-overview" id="toc-project-overview" class="nav-link active" data-scroll-target="#project-overview">Project overview</a></li>
   <li><a href="#my-contribution" id="toc-my-contribution" class="nav-link" data-scroll-target="#my-contribution">My contribution</a></li>
   <li><a href="#findings-and-planning-applications" id="toc-findings-and-planning-applications" class="nav-link" data-scroll-target="#findings-and-planning-applications">Findings and planning applications</a></li>
@@ -222,7 +225,7 @@ background-size: cover;
   height: 220px;
 }
 </style>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="project-context callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -232,8 +235,7 @@ background-size: cover;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>MIT City Form Lab collaborative project</strong><br> My role: Key collaborator in geospatial data engineering, spatial computation, model validation, and research visualization.</p>
-<p>This is a lab project. It is presented separately from my independent dissertation research, <a href="../seeing_hai/">Seeing HAI</a>.</p>
+<p><strong>MIT City Form Lab collaboration</strong><br> <strong>My role:</strong> Collaborator in geospatial data engineering, spatial computation, model validation, and research visualization. The work was published in <a href="../../papers/#nyc-foot-traffic"><em>Nature Cities</em></a> and exhibited alongside <a href="../sidewalk_ballet/">Sidewalk Ballet at Venice</a>.</p>
 </div>
 </div>
 <section id="project-overview" class="level1">
@@ -250,14 +252,18 @@ background-size: cover;
 <li>produced pedestrian-flow figures and visual comparisons between estimated volumes and observed counts; and</li>
 <li>contributed analyses and revisions to the published paper.</li>
 </ul>
-<p>These contributions are narrower than the full project. The research design was conceived by Andres Sevtsuk, and the modeling, calibration, safety analysis, and writing were distributed across the author team.</p>
+<p>Andres Sevtsuk conceived the research design. Modeling, calibration, safety analysis, and writing were shared across the author team.</p>
 </section>
 <section id="findings-and-planning-applications" class="level1">
 <h1>Findings and planning applications</h1>
 <p>The published analysis identifies outer-borough streets whose estimated foot traffic is comparable with parts of central Manhattan but whose official classifications give them less pedestrian priority. It also compares crash counts with estimated pedestrian exposure and finds that some of the highest exposure-adjusted risks occur outside Manhattan.</p>
 <p>These results show how a citywide pedestrian baseline can help agencies identify places where infrastructure classification, investment, and observed demand do not align.</p>
-<p><img src="nyc_walks_cover.jpeg" style="width: 100%; margin: 1.2rem 0;"></p>
-<p><em>City-scale pedestrian network analysis in New York City.</em></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="nyc_walks_cover.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="City-scale pedestrian network analysis in New York City."><img src="nyc_walks_cover.jpeg" class="img-fluid figure-img" loading="lazy" alt="New York City pedestrian-network model and mapped foot-traffic estimates."></a></p>
+<figcaption>City-scale pedestrian network analysis in New York City.</figcaption>
+</figure>
+</div>
 </section>
 <section id="publication" class="level1">
 <h1>Publication</h1>
@@ -684,6 +690,38 @@ background-size: cover;
 </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      }
+    });
+
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+
+  };
+
+})();
+          </script>
 
 
 

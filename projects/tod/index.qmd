@@ -6,13 +6,17 @@ date: "2019-05-14"
 date-format: "YYYY"
 language:
   title-block-published: "Project year"
-author-title: "Project Lead"
+author-title: "Project lead"
 author:
   - name: Liu Liu
     orcid: 0000-0003-0100-9763
 categories: [Applied Practice, Transit-Oriented Development, Walkability]
 image: "cover.jpg"
 title-block-banner: "cover.jpg"
+resources:
+  - assessment_framework.jpg
+  - station_profile.jpg
+  - walking_catchments.jpg
 page-layout: full
 format:
   html:
@@ -31,11 +35,11 @@ format:
 </style>
 ```
 
-::: {.callout-note}
+::: {.callout-note .project-context}
 ## Project context
 
 **World Bank study · Beijing · CitoryTech project, 2019 · Published January 2020**<br>
-My role: CitoryTech project lead and **second author** of the World Bank report.
+**My role:** CitoryTech project lead and **second author** of the [World Bank report](../../papers/#beijing-tod).
 :::
 
 A metro station can be well connected to the transit network while offering an uncomfortable or inconvenient walk outside its entrances. This project asked how planners could assess those environments consistently across a city. I led CitoryTech's analysis team and coauthored the resulting World Bank working paper with Wanli Fang and Jianhao Zhou.

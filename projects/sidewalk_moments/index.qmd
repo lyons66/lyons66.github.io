@@ -4,7 +4,9 @@ subtitle: "Human-aligned representations of city-walk videos"
 description: "An independent multimodal study comparing video, temporally averaged images, audio, and text as representations of urban engagement."
 date: "Jul 2026"
 date-format: "MMM, YYYY"
-author-title: "Research Team"
+language:
+  title-block-published: "Research date"
+author-title: "Research team"
 author:
   - name: Liu Liu
     orcid: 0000-0003-0100-9763
@@ -18,7 +20,9 @@ page-layout: full
 format:
   html:
     toc: true
-    toc-depth: 3
+    toc-depth: 2
+    fig-cap-location: bottom
+    lightbox: true
     toc-float:
       collapsed: false
       smooth-scroll: true
@@ -35,13 +39,11 @@ format:
 </style>
 ```
 
-::: {.callout-note}
+::: {.callout-note .project-context}
 ## Research context
 
-**Independent research collaboration led by Liu Liu**<br>
-Coauthors: Freya Huying Tan and Fábio Duarte
-
-This project is an independent research strand on urban visual experience. It is not a City Form Lab project and is not presented as a chapter of the dissertation.
+**Independent research on urban visual experience**<br>
+**My role:** Study lead, with Freya Huying Tan and Fábio Duarte. The [manuscript is being prepared for submission](../../papers/#sidewalk-moments), with a [preprint available](https://arxiv.org/abs/2607.20903). This strand complements my research on the measurement of public life by testing how different representations relate to human judgments.
 :::
 
 # Research question
@@ -59,7 +61,7 @@ The study uses **61 first-person city-walk videos from YouTube**, segmented into
 
 The analysis first compares these representations with a continuous engagement signal derived from viewer replay behavior. It then tests their ability to classify high- and low-engagement moments. An independent two-alternative forced-choice experiment provides a separate comparison with human judgments.
 
-<img src="framework.png" style="width: 100%; margin: 1.2rem 0;">
+![Study framework linking four representations to engagement prediction, human validation, and analysis of cases in which video and temporally averaged images diverge.](framework.png){fig-alt="Sidewalk Moments workflow comparing video, averaged images, audio, and text with engagement signals and human judgments." loading="lazy"}
 
 *Study framework linking four representations to engagement prediction, human validation, and analysis of cases in which video and temporally averaged images diverge.*
 
@@ -75,4 +77,4 @@ These results make representation a substantive choice in urban research: it det
 
 > Liu, L., Tan, F. H., & Duarte, F. (2026). "Sidewalk Moments: Are Richer Representations Always More Human-Aligned? Evidence from City-Walk Videos." Preparing for submission. [arXiv](https://arxiv.org/abs/2607.20903)
 
-The work was presented at the **2026 Annual Meeting of the American Association of Geographers** in San Francisco. [Presentation materials](../../presentations/#sidewalk-moments-are-richer-representations-always-more-human-aligned-evidence-from-city-walk-videos)
+[Publication entry](../../papers/#sidewalk-moments). The work was presented at the **2026 Annual Meeting of the American Association of Geographers** in San Francisco. [Presentation materials](../../presentations/#sidewalk-moments-are-richer-representations-always-more-human-aligned-evidence-from-city-walk-videos)

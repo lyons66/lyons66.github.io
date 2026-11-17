@@ -1,23 +1,18 @@
 ---
 title: "Recognizing Central Activity Zones"
 subtitle: "Leveraging the entropy of urban functionality based on POI data"
+description-meta: "Research during planning practice at CAUPD, using evaluated points of interest to compare central activity zones in Shanghai."
 date: "Jan 2018"
 date-format: "MMM, YYYY"
-# author: Liu Liu @ MIT
-author-title: "Main Researchers"
+language:
+  title-block-published: "Publication date"
+author-title: "Research team"
 author:
   - name: Liu Liu
     orcid: 0000-0003-0100-9763
-#     email: lyons66@mit.edu
-    # affiliations:
-    #   - name: Massachusetts Institute of Technology
-#       - url: https://www.mit.edu/
   - name: Zhuqing Liu
-    # affiliations:
-    #   - name: test
-# affiliation-title: "AFFILIATION"
 
-categories: [urban planning, poi, visualization]
+categories: [Independent Research, Planning Practice, POI, Visualization]
 image: "caz_cover.jpg"
 title-block-banner: "caz_dark.png"
 page-layout: full
@@ -25,7 +20,9 @@ page-layout: full
 format:
   html:
     toc: true
-    toc-depth: 3
+    toc-depth: 2
+    fig-cap-location: bottom
+    lightbox: true
     toc-float:
       collapsed: false
       smooth-scroll: true
@@ -42,60 +39,46 @@ format:
 </style>
 ```
 
-::: callout-tip
-## PROJECT BRIEF
+::: {.callout-note .project-context}
+## Research context
 
-Utilizing the concept of entropy, the project aims to quantify the level of functional diversity within different areas of the city. By leveraging a dataset consisting of 300,000 points of interest (POI) from Dianping and office and residential POI data from Anjuke, the project assigns weights to these locations based on their respective scores. These scores indicate the areas with the highest spatial composition within the city. Typically, these dynamic places are considered the most vibrant and active within the urban landscape, reflecting a high degree of functional compounding.
-
--   [Liu L., Liu Z. “The Recognition of CAZ in Shanghai Based on Evaluated POI.” In: Shen Z., Li M. (eds) Big Data Support of Urban Planning and Management, Advances in Geographic Information Science. Springer, Cham.](https://link.springer.com/chapter/10.1007/978-3-319-51929-6_6)
-
+**Research during my planning practice at the China Academy of Urban Planning and Design**<br>
+I developed this study with Zhuqing Liu during my CAUPD period, before CitoryTech. It uses Shanghai POI data from August 2016; the related [Springer book chapter](../../papers/#central-activity-zones) was published in 2018.
 :::
 
-# The Idea
----
+# Planning question {#the-idea}
 
-Utilizing the concept of entropy, the project aims to quantify the level of functional diversity within different areas of the city. By leveraging a dataset consisting of 300,000 points of interest (POI) from Dianping and office and residential POI data from Anjuke, the project assigns weights to these locations based on their respective scores. These scores indicate the areas with the highest spatial composition within the city. Typically, these dynamic places are considered the most vibrant and active within the urban landscape, reflecting a high degree of functional compounding.
+How can a city identify a central activity zone where several urban functions overlap? This study examined both the intensity and diversity of activities in Shanghai, using evaluated points of interest to compare potential boundaries rather than relying on a single concentration of offices or shops.
 
-<img src="caz_cover.jpg" style="width: 100%;">
+![Overview of the proposed central activity zones in Shanghai.](caz_cover.jpg){fig-alt="Shanghai Central Activity Zone analysis overview." loading="lazy"}
 
-# Dataset
----
+# Dataset {#dataset}
 
-I utilize a diverse dataset to analyze and identify the Central Activities Zone (CAZ) in Shanghai. This dataset primarily comprises Points of Interest (POI), which include various urban elements like retail outlets, catering services, office spaces, leisure, cultural, and recreational facilities. These POIs are crucial in determining the functional mixture of different urban areas, which in turn helps in recognizing and delineating the CAZ. The dataset's depth and variety allow for a comprehensive analysis of urban dynamics and the multifunctional nature of Shanghai's central areas. Updated to August in 2016, this project has captured a total number of 386,628 POI records within the outer ring of downtown Shanghai. 
+The analysis assembled **386,628 POI records** within Shanghai's outer ring, updated to **August 2016**. Sources included Dianping and Anjuke. Records were organized into six categories: retail, catering, office, recreation, leisure, and culture. Available attributes, including ratings and prices, supported the evaluation of individual places.
 
-<img src="caz_data.png" style="width: 100%;">
+![POI distribution and categories used in the Shanghai analysis.](caz_data.png){fig-alt="Points of interest used to analyze Shanghai's central activities." loading="lazy"}
 
-# Method
----
+# Method {#method}
 
-The research method for recognizing Central Activities Zones (CAZ) in Shanghai based on evaluated POI data involves several steps:
+The method combines two dimensions of functional mixture:
 
-Dataset Preparation: Utilizes a dataset of Points of Interest (POI) in Shanghai. The data includes various attributes like shop ID, score, category, and average price.
+1. **Intensity:** normalize and aggregate category-specific value maps to locate concentrations of activity.
+2. **Diversity:** overlay the category maps to identify places where several functions intersect, using entropy to characterize functional mixture.
 
-Category Reclassification: Involves regrouping the vast number of POI categories into six general categories: retail, catering, office, recreation, leisure, and culture. This reclassification considers the diversity inherent in CAZs.
+![Aggregated functional values across Shanghai, with the core area enlarged.](caz_value_agg.png){fig-alt="Shanghai value-aggregation map and an enlarged central area." loading="lazy"}
 
-Calibration of Mixture: This step focuses on measuring the degree of functional mixture within areas, which is a key characteristic of CAZs. It involves two dimensions: volume and diversity. The process includes:
+![Functional intersections across Shanghai, with details for Lujiazui, Nanjing Road, and Zhongshan Park.](caz_function_intersection.png){fig-alt="Functional-intersection map with three detailed Shanghai locations." loading="lazy"}
 
-Value Aggregation Map: Normalizing and aggregating heat maps for each category to represent the intensity of functions.
-Function Intersection Map: Identifying areas with diverse functions by overlaying processed heat maps and classifying places based on the number of overlapping functions.
-The research aims to identify dynamic and functionally diverse areas in Shanghai that could be recognized as CAZs.
+![Combined functional values, mixture contours, and the fourteen leading mixed-use areas within the middle ring.](caz_compiled.png){fig-alt="Combined functional-mixture maps and fourteen selected Shanghai areas." loading="lazy"}
 
-<img src="caz_value_agg.png" style="width: 100%;">
-Value aggregation map of Shanghai (left), the magnified core area (top right)
+# Comparing candidate zones {#finding-the-most-dynamic-areas}
 
-<img src="caz_function_intersection.png" style="width: 100%;">
-Function intersection map of Shanghai (left), and magnified three places: Lujiazui (top), Nanjing Road (middle), Zhongshan Park (bottom)
+Combining intensity and diversity identified areas with substantial activity across multiple functions. The analysis highlighted **fourteen mixed-use areas** within the middle ring and used them to explore alternative definitions of the central activity zone. The maps characterize the POI mix; they do not directly measure pedestrian activity or social life.
 
-<img src="caz_compiled.png" style="width: 100%;">
-The heat map of compiled functions (left) and the contour map of mixture degree (right) and the top 14 mixed-use districts within middle ring of Shanghai
+![Selected areas with high functional intensity and diversity.](caz_top_dynamic.png){fig-alt="Selected mixed-use activity concentrations in Shanghai." loading="lazy"}
 
-# Finding the most dynamic areas
----
+![Three scenarios for defining Shanghai's central activity zone boundary.](caz_scenarios.png){fig-alt="Three alternative Central Activity Zone boundaries for Shanghai." loading="lazy"}
 
-The study identifies the most dynamic areas in Shanghai based on the aggregation and intersection maps created from evaluated POI data. These maps enabled the researchers to determine places with large overall value and multiple functions.
+# Publication
 
-<img src="caz_top_dynamic.png" style="width: 100%;">
-
-As for the original target of this project, we demonstrate three possible scenarios for defining the CAZ boundary in Shanghai.
-
-<img src="caz_scenarios.png" style="width: 100%;">
+Liu, L., & Liu, Z. **The Recognition of CAZ in Shanghai Based on Evaluated POI.** In Z. Shen & M. Li (Eds.), *Big Data Support of Urban Planning and Management*. Springer. [Chapter](https://link.springer.com/chapter/10.1007/978-3-319-51929-6_6) · [Publication entry](../../papers/#central-activity-zones).

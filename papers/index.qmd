@@ -42,6 +42,7 @@ h3.sub-heading {
   border-bottom: 1px solid #f1f5f9;
 }
 .pub-entry:last-child { border-bottom: none; }
+.pub-entry[id] { scroll-margin-top: 6rem; }
 
 .pub-year {
   min-width: 2.5rem;
@@ -194,7 +195,7 @@ For the most up-to-date list, see my <a href="https://www.dropbox.com/scl/fo/ghr
 ### Peer-Reviewed Articles {.sub-heading}
 
 ```{=html}
-<div class="pub-entry">
+<div class="pub-entry" id="mingle">
   <div class="pub-year">2026</div>
   <div class="pub-body">
     <div class="pub-title">MINGLE: VLMs for Semantically Complex Region Detection</div>
@@ -204,7 +205,7 @@ For the most up-to-date list, see my <a href="https://www.dropbox.com/scl/fo/ghr
   </div>
 </div>
 
-<div class="pub-entry">
+<div class="pub-entry" id="nyc-foot-traffic">
   <div class="pub-year">2026</div>
   <div class="pub-body">
     <div class="pub-title">Spatial Distribution of Foot Traffic in New York City and Applications for Urban Planning</div>
@@ -214,7 +215,7 @@ For the most up-to-date list, see my <a href="https://www.dropbox.com/scl/fo/ghr
   </div>
 </div>
 
-<div class="pub-entry">
+<div class="pub-entry" id="regional-boundaries">
   <div class="pub-year">2026</div>
   <div class="pub-body">
     <div class="pub-title">Reconceptualizing Regional Boundaries: Depicting Blurred Regions in China through Individual Mobility Data</div>
@@ -254,7 +255,7 @@ For the most up-to-date list, see my <a href="https://www.dropbox.com/scl/fo/ghr
   </div>
 </div>
 
-<div class="pub-entry">
+<div class="pub-entry" id="clarity-or-confusion">
   <div class="pub-year">2024</div>
   <div class="pub-body">
     <div class="pub-title">Clarity or Confusion: A Review of Computer Vision Street Attributes in Urban Studies and Planning</div>
@@ -264,7 +265,7 @@ For the most up-to-date list, see my <a href="https://www.dropbox.com/scl/fo/ghr
   </div>
 </div>
 
-<div class="pub-entry">
+<div class="pub-entry" id="urban-infrastructure">
   <div class="pub-year">2022</div>
   <div class="pub-body">
     <div class="pub-title">An Urban Infrastructure Assessment System Built on Geo-Tagged Images and Machine Learning</div>
@@ -284,7 +285,7 @@ For the most up-to-date list, see my <a href="https://www.dropbox.com/scl/fo/ghr
   </div>
 </div>
 
-<div class="pub-entry">
+<div class="pub-entry" id="urban-perceptions">
   <div class="pub-year">2018</div>
   <div class="pub-body">
     <div class="pub-title">Measuring Human Perceptions of a Large-Scale Urban Region Using Machine Learning</div>
@@ -294,7 +295,7 @@ For the most up-to-date list, see my <a href="https://www.dropbox.com/scl/fo/ghr
   </div>
 </div>
 
-<div class="pub-entry">
+<div class="pub-entry" id="streetalk">
   <div class="pub-year">2018</div>
   <div class="pub-body">
     <div class="pub-title">STREETALK: A Navigation System for Pedestrians and Cyclists</div>
@@ -304,7 +305,7 @@ For the most up-to-date list, see my <a href="https://www.dropbox.com/scl/fo/ghr
   </div>
 </div>
 
-<div class="pub-entry">
+<div class="pub-entry" id="street-greenery">
   <div class="pub-year">2017</div>
   <div class="pub-body">
     <div class="pub-title">How Green Are the Streets? An Analysis for Central Areas of Chinese Cities Using Tencent Street View</div>
@@ -314,7 +315,7 @@ For the most up-to-date list, see my <a href="https://www.dropbox.com/scl/fo/ghr
   </div>
 </div>
 
-<div class="pub-entry">
+<div class="pub-entry" id="c-image">
   <div class="pub-year">2016</div>
   <div class="pub-body">
     <div class="pub-title">C-IMAGE: City Cognitive Mapping through Geo-Tagged Photos</div>
@@ -324,7 +325,7 @@ For the most up-to-date list, see my <a href="https://www.dropbox.com/scl/fo/ghr
   </div>
 </div>
 
-<div class="pub-entry">
+<div class="pub-entry" id="city-identity">
   <div class="pub-year">2014</div>
   <div class="pub-body">
     <div class="pub-title">Recognizing City Identity via Attribute Analysis of Geo-Tagged Images</div>
@@ -338,7 +339,7 @@ For the most up-to-date list, see my <a href="https://www.dropbox.com/scl/fo/ghr
 ### Book Chapters {.sub-heading}
 
 ```{=html}
-<div class="pub-entry">
+<div class="pub-entry" id="central-activity-zones">
   <div class="pub-year">2018</div>
   <div class="pub-body">
     <div class="pub-title">The Recognition of CAZ in Shanghai Based on Evaluated POI</div>
@@ -361,7 +362,7 @@ For the most up-to-date list, see my <a href="https://www.dropbox.com/scl/fo/ghr
   </div>
 </div>
 
-<div class="pub-entry">
+<div class="pub-entry" id="sidewalk-social-life-framework">
   <div class="pub-year">2026</div>
   <div class="pub-body">
     <div class="pub-title">A Vision-Language Framework for Measuring Social Life on Sidewalks</div>
@@ -376,7 +377,7 @@ For the most up-to-date list, see my <a href="https://www.dropbox.com/scl/fo/ghr
 
 ```{=html}
 
-<div class="pub-entry">
+<div class="pub-entry" id="stay-together">
   <div class="pub-year">2026</div>
   <div class="pub-body">
     <div class="pub-title">Stay Together: Street-Level Social Indicators for Sidewalk Life Across 496 U.S. Cities</div>
@@ -386,7 +387,7 @@ For the most up-to-date list, see my <a href="https://www.dropbox.com/scl/fo/ghr
   </div>
 </div>
 
-<div class="pub-entry">
+<div class="pub-entry" id="sidewalk-moments">
   <div class="pub-year">2026</div>
   <div class="pub-body">
     <div class="pub-title">Sidewalk Moments: Are Richer Representations Always More Human-Aligned? Evidence from City-Walk Videos</div>
@@ -395,7 +396,7 @@ For the most up-to-date list, see my <a href="https://www.dropbox.com/scl/fo/ghr
     <div class="pub-links"><a href="https://arxiv.org/abs/2607.20903">arXiv</a><a href="../projects/sidewalk_moments/">Project</a></div>
   </div>
 </div>
-<div class="pub-entry">
+<div class="pub-entry" id="walkocc">
   <div class="pub-year">2026</div>
   <div class="pub-body">
     <div class="pub-title">Monocular 3D Occupancy Perception for Robots on Sidewalks via Hybrid 2D–3D Learning</div>
@@ -448,7 +449,7 @@ For the most up-to-date list, see my <a href="https://www.dropbox.com/scl/fo/ghr
   </div>
 </div>
 
-<div class="pub-entry">
+<div class="pub-entry" id="beijing-tod">
   <div class="pub-year">2020</div>
   <div class="pub-body">
     <div class="pub-title">Assessing Physical Environment of TOD Communities around Metro Stations: Using Big Data and Machine Learning</div>

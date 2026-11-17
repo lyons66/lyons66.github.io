@@ -8,8 +8,9 @@
 
 <meta name="author" content="Liu Liu">
 <meta name="author" content="Bolei Zhou">
+<meta name="description" content="MIT master’s research mapping the city as represented in geotagged photographs, with related GeoJournal and ECCV publications.">
 
-<title>C-IMAGE Project – Liu Liu</title>
+<title>C-IMAGE – Liu Liu</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -46,6 +47,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-3a2f58de107bfa6a176889d393f2f250.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../../site_libs/quarto-contrib/iconify-1.0.8/iconify-icon.min.js"></script>
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -149,8 +153,8 @@ background-size: cover;
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-left">
-      <h1 class="title">C-IMAGE Project</h1>
-            <p class="subtitle lead">Understanding Human Perceptions through Geo-tagged Images</p>
+      <h1 class="title">C-IMAGE</h1>
+            <p class="subtitle lead">Mapping the city through geotagged photographs</p>
                                 <div class="quarto-categories">
                 <div class="quarto-category">Independent Research</div>
                 <div class="quarto-category">Master's Thesis</div>
@@ -164,7 +168,7 @@ background-size: cover;
   <div class="quarto-title-meta column-page-left">
 
       <div>
-      <div class="quarto-title-meta-heading">Main Researchers</div>
+      <div class="quarto-title-meta-heading">Research team</div>
       <div class="quarto-title-meta-contents">
                <p>Liu Liu <a href="https://orcid.org/0000-0003-0100-9763" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
                <p>Bolei Zhou </p>
@@ -172,7 +176,7 @@ background-size: cover;
     </div>
       
       <div>
-      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-heading">Thesis date</div>
       <div class="quarto-title-meta-contents">
         <p class="date">May, 2014</p>
       </div>
@@ -189,14 +193,15 @@ background-size: cover;
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
-  <ul>
-  <li><a href="#interactive-maps" id="toc-interactive-maps" class="nav-link active" data-scroll-target="#interactive-maps"># Interactive Maps</a></li>
-  <li><a href="#the-idea" id="toc-the-idea" class="nav-link" data-scroll-target="#the-idea"># The Idea</a></li>
-  <li><a href="#data-processing" id="toc-data-processing" class="nav-link" data-scroll-target="#data-processing"># Data Processing</a></li>
-  <li><a href="#scene-classification" id="toc-scene-classification" class="nav-link" data-scroll-target="#scene-classification"># Scene Classification</a></li>
-  <li><a href="#mapping-the-perceptions" id="toc-mapping-the-perceptions" class="nav-link" data-scroll-target="#mapping-the-perceptions"># Mapping the Perceptions</a></li>
-  <li><a href="#other-cases" id="toc-other-cases" class="nav-link" data-scroll-target="#other-cases"># Other Cases</a></li>
-  <li><a href="#demo-video" id="toc-demo-video" class="nav-link" data-scroll-target="#demo-video"># Demo Video</a></li>
+  <ul class="collapse">
+  <li><a href="#the-idea" id="toc-the-idea" class="nav-link active" data-scroll-target="#the-idea">Research question</a></li>
+  <li><a href="#data-processing" id="toc-data-processing" class="nav-link" data-scroll-target="#data-processing">Data and processing</a></li>
+  <li><a href="#scene-classification" id="toc-scene-classification" class="nav-link" data-scroll-target="#scene-classification">Scene classification</a></li>
+  <li><a href="#mapping-the-perceptions" id="toc-mapping-the-perceptions" class="nav-link" data-scroll-target="#mapping-the-perceptions">Mapping the photographed city</a></li>
+  <li><a href="#other-cases" id="toc-other-cases" class="nav-link" data-scroll-target="#other-cases">More detailed categories</a></li>
+  <li><a href="#interactive-maps" id="toc-interactive-maps" class="nav-link" data-scroll-target="#interactive-maps">Interactive maps</a></li>
+  <li><a href="#demo-video" id="toc-demo-video" class="nav-link" data-scroll-target="#demo-video">Demonstration</a></li>
+  <li><a href="#publications-and-related-work" id="toc-publications-and-related-work" class="nav-link" data-scroll-target="#publications-and-related-work">Publications and related work</a></li>
   </ul>
 </nav>
     </div>
@@ -213,58 +218,86 @@ background-size: cover;
   height: 200px;
 }
 </style>
-<div class="callout callout-style-default callout-tip callout-titled">
+<div class="project-context callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>PROJECT BRIEF
+<span class="screen-reader-only">Note</span>Research context
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>This project originated from <strong>my master’s thesis at MIT</strong>, which involved the collection of millions of photos from 26 cities. The objective was to utilize deep learning techniques to conduct scene recognition on these images. By categorizing the data and plotting the seven critical perceptions, the resulting perceptional maps provide insights into how inhabitants perceive their living environment within each city.</p>
-<ul>
-<li><p><a href="https://link.springer.com/article/10.1007/s10708-016-9739-6">Liu, L., Zhou, B., Zhao, J., &amp; Ryan, B. D. “C-IMAGE: city cognitive mapping through geo-tagged photos” GeoJournal, 81(6), 817-861.</a></p></li>
-<li><p><a href="https://link.springer.com/content/pdf/10.1007/978-3-319-10578-9_34.pdf">Zhou, B., Liu, L., Oliva, A., &amp; Torralba, A. “Recognizing city identity via attribute analysis of geo-tagged images” European conference on computer vision (pp.&nbsp;519-534).</a></p></li>
-</ul>
+<p><strong>MIT master’s thesis and related research</strong><br> I developed C-IMAGE to study the city as represented in geotagged photographs, working with Bolei Zhou on image analysis. The work led to papers in <a href="../../papers/#c-image"><em>GeoJournal</em></a> and at <a href="../../papers/#city-identity">ECCV</a>.</p>
 </div>
 </div>
-<section id="interactive-maps" class="level2">
-<h2 class="anchored" data-anchor-id="interactive-maps"># Interactive Maps</h2>
-<p>Below are interactive maps of the original C-IMAGE cities (recovered from my archive): <a href="./amsterdam/index.html">Amsterdam</a>, <a href="./bangkok/index.html">Bangkok</a>, <a href="./barcelona/index.html">Barcelona</a>, <a href="./beijing/index.html">Beijing</a>, <a href="./hongkong/index.html">Hong Kong</a>, <a href="./kuala_lumpur/index.html">Kuala Lumpur</a>, <a href="./london/index.html">London</a>, <a href="./new_delhi/index.html">New Delhi</a>, <a href="./new_york/index.html">New York</a>, <a href="./paris/index.html">Paris</a>, <a href="./prague/index.html">Prague</a>, <a href="./san_francisco/index.html">San Francisco</a>, <a href="./seoul/index.html">Seoul</a>, <a href="./shanghai/index.html">Shanghai</a>, <a href="./singapore/index.html">Singapore</a>, <a href="./tokyo/index.html">Tokyo</a>, <a href="./toronto/index.html">Toronto</a>, <a href="./vienna/index.html">Vienna</a>, <a href="./zurich/index.html">Zurich</a></p>
+<section id="the-idea" class="level1">
+<h1>Research question</h1>
+<p>What can photographs reveal about the places people choose to record? Building on Kevin Lynch’s study of the image of the city, C-IMAGE used scene recognition to map recurring features in user-contributed photographs across <strong>26 cities</strong>. These maps describe the photographed city: they reflect contributors’ choices and platform coverage, rather than a representative survey of residents’ perceptions.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="cimage_cover.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="C-IMAGE compares the spatial distribution of scenes represented in geotagged photographs."><img src="cimage_cover.jpg" class="img-fluid figure-img" loading="lazy" alt="Overview of the C-IMAGE city-image mapping project."></a></p>
+<figcaption>C-IMAGE compares the spatial distribution of scenes represented in geotagged photographs.</figcaption>
+</figure>
+</div>
 </section>
-<section id="the-idea" class="level2">
-<h2 class="anchored" data-anchor-id="the-idea"># The Idea</h2>
-<p>Half a century ago, Kevin Lynch’s City Image project provided a collaborative depiction of the “perceived city” by gathering input from the public through a method called “mental mapping.” Now, with the power of computer vision and the ability to leverage crowd-sourced geo-tagged photos, we can explore whether we can detect people’s sentiments towards their physical living environment. By analyzing these images using computer vision algorithms, we aim to gain insights into how individuals feel about their surroundings and further enhance our understanding of urban landscapes.</p>
-<p><img src="cimage_cover.jpg" style="width: 100%"></p>
+<section id="data-processing" class="level1">
+<h1>Data and processing</h1>
+<p>Photographs and geographic coordinates were collected through the Panoramio and Flickr APIs. The broader collection reached approximately <strong>30 million images</strong>. Coordinates linked image classifications to locations, allowing visual patterns to be compared within and across cities.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="cimage1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Workflow for collecting and processing geotagged photographs."><img src="cimage1.jpg" class="img-fluid figure-img" loading="lazy" alt="C-IMAGE data-collection and image-processing workflow."></a></p>
+<figcaption>Workflow for collecting and processing geotagged photographs.</figcaption>
+</figure>
+</div>
 </section>
-<section id="data-processing" class="level2">
-<h2 class="anchored" data-anchor-id="data-processing"># Data Processing</h2>
-<p>The download of the Panoramio geo-tagged images are through Pranoramio data API and Flickr API.</p>
-<p><img src="cimage1.jpg" style="width: 100%"></p>
+<section id="scene-classification" class="level1">
+<h1>Scene classification</h1>
+<p>The project used <a href="http://places.csail.mit.edu/">Places scene-recognition models</a> to classify image content into <strong>102 attributes</strong>. Classes relevant to public space were then organized into seven broader visual categories for mapping. This translated a large image collection into a smaller set of interpretable spatial layers.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="cimage2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Scene categories used to describe the content of the photo collection."><img src="cimage2.jpg" class="img-fluid figure-img" loading="lazy" alt="Examples of image classifications in the C-IMAGE project."></a></p>
+<figcaption>Scene categories used to describe the content of the photo collection.</figcaption>
+</figure>
+</div>
 </section>
-<section id="scene-classification" class="level2">
-<h2 class="anchored" data-anchor-id="scene-classification"># Scene Classification</h2>
-<p>The images are classified based on <a href="http://places.csail.mit.edu/">Places 365</a>. For this study, I selected Panoramio and, subsequently, Flickr as the primary sources for data collection. Approximately 30 million photographs were gathered by the completion of the project. The geographical spread of these photos offers a unique perspective, allowing for a comparison with the urban image as conceptualized by Kevin Lynch, which was derived from a multitude of cognitive maps.</p>
-<p><img src="cimage2.jpg" style="width: 100%"></p>
+<section id="mapping-the-perceptions" class="level1">
+<h1>Mapping the photographed city</h1>
+<p>Mapping these categories reveals where different parts of a city’s public image are concentrated. For example, comparing greenery-related photographs in Shanghai and Tokyo provides a way to examine differences in the places represented in each collection. Such comparisons need to account for uneven photography and platform use.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="cimage3.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Spatial patterns in the seven visual categories across selected cities."><img src="cimage3.jpg" class="img-fluid figure-img" loading="lazy" alt="City maps showing the distribution of C-IMAGE visual categories."></a></p>
+<figcaption>Spatial patterns in the seven visual categories across selected cities.</figcaption>
+</figure>
+</div>
 </section>
-<section id="mapping-the-perceptions" class="level2">
-<h2 class="anchored" data-anchor-id="mapping-the-perceptions"># Mapping the Perceptions</h2>
-<p>After being processed through scene recognition, currently called Places365, the photos were categorized into 102 attributes. I subsequently conducted a reclassification, streamlining the images to form a generalized portrayal of the city’s public image. This led to retaining only those scenes that are associated with public spaces.</p>
-<p>By retaining only seven critical perceptions and plotting them on city maps, we can observe varying city patterns that truly reflect what the inhabitants “see.” This approach allows for fascinating discoveries that can be evaluated qualitatively and quantitatively. For instance, a comparison can be made between the perception of green spaces in Shanghai and Tokyo.</p>
-<p><img src="cimage3.jpg" style="width: 100%"></p>
+<section id="other-cases" class="level1">
+<h1>More detailed categories</h1>
+<p>The same workflow can support finer classifications. In a subsequent application, the greenery category was divided into seven subcategories to distinguish different forms of green-space imagery.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="cimage4.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="A more detailed classification of greenery-related scenes."><img src="cimage4.jpg" class="img-fluid figure-img" loading="lazy" alt="C-IMAGE application separating greenery into more specific visual categories."></a></p>
+<figcaption>A more detailed classification of greenery-related scenes.</figcaption>
+</figure>
+</div>
 </section>
-<section id="other-cases" class="level2">
-<h2 class="anchored" data-anchor-id="other-cases"># Other Cases</h2>
-<p>This method is highly replicable and has been employed in various real-world projects following a relatively fixed procedure. Additionally, the critical perceptions can be broken down into more specific categories. For instance, I divided the green perception into seven sub-elements, which led to discoveries.</p>
-<p><img src="cimage4.jpg" style="width: 100%"></p>
+<section id="interactive-maps" class="level1">
+<h1>Interactive maps</h1>
+<p>The original interactive maps have been recovered from my archive:</p>
+<p><a href="./amsterdam/index.html">Amsterdam</a>, <a href="./bangkok/index.html">Bangkok</a>, <a href="./barcelona/index.html">Barcelona</a>, <a href="./beijing/index.html">Beijing</a>, <a href="./hongkong/index.html">Hong Kong</a>, <a href="./kuala_lumpur/index.html">Kuala Lumpur</a>, <a href="./london/index.html">London</a>, <a href="./new_delhi/index.html">New Delhi</a>, <a href="./new_york/index.html">New York</a>, <a href="./paris/index.html">Paris</a>, <a href="./prague/index.html">Prague</a>, <a href="./san_francisco/index.html">San Francisco</a>, <a href="./seoul/index.html">Seoul</a>, <a href="./shanghai/index.html">Shanghai</a>, <a href="./singapore/index.html">Singapore</a>, <a href="./tokyo/index.html">Tokyo</a>, <a href="./toronto/index.html">Toronto</a>, <a href="./vienna/index.html">Vienna</a>, <a href="./zurich/index.html">Zurich</a>.</p>
 </section>
-<section id="demo-video" class="level2">
-<h2 class="anchored" data-anchor-id="demo-video"># Demo Video</h2>
-<p>Below is a demo video showing the distribution of image classification results in Shenzhen.</p>
+<section id="demo-video" class="level1">
+<h1>Demonstration</h1>
+<p>The video shows the spatial distribution of image-classification results in Shenzhen.</p>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/5u-fNXwi7AY" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<p><a href="../../visualization/#project-visualizations">Explore more project visualizations</a>.</p>
+</section>
+<section id="publications-and-related-work" class="level1">
+<h1>Publications and related work</h1>
+<ul>
+<li>Liu, L., Zhou, B., Zhao, J., &amp; Ryan, B. D. <strong>C-IMAGE: City Cognitive Mapping through Geo-Tagged Photos.</strong> <em>GeoJournal</em>. <a href="https://link.springer.com/article/10.1007/s10708-016-9739-6">Paper</a> · <a href="../../papers/#c-image">Publication entry</a>.</li>
+<li>Zhou, B., Liu, L., Oliva, A., &amp; Torralba, A. <strong>Recognizing City Identity via Attribute Analysis of Geo-Tagged Images.</strong> <em>European Conference on Computer Vision</em>, 519–534. <a href="https://link.springer.com/content/pdf/10.1007/978-3-319-10578-9_34.pdf">Paper</a> · <a href="../../papers/#city-identity">Publication entry</a>.</li>
+<li><a href="../../visualization/#project-visualizations">More project visualizations</a>.</li>
+</ul>
 
 
 </section>
@@ -684,6 +717,38 @@ background-size: cover;
 </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      }
+    });
+
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+
+  };
+
+})();
+          </script>
 
 
 

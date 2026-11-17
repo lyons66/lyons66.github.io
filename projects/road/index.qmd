@@ -4,7 +4,9 @@ subtitle: "Computer vision and a citywide maintenance-monitoring platform"
 description: "A World Bank-supported municipal project assessing road and sidewalk assets from geo-tagged street imagery across Ulaanbaatar."
 date: "Oct 2021"
 date-format: "MMM, YYYY"
-author-title: "Project Team"
+language:
+  title-block-published: "Project date"
+author-title: "Project team"
 author:
   - name: Liu Liu
     orcid: 0000-0003-0100-9763
@@ -18,7 +20,9 @@ page-layout: full
 format:
   html:
     toc: true
-    toc-depth: 3
+    toc-depth: 2
+    fig-cap-location: bottom
+    lightbox: true
     toc-float:
       collapsed: false
       smooth-scroll: true
@@ -35,11 +39,11 @@ format:
 </style>
 ```
 
-::: {.callout-note}
+::: {.callout-note .project-context}
 ## Project context
 
-**Commissioned applied research for the Ulaanbaatar municipal government within a World Bank-supported infrastructure program**<br>
-My role: Project lead at CitoryTech, responsible for the analytical approach, system development, and delivery.
+**CitoryTech commission for the Ulaanbaatar municipal government** · World Bank-supported infrastructure program<br>
+**My role:** Project lead at CitoryTech, responsible for the analytical approach, system development, and delivery. The work led to a [2022 article in *Computational Urban Science*](../../papers/#urban-infrastructure).
 :::
 
 # The decision problem
@@ -54,7 +58,7 @@ The World Bank introduced our team to the municipal client. I led the project th
 
 This format allowed staff to move from a citywide overview to individual locations rather than relying on a single aggregate score. The analytical output was designed to support maintenance prioritization, reporting, and targeted field verification.
 
-<img src="road_cover.jpg" style="width: 100%; margin: 1.2rem 0;">
+![The monitoring platform links road-segment condition indicators to the underlying street imagery.](road_cover.jpg){fig-alt="Ulaanbaatar road-asset monitoring interface and image-level assessment examples." loading="lazy"}
 
 # Method and limitations
 
@@ -65,6 +69,8 @@ The model's coverage was limited to the asset categories represented in the trai
 # Publication
 
 > Zhang, D., Yi, H., Chen, Y., Jiang, N., Shao, J., & Liu, L. (2022). "An Urban Infrastructure Assessment System Built on Geo-Tagged Images and Machine Learning." *Computational Urban Science*, 2(1), 1–21. [Paper](https://doi.org/10.1007/s43762-022-00056-9)
+
+[Publication entry](../../papers/#urban-infrastructure).
 
 # Platform demonstrations
 

@@ -1,6 +1,19 @@
-/* Local layouts for Seeing HAI. All photographs retain their source framing. */
+/* Local layouts for the dissertation project. All photographs retain their source framing. */
 html { scroll-behavior: auto !important; }
 #title-block-header .quarto-title-banner { background-position: 50% 45%; }
+#title-block-header .quarto-title-banner .subtitle {
+  margin-top: 0.8rem;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+#title-block-header .project-tagline,
+#title-block-header .former-project-title { display: block;   line-height: 1.5;
+}
+#title-block-header .former-project-title {
+  margin-top: 0.6rem;
+  font-size: 0.85rem;
+}
 #quarto-document-content section,
 #quarto-document-content :is(h1, h2, h3, h4),
 .anchor-alias { scroll-margin-top: 5rem; }
@@ -83,3 +96,6 @@ html { scroll-behavior: auto !important; }
   #quarto-document-content .measurement-table th,
   #quarto-document-content .measurement-table td { padding: 0.5rem 0.35rem; }
 }
+
+#title-block-header .former-project-title strong { font-weight: 700; }
+#title-block-header .former-project-title em { font-style: italic; }

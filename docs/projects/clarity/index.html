@@ -47,6 +47,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-3a2f58de107bfa6a176889d393f2f250.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../../site_libs/quarto-contrib/iconify-1.0.8/iconify-icon.min.js"></script>
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -151,7 +154,7 @@ background-size: cover;
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-left">
       <h1 class="title">Clarity or Confusion</h1>
-            <p class="subtitle lead">A Review of Computer Vision Street Attributes in Urban Studies and Planning</p>
+            <p class="subtitle lead">A review of computer vision street attributes in urban studies and planning</p>
                   <div>
         <div class="description">
           A systematic review of 146 papers and 104 CV-driven street attributes, published in Cities. The study that mapped the field before my dissertation set out to extend it.
@@ -170,7 +173,7 @@ background-size: cover;
   <div class="quarto-title-meta column-page-left">
 
       <div>
-      <div class="quarto-title-meta-heading">Main Researchers</div>
+      <div class="quarto-title-meta-heading">Research team</div>
       <div class="quarto-title-meta-contents">
                <p>Liu Liu <a href="https://orcid.org/0000-0003-0100-9763" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
                <p>Andres Sevtsuk </p>
@@ -178,7 +181,7 @@ background-size: cover;
     </div>
       
       <div>
-      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-heading">Research date</div>
       <div class="quarto-title-meta-contents">
         <p class="date">Jul, 2024</p>
       </div>
@@ -195,11 +198,11 @@ background-size: cover;
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
-  <ul>
-  <li><a href="#the-question" id="toc-the-question" class="nav-link active" data-scroll-target="#the-question">The Question</a></li>
-  <li><a href="#what-the-review-covers" id="toc-what-the-review-covers" class="nav-link" data-scroll-target="#what-the-review-covers">What the Review Covers</a></li>
-  <li><a href="#key-findings" id="toc-key-findings" class="nav-link" data-scroll-target="#key-findings">Key Findings</a></li>
-  <li><a href="#related-material" id="toc-related-material" class="nav-link" data-scroll-target="#related-material">Related Material</a></li>
+  <ul class="collapse">
+  <li><a href="#the-question" id="toc-the-question" class="nav-link active" data-scroll-target="#the-question">Research question</a></li>
+  <li><a href="#what-the-review-covers" id="toc-what-the-review-covers" class="nav-link" data-scroll-target="#what-the-review-covers">Review scope</a></li>
+  <li><a href="#key-findings" id="toc-key-findings" class="nav-link" data-scroll-target="#key-findings">Findings</a></li>
+  <li><a href="#related-material" id="toc-related-material" class="nav-link" data-scroll-target="#related-material">Related materials</a></li>
   </ul>
 </nav>
     </div>
@@ -216,7 +219,7 @@ background-size: cover;
   height: 200px;
 }
 </style>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="project-context callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -226,35 +229,16 @@ background-size: cover;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>Independent research at MIT, coauthored with my advisor Andres Sevtsuk</strong></p>
-<p>This review was my first research project after returning to academia — following my master’s degree, two years in industry, and six years running CitoryTech. Before committing to a dissertation direction, I wanted a systematic account of what computer vision had actually delivered to urban studies and planning. The gaps this review identified led directly to my dissertation, <a href="../seeing_hai/">Seeing HAI</a>.</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>PROJECT BRIEF
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Computer vision has made street-view imagery a standard data source in urban research, but what exactly these models measure — and how well those measurements serve planning questions — has remained poorly understood outside technical circles. Written for urban planning and design researchers without a computer vision background, this review systematically analyzes <strong>146 papers</strong> and catalogs <strong>104 CV-driven street attributes</strong>, then examines a subcollection of 24 papers to assess how these attributes perform inside quantitative urban studies.</p>
-<blockquote class="blockquote">
-<p>Liu, L., &amp; Sevtsuk, A. (2024). <strong>Clarity or Confusion: A Review of Computer Vision Street Attributes in Urban Studies and Planning.</strong> <em>Cities</em>, 150, 105022. <a href="https://doi.org/10.1016/j.cities.2024.105022">https://doi.org/10.1016/j.cities.2024.105022</a></p>
-</blockquote>
+<p><strong>Independent research at MIT with my advisor, Andres Sevtsuk</strong><br> This review examined what computer vision measures in urban studies and planning. Published in <a href="../../papers/#clarity-or-confusion"><em>Cities</em> in 2024</a>, it analyzes <strong>146 papers</strong> and <strong>104 street attributes</strong>, with a closer assessment of 24 quantitative studies. Its gaps in the measurement of human activities and interactions shaped my dissertation, <a href="../seeing_hai/">Sidewalk Ballet</a>.</p>
 </div>
 </div>
 <section id="the-question" class="level1">
-<h1>The Question</h1>
-<hr>
+<h1>Research question</h1>
 <p>The paper asks three related questions: What specific data can computer vision collect that interests planners and urban designers? How have planning researchers actually used these data? And what fundamentally new knowledge has computer vision contributed to planning?</p>
 <p>Traditional observation — the tradition of Whyte, Gehl, Lynch, and Jacobs — is rich but labor-intensive and hard to repeat across a city. Computer vision promises to extend the counting and mapping of street environments with far less effort. Whether that promise has translated into clear, well-defined measures is the question the title poses.</p>
 </section>
 <section id="what-the-review-covers" class="level1">
-<h1>What the Review Covers</h1>
-<hr>
+<h1>Review scope</h1>
 <p>A three-stage screening of the Web of Science identified 146 influential papers, from which we extracted and classified 104 distinct street attributes into four groups:</p>
 <ol type="1">
 <li><strong>Visual Dominants</strong> — large scene components such as greenery, sky, buildings, and roadways, mostly measured as pixel ratios from semantic segmentation.</li>
@@ -262,15 +246,24 @@ background-size: cover;
 <li><strong>Composite Metrics</strong> — indices assembled from multiple attributes, such as walkability, bikeability, and perception scores.</li>
 <li><strong>Deep Features</strong> — learned representations without direct physical definitions, used in perception and scene-comparison studies.</li>
 </ol>
-<p><img src="data_models.jpg" style="width: 100%;"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="data_models.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="The three data models behind CV street attributes: image classification, semantic segmentation, and object detection, each producing a different data type for urban analysis."><img src="data_models.jpg" class="img-fluid figure-img" loading="lazy" alt="Image classification, semantic segmentation, and object detection illustrated as three street-image data models."></a></p>
+<figcaption>The three data models behind CV street attributes: image classification, semantic segmentation, and object detection, each producing a different data type for urban analysis.</figcaption>
+</figure>
+</div>
 <p><em>The three data models behind CV street attributes: image classification, semantic segmentation, and object detection, each producing a different data type for urban analysis.</em></p>
 <p>The review then traces how these attributes flow into research topics — walkability, housing prices, health, climate, safety — across the quantitative studies that use them.</p>
-<p><img src="topic_attributes.png" style="width: 100%;"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="topic_attributes.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="How research topics (left) draw on CV-derived street attributes (right) across the reviewed literature. A small set of attributes, led by greenery, serves most topics."><img src="topic_attributes.png" class="img-fluid figure-img" loading="lazy" alt="Diagram linking urban research topics to computer-vision street attributes."></a></p>
+<figcaption>How research topics (left) draw on CV-derived street attributes (right) across the reviewed literature. A small set of attributes, led by greenery, serves most topics.</figcaption>
+</figure>
+</div>
 <p><em>How research topics (left) draw on CV-derived street attributes (right) across the reviewed literature. A small set of attributes, led by greenery, serves most topics.</em></p>
 </section>
 <section id="key-findings" class="level1">
-<h1>Key Findings</h1>
-<hr>
+<h1>Findings</h1>
 <p>Beyond the catalog itself, the review identifies three structural problems in the field:</p>
 <ul>
 <li><strong>Ambiguity of definitions.</strong> Many attributes lack clear, consistent definitions; the same term can denote different measurements across papers.</li>
@@ -278,14 +271,14 @@ background-size: cover;
 <li><strong>Unclear effectiveness.</strong> In the 24-paper subcollection, how much explanatory power street attributes add to urban models is often difficult to establish.</li>
 </ul>
 <p>Across the review, many different urban questions depend on a small family of readily extractable metrics, especially greenery. This creates a mismatch between what urbanists want to understand and what computer vision is equipped to measure. Human activities and interactions — central to classic observational studies of public life — remain weakly represented.</p>
-<p>The review calls for clearer definitions and standardized measurement. It also shaped the starting point for <a href="../seeing_hai/">Seeing HAI</a>, my dissertation: begin with an urban question, define the observable evidence it requires, and then develop the method to measure it.</p>
+<p>The review calls for clearer definitions and standardized measurement. It also shaped the starting point for <a href="../seeing_hai/">Sidewalk Ballet</a>, my dissertation: begin with an urban question, define the observable evidence it requires, and then develop the method to measure it.</p>
 </section>
 <section id="related-material" class="level1">
-<h1>Related Material</h1>
+<h1>Related materials</h1>
 <ul>
-<li><a href="../seeing_hai/">Seeing HAI, my dissertation research</a></li>
+<li><a href="../seeing_hai/">Sidewalk Ballet, my dissertation research</a></li>
 <li><a href="../mingle/">MINGLE, the group-detection method</a></li>
-<li><a href="../../papers/">Publications</a></li>
+<li><a href="https://doi.org/10.1016/j.cities.2024.105022">Published paper</a> · <a href="../../papers/#clarity-or-confusion">Publication entry</a></li>
 </ul>
 
 
@@ -706,6 +699,38 @@ background-size: cover;
 </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      }
+    });
+
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+
+  };
+
+})();
+          </script>
 
 
 

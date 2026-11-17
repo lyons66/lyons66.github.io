@@ -1,24 +1,19 @@
 ---
-title: "CityEye WeChat mini APP"
-subtitle: "Crowd sourcing photo collaboration for group field trip"
+title: "CityEye"
+subtitle: "Collaborative field photography through WeChat"
+description-meta: "An archived CitoryTech WeChat tool for collaborative field photography, image organization, and geographic analysis."
 date: "Jan 2018"
 date-format: "MMM, YYYY"
-# author: Liu Liu @ MIT
-author-title: "Main Researchers"
+language:
+  title-block-published: "Project date"
+author-title: "Project team"
 author:
   - name: Liu Liu
     orcid: 0000-0003-0100-9763
-#     email: lyons66@mit.edu
-    # affiliations:
-    #   - name: Massachusetts Institute of Technology
-#       - url: https://www.mit.edu/
   - name: Ding Zhang
-  - name: Jinxing Shao
-    # affiliations:
-    #   - name: test
-# affiliation-title: "AFFILIATION"
+  - name: Jinxin Shao
 
-categories: [computer vision, tools]
+categories: [Applied Practice, Field Surveys, Product Development]
 image: "cityeye_cover.jpg"
 title-block-banner: "cityeye_banner.png"
 page-layout: full
@@ -26,7 +21,9 @@ page-layout: full
 format:
   html:
     toc: true
-    toc-depth: 3
+    toc-depth: 2
+    fig-cap-location: bottom
+    lightbox: true
     toc-float:
       collapsed: false
       smooth-scroll: true
@@ -43,26 +40,29 @@ format:
 </style>
 ```
 
+::: {.callout-note .project-context}
+## Project context
 
-::: callout-tip
-## PROJECT BRIEF
-
-CityEye is a WeChat mini application specifically designed for group field trips. Currently, it caters to a user base of over 10,000 individuals, primarily consisting of design background students and planners. This innovative urban photo survey tool integrates various functionalities, including image collection, recognition, and data analysis. By combining these features, CityEye facilitates the efficient gathering of urban data, enabling users to analyze and interpret the collected images for their research or planning purposes.
-
-After 3 years of running, we accumulated over 5000 users globally. Yet unfortunately, the tool is currently shutdown due to a lack of budget. We will relaunch it if having enough funding in the future, and please feel free to [contact me](mailto:lyons66@mit.edu).
-
+**CitoryTech product development** · Collaborative field photography<br>
+**My role:** Project lead, working with Ding Zhang and Jinxin Shao. CityEye was a WeChat mini application for group field surveys. The service has since closed; this page documents the product and its workflow.
 :::
 
+# Field-survey workflow {#the-idea}
 
-# The Idea
----
+Group fieldwork often leaves photographs scattered across individual phones and chat threads. CityEye connected participants to a shared survey project, letting a team contribute photographs and review them in a common geographic workspace.
 
-<img src="cityeye_cover.jpg" style="width: 100%;">
+![CityEye's workflow for collaborative urban field photography.](cityeye_cover.jpg){fig-alt="Overview of the CityEye group photo-survey tool." loading="lazy"}
 
+# Product functions {#the-function-of-the-app}
 
-# The Function of the APP
----
+The tool combined image collection, recognition, and analysis. Participants could upload photographs through WeChat, while the shared workspace organized images for review and mapping. This made a group survey's observations available for subsequent planning or research analysis.
 
-<img src="cityeye1.jpg" style="width: 100%;">
+![Examples from the CityEye mobile collection interface.](cityeye1.jpg){fig-alt="CityEye mobile field-survey interface examples." loading="lazy"}
 
-<img src="cityeye2.jpg" style="width: 100%;">
+![Examples from the shared image and analysis workspace.](cityeye2.jpg){fig-alt="CityEye image-management and analysis interface examples." loading="lazy"}
+
+# Related product development
+
+CityEye became the collaborative image-collection module within [Qiuhao](../qiuhao/), alongside visual-indicator analysis and image-based perception surveys.
+
+For further information about the archived product, [contact me](mailto:lyons66@mit.edu).

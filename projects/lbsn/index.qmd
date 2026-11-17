@@ -5,7 +5,9 @@ description-meta: "Research with Hongmou Zhang using anonymized location-based s
 date: "Mar 2015"
 date-format: "MMM, YYYY"
 date-modified: "Feb 2026"
-author-title: "Research Team"
+language:
+  title-block-published: "Research date"
+author-title: "Research team"
 author:
   - name: Hongmou Zhang
   - name: Liu Liu
@@ -20,7 +22,9 @@ page-layout: full
 format:
   html:
     toc: true
-    toc-depth: 3
+    toc-depth: 2
+    fig-cap-location: bottom
+    lightbox: true
     toc-float:
       collapsed: false
       smooth-scroll: true
@@ -37,11 +41,11 @@ format:
 </style>
 ```
 
-::: {.callout-note}
-## Project context
+::: {.callout-note .project-context}
+## Research context
 
 **Research collaboration with Hongmou Zhang**<br>
-My role: Lead analyst responsible for geospatial analysis, network analysis, and visualization. Working with Hongmou Zhang, Pensen Wang, and Jinhua Zhao, we examined regional structure using Tencent mobility data. The research began in 2015 and led to a peer-reviewed article published in 2026.
+**My role:** Lead analyst responsible for geospatial analysis, network analysis, and visualization. Working with Hongmou Zhang, Pensen Wang, and Jinhua Zhao, we examined regional structure using Tencent mobility data. The research began in 2015 and led to a [peer-reviewed article published in 2026](../../papers/#regional-boundaries).
 :::
 
 # Research question
@@ -50,7 +54,7 @@ Administrative boundaries provide one view of a region, but daily mobility often
 
 The analysis used anonymized location-based social-network traces aggregated to **2,242 county-level units**. It compared population distribution and movement matrices across workdays, weekends, National Day, and the Spring Festival period.
 
-<img src="lbsn2.jpg" style="width: 100%; margin: 1.2rem 0;">
+![County-level population and mobility patterns used to compare regional structure.](lbsn2.jpg){fig-alt="Population and mobility data for the regional-network study." loading="lazy"}
 
 # Analytical approach
 
@@ -62,7 +66,7 @@ This combination made it possible to compare three forms of regional structure:
 - cross-boundary connections that extend beyond established planning regions; and
 - enclaves or breaks produced by strong mobility links between non-adjacent places.
 
-<img src="lbsn5.png" style="width: 100%; margin: 1.2rem 0;">
+![Network views connect places by mobility rather than by geographic proximity alone.](lbsn5.png){fig-alt="Mobility-network analysis of connections between Chinese county-level units." loading="lazy"}
 
 # Findings
 
@@ -70,7 +74,7 @@ The resulting communities overlap with several established urban regions, includ
 
 Provincial boundaries remain visible in many communities, suggesting that administrative organization still shapes mobility. Other clusters extend across those borders, showing why functional regions are better treated as graded and networked rather than as fixed lines.
 
-<img src="lbsn8.png" style="width: 100%; margin: 1.2rem 0;">
+![Regional communities identified from mobility links, including cross-boundary and discontinuous connections.](lbsn8.png){fig-alt="Regional structures identified through mobility-network community detection." loading="lazy"}
 
 # Publication and earlier dissemination
 

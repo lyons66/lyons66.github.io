@@ -14,6 +14,7 @@ listing:
       - sidewalk_moments/index.qmd
       - clarity/index.qmd
       - cimage/index.qmd
+      - caz/index.qmd
     type: grid
     grid-columns: 3
     fields: [image, title, date]
@@ -48,7 +49,6 @@ listing:
       - cityeye/index.qmd
       - huipai/index.qmd
       - riverview/index.qmd
-      - caz/index.qmd
     type: grid
     grid-columns: 3
     fields: [image, title, date]
@@ -63,7 +63,7 @@ listing:
 ## Independent Research
 
 <p class="project-section-note">
-Studies within my independent research agenda, from my master's thesis to current doctoral work. Coauthors and individual contributions are identified on each project page.
+Studies within my independent research agenda, from my master's thesis and research during planning practice to current doctoral work. Coauthors and individual contributions are identified on each project page.
 </p>
 
 ::: {#independent-research}
@@ -81,7 +81,7 @@ Research developed with individual collaborators, research labs, and multi-insti
 ## Projects I Led at CitoryTech {#applied-urban-ai-practice}
 
 <p class="project-section-note">
-Across every project below, I served as principal investigator (PI), project lead, and core researcher at CitoryTech.
+Projects I led as founder and director of CitoryTech, spanning product development and commissioned work for public and private clients. Each page identifies the project context, my role, and the resulting tools or deliverables.
 </p>
 
 ::: {#applied-practice}

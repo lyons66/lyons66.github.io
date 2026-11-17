@@ -1,10 +1,12 @@
 ---
 title: "Clarity or Confusion"
-subtitle: "A Review of Computer Vision Street Attributes in Urban Studies and Planning"
+subtitle: "A review of computer vision street attributes in urban studies and planning"
 description: "A systematic review of 146 papers and 104 CV-driven street attributes, published in Cities. The study that mapped the field before my dissertation set out to extend it."
 date: "Jul 2024"
 date-format: "MMM, YYYY"
-author-title: "Main Researchers"
+language:
+  title-block-published: "Research date"
+author-title: "Research team"
 author:
   - name: Liu Liu
     orcid: 0000-0003-0100-9763
@@ -18,7 +20,9 @@ page-layout: full
 format:
   html:
     toc: true
-    toc-depth: 3
+    toc-depth: 2
+    fig-cap-location: bottom
+    lightbox: true
     toc-float:
       collapsed: false
       smooth-scroll: true
@@ -35,33 +39,21 @@ format:
 </style>
 ```
 
-::: {.callout-note}
+::: {.callout-note .project-context}
 ## Research context
 
-**Independent research at MIT, coauthored with my advisor Andres Sevtsuk**
-
-This review was my first research project after returning to academia — following my master's degree, two years in industry, and six years running CitoryTech. Before committing to a dissertation direction, I wanted a systematic account of what computer vision had actually delivered to urban studies and planning. The gaps this review identified led directly to my dissertation, [Seeing HAI](../seeing_hai/).
+**Independent research at MIT with my advisor, Andres Sevtsuk**<br>
+This review examined what computer vision measures in urban studies and planning. Published in [*Cities* in 2024](../../papers/#clarity-or-confusion), it analyzes **146 papers** and **104 street attributes**, with a closer assessment of 24 quantitative studies. Its gaps in the measurement of human activities and interactions shaped my dissertation, [Sidewalk Ballet](../seeing_hai/).
 :::
 
-::: {.callout-tip}
-## PROJECT BRIEF
 
-Computer vision has made street-view imagery a standard data source in urban research, but what exactly these models measure — and how well those measurements serve planning questions — has remained poorly understood outside technical circles. Written for urban planning and design researchers without a computer vision background, this review systematically analyzes **146 papers** and catalogs **104 CV-driven street attributes**, then examines a subcollection of 24 papers to assess how these attributes perform inside quantitative urban studies.
-
-> Liu, L., & Sevtsuk, A. (2024). **Clarity or Confusion: A Review of Computer Vision Street Attributes in Urban Studies and Planning.** *Cities*, 150, 105022. [https://doi.org/10.1016/j.cities.2024.105022](https://doi.org/10.1016/j.cities.2024.105022)
-:::
-
-# The Question
-
----
+# Research question {#the-question}
 
 The paper asks three related questions: What specific data can computer vision collect that interests planners and urban designers? How have planning researchers actually used these data? And what fundamentally new knowledge has computer vision contributed to planning?
 
 Traditional observation — the tradition of Whyte, Gehl, Lynch, and Jacobs — is rich but labor-intensive and hard to repeat across a city. Computer vision promises to extend the counting and mapping of street environments with far less effort. Whether that promise has translated into clear, well-defined measures is the question the title poses.
 
-# What the Review Covers
-
----
+# Review scope {#what-the-review-covers}
 
 A three-stage screening of the Web of Science identified 146 influential papers, from which we extracted and classified 104 distinct street attributes into four groups:
 
@@ -70,19 +62,17 @@ A three-stage screening of the Web of Science identified 146 influential papers,
 3. **Composite Metrics** — indices assembled from multiple attributes, such as walkability, bikeability, and perception scores.
 4. **Deep Features** — learned representations without direct physical definitions, used in perception and scene-comparison studies.
 
-<img src="data_models.jpg" style="width: 100%;">
+![The three data models behind CV street attributes: image classification, semantic segmentation, and object detection, each producing a different data type for urban analysis.](data_models.jpg){fig-alt="Image classification, semantic segmentation, and object detection illustrated as three street-image data models." loading="lazy"}
 
 *The three data models behind CV street attributes: image classification, semantic segmentation, and object detection, each producing a different data type for urban analysis.*
 
 The review then traces how these attributes flow into research topics — walkability, housing prices, health, climate, safety — across the quantitative studies that use them.
 
-<img src="topic_attributes.png" style="width: 100%;">
+![How research topics (left) draw on CV-derived street attributes (right) across the reviewed literature. A small set of attributes, led by greenery, serves most topics.](topic_attributes.png){fig-alt="Diagram linking urban research topics to computer-vision street attributes." loading="lazy"}
 
 *How research topics (left) draw on CV-derived street attributes (right) across the reviewed literature. A small set of attributes, led by greenery, serves most topics.*
 
-# Key Findings
-
----
+# Findings {#key-findings}
 
 Beyond the catalog itself, the review identifies three structural problems in the field:
 
@@ -92,10 +82,10 @@ Beyond the catalog itself, the review identifies three structural problems in th
 
 Across the review, many different urban questions depend on a small family of readily extractable metrics, especially greenery. This creates a mismatch between what urbanists want to understand and what computer vision is equipped to measure. Human activities and interactions — central to classic observational studies of public life — remain weakly represented.
 
-The review calls for clearer definitions and standardized measurement. It also shaped the starting point for [Seeing HAI](../seeing_hai/), my dissertation: begin with an urban question, define the observable evidence it requires, and then develop the method to measure it.
+The review calls for clearer definitions and standardized measurement. It also shaped the starting point for [Sidewalk Ballet](../seeing_hai/), my dissertation: begin with an urban question, define the observable evidence it requires, and then develop the method to measure it.
 
-# Related Material
+# Related materials {#related-material}
 
-- [Seeing HAI, my dissertation research](../seeing_hai/)
+- [Sidewalk Ballet, my dissertation research](../seeing_hai/)
 - [MINGLE, the group-detection method](../mingle/)
-- [Publications](../../papers/)
+- [Published paper](https://doi.org/10.1016/j.cities.2024.105022) · [Publication entry](../../papers/#clarity-or-confusion)

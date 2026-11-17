@@ -4,7 +4,9 @@ subtitle: "Citywide foot-traffic modeling for New York City"
 description: "A City Form Lab collaboration estimating pedestrian volumes across New York City's sidewalk, crosswalk, and footpath network."
 date: "Feb 2026"
 date-format: "MMM, YYYY"
-author-title: "Research Team"
+language:
+  title-block-published: "Research date"
+author-title: "Research team"
 author:
   - name: Andres Sevtsuk
   - name: Rounaq Basu
@@ -20,7 +22,9 @@ page-layout: full
 format:
   html:
     toc: true
-    toc-depth: 3
+    toc-depth: 2
+    fig-cap-location: bottom
+    lightbox: true
     toc-float:
       collapsed: false
       smooth-scroll: true
@@ -37,13 +41,11 @@ format:
 </style>
 ```
 
-::: {.callout-note}
+::: {.callout-note .project-context}
 ## Research context
 
-**MIT City Form Lab collaborative project**<br>
-My role: Key collaborator in geospatial data engineering, spatial computation, model validation, and research visualization.
-
-This is a lab project. It is presented separately from my independent dissertation research, [Seeing HAI](../seeing_hai/).
+**MIT City Form Lab collaboration**<br>
+**My role:** Collaborator in geospatial data engineering, spatial computation, model validation, and research visualization. The work was published in [*Nature Cities*](../../papers/#nyc-foot-traffic) and exhibited alongside [Sidewalk Ballet at Venice](../sidewalk_ballet/).
 :::
 
 # Project overview
@@ -61,7 +63,7 @@ Within the broader City Form Lab team, I:
 - produced pedestrian-flow figures and visual comparisons between estimated volumes and observed counts; and
 - contributed analyses and revisions to the published paper.
 
-These contributions are narrower than the full project. The research design was conceived by Andres Sevtsuk, and the modeling, calibration, safety analysis, and writing were distributed across the author team.
+Andres Sevtsuk conceived the research design. Modeling, calibration, safety analysis, and writing were shared across the author team.
 
 # Findings and planning applications
 
@@ -69,9 +71,7 @@ The published analysis identifies outer-borough streets whose estimated foot tra
 
 These results show how a citywide pedestrian baseline can help agencies identify places where infrastructure classification, investment, and observed demand do not align.
 
-<img src="nyc_walks_cover.jpeg" style="width: 100%; margin: 1.2rem 0;">
-
-*City-scale pedestrian network analysis in New York City.*
+![City-scale pedestrian network analysis in New York City.](nyc_walks_cover.jpeg){fig-alt="New York City pedestrian-network model and mapped foot-traffic estimates." loading="lazy"}
 
 # Publication
 

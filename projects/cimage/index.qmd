@@ -1,21 +1,16 @@
 ---
-title: "C-IMAGE Project"
-subtitle: Understanding Human Perceptions through Geo-tagged Images
+title: "C-IMAGE"
+subtitle: "Mapping the city through geotagged photographs"
+description-meta: "MIT master's research mapping the city as represented in geotagged photographs, with related GeoJournal and ECCV publications."
 date: "May 2014"
 date-format: "MMM, YYYY"
-# author: Liu Liu @ MIT
-author-title: "Main Researchers"
+language:
+  title-block-published: "Thesis date"
+author-title: "Research team"
 author:
   - name: Liu Liu
     orcid: 0000-0003-0100-9763
-#     email: lyons66@mit.edu
-    # affiliations:
-    #   - name: Massachusetts Institute of Technology
-#       - url: https://www.mit.edu/
   - name: Bolei Zhou
-    # affiliations:
-    #   - name: test
-# affiliation-title: "AFFILIATION"
 
 categories: [Independent Research, Master's Thesis, Computer Vision, Visualization]
 image: "cimage_cover.jpg"
@@ -25,7 +20,9 @@ page-layout: full
 format:
   html:
     toc: true
-    toc-depth: 3
+    toc-depth: 2
+    fig-cap-location: bottom
+    lightbox: true
     toc-float:
       collapsed: false
       smooth-scroll: true
@@ -42,66 +39,57 @@ format:
 </style>
 ```
 
-::: {.callout-tip}
+::: {.callout-note .project-context}
+## Research context
 
-## PROJECT BRIEF
-
-This project originated from **my master's thesis at MIT**, which involved the collection of millions of photos from 26 cities. The objective was to utilize deep learning techniques to conduct scene recognition on these images. By categorizing the data and plotting the seven critical perceptions, the resulting perceptional maps provide
-insights into how inhabitants perceive their living environment within each city.
-
-- [Liu, L., Zhou, B., Zhao, J., & Ryan, B. D. “C-IMAGE: city cognitive mapping through geo-tagged photos” GeoJournal, 81(6), 817-861.](https://link.springer.com/article/10.1007/s10708-016-9739-6)
-
-- [Zhou, B., Liu, L., Oliva, A., & Torralba, A. “Recognizing city identity via attribute analysis of geo-tagged images” European conference on computer vision (pp. 519-534).](https://link.springer.com/content/pdf/10.1007/978-3-319-10578-9_34.pdf)
+**MIT master's thesis and related research**<br>
+I developed C-IMAGE to study the city as represented in geotagged photographs, working with Bolei Zhou on image analysis. The work led to papers in [*GeoJournal*](../../papers/#c-image) and at [ECCV](../../papers/#city-identity).
 :::
 
-# Interactive Maps
----
+# Research question {#the-idea}
 
-Below are interactive maps of the original C-IMAGE cities (recovered from my archive):
-[Amsterdam](./amsterdam/index.html), [Bangkok](./bangkok/index.html), [Barcelona](./barcelona/index.html), [Beijing](./beijing/index.html), [Hong Kong](./hongkong/index.html), [Kuala Lumpur](./kuala_lumpur/index.html), [London](./london/index.html), [New Delhi](./new_delhi/index.html), [New York](./new_york/index.html), [Paris](./paris/index.html), [Prague](./prague/index.html), [San Francisco](./san_francisco/index.html), [Seoul](./seoul/index.html), [Shanghai](./shanghai/index.html), [Singapore](./singapore/index.html), [Tokyo](./tokyo/index.html), [Toronto](./toronto/index.html), [Vienna](./vienna/index.html), [Zurich](./zurich/index.html)
+What can photographs reveal about the places people choose to record? Building on Kevin Lynch's study of the image of the city, C-IMAGE used scene recognition to map recurring features in user-contributed photographs across **26 cities**. These maps describe the photographed city: they reflect contributors' choices and platform coverage, rather than a representative survey of residents' perceptions.
 
-# The Idea
----
+![C-IMAGE compares the spatial distribution of scenes represented in geotagged photographs.](cimage_cover.jpg){fig-alt="Overview of the C-IMAGE city-image mapping project." loading="lazy"}
 
-Half a century ago, Kevin Lynch’s City Image project provided a collaborative depiction of the “perceived city” by gathering input from the public through a method called “mental mapping.” Now, with the power of computer vision and the ability to leverage crowd-sourced geo-tagged photos, we can explore whether we can detect people’s sentiments towards their physical living environment. By analyzing these images using computer vision algorithms, we aim to gain insights into how individuals feel about their surroundings and further enhance our understanding of urban landscapes.
+# Data and processing {#data-processing}
 
-<img src="cimage_cover.jpg" style="width: 100%">
+Photographs and geographic coordinates were collected through the Panoramio and Flickr APIs. The broader collection reached approximately **30 million images**. Coordinates linked image classifications to locations, allowing visual patterns to be compared within and across cities.
 
-# Data Processing
----
+![Workflow for collecting and processing geotagged photographs.](cimage1.jpg){fig-alt="C-IMAGE data-collection and image-processing workflow." loading="lazy"}
 
-The download of the Panoramio geo-tagged images are through Pranoramio data API and Flickr API. 
+# Scene classification {#scene-classification}
 
-<img src="cimage1.jpg" style="width: 100%">
+The project used [Places scene-recognition models](http://places.csail.mit.edu/) to classify image content into **102 attributes**. Classes relevant to public space were then organized into seven broader visual categories for mapping. This translated a large image collection into a smaller set of interpretable spatial layers.
 
-# Scene Classification
----
+![Scene categories used to describe the content of the photo collection.](cimage2.jpg){fig-alt="Examples of image classifications in the C-IMAGE project." loading="lazy"}
 
-The images are classified based on [Places 365](http://places.csail.mit.edu/). For this study, I selected Panoramio and, subsequently, Flickr as the primary sources for data collection. Approximately 30 million photographs were gathered by the completion of the project. The geographical spread of these photos offers a unique perspective, allowing for a comparison with the urban image as conceptualized by Kevin Lynch, which was derived from a multitude of cognitive maps.
+# Mapping the photographed city {#mapping-the-perceptions}
 
-<img src="cimage2.jpg" style="width: 100%">
+Mapping these categories reveals where different parts of a city's public image are concentrated. For example, comparing greenery-related photographs in Shanghai and Tokyo provides a way to examine differences in the places represented in each collection. Such comparisons need to account for uneven photography and platform use.
 
-# Mapping the Perceptions
----
+![Spatial patterns in the seven visual categories across selected cities.](cimage3.jpg){fig-alt="City maps showing the distribution of C-IMAGE visual categories." loading="lazy"}
 
-After being processed through scene recognition, currently called Places365, the photos were categorized into 102 attributes. I subsequently conducted a reclassification, streamlining the images to form a generalized portrayal of the city's public image. This led to retaining only those scenes that are associated with public spaces.
+# More detailed categories {#other-cases}
 
-By retaining only seven critical perceptions and plotting them on city maps, we can observe varying city patterns that truly reflect what the inhabitants "see.” This approach allows for fascinating discoveries that can be evaluated qualitatively and quantitatively. For instance, a comparison can be made between the perception of green spaces in Shanghai and Tokyo.
+The same workflow can support finer classifications. In a subsequent application, the greenery category was divided into seven subcategories to distinguish different forms of green-space imagery.
 
-<img src="cimage3.jpg" style="width: 100%">
+![A more detailed classification of greenery-related scenes.](cimage4.jpg){fig-alt="C-IMAGE application separating greenery into more specific visual categories." loading="lazy"}
 
-# Other Cases
----
+# Interactive maps {#interactive-maps}
 
-This method is highly replicable and has been employed in various real-world projects following a relatively fixed procedure. Additionally, the critical perceptions can be broken down into more specific categories. For instance, I divided the green perception into seven sub-elements, which led to discoveries.
+The original interactive maps have been recovered from my archive:
 
-<img src="cimage4.jpg" style="width: 100%">
+[Amsterdam](./amsterdam/index.html), [Bangkok](./bangkok/index.html), [Barcelona](./barcelona/index.html), [Beijing](./beijing/index.html), [Hong Kong](./hongkong/index.html), [Kuala Lumpur](./kuala_lumpur/index.html), [London](./london/index.html), [New Delhi](./new_delhi/index.html), [New York](./new_york/index.html), [Paris](./paris/index.html), [Prague](./prague/index.html), [San Francisco](./san_francisco/index.html), [Seoul](./seoul/index.html), [Shanghai](./shanghai/index.html), [Singapore](./singapore/index.html), [Tokyo](./tokyo/index.html), [Toronto](./toronto/index.html), [Vienna](./vienna/index.html), [Zurich](./zurich/index.html).
 
-# Demo Video
----
+# Demonstration {#demo-video}
 
-Below is a demo video showing the distribution of image classification results in Shenzhen.
+The video shows the spatial distribution of image-classification results in Shenzhen.
 
 {{< video https://www.youtube.com/embed/5u-fNXwi7AY >}}
 
-[Explore more project visualizations](../../visualization/#project-visualizations).
+# Publications and related work
+
+- Liu, L., Zhou, B., Zhao, J., & Ryan, B. D. **C-IMAGE: City Cognitive Mapping through Geo-Tagged Photos.** *GeoJournal*. [Paper](https://link.springer.com/article/10.1007/s10708-016-9739-6) · [Publication entry](../../papers/#c-image).
+- Zhou, B., Liu, L., Oliva, A., & Torralba, A. **Recognizing City Identity via Attribute Analysis of Geo-Tagged Images.** *European Conference on Computer Vision*, 519–534. [Paper](https://link.springer.com/content/pdf/10.1007/978-3-319-10578-9_34.pdf) · [Publication entry](../../papers/#city-identity).
+- [More project visualizations](../../visualization/#project-visualizations).

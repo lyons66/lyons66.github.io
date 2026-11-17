@@ -1,10 +1,13 @@
 ---
-title: "Seeing HAI"
-subtitle: "Measuring how people stay, gather, and use sidewalks"
+title: "Sidewalk Ballet"
+subtitle: |
+  <span class="project-tagline">Measuring and mapping how people group and stay on sidewalks through street-level imagery</span><span class="former-project-title"><strong><em>Formerly titled: Seeing HAI: Human Activities and Interactions on Sidewalks and Pedestrian Spaces through VLMs</em></strong></span>
 description-meta: "Liu Liu's Ph.D. dissertation: measuring the social life of sidewalks at city and national scale with street-level imagery and vision-language models."
 date: "Aug 2026"
 date-format: "MMM, YYYY"
-author-title: "Lead Researcher"
+language:
+  title-block-published: "Research date"
+author-title: "Research lead"
 author:
   - name: Liu Liu
     orcid: 0000-0003-0100-9763
@@ -14,6 +17,10 @@ title-block-banner: "seeing_hai_banner.jpg"
 page-layout: full
 resources:
   - great_streets_poster.jpg
+  - group_detection_pipeline.png
+  - sdi_high.png
+  - sdi_low.png
+  - two_views.jpg
 
 format:
   html:
@@ -30,9 +37,22 @@ format:
       - seeing-hai.css
 ---
 
+::: {.callout-note .project-context}
+## Research context
+
+**MIT doctoral dissertation in Urban Science** · Expected completion: June 2027<br>
+**Committee:** Andres Sevtsuk (chair), Jinhua Zhao, and Lawrence Vale.
+
+*Sidewalk Ballet* connects a measurement framework, studies of sidewalk social life, and a national data resource. The related papers are:
+
+- **Method:** [A Vision-Language Framework for Measuring Social Life on Sidewalks](../../papers/#sidewalk-social-life-framework), with Andres Sevtsuk — under review at *Computers, Environment and Urban Systems*; [preprint available](https://arxiv.org/abs/2609.28476).
+- **Data:** [Stay Together: Street-Level Social Indicators for Sidewalk Life Across 496 U.S. Cities](../../papers/#stay-together), with Andres Sevtsuk — manuscript in preparation.
+- **Methodological foundation:** [MINGLE](../../papers/#mingle) — published at AAAI 2026. The dissertation extends this group-detection work to activities and spatial measures; the findings study is ongoing.
+:::
+
 <span id="research-question" class="anchor-alias" aria-hidden="true"></span>
 
-Seeing HAI measures how people use sidewalks: who is moving or staying, who is together, and what they are doing. My MIT dissertation uses street-level images and vision-language models to extend close observation of public life across streets and cities. It asks what pedestrian counts miss when equally busy sidewalks support different activities and forms of social presence. The measures describe what is visible at the moment an image was captured.
+This project measures how people use sidewalks: who is moving or staying, who is together, and what they are doing. My MIT dissertation uses street-level images and vision-language models to extend close observation of public life across streets and cities. It asks what pedestrian counts miss when equally busy sidewalks support different activities and forms of social presence. The measures describe what is visible at the moment an image was captured.
 
 # Same count, different public life {#count-vs-grouping}
 
@@ -205,7 +225,7 @@ These examples define the measurement problem: finding people is only the first 
 <span id="the-dissertation-method-findings-data" class="anchor-alias" aria-hidden="true"></span>
 <span id="method-a-vision-language-framework-for-measuring-social-life-on-sidewalks" class="anchor-alias" aria-hidden="true"></span>
 
-The method connects human observation with image-based measurement. Human judgments about whether pairs of people are together provide training examples for [MINGLE](../mingle/), published at AAAI 2026. My [M10 framework](https://arxiv.org/abs/2609.28476) extends that approach by combining social-group detection with per-person coding, then turning their outputs into interpretable measures. The paper, coauthored with Andres Sevtsuk, is under review at *Computers, Environment and Urban Systems*.
+The method connects human observation with image-based measurement. Human judgments about whether pairs of people are together provide training examples for [MINGLE](../mingle/), published at AAAI 2026. My [method paper](https://arxiv.org/abs/2609.28476) extends that approach by combining social-group detection with per-person coding, then turning their outputs into interpretable measures. The paper, coauthored with Andres Sevtsuk, is under review at *Computers, Environment and Urban Systems*.
 
 ![The complete five-stage framework: timestamped imagery, parallel group and activity detection, cross-branch refinement and fusion, rule-based indicators, and city-scale analysis. The provisional sex fields shown in the diagram are excluded from primary analyses. Click to enlarge.](method_framework.png){fig-alt="Five-stage workflow showing street panoramas reprojected into sideviews, parallel group and per-person attribute detection, validity filtering and cross-branch refinement, indicator construction, and New York City maps." loading="lazy"}
 
@@ -324,17 +344,15 @@ The final connection is back to the images. *The Great Streets* prototype lets a
 
 # Dissertation and related work {#papers-and-links}
 
-## Research context {#how-this-research-came-together}
+## Research development {#how-this-research-came-together}
 
-Seeing HAI is my Ph.D. dissertation at the **MIT Department of Urban Studies and Planning**, connecting **Method**, **Findings**, and **Data** within one research program. My committee is Andres Sevtsuk (chair), Jinhua Zhao, and Lawrence Vale; expected completion is **June 2027**.
-
-The questions grew from [*Clarity or Confusion*](../clarity/), my *Cities* (2024) review of 104 street attributes across 146 papers, which found few measures of human activities and interactions. [MINGLE](../mingle/) provided a method for detecting social groups. This work also connects with [Sidewalk Ballet](../sidewalk_ballet/), the separate City Form Lab collaboration I lead at MIT, where socially interacting groups became a practical measurement problem.
+The questions grew from [*Clarity or Confusion*](../clarity/), my *Cities* (2024) review of 104 street attributes across 146 papers, which found few measures of human activities and interactions. [MINGLE](../mingle/) provided a method for detecting social groups. This work also connects with [the City Form Lab collaboration shown at Venice](../sidewalk_ballet/), which I lead at MIT and which brings group detection into a public installation.
 
 <span id="related-material" class="anchor-alias" aria-hidden="true"></span>
 
-- **Method:** [*A Vision-Language Framework for Measuring Social Life on Sidewalks*](https://arxiv.org/abs/2609.28476) · M10 · Under review at *Computers, Environment and Urban Systems*.
+- **Method:** [*A Vision-Language Framework for Measuring Social Life on Sidewalks*](https://arxiv.org/abs/2609.28476) · Under review at *Computers, Environment and Urban Systems*.
 - **Group detection:** [*MINGLE: VLMs for Semantically Complex Region Detection*](https://doi.org/10.1609/aaai.v40i45.41239) · AAAI 2026 · [Project](../mingle/).
-- **National data:** [*Stay Together: Street-Level Social Indicators for Sidewalk Life Across 496 U.S. Cities*](#data-stay-together-496-u.s.-cities) · M11 · Manuscript in preparation.
+- **National data:** [*Stay Together: Street-Level Social Indicators for Sidewalk Life Across 496 U.S. Cities*](#data-stay-together-496-u.s.-cities) · Manuscript in preparation.
 - **Presentations:** [Dissertation colloquium and research talks](../../presentations/).
 - **Proposal:** [Approved dissertation proposal (PDF)](https://www.dropbox.com/scl/fi/6b0csugj5mr8n1u4bc98u/Dissertation-Research-Proposal-250423_Liu.pdf?rlkey=e3w0m8vrksbr1ewnh8ydruhxv&st=ff0xemho&dl=0) · Password-protected; [email me](mailto:lyons66@mit.edu) for access.
 - **Publications:** [Full publication list](../../papers/).
