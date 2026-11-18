@@ -9,6 +9,21 @@
   grid-column: page-start/body-content-end;
 }
 
+/* Use the banner's available width before wrapping. The global 70ch
+   paragraph measure is too narrow for project taglines and former titles.
+   Qiuhao's later local rule keeps its deliberate space beside the logo. */
+#title-block-header .quarto-title-banner .subtitle {
+  max-width: none;
+}
+
+/* Balance short text blocks instead of leaving one or two words on a last
+   line. Normal wrapping remains the fallback, including on small screens. */
+#title-block-header .quarto-title-banner :is(.title, .subtitle),
+#quarto-document-content :is(h1, h2, h3, h4),
+#quarto-margin-sidebar #TOC .nav-link {
+  text-wrap: balance;
+}
+
 /* Category tags: give the white text a solid chip so it stays legible
    over light banner images. */
 .quarto-title-banner .quarto-categories {

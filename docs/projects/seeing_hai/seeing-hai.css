@@ -3,12 +3,12 @@ html { scroll-behavior: auto !important; }
 #title-block-header .quarto-title-banner { background-position: 50% 45%; }
 #title-block-header .quarto-title-banner .subtitle {
   margin-top: 0.8rem;
-  font-size: 1.05rem;
   line-height: 1.5;
   font-weight: 400;
 }
 #title-block-header .project-tagline,
-#title-block-header .former-project-title { display: block;   line-height: 1.5;
+#title-block-header .former-project-title {
+  display: block;
 }
 #title-block-header .former-project-title {
   margin-top: 0.6rem;
