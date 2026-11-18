@@ -377,6 +377,16 @@ For the most up-to-date list, see my <a href="https://www.dropbox.com/scl/fo/ghr
 
 ```{=html}
 
+<div class="pub-entry" id="pedestrian-accessibility-walking-behaviour">
+  <div class="pub-year">2026</div>
+  <div class="pub-body">
+    <div class="pub-title">Does Pedestrian Accessibility Reflect Observed Walking Behaviour? A Sensitivity Analysis of Accessibility Parameter Choices</div>
+    <div class="pub-authors">Zafri, N. M., <strong>Liu, L.</strong>, &amp; Sevtsuk, A.</div>
+    <div class="pub-venue"><span class="pub-badge badge-prep">Preprint</span> Available on SSRN.</div>
+    <div class="pub-links"><a href="https://doi.org/10.2139/ssrn.7353854">SSRN</a></div>
+  </div>
+</div>
+
 <div class="pub-entry" id="stay-together">
   <div class="pub-year">2026</div>
   <div class="pub-body">
