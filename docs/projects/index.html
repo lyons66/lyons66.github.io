@@ -20,7 +20,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -78,12 +78,12 @@ ul.task-list li input[type="checkbox"] {
     const listingTargetEl = window.document.querySelector('#listing-independent-research .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
-      return;
+      return; 
     }
 
     const options = {
       valueNames: ['listing-image','listing-title','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-
+      
       searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
     };
 
@@ -100,18 +100,18 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
-
+  
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
     const listingTargetEl = window.document.querySelector('#listing-collaborative-research .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
-      return;
+      return; 
     }
 
     const options = {
       valueNames: ['listing-image','listing-title','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-
+      
       searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
     };
 
@@ -128,18 +128,18 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
-
+  
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
     const listingTargetEl = window.document.querySelector('#listing-applied-practice .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
-      return;
+      return; 
     }
 
     const options = {
       valueNames: ['listing-image','listing-title','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-
+      
       searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
     };
 
@@ -223,35 +223,35 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../papers/index.html">
+    <a class="nav-link" href="../papers/index.html"> 
 <span class="menu-text">Publications</span></a>
-  </li>
+  </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../projects/index.html" aria-current="page">
+    <a class="nav-link active" href="../projects/index.html" aria-current="page"> 
 <span class="menu-text">Projects</span></a>
-  </li>
+  </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../presentations/index.html">
+    <a class="nav-link" href="../presentations/index.html"> 
 <span class="menu-text">Presentations</span></a>
-  </li>
+  </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../visualization/index.html">
+    <a class="nav-link" href="../visualization/index.html"> 
 <span class="menu-text">Visualization</span></a>
-  </li>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="https://dusp.mit.edu/people/liu-liu">
+    <a class="nav-link" href="https://dusp.mit.edu/people/liu-liu"> 
 <span class="menu-text"><iconify-icon inline="" icon="fa6-solid:building-columns" style="font-size: 1.75em;"></iconify-icon></span></a>
-  </li>
+  </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://www.xiaohongshu.com/user/profile/56585face4251d61448af39f">
+    <a class="nav-link" href="https://www.xiaohongshu.com/user/profile/56585face4251d61448af39f"> 
 <span class="menu-text"><iconify-icon inline="" icon="simple-icons:xiaohongshu" style="font-size: 1.75em;"></iconify-icon></span></a>
-  </li>
+  </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://www.zhihu.com/people/liu-liu-69-84-88">
+    <a class="nav-link" href="https://www.zhihu.com/people/liu-liu-69-84-88"> 
 <span class="menu-text"><iconify-icon inline="" icon="ant-design:zhihu-square-filled" style="font-size: 1.75em;"></iconify-icon></span></a>
-  </li>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -267,20 +267,20 @@ window.Quarto = {
             <p class="subtitle lead">Independent research, collaborations, and projects I led at CitoryTech</p>
                       </div>
   </div>
-
-
+    
+  
   <div class="quarto-title-meta column-page">
 
-
-
-
+      
+    
+      
     </div>
-
-
+    
+  
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-
+    
 <!-- main -->
 <main class="content quarto-banner-title-block column-page" id="quarto-document-content">
 
@@ -587,7 +587,7 @@ Child- and Age-Friendly Streets
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="QXBwbGllZCUyMFByYWN0aWNlJTJDUG9wdWxhdGlvbiUyMEFuYWx5c2lzJTJDUmVnaW9uYWwlMjBQbGFubmluZw==" data-listing-date-sort="1605589200000" data-listing-file-modified-sort="1794956789479" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="455">
+<div class="g-col-1" data-index="4" data-categories="QXBwbGllZCUyMFByYWN0aWNlJTJDUG9wdWxhdGlvbiUyMEFuYWx5c2lzJTJDUmVnaW9uYWwlMjBQbGFubmluZw==" data-listing-date-sort="1605589200000" data-listing-file-modified-sort="1795313285481" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1485">
 <a href="../projects/jinmao/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -734,7 +734,7 @@ StreeTalk
     anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
-        if (clz.startsWith('code-annotation-')) {
+        if (clz.startsWith('code-annotation-')) {                     
           return true;
         }
       }
@@ -754,11 +754,11 @@ StreeTalk
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
         button.setAttribute("data-bs-title", "Copied!");
-        tooltip = new bootstrap.Tooltip(button,
-          { trigger: "manual",
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
             offset: [0, -8]});
-        tooltip.show();
+        tooltip.show();    
       }
       setTimeout(function() {
         if (tooltip) {
@@ -835,7 +835,7 @@ StreeTalk
       if (onUntriggerFn) {
         config.onUntrigger = onUntriggerFn;
       }
-      window.tippy(el, config);
+      window.tippy(el, config); 
     }
     const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
     for (var i=0; i<noterefs.length; i++) {
@@ -910,7 +910,7 @@ StreeTalk
       tippyHover(xref, undefined, function(instance) {
         instance.disable();
         let url = xref.getAttribute('href');
-        let hash = undefined;
+        let hash = undefined; 
         if (url.startsWith('#')) {
           hash = url;
         } else {
@@ -938,7 +938,7 @@ StreeTalk
               if (note !== null) {
                 const html = processXRef(id, note);
                 instance.setContent(html);
-              }
+              } 
             }).finally(() => {
               instance.enable();
               instance.show();
@@ -962,7 +962,7 @@ StreeTalk
               }
               const html = processXRef(null, note);
               instance.setContent(html);
-            }
+            } 
           }).finally(() => {
             instance.enable();
             instance.show();
@@ -1002,7 +1002,7 @@ StreeTalk
               height = bottom - top;
             }
             if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it
+              // cook up a div (if necessary) and position it 
               let div = window.document.getElementById("code-annotation-line-highlight");
               if (div === null) {
                 div = window.document.createElement("div");
@@ -1128,7 +1128,7 @@ StreeTalk
   <div class="nav-footer">
     <div class="nav-footer-left">
 <p><span class="container"><strong>Made with <a href="https://quarto.org/" target="_blank">Quarto</a></strong></span></p>
-</div>
+</div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
